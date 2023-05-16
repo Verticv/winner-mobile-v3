@@ -1,0 +1,41 @@
+.message-space {
+    background: rgb(65, 65, 65);
+    border-radius: 1.25rem;
+    font-size: 2.8125rem;
+    padding-top: 1.5rem;
+    padding-left: 1.7rem;
+    margin: 0px 1.6875rem 5.1875rem;
+    font-family: SpoqaHanSansNeo;
+    color: rgb(200, 200, 200);
+    padding-bottom: 0.02rem;
+
+    .body-text-1 {
+        // line-height: 1;
+        // margin-bottom: 1rem;
+    }
+
+    p {
+        margin: 0;
+        letter-spacing: -0.07rem;
+        margin-bottom: 1.5rem;
+    }
+
+    div {
+        // letter-spacing: -0.07rem;
+        margin-bottom: 6.675rem;
+    }
+
+    .body-text-4 {
+        p {
+            margin-bottom: 1.6rem;
+        }
+    }
+}
+
+.body-text-9 {
+    p {
+        &:last-child {
+            margin-bottom: 1.2rem;
+        }
+    }
+}

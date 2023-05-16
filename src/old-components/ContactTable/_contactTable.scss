@@ -1,0 +1,44 @@
+.contact-table {
+    border-radius: 1em;
+    background: linear-gradient(to top, #1f1f1e, #3a3a3a 50%, #4a4a4a);
+    padding: 0.1875rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.6);
+
+    .contact-card {
+        height: 11.8rem;
+        border-bottom-width: 0.1875rem;
+        // background: green;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border-bottom: 0.1875rem solid #252525;
+
+        &:first-child {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .n-div {
+        background: #e9441d;
+        font-family: "RobotoMedium";
+        font-size: 2.4375rem;
+        padding: 0.132rem 0.735rem;
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+        border-radius: 0.77rem;
+        color: #fff;
+        // box-shadow: 1.5px 2.598px 1px 0px rgba(0, 0, 0, 0.51);
+    }
+
+}

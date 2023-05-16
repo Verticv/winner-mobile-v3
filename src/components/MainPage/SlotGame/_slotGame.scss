@@ -1,0 +1,171 @@
+.slot-game-section {
+  margin-top: 3rem;
+  .section__content {
+    padding: 0 1.813rem;
+    margin-top: 1.313rem;
+  }
+  .slot-game__slider {
+    padding: 1.875rem 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+.section__content {
+  padding: 0 1.813rem;
+}
+
+
+.slider__container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.ButtonBack {
+  left: -0.063rem;
+  z-index: 10;
+}
+.ButtonNext {
+  right: 0;
+
+}
+.slot-game-section .carousel {
+  width: 76.063rem;
+}
+.ButtonBack,.ButtonNext {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px 0px;
+  width: 4.875rem;
+  height: 14.25rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .8;
+  background-color: #fff;
+  border-radius: 1.125rem;
+  box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.5);
+  img {
+    width: 2.5rem;
+    height: 3.938rem
+  }
+}
+.slider__content {
+  width: 100%;
+  height: auto;
+}
+
+
+.card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.slot-game__Card {
+  border-radius: 1.5rem;
+  background-image: linear-gradient(to top ,rgb(204, 196, 255), rgb(255, 216, 245));
+  box-shadow: 0px 0.938rem 0.625rem 0px rgba(0, 0, 0, 0.3), inset 0px 6px 0px 0px rgba(255, 255, 255, 0.6);
+  width: 35.938rem;
+  height: 27.625rem;
+  padding: 1.688rem;
+  position: relative;
+  img.tag {
+    position: absolute;
+    left: 2.813rem;
+    top: 0;
+    z-index: 7;
+    width: 7.563rem;
+    height: 7.438rem
+      
+  }
+  p.tag-name {
+    position: absolute;
+    left: 4.188rem;
+    top: 1.5rem;
+    z-index: 7;
+    font-size: 2.625rem;
+    font-family: "SpoqaHanSansNeoBold";
+    color: #fff;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+}
+
+
+
+.cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+}
+.card__body {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(rgba(240, 234, 255, 0), rgba(240, 234, 255, 100));
+  overflow: hidden;
+  position: relative;
+  margin-left: 0.125rem;
+ 
+  >div {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    position: relative;
+    padding: 0.188rem;
+    background-image: linear-gradient(to bottom,rgba(240, 234, 255, 0), rgba(240, 234, 255, 100));
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1.5rem;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+    border-radius: 1.5rem;
+      // width: 100%;
+      left: 0.188rem;
+      right:0.188rem;
+      height: 100%;
+      bottom: 0.188rem;
+      background-image: linear-gradient(to top, rgba(49, 28, 67, 100) 0%,rgba(49, 28, 67, 100) 25%,rgba(49, 28, 67, 0) 50%, rgba(49, 28, 67,0) 100%);
+    }
+  } 
+}
+
+.card__desc {
+  position: absolute;
+  left: 1.875rem;
+  bottom: 1.313rem;
+  max-width: 100%;
+  z-index: 8;
+  p {
+    color: #a5eefe;
+    font-size: 2.625rem;
+    font-family: "SpoqaHanSansNeoBold";
+    margin: 0;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: -.025em;
+    line-height: 1;
+    margin-bottom: 0.188rem;
+  }
+  span {
+    color: #e6e2e1;
+    font-size: 2.063rem;
+    font-family: "SpoqaHanSansNeo";
+    display: block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    // overflow: hidden;
+    white-space: nowrap;
+    line-height: 1;
+    letter-spacing: -.025em;
+  }
+}

@@ -1,0 +1,116 @@
+.AuthenticationPage {
+    background: #000;
+    width: 77.625rem;
+    height: 100vh;
+    position: relative;
+
+    .first-dropdown {
+        border-radius: 0.7rem;
+
+        .sort-by-div {
+            @media screen and (min-width: 200px) and (max-width: 305px) {
+                width: 17.5rem !important;
+            }
+            width: 16.6rem !important;
+            background: #191817;
+            border-radius: 0.6rem;
+
+            div {
+                margin-left: 1.3rem;
+
+                p {
+                    margin: 2rem 0 1.7rem 0;
+                    color: #c8c8c8;
+                    font-size: 3rem;
+                    font-family: 'SpoqaHanSansNeoMedium';
+                }
+
+
+            }
+
+            img {
+                margin-right: 1.9rem !important;
+                margin-top: 0.2rem !important;
+            }
+        }
+
+        .select-overlay {
+            // top: 67rem;
+            // left: 11rem;
+            width: 16rem;
+            height: 7.3rem;
+
+        }
+    }
+
+    .second-dropdown {
+        .sort-by-div {
+            width: 25.75rem !important;
+            background: #191817;
+            border-radius: 0.6rem;
+        }
+
+        .select-overlay {
+            // top: 84rem;
+            width: 25.3rem;
+        }
+    }
+
+    .logo-img {
+        position: absolute;
+        top: 3.7rem;
+        right: 30.8rem;
+        // z-index: 10;
+        width: 15.9375rem;
+    }
+
+    /* date picker override styling */
+    .react-datepicker {
+        margin-left: -0.8rem;
+        margin-top: -0rem;
+
+        @media screen and (min-width: 200px) and (max-width: 300px) {
+            margin-top: -10rem;
+        }
+        @media screen and (min-width: 300px) and (max-width: 350px) {
+            margin-top: -8.4rem;
+        }
+        @media screen and (min-width: 350px) and (max-width: 400px) {
+            margin-top: -5.4rem;
+        }
+        @media screen and (min-width: 400px) and (max-width: 450px) {
+            margin-top: -4.4rem;
+        }
+        @media screen and (min-width: 450px) and (max-width: 500px) {
+            margin-top: -3.4rem;
+        }
+        @media screen and (min-width: 500px) and (max-width: 600px) {
+            margin-top: -2.4rem;
+        }
+
+
+        .react-datepicker__month-container {
+            width: 72.75rem !important;
+            background: #464646;
+            border-radius: 1.1rem;
+        }
+
+
+    }
+
+    .react-datepicker-popper[data-placement^='top'] .react-datepicker__triangle::before,
+    .react-datepicker-popper[data-placement^='bottom'] .react-datepicker__triangle::before,
+    .react-datepicker-popper[data-placement^='top'] .react-datepicker__triangle::after,
+    .react-datepicker-popper[data-placement^='bottom'] .react-datepicker__triangle::after {
+        left: -2.1375rem !important;
+        top: -0.8rem;
+    }
+
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #a5a5a5;
+        opacity: 1;
+        /* Firefox */
+    }
+
+}

@@ -1,0 +1,89 @@
+.free-board-view2 {
+    .title-div {
+        // background: red;
+        background: #323232;
+
+        .title {
+            background: #2e2e2e;
+            color: #c8c8c8;
+            font-size: 2.999375rem;
+            font-family: 'SpoqaHanSansNeoMedium';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 0.1875rem solid #252525;
+            border-top-left-radius: 1.1rem;
+            border-top-right-radius: 1.1rem;
+            min-height: 7.3125rem;
+            padding: 1rem 2rem;
+            text-align: center;
+
+            .text {
+                // margin-left: 0.5rem;
+                letter-spacing: -0.07rem;
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    .font-spoqa {
+        font-size: 2.811875rem;
+        font-family: 'SpoqaHanSansNeo';
+        color: #b4b4b4;
+    }
+
+    .two-buttons {
+        margin: 3.7rem 0 3.6rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        button {
+            border: 0;
+            padding: 0;
+            height: 7.3125rem;
+            font-size: 2.8125rem;
+            width: 50%;
+            border-radius: 1rem;
+            padding: 0.1875rem;
+            // background: blue;
+
+            .div-border {
+                padding: 0.1875rem;
+                // background: red;
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // text-shadow: #00000080 0.3125rem 0.125rem 0.4375rem;
+                color: #ffd2d2;
+                font-family: 'SpoqaHanSansNeoMedium';
+                font-size: 2.811875rem;
+
+                .text {
+                    margin-right: -0.1rem;
+                    margin-top: 0.2rem;
+                    letter-spacing: -0.07rem;
+                }
+            }
+        }
+    }
+}
+
+textarea {
+    outline: none;
+    color: #b4b4b4;
+}
+textarea::-webkit-scrollbar {
+    display: none;
+
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #b4b4b4;
+    opacity: 1;
+    /* Firefox */
+}

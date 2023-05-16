@@ -1,0 +1,123 @@
+.other-game-card {
+  margin-bottom: 1.75rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  position: relative;
+  img.other-img {
+    width: 100%;
+    height: 100%;
+  }
+  .logo-section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 5.813rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:0.75rem;
+    
+    img.other-icon {
+      max-width: 12.375rem;
+      height: auto;
+    }
+    img.other-icon1 {
+      max-width: 100%;
+    }
+  }
+  .desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #311c43;
+    height: 5.813rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    p {
+      color: #ffffff;
+      font-size: 3rem;
+      font-family: 'SpoqaHanSansNeo';
+      
+    }
+  }
+    .slider__container {
+      margin-top: 1.75rem;
+    }
+}
+
+
+.new-card {
+  border-radius: 3rem;
+  width: 73.875rem;
+  height: 36.438rem;
+  background-color: rgb(237, 237, 235);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
+  padding: 1rem 0.813rem;
+}
+.new-card-header {
+  height: 6.938rem;
+  border-radius: 2.625rem;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(157, 59, 187), rgb(84, 35, 160));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem 0 2.188rem ;
+}
+.card-header-title {
+  display: flex;
+  align-items: center;
+  img {
+    max-width: 3.75rem;
+    margin-right: 1.188rem;
+  }
+  p {
+    color: #fff;
+    margin: 0;
+    font-family: 'SpoqaHanSansNeoBold';
+    font-size: 2.813rem;
+  }
+}
+.card-header-actions {
+  p {
+    color: #bfa4ff;
+    font-size: 2.625rem;
+    font-family: 'SpoqaHanSansNeoMedium';
+    margin-right: 0.5rem;
+    letter-spacing: -.025em;
+  }
+}
+
+.new-card-content {
+  padding: 3rem 2.937rem;
+  >div {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    margin-bottom: 1.75rem;
+    img {
+      width: 2.438rem;
+      //flex-shrink: 0;
+    }
+    p {
+      color: #666666;
+      font-size: 2.625rem;
+      margin: 0 ;
+      font-family: 'SpoqaHanSansNeoMedium';
+      max-width: 100%;
+      // max-width: 90%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+  }
+}
+.ani-section {
+  margin-bottom: 4.563rem;
+}

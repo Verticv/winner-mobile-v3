@@ -1,0 +1,39 @@
+.slider-container {
+  height: 27.063rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.875rem;
+  .slide {
+    width: 77.625rem;
+    height: 27.063rem;
+    position: relative;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }  
+  .slider__dots {
+    position: absolute;
+    bottom: 1.875rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    .dot {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      margin: 0 0.25rem;
+      background: white;
+      opacity: .3;
+    }
+    
+    .dot.active {
+      width: 3.625rem;
+      background: white;
+      opacity: 1;
+      border-radius: 0.688rem;
+    }
+  }
+    
+   
+}
+

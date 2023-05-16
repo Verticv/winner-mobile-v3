@@ -1,0 +1,448 @@
+.powerladdergame-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    p {
+        margin: 0;
+    }
+
+    .powerladdergame-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .powerladdergame-content1 {
+            display: flex;
+            flex-direction: column;
+
+            .powerladdergame-content2 {
+                display: flex;
+            }
+        }
+    }
+
+    .powerladdergame-content4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 100%;
+
+        .powerladdergame-content5 {
+            display: flex;
+            align-items: center;
+
+            .powerladdergame-content6 {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+            }
+        }
+
+        .powerladdergame-content12 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+
+            .powerladdergame-content13 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .powerladdergame-content14 {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    div:hover {
+                        opacity: 0.75;
+                    }
+
+                    .powerladdergame-content15 {
+                        object-fit: contain;
+                    }
+
+                    .powerladdergame-content16 {
+                        z-index: 20;
+                        position: absolute;
+                        font-family: Swagger;
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+
+                .powerladdergame-content17 {
+                    font-family: 'RobotoRegular';
+                    letter-spacing: -0.025em;
+                    color: #ffffff;
+                    margin-top: -0.6rem;
+                    margin-left: -0.3rem;
+                }
+            }
+
+            .powerladdergame-content18 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .powerladdergame-content19 {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    div:hover {
+                        opacity: 0.75;
+                    }
+
+                    .powerladdergame-content20 {
+                        object-fit: contain;
+                    }
+
+                    .powerladdergame-content21 {
+                        z-index: 20;
+                        position: absolute;
+                        font-family: Swagger;
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+
+                .powerladdergame-content22 {
+                    font-family: 'RobotoRegular';
+                    letter-spacing: -0.025em;
+                    color: #ffffff;
+                    margin-top: -0.6rem;
+                    margin-left: -0.3rem;
+                }
+            }
+        }
+    }
+}
+
+.powerladdergame-content7 {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 1px;
+    // width: 77.625rem;
+
+    .powerladdergame-content8 {
+        display: flex;
+        flex-shrink: 0;
+        border-width: 1px;
+        border-color: rgba(255, 255, 255, 1);
+        border-radius: 0.6rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: -0.025em;
+        color: rgba(255, 255, 255, 1);
+
+        .powerladdergame-content9 {
+            font-family: SpoqaHanSansNeoMedium;
+            padding-bottom: 1px;
+        }
+    }
+
+    .powerladdergame-content10 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0.25rem;
+
+        .powerladdergame-content11 {
+            letter-spacing: -0.025em;
+            color: #ffffff;
+            font-family: 'SpoqaHanSansNeoMedium';
+            display: flex;
+            align-items: center;
+            margin-top: 0.65rem;
+        }
+    }
+}
+
+.threecard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    .threecard-content {
+        display: flex;
+        align-items: center;
+
+        .threecard-content1 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .threecard-content2 {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                align-items: center;
+                // margin-left: 5rem;
+
+                .threecard-content3 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    // margin-left: 1.25rem;
+
+                    .threecard-content4 {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        div:hover {
+                            opacity: 0.75;
+                        }
+
+                        .threecard-content5 {
+                            object-fit: contain;
+                        }
+
+                        .threecard-content6 {
+                            z-index: 20;
+                            font-family: swagger;
+                            color: rgba(255, 255, 255, 1);
+                            position: absolute;
+                        }
+
+                        .threecard-content7 {
+                            position: absolute;
+                            border-radius: 9999px;
+                            background-color: rgba(0, 0, 0, 1);
+                            // padding-top: 0.25rem;
+                            flex-shrink: 0;
+                            z-index: 20;
+                            left: 1rem;
+                            top: 0.8rem;
+                            // margin-top: 1px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .threecard-content8 {
+                                color: rgba(255, 255, 255, 1);
+                                letter-spacing: -0.025em;
+                                font-family: SpoqaHanSansNeoMedium;
+                                // margin-bottom: 0.25rem;
+                                margin-right: 1px;
+                            }
+                        }
+                    }
+
+                    .threecard-content9 {
+                        font-family: 'RobotoRegular';
+                        letter-spacing: -0.025em;
+                        color: #ffffff;
+                        margin-top: -0.95rem;
+                        margin-left: -0.1rem;
+                    }
+                }
+
+                .threecard-content10 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .threecard-content11 {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        div:hover {
+                            opacity: 0.75;
+                        }
+
+                        .threecard-content12 {
+                            object-fit: contain;
+                        }
+
+                        .threecard-content13 {
+                            z-index: 20;
+                            font-family: swagger;
+                            color: rgba(255, 255, 255, 1);
+                            position: absolute;
+                        }
+
+                        .threecard-content14 {
+                            position: absolute;
+                            border-radius: 9999px;
+                            background-color: rgba(0, 0, 0, 1);
+                            // padding-top: 0.25rem;
+                            flex-shrink: 0;
+                            z-index: 20;
+                            right: 1rem;
+                            top: 0.8rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+
+                            .threecard-content15 {
+                                color: rgba(255, 255, 255, 1);
+                                letter-spacing: -0.025em;
+                                font-family: SpoqaHanSansNeoMedium;
+                                // margin-bottom: 0.25rem;
+                            }
+                        }
+                    }
+
+                    .threecard-content16 {
+                        font-family: 'RobotoRegular';
+                        letter-spacing: -0.025em;
+                        color: #ffffff;
+                        margin-top: -0.95rem;
+                        margin-left: -0.6rem;
+                    }
+                }
+
+                .threecard-content17 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    .threecard-content18 {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        div:hover {
+                            opacity: 0.75;
+                        }
+
+                        .threecard-content19 {
+                            object-fit: contain;
+                        }
+
+                        .threecard-content20 {
+                            z-index: 20;
+                            font-family: swagger;
+                            color: rgba(255, 255, 255, 1);
+                            position: absolute;
+                        }
+
+                        .threecard-content21 {
+                            position: absolute;
+                            border-radius: 9999px;
+                            background-color: rgba(0, 0, 0, 1);
+                            // padding-top: 0.25rem;
+                            flex-shrink: 0;
+                            z-index: 20;
+                            left: 1rem;
+                            top: 0.8rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .threecard-content22 {
+                                color: rgba(255, 255, 255, 1);
+                                letter-spacing: -0.025em;
+                                font-family: SpoqaHanSansNeoMedium;
+                                // margin-bottom: 0.25rem;
+                                // margin-right: 1px;
+                                margin-left: -0.25rem;
+                            }
+                        }
+                    }
+
+                    .threecard-content23 {
+                        font-family: 'RobotoRegular';
+                        letter-spacing: -0.025em;
+                        color: #ffffff;
+                        margin-top: -0.95rem;
+                        margin-left: -0.3rem;
+                    }
+
+                }
+
+                .threecard-content24 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .threecard-content25 {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        div:hover {
+                            opacity: 0.75;
+                        }
+
+                        .threecard-content26 {
+                            object-fit: contain;
+                        }
+
+                        .threecard-content27 {
+                            z-index: 20;
+                            font-family: swagger;
+                            color: rgba(255, 255, 255, 1);
+                            position: absolute;
+                        }
+
+                        .threecard-content28 {
+                            position: absolute;
+                            border-radius: 9999px;
+                            background-color: rgba(0, 0, 0, 1);
+                            // padding-top: 0.25rem;
+                            flex-shrink: 0;
+                            z-index: 20;
+                            right: 1rem;
+                            top: 0.8rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+
+                            .threecard-content29 {
+                                color: rgba(255, 255, 255, 1);
+                                letter-spacing: -0.025em;
+                                font-family: SpoqaHanSansNeoMedium;
+                                // margin-bottom: 0.25rem;
+                                margin-left: -0.25rem;
+                            }
+                        }
+                    }
+
+                    .threecard-content30 {
+                        font-family: 'RobotoRegular';
+                        letter-spacing: -0.025em;
+                        color: #ffffff;
+                        margin-top: -0.95rem;
+                        margin-left: -0.6rem;
+                    }
+                }
+
+
+
+            }
+        }
+    }
+}

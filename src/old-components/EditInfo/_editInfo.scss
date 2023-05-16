@@ -1,0 +1,127 @@
+.edit-info {
+    padding-bottom: 17rem;
+
+    .edit-info-content {
+        margin: 0px 1.875rem 1.875rem;
+        // background: red;
+
+        .edit-info-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.625rem;
+            margin-top: 2.4rem;
+            margin-left: -0.5rem;
+
+            span {
+                color: #c8c8c8;
+                font-size: 2.625rem;
+                font-family: 'SpoqaHanSansNeoMedium';
+                letter-spacing: -0.07rem;
+            }
+
+            .input-with-text {
+                color: #aa9264;
+                font-family: 'SpoqaHanSansNeoBold';
+            }
+        }
+
+        .edit-info-form {
+            background: linear-gradient(to top, rgb(31, 31, 30), rgb(54, 54, 54) 50%, rgb(74, 74, 74));
+            padding: 0.1875rem;
+            margin-top: 5.2rem;
+            border-radius: 1.3rem;
+
+            .border {
+                padding: 2.1rem 2.5rem 2.5rem;
+                // border-width: 1px;
+                background: rgb(50, 50, 50);
+                border-radius: 1.1rem;
+
+                .form-section {
+                    margin-top: 0.375rem;
+                    // background: green;
+                    display: flex;
+                    height: 7.3rem;
+
+                    .lable-or-input {
+                        background: rgb(25, 24, 23);
+                        width: 42rem;
+                        padding: 0 2.2rem 0rem;
+                        letter-spacing: -0.07rem;
+                        border-radius: 0.5rem;
+                        padding: 0rem 2.2rem 0;
+                        display: flex;
+                        align-items: center;
+
+                        label {
+                            font-size: 2.8125rem;
+                            color: rgb(200, 200, 200);
+                            font-family: 'SpoqaHanSansNeo';
+                            margin-bottom: 1.1875rem;
+                            display: inline-block;
+                            letter-spacing: -0.07rem;
+                            margin: 0;
+                            
+                        }
+
+                    }
+
+                }
+
+                .text-under-input {
+                    color: #828282;
+                    display: flex;
+                    font-family: "SpoqaHanSansNeoMedium";
+                    font-size: 2.4rem;
+                    line-height: 1.2;
+                    margin-top: 1.7rem;
+                    letter-spacing: -0.047rem;
+                }
+                .text-under-input1 {
+                    color: #828282;
+                    display: flex;
+                    font-family: "SpoqaHanSansNeoMedium";
+                    font-size: 2.4rem;
+                    line-height: 1.2;
+                    letter-spacing: -0.047rem;
+                }
+            }
+        }
+    }
+
+    .button-class-div {
+        margin: auto;
+        margin-top: 3.85rem;
+        padding-bottom: 3.75rem;
+        width: fit-content;
+        padding: 0.1875rem;
+        background: linear-gradient(to top, #4d0a25, #a95567 50%, #e78694);
+        border-radius: 1rem;
+        width: 36.4375rem;
+        height: 7.3125rem;
+
+        .button-class {
+            border: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            // border:  solid;
+            background: red;
+            // padding: 0.1875rem;
+            border-radius: 1rem;
+            background: linear-gradient(to top, #99361e, #c14f35 50%, #de6245);
+            box-shadow: 0 0.375rem 0.75rem 0 rgba(0, 0, 0, 0.6);
+
+            span {
+                font-size: 2.80625rem;
+                color: #ffd2d2;
+                font-family: "SpoqaHanSansNeoMedium";
+                margin-right: -0.19rem;
+                width: fit-content;
+                letter-spacing: -0.06rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.HorizontalMenu {
+    display: flex;
+    flex-direction: row;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-button {
+        margin: 0;
+        width: 19.2rem;
+        height: 14.1rem;
+        padding: 0;
+        flex-shrink: 0;
+        margin-right: -0.15rem;
+
+        &.active {
+            button {
+                background: url('../../assets/bigIcons/shadow-active-btn.png') round;
+            }
+            .text {
+                color: #252525;
+            }
+        }
+
+        button {
+            background: url('../../assets/bigIcons/inactive-btn.png') round;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 0.2rem;
+        }
+
+        .text {
+            margin-bottom: 0;
+            margin-right: 0.35rem;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.div-shadow {
+    position: relative;
+
+    .nav-shadow {
+        height: 14.1rem;
+        width: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #191920;
+        box-shadow: 0rem 0 3rem 2.5rem #19191c;
+        transform: rotate(180deg);
+    }
+}
+
+.nav-shadow {
+    height: 14.1rem;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #191920;
+    box-shadow: 0rem 0 3rem 2.5rem #19191c;
+    transform: rotate(180deg);
+}

@@ -1,0 +1,70 @@
+.nav-button {
+    width: 15.7rem;
+    height: 10.1rem;
+    border-radius: 0.8rem;
+    padding: 0.1875rem;
+    margin-left: 1.1rem;
+    margin-top: -0.34rem;
+    margin-right: 0.3rem;
+
+    button {
+        padding: 0;
+        width: 16rem;
+        height: 10.7rem;
+        border: 0;
+        // background: linear-gradient(to top, #333332, #444443 50%, #535352);
+        background: url('../../assets/inactive-btn.png');
+        background-repeat: round;
+        border-radius: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        &.active {
+            background: url('../../assets/active-btn.png');
+            background-repeat: round;
+            width: 16rem;
+            height: 10.7rem;
+            //     // margin-top: -0.1rem;
+            //     // margin-left: -0.1rem;
+
+            .text {
+                color: #252525;
+            }
+        }
+    }
+
+    .icon {
+        margin-top: 0.5rem;
+    }
+
+    .text {
+        margin: 0;
+        color: #ccc2b6;
+        font-family: 'SpoqaHanSansNeoBold';
+        font-size: 2.25rem;
+        margin-top: 0.8rem;
+        letter-spacing: -0.1rem;
+        margin-right: 0.3rem;
+        margin-bottom: 0.7rem;
+
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    // height: 63rem;
+    // overflow: hidden;
+    // width: 168rem;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
+    // overflow-y: scroll;
+    // height: 63rem;
+    flex-shrink: 0;
+    padding-top: 0.2rem;
+    margin-bottom: 0;
+}

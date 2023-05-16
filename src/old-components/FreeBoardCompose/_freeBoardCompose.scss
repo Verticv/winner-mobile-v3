@@ -1,0 +1,115 @@
+.작성하기 {
+    margin: auto;
+    width: 73.875rem;
+    border-radius: 1.3rem;
+
+    .div-border {
+        background: linear-gradient(to top, #1f1f1e, #313130 50%, #4a4a4a);
+        padding: 0.1875rem;
+        border-radius: 1rem;
+        border-radius: 1.3rem;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.6);
+
+        .작성하기-content {
+            .input-div {
+                height: 9.1875rem;
+                border-bottom: 0.1875rem solid #252525;
+                padding-left: 2.4875rem;
+                background: #2e2e2e;
+                border-top-left-radius: 1.3rem;
+                border-top-right-radius: 1.3rem;
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    border: 0;
+                    padding: 0;
+                    border-top-left-radius: 1.3rem;
+                    border-top-right-radius: 1.3rem;
+                    background: bottom;
+                    font-family: 'SpoqaHanSansNeoMedium';
+                    font-size: 2.999375rem;
+                    color: #c8c8c8;
+                    margin-top: 0.1rem;
+                    letter-spacing: -0.07rem;
+                }
+                ::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: #c8c8c8;
+                    opacity: 1;
+                    /* Firefox */
+                }
+            }
+        }
+    }
+}
+
+.popup-btn {
+    width: 19.3125rem;
+    height: 6.75rem;
+    font-size: 2.624375rem;
+    background-color: rgb(130, 97, 64);
+    color: rgb(255, 223, 189);
+    margin-top: 1.125rem;
+    border-radius: 0.5rem;
+    font-family: "SpoqaHanSansNeoMedium";
+    letter-spacing: -0.07rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+    box-shadow: 0 0.375rem 0 0 rgba(0, 0, 0, 0.6);
+    padding-right: 0.2rem;
+}
+
+.textarea {
+    color: #b4b4b4;
+    resize: none;
+    word-break: keep-all;
+    height: 100%;
+    width: 100%;
+    font-size: 2.81188rem;
+    font-family: "SpoqaHanSansNeo";
+    line-height: 1.78;
+    background: bottom;
+    border: 0;
+    padding: 0;
+    letter-spacing: -0.07rem;
+}
+
+.placeholder-white {
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #c8c8c8;
+        opacity: 1;
+        /* Firefox */
+    }
+}
+
+.two-buttons-container {
+    width: 100%;
+    display: flex;
+    margin-left: 0.1rem;
+    gap: 1.1rem;
+    border-radius: 1rem;
+
+    button {
+        width: 49.3%;
+        background: red;
+        background: linear-gradient(to top, #3e4d8f, #6394bc 50%, #87d8e7);
+        border-radius: 1rem;
+        margin-left: -0.1rem;
+        margin-top: 3.57rem;
+        margin-bottom: 17.75rem;
+        font-size: 2.811875rem;
+
+        span {
+            font-family: "SpoqaHanSansNeoMedium";
+            margin-top: 0.2rem;
+            letter-spacing: -0.07rem;
+            margin-right: -0.1rem;
+            text-shadow: #00000080 0.3125rem 0.125rem 0.4375rem;
+        }
+    }
+}

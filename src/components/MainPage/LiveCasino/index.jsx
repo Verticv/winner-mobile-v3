@@ -1,0 +1,133 @@
+import React from 'react'
+import LiveCasinoIcon from '../../../assets/images/mainPage/live_casino.png'
+import LiveCasinoImage1 from '../../../assets/images/mainPage/live-casino-img1.png'
+import LiveCasinoImage2 from '../../../assets/images/mainPage/live-casino-img2.png'
+import LiveCasinoImage3 from '../../../assets/images/mainPage/live-casino-img3.png'
+import LiveCasinoImage4 from '../../../assets/images/mainPage/live-casino-img4.png'
+import LiveCasinoImage5 from '../../../assets/images/mainPage/live-casino-img5.png'
+import LiveCasinoImage6 from '../../../assets/images/mainPage/live-casino-img6.png'
+import LiveCasinoImage7 from '../../../assets/images/mainPage/live-casino-img7.png'
+import LiveCasinoImage8 from '../../../assets/images/mainPage/live-casino-img8.png'
+import LiveCasinoImage9 from '../../../assets/images/mainPage/live-casino-img9.png'
+import LiveCasinoImage10 from '../../../assets/images/mainPage/live-casino-img10.png'
+import LiveCasinoImage11 from '../../../assets/images/mainPage/live-casino-img11.png'
+import LiveCasinoImage12 from '../../../assets/images/mainPage/live-casino-img12.png'
+import LiveCasinoImage13 from '../../../assets/images/mainPage/live-casino-img13.png'
+import LiveCasinoImage14 from '../../../assets/images/mainPage/live-casino-img14.png'
+import SectionHeader from "../../Shared/SectionHeader";
+import BestIcon from '../../../assets/images/mainPage/best-icon.png'
+import '../LiveCasino/_liveCasino.scss';
+
+const LiveCasino = () => {
+  const LiveCasinoList = [
+    {
+      id: 0,
+      title: '프레그메틱플레이',
+      img: LiveCasinoImage1,
+      is_best: true
+    },
+    {
+      id: 1,
+      title: '에볼루션',
+      img: LiveCasinoImage2
+    },
+    {
+      id: 2,
+      title: '로얄지',
+      img: LiveCasinoImage3
+    },
+    {
+      id: 3,
+      title: '아시아게이밍',
+      img: LiveCasinoImage4
+    },
+    {
+      id: 4,
+      title: '드림게이밍',
+      img: LiveCasinoImage5
+    },
+    {
+      id: 5,
+      title: '섹시게이밍',
+      img: LiveCasinoImage6
+    },
+    {
+      id: 6,
+      title: '빅게이밍',
+      img: LiveCasinoImage7
+    },
+    {
+      id: 7,
+      title: '오리엔탈게임',
+      img: LiveCasinoImage8
+    },
+    {
+      id: 8,
+      title: '이주기',
+      img: LiveCasinoImage9
+    },
+    {
+      id: 9,
+      title: '마이크로게이밍',
+      img: LiveCasinoImage10
+    },
+    {
+      id: 10,
+      title: '베가스라운지',
+      img: LiveCasinoImage11
+    },
+    {
+      id: 11,
+      title: '비터라이브',
+      img: LiveCasinoImage12
+    },
+    {
+      id: 12,
+      title: '타이산',
+      img: LiveCasinoImage13
+    },
+    {
+      id: 13,
+      title: 'Coming Soon',
+      img: LiveCasinoImage14,
+      is_coming_soon: true
+    },
+  ]
+
+  const Card = ({ id, title, img, is_best = false, is_coming_soon = false , onClick }) => {
+    return (
+      <div className='live-casino-card'>
+        {is_coming_soon && <p className='coming-soon'>{title}</p>}
+        {!is_coming_soon && <p>{title}</p>}
+        <img src={img} alt="LiveCasinoImage1" className='casino-img' />
+        <button className={`${is_coming_soon? 'coming-soon-btn': ''}`} >
+          {is_coming_soon && ('준비중')}
+          {!is_coming_soon && ('게임시작')}
+        </button>
+        {is_best && (<img src={BestIcon} alt="BestIcon" className='best-icon' />)}
+      </div>
+    );
+  };
+  return (
+    <div className='live-casino'>
+      <SectionHeader
+        icon={LiveCasinoIcon}
+        title={'라이브카지노'} />
+      <div className='section__content'>
+        <div className='live-section'>
+          {LiveCasinoList.map((card, index) => (
+            <Card
+              key={card.id}
+              title={card.title}
+              img={card.img}
+              is_best={card.is_best}
+              is_coming_soon={card.is_coming_soon} />
+          ))
+          }
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default LiveCasino;

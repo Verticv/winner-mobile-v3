@@ -1,0 +1,105 @@
+.footer-container {
+  background-color: #221e3f;
+  margin-bottom: 100px;
+  .footer {
+    .slider__container {
+      margin-top: 0;
+    }
+    .brands {
+      background-color: #19162e;
+      height: 23.438rem;
+      .brands-cont {
+        max-width: 1242px;
+        margin: auto;
+        padding: 0 1.875rem;
+        height: 100%;
+      }
+      img {
+        width: 55.813rem;
+      }
+      .carousel {
+        display: flex;
+          align-items: center;
+      }
+    }
+        .ButtonBack,
+        .ButtonNext {
+          width: 4.875rem;
+          height: 14.25rem;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          opacity: .8;
+          background-color: unset !important;
+          border-radius: 1.125rem;
+          box-shadow: none !important;
+    
+          img {
+            width: 2.5rem;
+            height: 3.938rem
+          }
+        }
+  }
+}
+.toggle-list {
+  max-width: 1242px;
+  margin: auto;
+  padding: 0 6.875rem 0 6.625rem;
+}
+
+
+.winner-footer {
+  background-color: #19162e;
+  padding: 4.688rem;
+  .container {
+    max-width: 1242px;
+    margin: auto;
+    padding-top: 2.875rem;
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3.5rem;
+      height: 4.688rem;
+    }
+    .contact__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 57.938rem;
+      margin: auto;
+    }
+    .contact__item {
+      display: flex;
+      align-items: center;
+      width: 33.33%;
+
+      &.support-icon {
+        width: 30%;
+        img {
+          width: 4.313rem
+        }
+      }
+      &.telegram-icon {
+        width: 35%;
+        img {
+          width: 7.25rem
+        }
+      }
+      &.talk-icon {
+        width: 33%;
+        img {
+          width: 7.25rem
+        }
+      }
+      
+      p {
+        margin-left: 0.875rem;
+        color: #fff;
+        font-size: 2.625rem;
+        font-family: 'SpoqaHanSansNeo';
+        letter-spacing: -.07rem;
+        line-height: 1;
+      }
+    }
+  }
+}

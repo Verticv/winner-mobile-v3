@@ -1,0 +1,136 @@
+.contact-compose {
+
+    // background: red;
+    .container {
+        height: 7rem;
+    }
+
+    .select-overlay {
+        cursor: pointer;
+        width: 26.2rem;
+        height: 6.6875rem;
+        // margin-left: 2.625rem;
+        // margin-top: 1.0625rem;
+    }
+
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 0;
+    padding: 0;
+    // border-top-left-radius: 1.3rem;
+    // border-top-right-radius: 1.3rem;
+    background: bottom;
+    font-family: "SpoqaHanSansNeoMedium";
+    font-size: 2.625rem;
+    color: #c8c8c8;
+    margin-top: 0.07rem;
+    letter-spacing: -0.07rem;
+}
+
+.textarea-container {
+    height: 70.25rem;
+    padding-top: 2.35rem;
+    padding-left: 2.4875rem;
+    font-size: 2.8125rem;
+    background: rgb(50, 50, 50);
+    border-bottom-right-radius: 1.1rem;
+    border-bottom-left-radius: 1.1rem;
+
+
+    textarea {
+        resize: none;
+        word-break: keep-all;
+        height: 100%;
+        width: 100%;
+        font-size: 2.81188rem;
+        font-family: "SpoqaHanSansNeo";
+        line-height: 1.78;
+        background: bottom;
+        border: 0;
+        padding: 0;
+        letter-spacing: -0.07rem;
+        color: #c8c8c8;
+    }
+
+
+}
+
+.dddd {
+    .sort-by-div {
+        width: 25rem !important;
+
+        // div {
+
+        //     margin-left: 1.5rem;
+
+        //     p {
+        //         margin-top: 1.5rem;
+        //     }
+
+        //     img {
+        //         margin-right: 1.2rem;
+        //         margin-top: -1.3rem;
+        //     }
+
+        // }
+    }
+}
+
+.sort-by-div {
+    // width: 25rem !important;
+
+    div {
+
+        margin-left: 1.5rem;
+
+        p {
+            margin-top: -0.5rem;
+            // margin-top: 1.5rem;
+        }
+
+    }
+
+    img {
+        margin-right: 1.2rem;
+        margin-top: -1.3rem;
+    }
+
+}
+
+.sort-by-p {
+    margin-top: 0;
+    margin-left: 1.5rem;
+
+
+}
+
+.two-buttons-container {
+    width: 100%;
+    display: flex;
+    margin-left: 0.1rem;
+    gap: 1rem;
+    border-radius: 1rem;
+
+    button {
+        width: 49.3%;
+        background: red;
+        background: linear-gradient(to top, #3e4d8f, #6394bc 50%, #87d8e7);
+        border-radius: 1rem;
+        margin-left: -0.1rem;
+        margin-top: 3.57rem;
+        margin-bottom: 17.75rem;
+        font-size: 2.811875rem;
+
+        span {
+            font-family: "SpoqaHanSansNeoMedium";
+            margin-top: 0.2rem;
+            letter-spacing: -0.07rem;
+            margin-right: -0.1rem;
+            text-shadow: rgb(0 0 0) 0rem 0rem 1rem;
+        }
+    }
+}

@@ -1,0 +1,270 @@
+.betcombRP-container {
+    z-index: 50;
+
+
+    .betcombRP-content {
+        width: 100%;
+        // background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.historycard-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+    // background-color: rgba(255, 255, 255, 1);
+
+    .historycard-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.historycard-content1 {
+    display: flex;
+    flex-direction: column;
+
+    .historycard-content2 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        // border-color: rgba(204, 204, 204, 1);
+        padding-top: 0.25rem;
+        font-family: 'SpoqaHanSansNeoMedium';
+        letter-spacing: -0.025em;
+        color: #ccc2b6;
+    }
+
+    .historycard-content3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        // border-color: rgba(204, 204, 204, 1);
+        padding-top: 0.65rem;
+        padding-bottom: 1.25rem;
+
+        p {
+            margin: 0;
+        }
+
+        .historycard-content4 {
+            margin-top: 0.25rem;
+            display: flex;
+            align-items: center;
+            font-family: 'SpoqaHanSansNeoMedium';
+            letter-spacing: -0.025em;
+            // color: rgba(69, 69, 69, 1);
+        }
+
+        .historycard-content5 {
+            margin-top: 0.85rem;
+            display: flex;
+            align-items: center;
+            font-family: SpoqaHanSansNeoBold;
+            letter-spacing: -0.025em;
+            color: rgba(69, 69, 69, 1);
+        }
+
+        .historycard-content6 {
+            display: flex;
+            align-items: center;
+            font-family: 'SpoqaHanSansNeoBold';
+            letter-spacing: -0.025em;
+            margin-top: 0.3rem;
+        }
+
+        .historycard-content7 {
+            margin-top: 1.2rem;
+            display: flex;
+            align-items: center;
+            font-family: 'SpoqaHanSansNeoMedium';
+            letter-spacing: -0.07em;
+            color: rgba(69, 69, 69, 1);
+        }
+
+        .historycard-content8 {
+            display: flex;
+            position: absolute;
+            letter-spacing: -0.025em;
+            font-family: SpoqaHanSansNeoMedium;
+            align-items: center;
+            color: rgba(69, 69, 69, 1);
+            bottom: 1.25rem;
+            margin-right: -0.5rem;
+
+            .historycard-content9 {
+                margin-left: 0.1rem;
+            }
+        }
+
+        .historycard-content10 {
+            display: flex;
+            position: absolute;
+            letter-spacing: -0.12rem;
+            font-family: SpoqaHanSansNeoMedium;
+            align-items: center;
+            color: #4c98ff;
+            top: 1rem;
+        }
+    }
+}
+
+.resultscard-content {
+    width: 100%;
+    border-width: 1px;
+    border-color: rgba(204, 204, 204, 1);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #c8c8c8;
+
+    .resultscard-content1 {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+        }
+
+        .resultscard-content2 {
+            font-family: SpoqaHanSansNeoMedium;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+            // color: rgba(69, 69, 69, 1);
+        }
+
+
+        .resultscard-content3 {
+            font-family: RobotoMedium;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+            // color: rgba(69, 69, 69, 1);
+        }
+    }
+
+    .resultscard-content4 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.5625rem;
+
+        p {
+            margin: 0;
+        }
+
+        .resultscard-content5 {
+            font-family: SpoqaHanSansNeoMedium;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+            // color: rgba(69, 69, 69, 1);
+        }
+
+        .resultscard-content6 {
+            font-family: RobotoMedium;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+            // color: rgba(69, 69, 69, 1);
+        }
+    }
+
+    .resultscard-content7 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.5625rem;
+
+        p {
+            margin: 0;
+        }
+
+        .resultscard-content8 {
+            font-family: SpoqaHanSansNeoMedium;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+            // color: rgba(69, 69, 69, 1);
+        }
+
+        .resultscard-content9 {
+            font-family: RobotoMedium;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+            // color: rgba(69, 69, 69, 1);
+        }
+    }
+
+    .resultscard-content10 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.5625rem;
+
+        p {
+            margin: 0;
+        }
+
+        .resultscard-content11 {
+            font-family: SpoqaHanSansNeoMedium;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+            // color: rgba(69, 69, 69, 1);
+        }
+
+        .resultscard-content12 {
+            font-family: RobotoMedium;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+            // color: rgba(69, 69, 69, 1);
+        }
+    }
+
+    .resultscard-content13 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.5625rem;
+
+        p {
+            margin: 0;
+        }
+
+        .resultscard-content14 {
+            font-family: 'SpoqaHanSansNeoMedium';
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+            // color: rgba(69, 69, 69, 1);
+        }
+
+        .resultscard-content15 {
+            font-family: 'RobotoMedium';
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.025em;
+            color: #4c98ff;
+        }
+    }
+}
+
+.divcontent-1 {
+    width: 100%;
+    background-color: #1e1e1e;
+}
+
+.divcontent-2 {
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    // background-color: rgba(255, 255, 255, 1);
+
+    .divcontent-3 {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,189 @@
+.fixed-nav {
+  position: fixed;
+  bottom: 0;
+  width: 77.625rem;
+  z-index: 200;
+  margin: auto;
+  height: 10.75rem;
+  background-image: linear-gradient(to top, rgb(202, 204, 255) 0%, rgb(240, 236, 255) 100%);
+  box-shadow: 0px -6px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  overflow-x: auto;
+  button.nav-item1 {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    flex-shrink: 0;
+    background: inherit;
+    &.active {
+      background: #5323a0;
+      p {
+        color: #fff !important;
+      }
+    }
+  }
+  img {
+    max-width: 100%;
+    width: 6.5rem;
+  }
+  p {
+    color: #2d2834;
+    margin: 0;
+    font-size: 2.25rem;
+    font-family: 'SpoqaHanSansNeoMedium';
+    letter-spacing: -.07rem;
+    line-height: 1;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+  height: 8px;
+  width: 8px;
+}
+.fixed-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.375rem;
+  .fixed-btn {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.5rem;
+    background-color: #8433b2;
+    height: 100%;
+    border-top-left-radius: 1.875rem;
+    border-bottom-left-radius: 1.875rem;
+    background-image: linear-gradient(to top, rgb(79, 58, 122) 0%,rgb(160, 91, 246) 0%, rgb(240, 211, 255) 100%);
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.6);
+    padding: 0.188rem 0 0.188rem 0.188rem;
+    > button {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 1.875rem;
+      border-bottom-left-radius: 1.875rem;
+      background-image: linear-gradient(to top, rgb(73, 31, 156) 0%, rgb(158, 60, 188) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+      flex-shrink: 0;
+      img {
+        max-width: 100%;
+        width: 6.5rem;
+      }
+      p {
+        color: #fff;
+        margin: 0;
+        font-size: 2.25rem;
+        font-family: 'SpoqaHanSansNeoMedium';
+        letter-spacing: -.07rem;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.menu-modal {
+  position: fixed; 
+  overflow-y: scroll;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 77.625rem;
+  z-index: 200;
+  margin: auto;
+  background: #fff;
+  height: 100%;
+  display: 'flex';
+  justify-content: 0;
+  z-index: 100000000000000;
+}
+.menu-modal-header {
+  background-image: linear-gradient(to right, rgb(157, 59, 187) 0%, rgb(84, 35, 160) 100%);
+  height: 10.313rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  img {
+    width: 19.063rem;
+  }
+  .close {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2.313rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+button.menu-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 12.188rem;
+  background-color: #fff;
+  padding: 0 1.875rem;
+  border-top: 0.188rem solid #fff;
+  // border-bottom: 0.188rem solid #fff;
+  &.active {
+    .menu-item1 {
+      border-radius: 1.125rem;
+      background-image: linear-gradient(to right, rgb(157, 59, 187) 0%, rgb(84, 35, 160) 100%);
+    }
+    .menu-item-title {
+      color: #fff !important;
+    }
+  }
+}
+.menu-item1 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 4.625rem;
+  padding: 0 1.125rem;
+}
+
+.menu-item:nth-child(even) {
+  background-color: #f5f5f5;
+  .menu-item1 {
+    border-top: 0.188rem solid #eeeeee;
+    border-bottom: 0.188rem solid #eeeeee;
+
+  }
+}
+.menu-item-logo {
+  width: 9.938rem;
+  height: 9.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    // width: 4.063rem;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.menu-item-title {
+  color: #594e6a;
+  font-size: 3rem;
+  font-family: 'SpoqaHanSansNeoMedium';
+}
+
+.menu-modal-body {
+  height: 100%;  
+}
+

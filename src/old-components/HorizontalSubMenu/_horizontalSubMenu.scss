@@ -1,0 +1,14 @@
+.horizontal-btns {
+    overflow-x: scroll;
+    display: flex;
+    flex-shrink: 0;
+
+    .btn {
+        height: 6.375rem;
+        min-width: 11.5625rem;
+        font-size: 2.8125rem;
+        margin-right: 1.125rem;
+        border-radius: 3.2rem;
+        font-family: 'SpoqaHanSansNeoMedium';
+    }
+}

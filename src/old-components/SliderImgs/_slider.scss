@@ -1,0 +1,77 @@
+// .container-slider {
+//     height: 25.938rem;
+//     position: relative;
+//     overflow: hidden;
+// }
+
+// .slide {
+//     width: 77.625rem;
+//     height: 100%;
+//     position: relative;
+//     object-fit: cover;
+//     background-repeat: round;
+//     background-size: 100% 100%;
+
+//     p {
+//         position: absolute;
+//         color: #89806f;
+//         font-size: 2.0625rem;
+//         bottom: 2.58rem;
+//         left: 7.24rem;
+//         line-height: 1.24;
+//         font-family: 'SpoqaHanSansNeoMedium';
+//     }
+// }
+
+
+
+// .btn-slide {
+//     background: bottom;
+//     position: absolute;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     cursor: pointer;
+//     border: 0;
+//     padding: 0;
+// }
+
+// .btn-slide img {
+//     width: 2.125rem;
+//     height: 3.5rem;
+// }
+
+// .prev {
+//     top: 51.3%;
+//     left: 1.9rem;
+//     transform: translateY(-60%);
+// }
+
+// .next {
+//     top: 51.3%;
+//     right: 1.9rem;
+//     transform: translateY(-60%);
+// }
+
+
+// .container-dots {
+//     position: absolute;
+//     bottom: 1.5rem;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     display: flex;
+// }
+
+// .dot {
+//     width: 1.75rem;
+//     height: 1.75rem;
+//     border-radius: 50%;
+//     border: 0.3125rem solid #000;
+//     margin: -0.5625rem 0.09375rem -0.5625rem 0.21875rem;
+//     background: #000;
+
+// }
+
+// .dot.active {
+//     background: #a67c52;
+// }

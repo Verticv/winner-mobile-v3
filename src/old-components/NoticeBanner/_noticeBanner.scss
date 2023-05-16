@@ -1,0 +1,62 @@
+@keyframes banneranimation {
+    0% {
+        left: 65.25rem;
+    }
+
+    100% {
+        left: -51.25rem;
+    }
+}
+
+.first-color {
+    padding: 0.0625rem;
+    // background: #665943;
+    width: 73.2rem;
+    height: 5rem;
+    margin-left: 2.21rem;
+    border-radius: 3rem;
+    margin-top: 1.55rem;
+
+    .second-color {
+        padding: 0.125rem;
+        background: #97825d;
+        height: 4.875rem;
+        border-radius: 3rem;
+
+        .notice-banner {
+            background: #090909;
+            display: flex;
+            border: 0.0625rem solid #97825d;
+            padding: 1.1rem 1.45rem 0.5rem;
+            height: 4.625rem;
+            border-radius: 3rem;
+            
+            .notice-banner-icon {
+                img {
+                    width: 2.6875rem;
+                    height: 2.3125rem;
+                }
+            }
+
+            .banner-container {
+                width: 70.2rem;
+                position: relative;
+                z-index: 100;
+                overflow: hidden;
+                margin-left: 1rem;
+
+                span {
+                    font-size: 2.5375rem;
+                    font-family: 'SpoqaHanSansNeoMedium';
+                    margin-left: 1.26rem;
+                    margin-top: -0.35rem;
+                    color: #aa9264;
+                    animation: banneranimation 10s infinite;
+                    animation-timing-function: linear;
+                    position: absolute;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}

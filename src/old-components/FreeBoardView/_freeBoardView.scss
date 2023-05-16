@@ -1,0 +1,158 @@
+.freeboard-view {
+    margin: 2rem 1.875rem;
+    border-radius: 1rem;
+
+    .border-div {
+        border-radius: 1.2rem;
+        margin-top: -2.01rem;
+        background: linear-gradient(to top, #1f1f1e, #2f2f2e 50%, #4a4a4a);
+        padding: 0.1875rem;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.6);
+
+        .content {
+            border-radius: 1.1rem;
+            background: #323232;
+
+            .first-card {
+                min-height: 13rem;
+                border-top-right-radius: 1.1rem;
+                border-top-left-radius: 1.1rem;
+                text-align: center;
+                padding: 1rem;
+                border-bottom: 0.1875rem solid #252525;
+                background: #2e2e2e;
+
+                .buttons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1rem;
+                    margin-top: 0.65rem;
+
+                    .button {
+                        background-color: #02569c;
+                        font-size: 2.4375rem;
+                        padding: 0.35rem 1.8rem;
+                        // width: 8.4375rem;
+                        height: 4.5rem;
+                        border-radius: 2.3rem;
+                        font-family: 'SpoqaHanSansNeoMedium';
+                        color: #FFF;
+
+                        span {
+                            margin-top: 0.4rem;
+                            display: flex;
+                            // padding-left: 0.3rem;
+                        }
+
+                    }
+                }
+
+                .text {
+                    color: #c8c8c8;
+                    font-size: 2.999375rem;
+                    margin-top: 1.4rem;
+                    font-family: 'SpoqaHanSansNeoMedium';
+                    letter-spacing: -0.07rem;
+                }
+            }
+
+            .second-card {
+                height: 8.1rem;
+                padding: 1.4375rem 1.875rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #2e2e2e;
+                border-bottom: 0.1875rem solid #252525;
+
+                img {
+                    width: 12.0625rem;
+                }
+
+                .댓글-container {
+                    // width: 10.375rem;
+                    padding: 0 1.5rem;
+                    height: 4.4375rem;
+                    font-size: 2.4375rem;
+                    display: flex;
+                    margin-right: -0.4rem;
+                    margin-left: -3.9rem;
+                    border-radius: 2.4rem;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: "SpoqaHanSansNeoMedium";
+                    border: 0.1875rem solid #454545;
+                    margin-top: 0.4rem;
+
+                    .댓글 {
+                        margin-right: 0.8rem;
+                        margin-top: 0.2rem;
+                        color: #ccc2b6;
+                    }
+
+                    .num-2 {
+                        margin-top: 0.2rem;
+                        color: #ff6945;
+                        margin-left: -0.35rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .font-spoqa {
+        font-size: 2.811875rem;
+        font-family: 'SpoqaHanSansNeo';
+        color: #b4b4b4;
+    }
+
+    .two-buttons {
+        margin: 3.65rem 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        button {
+            border: 0;
+            padding: 0;
+            height: 7.3125rem;
+            font-size: 2.8125rem;
+            width: 50%;
+            border-radius: 1rem;
+            padding: 0.1875rem;
+            // background: blue;
+
+            .div-border {
+                padding: 0.1875rem;
+                // background: red;
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // text-shadow: #00000080 0.3125rem 0.125rem 0.4375rem;
+                color: #ffd2d2;
+                font-family: 'SpoqaHanSansNeoMedium';
+                font-size: 2.811875rem;
+
+                .text {
+                    margin-right: -0.1rem;
+                    margin-top: 0.2rem;
+                    letter-spacing: -0.07rem;
+                }
+            }
+        }
+    }
+
+    textarea::-webkit-scrollbar {
+        display: none;
+    }
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #b4b4b4;
+        opacity: 1;
+        /* Firefox */
+    }
+    
+}

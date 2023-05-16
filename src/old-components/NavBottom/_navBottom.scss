@@ -1,0 +1,42 @@
+.nav-bottom {
+    background: url('../../assets/nav-bottom-bg.png');
+    position: fixed;
+    bottom: 0;
+    width: 77.625rem;
+    height: 12.6rem;
+    border-top-right-radius: 1.8rem;
+    border-top-left-radius: 1.8rem;
+    background-repeat: round;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+
+    .nav-content {
+        display: grid;
+        text-align: center;
+        margin-top: 0rem;
+        width: 20%;
+
+        // &.active {
+        //     img {
+        //         filter: invert(0%) sepia(54%) saturate(303%) hue-rotate(350deg) brightness(121%) contrast(83%) drop-shadow(0 0.25rem 0.1875rem black);
+        //     }
+        // }
+
+        .text {
+            color: #ccc2b6;
+            font-family: "SpoqaHanSansNeoMedium";
+            font-size: 2.425rem;
+            height: 3.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            text-align: center;
+            margin: 2.5rem auto -0.5rem auto;
+        }
+    }
+}

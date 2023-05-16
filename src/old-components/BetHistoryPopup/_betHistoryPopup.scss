@@ -1,0 +1,62 @@
+.베팅내역-popup {
+    height: 100%;
+    width: 77.7rem;
+    border-top-left-radius: 3.2rem;
+    border-top-right-radius: 3.2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: -webkit-fill-available;
+    background: linear-gradient(to top, #1f1f1f ,#1f1f1f 80%,#343434);
+    padding: 0.1875rem;
+    margin: auto;
+    overflow: hidden scroll;
+    z-index: 201;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .베팅내역-border {
+        height: auto;
+        width: 100%;
+        border-top-left-radius: 3.2rem;
+        border-top-right-radius: 3.2rem;
+        min-height: -webkit-fill-available;
+        // background: #1e1e1e;
+        z-index: 201;
+
+        .first-section {
+            height: 9.375rem;
+            height: 9.375rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background: #272726;
+            position: sticky;
+            top: -0.1875rem;
+            z-index: 55;
+            border-top-left-radius: 3.2rem;
+            border-top-right-radius: 3.2rem;
+
+            .text {
+                font-size: 3.749375rem;
+                font-family: 'SpoqaHanSansNeoBold';
+                color: #ad9e8c;
+                // margin-left: 4.9rem;
+                margin-top: 0.1rem;
+                letter-spacing: -0.07rem;
+            }
+
+            .close {
+                // position: absolute;
+                // right: 4rem;
+                // top: 3rem;
+                // width: 3.1875rem;
+                // height: 3.1875rem;
+            }
+        }
+    }
+}

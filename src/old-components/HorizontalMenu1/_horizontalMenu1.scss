@@ -1,0 +1,45 @@
+#container-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0.1rem 1.6rem;
+
+    #container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 0.5rem;
+        button {
+            border: 0;
+            padding: 0;
+            background: url('../../assets/cscenter/leftMenu/inactive-btn.png') round;
+            width: 100%;
+            height: 14.1rem;
+            border-radius: 1rem;
+
+            .btn-content {
+                width: 95.9%;
+                margin: auto;
+
+                .img {
+                    height: 7rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .text {
+                    height: 4.4rem;
+                    font-family: 'SpoqaHanSansNeoMedium';
+                    font-size: 2.5rem;
+                    letter-spacing: -0.2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #ccc2b6;
+                }
+            }
+        }
+
+    }
+}

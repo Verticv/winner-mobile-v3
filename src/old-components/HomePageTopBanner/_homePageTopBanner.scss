@@ -1,0 +1,33 @@
+.Home-page-top-banner {
+    background: #1e1e1e;
+    height: 9.33rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-arrow {
+        width: 2.275rem;
+        height: auto;
+        height: 3.375rem;
+        /* background: blue; */
+        // margin-top: 3rem;
+        margin-left: 3.6rem;
+    }
+
+    .page-title {
+        color: #ad9e8c;
+        font-size: 3.74375rem;
+        margin-left: 2.1rem;
+        margin-top: 0.3875rem;
+        letter-spacing: -0.1rem;
+        font-family: "SpoqaHanSansNeoBold";
+    }
+
+    .home-icon {
+        width: 4.375rem;
+        height: auto;
+        margin-right: 3.7rem;
+        margin-top: 0.1rem;
+
+    }
+}

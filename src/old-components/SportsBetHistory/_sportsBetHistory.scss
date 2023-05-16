@@ -1,0 +1,57 @@
+.SportsBetHistory {
+    #container {
+        .nav-button {
+            margin-right: -0.25rem;
+        }
+
+    }
+
+    .date12 {
+        .container {
+            height: 7.5rem;
+        }
+    }
+
+    .date12 {
+        // margin: 0.9rem 1.875rem;
+        margin: 1.1rem 1.875rem;
+        padding-top: 0.5rem;
+    }
+
+    .first-row {
+        margin-top: 1.15rem;
+    }
+
+    .two-buttons-container {
+        width: 100%;
+        display: flex;
+        margin-left: 0.1rem;
+        gap: 1.1rem;
+        border-radius: 1rem;
+        margin: 0 1.1rem;
+
+        button {
+            width: 48%;
+            background: red;
+            background: linear-gradient(to top, #3e4d8f, #6394bc 50%, #87d8e7);
+            border-radius: 1rem;
+            margin-left: -0.1rem;
+            margin-top: 1.1rem;
+            margin-bottom: 1.2rem;
+            font-size: 2.811875rem;
+
+            span {
+                font-family: "SpoqaHanSansNeoMedium";
+                // margin-top: 0.35rem;
+                letter-spacing: -0.07rem;
+                margin-right: 0.1rem;
+                text-shadow: rgb(0 0 0) 0rem 0rem 0.4375rem;
+                font-size: 2.625rem;
+            }
+        }
+    }
+
+    .select-overlay {
+        width: 100%;
+    }
+}

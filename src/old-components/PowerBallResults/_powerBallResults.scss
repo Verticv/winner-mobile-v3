@@ -1,0 +1,78 @@
+.powerballresult-container {
+    width: 100%;
+    padding: 3rem;
+    padding-bottom: 0px;
+
+    p {
+        margin: 0;
+    }
+
+    .powerballresult-content {
+        font-family: 'SpoqaHanSansNeoMedium';
+        letter-spacing: -0.025em;
+        color: #ccc2b6;
+
+        .powerballresult-content1 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .powerballresult-content2 {
+                display: flex;
+                width: 100%;
+
+                .powerballresult-content3 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #252525;
+                }
+            }
+
+            .powerballresult-content4 {
+                display: flex;
+                width: 100%;
+
+                .powerballresult-content5 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #252525;
+                }
+            }
+        }
+    }
+
+    .powerballresult-content6 {
+        width: 100%;
+        font-family: SpoqaHanSansNeoMedium;
+        font-size: 14px;
+        letter-spacing: -0.025em;
+
+        .powerballresult-content7 {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            border-bottom-width: 1px;
+            // border-color: rgba(239, 239, 239, 1);
+            font-family: SpoqaHanSansNeo;
+            letter-spacing: -0.025em;
+            color: #c8c8c8;
+
+            .powerballresult-content8 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 1.75;
+
+                .powerballresult-content9 {
+                    text-align: center;
+
+                    .powerballresult-content10 {
+                        color: #c8c8c8;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.footer-container {
+  background-color: #221e3f;
+ 
+  .footer {
+    .slider__container {
+      margin-top: 0;
+    }
+    .brands {
+      background-color: #19162e;
+      height: 23.438rem;
+      .brands-cont {
+        max-width: 1242px;
+        margin: auto;
+        padding: 0 1.875rem;
+        height: 100%;
+      }
+      // img {
+      //   width: 55.813rem;
+      // }
+      .carousel {
+        display: flex;
+          align-items: center;
+      }
+    }
+        .ButtonBack,
+        .ButtonNext {
+          width: 4.875rem;
+          height: 14.25rem;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          opacity: .8;
+          background-color: unset !important;
+          border-radius: 1.125rem;
+          box-shadow: none !important;
+    
+          img {
+            width: 2.5rem;
+            height: 3.938rem
+          }
+        }
+  }
+}
+.toggle-list {
+  max-width: 1242px;
+  margin: auto;
+  padding: 5rem;
+}
+button.toggle {
+  width: 100%;
+  border-bottom: 3px solid #3c3b43;
+  background-color: inherit;
+  // padding-bottom: 4.688rem;
+  
+}
+.toggle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:12.5rem;
+ 
+}
+.toggle-title {
+  color: #a4a1c5;
+  font-size: 3rem;
+    font-family: 'SpoqaHanSansNeo'
+
+}
+ .toggle-icon img{
+  width: 3.875rem
+ }
+ .toggle-body {
+    color: #c8c8c8;
+    font-size: 2.813rem;
+    font-family: 'SpoqaHanSansNeo';
+    margin: 2.188rem 0 0 1rem;
+    text-align: left;
+    overflow: hidden;
+      transition: height 0.2s ease-in-out;
+ }
+ .toggle.active {
+
+ }
+ .toggle.active .toggle-body {
+   margin-bottom: 4.688rem 
+ }
+// .brands {
+//   height: 23.5rem;
+//   background-color: #19162e;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   .brands-logos {
+   
+//     img {
+//       width: 57.813rem;
+//       height: 15.063rem;
+//     }
+//   }
+  
+// }

@@ -1,0 +1,48 @@
+@keyframes banneranimation {
+  0% {
+    left: 65.25rem;
+  }
+
+  100% {
+    left: -51.25rem;
+  }
+}
+
+.notice-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.875rem;
+  height: 4.688rem;
+  background-color: rgb(45, 40, 52);
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+
+  .notice-banner__icon{
+    height: 2.813rem;
+    img {
+      height: 100%;
+    }
+  }
+  .notice-banner__content {
+    font-size: 2.625rem;
+    color: rgb(220, 213, 211);
+    font-family: 'SpoqaHanSansNeo';
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+      overflow: hidden;
+      margin-left: 1rem;
+      span {
+        flex-grow: 1;
+        letter-spacing: -0.07rem;;
+        -webkit-animation: banneranimation 10s infinite;
+        animation: banneranimation 10s infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        position: relative;
+      }
+  }
+}
+
+

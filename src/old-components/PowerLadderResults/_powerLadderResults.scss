@@ -1,0 +1,81 @@
+.powerladderresults-container {
+    width: 100%;
+    padding: 3rem;
+    overflow-y: scroll;
+    height: 100vh;
+    padding-bottom: 16rem;
+
+    p {
+        margin: 0;
+    }
+
+    .powerladderresults-content {
+        font-family: 'SpoqaHanSansNeoMedium';
+        letter-spacing: -0.025em;
+        color: #ccc2b6;
+
+        .powerladderresults-content1 {
+            display: flex;
+            width: 100%;
+
+            .powerladderresults-content2 {
+                display: flex;
+                width: 50%;
+                align-items: center;
+                justify-content: center;
+                background-color: #252525;
+            }
+        }
+    }
+
+    .powerladderresults-content3 {
+        width: 100%;
+        font-family: 'SpoqaHanSansNeoMedium';
+        font-size: 14px;
+        letter-spacing: -0.025em;
+
+        .powerladderresults-content4 {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            border-bottom-style: solid;
+            border-color: #252525;
+            font-family: 'SpoqaHanSansNeo';
+            letter-spacing: -0.025em;
+            color: #c8c8c8;
+
+            .powerladderresults-content5 {
+                display: flex;
+                width: 50%;
+                justify-content: center;
+                align-items: center;
+
+                .powerladderresults-content6 {
+                    position: relative;
+                    display: flex;
+                    width: 50%;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 9999px;
+                    padding-top: 0.5rem;
+                    font-family: SpoqaHanSansNeoMedium;
+                    letter-spacing: -0.025em;
+                    color: rgba(255, 255, 255, 1);
+
+                    .powerladderresults-content7 {
+                        padding-bottom: 0.25rem;
+                    }
+
+                    .powerladderresults-content8 {
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 9999px;
+                        background-color: rgba(0, 0, 0, 1);
+                    }
+                }
+            }
+        }
+    }
+}
