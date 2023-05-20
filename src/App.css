@@ -10,9 +10,10 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(to right,rgb(182, 68, 196), rgb(53, 24, 148));
+  background: linear-gradient(to right,rgb(182, 68, 196), rgb(53, 24, 148));  
+  /* background: white;
   background-repeat: no-repeat;
-  /* max-width: 1242px;
+  max-width: 1242px;
   min-height: 100vh;
   margin: auto; */
 }
@@ -24,9 +25,14 @@ body {
   
   max-width: 1242px;
   min-height: 100vh;
-  margin: auto;
+  margin: auto; 
+}
+
+.mypage {
+  background-color: white;
 }
 button {
   border: 0;
   padding: 0;
+  cursor: pointer;
 }

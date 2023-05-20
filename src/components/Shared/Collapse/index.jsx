@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './_collapse.scss';
 import Plus from '../../../assets/images/footer/plus.png'
+import Minus from '../../../assets/images/footer/minus.png'
 
 const Collapse = ({title}) => {
   const [isExpanded, setExpanded] = useState(false);
@@ -15,7 +16,8 @@ const Collapse = ({title}) => {
           {title}
         </div>
         <div className="collapse__icon">
-          <img src={Plus} alt="right"/>
+          {!isExpanded && (<img src={Plus} alt="right" />)}
+          {isExpanded && (<img src={Minus} alt="right" />)}
         </div>
       </div>
       {isExpanded && (<div className="collapse__body">

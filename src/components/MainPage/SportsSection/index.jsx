@@ -1,9 +1,10 @@
 
-import SportIcon from '../../../assets/images/mainPage/sport-icon.png'
+//import SportIcon from '../../../assets/images/mainPage/sport-icon.png'
 import SectionHeader from "../../Shared/SectionHeader";
 import Image1 from '../../../assets/images/mainPage/sport-game1.png'
 import Image2 from '../../../assets/images/mainPage/sport-game2.png'
 import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
+import SportIcon from '../../../assets/images/mainPage/sectionTitle/icon2.png'
 import '../SportsSection/_sportsSection.scss';
 
 const SportsSection = () => {
@@ -38,7 +39,7 @@ const SportsSection = () => {
   };
 
   return (
-    <div className='filter-content'>
+    <div className='filter-content sport-section'>
       <SectionHeader
         icon={SportIcon}
         title={'스포츠'} />

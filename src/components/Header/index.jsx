@@ -1,9 +1,9 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 import logo from "../../assets/images/header/logo.png";
-import icon1 from "../../assets/images/header/icon1.png";
-import icon2 from "../../assets/images/header/icon2.png";
-import icon3 from "../../assets/images/header/icon3.png";
+import ProfileIcon from "../../assets/images/header/profile.png";
+import SupportIcon from "../../assets/images/header/support.png";
+import ExchangeIcon from "../../assets/images/header/exchange.png";
 
 function Header() {
   const navigate = useNavigate();
@@ -19,12 +19,14 @@ function Header() {
       </div>
       <div className="header__navbar">
         <div className="navbar__list">
-          <div className="navbar__item">
+          <div className="navbar__item"
+            onClick={() => navigate('/mypage')}>
             <img
               className="icon1"
-              src={icon1}
-              alt="icon1"
+              src={ProfileIcon}
+              alt="profile"
             />
+            
             <span className="badge badge--red">
               <span>5</span>
             </span>
@@ -32,15 +34,15 @@ function Header() {
           <div className="navbar__item">
             <img
               className="icon2"
-              src={icon2}
-              alt="icon2"
+              src={SupportIcon}
+              alt="Support"
             />
           </div>
           <div className="navbar__item">
             <img
               className="icon3"
-              src={icon3}
-              alt="icon3"
+              src={ExchangeIcon}
+              alt="Exchange"
             />
           </div>
         </div>

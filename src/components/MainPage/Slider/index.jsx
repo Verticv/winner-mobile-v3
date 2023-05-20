@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import '../Slider/_slider.scss';
+import './_slider.scss';
 import SliderImage from '../../../assets/images/mainPage/slider.png';
 
 function Slider() {

@@ -1,10 +1,10 @@
 
 
-import LiveSportIcon from '../../../assets/images/mainPage/live-sport-icon.png'
+//import LiveSportIcon from '../../../assets/images/mainPage/live-sport-icon.png'
 import SectionHeader from "../../Shared/SectionHeader";
 import Image1 from '../../../assets/images/mainPage/live-sport-game1.png'
 import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
-
+import LiveSportIcon from '../../../assets/images/mainPage/sectionTitle/icon3.png'
 
 const LiveSportsSection = () => {
 
@@ -33,7 +33,7 @@ const LiveSportsSection = () => {
   };
 
   return (
-    <div className='filter-content'>
+    <div className='filter-content live-sport-section'>
       <SectionHeader
         icon={LiveSportIcon}
         title={'실시간스포츠'} />

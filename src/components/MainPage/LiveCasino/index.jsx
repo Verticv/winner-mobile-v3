@@ -1,22 +1,23 @@
 import React from 'react'
-import LiveCasinoIcon from '../../../assets/images/mainPage/live_casino.png'
-import LiveCasinoImage1 from '../../../assets/images/mainPage/live-casino-img1.png'
-import LiveCasinoImage2 from '../../../assets/images/mainPage/live-casino-img2.png'
-import LiveCasinoImage3 from '../../../assets/images/mainPage/live-casino-img3.png'
-import LiveCasinoImage4 from '../../../assets/images/mainPage/live-casino-img4.png'
-import LiveCasinoImage5 from '../../../assets/images/mainPage/live-casino-img5.png'
-import LiveCasinoImage6 from '../../../assets/images/mainPage/live-casino-img6.png'
-import LiveCasinoImage7 from '../../../assets/images/mainPage/live-casino-img7.png'
-import LiveCasinoImage8 from '../../../assets/images/mainPage/live-casino-img8.png'
-import LiveCasinoImage9 from '../../../assets/images/mainPage/live-casino-img9.png'
-import LiveCasinoImage10 from '../../../assets/images/mainPage/live-casino-img10.png'
-import LiveCasinoImage11 from '../../../assets/images/mainPage/live-casino-img11.png'
-import LiveCasinoImage12 from '../../../assets/images/mainPage/live-casino-img12.png'
-import LiveCasinoImage13 from '../../../assets/images/mainPage/live-casino-img13.png'
-import LiveCasinoImage14 from '../../../assets/images/mainPage/live-casino-img14.png'
+import LiveCasinoImage1 from '../../../assets/images/mainPage/live-casino/live-casino-img1.png'
+import LiveCasinoImage2 from '../../../assets/images/mainPage/live-casino/live-casino-img2.png'
+import LiveCasinoImage3 from '../../../assets/images/mainPage/live-casino/live-casino-img3.png'
+import LiveCasinoImage4 from '../../../assets/images/mainPage/live-casino/live-casino-img4.png'
+import LiveCasinoImage5 from '../../../assets/images/mainPage/live-casino/live-casino-img5.png'
+import LiveCasinoImage6 from '../../../assets/images/mainPage/live-casino/live-casino-img6.png'
+import LiveCasinoImage7 from '../../../assets/images/mainPage/live-casino/live-casino-img7.png'
+import LiveCasinoImage8 from '../../../assets/images/mainPage/live-casino/live-casino-img8.png'
+import LiveCasinoImage9 from '../../../assets/images/mainPage/live-casino/live-casino-img9.png'
+import LiveCasinoImage10 from '../../../assets/images/mainPage/live-casino/live-casino-img10.png'
+import LiveCasinoImage11 from '../../../assets/images/mainPage/live-casino/live-casino-img11.png'
+import LiveCasinoImage12 from '../../../assets/images/mainPage/live-casino/live-casino-img12.png'
+import LiveCasinoImage13 from '../../../assets/images/mainPage/live-casino/live-casino-img13.png'
+import LiveCasinoImage14 from '../../../assets/images/mainPage/live-casino/live-casino-img14.png'
 import SectionHeader from "../../Shared/SectionHeader";
-import BestIcon from '../../../assets/images/mainPage/best-icon.png'
-import '../LiveCasino/_liveCasino.scss';
+
+import './_liveCasino.scss';
+import LiveCasinoIcon from '../../../assets/images/mainPage/sectionTitle/icon1.png'
+import LiveCasinoCard from './LiveCasinoCard'
 
 const LiveCasino = () => {
   const LiveCasinoList = [
@@ -94,20 +95,6 @@ const LiveCasino = () => {
     },
   ]
 
-  const Card = ({ id, title, img, is_best = false, is_coming_soon = false , onClick }) => {
-    return (
-      <div className='live-casino-card'>
-        {is_coming_soon && <p className='coming-soon'>{title}</p>}
-        {!is_coming_soon && <p>{title}</p>}
-        <img src={img} alt="LiveCasinoImage1" className='casino-img' />
-        <button className={`${is_coming_soon? 'coming-soon-btn': ''}`} >
-          {is_coming_soon && ('준비중')}
-          {!is_coming_soon && ('게임시작')}
-        </button>
-        {is_best && (<img src={BestIcon} alt="BestIcon" className='best-icon' />)}
-      </div>
-    );
-  };
   return (
     <div className='live-casino'>
       <SectionHeader
@@ -116,7 +103,7 @@ const LiveCasino = () => {
       <div className='section__content'>
         <div className='live-section'>
           {LiveCasinoList.map((card, index) => (
-            <Card
+            <LiveCasinoCard
               key={card.id}
               title={card.title}
               img={card.img}

@@ -2,11 +2,11 @@
 
 
 
-import FishingGameIcon from '../../../assets/images/mainPage/fishing-game-icon.png'
+//import FishingGameIcon from '../../../assets/images/mainPage/fishing-game-icon.png'
 import SectionHeader from "../../Shared/SectionHeader";
 import Image1 from '../../../assets/images/mainPage/fishing-game.png'
 import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
-
+import FishingGameIcon from '../../../assets/images/mainPage/sectionTitle/icon9.png'
 
 const FishingGameSection = () => {
 
@@ -35,7 +35,7 @@ const FishingGameSection = () => {
   };
 
   return (
-    <div className='filter-content'>
+    <div className='filter-content fishing-section'>
       <SectionHeader
         icon={FishingGameIcon}
         title={'피싱게임'} />

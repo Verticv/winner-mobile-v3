@@ -9,6 +9,7 @@ import Logo from '../../assets/images/footer/footer-log.png'
 import SupportIcon from '../../assets/images/footer/support-icon.png'
 import TelegramIcon from '../../assets/images/footer/telegram-icon.png'
 import TalkIcon from '../../assets/images/footer/talk-icon.png'
+import PaymentMethods from '../../assets/images/footer/payment-methods.png'
 
 import Collapse from '../Shared/Collapse'
 
@@ -83,7 +84,7 @@ function Footer() {
           </div>
         </div>
         
-        <div>
+        <div className="footer-navs">
           <div className="toggle-list">
             <Collapse title={"라이브카지노"} />
             <Collapse title={"스포츠"} />
@@ -117,6 +118,15 @@ function Footer() {
             </div>
           </div>
         </div>
+
+        <div className="payment">
+          < img src={PaymentMethods} alt="Contact"/>
+          
+        </div>
+        <div className="h-line"></div>
+        <p className="copy-write">
+          Copyright © WINNER. All rights reserved.
+        </p>
       </div>
     </div>
   )

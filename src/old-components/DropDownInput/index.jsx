@@ -1,6 +1,6 @@
 import React from 'react'
 import DownArrowIcon from '../../assets/down-arrow1.png'
-import Dropdown from '../../components/Dropdown';
+import Dropdown from '../../old-components/Dropdown';
 
 const DropDownInput = ({ isLeagueSelection = true, isBetCombination = false, withArrow }) => {
 

@@ -13,7 +13,7 @@ const TabsComponent = ({
       <div
         className="animated-tab"
         style={{
-          transform: `translateX(${selectedTab === 0 ? "0%" : selectedTab === 1 ? "102%" : "205%"
+          transform: `translateX(${selectedTab === 0 ? "0%" : selectedTab === 1 ? "102%" : "207%"
             })`,
         }}>
         

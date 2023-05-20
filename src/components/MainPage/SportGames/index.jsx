@@ -1,18 +1,15 @@
 import React, { useState } from 'react'
 import '../SportGames/_sportGame.scss';
-import SportGameIcon from '../../../assets/images/mainPage/sport-game-icon.png'
+import SportGameIcon from '../../../assets/images/mainPage/sportGames/sport-game-icon.png'
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import LeftArrow from '../../../assets/images/mainPage/left-arrow.png'
 import RightArrow from '../../../assets/images/mainPage/right-arrow.png'
-import SportIcon from '../../../assets/images/mainPage/sport-icon.png'
-import GlobalIcon from '../../../assets/images/mainPage/global-icon.png'
-import Team1 from '../../../assets/images/mainPage/team1.png'
-import Team2 from '../../../assets/images/mainPage/team2.png'
 
 import TabsComponent from "../../Shared/TabsComponent";
 import SectionHeader from "../../Shared/SectionHeader";
+import SportGameCard from './SportGamesCard'
 
 function SportGame() {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -59,53 +56,6 @@ function SportGame() {
     );
   };
 
-  const Card = ({ onClick }) => {
-    return (
-      <div className='sport-card'>
-        <div className='card__header'>
-          <img src={SportIcon} alt="right" className='header__icon' />
-          <img src={GlobalIcon} alt="right" className='header__icon' />
-          <p>UEFA Champions League</p>
-        </div>
-        <div className='card__content'>
-          <div className='team team1'>
-            <img src={Team1} alt="right"  />
-            <p>리버플</p>
-          </div>
-          <div className='vs'>
-            <div className='time'>08/25 15:45</div>
-            <p>VS</p>
-          </div>
-          <div className='team team2'>
-            <img src={Team2} alt="right"  />
-            <p>비야레알</p>
-          </div>
-        </div>
-        <div className='card__footer'>
-          <button>
-            <div>
-              <div className='name'>W1</div>
-              <div className='score'>1.93</div>
-            </div>
-          </button>
-          <button>
-            <div>
-              <div className='name'>X</div>
-              <div className='score'>4.83</div>
-            </div>
-          </button>
-          <button>
-            <div>
-              <div className='name'>W2</div>
-              <div className='score'>3.14</div>
-            </div>
-          </button>
-        </div>
-      </div>
-    );
-  };
-
-
   return (
     <div className='sport-games-section'>
       <SectionHeader
@@ -138,7 +88,7 @@ function SportGame() {
                   .map((_, index) => (
                     <Slide key={index} className="card_animation_slide_horizontal" index={index}>
                       
-                        <Card />
+                      <SportGameCard />
                       
                     </Slide>
                   ))}

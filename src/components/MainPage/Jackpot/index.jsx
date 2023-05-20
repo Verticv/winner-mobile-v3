@@ -1,8 +1,8 @@
 import React from "react";
-import jackpot from '../../../assets/images/mainPage/jackpot.png';
-import '../Jackpot/_jackpot.scss';
-import LeftBorder from '../../../assets/images/mainPage/left-border.png';
-import RightBorder from '../../../assets/images/mainPage/right-border.png';
+import jackpot from '../../../assets/images/mainPage/jackpot/jackpot.png';
+import './_jackpot.scss';
+import LeftBorder from '../../../assets/images/mainPage/jackpot/left-border.png';
+import RightBorder from '../../../assets/images/mainPage/jackpot/right-border.png';
 import SlotGameCard from './SlotGameCard';
 import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
@@ -11,7 +11,7 @@ function Jackpot() {
   return (
     <div className="winner-section">
       <div>
-        <img src={jackpot} alt="" className="jackpot__container" />
+        <img src={jackpot} alt="jackpot" className="jackpot__container" />
         <div className="jackpot__range">
           <p>1,234,567,890</p>
         </div>

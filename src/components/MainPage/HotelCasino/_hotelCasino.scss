@@ -5,7 +5,7 @@
   max-width: 100%;
   position: relative;
   height: 24.563rem;
-  img {
+  >img {
     width: 100%;
     height: 100%;
   }
@@ -14,19 +14,20 @@
     right: 0;
     top: 0;
     height: 100%;
-    width: 52%;
+    width: 38.688rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1.125rem;
+    z-index: 7;
     .sub-title {
       text-align: center;
       display: block;
       color: #ebabff;
     }
     img {
-      width: 13.25rem;
+      max-width: 13.25rem;
       height: auto;
     }
     p {
@@ -35,11 +36,69 @@
       font-family: 'SpoqaHanSansNeo';
       font-size: 2.438rem;
     }
+  } 
+  .card-hover {
+    display: none;
+    position: absolute;
+    left: 0.188rem;
+    right: 0.188rem;
+    top: 0.188rem;
+    bottom: 0.188rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1.125rem;
+    z-index: 4;
+
+    .card-menu {
+      position: absolute;
+      top: 1.813rem;
+      right: 1.875rem;
+      z-index: 5;
+      width: 5.5rem;
+    }
+
+    .buttons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2.313rem;
+      z-index: 6;
+
+      button {
+        width: 20.938rem;
+        height: 4.75rem;
+        border-radius: 2.313rem;
+        background-image: linear-gradient(to right, rgb(223, 82, 255) 0%, rgb(107, 34, 255) 100%);
+        color: #fff;
+        font-family: 'SpoqaHanSansNeoBold';
+        font-size: 2.25rem;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+      }
+
+    }
+  }
+  &:hover {
+
+    .card-hover {
+      display: block;
+    }
+    
   }
 }
 .hotel-casino {
-  margin-top: 4.313rem;
+  margin-top: 2.375rem;
+  .section__icon {
+    padding-left: 0.125rem;
+    padding-top: 0.188rem;
+    
+  }
   .section__content {
-    margin-top: 1.313rem;
+    margin-top: -0.125rem;
+    padding: 0 1.875rem !important;
   }
 }

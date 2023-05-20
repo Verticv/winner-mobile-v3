@@ -1,6 +1,7 @@
 
 
-import VirtualGameIcon from '../../../assets/images/mainPage/virtual-game-icon.png'
+//import VirtualGameIcon from '../../../assets/images/mainPage/virtual-game-icon.png'
+import VirtualGameIcon from '../../../assets/images/mainPage/sectionTitle/icon8.png'
 import SectionHeader from "../../Shared/SectionHeader";
 import Image1 from '../../../assets/images/mainPage/virtual-game1.png'
 
@@ -32,7 +33,7 @@ const VirtualGameSection = () => {
   };
 
   return (
-    <div className='filter-content'>
+    <div className='filter-content virtual-games-section'>
       <SectionHeader
         icon={VirtualGameIcon}
         title={'키론가상게임'} />

@@ -7,6 +7,18 @@ import MenuIcon_0 from '../../assets/images/mainPage/m-icon0.png'
 import Logo from '../../assets/images/mainPage/light-log.png'
 import Close from '../../assets/images/mainPage/close-icon.png'
 
+import Menu1 from '../../assets/images/mainPage/bottom-nav/menu1.png'
+import Menu2 from '../../assets/images/mainPage/bottom-nav/menu2.png'
+import Menu3 from '../../assets/images/mainPage/bottom-nav/menu3.png'
+import Menu4 from '../../assets/images/mainPage/bottom-nav/menu4.png'
+import Menu5 from '../../assets/images/mainPage/bottom-nav/menu5.png'
+import Menu6 from '../../assets/images/mainPage/bottom-nav/menu6.png'
+import Menu7 from '../../assets/images/mainPage/bottom-nav/menu7.png'
+import Menu8 from '../../assets/images/mainPage/bottom-nav/menu8.png'
+import Menu9 from '../../assets/images/mainPage/bottom-nav/menu9.png'
+import Menu10 from '../../assets/images/mainPage/bottom-nav/menu10.png'
+import Menu11 from '../../assets/images/mainPage/bottom-nav/menu11.png'
+
 import MenuIcon_1 from '../../assets/images/mainPage/menu1.png'
 import MenuIcon_2 from '../../assets/images/mainPage/menu2.png'
 import MenuIcon_3 from '../../assets/images/mainPage/menu3.png'
@@ -17,7 +29,7 @@ import MenuIcon_7 from '../../assets/images/mainPage/menu7.png'
 import MenuIcon_8 from '../../assets/images/mainPage/menu8.png'
 import MenuIcon_9 from '../../assets/images/mainPage/menu9.png'
 import MenuIcon_10 from '../../assets/images/mainPage/menu10.png'
-// import MenuIcon_11 from '../../assets/images/mainPage/menu11.png'
+
 import horizontalsScroll from '../../utils/horizontalsScroll';
 
 const FixedMenu = ({
@@ -32,73 +44,74 @@ const FixedMenu = ({
   const Items = [
     {
       id: 0,
-      icon: MenuIcon_0,
+      icon: Menu1,
       icon2: MenuIcon_0,
       title: '홈'
     },
     {
       id: 1,
-      icon: MenuIcon_1,
+      icon: Menu2,
       icon2: MenuIcon_1,
       title: '라이브카지노'
     },
     {
       id: 2,
-      icon: MenuIcon_2,
+      icon: Menu3,
       icon2: MenuIcon_2,
       title: '스포츠'
     },
 
     {
       id: 3,
-      icon: MenuIcon_3,
+      icon: Menu4,
       icon2: MenuIcon_3,
       title: '실시간스포츠'
     },
     {
       id: 4,
-      icon: MenuIcon_4,
+      icon: Menu5,
       icon2: MenuIcon_4,
       title: '슬롯게임'
     },
     {
       id: 5,
-      icon: MenuIcon_5,
+      icon: Menu6,
       icon2: MenuIcon_5,
       title: '호텔카지노'
     },
     {
       id: 6,
-      icon: MenuIcon_6,
+      icon: Menu7,
       icon2: MenuIcon_6,
       title: 'e-스포츠'
     },
     {
       id: 7,
-      icon: MenuIcon_7,
+      icon: Menu8,
       icon2: MenuIcon_7,
       title: '미니게임'
     },
     {
       id: 8,
-      icon: MenuIcon_8,
+      icon: Menu9,
       icon2: MenuIcon_8,
       title: '키론가상게임'
     },
 
     {
       id: 9,
-      icon: MenuIcon_9,
+      icon: Menu10,
       icon2: MenuIcon_9,
       title: '피싱게임'
     },
     {
       id: 10,
-      icon: MenuIcon_10,
+      icon: Menu11,
       icon2: MenuIcon_10,
       title: '티비벳'
     }
   ]
+  
   return (
     <>
       <div className='fixed-nav'>

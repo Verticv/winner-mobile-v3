@@ -26,11 +26,11 @@
       width: 22.25rem;
     }
     .fields {
-      padding: 5.563rem 8.125rem 0;
+      padding: 5.563rem 7.875rem 0;
     }
 
     .input-field {
-      width: 100%;
+      width: 56rem;
       background: #fff;
       border-radius: 2.25rem;
       height: 9.188rem;
@@ -38,6 +38,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-right: 0.339rem;
       margin-bottom: 2.813rem;
       position: relative;
       .input-icon {
@@ -45,9 +46,7 @@
         left: 2.75rem;
         top: 50%;
         transform: translateY(-50%);
-        width: 3.375rem;
-        
-       
+        width: 3.375rem;       
       }
       input {
         text-align: center;
@@ -60,7 +59,7 @@
         padding: 0.25rem 0 0 0;
         margin-top: 0.188rem;
         font-family: 'SpoqaHanSansNeoMedium';
-        
+        letter-spacing: -0.025rem;
       }
     }
     .actions {
@@ -83,14 +82,14 @@
       }
 
       .line {
-        width: 100%;
+        width: 63.75rem;
         opacity: 0.302;
         height: 0.188rem;
         background: #7c54a1;
-        margin-top: 4.5rem;
-        margin-bottom: 4.5rem;
+        margin: 4.5rem auto;
       }
     }
   }
 }
+
 

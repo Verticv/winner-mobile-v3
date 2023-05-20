@@ -1,19 +1,22 @@
 import React, { useState } from 'react'
-import '../SlotGame/_slotGame.scss';
-import SlotGameIcon from '../../../assets/images/mainPage/slot-game-icon.png'
+import './_slotGame.scss';
+
+import SlotGameIcon from '../../../assets/images/mainPage/sectionTitle/icon4.png'
 import LeftArrow from '../../../assets/images/mainPage/left-arrow.png'
 import RightArrow from '../../../assets/images/mainPage/right-arrow.png'
-import slotImg1 from '../../../assets/images/mainPage/Img1.png'
-import slotImg2 from '../../../assets/images/mainPage/slot-game-img2.png'
-import slotImg3 from '../../../assets/images/mainPage/slot-game-img3.png'
-import slotImg4 from '../../../assets/images/mainPage/slot-game-img4.png'
 
-import RedTag from '../../../assets/images/mainPage/red-tag.png'
-import BlueTag from '../../../assets/images/mainPage/blue-tag.png'
-import greenTag from '../../../assets/images/mainPage/green-tag.png'
+import slotImg1 from '../../../assets/images/mainPage/slotGames/Img1.png'
+import slotImg2 from '../../../assets/images/mainPage/slotGames/slot-game-img7.png'
+import slotImg3 from '../../../assets/images/mainPage/slotGames/slot-game-img2.png'
+import slotImg4 from '../../../assets/images/mainPage/slotGames/slot-game-img8.png'
+
+import RedTag from '../../../assets/images/mainPage/slotGames/red-tag.png'
+import BlueTag from '../../../assets/images/mainPage/slotGames/blue-tag.png'
+import greenTag from '../../../assets/images/mainPage/slotGames/green-tag.png'
 
 import TabsComponent from "../../Shared/TabsComponent";
 import SectionHeader from "../../Shared/SectionHeader";
+import SlotGameCard from './SlotGameCard'
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
@@ -152,32 +155,14 @@ function SlotGame() {
     );
   };
 
-  const Card = ({ id, title, sub_title, img, tag, tag_name, onClick }) => {
-    return (
-      <div className='card-container'>
-        <div className='slot-game__Card'>
-          <img src={tag} alt="RedTag" className='tag' />
-          <p className='tag-name'>{tag_name}</p>
-          <div className='card__body'>
-            <div >
-              <img src={img} alt="Img1" className='img' />
-              <div className='card__desc'>
-                <p>{title}</p>
-                <span>{sub_title}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  };
-
-  return (
+ 
+ return (
     <div className='slot-game-section'>
       <SectionHeader
         icon={SlotGameIcon}
         title={'슬롯게임'}
         showAction={true} />
+        
       <div className='section__content'>
         <TabsComponent
           tabsData={tabsList}
@@ -189,7 +174,7 @@ function SlotGame() {
           visibleSlides={2}
           totalSlides={4}
           step={1}
-          naturalSlideWidth={576}
+          naturalSlideWidth={577}
           isIntrinsicHeight={true}
           infinite={false}
         >
@@ -202,7 +187,7 @@ function SlotGame() {
                     <Slide key={index} className="card_animation_slide_horizontal" index={index}>
                       <div className='cards-container'>
                         {game.cards.map((card, index) => (
-                            <Card
+                          <SlotGameCard
                             key={card.id}
                             title={card.title}
                             sub_title={card.sub_title}

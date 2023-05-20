@@ -1,6 +1,6 @@
 import React from 'react'
 import SpeakerIcon from '../../../assets/images/mainPage/speaker.png'
-import '../NoticeBanner/_noticeBanner.scss';
+import './_noticeBanner.scss';
 
 const NoticeBanner = () => {
   return (

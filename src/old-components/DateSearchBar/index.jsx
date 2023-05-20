@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import DatePicker from "react-datepicker";
 import { registerLocale } from "react-datepicker";
 import ko from 'date-fns/locale/ko';
-import DropDownInput from '../../components/DropDownInput'
+import DropDownInput from '../../old-components/DropDownInput'
 import CalendarIcon from '../../assets/myPage/CalendarIcon.png';
 import { isIOS } from 'react-device-detect';
 import './DatePicker.css'

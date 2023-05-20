@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NoticeBanner from "../components/MainPage/NoticeBanner";
 import Slider from "../components/MainPage/Slider";
 import Jackpot from "../components/MainPage/Jackpot";
@@ -16,10 +16,18 @@ import EsportsSection from "../components/MainPage/EsportsSection";
 import MiniGameSection from "../components/MainPage/MiniGameSection";
 import VirtualGameSection from "../components/MainPage/VirtualGameSection";
 import TibetSection from "../components/MainPage/TibetSection";
+import SlotGameSection from "../components/MainPage/SlotGameSection";
 import FixedMenu from '../components/FixedMenu';
 
 function MainPage() {
   const [selectedTab, setSelectedTab] = useState(0)
+
+  useEffect(() => {
+    const jackpot = document.querySelector('.winner-section');
+    const JackpotOffset = jackpot.offsetTop;
+    window.scrollTo(0, JackpotOffset)
+  }, [selectedTab])
+  
   return (
     <>
       <NoticeBanner />
@@ -36,7 +44,9 @@ function MainPage() {
         </>
       )}
       {selectedTab === 1 && (
-        <LiveCasino />
+        <div className="filter-content">
+          <LiveCasino />
+        </div>
       )}
       {selectedTab === 2 && (
         <SportsSection/>
@@ -45,11 +55,16 @@ function MainPage() {
         <LiveSportsSection />
       )}
       {selectedTab === 4 && (
-        <FishingGameSection/>
+        <div className="filter-content">
+          <SlotGameSection />
+        </div>
       
       )}
       {selectedTab === 5 && (
-        <HotelCasino />
+        <div className="filter-content">
+          <HotelCasino />
+        </div>
+    
       )}
       {selectedTab === 6 && (
         <EsportsSection/>

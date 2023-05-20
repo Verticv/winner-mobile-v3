@@ -25,11 +25,12 @@
         font-size: 4.125rem !important;
         font-family: 'SpoqaHanSansNeoBold';
         color: rgb(255, 245, 104);
+        margin-top: 0.063rem;
       }
     }
   }
   .winners-card {
-    background-image: url(../../../assets/images/mainPage/slot-game.png);
+    background-image: url(../../../assets/images/mainPage/jackpot/slot-game.png);
     background-repeat: round;
     padding: 1.188rem 0.938rem;
     .winners-card__title {
@@ -60,7 +61,7 @@
       width: 100%;
       height: 13.25rem;
       .card-bg {
-        background-image: url(../../../assets/images/mainPage/slot-game-card.png);
+        background-image: url(../../../assets/images/mainPage/jackpot/slot-game-card.png);
         background-repeat: round;
         height: 13.25rem;
         width: 100%;
@@ -96,6 +97,7 @@
     width: 12rem;
     height: 12rem;
     border-radius: 0.25rem;
+    flex-shrink: 0;
     img {
       width: 100%;
       height: 100%;
@@ -107,6 +109,8 @@
     padding: 1.313rem 0;
     margin-top: 0.063rem;
     letter-spacing: -.025em;
+    margin-left: 0.125rem;
+      
     .card__title {
       font-size: 2.438rem;
       font-family: 'SpoqaHanSansNeoBold';
@@ -114,6 +118,7 @@
       margin-top: 0.063rem;
       margin-bottom: 0.313rem;
       letter-spacing: -.025em;
+      max-width: 20rem;
     }
     .card__cont {
       font-size: 2.063rem;
@@ -121,13 +126,19 @@
       color: #dcd5d3;
       margin-bottom: 0.813rem;
       letter-spacing: -.025em;
+      max-width: 20rem;
     }
     .card__score {
       font-size: 2.625rem;
       font-family: 'SpoqaHanSansNeoBold';
       color: #f5e074;
       letter-spacing: -.025em;
-
+      max-width: 20rem;
     }
   }
+}
+.truncate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }

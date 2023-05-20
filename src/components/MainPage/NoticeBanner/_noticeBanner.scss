@@ -16,8 +16,11 @@
   height: 4.688rem;
   background-color: rgb(45, 40, 52);
   box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: relative;
   .notice-banner__icon{
     height: 2.813rem;
+    margin-top: 0.063rem;
     img {
       height: 100%;
     }

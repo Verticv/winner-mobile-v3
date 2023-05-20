@@ -1,5 +1,6 @@
 
-import TibetIcon from '../../../assets/images/mainPage/tibet-icon.png'
+//import TibetIcon from '../../../assets/images/mainPage/tibet-icon.png'
+import TibetIcon from '../../../assets/images/mainPage/sectionTitle/icon10.png'
 import SectionHeader from "../../Shared/SectionHeader";
 import Image1 from '../../../assets/images/mainPage/tibet-game1.png'
 import Image2 from '../../../assets/images/mainPage/tibet-game2.png'
@@ -42,7 +43,7 @@ const TibetSection = () => {
   };
 
   return (
-    <div className='filter-content'>
+    <div className='filter-content tibet-section'>
       <SectionHeader
         icon={TibetIcon}
         title={'티비벳'} />

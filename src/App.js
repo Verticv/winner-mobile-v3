@@ -3,7 +3,7 @@ import React,  { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
+  Routes
 } from 'react-router-dom';
 import './App.css';
 import ScrollToTop from './helpers/scrollToTop';
@@ -12,8 +12,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MainPage from './pages/MainPage';
 import { getCookie, setCookie } from './utils';
-
-// import AuthenticationPage from './old-components/AuthenticationPage';
+import MyPage from './pages/MyPage';
 import Authentication from './pages/Authentication';
 
 function App() {
@@ -33,10 +32,10 @@ function App() {
   }, [pathname]);
 
   useEffect(() => {
-    const body = document.querySelector('body');
+    //const body = document.querySelector('body');
     const app = document.querySelector('.app');
     const html = document.querySelector('html');
-    const bodyWidth = body.offsetWidth || app.offsetWidth;
+    const bodyWidth = app.offsetWidth;
     if (bodyWidth <= 1242) {
       const fontSize = (bodyWidth * 16) / 1242;
       html.style.fontSize = `${fontSize}px`;
@@ -52,7 +51,8 @@ function App() {
 
 
   return (
-    <div>
+    <>
+    <div className='app'>
       <Router>
         <ScrollToTop />
         <Routes>
@@ -60,31 +60,43 @@ function App() {
             path="/main"
             element={
               <>
-              <div className='app'>
                 <Header />
                 <MainPage />
-                </div>
-                 <Footer />
-                </>
+              </>
             }
           />
         </Routes>
-         <Routes>
+        <Routes>
           <Route
             path="/"
             element={
-               <div className='app' style={{height:'100%'}}>
+               <>
                 <Authentication
                   isAuthenticated={isAuthenticated}
                   setAuthenticated={setAuthenticated}
                 />
-              </div>
+              </>
             }
           ></Route>
         </Routes>
+        {/* my page */}
+        <Routes>
+          <Route
+            path="/mypage/*"
+            element={
+              <MyPage
+                isAuthenticated={isAuthenticated}
+                setAuthenticated={setAuthenticated}
+              />
+            }
+          />
+        </Routes>
       </Router>
     </div>
+      {pathname === '/main' && (<Footer />)}
+    </>
   );
 }
 
 export default App;
+

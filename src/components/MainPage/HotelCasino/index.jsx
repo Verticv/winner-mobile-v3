@@ -1,13 +1,19 @@
 import React from 'react'
-import HotelCasinoCard1 from '../../../assets/images/mainPage/hotel-casino-card.png'
-import HotelCasinoCard2 from '../../../assets/images/mainPage/hotel-casino-card2.png'
-import HotelCasinoCard3 from '../../../assets/images/mainPage/hotel-casino-card3.png'
-import HotelCasinoIcon from '../../../assets/images/mainPage/hotel_casino.png'
-import HotelCasinoIcon1 from '../../../assets/images/mainPage/hotel-casino-icon-1.png'
-import HotelCasinoIcon2 from '../../../assets/images/mainPage/hotel-casino-icon-2.png'
-import HotelCasinoIcon3 from '../../../assets/images/mainPage/hotel-casino-icon-3.png'
+import HotelCasinoCard1 from '../../../assets/images/mainPage/hotel-casino/hotel-casino-card.png'
+import HotelCasinoCard2 from '../../../assets/images/mainPage/hotel-casino/hotel-casino-card2.png'
+import HotelCasinoCard3 from '../../../assets/images/mainPage/hotel-casino/hotel-casino-card3.png'
+import HotelCasinoIcon from '../../../assets/images/mainPage/sectionTitle/icon5.png'
+
+import HotelCasinoIcon1 from '../../../assets/images/mainPage/hotel-casino/hotel-casino-icon-1.png'
+import HotelCasinoIcon2 from '../../../assets/images/mainPage/hotel-casino/hotel-casino-icon-2.png'
+import HotelCasinoIcon3 from '../../../assets/images/mainPage/hotel-casino/hotel-casino-icon-3.png'
+
+
 import SectionHeader from "../../Shared/SectionHeader";
-import '../HotelCasino/_hotelCasino.scss';
+import HotelCasinoCard from './HotelCasinoCard'
+
+
+import './_hotelCasino.scss';
 const HotelCasinoList = [
   {
     id: 0,
@@ -30,21 +36,6 @@ const HotelCasinoList = [
   },
 ]
 const HotelCasino = () => {
-  const Card = ({ id, title, sub_title= null, img, icon, onClick }) => {
-    return (
-      <div className='hotel-casino-card'>
-        <img src={img} alt="HotelCasinoCard" className='casino-img' />
-        <div className='logo-section'>
-          <img src={icon} alt="Logo1" />
-          <p>{title}
-            {sub_title && (<span className='sub-title'>{sub_title}</span>)}
-          </p>
-          
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div className='hotel-casino'>
       <SectionHeader
@@ -54,7 +45,7 @@ const HotelCasino = () => {
         {HotelCasinoList.map((card, index) => (
           <div className='hotel-section'
             key={card.id}>
-            <Card
+            <HotelCasinoCard
               key={card.id}
               title={card.title}
               sub_title={card.sub_title}

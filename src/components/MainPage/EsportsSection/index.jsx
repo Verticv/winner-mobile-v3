@@ -2,14 +2,14 @@
 
 
 
-import EsportsIcon from '../../../assets/images/mainPage/e-sports-icon.png'
+//import EsportsIcon from '../../../assets/images/mainPage/e-sports-icon.png'
 import SectionHeader from "../../Shared/SectionHeader";
-import Image1 from '../../../assets/images/mainPage/e-sports-game1.png'
-import Image2 from '../../../assets/images/mainPage/e-sports-game2.png'
-import Image3 from '../../../assets/images/mainPage/e-sports-game3.png'
-import Image4 from '../../../assets/images/mainPage/e-sports-game4.png'
+import Image1 from '../../../assets/images/mainPage/esports-games/e-sports-game1.png'
+import Image2 from '../../../assets/images/mainPage/esports-games/e-sports-game2.png'
+import Image3 from '../../../assets/images/mainPage/esports-games/e-sports-game3.png'
+import Image4 from '../../../assets/images/mainPage/esports-games/e-sports-game4.png'
 import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
-
+import EsportsIcon from '../../../assets/images/mainPage/sectionTitle/icon6.png'
 
 const EsportsSection = () => {
 
@@ -35,8 +35,6 @@ const EsportsSection = () => {
       img: Image4
     },
   ]
-
-
   const Card = ({ id, title, img, onClick }) => {
     return (
       <div className='shared-card'>
@@ -52,7 +50,7 @@ const EsportsSection = () => {
   };
 
   return (
-    <div className='filter-content'>
+    <div className='filter-content e-sport-section'>
       <SectionHeader
         icon={EsportsIcon}
         title={'e-스포츠'} />
