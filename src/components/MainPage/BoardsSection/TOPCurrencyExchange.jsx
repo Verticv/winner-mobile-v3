@@ -7,6 +7,7 @@ import BronzeCrown from '../../../assets/images/mainPage/crown3.png'
 const TOPCurrencyExchange = ({ onClick }) => {
   
 
+
   return (
     <div className='new-card'>
       <div className='new-card-header'>
@@ -16,7 +17,8 @@ const TOPCurrencyExchange = ({ onClick }) => {
         </div>
       </div>
       <div className='new-card-content'>
-        <div id="currency-exchange">
+        
+        <div id="currency-exchange" >
         {Array(20)
           .fill(undefined)
           .map((_, index) => (
@@ -32,12 +34,15 @@ const TOPCurrencyExchange = ({ onClick }) => {
                   >Happy***</p>
               </div>
               <div className='right-side'>
-                <p className={`${index === 0 || index === 2 || index === 2 ? 'text-red' : ''}`}>₩130,456,800</p>
+                <p className={`${index === 0 || index === 1 || index === 2 ? 'text-red' : ''}`}>₩130,456,800</p>
               </div>
             </div>
           ))
           }
+        
         </div>
+       
+       
       </div>
     </div>
   );

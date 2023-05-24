@@ -18,16 +18,16 @@
 .live-section {
   display: flex;
   justify-content: space-between;
-  gap: 1.75rem;
+  gap: 1.875rem;
   margin-bottom: 1.75rem ;
   flex-wrap: wrap;
   .live-casino-card {
-    width: 36.063rem;
+    width: 36rem;
     height: 24.563rem;
     border-radius: 1.125rem;
     box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.5);
     position: relative;
-    overflow: hidden;
+    //overflow: hidden;
     &:after {
       display: none;
       content: '';
@@ -47,14 +47,15 @@
       font-family: 'SpoqaHanSansNeo';
       position: absolute;
       top: 9.25rem;
-      right: 1.813rem;
+      right: 1.688rem;
       margin: 0;
       letter-spacing: -.025em;
       &.coming-soon {
         top: 10rem;
       }
     }
-    img {
+    
+    img.casino-img {
       width: 100%;
       height: 100%;
       border-radius: 1.125rem;
@@ -62,16 +63,17 @@
     button {
       position: absolute;
       bottom: 2.813rem;
-      right: 1.938rem;
+      right: 1.875rem;
       border-radius: 2rem;
       background: linear-gradient(to right, rgb(223, 82, 255), rgb(107, 34, 255));
       box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3); 
       color: #fff;
       font-size: 2rem;
       font-family: 'SpoqaHanSansNeoBold';
-      width: 13.688rem;
+      width: 13.438rem;
       height: 4.125rem;
       z-index: 5;
+      letter-spacing: -.025em;
       &.coming-soon-btn {
         background: linear-gradient(to right, rgb(126, 126, 126), rgb(75, 75, 75));
       }
@@ -80,12 +82,21 @@
       position: absolute;
       left: -0.938rem;
       bottom: 0.813rem;
-      width: 15.5rem;
+      width: 15.375rem;
       height: 5.375rem;
+      z-index: 6;
     }
   }
   .live-casino-card:hover::after {
     display: block;
     content: '';
   }
+}
+.liveC-section {
+  .section__Title {
+    margin-left: 2px;
+  }
+}
+.filter-content .liveC-section .section__Title  {
+  margin-left: 0 !important;
 }

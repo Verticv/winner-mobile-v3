@@ -1,7 +1,7 @@
 .slot-game-section {
   margin-top: 1rem; //3rem;
   .section__content {
-    padding: 0 1.813rem;
+    padding: 0 1.875rem;
     margin-top: 0;
   }
   .slot-game__slider {
@@ -11,7 +11,7 @@
   }
 }
 .section__content {
-  padding: 0 1.813rem;
+  padding: 0 1.875rem;
 }
 
 
@@ -22,15 +22,21 @@
   justify-content: center;
 }
 .ButtonBack {
-  left: -0.063rem;
+  left: -0.188rem;
   z-index: 10;
+  img {
+    margin-left: -0.125rem;
+  }
 }
 .ButtonNext {
-  right: 0;
+  right: -0.188rem;
+  img {
+    margin-left: 0.125rem;
+  }
 
 }
 .slot-game-section .carousel {
-  width: 76.063rem;
+  width: 75.75rem;
 }
 .ButtonBack,.ButtonNext {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px 0px;
@@ -38,14 +44,16 @@
   height: 14.25rem;
   position: absolute;
   top: 50%;
+ // margin-top: -0.125rem;
   transform: translateY(-50%);
   opacity: .8;
   background-color: #fff;
   border-radius: 1.125rem;
   box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.5);
   img {
-    width: 2.5rem;
-    height: 3.938rem
+    width: 2.313rem;
+    height: 3.938rem;
+    margin-top: 0.375rem;
   }
 }
 .slider__content {
@@ -55,7 +63,7 @@
 
 
 .card-container {
-  width: 36.063rem;
+  width: 36rem;
   display: flex;
   justify-content: center;
 }
@@ -63,13 +71,13 @@
   border-radius: 1.5rem;
   background-image: linear-gradient(to top ,rgb(204, 196, 255), rgb(255, 216, 245));
   box-shadow: 0px 0.938rem 0.625rem 0px rgba(0, 0, 0, 0.3), inset 0px 6px 0px 0px rgba(255, 255, 255, 0.6);
-  width: 36.063rem;
-  height: 27.625rem;
+  width: 36rem;
+  height: 27.563rem;
   padding: 1.688rem;
   position: relative;
   img.tag {
     position: absolute;
-    left: 2.813rem;
+    left: 2.75rem;
     top: 0;
     z-index: 7;
     width: 7.563rem;
@@ -78,7 +86,7 @@
   }
   p.tag-name {
     position: absolute;
-    left: 4.063rem;
+    left: 4rem;
     top: 1.5rem;
     z-index: 7;
     font-size: 2.625rem;
@@ -86,6 +94,7 @@
     color: #fff;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     margin: 0;
+    letter-spacing: -.025em;
   }
 }
 
@@ -139,8 +148,8 @@
 
 .card__desc {
   position: absolute;
-  left: 2.063rem;
-  bottom: 1.438rem;
+  left: 2rem;
+  bottom: 1.688rem;
   max-width: 100%;
   z-index: 8;
   p {
@@ -154,7 +163,7 @@
     white-space: nowrap;
     letter-spacing: -.025em;
     line-height: 1;
-    margin-bottom: 0.125rem;
+    margin-bottom: 0.063rem;
   }
   span {
     color: #e6e2e1;
@@ -213,6 +222,7 @@
         right: 2.5rem;
         top: 50%;
         transform: translateY(-50%);
+        width: 3rem;
       }
     }
   }
@@ -220,3 +230,5 @@
     //width: ;
   }
 }
+
+

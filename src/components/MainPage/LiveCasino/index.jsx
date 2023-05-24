@@ -96,7 +96,7 @@ const LiveCasino = () => {
   ]
 
   return (
-    <div className='live-casino'>
+    <div className='live-casino liveC-section'>
       <SectionHeader
         icon={LiveCasinoIcon}
         title={'라이브카지노'} />

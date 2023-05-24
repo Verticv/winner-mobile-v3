@@ -14,43 +14,41 @@ import Button6 from '../../assets/images/button-icon6.png'
 import TelegramIcon from '../../assets/images/footer/telegram-icon.png'
 import TalkIcon from '../../assets/images/footer/talk-icon.png'
 
-import ArrowUpWhite from "../../assets/myInfo/down-arrow.png";
-import ArrowDown from "../../assets/myInfo/down-arrow.png";
-import ArrowUp from "../../assets/myInfo/down-arrow.png";
+// import ArrowUpWhite from "../../assets/myInfo/down-arrow.png";
+// //import ArrowDown from "../../assets/myInfo/down-arrow.png";
+// import ArrowUp from "../../assets/myInfo/down-arrow.png";
 
+
+import ArrowDown from "../../assets/images/down-arrow.png";
 import DropDownControls from "../../components/Shared/DropDownControls";
 import CountryDropDown from '../../components/Shared/CountryDropDown';
-import Koreaflag from "../../assets/myInfo/korea_flag.png";
-import UKflag from '../../assets/second-flag.png'
+import KoreaFlag from "../../assets/images/korea-flag.png";
+//import UKflag from '../../assets/images/uk-flag.png'
 
-
+import { useNavigate } from "react-router-dom";
 const ProfileInfo = () => {
   const [isCountryOpen, setCountryOpen] = useState();
   const [country, setCountry] = useState("KR");
-  const DropdownArrow = ({ isOpen, isWhite }) => (
-    <>
-      {isWhite ? (
-        <img style={{ width: '3.375rem' }} className="object-contain" src={isOpen ? ArrowUpWhite : ArrowUpWhite} alt="arrow" />
-      ) : (
-        <img style={{ width: '3.375rem' }} className="object-contain" src={isOpen ? ArrowUp : ArrowDown} alt="arrow" />
-      )}
-    </>
-  )
+  const navigate = useNavigate();
+  // const DropdownArrow = ({ isOpen, isWhite }) => (
+  //   <>
+  //     {isWhite ? (
+  //       <img style={{ width: '3.375rem' }} className="object-contain" src={isOpen ? ArrowUpWhite : ArrowUpWhite} alt="arrow" />
+  //     ) : (
+  //       <img style={{ width: '3.375rem' }} className="object-contain" src={isOpen ? ArrowUp : ArrowDown} alt="arrow" />
+  //     )}
+  //   </>
+  // )
   const CountryButton = (
-    <div style={{
-      paddingBottom: '0.6875rem', paddingTop: '0.875rem', paddingLeft: '0.9rem',
-      width: '100%', height: '100%',
-      display: 'flex', alignItems: 'center', justifyContent: '',
-      background: 'linear-gradient(to top, #7f5f3f, #a67c52)',
-      paddingRight: '1.8rem',
-      borderRadius: '0.7rem',
-    }}>
-      <div style={{ marginRight: '1.7rem', marginTop: '0.1rem', marginLeft: '2rem' }}>
-        <img style={{ width: '7.0625rem' }} className="" src={country === "KR" ? Koreaflag : UKflag} alt="flag"></img>
+     <>
+      <div className='country-flag' >
+        <img className="" src={KoreaFlag } alt="flag"></img>
       </div>
-      <label style={{ marginRight: '2.45rem', fontSize: '3rem', marginTop: '0.225rem', fontFamily: 'SpoqaHanSansNeoBold', color: '#ffdfbd', textShadow: '#000000 0rem 0rem 1rem' }}>{country}</label>
-      <DropdownArrow isWhite isOpen={isCountryOpen} />
-    </div>
+      <div className="country-label">
+        <p>{country}</p>
+        <img src={ArrowDown} alt="arrow" />
+      </div>
+    </> 
   )
 
 
@@ -70,14 +68,14 @@ const ProfileInfo = () => {
                 <img src={DollarIcon} alt="Dollar" />
                 <div>
                   <p> 100,000,000</p>
-                  <span> 원</span>
+                  <span className='pr-4px'> 원</span>
                 </div>
               </div>
               <div className='profile-box'>
                 <img src={PIcon} alt="Dollar" />
                 <div>
                   <p> 12,500,000</p>
-                  <span> P</span>
+                  <span className='pr-px'> P</span>
                 </div>
               </div>
               </div>
@@ -97,8 +95,14 @@ const ProfileInfo = () => {
             </div>
             <div className='profile-button'>
               <button>
-                <div className='button-img' ><img src={Button3} alt="ProfileImg" /></div>
+                <div className='button-img' >
+                  <img src={Button3} alt="ProfileImg" />
+                  <span className="badge badge--red badge--l">
+                    <span>5</span>
+                  </span>
+                </div>
                 <p>쪽지</p>
+                
               </button>
             </div>
             <div className='profile-button'>
@@ -110,25 +114,24 @@ const ProfileInfo = () => {
           </div>
           <div className='profile-buttons'>
             <div className='profile-button2'>
-              <button>
+              <button className='audience-btn'>
                 <div className='button-img2' ><img src={Button5} alt="Button1" /></div>
                 <p>출석부</p>
               </button>
             </div>
             <div className='profile-button2'>
-              <button>
+              <button className='logout-btn'
+                onClick={() => navigate("/")}>
                 <div className='button-img2' ><img src={Button6} alt="Button1" /></div>
                 <p>로그아웃</p>
               </button>
             </div>
-            <div className='profile-button2'>
-              <div className='dropdown-mypage' onClick={() => setCountryOpen((prev => !prev))}>
+            <div className='profile-button2' onClick={() => setCountryOpen((prev => !prev))}>
                 <DropDownControls buttonChild={CountryButton} isDropdownOpen={isCountryOpen} setDropdownOpen={setCountryOpen} >
-                  <div style={{ right: "0rem", top: '11rem', position: 'absolute', zIndex: '40' }}>
+                  <div style={{ right: "0rem", position: 'absolute', zIndex: '40', width: '100%' }}>
                     <CountryDropDown setCountry={setCountry} country={country} isBig='true' />
                   </div>
                 </DropDownControls>
-              </div>
               {/* <button>
                 <div className='button-img2' ><img src={Button5} alt="Button1" /></div>
                 <p>충전</p>

@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     z-index: 11;
     position: relative;
+    border-bottom: 1px solid #7f308b;
     .header__image {
         height: 4.688rem;
         img {
@@ -42,7 +43,7 @@
                 .badge {
                     position: absolute;
                     top: -0.813rem;
-                    right: -0.875rem;
+                    right: -0.938rem;
                 }
             }
         }
@@ -52,8 +53,8 @@
 
 .badge {
     display: flex;
-    min-width: 3.375rem;
-    height: 3.375rem;
+    min-width: 3.438rem;
+    height: 3.438rem;
     border-radius: 9999px;
     padding: 0rem 0.7rem;
     color: #fff;

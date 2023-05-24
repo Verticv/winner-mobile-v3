@@ -18,23 +18,23 @@ const AnnouncementCard = ({ onClick }) => {
       <div className='new-card-content'>
         <div className='board-item'>
           <img src={TagIcon1} alt="right" />
-          <p>농구[쿼터] / 배구[세트] 스페셜 규정 스페셜 규정 스페셜 ...</p>
+          <p>농구[쿼터] / 배구[세트] 스페셜 규정 스페셜 규정 스페셜...</p>
         </div>
         <div className='board-item'>
           <img src={TagIcon1} alt="right" />
-          <p>농구[쿼터] / 배구[세트] 스페셜 규정 스페셜 규정 스페셜 ...</p>
+          <p>농구[쿼터] / 배구[세트] 스페셜 규정 스페셜 규정 스페셜...</p>
         </div>
         <div className='board-item'>
           <img src={TagIcon1} alt="right" />
-          <p>농구[쿼터] / 배구[세트] 스페셜 규정 스페셜 규정 스페셜 ...</p>
+          <p>농구[쿼터] / 배구[세트] 스페셜 규정 스페셜 규정 스페셜...</p>
         </div>
         <div className='board-item'>
           <img src={TagIcon1} alt="right" />
-          <p>농구[쿼터] / 배구[세트] 스페셜 규정 스페셜 규정 스페셜 ...</p>
+          <p>농구[쿼터] / 배구[세트] 스페셜 규정 스페셜 규정 스페셜...</p>
         </div>
         <div className='board-item'>
           <img src={TagIcon1} alt="right" />
-          <p>농구[쿼터] / 배구[세트] 스페셜 규정 스페셜 규정 스페셜 ...</p>
+          <p>농구[쿼터] / 배구[세트] 스페셜 규정 스페셜 규정 스페셜...</p>
         </div>
       </div>
     </div>

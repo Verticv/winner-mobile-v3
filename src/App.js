@@ -62,6 +62,7 @@ function App() {
               <>
                 <Header />
                 <MainPage />
+                <Footer />
               </>
             }
           />
@@ -93,7 +94,6 @@ function App() {
         </Routes>
       </Router>
     </div>
-      {pathname === '/main' && (<Footer />)}
     </>
   );
 }

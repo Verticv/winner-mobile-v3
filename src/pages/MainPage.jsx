@@ -23,9 +23,7 @@ function MainPage() {
   const [selectedTab, setSelectedTab] = useState(0)
 
   useEffect(() => {
-    const jackpot = document.querySelector('.winner-section');
-    const JackpotOffset = jackpot.offsetTop;
-    window.scrollTo(0, JackpotOffset)
+    window.scrollTo(0, 0)
   }, [selectedTab])
   
   return (
@@ -81,7 +79,6 @@ function MainPage() {
       {selectedTab === 10 && (
         <TibetSection/>
       )}
-    
       <FixedMenu
         selectedTab={selectedTab}
         setSelectedTab={setSelectedTab}

@@ -19,6 +19,7 @@
     margin: 0px 2.55rem;
     border-radius: 2.25rem;
     margin-top: 5.438rem;
+    padding-bottom: 2.188rem;
     .logo {
       display: flex;
       justify-content: center;
@@ -39,14 +40,15 @@
       align-items: center;
       justify-content: center;
       margin-right: 0.339rem;
-      margin-bottom: 2.813rem;
+      margin-bottom: 2.875rem;
       position: relative;
       .input-icon {
         position: absolute;
         left: 2.75rem;
         top: 50%;
         transform: translateY(-50%);
-        width: 3.375rem;       
+        width: 3.375rem;     
+        margin-top: -0.25rem;  
       }
       input {
         text-align: center;
@@ -57,9 +59,26 @@
         height: 100%;
         outline: none;
         padding: 0.25rem 0 0 0;
-        margin-top: 0.188rem;
+       // margin-top: 0.188rem;
         font-family: 'SpoqaHanSansNeoMedium';
-        letter-spacing: -0.025rem;
+        line-height: 1;
+      }
+      &.username {
+        input {
+          margin-left: 0.25rem;
+        }
+      }
+      &.password {
+        margin-bottom: 2.813rem;
+        input {
+          margin-right: 0.063rem;
+          
+        }
+        .input-icon {
+          left: 3.063rem;
+          width: 3rem;
+          margin-top: -0.188rem;
+        }
       }
     }
     .actions {

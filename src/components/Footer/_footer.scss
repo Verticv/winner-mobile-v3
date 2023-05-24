@@ -2,13 +2,27 @@
 
   background-color: #19162e;
   padding-bottom: 15.375rem;
+  .carousel__inner-slide {
+    display: flex;
+    justify-content: center;
+    margin-left: -0.625rem;
+  }
+  .ButtonBack {
+    left: 0.313rem;
+    top: 7.875rem!important;
+  }
+  .ButtonNext {
+    right: 0.188rem;
+    top: 7.875rem !important;
+  }
   .footer {
     .slider__container {
       margin-top: 0;
     }
     .brands {
       background-color: #19162e;
-      height: 23.438rem;
+      height: 23.563rem;
+      padding-top: 3.813rem;
       .brands-cont {
         max-width: 1242px;
         margin: auto;
@@ -20,7 +34,7 @@
       }
       .carousel {
         display: flex;
-          align-items: center;
+        //align-items: center;
       }
     }
         .ButtonBack,

@@ -1,23 +1,34 @@
 import React, { useState } from 'react'
 import '../FixedMenu/_fixedMenu.scss';
 import MenuIcon from '../../assets/images/mainPage/menu-icon.png'
-import MenuIcon_0 from '../../assets/images/mainPage/m-icon0.png'
+import MenuIcon0 from '../../assets/images/bottom-nav/menu-icon.png'
+
+import MenuIcon_0 from '../../assets/images/bottom-nav/menu-icon-on.png'
 
 
-import Logo from '../../assets/images/mainPage/light-log.png'
-import Close from '../../assets/images/mainPage/close-icon.png'
 
-import Menu1 from '../../assets/images/mainPage/bottom-nav/menu1.png'
-import Menu2 from '../../assets/images/mainPage/bottom-nav/menu2.png'
-import Menu3 from '../../assets/images/mainPage/bottom-nav/menu3.png'
-import Menu4 from '../../assets/images/mainPage/bottom-nav/menu4.png'
-import Menu5 from '../../assets/images/mainPage/bottom-nav/menu5.png'
-import Menu6 from '../../assets/images/mainPage/bottom-nav/menu6.png'
-import Menu7 from '../../assets/images/mainPage/bottom-nav/menu7.png'
-import Menu8 from '../../assets/images/mainPage/bottom-nav/menu8.png'
-import Menu9 from '../../assets/images/mainPage/bottom-nav/menu9.png'
-import Menu10 from '../../assets/images/mainPage/bottom-nav/menu10.png'
-import Menu11 from '../../assets/images/mainPage/bottom-nav/menu11.png'
+//import Menu0 from '../../assets/images/mainPage/bottom-nav/menu-icon.png'
+import Menu1 from '../../assets/images/bottom-nav/menu1.png'
+import Menu2 from '../../assets/images/bottom-nav/menu2.png'
+import Menu3 from '../../assets/images/bottom-nav/menu3.png'
+import Menu4 from '../../assets/images/bottom-nav/menu4.png'
+import Menu5 from '../../assets/images/bottom-nav/menu5.png'
+import Menu6 from '../../assets/images/bottom-nav/menu6.png'
+import Menu7 from '../../assets/images/bottom-nav/menu7.png'
+import Menu8 from '../../assets/images/bottom-nav/menu8.png'
+import Menu9 from '../../assets/images/bottom-nav/menu9.png'
+import Menu10 from '../../assets/images/bottom-nav/menu10.png'
+import MenuOn1 from '../../assets/images/bottom-nav/menu-on1.png'
+import MenuOn2 from '../../assets/images/bottom-nav/menu-on2.png'
+import MenuOn3 from '../../assets/images/bottom-nav/menu-on3.png'
+import MenuOn4 from '../../assets/images/bottom-nav/menu-on4.png'
+import MenuOn5 from '../../assets/images/bottom-nav/menu-on5.png'
+import MenuOn6 from '../../assets/images/bottom-nav/menu-on6.png'
+import MenuOn7 from '../../assets/images/bottom-nav/menu-on7.png'
+import MenuOn8 from '../../assets/images/bottom-nav/menu-on8.png'
+import MenuOn9 from '../../assets/images/bottom-nav/menu-on9.png'
+import MenuOn10 from '../../assets/images/bottom-nav/menu-on10.png'
+
 
 import MenuIcon_1 from '../../assets/images/mainPage/menu1.png'
 import MenuIcon_2 from '../../assets/images/mainPage/menu2.png'
@@ -31,7 +42,7 @@ import MenuIcon_9 from '../../assets/images/mainPage/menu9.png'
 import MenuIcon_10 from '../../assets/images/mainPage/menu10.png'
 
 import horizontalsScroll from '../../utils/horizontalsScroll';
-
+import MenuList from '../Shared/MenuList'
 const FixedMenu = ({
   setSelectedTab,
   selectedTab
@@ -44,74 +55,91 @@ const FixedMenu = ({
   const Items = [
     {
       id: 0,
-      icon: Menu1,
+      icon: MenuIcon0,
       icon2: MenuIcon_0,
+      OnIcon: MenuIcon_0,
       title: '홈'
     },
     {
       id: 1,
-      icon: Menu2,
+      icon: Menu1,
       icon2: MenuIcon_1,
+      OnIcon: MenuOn1,
       title: '라이브카지노'
     },
     {
       id: 2,
-      icon: Menu3,
+      icon: Menu2,
       icon2: MenuIcon_2,
+      OnIcon: MenuOn2,
       title: '스포츠'
     },
 
     {
       id: 3,
-      icon: Menu4,
+      icon: Menu3,
       icon2: MenuIcon_3,
+      OnIcon: MenuOn3,
       title: '실시간스포츠'
     },
     {
       id: 4,
-      icon: Menu5,
+      icon: Menu4,
       icon2: MenuIcon_4,
+      OnIcon: MenuOn4,
       title: '슬롯게임'
     },
     {
       id: 5,
-      icon: Menu6,
+      icon: Menu5,
       icon2: MenuIcon_5,
+      OnIcon: MenuOn5,
       title: '호텔카지노'
     },
     {
       id: 6,
-      icon: Menu7,
+      icon: Menu6,
       icon2: MenuIcon_6,
+      OnIcon: MenuOn6,
       title: 'e-스포츠'
     },
     {
       id: 7,
-      icon: Menu8,
+      icon: Menu7,
       icon2: MenuIcon_7,
+      OnIcon: MenuOn7,
       title: '미니게임'
     },
     {
       id: 8,
-      icon: Menu9,
+      icon: Menu8,
       icon2: MenuIcon_8,
+      OnIcon: MenuOn8,
       title: '키론가상게임'
     },
 
     {
       id: 9,
-      icon: Menu10,
+      icon: Menu9,
       icon2: MenuIcon_9,
+      OnIcon: MenuOn9,
       title: '피싱게임'
     },
     {
       id: 10,
-      icon: Menu11,
+      icon: Menu10,
       icon2: MenuIcon_10,
+      OnIcon: MenuOn10,
       title: '티비벳'
     }
   ]
+  const subItems = Items.filter(item => item.id !== 0)
   
+  const setActiveTab = ({ index, item }) => {
+    horizontalsScroll(Items, 't-sub', 'scroll-wrapper', index)
+    setSelectedTab(item.id)
+  }
+
   return (
     <>
       <div className='fixed-nav'>
@@ -127,7 +155,8 @@ const FixedMenu = ({
                   horizontalsScroll(Items, 't-sub', 'scroll-wrapper', index)
                   setSelectedTab(item.id)
                 }}>
-                <img src={item.icon} alt="right" className="ml-10px object-none" />
+                { selectedTab !== item.id && (<img src={item.icon} alt="right" className="ml-10px object-none" />)}
+                { selectedTab === item.id && (<img src={item.OnIcon} alt="right" className="ml-10px object-none" />)}
                 <p>
                   {item.title}
                 </p>
@@ -140,45 +169,19 @@ const FixedMenu = ({
           <button onClick={() => setOpen(true)}>
             <img src={MenuIcon} alt="right" className="ml-10px object-none" />
             <p>
-              더보기 {isOpen}
+              더보기
             </p>
           </button>
         </div>
        
       </div>
       {isOpen === true && (
-        <div className='menu-modal'>
-          <div className='menu-modal-header'>
-            <img src={Logo} alt="right" className="ml-10px object-none" />
-            <img src={Close} alt="right" className="close" onClick={() => setOpen(false)} />
-          </div>
-          <div className='menu-modal-body'>
-            <div className='menu-list'>
-
-              {
-                Items.map((item, index) => (
-                  <button
-                    className={`menu-item ${selectedTab===item.id?'active':''}`}
-                    onClick={() => {
-                      setOpen(false)
-                      horizontalsScroll(Items, 't-sub', 'scroll-wrapper', index)
-                      setSelectedTab(item.id)
-                    }
-                    }>
-                    <div className='menu-item1'>
-                      <div className='menu-item-logo'>
-                        <img src={item.icon2} alt="right" className="ml-10px object-none" />
-                      </div>
-                      <div className='menu-item-title'>
-                        {item.title}
-                      </div>
-                    </div>
-                  </button>
-                ))
-              }
-            </div>
-          </div>
-        </div>
+        <MenuList
+          key={0}
+          items={subItems}
+          selectedTab={selectedTab}
+          setOpen={setOpen}
+          setSelectedTab={setActiveTab} />
       )}
     </>
   )

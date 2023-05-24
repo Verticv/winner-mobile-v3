@@ -16,13 +16,13 @@ function Authentication({ isAuthenticated, setAuthenticated }) {
       <div className='login-form'>
         <img src={Logo} alt="right" className='logo' />
         <div className='fields'>
-          <div className='input-field'>
+          <div className='input-field username'>
             <img src={Username} alt="" className='input-icon'/>
             <input
               placeholder={"아이디"}
             />
           </div>
-          <div className='input-field'>
+          <div className='input-field password'>
             <img src={password} alt="" className='input-icon password-icon' />
             <input
               placeholder={"비밀번호"}
