@@ -148,7 +148,7 @@
      margin-left: 1rem;
 
      .count {
-       width: 66px;
+       width: 4.125rem;
        //height: 25px;
        display: flex;
        align-items: center;
@@ -188,62 +188,28 @@
      margin-right: .75rem;
    }
  }
- #currency-exchange {
-  -webkit-animation: scrollUp 15s linear infinite;
-   animation: scrollUp 15s linear infinite; 
-   -webkit-animation-timing-function: linear; 
-   animation-timing-function: linear; 
+ .currency-exchange-wrapper {
+  -webkit-animation: slide 18s linear infinite;
+  animation: slide 18s linear infinite; 
+  -webkit-animation-timing-function: linear; 
+  animation-timing-function: linear; 
   position: relative;
-      // transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-      //   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-      //   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-      //   transition-timing-function: cubic-bezier(.4,0,.2,1); 
-      //    transition-duration: .15s;
+     
  }
- #currency-exchange:hover {
+ .currency-exchange-wrapper.stop-animation {
    -webkit-animation-play-state: paused;
  }
 
 @keyframes slide {
   0% {
-      margin-top: 0px;
-    }
-  
-    100% {
-      margin-top: -500px;
-    }
-
-  // 0% {
-  //   -webkit-transform: translateZ(0);
-  //   transform: translateZ(0);
-  // }
-
-  // 100% {
-  //   -webkit-transform: translate3d(0, -520px, 0);
-  //   transform: translate3d(0, -520px, 0);
-  // }
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0,-100%,0);
+  }
 }
 
- @keyframes show {
-   0% {
-     transform: translateY(0);
-   }
 
-   /* 50% is unnecessay */
-   /* 50% {transform: translateY(50%);} */
-
-   /* to animate to upward use -100% */
-   100% {
-     transform: translateY(-100%);
-   }
- }
-
-.move-vertical {
-  animation-name: move-vertical;
-  animation-direction: reverse;
-  animation-duration: 15s;
-    animation-iteration-count: infinite;
-    /* animation-iteration-count: 3; */
-    animation-timing-function: linear;
-}
 

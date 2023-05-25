@@ -45,7 +45,7 @@ import horizontalsScroll from '../../utils/horizontalsScroll';
 import MenuList from '../Shared/MenuList'
 const FixedMenu = ({
   setSelectedTab,
-  selectedTab
+  selectedTab,
 }) => {
 
   const [isOpen, setOpen] = useState(false)
@@ -58,21 +58,24 @@ const FixedMenu = ({
       icon: MenuIcon0,
       icon2: MenuIcon_0,
       OnIcon: MenuIcon_0,
-      title: '홈'
+      title: '홈',
+      section: null
     },
     {
       id: 1,
       icon: Menu1,
       icon2: MenuIcon_1,
       OnIcon: MenuOn1,
-      title: '라이브카지노'
+      title: '라이브카지노',
+      section: 'live-casino'
     },
     {
       id: 2,
       icon: Menu2,
       icon2: MenuIcon_2,
       OnIcon: MenuOn2,
-      title: '스포츠'
+      title: '스포츠',
+      section: 'sports'
     },
 
     {
@@ -80,42 +83,48 @@ const FixedMenu = ({
       icon: Menu3,
       icon2: MenuIcon_3,
       OnIcon: MenuOn3,
-      title: '실시간스포츠'
+      title: '실시간스포츠',
+      section: 'live-sports'
     },
     {
       id: 4,
       icon: Menu4,
       icon2: MenuIcon_4,
       OnIcon: MenuOn4,
-      title: '슬롯게임'
+      title: '슬롯게임',
+      section: 'slot-game'
     },
     {
       id: 5,
       icon: Menu5,
       icon2: MenuIcon_5,
       OnIcon: MenuOn5,
-      title: '호텔카지노'
+      title: '호텔카지노',
+      section: 'hotel-casino'
     },
     {
       id: 6,
       icon: Menu6,
       icon2: MenuIcon_6,
       OnIcon: MenuOn6,
-      title: 'e-스포츠'
+      title: 'e-스포츠',
+      section: 'e-sports'
     },
     {
       id: 7,
       icon: Menu7,
       icon2: MenuIcon_7,
       OnIcon: MenuOn7,
-      title: '미니게임'
+      title: '미니게임',
+      section: 'mini-game'
     },
     {
       id: 8,
       icon: Menu8,
       icon2: MenuIcon_8,
       OnIcon: MenuOn8,
-      title: '키론가상게임'
+      title: '키론가상게임',
+      section: 'virtual-game'
     },
 
     {
@@ -123,20 +132,23 @@ const FixedMenu = ({
       icon: Menu9,
       icon2: MenuIcon_9,
       OnIcon: MenuOn9,
-      title: '피싱게임'
+      title: '피싱게임',
+      section: 'fishing-game'
     },
     {
       id: 10,
       icon: Menu10,
       icon2: MenuIcon_10,
       OnIcon: MenuOn10,
-      title: '티비벳'
+      title: '티비벳',
+      section: 'tibet'
     }
   ]
   const subItems = Items.filter(item => item.id !== 0)
   
   const setActiveTab = ({ index, item }) => {
     horizontalsScroll(Items, 't-sub', 'scroll-wrapper', index)
+    //setSelectedSection(item.section)
     setSelectedTab(item.id)
   }
 
@@ -152,8 +164,7 @@ const FixedMenu = ({
                 key={item.id}
                 id={`t-sub${index}`}
                 onPointerUp={() => {
-                  horizontalsScroll(Items, 't-sub', 'scroll-wrapper', index)
-                  setSelectedTab(item.id)
+                  setActiveTab({index,item})
                 }}>
                 { selectedTab !== item.id && (<img src={item.icon} alt="right" className="ml-10px object-none" />)}
                 { selectedTab === item.id && (<img src={item.OnIcon} alt="right" className="ml-10px object-none" />)}

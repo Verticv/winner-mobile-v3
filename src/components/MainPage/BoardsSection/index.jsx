@@ -15,7 +15,7 @@ import TOPCurrencyExchange from './TOPCurrencyExchange'
 
 import './_boards.scss'
 const BoardsSection = () => {
-  const [selectedTab, setSelectedTab] = useState(0);
+  const [selectedTab, setSelectedTab] = useState(2);
   const [currentSlide, setCurrentSlide] = useState(0);
 
 

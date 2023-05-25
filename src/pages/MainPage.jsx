@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import NoticeBanner from "../components/MainPage/NoticeBanner";
 import Slider from "../components/MainPage/Slider";
 import Jackpot from "../components/MainPage/Jackpot";
@@ -21,10 +21,18 @@ import FixedMenu from '../components/FixedMenu';
 
 function MainPage() {
   const [selectedTab, setSelectedTab] = useState(0)
+  //const [selectedSection, setSelectedSection] = useState(null)
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [selectedTab])
+  // useEffect(() => {
+  //   if (selectedSection) {
+  //     const section = document.getElementById(selectedSection);
+  //     const top = section?.offsetTop
+  //     window.scrollTo({ top: top, behavior: 'smooth' });
+  //   } else {
+  //     window.scrollTo(0,0);
+  //   }
+   
+  // }, [selectedTab])
   
   return (
     <>
@@ -42,42 +50,56 @@ function MainPage() {
         </>
       )}
       {selectedTab === 1 && (
-        <div className="filter-content">
+        <div id="live-casino" className="filter-content">
           <LiveCasino />
         </div>
       )}
       {selectedTab === 2 && (
-        <SportsSection/>
+        <div id="sports">
+          <SportsSection />
+        </div>
       )}
       {selectedTab === 3 && (
-        <LiveSportsSection />
+        <div id="live-sports">
+          <LiveSportsSection />
+        </div>
       )}
       {selectedTab === 4 && (
-        <div className="filter-content">
+        <div id="slot-game"  className="filter-content">
           <SlotGameSection />
         </div>
       
       )}
       {selectedTab === 5 && (
-        <div className="filter-content">
+        <div id="hotel-casino"  className="filter-content">
           <HotelCasino />
         </div>
     
       )}
       {selectedTab === 6 && (
-        <EsportsSection/>
+        <div id="e-sports">
+          <EsportsSection />
+        </div>
       )}
       {selectedTab === 7 && (
-        <MiniGameSection/>
+        <div id="mini-game">
+          <MiniGameSection />
+        </div >
       )}
       {selectedTab === 8 && (
-        <VirtualGameSection/>
+        <div id="virtual-game">
+          <VirtualGameSection />
+        </div >
       )}
       {selectedTab === 9 && (
-        <FishingGameSection />
+        <div id="fishing-game">
+          <FishingGameSection />
+        </div>
       )}
       {selectedTab === 10 && (
-        <TibetSection/>
+        <div id="tibet">
+          <TibetSection />
+        </div>
       )}
       <FixedMenu
         selectedTab={selectedTab}
