@@ -1,7 +1,7 @@
 import { isIOS } from 'react-device-detect';
 
 export default function horizontalsScroll(array, tapIdPrefix, scrollWrapperId, buttonIndex, actualElementWidth, additionLeftScroll = 0) {
-  const currentPath = window.location.pathname;
+  // const currentPath = window.location.pathname;
   const activeTapId = buttonIndex === 0 ? 0 : buttonIndex || array[buttonIndex]?.id
   const scrollWrapper = window.document.querySelector(`#${scrollWrapperId}`);
 
