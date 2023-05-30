@@ -100,7 +100,7 @@ const TOPCurrencyExchange = ({ onClick }) => {
     })
   }
   return (
-    <div className='new-card'>
+    <div className='board new-card'>
       <div className='new-card-header'>
         <div className='card-header-title'>
           <img src={ExchangeIcon} alt="Exchange" />

@@ -1,5 +1,5 @@
 import React from "react";
-import jackpot from '../../../assets/images/mainPage/jackpot/jackpot.png';
+import jackpot from '../../../assets/images/mainPage/jackpot/jackpot1.png';
 import './_jackpot.scss';
 import LeftBorder from '../../../assets/images/mainPage/jackpot/left-border.png';
 import RightBorder from '../../../assets/images/mainPage/jackpot/right-border.png';
@@ -35,6 +35,7 @@ function Jackpot() {
               naturalSlideWidth={551}
               naturalSlideHeight={210}
               isPlaying
+              dragEnabled={false}
             >
               <Slider classNameTrayWrap="carousel_tray_wrapper_horizontal" className="card_animation">
                 {Array(20)
@@ -56,3 +57,5 @@ function Jackpot() {
 }
 
 export default Jackpot;
+
+

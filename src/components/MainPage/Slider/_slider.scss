@@ -1,12 +1,12 @@
 .slider-container {
-  height: 27.063rem;
+  height: 27.125rem;
   position: relative;
   overflow: hidden;
   margin-bottom: 2rem;
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.4);
   .slide {
     width: 77.625rem;
-    height: 27.063rem;
+    height: 27.125rem;
     position: relative;
     object-fit: cover;
     background-repeat: no-repeat;
@@ -37,4 +37,3 @@
     
    
 }
-

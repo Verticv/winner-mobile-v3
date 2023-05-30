@@ -32,7 +32,6 @@ function App() {
   }, [pathname]);
 
   useEffect(() => {
-    //const body = document.querySelector('body');
     const app = document.querySelector('.app');
     const html = document.querySelector('html');
     const bodyWidth = app.offsetWidth;

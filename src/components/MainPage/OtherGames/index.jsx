@@ -61,10 +61,10 @@ const OtherGames = () => {
     return (
       <div className='other-game-card'>
         <img src={img} alt="OtherGame1" className='other-img' />
-        <div className='logo-section'>
+        {/* <div className='logo-section'>
           <img src={icon} alt="Logo1" className='other-icon'/>
           <img src={logo} alt="Logo1" className='other-icon1' />
-        </div>
+        </div> */}
         <div className='desc'>
           <p>{title}</p>
         </div>

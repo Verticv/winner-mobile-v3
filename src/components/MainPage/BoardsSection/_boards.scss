@@ -17,6 +17,21 @@
    .ButtonNext {
      right: 0.75rem
    }
+     .tab-container {
+       button {
+         &:nth-of-type(2) {
+           p {
+             margin-left: 0.063rem;
+           }
+         }
+  
+         &:nth-of-type(3) {
+           p {
+             margin-left: 0.188rem;
+           }
+         }
+       }
+     }
  }
 
  .new-card {
@@ -38,6 +53,7 @@
    justify-content: space-between;
    align-items: center;
    padding: 0 2.25rem 0 2.063rem;
+  letter-spacing: -.025em;
  }
 
  .card-header-title {
@@ -213,3 +229,7 @@
 
 
 
+
+.ani-section .section__content {
+  padding: 0 1.813rem 0 1.875rem;
+}

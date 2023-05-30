@@ -24,7 +24,7 @@ const TabsComponent = ({
               key={index}
               className={`${selectedTab === obj.id ? 'active' : ''}`}
               onClick={() => handleTabClick(obj.id)} >
-              {obj.title}
+            <p>{obj.title}</p>
             </button>
           )
         })

@@ -19,20 +19,23 @@ const HotelCasinoList = [
     id: 0,
     title: '두윈카지노',
     icon: HotelCasinoIcon1,
-    img: HotelCasinoCard1
+    img: HotelCasinoCard1,
+    class: 'hotel-casino1'
   },
   {
     id: 1,
     title: '보타카지노',
     icon: HotelCasinoIcon2,
-    img: HotelCasinoCard2
+    img: HotelCasinoCard2,
+    class: 'hotel-casino2'
   },
   {
     id: 2,
     title: '호텔카지노',
     sub_title: '(준비중)',
     icon: HotelCasinoIcon3,
-    img: HotelCasinoCard3
+    img: HotelCasinoCard3,
+    class: 'hotel-casino3'
   },
 ]
 const HotelCasino = () => {
@@ -50,7 +53,8 @@ const HotelCasino = () => {
               title={card.title}
               sub_title={card.sub_title}
               img={card.img}
-              icon={card.icon}/>
+              icon={card.icon}
+              logoClass={card.class} />
           </div>
         ))}
       </div>

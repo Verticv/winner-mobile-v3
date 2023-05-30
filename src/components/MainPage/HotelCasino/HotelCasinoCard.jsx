@@ -1,9 +1,9 @@
 
 import CardMenu from '../../../assets/images/mainPage/hotel-casino/card-menu.png'
 
-const HotelCasinoCard = ({ id, title, sub_title = null, img, icon, onClick }) => {
+const HotelCasinoCard = ({ id, title, sub_title = null, img, icon, onClick, logoClass }) => {
   return (
-    <div className='hotel-casino-card'>
+    <div className={`hotel-casino-card ${logoClass}`} >
       <img src={img} alt="HotelCasinoCard" className='casino-img' />
       <div className='logo-section'>
         <img src={icon} alt="Logo1" />

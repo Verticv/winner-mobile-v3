@@ -10,19 +10,11 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(to right,rgb(182, 68, 196), rgb(53, 24, 148));  
-  /* background: white;
-  background-repeat: no-repeat;
-  max-width: 1242px;
-  min-height: 100vh;
-  margin: auto; */
+  background: linear-gradient(to right,rgb(182, 68, 196), rgb(53, 24, 148));   
 }
 
-.App {
-  height: 373rem;
-}
+
 .app {
-  
   max-width: 1242px;
   min-height: 100vh;
   margin: auto; 

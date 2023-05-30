@@ -12,9 +12,9 @@ const Collapse = ({title}) => {
   return (
     <button className={`collapse ${isExpanded?'expanded':''}`} onClick={toggleCollapse}>
       <div className="collapse__header">
-        <div className="collapse__title">
+        <p className="collapse__title">
           {title}
-        </div>
+        </p>
         <div className="collapse__icon">
           {!isExpanded && (<img src={Plus} alt="right" />)}
           {isExpanded && (<img src={Minus} alt="right" />)}

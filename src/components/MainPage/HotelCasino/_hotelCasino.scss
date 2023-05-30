@@ -1,6 +1,6 @@
 .hotel-casino-card {
-  margin-bottom: 1.75rem;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.875rem;
+  box-shadow: 0 0.938rem 1.25rem 0 rgba(0, 0, 0, 0.5);
   border-radius: 1.5rem;
   max-width: 100%;
   position: relative;
@@ -11,15 +11,12 @@
   }
   .logo-section {
     position: absolute;
-    right: 0;
+    right: 13.5rem;
     top: 0;
     height: 100%;
-    width: 38.688rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1.125rem;
     z-index: 7;
     .sub-title {
       text-align: center;
@@ -29,12 +26,14 @@
     img {
       max-width: 13.25rem;
       height: auto;
+      margin-top: 0.188rem;
     }
     p {
       margin: 0;
       color: #eeeeee;
       font-family: 'SpoqaHanSansNeo';
       font-size: 2.438rem;
+      letter-spacing: -0.014em;
     }
   } 
   .card-hover {
@@ -77,18 +76,49 @@
         color: #fff;
         font-family: 'SpoqaHanSansNeoBold';
         font-size: 2.25rem;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.5);
       }
 
     }
   }
   &:hover {
-
     .card-hover {
       display: block;
     }
     
   }
+}
+.hotel-casino1 {
+  .logo-section {
+    position: absolute;
+    right: 13.375rem;
+    top: 4.375rem;
+  }
+}
+.hotel-casino2 {
+  .logo-section {
+    position: absolute;
+    top: 4.313rem;
+    p {
+      margin-top: -0.188rem;
+    }
+  }
+}
+.hotel-casino3 {
+  .logo-section {
+    position: absolute;
+    top: 3.438rem;
+    p {
+      margin-top: 0.688rem;
+    }
+  }
+}
+.hotel-casino-card:first-of-type {
+  // .logo-section {
+  //   p {
+  //     margin-top: -0.438rem;
+  //   }
+  // }
 }
 .hotel-casino {
   margin-top: 2.375rem;

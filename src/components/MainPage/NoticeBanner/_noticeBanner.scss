@@ -15,7 +15,7 @@
   padding: 0 1.813rem;
   height: 4.688rem;
   background-color: rgb(45, 40, 52);
-  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.2);
   z-index: 10;
   position: relative;
   .notice-banner__icon{
@@ -37,7 +37,8 @@
     margin-left: 1rem;
       span {
         flex-grow: 1;
-        letter-spacing: -0.07rem;;
+        letter-spacing: -0.025em;
+        margin-top: 0.063rem;
         -webkit-animation: banneranimation 10s infinite;
         animation: banneranimation 10s infinite;
         -webkit-animation-timing-function: linear;
