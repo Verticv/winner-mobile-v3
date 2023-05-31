@@ -19,7 +19,7 @@ const SignUpModal = ({
 
   const [toConfirmPopup, setConfirmPopup] = useState(false)
 
-
+  const [selectedInput, setSelectedInput] = useState(null)
   const carrierOptions = ["통신사", "LGU+", "SKT", "KT"]
   const banksOptions = [
     "은행선택",
@@ -121,7 +121,14 @@ const SignUpModal = ({
               <div className='input-field'>
                 <input
                   placeholder={"아이디"}
+                  onFocus={(e) => {
+                    setSelectedInput(0)
+                  }}
+                  onBlur={(e) => {
+                    setSelectedInput(false)
+                  }}
                 />
+                {selectedInput === 0 && (<div className='input-line'></div>)}
               </div>
               <span>영문, 숫자만 입력가능하며 최소 4자이상 입력하세요.</span>
             </div>
@@ -130,7 +137,14 @@ const SignUpModal = ({
               <div className='input-field'>
               <input
                 placeholder={"비밀번호"}
-                />
+                onFocus={(e) => {
+                  setSelectedInput(1)
+                }}
+                onBlur={(e) => {
+                  setSelectedInput(false)
+                }}
+              />
+                {selectedInput === 1 && (<div className='input-line'></div>)}
               </div>
               <span >영문 및 숫자를 1자 이상 반드시 포함하여 6~16자 내외로
                 <br/>입력해주세요. (특수문자 사용불가)</span>
@@ -141,7 +155,14 @@ const SignUpModal = ({
               <div className='input-field'>
               <input
                 placeholder={"환전 비밀번호"}
-                />
+                onFocus={(e) => {
+                  setSelectedInput(2)
+                }}
+                onBlur={(e) => {
+                  setSelectedInput(false)
+                }}
+              />
+                {selectedInput === 2 && (<div className='input-line'></div>)}
               </div>
               <span>영문 및 숫자를 1자 이상 반드시 포함하여 4~8자 내외로
                 입력해주세요. (특수문자 사용불가)</span>
@@ -152,7 +173,14 @@ const SignUpModal = ({
               <div className='input-field'>
                 <input
                   placeholder={"닉네임"}
-                  />
+                  onFocus={(e) => {
+                    setSelectedInput(3)
+                  }}
+                  onBlur={(e) => {
+                    setSelectedInput(false)
+                  }}
+                />
+                {selectedInput === 3 && (<div className='input-line'></div>)}
               </div>
               <span>한글, 영문, 숫자를 포함한 4~16자로 입력해주세요.</span>
             </div>
@@ -167,7 +195,14 @@ const SignUpModal = ({
                   <div className='input-field ' style={{ width: "100%" }}>
                   <input
                     placeholder={"통신사"}
+                    onFocus={(e) => {
+                      setSelectedInput(4)
+                    }}
+                    onBlur={(e) => {
+                      setSelectedInput(false)
+                    }}
                   />
+                  {selectedInput === 4 && (<div className='input-line'></div>)}
                 </div>
               </div>
             </div>
@@ -274,7 +309,14 @@ const SignUpModal = ({
               <div className='input-field'>
               <input
                 placeholder={"가입코드"}
+                  onFocus={(e) => {
+                    setSelectedInput(5)
+                  }}
+                  onBlur={(e) => {
+                    setSelectedInput(false)
+                  }}
                 />
+                {selectedInput === 5 && (<div className='input-line'></div>)}
               </div>
             </div>
               <div className='field-container'
@@ -288,7 +330,14 @@ const SignUpModal = ({
               <div className='input-field w-50'>
                 <input
                     placeholder={"은행선택"}
-                />
+                    onFocus={(e) => {
+                      setSelectedInput(6)
+                    }}
+                    onBlur={(e) => {
+                      setSelectedInput(false)
+                    }}
+                  />
+                  {selectedInput === 6 && (<div className='input-line'></div>)}
               </div>
               </div>
             </div>
@@ -296,7 +345,14 @@ const SignUpModal = ({
               <div className='input-field'>
               <input
                 placeholder={"계좌번호(숫자만 입력)"}
+                  onFocus={(e) => {
+                    setSelectedInput(7)
+                  }}
+                  onBlur={(e) => {
+                    setSelectedInput(false)
+                  }}
                 />
+                {selectedInput === 7 && (<div className='input-line'></div>)}
               </div>
             </div>
             

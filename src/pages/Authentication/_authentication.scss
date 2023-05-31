@@ -1,25 +1,24 @@
 .login-page {
   width: 77.625rem;
-  height: 100%;
+  height: 163.813rem;
   background: center bottom;
   position: relative;
+  overflow: hidden;
   .login-bg {
     width: 77.625rem;
     overflow: hidden;
-  
   }
   .login-form {
-    // background: linear-gradient(to top, rgb(31, 31, 30), rgb(74, 74, 74));
     overflow: hidden;
     z-index: 0;
     position: absolute;
     top: 65.813rem;
-    width: 72.552rem;
-    padding: 0.1875rem;
-    margin: 0px 2.55rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 1.813rem 1.813rem;
     border-radius: 2.25rem;
-    margin-top: 5.438rem;
-    padding-bottom: 2.188rem;
+    margin-top: 5.688rem;
     .logo {
       display: flex;
       justify-content: center;
@@ -27,27 +26,25 @@
       width: 22.25rem;
     }
     .fields {
-      padding: 5.563rem 7.875rem 0;
+      padding: 5.563rem 7.813rem 0 8.875rem;
     }
 
     .input-field {
-      width: 56rem;
+      width: 55.938rem;
       background: #fff;
       border-radius: 2.25rem;
       height: 9.188rem;
-      box-shadow: inset 0.094rem 0.162rem 0.188rem 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0.125rem 0.188rem 0.188rem 0px rgba(0, 0, 0, 0.5) inset;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-right: 0.339rem;
-      margin-bottom: 2.875rem;
+      margin-bottom: 2.813rem;
       position: relative;
       .input-icon {
         position: absolute;
         left: 2.75rem;
         top: 50%;
-        transform: translateY(-50%);
-        width: 3.375rem;     
+        transform: translateY(-50%);  
         margin-top: -0.25rem;  
       }
       input {
@@ -58,24 +55,28 @@
         font-size: 2.813rem;
         height: 100%;
         outline: none;
-        padding: 0.25rem 0 0 0;
-       // margin-top: 0.188rem;
+        padding: 0.313rem 0 0 0;
         font-family: 'SpoqaHanSansNeoMedium';
         line-height: 1;
       }
       &.username {
         input {
           margin-left: 0.25rem;
+         
+        }
+        .input-icon {
+          width: 3.313rem;
+          margin-top: -0.313rem;
         }
       }
       &.password {
-        margin-bottom: 2.813rem;
+        margin-bottom:3rem;
         input {
           margin-right: 0.063rem;
-          
+          padding-top: 0.188rem;
         }
         .input-icon {
-          left: 3.063rem;
+          left: 3rem;
           width: 3rem;
           margin-top: -0.188rem;
         }
@@ -85,9 +86,9 @@
       button {
         border-radius: 5.75rem;
         background-image: linear-gradient(to right, rgb(223, 82, 255) 0%, rgb(107, 34, 255) 100%);
-        box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
-        width: 57rem;
-        height: 11.688rem;
+        box-shadow: 0 0.563rem 0.938rem 0 rgba(0, 0, 0, 0.3);
+        width: 56.938rem;
+        height: 11.563rem;
         color: #fff;
         font-size: 3.188rem;
         font-family: 'SpoqaHanSansNeoMedium';
@@ -95,6 +96,7 @@
         align-items: center;
         justify-content: center;
         margin: auto;
+        letter-spacing: -0.025em;
         &.register {
           background-image: linear-gradient(to right, rgb(157, 59, 187) 0%, rgb(84, 35, 160) 100%);
         }
@@ -102,13 +104,11 @@
 
       .line {
         width: 63.75rem;
-        opacity: 0.302;
         height: 0.188rem;
-        background: #7c54a1;
-        margin: 4.5rem auto;
+        background: #7853a0;
+        margin: 4.438rem auto 4.5rem;
       }
     }
   }
 }
-
 
