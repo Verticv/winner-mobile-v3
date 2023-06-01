@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import '../SportGames/_sportGame.scss';
 import SportGameIcon from '../../../assets/images/mainPage/sport-game-icon.png'
 import TabsComponent from "../../TabsComponent";

@@ -1,6 +1,6 @@
 
 
-function SlotGameCard({ id, title, sub_title, img, tag, tag_name, onClick }) {
+function SlotGameCard({ id, title, sub_title, img, tag, tag_name, desc_class, onClick }) {
   return (
     <div className='card-container'>
       <div className='slot-game__Card'>
@@ -9,7 +9,7 @@ function SlotGameCard({ id, title, sub_title, img, tag, tag_name, onClick }) {
         <div className='card__body'>
           <div >
             <img src={img} alt="Img1" className='img' />
-            <div className='card__desc'>
+            <div className={`card__desc ${desc_class}`}>
               <p>{title}</p>
               <span>{sub_title}</span>
             </div>

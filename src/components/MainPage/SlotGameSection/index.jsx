@@ -94,7 +94,8 @@ function SlotGameSection() {
       sub_title: 'Netent',
       img: slotImg7,
       tag: BlueTag,
-      tag_name: '신규'
+      tag_name: '신규',
+      desc_class: 'bottom-21 left-21'
     },
     {
       id: 8,
@@ -102,7 +103,8 @@ function SlotGameSection() {
       sub_title: 'Yggdrasil',
       img: slotImg8,
       tag: greenTag,
-      tag_name: '추천'
+      tag_name: '추천',
+      desc_class: 'bottom-21 left-21'
     },
     {
       id: 9,

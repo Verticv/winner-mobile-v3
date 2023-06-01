@@ -1,6 +1,5 @@
 import React from 'react'
 import HotelCasinoCard from '../../../assets/images/mainPage/hotel-casino-card.png'
-import BestIcon from '../../../assets/images/mainPage/best-icon.png'
 import HotelCasinoIcon from '../../../assets/images/mainPage/hotel_casino.png'
 import Logo1 from '../../../assets/images/mainPage/logo1.png'
 import '../HotelCasino/_hotelCasino.scss';

@@ -1,9 +1,8 @@
 
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import OtherGamesIcon from '../../../assets/images/mainPage/other-games.png'
 import OtherGame1 from '../../../assets/images/mainPage/other-game1.png'
-import BestIcon from '../../../assets/images/mainPage/best-icon.png'
 import '../OtherGames/_otherGames.scss';
 import OtherIcon from '../../../assets/images/mainPage/other-Icon.png'
 import OtherIcon2 from '../../../assets/images/mainPage/other-Icon2.png'

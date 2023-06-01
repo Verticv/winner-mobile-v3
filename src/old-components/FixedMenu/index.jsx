@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import '..//FixedMenu/_fixedMenu.scss';
 import MenuIcon from '../../assets/images/mainPage/menu-icon.png'
 import MenuIcon1 from '../../assets/images/mainPage/m-icon1.png'

@@ -57,7 +57,8 @@ function SlotGame() {
           sub_title: 'Netent',
           img: slotImg2,
           tag: BlueTag,
-          tag_name: '신규'
+          tag_name: '신규',
+          desc_class: 'bottom-21 left-21'
         },
       ]
     },
@@ -78,7 +79,8 @@ function SlotGame() {
           sub_title: 'Yggdrasil',
           img: slotImg4,
           tag: greenTag,
-          tag_name: '추천'
+          tag_name: '추천',
+          desc_class: 'bottom-21 left-21'
         },
       ]
     },
@@ -193,7 +195,8 @@ function SlotGame() {
                             sub_title={card.sub_title}
                             img={card.img}
                             tag={card.tag}
-                            tag_name={card.tag_name} />
+                            tag_name={card.tag_name}
+                            desc_class={card.desc_class} />
                             ))
                           }
                       </div>

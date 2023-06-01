@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import '../SlotGame/_slotGame.scss';
 import SlotGameIcon from '../../../assets/images/mainPage/slot-game-icon.png'
 import LeftArrow from '../../../assets/images/mainPage/left-arrow.png'

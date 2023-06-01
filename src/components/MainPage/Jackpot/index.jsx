@@ -36,6 +36,7 @@ function Jackpot() {
               naturalSlideHeight={210}
               isPlaying
               dragEnabled={false}
+              touchEnabled={false}
             >
               <Slider classNameTrayWrap="carousel_tray_wrapper_horizontal" className="card_animation">
                 {Array(20)

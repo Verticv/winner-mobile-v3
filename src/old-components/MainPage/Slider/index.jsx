@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../Slider/_slider.scss';
 import slider from '../../../assets/images/mainPage/slider.png';
