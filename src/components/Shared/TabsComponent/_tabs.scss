@@ -2,27 +2,26 @@
   position: relative;
   background-color: rgb(237, 237, 235);
   border-radius: 3.125rem;
-  height:6.25rem;
+  height: 6.375rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.375rem;
   box-shadow: 0px 0px 0.625rem 0px rgba(0, 0, 0, 0.2);
-  position: relative;
-  .tab-line {
-    position: absolute;
-    height: 0.063rem;
-    background-color: #c886d2;
-    left: 2.875rem;
-    right: 2.875rem;
-    &.top {
-      top: -0.063rem;
-    }
-    &.bottom {
-      bottom: -0.063rem;
-    }
-  }
+  // .tab-line {
+  //   position: absolute;
+  //   height: 0.063rem;
+  //   background-color: #c886d2;
+  //   left: 2.875rem;
+  //   right: 2.875rem;
+  //   &.top {
+  //     top: -0.063rem;
+  //   }
+  //   &.bottom {
+  //     bottom: -0.063rem;
+  //   }
+  // }
   button {
     text-align: center;
     width: 23.813rem; //100%;
@@ -56,6 +55,7 @@
   top: 0;
   bottom: 0;
   margin: 0.375rem;
+  height: 5.625rem;
   border-radius: 2.75rem;
   background-image: linear-gradient(to right, rgb(223, 82, 255), rgb(107, 34, 255));
   z-index: 1;

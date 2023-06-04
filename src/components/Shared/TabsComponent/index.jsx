@@ -10,12 +10,12 @@ const TabsComponent = ({
   };
   return (
     <div className="tab-container">
-      <div className='tab-line top'></div>
+      {/* <div className='tab-line top'></div> */}
       <div
         className="animated-tab"
         style={{
-          transform: `translateX(${selectedTab === 0 ? "0%" : selectedTab === 1 ? "102%" : "207%"
-            })`,
+          transform: `translateX(${selectedTab === 0 ? "0%" : selectedTab === 1 ? "102%" : "207%"})`,
+         
         }}>
         
       </div>
@@ -30,7 +30,7 @@ const TabsComponent = ({
           )
         })
       )}
-      <div className='tab-line bottom'></div>
+      {/* <div className='tab-line bottom'></div> */}
     </div>
   )
 }

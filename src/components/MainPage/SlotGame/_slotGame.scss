@@ -99,13 +99,14 @@
 .slot-game__Card {
   background-image: url(../../../assets/images/mainPage/slotGames/card-bg.png);
   background-repeat: no-repeat;
-  // box-shadow: 0 0.938rem 0.625rem 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.938rem 0.625rem 0 rgba(0, 0, 0, 0.3);
+  background-size: 100% 100%;
   width: 36rem;
   height: 27.563rem;
   padding: 1.875rem 1.688rem 1.688rem 1.688rem;
   position: relative;
   overflow: hidden;
-  border-radius: 1.25rem;
+  border-radius: 1.563rem;
   img.tag {
     position: absolute;
     left: 2.75rem;
@@ -141,6 +142,7 @@
 }
 .card__body {
   background-image: url(../../../assets/images/mainPage/slotGames/bg-card.png);
+  background-size: 100% 100%;
   width: 32.625rem;
   margin: auto;
   height: 100%;
