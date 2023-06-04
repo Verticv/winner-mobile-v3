@@ -91,7 +91,7 @@
 .hotel-casino1 {
   .logo-section {
     position: absolute;
-    right: 13.375rem;
+    right: 13.438rem;
     top: 4.375rem;
   }
 }
@@ -99,6 +99,7 @@
   .logo-section {
     position: absolute;
     top: 4.313rem;
+    right: 13.375rem;
     p {
       margin-top: -0.188rem;
     }
@@ -108,8 +109,9 @@
   .logo-section {
     position: absolute;
     top: 3.438rem;
+    right: 12.75rem;
     p {
-      margin-top: 0.688rem;
+      margin-top:0.563rem;
     }
   }
 }
@@ -121,14 +123,14 @@
   // }
 }
 .hotel-casino {
-  margin-top: 2.375rem;
+  margin-top: 2.25rem;
   .section__icon {
     padding-left: 0.125rem;
     padding-top: 0.188rem;
     
   }
   .section__content {
-    margin-top: -0.125rem;
+    margin-top: 0.063rem;
     padding: 0 1.875rem !important;
   }
 }

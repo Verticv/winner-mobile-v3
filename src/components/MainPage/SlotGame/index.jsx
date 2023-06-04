@@ -165,11 +165,11 @@ function SlotGame() {
         title={'슬롯게임'}
         showAction={true} />
         
-      <div className='section__content'>
+     <div className='section__content'>
         <TabsComponent
           tabsData={tabsList}
           selectedTab={selectedTab}
-          setSelectedTab={setSelectedTab} />
+         setSelectedTab={setSelectedTab} />
       </div>
       <div className='slot-game__slider'>
         <CarouselProvider

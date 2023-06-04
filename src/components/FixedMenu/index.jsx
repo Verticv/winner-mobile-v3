@@ -46,6 +46,7 @@ import MenuList from '../Shared/MenuList'
 const FixedMenu = ({
   setSelectedTab,
   selectedTab,
+  setSelectedSection
 }) => {
 
   const [isOpen, setOpen] = useState(false)

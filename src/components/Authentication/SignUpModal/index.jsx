@@ -112,9 +112,10 @@ const SignUpModal = ({
               onClick={() => setSignup(false)} />
         </div>
         <div className='modal-body'>
-            <p className='title'>회원가입 시 모든 항목을 정확하게 기재하시기 바랍니다.
-              <br/>
-            회원데이터는 안전한 서버에서 안전하게 보관됩니다.</p>
+          <div className='title'>
+            <p>회원가입 시 모든 항목을 정확하게 기재하시기 바랍니다.</p>
+            <p>회원데이터는 안전한 서버에서 안전하게 보관됩니다.</p>
+          </div>
           <div className='fields'>
               <div className='field-container'
                 style={{ marginBottom:'1.625rem'}}>
@@ -130,7 +131,7 @@ const SignUpModal = ({
                 />
                 {selectedInput === 0 && (<div className='input-line'></div>)}
               </div>
-              <span>영문, 숫자만 입력가능하며 최소 4자이상 입력하세요.</span>
+              <span className='-ml-2'>영문, 숫자만 입력가능하며 최소 4자이상 입력하세요.</span>
             </div>
             <div className='field-container'
                 style={{ marginBottom: '2rem' }}>
@@ -165,7 +166,7 @@ const SignUpModal = ({
                 {selectedInput === 2 && (<div className='input-line'></div>)}
               </div>
               <span>영문 및 숫자를 1자 이상 반드시 포함하여 4~8자 내외로
-                입력해주세요. (특수문자 사용불가)</span>
+                <br />입력해주세요. (특수문자 사용불가)</span>
             </div>
             
               <div className='field-container'
@@ -283,22 +284,28 @@ const SignUpModal = ({
                       </div>
                     )
                     }}
+                    
                     onChange={(date) => {
                       setEndDate(date)
                       setSelectedYear(getYear(date));
                       setSelectedMonth(months[getMonth(date)]);
                     }}
-                  popperModifiers={{
-                    flip: {
-                      behavior: ["bottom"] // don't allow it to flip to be above
-                    },
-                    preventOverflow: {
-                      enabled: true // tell it not to try to stay within the view (this prevents the popper from covering the element you clicked)
-                    },
-                    hide: {
-                      enabled: true // turn off since needs preventOverflow to be enabled
-                    }
-                  }}
+                    onMonthChange={(date) => {
+                      setSelectedMonth(months[getMonth(date)]);
+                      setSelectedYear(getYear(date));
+                    }}
+                    onYearChange={(date) => setSelectedYear(getYear(date))}
+                    popperModifiers={{
+                      flip: {
+                        behavior: ["bottom"] // don't allow it to flip to be above
+                      },
+                      preventOverflow: {
+                        enabled: true // tell it not to try to stay within the view (this prevents the popper from covering the element you clicked)
+                      },
+                      hide: {
+                        enabled: true // turn off since needs preventOverflow to be enabled
+                      }
+                    }}
                 />
                 </div>
                 <span>수기로 작성시 아이디 생성이 불가합니다.<br/>
@@ -322,12 +329,12 @@ const SignUpModal = ({
               <div className='field-container'
                 style={{ marginBottom: '1.5rem' }}>
               <div className='row'>
-              <div className='input-field dropdown w-50'>
+                <div className='input-field dropdown w-411'>
                   <Dropdown options={banksOptions} isSignup={true}>
                   <img style={{ width: '1.5625rem' }} className="h-4 object-contain" src={DownArrowIcon} alt="arrow" />
                 </Dropdown>
               </div>
-              <div className='input-field w-50'>
+              <div className='input-field '>
                 <input
                     placeholder={"은행선택"}
                     onFocus={(e) => {

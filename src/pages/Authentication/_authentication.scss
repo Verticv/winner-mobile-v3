@@ -89,16 +89,23 @@
         box-shadow: 0 0.563rem 0.938rem 0 rgba(0, 0, 0, 0.3);
         width: 56.938rem;
         height: 11.563rem;
-        color: #fff;
-        font-size: 3.188rem;
-        font-family: 'SpoqaHanSansNeoMedium';
         display: flex;
         align-items: center;
         justify-content: center;
         margin: auto;
-        letter-spacing: -0.025em;
+        p {
+          color: #fff;
+          font-size: 3.188rem;
+          font-family: 'SpoqaHanSansNeoMedium';
+          letter-spacing: -0.025em;
+          margin: 0.063rem 0 0;
+        }
         &.register {
           background-image: linear-gradient(to right, rgb(157, 59, 187) 0%, rgb(84, 35, 160) 100%);
+
+          p {
+            margin-left: 0.125rem;
+          }
         }
       }
 
@@ -106,7 +113,7 @@
         width: 63.75rem;
         height: 0.188rem;
         background: #7853a0;
-        margin: 4.438rem auto 4.5rem;
+        margin: 4.438rem auto 4.625rem;
       }
     }
   }

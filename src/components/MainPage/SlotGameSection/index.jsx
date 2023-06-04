@@ -155,9 +155,8 @@ function SlotGameSection() {
         <div className='slot-games-banner'>
           <img src={SlotBanner} alt="banner" />
           <div className='banner-content'>
-            <p>수백여 개의 해외 유명한 인기 슬롯게임을
-              <br/>
-              <span>케이플레이슬롯</span>  에서 즐겨보세요!</p>
+            <p>수백여 개의 해외 유명한 인기 슬롯게임을</p>
+            <p className='second-line'> <span>케이플레이슬롯</span>에서 즐겨보세요!</p>
             <button>
               케이플레이슬롯 바로가기
               <img src={RArrow} alt="RArrow" className='img' />

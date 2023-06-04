@@ -10,6 +10,7 @@ const TabsComponent = ({
   };
   return (
     <div className="tab-container">
+      <div className='tab-line top'></div>
       <div
         className="animated-tab"
         style={{
@@ -29,6 +30,7 @@ const TabsComponent = ({
           )
         })
       )}
+      <div className='tab-line bottom'></div>
     </div>
   )
 }

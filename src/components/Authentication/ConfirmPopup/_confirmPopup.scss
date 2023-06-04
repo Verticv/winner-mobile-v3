@@ -13,7 +13,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 3.75rem 0;
+    margin: 3.75rem 0 3.313rem;
     img {
       width: 14.688rem;
     }
@@ -22,18 +22,13 @@
     text-align: center;
     color: #666666;
     margin: 0;
-    
     &.confirm-title {
       font-size: 3rem;
       font-family: 'SpoqaHanSansNeoBold';
-      margin-bottom: 5.875rem;
+      margin-bottom: 4.875rem;
       letter-spacing: -0.005em;
     }
-    &.confirm-desc {
-      font-size: 2.625rem;
-      font-family: 'SpoqaHanSansNeoMedium';
-      letter-spacing: -0.005em;
-    }
+   
     .primary-color {
       color: #682aa7;
     }
@@ -41,11 +36,35 @@
       color: #ec1676;
     }
   }
+  .confirm-desc {
+    p {
+      font-size: 2.625rem;
+      font-family: 'SpoqaHanSansNeoMedium';
+      letter-spacing: -0.005em;
+      margin: 0;
+      margin-left: 0.875rem;
+      &:nth-of-type(2) {
+        margin-left: 0.25rem;
+      }
+    }
+    &:first-of-type {
+      margin-bottom: 2.875rem;
+    }
+  }
+  .modal-actions{
+    margin-top: 6.438rem;
+  }
   .modal-actions button {
     width: 56.625rem;
     height: 8.438rem;
     letter-spacing: -0.025em;
   }
+  .modal-body {
+    padding-bottom: 8.438rem;
+  }
+}
+.ml-0 {
+  margin-left: 0!important;
 }
 .boxes {
   //width: 58.688rem;
@@ -59,7 +78,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 0 1.125rem ;
+    padding: 1.75rem 0 1.125rem ;
     flex-shrink: 0;
     flex-grow: 0;
     &:first-child {
@@ -79,18 +98,26 @@
     img {
       width: 7.688rem;
     }
-    p {
-      margin: 0;
+    .box-des {
       margin-top: 1.688rem;
-      color: #fff;
-      font-size: 1.875rem;
-      font-family: 'SpoqaHanSansNeoMedium';
-      letter-spacing: -0.029em;
-      align-items: center;
+      p {
+        margin: 0;
+        color: #fff;
+        font-size: 1.875rem;
+        font-family: 'SpoqaHanSansNeoMedium';
+        letter-spacing: -0.029em;
+        align-items: center;
+      }
     }
+    
   }
 }
-.mb-60 {
- margin-bottom: 3.75rem !important; 
+.mb-46 {
+ margin-bottom: 2.875rem !important; 
 }
-
+.-mt-1 {
+  margin-top: -0.063rem !important;
+}
+.ml-1 {
+  margin-left: 0.063rem !important;
+}

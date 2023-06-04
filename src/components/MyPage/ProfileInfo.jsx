@@ -23,7 +23,7 @@ import ArrowDown from "../../assets/images/down-arrow.png";
 import DropDownControls from "../../components/Shared/DropDownControls";
 import CountryDropDown from '../../components/Shared/CountryDropDown';
 import KoreaFlag from "../../assets/images/korea-flag.png";
-//import UKflag from '../../assets/images/uk-flag.png'
+import UKflag from '../../assets/second-flag.png'
 
 import { useNavigate } from "react-router-dom";
 const ProfileInfo = () => {
@@ -42,7 +42,7 @@ const ProfileInfo = () => {
   const CountryButton = (
      <>
       <div className='country-flag' >
-        <img className="" src={KoreaFlag } alt="flag"></img>
+        <img className="" src={country === "KR" ? KoreaFlag : UKflag  } alt="flag"></img>
       </div>
       <div className="country-label">
         <p>{country}</p>

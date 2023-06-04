@@ -20,7 +20,7 @@
   min-width: 100%;
   margin: 0 1.875rem 1.875rem 1.875rem;
   height: 24.563rem;
-  border-radius: 1.5rem;
+  border-radius: 1.125rem;
   box-shadow: 0 0.938rem 1.25rem 0 rgba(0, 0, 0, 0.5);
   position: relative;
   max-width: fit-content;
@@ -31,19 +31,20 @@
   }
   .desc {
     position: absolute;
-    top: 9.625rem;
-    right: 4.5rem;
+    top: 9.563rem;
+    right: 4.625rem;
     p {
       color: #eeeeee;
       font-family: 'SpoqaHanSansNeoMedium';
       font-size: 2.438rem;
       margin: 0;
+      // letter-spacing: -0.063rem;
     }
   }
   button {
     position: absolute;
     bottom: 3.75rem;
-    right: 4.688rem;
+    right: 4.625rem;
     border-radius: 2rem;
     background: linear-gradient(to right, rgb(223, 82, 255), rgb(107, 34, 255));
     box-shadow: 0 0 1.25rem 0.625rem rgba(0, 0, 0, 0.3);
@@ -55,9 +56,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.063rem;
     padding-left: 3.063rem;
     padding-right: 0.875rem;
+
     img {
       width: 3rem;
     }
@@ -82,3 +84,44 @@
     }   
   }
 
+.filter-content {
+  &.live-sport-section {
+    .shared-card {
+      .desc {
+        top: 9.563rem;
+        right: 4.5rem;
+      } 
+      button {
+        padding-left: 3.188rem;
+      }
+    }
+  }
+  &.e-sport-section {
+    .shared-card {
+      .desc {
+        top: 9.563rem;
+        right: 4.438rem;
+      }
+    
+      button {
+        padding-left: 3.188rem;
+      }
+    }
+  }
+  &.virtual-games-section {
+    .desc {
+      right: 4.375rem;
+    }
+  }
+  &.fishing-section {
+    .desc {
+      right: 4.375rem;
+    }
+  }
+    &.tibet-section {
+      .desc {
+        top: 9.5rem;
+        right: 4.563rem;
+      }
+    }
+}

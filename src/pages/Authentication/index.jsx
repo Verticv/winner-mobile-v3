@@ -34,13 +34,13 @@ function Authentication({ isAuthenticated, setAuthenticated }) {
             onClick={() => {
               navigate('/main')
             }}>
-            로그인
+            <p>로그인</p>
           </button>
           <div className='line'></div>
           <button
             className='register'
             onClick={() => setSignup(true)}>
-            회원가입
+            <p>회원가입</p>
           </button>
         </div>
       </div>

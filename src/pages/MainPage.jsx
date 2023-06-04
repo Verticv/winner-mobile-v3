@@ -21,7 +21,7 @@ import FixedMenu from '../components/FixedMenu';
 
 function MainPage() {
   const [selectedTab, setSelectedTab] = useState(0)
-  //const [selectedSection, setSelectedSection] = useState(null)
+  // const [selectedSection, setSelectedSection] = useState(null)
 
   // useEffect(() => {
   //   if (selectedSection) {
@@ -68,13 +68,13 @@ function MainPage() {
         <div id="slot-game"  className="filter-content">
           <SlotGameSection />
         </div>
-      
+
       )}
       {selectedTab === 5 && (
         <div id="hotel-casino"  className="filter-content">
           <HotelCasino />
         </div>
-    
+
       )}
       {selectedTab === 6 && (
         <div id="e-sports">
