@@ -164,7 +164,6 @@ function SlotGame() {
         icon={SlotGameIcon}
         title={'슬롯게임'}
         showAction={true} />
-        
      <div className='section__content'>
         <TabsComponent
           tabsData={tabsList}

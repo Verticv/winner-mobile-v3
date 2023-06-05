@@ -1,7 +1,9 @@
 .filter-content {
-  //margin-top: 2.938rem;
+ // padding-top:0.938rem;
   .section__header {
-    height: 8.75rem;
+    height: 9.625rem;
+    padding: 0 2.438rem 0 1.813rem; //2rem 2.438rem 1.563rem 1.813rem;
+    margin: 0;
   }
   .slot-game-section {
     margin-top: 0;
@@ -85,7 +87,38 @@
   }
 
 .filter-content {
+  .live-casino {
+    .section__Title {
+      margin-top: 1.25rem;
+    }
+  }
+  .slot-game-section {
+    .section__Title {
+      margin-top: 1.063rem;
+      margin-left: -0.063rem;
+    }
+  }
+  .hotel-casino {
+    .section__Title {
+      margin-top: 1.063rem;
+      margin-left: -0.063rem;
+    }
+    .section__icon {
+      padding-top: 0;
+    }
+  }
+  &.sport-section {
+    .section__Title {
+      margin-top: 1.063rem;
+      margin-left: -0.063rem;
+    }
+  }
+  
   &.live-sport-section {
+    .section__Title {
+      margin-top: 1.063rem;
+      margin-left: -0.063rem;
+    }
     .shared-card {
       .desc {
         top: 9.563rem;
@@ -97,6 +130,10 @@
     }
   }
   &.e-sport-section {
+    .section__Title {
+      margin-top: 1.063rem;
+      margin-left: -0.063rem;
+    }
     .shared-card {
       .desc {
         top: 9.563rem;
@@ -109,19 +146,37 @@
     }
   }
   &.virtual-games-section {
+    .section__Title {
+      margin-top: 1.063rem;
+      margin-left: -0.063rem;
+    }
     .desc {
       right: 4.375rem;
     }
   }
   &.fishing-section {
+    .section__Title {
+      margin-top: 1.063rem;
+      margin-left: -0.063rem;
+    }
     .desc {
       right: 4.375rem;
     }
   }
-    &.tibet-section {
-      .desc {
-        top: 9.5rem;
-        right: 4.563rem;
-      }
+  &.tibet-section {
+    .section__Title {
+      margin-top: 1.063rem;
+      margin-left: -0.063rem;
     }
+    .desc {
+      top: 9.5rem;
+      right: 4.563rem;
+    }
+  }
+  &.mini-games-section {
+    .section__Title {
+      margin-top: 1.063rem;
+      margin-left: -0.063rem;
+    }
+  }
 }
