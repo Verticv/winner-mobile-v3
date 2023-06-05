@@ -10,6 +10,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 
 
 
+
 import AnnouncementCard from './AnnouncementCard'
 import NoticeBoard from './NoticeBoard'
 import TOPCurrencyExchange from './TOPCurrencyExchange'
@@ -18,6 +19,9 @@ import './_boards.scss'
 
 
 const BoardsSection = () => {
+ 
+
+
   const [selectedTab, setSelectedTab] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -39,9 +43,18 @@ const BoardsSection = () => {
     if (currentSlide !== selectedTab) {
       setCurrentSlide(selectedTab);
     }
-  }, [selectedTab, currentSlide]);
+  }, [currentSlide,selectedTab]);
 
  
+  function handleNextClick(e) {
+    const maxSlide = 3 - 1;
+    const nextSlide = 1 + currentSlide;
+    let newCurrentSlide = Math.min(
+      nextSlide,
+      maxSlide,
+    );
+    setSelectedTab(newCurrentSlide);
+  }
 
   const CarouselNextButton = ({ onClick }) => {
     return (
@@ -56,22 +69,17 @@ const BoardsSection = () => {
       </ButtonNext>
     );
   };
+  
+  function handleBackClick() {
+    //const maxSlide = 3 - 1;
 
-  const onTransitionEnd = () => {
-    const visible = document.querySelector('.carousel__slide--visible .carousel__inner-slide .board');
-    //const currentBoard = visible.querySelector('.slideInner___2mfX9 carousel__inner-slide .board')
+    let newCurrentSlide = Math.max(
+      currentSlide - 1,
+      0,
+    );
+    setSelectedTab(newCurrentSlide);
+  }
 
-    // console.log(visible);
-    // items.forEach(({ id: vId }, i) => {
-    //   if (vId === visible) {
-    //     console.log(i, 'i', vId);
-    //     handleChangeVideo(i);
-    //   }
-
-    // });
-    console.log('currentBoard', visible.id);
-
-  } 
   const tabsList = [
     {
       id: 0,
@@ -103,39 +111,14 @@ const BoardsSection = () => {
           naturalSlideWidth={1182}
           isIntrinsicHeight={true}
           infinite={false}
+          dragEnabled={false}
+          touchEnabled={false}
         >
           <div className="slider__container">
-            <CarouselBackButton />
+            <CarouselBackButton onClick={handleBackClick} />
             <div className="slider__content">
               <Slider classNameTrayWrap="carousel_tray_wrapper"
-                trayProps={{
-                
-                 
-                
-                
-                  
-               
-
-                  // // touch events
-                
-                  // pointer events
-                  onChangeCapture: onTransitionEnd,
-                  onChange: onTransitionEnd,
-                  // // onPointerMove: onTransitionEnd,
-                  // onPointerUp: onTransitionEnd,
-                  // onPointerCancel: onTransitionEnd,
-                  // onGotPointerCapture: onTransitionEnd,
-                  // onLostPointerCapture: onTransitionEnd,
-                  // onPointerEnter: onTransitionEnd,
-                  // onPointerLeave: onTransitionEnd,
-                  // onPointerOver: onTransitionEnd,
-                  // onPointerOut: onTransitionEnd,
-            
-            
-                 
-
-                  draggable: true,
-                }}>
+                >
                 <Slide key={0} className="card_animation_slide_horizontal" index={0}>
                   <div id='board-1' className='board'>
                     <AnnouncementCard />
@@ -153,7 +136,7 @@ const BoardsSection = () => {
                 </Slide>
               </Slider>
             </div>
-            <CarouselNextButton />
+            <CarouselNextButton onClick={handleNextClick} />
           </div>
         </CarouselProvider>
       </div>
