@@ -215,7 +215,7 @@ const SignUpModal = ({
                   showYearDropdown
                   yearDropdownItemNumber={100}
                   placeholderText='생년월일'
-                  customInput={<CustomInput />}
+                  customInput={<CustomInput/>}
                   locale="ko"
                   selected={endDate}
                   dateFormat="yyyy-MM-dd"

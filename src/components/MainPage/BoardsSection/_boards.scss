@@ -1,12 +1,12 @@
  .section__slider1 {
-   margin-top: 1.75rem;
+   
   
 
  }
  .ani-section {
    margin-bottom: 4.75rem;
    .section__content {
-    margin-top: 5.188rem;
+    padding: 0 1.813rem 0 1.875rem;
    }
   .carousel__inner-slide {
       display: flex;
@@ -45,6 +45,7 @@
    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
    padding: 1rem 0.938rem;
    overflow: hidden;
+  margin-top: 1.75rem;
  }
 
  .new-card-header {
@@ -233,6 +234,3 @@
 
 
 
-.ani-section .section__content {
-  padding: 0 1.813rem 0 1.875rem;
-}
