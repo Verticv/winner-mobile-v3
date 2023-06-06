@@ -220,15 +220,17 @@
   transform: translateY(-50%);
   width: 4.188rem;
 }
-    .date-picker {
-      position: relative;
-  
-      img {
-        position: absolute;
-        top: 3.48rem;
-        right: 2rem;
-        
-      }
-    }
+.date-picker {
+  position: relative;
 
-      
+  img {
+    position: absolute;
+    top: 3.48rem;
+    right: 2rem;
+    
+  }
+}
+
+.react-datepicker__aria-live {
+  display: none;
+}
