@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import '../Footer/_footer.scss';
 import Brands from "../../assets/images/footer/brands.png";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
@@ -14,8 +14,65 @@ import PaymentMethods from '../../assets/images/footer/payment-methods.png'
 import Collapse from '../Shared/Collapse'
 
 function Footer() { 
-  
+  const [isExpanded, setExpanded] = useState(0);
 
+  const footerList = [
+    {
+      title: '라이브카지노',
+      list: [
+        '프레그메틱플레이',
+        '에볼루션',
+        '얄지',
+        '아시아게이밍',
+        '드림게이밍',
+        '섹시게이밍',
+        '빅게이밍',
+        '오리엔탈게임',
+        '이주기',
+        '마이크로게이밍',
+      ]
+    },
+    {
+      title: '스포츠',
+      list: [
+        '조합베팅',
+        '스페셜베팅',
+        '실시간스포츠',
+      ]
+    },
+    {
+      title: '슬롯게임',
+      list: [
+        '슬롯게임'
+      ]
+    },
+    {
+      title: '호텔카지노',
+      list: [
+        '두윈카지노',
+        '보타카지노'
+      ]
+    },
+    {
+      title: '기타게임',
+      list: [
+        'e-스포츠',
+        '미니게임',
+        '키론가상게임',
+        '피싱게임',
+        '티비벳'
+      ]
+    },
+    {
+      title: '고객센터',
+      list: [
+        '문의하기',
+        '공지사항',
+        '자주묻는질문',
+        '베팅규정'
+      ]
+    }
+  ]
   const CarouselBackButton = ({ onClick }) => {
     return (
       <ButtonBack
@@ -86,12 +143,17 @@ function Footer() {
         
         <div className="footer-navs">
           <div className="toggle-list">
-            <Collapse title={"라이브카지노"} />
-            <Collapse title={"스포츠"} />
-            <Collapse title={"슬롯게임"} />
-            <Collapse title={"호텔카지노"} />
-            <Collapse title={"기타게임"} />
-            <Collapse title={"고객센터"} />
+            {footerList.map((item, index) => (
+              <Collapse
+                key={index}
+                index={index}
+                title={item.title}
+                list={item.list}
+                isExpanded={isExpanded}
+                setExpanded={setExpanded}
+                />
+            ))
+            }
           </div>
           
 

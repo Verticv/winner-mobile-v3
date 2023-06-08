@@ -1,36 +1,40 @@
-import React, { useState } from "react";
-import './_collapse.scss';
+
+import './_collapse.scss'
 import Plus from '../../../assets/images/footer/plus.png'
 import Minus from '../../../assets/images/footer/minus.png'
 
-const Collapse = ({title}) => {
-  const [isExpanded, setExpanded] = useState(false);
+const Collapse = ({
+  index,
+  title,
+  list,
+  isExpanded,
+  setExpanded}) => {
+ 
 
   const toggleCollapse = () => {
-    setExpanded(!isExpanded);
+    if (isExpanded === index) {
+      setExpanded(null);
+    } else {
+      setExpanded(index);
+    }
+   
   };
   return (
-    <button className={`collapse ${isExpanded?'expanded':''}`} onClick={toggleCollapse}>
+    <button className={`collapse ${isExpanded === index ?'expanded':''}`} onClick={toggleCollapse}>
       <div className="collapse__header">
         <p className="collapse__title">
           {title}
         </p>
         <div className="collapse__icon">
-          {!isExpanded && (<img src={Plus} alt="right" />)}
-          {isExpanded && (<img src={Minus} alt="right" />)}
+          {isExpanded!==index && (<img src={Plus} alt="right" />)}
+          {isExpanded === index && (<img src={Minus} alt="right" />)}
         </div>
       </div>
-      {isExpanded && (<div className="collapse__body">
-        <div> 프레그메틱플레이</div>
-        <div> 에볼루션</div>
-        <div> 로얄지</div>
-        <div> 아시아게이밍</div>
-        <div> 드림게이밍</div>
-        <div> 섹시게이밍</div>
-        <div> 빅게이밍</div>
-        <div> 오리엔탈게임</div>
-        <div> 이주기</div>
-        <div>마이크로게이밍</div>
+      {isExpanded === index && (<div className="collapse__body">
+        {list.map((item, index) => (
+          <div key={index}>{item}</div>
+        ))
+        }
       </div>)}
     </button>
   )

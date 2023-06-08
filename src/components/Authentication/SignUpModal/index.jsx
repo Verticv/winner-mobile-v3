@@ -121,6 +121,7 @@ const SignUpModal = ({
                 style={{ marginBottom:'1.625rem'}}>
               <div className='input-field'>
                 <input
+                  type="text"
                   placeholder={"아이디"}
                   onFocus={(e) => {
                     setSelectedInput(0)
@@ -134,39 +135,41 @@ const SignUpModal = ({
               <span className='-ml-2'>영문, 숫자만 입력가능하며 최소 4자이상 입력하세요.</span>
             </div>
             <div className='field-container'
-                style={{ marginBottom: '2rem' }}>
-              <div className='input-field'>
+              style={{ marginBottom: '2rem' }}>
+            <div className='input-field'>
               <input
-                placeholder={"비밀번호"}
-                onFocus={(e) => {
-                  setSelectedInput(1)
-                }}
-                onBlur={(e) => {
-                  setSelectedInput(false)
-                }}
-              />
-                {selectedInput === 1 && (<div className='input-line'></div>)}
-              </div>
-              <span >영문 및 숫자를 1자 이상 반드시 포함하여 6~16자 내외로
-                <br/>입력해주세요. (특수문자 사용불가)</span>
+              type="password"
+              placeholder={"비밀번호"}
+              onFocus={(e) => {
+                setSelectedInput(1)
+              }}
+              onBlur={(e) => {
+                setSelectedInput(false)
+              }}
+            />
+              {selectedInput === 1 && (<div className='input-line'></div>)}
+            </div>
+            <span >영문 및 숫자를 1자 이상 반드시 포함하여 6~16자 내외로
+              <br/>입력해주세요. (특수문자 사용불가)</span>
             </div>
             
-              <div className='field-container'
-                style={{ marginBottom: '2rem' }}>
-              <div className='input-field'>
-              <input
-                placeholder={"환전 비밀번호"}
-                onFocus={(e) => {
-                  setSelectedInput(2)
-                }}
-                onBlur={(e) => {
-                  setSelectedInput(false)
-                }}
-              />
-                {selectedInput === 2 && (<div className='input-line'></div>)}
-              </div>
-              <span>영문 및 숫자를 1자 이상 반드시 포함하여 4~8자 내외로
-                <br />입력해주세요. (특수문자 사용불가)</span>
+            <div className='field-container'
+              style={{ marginBottom: '2rem' }}>
+            <div className='input-field'>
+            <input
+              type="password"
+              placeholder={"환전 비밀번호"}
+              onFocus={(e) => {
+                setSelectedInput(2)
+              }}
+              onBlur={(e) => {
+                setSelectedInput(false)
+              }}
+            />
+              {selectedInput === 2 && (<div className='input-line'></div>)}
+            </div>
+            <span>영문 및 숫자를 1자 이상 반드시 포함하여 4~8자 내외로
+              <br />입력해주세요. (특수문자 사용불가)</span>
             </div>
             
               <div className='field-container'
@@ -195,7 +198,8 @@ const SignUpModal = ({
                 </div>
                   <div className='input-field ' style={{ width: "100%" }}>
                   <input
-                    placeholder={"통신사"}
+                    type="number"
+                    placeholder={"휴대폰번호(숫자만 입력)"}
                     onFocus={(e) => {
                       setSelectedInput(4)
                     }}
@@ -336,7 +340,7 @@ const SignUpModal = ({
               </div>
               <div className='input-field '>
                 <input
-                    placeholder={"은행선택"}
+                    placeholder={"예금주"}
                     onFocus={(e) => {
                       setSelectedInput(6)
                     }}
@@ -350,7 +354,8 @@ const SignUpModal = ({
             </div>
             <div className='field-container'>
               <div className='input-field'>
-              <input
+                <input
+                type="number"
                 placeholder={"계좌번호(숫자만 입력)"}
                   onFocus={(e) => {
                     setSelectedInput(7)

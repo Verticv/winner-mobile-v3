@@ -19,12 +19,14 @@ function Authentication({ isAuthenticated, setAuthenticated }) {
           <div className='input-field username'>
             <img src={Username} alt="" className='input-icon'/>
             <input
+              type="text"
               placeholder={"아이디"}
             />
           </div>
           <div className='input-field password'>
             <img src={password} alt="" className='input-icon password-icon' />
             <input
+              type="password"
               placeholder={"비밀번호"}
             />
           </div>
