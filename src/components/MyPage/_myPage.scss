@@ -352,6 +352,7 @@
     right: 5.063rem;
     top: 50%;
     transform: translateY(-50%);
+    margin-top: 0.063rem;
     img {
       width: 2rem;
     }
@@ -392,6 +393,7 @@
   height: 4.125rem;
   span {
     font-size: 2.813rem !important;
+    margin-top: -0.063rem;
   }
 }
 
@@ -404,7 +406,8 @@
 
 .popup-country {
   height: 16.2rem !important;
-  width: 23.8rem !important;
+  width: 22.75rem !important;
+  overflow: hidden;
 }
 .popup-country .button-height {
   display: flex;

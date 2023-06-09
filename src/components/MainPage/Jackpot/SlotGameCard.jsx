@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from '../../../assets/images/mainPage/jackpot/bg1.png';
+import Img from '../../../assets/images/mainPage/jackpot/bg.png';
 function SlotGameCard() {
   return (
     <div className='game-card card-bg'>

@@ -1,9 +1,13 @@
 
 import CardMenu from '../../../assets/images/mainPage/hotel-casino/card-menu.png'
+import React, { useState } from 'react'
 
-const HotelCasinoCard = ({ id, title, sub_title = null, img, icon, onClick, logoClass }) => {
+const HotelCasinoCard = ({ id, title, sub_title = null, img, icon, onClick, logoClass, disable }) => {
+  const [hoverEffect, setHoverEffect] = useState(false);
   return (
-    <div className={`hotel-casino-card ${logoClass}`} >
+    <div 
+      className={`hotel-casino-card ${logoClass} ${hoverEffect ? 'hover' : ''}`}
+      >
       <img src={img} alt="HotelCasinoCard" className='casino-img' />
       <div className='logo-section'>
         <img src={icon} alt="Logo1" />
@@ -12,14 +16,23 @@ const HotelCasinoCard = ({ id, title, sub_title = null, img, icon, onClick, logo
         </p>
 
       </div>
-      <div className='card-hover'>
-        <img src={CardMenu} alt="Menu" className='card-menu' />
+      {!disable && (
+        <img
+          onClick={() => setHoverEffect(!hoverEffect)}
+          src={CardMenu} alt="Menu" className='card-menu' />
+      )}
+      {!disable && (<div className='card-hover'>
+       
         <div className='buttons'>
-          <button>게임시작</button>
-          <button>이용가이드</button>
+          <button>
+            <p>게임시작</p>
+          </button>
+          <button>
+            <p>이용가이드</p>
+          </button>
         </div>
 
-      </div>
+      </div>)}
     </div>
   );
 };

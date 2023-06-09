@@ -19,7 +19,7 @@ const CountryDropDown = ({ setCountry, country, isBig }) => {
         return items.map((item, index) => (
             <div
                 key={item.id}
-                style={{ height: '4.8rem', width: '100%', padding: '0.6rem', marginBottom: !index ? '0.25rem' : '', background: selectedTab === item.id ? '#3d3934' : '' }}
+                style={{ height: '4.8rem', width: '100%', padding: '0.6rem', marginBottom: !index ? '0.25rem' : '', background: selectedTab === item.id ? 'linear-gradient(to right, rgb(155, 58, 185), rgb(85, 35, 160))' : '' }}
                 className={`${(selectedTab === item.id)
                     ? "bg-gradient-to-br from-blue-gradLight to-blue-gradDark shadow-plain2"
                     : (hoveredTab === item.id)
@@ -39,15 +39,13 @@ const CountryDropDown = ({ setCountry, country, isBig }) => {
                 <div style={{ width: '5rem', height: '0.4rem', marginRight: '8px' }} className="rounded-full flex items-center justify-center">
                     <img className="" src={item.text === "KR" ? isBig ? Koreaflag2 : Koreaflag : isBig ? UKflag2 : UKflag} alt="flag" style={{ width: isBig ? '7.0625rem' : '5.625rem', marginTop: isBig ? '-0.7rem' : '' }}></img>
                 </div>
-                <label style={{ fontSize: isBig ? '3rem' : '2.4rem', color: 'rgb(255, 223, 189)', fontFamily: isBig ? 'SpoqaHanSansNeoBold' : 'SpoqaHanSansNeoMedium', marginLeft: '6.4rem' }} className={`${(selectedTab === item.id) ? "text-white" : "text-gray-subNavbar"} font-spoqaBold cursor-pointer`}>{item.text}</label>
+                <label style={{ fontSize: isBig ? '3rem' : '2.4rem', color: selectedTab === item.id ? '#fff' : 'rgb(102, 102, 102)', fontFamily: isBig ? 'SpoqaHanSansNeoBold' : 'SpoqaHanSansNeoMedium', marginLeft: '6.4rem' }} className={` font-spoqaBold cursor-pointer`}>{item.text}</label>
             </div>
         ));
     }
     return (
-        <div style={{ borderRadius: '0.3rem', width: "13.9rem", height: '10.2rem', border: '0.1875rem solid #2c2c2c', background: '#1f1f1e', zIndex: '100' }} className="popup-country p-2px relative flex flex-col items-center bg-white shadow-plain">
-            <div style={{ width: '3rem', height: '5px', marginTop: '-5px', marginLeft: '7px' }}>
-                <div style={{ width: '10px', height: '5px' }}></div>
-            </div>
+        <div style={{ borderRadius: '0.375rem', background: '#ededeb', zIndex: '100' }} className="popup-country p-2px relative flex flex-col items-center bg-white shadow-plain">
+           
             <CountriesList items={countriesArray} />
         </div>
     )

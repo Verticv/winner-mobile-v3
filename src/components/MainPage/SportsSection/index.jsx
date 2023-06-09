@@ -31,7 +31,7 @@ const SportsSection = () => {
           <p>{title}</p>
         </div>
         <button>
-          게임시작
+          <p>게임시작</p>
           <img src={RArrow} alt="RArrow" className='img' />
         </button>
       </div>

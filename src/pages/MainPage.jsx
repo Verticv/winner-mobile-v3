@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NoticeBanner from "../components/MainPage/NoticeBanner";
 import Slider from "../components/MainPage/Slider";
 import Jackpot from "../components/MainPage/Jackpot";
@@ -23,16 +23,16 @@ function MainPage() {
   const [selectedTab, setSelectedTab] = useState(0)
   // const [selectedSection, setSelectedSection] = useState(null)
 
-  // useEffect(() => {
-  //   if (selectedSection) {
-  //     const section = document.getElementById(selectedSection);
-  //     const top = section?.offsetTop
-  //     window.scrollTo({ top: top, behavior: 'smooth' });
-  //   } else {
-  //     window.scrollTo(0,0);
-  //   }
+  useEffect(() => {
+    // if (selectedSection) {
+    //   const section = document.getElementById(selectedSection);
+    //   const top = section?.offsetTop
+    //   window.scrollTo({ top: top, behavior: 'smooth' });
+    // } else {
+      window.scrollTo(0,0);
+    //}
    
-  // }, [selectedTab])
+  }, [selectedTab])
   
   return (
     <>

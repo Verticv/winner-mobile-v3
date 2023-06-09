@@ -2,6 +2,13 @@ import React, { useState } from 'react'
 import '../SportGames/_sportGame.scss';
 import SportGameIcon from '../../../assets/images/mainPage/sportGames/sport-game-icon.png'
 
+import World from '../../../assets/images/mainPage/sportGames/global-icon.png'
+import England from '../../../assets/images/mainPage/sportGames/england-icon.png'
+import liverpool from '../../../assets/images/mainPage/sportGames/team1.png'
+import villarreal from '../../../assets/images/mainPage/sportGames/team2.png'
+import manchester_united from '../../../assets/images/mainPage/sportGames/team3.png'
+import tottenham from '../../../assets/images/mainPage/sportGames/team3.png'
+
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import LeftArrow from '../../../assets/images/mainPage/left-arrow.png'
@@ -27,7 +34,29 @@ function SportGame() {
       title: '실시간스포츠'
     },
   ]
-
+  const sampleArray = [
+    {
+      id: 0,
+      icon: World,
+      title: "UEFA Champions League",
+      team1: { icon: liverpool, name: "리버풀" },
+      team2: { icon: villarreal, name: "비야레알" },
+    },
+    {
+      id: 1,
+      icon: England,
+      title: "Premier League",
+      team1: { icon: manchester_united, name: "맨체스터유나이티드" },
+      team2: { icon: tottenham, name: "토트넘" },
+    },
+    {
+      id: 2,
+      icon: World,
+      title: "UEFA Champions League UEFA Champions League UEFA Champions League UEFA Champions League",
+      team1: { icon: liverpool, name: "리버풀리버풀리버풀리버풀리버풀" },
+      team2: { icon: villarreal, name: "비야레알비야레알비야레알비야레알" },
+    },
+  ];
   const CarouselBackButton = ({ onClick }) => {
     return (
       <ButtonBack
@@ -70,8 +99,9 @@ function SportGame() {
       </div>
       <div className='section__slider1'>
         <CarouselProvider
+          currentSlide={51}
           visibleSlides={1}
-          totalSlides={20}
+          totalSlides={100}
           step={1}
           naturalSlideWidth={1053}
           isIntrinsicHeight={true}
@@ -81,17 +111,14 @@ function SportGame() {
             <CarouselBackButton />
             <div className="slider__content">
               <div className='sport-container'>
-              <Slider classNameTrayWrap="carousel_tray_wrapper">
-                
-                {Array(20)
-                  .fill(undefined)
-                  .map((_, index) => (
-                    <Slide key={index} className="card_animation_slide_horizontal" index={index}>
-                      
-                      <SportGameCard />
-                      
-                    </Slide>
-                  ))}
+                <Slider classNameTrayWrap="carousel_tray_wrapper">
+                  {Array(100)
+                    .fill(0)
+                    .map((item, index) => (
+                      <Slide index={0}>
+                        <SportGameCard item={sampleArray[index % 3]} />
+                      </Slide>
+                    ))}
                 </Slider>
                 </div>
             </div>

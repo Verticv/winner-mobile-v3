@@ -176,6 +176,10 @@
     font-family: 'SpoqaHanSansNeoBold';
     letter-spacing: -0.025em;
     margin-right: 0.125rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 15.063rem;
   }
 }
 .vs {

@@ -10,6 +10,17 @@ import slotImg2 from '../../../assets/images/mainPage/slotGames/slot-game-img7.p
 import slotImg3 from '../../../assets/images/mainPage/slotGames/slot-game-img2.png'
 import slotImg4 from '../../../assets/images/mainPage/slotGames/slot-game-img8.png'
 
+import slotImg5 from '../../../assets/images/mainPage/slotGames/slot-game-img3.png'
+import slotImg6 from '../../../assets/images/mainPage/slotGames/slot-game-img4.png'
+import slotImg7 from '../../../assets/images/mainPage/slotGames/slot-game-img5.png'
+import slotImg8 from '../../../assets/images/mainPage/slotGames/slot-game-img6.png'
+// import slotImg9 from '../../../assets/images/mainPage/slotGames/slot-game-img7.png'
+// import slotImg10 from '../../../assets/images/mainPage/slotGames/slot-game-img8.png'
+import slotImg11 from '../../../assets/images/mainPage/slotGames/slot-game-img9.png'
+import slotImg12 from '../../../assets/images/mainPage/slotGames/slot-game-img10.png'
+import slotImg13 from '../../../assets/images/mainPage/slotGames/slot-game-img11.jpg'
+import slotImg14 from '../../../assets/images/mainPage/slotGames/slot-game-img12.png'
+
 import RedTag from '../../../assets/images/mainPage/slotGames/red-tag.png'
 import BlueTag from '../../../assets/images/mainPage/slotGames/blue-tag.png'
 import greenTag from '../../../assets/images/mainPage/slotGames/green-tag.png'
@@ -84,23 +95,23 @@ function SlotGame() {
         },
       ]
     },
-     {
+    {
       id: 2,
       cards: [
         {
           id: 0,
-          title: 'Titan Thunder Wrath...',
-          sub_title: 'Quickspin',
-          img: slotImg1,
+          title: 'The Tweety House',
+          sub_title: 'Pragmatic',
+          img: slotImg5,
           tag: RedTag,
           tag_name: '인기'
         },
         {
-          id: 1,
-          title: 'Black Wolf',
-          sub_title: 'Netent',
-          img: slotImg2,
-          tag: BlueTag,
+          id: 9,
+          title: 'Elvis Frog True Ways',
+          sub_title: 'Skywind',
+          img: slotImg11,
+          tag: RedTag,
           tag_name: '신규'
         },
       ]
@@ -110,23 +121,64 @@ function SlotGame() {
       cards: [
         {
           id: 2,
-          title: 'Space Man',
-          sub_title: 'Plagmatic',
-          img: slotImg3,
+          title: 'Crown of Valor',
+          sub_title: 'Quickspin',
+          img: slotImg6,
           tag: RedTag,
           tag_name: '인기'
         },
         {
           id: 3,
-          title: 'Rio Gems',
-          sub_title: 'Yggdrasil',
-          img: slotImg4,
+          title: 'Bozo Cats',
+          sub_title: 'Playtech',
+          img: slotImg12,
+          tag: RedTag,
+          tag_name: '추천'
+        },
+      ]
+    },
+    {
+      id: 4,
+      cards: [
+        {
+          id: 5,
+          title: 'Wild West Gold',
+          sub_title: 'Pragmatic',
+          img: slotImg7,
+          tag: RedTag,
+          tag_name: '인기'
+        },
+        {
+          id: 3,
+          title: 'Hot Fruits 20',
+          sub_title: 'Pragmatic',
+          img: slotImg13,
+          tag: BlueTag,
+          tag_name: '신규'
+        },
+      ]
+    },
+    {
+      id: 5,
+      cards: [
+        {
+          id: 6,
+          title: 'Sun of Egypt',
+          sub_title: 'Booongo',
+          img: slotImg8,
           tag: greenTag,
+          tag_name: '추천'
+        },
+        {
+          id: 3,
+          title: 'Hit the Bank',
+          sub_title: 'Microgaming',
+          img: slotImg14,
+          tag: RedTag,
           tag_name: '추천'
         },
       ]
     }
-    
   ]
 
   const CarouselBackButton = ({onClick }) => {
@@ -171,9 +223,10 @@ function SlotGame() {
          setSelectedTab={setSelectedTab} />
       </div>
       <div className='slot-game__slider'>
-        <CarouselProvider
+       <CarouselProvider
+          currentSlide={42}
           visibleSlides={2}
-          totalSlides={4}
+          totalSlides={84}
           step={1}
           naturalSlideWidth={577}
           isIntrinsicHeight={true}
@@ -183,8 +236,22 @@ function SlotGame() {
             <CarouselBackButton/>
             <div className="slider__content">
               <Slider classNameTrayWrap="carousel_tray_wrapper">
-                {slotGames
-                  .map((game, index) => (
+               {[
+                 ...slotGames,
+                 ...slotGames,
+                 ...slotGames,
+                 ...slotGames,
+                 ...slotGames,
+                 ...slotGames,
+                 ...slotGames,
+                 ...slotGames,
+                 ...slotGames,
+                 ...slotGames,
+                 ...slotGames,
+                 ...slotGames,
+                 ...slotGames,
+                 ...slotGames,
+                ].map((game, index) => (
                     <Slide key={index} className="card_animation_slide_horizontal" index={index}>
                       <div className='cards-container'>
                         {game.cards.map((card, index) => (

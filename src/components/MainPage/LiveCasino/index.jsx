@@ -105,6 +105,7 @@ const LiveCasino = () => {
           {LiveCasinoList.map((card, index) => (
             <LiveCasinoCard
               key={card.id}
+              id={card.id}
               title={card.title}
               img={card.img}
               is_best={card.is_best}

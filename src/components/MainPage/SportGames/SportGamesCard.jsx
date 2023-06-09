@@ -1,20 +1,19 @@
 import SportIcon from '../../../assets/images/mainPage/sportGames/sport-icon.png'
-import GlobalIcon from '../../../assets/images/mainPage/sportGames/global-icon.png'
+
 import Team1 from '../../../assets/images/mainPage/sportGames/team1.png'
 import Team2 from '../../../assets/images/mainPage/sportGames/team2.png'
-
-const SportGameCard = ({ onClick }) => {
+const SportGameCard = ({item}) => {
   return (
     <div className='sport-card'>
       <div className='card__header'>
         <img src={SportIcon} alt="right" className='header__icon' />
-        <img src={GlobalIcon} alt="right" className='header__icon' />
-        <p className='truncate'>UEFA Champions League</p>
+        <img src={item.icon} alt="right" className='header__icon' />
+        <p className='truncate'>{item.title}</p>
       </div>
       <div className='card__content'>
         <div className='team team1'>
           <img src={Team1} alt="right" />
-          <p>리버플</p>
+          <p>{item.team1.name}</p>
         </div>
         <div className='vs'>
           <div className='time'>08/25 15:45</div>
@@ -22,7 +21,7 @@ const SportGameCard = ({ onClick }) => {
         </div>
         <div className='team team2'>
           <img src={Team2} alt="right" />
-          <p>비야레알</p>
+          <p>{item.team2.name}</p>
         </div>
       </div>
       <div className='card__footer'>

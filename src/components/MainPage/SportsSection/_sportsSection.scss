@@ -51,8 +51,7 @@
     background: linear-gradient(to right, rgb(223, 82, 255), rgb(107, 34, 255));
     box-shadow: 0 0 1.25rem 0.625rem rgba(0, 0, 0, 0.3);
     color: #fff;
-    font-size: 2rem;
-    font-family: 'SpoqaHanSansNeoBold';
+    
     min-width: 16.125rem;
     height: 4.125rem;
     display: flex;
@@ -61,7 +60,12 @@
     letter-spacing: -0.063rem;
     padding-left: 3.063rem;
     padding-right: 0.875rem;
-
+    p {
+      margin: 0.063rem 0 0 -0.188rem;
+      letter-spacing: -0.063rem;
+      font-size: 2rem;
+      font-family: 'SpoqaHanSansNeoBold';
+    }
     img {
       width: 3rem;
     }
