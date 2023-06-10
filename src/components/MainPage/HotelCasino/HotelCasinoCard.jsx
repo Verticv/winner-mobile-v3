@@ -12,7 +12,10 @@ const HotelCasinoCard = ({ id, title, sub_title = null, img, icon, onClick, logo
       <div className='logo-section'>
         <img src={icon} alt="Logo1" />
         <p>{title}
-          {sub_title && (<span className='sub-title'>{sub_title}</span>)}
+          {sub_title && (<>
+            <br />
+            <span className='sub-title'>{sub_title}</span>
+          </>)}
         </p>
 
       </div>
