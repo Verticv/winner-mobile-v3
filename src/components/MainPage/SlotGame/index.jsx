@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './_slotGame.scss';
 
-import SlotGameIcon from '../../../assets/images/mainPage/sectionTitle/icon4.png'
+import SlotGameIcon from '../../../assets/images/mainPage/sectionTitle/icon41.png'
 import LeftArrow from '../../../assets/images/mainPage/left-arrow.png'
 import RightArrow from '../../../assets/images/mainPage/right-arrow.png'
 

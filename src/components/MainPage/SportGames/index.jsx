@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../SportGames/_sportGame.scss';
-import SportGameIcon from '../../../assets/images/mainPage/sportGames/sport-game-icon.png'
+import SportGameIcon from '../../../assets/images/mainPage/sportGames/sport-game-icon1.png'
 
 import World from '../../../assets/images/mainPage/sportGames/global-icon.png'
 import England from '../../../assets/images/mainPage/sportGames/england-icon.png'

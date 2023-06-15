@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import OtherGamesIcon from '../../../assets/images/mainPage/other-games/other-games.png'
+import OtherGamesIcon from '../../../assets/images/mainPage/other-games/other-games1.png'
 import image1 from '../../../assets/images/mainPage/other-games/other-game1.png'
 import image2 from '../../../assets/images/mainPage/other-games/other-game2.png'
 import image3 from '../../../assets/images/mainPage/other-games/other-game3.png'

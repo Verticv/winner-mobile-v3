@@ -11,13 +11,14 @@
   justify-content: space-between;
   align-items: center;
   .section__icon {
-    width: 5.5rem; 
-    height: 5rem;
-      display: flex;
-        align-items: center;
+    width: 5.563rem;
+    height: 5.563rem;
+    display: flex;
+    align-items: center;
   }
   img {
     max-width: 100%;
+    
   }
 
   h1 {
@@ -29,6 +30,7 @@
     margin: 0;
     max-width: 43.75rem;
     margin-left: -0.125rem;
+    margin-top: -0.625rem;
   }
 }
 
