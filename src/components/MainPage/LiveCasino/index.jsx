@@ -14,7 +14,6 @@ import LiveCasinoImage12 from '../../../assets/images/mainPage/live-casino/live-
 import LiveCasinoImage13 from '../../../assets/images/mainPage/live-casino/live-casino-img13.png'
 import LiveCasinoImage14 from '../../../assets/images/mainPage/live-casino/live-casino-img14.png'
 import SectionHeader from "../../Shared/SectionHeader";
-
 import './_liveCasino.scss';
 import LiveCasinoIcon from '../../../assets/images/mainPage/sectionTitle/icon11.png'
 import LiveCasinoCard from './LiveCasinoCard'
@@ -25,76 +24,89 @@ const LiveCasino = () => {
       id: 0,
       title: '프레그메틱플레이',
       img: LiveCasinoImage1,
-      is_best: true
+      is_best: true,
+      path: null
     },
     {
       id: 1,
       title: '에볼루션',
-      img: LiveCasinoImage2
+      img: LiveCasinoImage2,
+      path: '/esports/multi'
     },
     {
       id: 2,
       title: '로얄지',
-      img: LiveCasinoImage3
+      img: LiveCasinoImage3,
+      path: '/esports/multi'
     },
     {
       id: 3,
       title: '아시아게이밍',
-      img: LiveCasinoImage4
+      img: LiveCasinoImage4,
+      path: '/esports/multi'
     },
     {
       id: 4,
       title: '드림게이밍',
-      img: LiveCasinoImage5
+      img: LiveCasinoImage5,
+      path: '/esports/multi'
     },
     {
       id: 5,
       title: '섹시게이밍',
-      img: LiveCasinoImage6
+      img: LiveCasinoImage6,
+      path: '/esports/multi'
     },
     {
       id: 6,
       title: '빅게이밍',
-      img: LiveCasinoImage7
+      img: LiveCasinoImage7,
+      path: '/esports/multi'
     },
     {
       id: 7,
       title: '오리엔탈게임',
-      img: LiveCasinoImage8
+      img: LiveCasinoImage8,
+      path: '/esports/multi'
     },
     {
       id: 8,
       title: '이주기',
-      img: LiveCasinoImage9
+      img: LiveCasinoImage9,
+      path: '/esports/multi'
     },
     {
       id: 9,
       title: '마이크로게이밍',
-      img: LiveCasinoImage10
+      img: LiveCasinoImage10,
+      path: '/esports/multi'
     },
     {
       id: 10,
       title: '베가스라운지',
-      img: LiveCasinoImage11
+      img: LiveCasinoImage11,
+      path: '/esports/multi'
     },
     {
       id: 11,
       title: '비터라이브',
-      img: LiveCasinoImage12
+      img: LiveCasinoImage12,
+      path: '/esports/multi'
     },
     {
       id: 12,
       title: '타이산',
-      img: LiveCasinoImage13
+      img: LiveCasinoImage13,
+      path: '/esports/multi'
     },
     {
       id: 13,
       title: 'Coming Soon',
       img: LiveCasinoImage14,
-      is_coming_soon: true
+      is_coming_soon: true,
+      path: '/esports/multi'
     },
   ]
-
   return (
     <div className='live-casino liveC-section'>
       <SectionHeader
@@ -109,7 +121,8 @@ const LiveCasino = () => {
               title={card.title}
               img={card.img}
               is_best={card.is_best}
-              is_coming_soon={card.is_coming_soon} />
+              is_coming_soon={card.is_coming_soon}
+              path={card.path} />
           ))
           }
         </div>

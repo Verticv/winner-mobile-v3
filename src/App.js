@@ -11,6 +11,7 @@ import ScrollToTop from './helpers/scrollToTop';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MainPage from './pages/MainPage';
+import EsportsPage from './old-components/EsportsPage';
 import { getCookie, setCookie } from './utils';
 import MyPage from './pages/MyPage';
 import Authentication from './pages/Authentication';
@@ -50,51 +51,65 @@ function App() {
 
 
   return (
-    <>
-    <div className='app'>
-      <Router>
-        <ScrollToTop />
-        <Routes>
-          <Route
-            path="/main"
-            element={
-              <>
-                <Header />
-                <MainPage />
-                <Footer />
-              </>
-            }
-          />
-        </Routes>
-        <Routes>
-          <Route
-            path="/"
-            element={
-               <>
-                <Authentication
-                  isAuthenticated={isAuthenticated}
-                  setAuthenticated={setAuthenticated}
-                />
-              </>
-            }
-          ></Route>
-        </Routes>
-        {/* my page */}
-        <Routes>
-          <Route
-            path="/mypage/*"
-            element={
-              <MyPage
-                isAuthenticated={isAuthenticated}
-                setAuthenticated={setAuthenticated}
-              />
-            }
-          />
-        </Routes>
-      </Router>
-    </div>
-    </>
-  );
+		<>
+			<div className="app">
+				<Router>
+					<ScrollToTop />
+					<Routes>
+						<Route
+							path="/main"
+							element={
+								<>
+									<Header />
+									<MainPage />
+									<Footer />
+								</>
+							}
+						/>
+					</Routes>
+					<Routes>
+						<Route
+							path="/"
+							element={
+								<>
+									<Authentication
+										isAuthenticated={isAuthenticated}
+										setAuthenticated={setAuthenticated}
+									/>
+								</>
+							}
+						></Route>
+					</Routes>
+					{/* my page */}
+					<Routes>
+						<Route
+							path="/mypage/*"
+							element={
+								<MyPage
+									isAuthenticated={isAuthenticated}
+									setAuthenticated={setAuthenticated}
+								/>
+							}
+						/>
+					</Routes>
+					<Routes>
+						<Route
+							path="/esports/*"
+							element={
+								<>
+									<Header />
+									<EsportsPage
+										isAuthenticated={isAuthenticated}
+										setAuthenticated={setAuthenticated}
+									/>
+								</>
+							}
+						></Route>
+					</Routes>
+				</Router>
+			</div>
+		</>
+	);
 }
 
 export default App;

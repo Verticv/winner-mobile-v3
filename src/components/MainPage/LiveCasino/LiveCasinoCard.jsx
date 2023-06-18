@@ -1,14 +1,19 @@
 import BestIcon from '../../../assets/images/mainPage/live-casino/best-icon.png'
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
-const LiveCasinoCard = ({ id, title, img, is_best = false, is_coming_soon = false, onClick }) => {
+const LiveCasinoCard = ({ id, title, img, is_best = false, is_coming_soon = false, path, onClick}) => {
   
   const [hoverEffect, setHoverEffect] = useState(false);
-  
+  const navigate = useNavigate();
   return (
     <div 
       className={`live-casino-card ${hoverEffect ? 'hover' : ''}`}
-      onClick={() => id === 0 ? setHoverEffect(!hoverEffect) : null}
+      onClick={
+        () => id === 0 ?
+          setHoverEffect(!hoverEffect)
+          : navigate(path)
+        }
      >
       {is_coming_soon && <p className='title coming-soon'>{title}</p>}
       {!is_coming_soon && <p className='title'>{title}</p>}

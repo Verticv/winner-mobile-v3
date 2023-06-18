@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import { Route, Routes } from 'react-router';
-import Header from '../Header';
-import HomePageTopBanner from "../HomePageTopBanner";
 import HorizontalMenu9 from '../HorizontalMenu9';
 import EsportsStructure from '../EsportsStructure';
 import EsportsSingle from '../EsportsSingle';
@@ -21,10 +19,7 @@ const EsportsPage = ({ isAuthenticated, setAuthenticated }) => {
     return (
         <div className="relative flex flex-col justify-center overflow-hidden" style={{ paddingBottom: '17rem' }}>
 
-            <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
-                <Header isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
-                <HomePageTopBanner pageTitle='e-스포츠' toPath='/main' />
-            </div>
+          
 
 
             <div className="flex flex-col items-start limit:items-center limit1600:mt-92px mt-122px w-full h-full">
