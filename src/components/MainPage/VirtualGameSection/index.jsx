@@ -1,7 +1,7 @@
 
 
 //import VirtualGameIcon from '../../../assets/images/mainPage/virtual-game-icon.png'
-import VirtualGameIcon from '../../../assets/images/mainPage/sectionTitle/icon8.png'
+import VirtualGameIcon from '../../../assets/images/mainPage/sectionTitle/icon81.png'
 import SectionHeader from "../../Shared/SectionHeader";
 import Image1 from '../../../assets/images/mainPage/virtual-game1.png'
 

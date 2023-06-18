@@ -72,7 +72,7 @@ function MainPage() {
       )}
       {selectedTab === 5 && (
         <div id="hotel-casino"  className="filter-content">
-          <HotelCasino />
+          <HotelCasino filter={true} />
         </div>
 
       )}

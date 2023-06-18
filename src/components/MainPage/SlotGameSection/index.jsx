@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import SlotGameIcon from '../../../assets/images/mainPage/slot-game-icon.png'
+import SlotGameIcon from '../../../assets/images/mainPage/slot-game-icon1.png'
 import slotImg1 from '../../../assets/images/mainPage/slotGames/slot-game-img1.png'
 import slotImg2 from '../../../assets/images/mainPage/slotGames/slot-game-img2.png'
 import slotImg3 from '../../../assets/images/mainPage/slotGames/slot-game-img3.png'

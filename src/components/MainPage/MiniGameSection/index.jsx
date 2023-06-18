@@ -7,7 +7,7 @@ import Image2 from '../../../assets/images/mainPage/miniGames/mini-game2.png'
 import Image3 from '../../../assets/images/mainPage/miniGames/mini-game3.png'
 import Image4 from '../../../assets/images/mainPage/miniGames/mini-game4.png'
 import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
-import MiniGameIcon from '../../../assets/images/mainPage/sectionTitle/icon7.png'
+import MiniGameIcon from '../../../assets/images/mainPage/sectionTitle/icon7-1.png'
 
 const MiniGameSection = () => {
 

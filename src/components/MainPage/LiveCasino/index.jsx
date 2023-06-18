@@ -16,7 +16,7 @@ import LiveCasinoImage14 from '../../../assets/images/mainPage/live-casino/live-
 import SectionHeader from "../../Shared/SectionHeader";
 
 import './_liveCasino.scss';
-import LiveCasinoIcon from '../../../assets/images/mainPage/sectionTitle/icon1.png'
+import LiveCasinoIcon from '../../../assets/images/mainPage/sectionTitle/icon11.png'
 import LiveCasinoCard from './LiveCasinoCard'
 
 const LiveCasino = () => {

@@ -1,6 +1,6 @@
 
 //import TibetIcon from '../../../assets/images/mainPage/tibet-icon.png'
-import TibetIcon from '../../../assets/images/mainPage/sectionTitle/icon10.png'
+import TibetIcon from '../../../assets/images/mainPage/sectionTitle/icon101.png'
 import SectionHeader from "../../Shared/SectionHeader";
 import Image1 from '../../../assets/images/mainPage/tibet-game1.png'
 import Image2 from '../../../assets/images/mainPage/tibet-game2.png'

@@ -4,7 +4,7 @@
 import SectionHeader from "../../Shared/SectionHeader";
 import Image1 from '../../../assets/images/mainPage/live-sport-game1.png'
 import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
-import LiveSportIcon from '../../../assets/images/mainPage/sectionTitle/icon3.png'
+import LiveSportIcon from '../../../assets/images/mainPage/sectionTitle/icon31.png'
 
 const LiveSportsSection = () => {
 

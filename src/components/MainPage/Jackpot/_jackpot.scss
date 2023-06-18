@@ -92,17 +92,18 @@
   letter-spacing: -.025em;
   height: 13.25rem;
   .card__image {
-    //background: rgba(255, 255, 255, 0.2);
     background: linear-gradient(to right, rgb(73, 67, 91), rgb(81, 78, 121));
     overflow: hidden;
-    padding: 0.188rem;
     width: 12rem;
     height: 12rem;
     border-radius: 0.438rem;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
-      width: 100%;
-      height: 100%;
+      width: 11.625rem;
+      height: 11.625rem;
       border-radius:0.188rem;
       overflow: hidden;
   

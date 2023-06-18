@@ -6,7 +6,7 @@
 import SectionHeader from "../../Shared/SectionHeader";
 import Image1 from '../../../assets/images/mainPage/fishing-game.png'
 import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
-import FishingGameIcon from '../../../assets/images/mainPage/sectionTitle/icon9.png'
+import FishingGameIcon from '../../../assets/images/mainPage/sectionTitle/icon91.png'
 
 const FishingGameSection = () => {
 

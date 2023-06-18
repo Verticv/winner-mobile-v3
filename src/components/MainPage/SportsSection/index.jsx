@@ -4,7 +4,7 @@ import SectionHeader from "../../Shared/SectionHeader";
 import Image1 from '../../../assets/images/mainPage/sport-game1.png'
 import Image2 from '../../../assets/images/mainPage/sport-game2.png'
 import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
-import SportIcon from '../../../assets/images/mainPage/sectionTitle/icon-2.png'
+import SportIcon from '../../../assets/images/mainPage/sectionTitle/icon22.png'
 import '../SportsSection/_sportsSection.scss';
 
 const SportsSection = () => {

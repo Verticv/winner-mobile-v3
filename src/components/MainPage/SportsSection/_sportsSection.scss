@@ -94,12 +94,19 @@
   .live-casino {
     .section__Title {
       margin-top: 1.25rem;
+      h1 {
+        margin-top: -0.188rem !important;
+        margin-left: -0.25rem;
+      }
     }
   }
   .slot-game-section {
     .section__Title {
       margin-top: 1.063rem;
       margin-left: -0.063rem;
+      img {
+        margin-top: 0.125rem;
+      }
     }
   }
   .hotel-casino {
@@ -137,6 +144,9 @@
     .section__Title {
       margin-top: 1.063rem;
       margin-left: -0.063rem;
+      img {
+        margin-top: -0.5rem;
+      }
     }
     .shared-card {
       .desc {
@@ -153,6 +163,9 @@
     .section__Title {
       margin-top: 1.063rem;
       margin-left: -0.063rem;
+      h1 {
+        margin-left: -0.063rem;
+      }
     }
     .desc {
       right: 4.375rem;
@@ -161,7 +174,13 @@
   &.fishing-section {
     .section__Title {
       margin-top: 1.063rem;
-      margin-left: -0.063rem;
+      margin-left: 0;
+      h1 {
+        margin-left: -0.125rem;
+      }
+    }
+    .section__icon {
+      width: 5.438rem;
     }
     .desc {
       right: 4.375rem;
@@ -171,6 +190,9 @@
     .section__Title {
       margin-top: 1.063rem;
       margin-left: -0.063rem;
+    }
+    .section__icon {
+      width: 5.5rem !important;
     }
     .desc {
       top: 9.5rem;

@@ -250,6 +250,10 @@
           padding-left: 2.75rem;
           padding-right: 2.75rem;
           .button-img2 {
+            @media screen and (max-width: 700px) {
+              display: flex;
+              align-items: center;
+            }
             img {
               width: 5.375rem;
               height: auto;
@@ -267,7 +271,9 @@
             margin-right: 0.063rem;
           }
         }
+      
     }
+    
   }
   
   .audience-btn {
@@ -326,10 +332,14 @@
     }
   }
   .country-flag {
+    @media screen and (max-width: 700px) {
+      display: flex;
+      align-items: center;
+    }
     img {
       width: 8.688rem;
       margin-left: -0.313rem;
-      margin-top: -0.063rem;
+      margin-top: -0.125rem;
     }
   }
  
@@ -339,7 +349,7 @@
   align-items: center;
   gap: 0.438rem;
   margin-right: -0.063rem;
-  padding-top: 0.125rem;
+  padding-top: 0.063rem;
   img {
     width: 2.125rem;
   }

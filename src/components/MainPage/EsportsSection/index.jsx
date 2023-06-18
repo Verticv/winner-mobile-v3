@@ -9,7 +9,7 @@ import Image2 from '../../../assets/images/mainPage/esports-games/e-sports-game2
 import Image3 from '../../../assets/images/mainPage/esports-games/e-sports-game3.png'
 import Image4 from '../../../assets/images/mainPage/esports-games/e-sports-game4.png'
 import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
-import EsportsIcon from '../../../assets/images/mainPage/sectionTitle/icon6.png'
+import EsportsIcon from '../../../assets/images/mainPage/sectionTitle/icon61.png'
 
 const EsportsSection = () => {
 

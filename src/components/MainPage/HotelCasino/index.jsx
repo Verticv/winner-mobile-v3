@@ -11,7 +11,7 @@ import HotelCasinoIcon3 from '../../../assets/images/mainPage/hotel-casino/hotel
 
 import SectionHeader from "../../Shared/SectionHeader";
 import HotelCasinoCard from './HotelCasinoCard'
-
+import HotelCasinoIcon11 from '../../../assets/images/mainPage/sectionTitle/icon111.png'
 
 import './_hotelCasino.scss';
 const HotelCasinoList = [
@@ -41,11 +41,11 @@ const HotelCasinoList = [
     disable: true
   },
 ]
-const HotelCasino = () => {
+const HotelCasino = ({ filter = false }) => {
   return (
     <div className='hotel-casino'>
       <SectionHeader
-        icon={HotelCasinoIcon}
+        icon={filter ? HotelCasinoIcon11 : HotelCasinoIcon}
         title={'호텔카지노'} />
       <div className='section__content'>
         {HotelCasinoList.map((card, index) => (

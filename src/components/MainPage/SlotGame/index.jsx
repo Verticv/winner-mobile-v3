@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './_slotGame.scss';
 
-import SlotGameIcon from '../../../assets/images/mainPage/sectionTitle/icon41.png'
+import SlotGameIcon from '../../../assets/images/mainPage/sectionTitle/t-icon-4.png'
 import LeftArrow from '../../../assets/images/mainPage/left-arrow.png'
 import RightArrow from '../../../assets/images/mainPage/right-arrow.png'
 
@@ -14,8 +14,6 @@ import slotImg5 from '../../../assets/images/mainPage/slotGames/slot-game-img3.p
 import slotImg6 from '../../../assets/images/mainPage/slotGames/slot-game-img4.png'
 import slotImg7 from '../../../assets/images/mainPage/slotGames/slot-game-img5.png'
 import slotImg8 from '../../../assets/images/mainPage/slotGames/slot-game-img6.png'
-// import slotImg9 from '../../../assets/images/mainPage/slotGames/slot-game-img7.png'
-// import slotImg10 from '../../../assets/images/mainPage/slotGames/slot-game-img8.png'
 import slotImg11 from '../../../assets/images/mainPage/slotGames/slot-game-img9.png'
 import slotImg12 from '../../../assets/images/mainPage/slotGames/slot-game-img10.png'
 import slotImg13 from '../../../assets/images/mainPage/slotGames/slot-game-img11.jpg'
