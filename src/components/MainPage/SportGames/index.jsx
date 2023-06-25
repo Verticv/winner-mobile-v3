@@ -7,7 +7,7 @@ import England from '../../../assets/images/mainPage/sportGames/england-icon.png
 import liverpool from '../../../assets/images/mainPage/sportGames/team1.png'
 import villarreal from '../../../assets/images/mainPage/sportGames/team2.png'
 import manchester_united from '../../../assets/images/mainPage/sportGames/team3.png'
-import tottenham from '../../../assets/images/mainPage/sportGames/team3.png'
+import tottenham from '../../../assets/images/mainPage/sportGames/team4.png'
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";

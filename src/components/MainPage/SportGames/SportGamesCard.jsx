@@ -1,7 +1,5 @@
 import SportIcon from '../../../assets/images/mainPage/sportGames/sport-icon.png'
 
-import Team1 from '../../../assets/images/mainPage/sportGames/team1.png'
-import Team2 from '../../../assets/images/mainPage/sportGames/team2.png'
 const SportGameCard = ({item}) => {
   return (
     <div className='sport-card'>
@@ -12,7 +10,9 @@ const SportGameCard = ({item}) => {
       </div>
       <div className='card__content'>
         <div className='team team1'>
-          <img src={Team1} alt="right" />
+          <span className='team-img'>
+            <img src={item.team1.icon} alt="Team1" />
+          </span>
           <p>{item.team1.name}</p>
         </div>
         <div className='vs'>
@@ -20,7 +20,9 @@ const SportGameCard = ({item}) => {
           <p>VS</p>
         </div>
         <div className='team team2'>
-          <img src={Team2} alt="right" />
+          <span className='team-img'>
+            <img src={item.team2.icon} alt="Team2" />
+          </span>
           <p>{item.team2.name}</p>
         </div>
       </div>
