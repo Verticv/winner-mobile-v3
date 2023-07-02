@@ -115,7 +115,7 @@ function SportGame() {
                   {Array(100)
                     .fill(0)
                     .map((item, index) => (
-                      <Slide index={0}>
+                      <Slide index={0} key={index}>
                         <SportGameCard item={sampleArray[index % 3]} />
                       </Slide>
                     ))}

@@ -7,7 +7,7 @@ function SlotGameCard() {
         <img src={Img} alt="" />
       </div>
       <div className='card__info'>
-        <div className='card__title truncate'> Wild West Gold</div>
+        <div className='card__title truncate'>Crown of Valor</div>
         <div className='card__cont truncate'>마이프로틴***</div>
         <div className='card__score truncate'>₩123,456,789</div>
       </div>

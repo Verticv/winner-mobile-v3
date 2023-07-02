@@ -33,6 +33,7 @@ function Jackpot() {
               step={1}
               interval={5000}
               naturalSlideHeight={210}
+              naturalSlideWidth={294}
               isPlaying
               dragEnabled={false}
               touchEnabled={false}

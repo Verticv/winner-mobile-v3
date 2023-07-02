@@ -1,5 +1,6 @@
 .filter-content {
  // padding-top:0.938rem;
+ min-height: calc( 100vh - 71.938rem);
   .section__header {
     height: 9.625rem;
     padding: 0 2.438rem 0 1.813rem; //2rem 2.438rem 1.563rem 1.813rem;
@@ -46,20 +47,20 @@
   button {
     position: absolute;
     bottom: 3.75rem;
-    right: 4.625rem;
+    right: 4.688rem;
     border-radius: 2rem;
     background: linear-gradient(to right, rgb(223, 82, 255), rgb(107, 34, 255));
     box-shadow: 0 0 1.25rem 0.625rem rgba(0, 0, 0, 0.3);
     color: #fff;
     
-    min-width: 16.125rem;
+    min-width: 16rem;
     height: 4.125rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     letter-spacing: -0.063rem;
-    padding-left: 3.063rem;
-    padding-right: 0.875rem;
+    padding-left: 3.25rem;
+    padding-right: 0.813rem;
     p {
       margin: 0.063rem 0 0 -0.188rem;
       letter-spacing: -0.063rem;
@@ -136,7 +137,7 @@
         right: 4.5rem;
       } 
       button {
-        padding-left: 3.188rem;
+       // padding-left: 3.188rem;
       }
     }
   }
@@ -155,7 +156,7 @@
       }
     
       button {
-        padding-left: 3.188rem;
+       // padding-left: 3.188rem;
       }
     }
   }

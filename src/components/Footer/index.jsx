@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import '../Footer/_footer.scss';
 import Brands from "../../assets/images/footer/brands.png";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
@@ -13,8 +13,9 @@ import PaymentMethods from '../../assets/images/footer/payment-methods.png'
 
 import Collapse from '../Shared/Collapse'
 
-function Footer() { 
-  const [isExpanded, setExpanded] = useState(0);
+function Footer({ isExpanded, setExpanded }) { 
+
+  
 
   const footerList = [
     {
@@ -22,6 +23,7 @@ function Footer() {
       list: [
         '프레그메틱플레이',
         '에볼루션',
+        '로얄지',
         '얄지',
         '아시아게이밍',
         '드림게이밍',
@@ -30,6 +32,10 @@ function Footer() {
         '오리엔탈게임',
         '이주기',
         '마이크로게이밍',
+        '베가스라운지',
+        '비터라이브',
+        '타이산',
+        '모티베이션'
       ]
     },
     {
@@ -43,7 +49,8 @@ function Footer() {
     {
       title: '슬롯게임',
       list: [
-        '슬롯게임'
+        '슬롯게임',
+        '케이플레이슬롯'
       ]
     },
     {
@@ -56,6 +63,7 @@ function Footer() {
     {
       title: '기타게임',
       list: [
+        'K-홀덤',
         'e-스포츠',
         '미니게임',
         '키론가상게임',

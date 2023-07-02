@@ -17,25 +17,29 @@ const EsportsSection = () => {
     {
       id: 0,
       title: 'e-스포츠',
-      img: Image1
+      img: Image1,
+      btnText: '게임시작'
     },
     {
       id: 1,
       title: '화면구성설명',
-      img: Image2
+      img: Image2,
+      btnText: '설명보기'
     },
     {
       id: 2,
       title: '단폴더베팅방법',
-      img: Image3
+      img: Image3,
+      btnText: '설명보기'
     },
     {
       id: 4,
       title: '다폴더베팅방법',
-      img: Image4
+      img: Image4,
+      btnText: '설명보기'
     },
   ]
-  const Card = ({ id, title, img, onClick }) => {
+  const Card = ({ id, title, btnText, img, onClick }) => {
     return (
       <div className='shared-card'>
         <img src={img} alt="img" className='img' />
@@ -43,7 +47,7 @@ const EsportsSection = () => {
           <p>{title}</p>
         </div>
         <button>
-          <p>게임시작</p>
+          <p>{btnText}</p>
           <img src={RArrow} alt="RArrow" className='img' />
         </button>
       </div>
@@ -60,7 +64,8 @@ const EsportsSection = () => {
         <Card
           key={card.id}
           title={card.title}
-            img={card.img} />
+          img={card.img}
+          btnText={card.btnText} />
         ))}
       </div>   
     </div>

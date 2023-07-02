@@ -14,11 +14,6 @@ import Button6 from '../../assets/images/button-icon6.png'
 import TelegramIcon from '../../assets/images/footer/telegram-icon.png'
 import TalkIcon from '../../assets/images/footer/talk-icon.png'
 
-// import ArrowUpWhite from "../../assets/myInfo/down-arrow.png";
-// //import ArrowDown from "../../assets/myInfo/down-arrow.png";
-// import ArrowUp from "../../assets/myInfo/down-arrow.png";
-
-
 import ArrowDown from "../../assets/images/down-arrow.png";
 import DropDownControls from "../../components/Shared/DropDownControls";
 import CountryDropDown from '../../components/Shared/CountryDropDown';
@@ -30,15 +25,7 @@ const ProfileInfo = () => {
   const [isCountryOpen, setCountryOpen] = useState();
   const [country, setCountry] = useState("KR");
   const navigate = useNavigate();
-  // const DropdownArrow = ({ isOpen, isWhite }) => (
-  //   <>
-  //     {isWhite ? (
-  //       <img style={{ width: '3.375rem' }} className="object-contain" src={isOpen ? ArrowUpWhite : ArrowUpWhite} alt="arrow" />
-  //     ) : (
-  //       <img style={{ width: '3.375rem' }} className="object-contain" src={isOpen ? ArrowUp : ArrowDown} alt="arrow" />
-  //     )}
-  //   </>
-  // )
+
   const CountryButton = (
      <>
       <div className='country-flag' >
@@ -132,10 +119,6 @@ const ProfileInfo = () => {
                     <CountryDropDown setCountry={setCountry} country={country} isBig='true' />
                   </div>
                 </DropDownControls>
-              {/* <button>
-                <div className='button-img2' ><img src={Button5} alt="Button1" /></div>
-                <p>충전</p>
-              </button> */}
             </div>
           </div>
         </div>

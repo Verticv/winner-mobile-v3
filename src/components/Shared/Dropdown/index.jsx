@@ -5,10 +5,9 @@ import './_dropdown.scss';
 
 const SortBy = ({ children, options, value, onChange, onClick, multiple, withArrow }) => (
   <div className="container"
-    style={{ postion: 'relative', width: '100%' }}
+    style={{ position: 'relative', width: '100%' }}
   >
     <select
-      // style={{position: 'absolute', zIndex: -1}}
       className="select-overlay"
       id="filter-select"
       name="filter-select[]"

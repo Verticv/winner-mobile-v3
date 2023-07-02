@@ -254,6 +254,7 @@ const ProfileMenu = () => {
       {
         Items.map((item, index) => (
           <button
+            key={index}
             className={`menu-item ${selectedTab === item.id ? 'active' : ''}`}
             onClick={() => {
               setSelectedTab(item.id)

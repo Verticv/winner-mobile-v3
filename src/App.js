@@ -19,7 +19,11 @@ import Authentication from './pages/Authentication';
 function App() {
   const [isAuthenticated, setAuthenticated] = useState(false);
   const pathname = window.location.pathname;
-
+	const [isExpanded, setExpanded] = useState(0);
+	const setFooterDefaultState = () => {
+		setExpanded(0)
+	}
+	
   useEffect(() => {
     const previousUrl = getCookie('previousUrl');
     const currentUrl = getCookie('currentUrl');
@@ -61,8 +65,8 @@ function App() {
 							element={
 								<>
 									<Header />
-									<MainPage />
-									<Footer />
+									<MainPage setFooterDefaultState={setFooterDefaultState} />
+									<Footer isExpanded={isExpanded} setExpanded={setExpanded} />
 								</>
 							}
 						/>

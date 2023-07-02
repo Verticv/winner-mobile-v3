@@ -19,7 +19,7 @@ import TibetSection from "../components/MainPage/TibetSection";
 import SlotGameSection from "../components/MainPage/SlotGameSection";
 import FixedMenu from '../components/FixedMenu';
 
-function MainPage() {
+function MainPage({ setFooterDefaultState }) {
   const [selectedTab, setSelectedTab] = useState(0)
   // const [selectedSection, setSelectedSection] = useState(null)
 
@@ -29,10 +29,11 @@ function MainPage() {
     //   const top = section?.offsetTop
     //   window.scrollTo({ top: top, behavior: 'smooth' });
     // } else {
-      window.scrollTo(0,0);
+      window.scrollTo(0, 0);
+      setFooterDefaultState()
     //}
    
-  }, [selectedTab])
+  }, [selectedTab, setFooterDefaultState])
   
   return (
     <>

@@ -134,6 +134,7 @@ const SignUpModal = ({
               </div>
               <span className='-ml-2'>영문, 숫자만 입력가능하며 최소 4자이상 입력하세요.</span>
             </div>
+
             <div className='field-container'
               style={{ marginBottom: '2rem' }}>
             <div className='input-field'>
@@ -149,8 +150,9 @@ const SignUpModal = ({
             />
               {selectedInput === 1 && (<div className='input-line'></div>)}
             </div>
-            <span >영문 및 숫자를 1자 이상 반드시 포함하여 6~16자 내외로
-              <br/>입력해주세요. (특수문자 사용불가)</span>
+              <span >최소 6~16자 내외로 입력해주세요.
+              <br/>  (알파벳 소문자 + 특수문자 포함)
+              </span>
             </div>
             
             <div className='field-container'

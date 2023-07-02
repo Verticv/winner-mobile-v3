@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 import LiveCasinoImage1 from '../../../assets/images/mainPage/live-casino/live-casino-img1.png'
 import LiveCasinoImage2 from '../../../assets/images/mainPage/live-casino/live-casino-img2.png'
 import LiveCasinoImage3 from '../../../assets/images/mainPage/live-casino/live-casino-img3.png'
@@ -13,12 +14,14 @@ import LiveCasinoImage11 from '../../../assets/images/mainPage/live-casino/live-
 import LiveCasinoImage12 from '../../../assets/images/mainPage/live-casino/live-casino-img12.png'
 import LiveCasinoImage13 from '../../../assets/images/mainPage/live-casino/live-casino-img13.png'
 import LiveCasinoImage14 from '../../../assets/images/mainPage/live-casino/live-casino-img14.png'
+import LiveCasinoImage15 from '../../../assets/images/mainPage/live-casino/live-casino-img15.png'
 import SectionHeader from "../../Shared/SectionHeader";
 import './_liveCasino.scss';
 import LiveCasinoIcon from '../../../assets/images/mainPage/sectionTitle/icon11.png'
 import LiveCasinoCard from './LiveCasinoCard'
 
 const LiveCasino = () => {
+  const [clickEffect, setClickEffect] = useState(null);
   const LiveCasinoList = [
     {
       id: 0,
@@ -100,7 +103,20 @@ const LiveCasino = () => {
       path: '/esports/multi'
     },
     {
+      id: 15,
+      title: '모티베이션',
+      img: LiveCasinoImage15,
+      path: '/esports/multi'
+    },
+    {
       id: 13,
+      title: 'Coming Soon',
+      img: LiveCasinoImage14,
+      is_coming_soon: true,
+      path: '/esports/multi'
+    },
+    {
+      id: 14,
       title: 'Coming Soon',
       img: LiveCasinoImage14,
       is_coming_soon: true,
@@ -122,7 +138,9 @@ const LiveCasino = () => {
               img={card.img}
               is_best={card.is_best}
               is_coming_soon={card.is_coming_soon}
-              path={card.path} />
+              path={card.path}
+              setClickEffect={setClickEffect}
+              clickEffect={clickEffect} />
           ))
           }
         </div>

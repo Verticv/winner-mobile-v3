@@ -404,6 +404,7 @@
   span {
     font-size: 2.813rem !important;
     margin-top: -0.063rem;
+    line-height: inherit;
   }
 }
 
@@ -415,9 +416,28 @@
 }
 
 .popup-country {
-  height: 16.2rem !important;
+  //height: 16.2rem !important;
   width: 22.75rem !important;
   overflow: hidden;
+  border-radius: 1.125rem;
+  background: #ededeb;
+  z-index: 100;
+  box-shadow: 0 0 313rem 0 rgba(0, 0, 0, 0.5),
+    0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.06);
+    .country-item {
+      height: 7.8rem;
+      display: flex;
+      align-items: center;
+      padding-left: 2.75rem !important;
+      >div {
+        display: flex;
+        align-items: center;
+      }
+      label {
+        width: 100%;
+        text-align: center;
+      }
+    }
 }
 .popup-country .button-height {
   display: flex;
