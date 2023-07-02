@@ -12,7 +12,7 @@ button.collapse {
     justify-content: space-between;
     align-items: center;
     height: 12.438rem;
-    padding-top: 0.313rem;
+    // padding-top: 0.313rem;
 
   }
 
@@ -23,11 +23,17 @@ button.collapse {
     letter-spacing: -0.025em;
     margin: 0;
     margin-left: -0.25rem;
+    padding-top: 0.313rem;
   }
 
-  .collapse__icon img {
+  .collapse__icon {
     width: 3.875rem;
-    margin-left: -0.063rem;
+    height: 3.875rem;
+    img {
+      width: 3.875rem;
+      height: 3.875rem;
+      margin-left: -0.063rem;
+    }
   }
 
   .collapse__body {
@@ -57,7 +63,7 @@ button.collapse {
       margin-top: -0.188rem;
     }
     .collapse__icon img {
-      margin-top: -0.188rem;
+      //margin-top: -0.188rem;
     }
   }
     &:nth-of-type(5) {
@@ -66,7 +72,7 @@ button.collapse {
       }
   
       .collapse__icon img {
-        margin-top: -0.375rem;
+       // margin-top: -0.375rem;
       }
     }
     &:nth-of-type(6) {
@@ -75,17 +81,13 @@ button.collapse {
       }
 
       .collapse__icon img {
-        margin-top: -0.563rem;
+        //margin-top: -0.563rem;
       }
     }
 }
 
 .collapse.expanded {
   border-top-width: 0;
-  .collapse__header {
-    //height: 10.813rem;
-    //margin-top: 1.438rem;
-  }
   .collapse__body {
     margin-top: -2.125rem;
     margin-bottom: 3.25rem;

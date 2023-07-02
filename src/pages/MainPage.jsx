@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import NoticeBanner from "../components/MainPage/NoticeBanner";
 import Slider from "../components/MainPage/Slider";
 import Jackpot from "../components/MainPage/Jackpot";
@@ -23,6 +23,10 @@ function MainPage({ setFooterDefaultState }) {
   const [selectedTab, setSelectedTab] = useState(0)
   // const [selectedSection, setSelectedSection] = useState(null)
 
+  const setFooterDefault = useCallback(() => {
+    setFooterDefaultState()
+  }, []);// eslint-disable-line react-hooks/exhaustive-deps
+
   useEffect(() => {
     // if (selectedSection) {
     //   const section = document.getElementById(selectedSection);
@@ -30,11 +34,14 @@ function MainPage({ setFooterDefaultState }) {
     //   window.scrollTo({ top: top, behavior: 'smooth' });
     // } else {
       window.scrollTo(0, 0);
-      setFooterDefaultState()
+      setFooterDefault()
     //}
    
-  }, [selectedTab, setFooterDefaultState])
-  
+  }, [selectedTab])// eslint-disable-line react-hooks/exhaustive-deps
+
+ 
+
+
   return (
     <>
       <NoticeBanner />

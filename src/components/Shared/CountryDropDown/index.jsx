@@ -26,7 +26,7 @@ const CountryDropDown = ({ setCountry, country, isBig }) => {
                     }
                 }>
                 <div>
-                    <img className="" src={item.text === "KR" ? isBig ? Koreaflag2 : Koreaflag : isBig ? UKflag2 : UKflag} alt="flag" style={{ width: isBig ? '7.75rem' : '5.625rem' }}></img>
+                    <img className="" src={item.text === "KR" ? isBig ? Koreaflag2 : Koreaflag : isBig ? UKflag2 : UKflag} alt="flag"></img>
                 </div>
                 <label style={{ fontSize: isBig ? '3rem' : '2.4rem', color: selectedTab === item.id ? '#fff' : 'rgb(102, 102, 102)', fontFamily: isBig ? 'SpoqaHanSansNeoBold' : 'SpoqaHanSansNeoMedium'}} className={` font-spoqaBold cursor-pointer`}>{item.text}</label>
                 

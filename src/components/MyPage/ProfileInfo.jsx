@@ -18,7 +18,7 @@ import ArrowDown from "../../assets/images/down-arrow.png";
 import DropDownControls from "../../components/Shared/DropDownControls";
 import CountryDropDown from '../../components/Shared/CountryDropDown';
 import KoreaFlag from "../../assets/images/korea-flag.png";
-import UKflag from '../../assets/second-flag.png'
+import UKflag from '../../assets/images/UK_flag.png'
 
 import { useNavigate } from "react-router-dom";
 const ProfileInfo = () => {
@@ -84,7 +84,7 @@ const ProfileInfo = () => {
               <button>
                 <div className='button-img' >
                   <img src={Button3} alt="ProfileImg" />
-                  <span className="badge badge--red badge--l">
+                  <span className="badge badge--red badge--md">
                     <span>5</span>
                   </span>
                 </div>

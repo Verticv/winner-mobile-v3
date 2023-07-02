@@ -1,9 +1,10 @@
 import './assets/sass/global.scss';
 import React,  { useEffect, useState } from 'react';
 import {
-  BrowserRouter as Router,
-  Route,
-  Routes
+	BrowserRouter as Router,
+	Outlet,
+	Route,
+	Routes,
 } from 'react-router-dom';
 import './App.css';
 import ScrollToTop from './helpers/scrollToTop';
@@ -20,6 +21,7 @@ function App() {
   const [isAuthenticated, setAuthenticated] = useState(false);
   const pathname = window.location.pathname;
 	const [isExpanded, setExpanded] = useState(0);
+
 	const setFooterDefaultState = () => {
 		setExpanded(0)
 	}
@@ -71,23 +73,10 @@ function App() {
 							}
 						/>
 					</Routes>
-					<Routes>
-						<Route
-							path="/"
-							element={
-								<>
-									<Authentication
-										isAuthenticated={isAuthenticated}
-										setAuthenticated={setAuthenticated}
-									/>
-								</>
-							}
-						></Route>
-					</Routes>
 					{/* my page */}
 					<Routes>
 						<Route
-							path="/mypage/*"
+							path="/mypage"
 							element={
 								<MyPage
 									isAuthenticated={isAuthenticated}
@@ -110,6 +99,20 @@ function App() {
 							}
 						></Route>
 					</Routes>
+					<Routes>
+						<Route
+							path="/"
+							element={
+								<>
+									<Authentication
+										isAuthenticated={isAuthenticated}
+										setAuthenticated={setAuthenticated}
+									/>
+								</>
+							}
+						></Route>
+					</Routes>
+					<Outlet />
 				</Router>
 			</div>
 		</>
