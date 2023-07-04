@@ -17,6 +17,8 @@ import MiniGameSection from "../components/MainPage/MiniGameSection";
 import VirtualGameSection from "../components/MainPage/VirtualGameSection";
 import TibetSection from "../components/MainPage/TibetSection";
 import SlotGameSection from "../components/MainPage/SlotGameSection";
+import HoldemGameSection from "../components/MainPage/HoldemGameSection";
+
 import FixedMenu from '../components/FixedMenu';
 
 function MainPage({ setFooterDefaultState }) {
@@ -107,6 +109,11 @@ function MainPage({ setFooterDefaultState }) {
       {selectedTab === 10 && (
         <div id="tibet">
           <TibetSection />
+        </div>
+      )}
+      {selectedTab === 11 && (
+        <div id="holdem-game">
+          <HoldemGameSection />
         </div>
       )}
       <FixedMenu

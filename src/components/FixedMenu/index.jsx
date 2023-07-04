@@ -7,7 +7,6 @@ import MenuIcon_0 from '../../assets/images/bottom-nav/menu-icon-on.png'
 
 
 
-//import Menu0 from '../../assets/images/mainPage/bottom-nav/menu-icon.png'
 import Menu1 from '../../assets/images/bottom-nav/menu1.png'
 import Menu2 from '../../assets/images/bottom-nav/menu2.png'
 import Menu3 from '../../assets/images/bottom-nav/menu3.png'
@@ -18,6 +17,8 @@ import Menu7 from '../../assets/images/bottom-nav/menu7.png'
 import Menu8 from '../../assets/images/bottom-nav/menu8.png'
 import Menu9 from '../../assets/images/bottom-nav/menu9.png'
 import Menu10 from '../../assets/images/bottom-nav/menu10.png'
+import Menu11 from '../../assets/images/bottom-nav/menu11.png'
+
 import MenuOn1 from '../../assets/images/bottom-nav/menu-on1.png'
 import MenuOn2 from '../../assets/images/bottom-nav/menu-on2.png'
 import MenuOn3 from '../../assets/images/bottom-nav/menu-on3.png'
@@ -28,7 +29,7 @@ import MenuOn7 from '../../assets/images/bottom-nav/menu-on7.png'
 import MenuOn8 from '../../assets/images/bottom-nav/menu-on8.png'
 import MenuOn9 from '../../assets/images/bottom-nav/menu-on9.png'
 import MenuOn10 from '../../assets/images/bottom-nav/menu-on10.png'
-
+import MenuOn11 from '../../assets/images/bottom-nav/menu-on11.png'
 
 import MenuIcon_1 from '../../assets/images/mainPage/menu1.png'
 import MenuIcon_2 from '../../assets/images/mainPage/menu2.png'
@@ -40,6 +41,7 @@ import MenuIcon_7 from '../../assets/images/mainPage/menu7.png'
 import MenuIcon_8 from '../../assets/images/mainPage/menu8.png'
 import MenuIcon_9 from '../../assets/images/mainPage/menu9.png'
 import MenuIcon_10 from '../../assets/images/mainPage/menu10.png'
+import MenuIcon_11 from '../../assets/images/mainPage/menu11.png'
 
 import horizontalsScroll from '../../utils/horizontalsScroll';
 import MenuList from '../Shared/MenuList'
@@ -102,6 +104,14 @@ const FixedMenu = ({
       OnIcon: MenuOn5,
       title: '호텔카지노',
       section: 'hotel-casino'
+    },
+    {
+      id: 11,
+      icon: Menu11,
+      icon2: MenuIcon_11,
+      OnIcon: MenuOn11,
+      title: '홀덤게임',
+      section: 'holdem-game'
     },
     {
       id: 6,

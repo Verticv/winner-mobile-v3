@@ -53,7 +53,7 @@ import MenuIcon_1_7 from '../../assets/images/mainPage/menu7.png'
 import MenuIcon_1_8 from '../../assets/images/mainPage/menu8.png'
 import MenuIcon_1_9 from '../../assets/images/mainPage/menu9.png'
 import MenuIcon_1_10 from '../../assets/images/mainPage/menu10.png'
-
+import MenuIcon_1_11 from '../../assets/images/mainPage/menu11.png'
 import MenuList from '../Shared/MenuList'
 
 const ProfileMenu = () => {
@@ -101,6 +101,12 @@ const ProfileMenu = () => {
           icon2: MenuIcon_1_5,
           title: '호텔카지노',
           OnIcon: MenuOn5,
+        },
+        {
+          id: 11,
+          icon2: MenuIcon_1_11,
+          title: '홀덤게임',
+          OnIcon: MenuIcon_1_11,
         },
         {
           id: 6,

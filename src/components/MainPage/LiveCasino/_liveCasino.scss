@@ -108,3 +108,13 @@
 .filter-content .liveC-section .section__Title  {
   margin-left: 0 !important;
 }
+.filter-content.holdem-section .section__Title {
+  margin-top: 1.063rem;
+  .section__icon {
+    width: 4.75rem !important;
+    height: 5rem !important;
+  }
+  h1 {
+    margin-left: 0.563rem !important;
+  }
+}
