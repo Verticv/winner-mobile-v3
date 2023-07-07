@@ -42,6 +42,7 @@ import MenuOn7 from '../../assets/images/bottom-nav/menu-on7.png'
 import MenuOn8 from '../../assets/images/bottom-nav/menu-on8.png'
 import MenuOn9 from '../../assets/images/bottom-nav/menu-on9.png'
 import MenuOn10 from '../../assets/images/bottom-nav/menu-on10.png'
+import MenuOn11 from '../../assets/images/bottom-nav/menu-on11.png'
 
 import MenuIcon_1_1 from '../../assets/images/mainPage/menu1.png'
 import MenuIcon_1_2 from '../../assets/images/mainPage/menu2.png'
@@ -106,7 +107,7 @@ const ProfileMenu = () => {
           id: 11,
           icon2: MenuIcon_1_11,
           title: '홀덤게임',
-          OnIcon: MenuIcon_1_11,
+          OnIcon: MenuOn11,
         },
         {
           id: 6,

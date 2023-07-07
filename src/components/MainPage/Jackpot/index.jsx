@@ -6,8 +6,34 @@ import RightBorder from '../../../assets/images/mainPage/jackpot/right-border.pn
 import SlotGameCard from './SlotGameCard';
 import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-
+import Img from '../../../assets/images/mainPage/jackpot/img1.png';
+import Img2 from '../../../assets/images/mainPage/jackpot/img2.png'
+import Img3 from '../../../assets/images/mainPage/jackpot/img3.png'
 function Jackpot() {
+  const items = [
+    {
+      id: 0,
+      img: Img,
+      title: 'Crown of Valor',
+      sub_title: '마이프로틴***',
+      num: '₩123,456,789'
+    },
+    {
+      id: 1,
+      img: Img2,
+      title: 'Titan Thunder Wrath of Hades',
+      sub_title: '마이프로틴***',
+      num: '₩123,456,789'
+    },
+    {
+      id: 2,
+      img: Img3,
+      title: 'Sun of Egypt',
+      sub_title: '마이프로틴***',
+      num: '₩123,456,789'
+    },
+ 
+  ]
   return (
     <div className="winner-section">
       <div>
@@ -39,11 +65,12 @@ function Jackpot() {
               touchEnabled={false}
             >
               <Slider classNameTrayWrap="carousel_tray_wrapper_horizontal" className="card_animation">
-                {Array(20)
-                  .fill(undefined)
-                  .map((_, index) => (
+                {Array(100)
+                  .fill(0)
+                  .map((item, index) => (
                     <Slide key={index} className="card_animation_slide_horizontal" index={index}>
-                      <SlotGameCard />
+                      <SlotGameCard
+                        item={items[index % 3]} />
                     </Slide>
                   ))}
               </Slider>

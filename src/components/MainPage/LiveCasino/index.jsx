@@ -46,7 +46,7 @@ const LiveCasino = () => {
       id: 3,
       title: '아시아게이밍',
       img: LiveCasinoImage4,
-      path: '/esports/multi'
+      path: '/esports/structure'
     },
     {
       id: 4,
@@ -64,7 +64,7 @@ const LiveCasino = () => {
       id: 6,
       title: '빅게이밍',
       img: LiveCasinoImage7,
-      path: '/esports/multi'
+      path: '/esports/single'
     },
     {
       id: 7,

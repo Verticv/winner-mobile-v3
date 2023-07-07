@@ -8,10 +8,11 @@ const LiveCasinoCard = ({ id, title, img, is_best = false, is_coming_soon = fals
   //const navigate = useNavigate();
   return (
     <div 
-      className={`live-casino-card ${clickEffect === id ? 'hover' : ''}`}
+      className={`live-casino-card ${clickEffect === id || id === 14? 'hover' : ''}`}
       onClick= {
-        (e) => {
+        () => {
           setClickEffect(id)
+         // navigate(path)
         }
       }
      >
