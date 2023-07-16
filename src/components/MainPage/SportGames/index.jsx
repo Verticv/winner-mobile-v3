@@ -57,6 +57,13 @@ function SportGame() {
       team2: { icon: villarreal, name: "비야레알비야레알비야레알비야레알" },
     },
   ];
+  const items = [
+    ...sampleArray,
+    ...sampleArray,
+    ...sampleArray,
+    ...sampleArray,
+    ...sampleArray,
+  ]
   const CarouselBackButton = ({ onClick }) => {
     return (
       <ButtonBack
@@ -112,13 +119,7 @@ function SportGame() {
             <div className="slider__content">
               <div className='sport-container'>
                 <Slider classNameTrayWrap="carousel_tray_wrapper">
-                  {[
-                    ...sampleArray,
-                    ...sampleArray,
-                    ...sampleArray,
-                    ...sampleArray,
-                    ...sampleArray,
-                  ]
+                  {items
                     .map((item, index) => (
                       <Slide index={0} key={index}>
                         <SportGameCard item={item} />

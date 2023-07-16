@@ -41,16 +41,7 @@ function MainPage({ setFooterDefaultState }) {
       <NoticeBanner />
       <Slider />
       <Jackpot />
-      {selectedTab === 0 && (
-        <>
-          <SlotGame />
-          <SportGame />
-          <LiveCasino />
-          <HotelCasino />
-          <OtherGames />
-          <BoardsSection/>   
-        </>
-      )} 
+      
       
       {selectedTab === 1 && (
         <div id="live-casino" className="filter-content">
@@ -107,6 +98,16 @@ function MainPage({ setFooterDefaultState }) {
       {selectedTab === 11 && (
         <div id="holdem-game">
           <HoldemGameSection />
+        </div>
+      )}
+      {selectedTab === 0 && (
+        <div>
+          <SlotGame />
+          <SportGame />
+          <LiveCasino />
+          <HotelCasino />
+          <OtherGames /> 
+          <BoardsSection />
         </div>
       )}
       <FixedMenu

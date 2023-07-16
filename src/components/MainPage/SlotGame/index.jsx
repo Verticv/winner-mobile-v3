@@ -178,7 +178,16 @@ function SlotGame() {
       ]
     }
   ]
-
+  const items = [
+    ...slotGames,
+    ...slotGames,
+    ...slotGames,
+    ...slotGames,
+    ...slotGames,
+    ...slotGames,
+    ...slotGames,
+    ...slotGames,
+  ]
   const CarouselBackButton = ({onClick }) => {
     return (
       <ButtonBack
@@ -222,9 +231,9 @@ function SlotGame() {
       </div>
       <div className='slot-game__slider'>
        <CarouselProvider
-          currentSlide={42}
+          currentSlide={24}
           visibleSlides={2}
-          totalSlides={84}
+          totalSlides={48}
           step={1}
           naturalSlideWidth={577}
           isIntrinsicHeight={true}
@@ -234,22 +243,7 @@ function SlotGame() {
             <CarouselBackButton/>
             <div className="slider__content">
               <Slider classNameTrayWrap="carousel_tray_wrapper">
-               {[
-                 ...slotGames,
-                 ...slotGames,
-                 ...slotGames,
-                 ...slotGames,
-                 ...slotGames,
-                 ...slotGames,
-                 ...slotGames,
-                 ...slotGames,
-                 ...slotGames,
-                 ...slotGames,
-                 ...slotGames,
-                 ...slotGames,
-                 ...slotGames,
-                 ...slotGames,
-                ].map((game, index) => (
+               {items.map((game, index) => (
                     <Slide key={index} className="card_animation_slide_horizontal" index={index}>
                       <div className='cards-container'>
                         {game.cards.map((card, index) => (

@@ -6,7 +6,6 @@ import {
 	Routes,
 } from 'react-router-dom';
 import './App.css';
-import ScrollToTop from './helpers/scrollToTop';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -37,7 +36,7 @@ function App() {
     }
   }, [pathname]);
 
-  useEffect(() => {
+	useEffect(() => {
     const app = document.querySelector('.app');
     const html = document.querySelector('html');
     const bodyWidth = app.offsetWidth;
@@ -59,7 +58,6 @@ function App() {
 		<Router>
 			<div className="app">
 				{/* <Router> */}
-				<ScrollToTop />
 				<Routes>
 					<Route
 						path="/main"
