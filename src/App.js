@@ -2,7 +2,6 @@ import './assets/sass/global.scss';
 import React,  { useEffect, useState } from 'react';
 import {
 	BrowserRouter as Router,
-	Outlet,
 	Route,
 	Routes,
 } from 'react-router-dom';
@@ -20,10 +19,10 @@ import Authentication from './pages/Authentication';
 function App() {
   const [isAuthenticated, setAuthenticated] = useState(false);
   const pathname = window.location.pathname;
-	const [isExpanded, setExpanded] = useState(0);
+	const [isExpanded, setExpanded] = useState(null);
 
 	const setFooterDefaultState = () => {
-		setExpanded(0)
+		setExpanded(null)
 	}
 	
   useEffect(() => {
@@ -56,66 +55,66 @@ function App() {
   }, []);
 
 
-  return (
-		<>
+	return (
+		<Router>
 			<div className="app">
-				<Router>
-					<ScrollToTop />
-					<Routes>
-						<Route
-							path="/main"
-							element={
-								<>
-									<Header />
-									<MainPage setFooterDefaultState={setFooterDefaultState} />
-									<Footer isExpanded={isExpanded} setExpanded={setExpanded} />
-								</>
-							}
-						/>
-					</Routes>
-					{/* my page */}
-					<Routes>
-						<Route
-							path="/mypage"
-							element={
-								<MyPage
+				{/* <Router> */}
+				<ScrollToTop />
+				<Routes>
+					<Route
+						path="/main"
+						element={
+							<>
+								<Header />
+								<MainPage setFooterDefaultState={setFooterDefaultState} />
+								<Footer isExpanded={isExpanded} setExpanded={setExpanded} />
+							</>
+						}
+					/>
+				</Routes>
+				{/* my page */}
+				<Routes>
+					<Route
+						path="/mypage/*"
+						element={
+							<MyPage
+								isAuthenticated={isAuthenticated}
+								setAuthenticated={setAuthenticated}
+							/>
+						}
+					/>
+				</Routes>
+				<Routes>
+					<Route
+						path="/esports/*"
+						element={
+							<>
+								<Header />
+								<EsportsPage
 									isAuthenticated={isAuthenticated}
 									setAuthenticated={setAuthenticated}
 								/>
-							}
-						/>
-					</Routes>
-					<Routes>
-						<Route
-							path="/esports/*"
-							element={
-								<>
-									<Header />
-									<EsportsPage
-										isAuthenticated={isAuthenticated}
-										setAuthenticated={setAuthenticated}
-									/>
-								</>
-							}
-						></Route>
-					</Routes>
-					<Routes>
-						<Route
-							path="/"
-							element={
-								<>
-									<Authentication
-										isAuthenticated={isAuthenticated}
-										setAuthenticated={setAuthenticated}
-									/>
-								</>
-							}
-						></Route>
-					</Routes>
-					<Outlet />
-				</Router>
+							</>
+						}
+					></Route>
+				</Routes>
+				<Routes>
+					<Route
+						path="/"
+						element={
+							<>
+								<Authentication
+									isAuthenticated={isAuthenticated}
+									setAuthenticated={setAuthenticated}
+								/>
+							</>
+						}
+					></Route>
+				</Routes>
+				{/* <Outlet /> */}
+				{/* </Router> */}
 			</div>
-		</>
+		</Router>
 	);
 }
 

@@ -68,11 +68,26 @@
       margin-top: 0.125rem;
     }
   }
-    .slider__container {
-      margin-top: 1.75rem;
+  .slider__container {
+    margin-top: 1.75rem;
+  }
+  &.hover {
+    .card-overlay {
+      display: block;
     }
+  }
 }
-
+.card_overlay {
+  display: none;
+  position: absolute;
+  left: 0.188rem;
+  right: 0.188rem;
+  top: 0.188rem;
+  bottom: 0.188rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1.125rem;
+  z-index: 4;
+}
 
 
 

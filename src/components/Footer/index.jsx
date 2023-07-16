@@ -1,6 +1,10 @@
 import React from "react";
 import '../Footer/_footer.scss';
-import Brands from "../../assets/images/footer/brands.png";
+import Brands_1 from "../../assets/images/footer/brands_1.png";
+import Brands_2 from "../../assets/images/footer/brands_2.png";
+import Brands_3 from "../../assets/images/footer/brands_3.png";
+import Brands_4 from "../../assets/images/footer/brands_4.png";
+import Brands_5 from "../../assets/images/footer/brands_5.png";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import LeftArrow from '../../assets/images/footer/left-arrow.png'
@@ -15,7 +19,7 @@ import Collapse from '../Shared/Collapse'
 
 function Footer({ isExpanded, setExpanded }) { 
 
-  
+  const brandsList = [Brands_1, Brands_2, Brands_3, Brands_4, Brands_5]
 
   const footerList = [
     {
@@ -24,7 +28,6 @@ function Footer({ isExpanded, setExpanded }) {
         '프레그메틱플레이',
         '에볼루션',
         '로얄지',
-        '얄지',
         '아시아게이밍',
         '드림게이밍',
         '섹시게이밍',
@@ -49,7 +52,6 @@ function Footer({ isExpanded, setExpanded }) {
     {
       title: '슬롯게임',
       list: [
-        '슬롯게임',
         '케이플레이슬롯'
       ]
     },
@@ -116,6 +118,7 @@ function Footer({ isExpanded, setExpanded }) {
           <div className="brands-cont">
           <CarouselProvider
             visibleSlides={1}
+            currentSlide={10}
             totalSlides={20}
             step={1}
             naturalSlideWidth={1182}
@@ -126,26 +129,22 @@ function Footer({ isExpanded, setExpanded }) {
               <CarouselBackButton />
               <div className="slider__content">
                 <Slider classNameTrayWrap="carousel_tray_wrapper">
-
-                  {Array(20)
-                    .fill(undefined)
-                    .map((_, index) => (
+                  {[...brandsList, ...brandsList, ...brandsList, ...brandsList]
+                    .map((brand, index) => (
                       <Slide key={index} className="card_animation_slide_horizontal" index={index}>
-
                         <div className="brands-slider">
                           <img
-                            src={Brands}
+                            src={brand}
                             alt="Brands"
                           />
                         </div>
-
                       </Slide>
                     ))}
                 </Slider>
               </div>
               <CarouselNextButton />
             </div>
-            </CarouselProvider>
+          </CarouselProvider>
           </div>
         </div>
         

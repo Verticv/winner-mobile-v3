@@ -23,22 +23,14 @@ import FixedMenu from '../components/FixedMenu';
 
 function MainPage({ setFooterDefaultState }) {
   const [selectedTab, setSelectedTab] = useState(0)
-  // const [selectedSection, setSelectedSection] = useState(null)
 
   const setFooterDefault = useCallback(() => {
     setFooterDefaultState()
   }, []);// eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    // if (selectedSection) {
-    //   const section = document.getElementById(selectedSection);
-    //   const top = section?.offsetTop
-    //   window.scrollTo({ top: top, behavior: 'smooth' });
-    // } else {
-      window.scrollTo(0, 0);
-      setFooterDefault()
-    //}
-   
+    window.scrollTo(0, 0);
+    setFooterDefault()   
   }, [selectedTab])// eslint-disable-line react-hooks/exhaustive-deps
 
  
@@ -56,9 +48,10 @@ function MainPage({ setFooterDefaultState }) {
           <LiveCasino />
           <HotelCasino />
           <OtherGames />
-          <BoardsSection/>
+          <BoardsSection/>   
         </>
-      )}
+      )} 
+      
       {selectedTab === 1 && (
         <div id="live-casino" className="filter-content">
           <LiveCasino />
@@ -119,7 +112,7 @@ function MainPage({ setFooterDefaultState }) {
       <FixedMenu
         selectedTab={selectedTab}
         setSelectedTab={setSelectedTab}
-      />
+      /> 
     </>
   )
 }

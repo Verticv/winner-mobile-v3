@@ -21,7 +21,8 @@ const HotelCasinoList = [
     icon: HotelCasinoIcon1,
     img: HotelCasinoCard1,
     class: 'hotel-casino1',
-    disable: true
+    disable: true,
+    darkClick: true
   },
   {
     id: 1,
@@ -58,7 +59,8 @@ const HotelCasino = ({ filter = false }) => {
               img={card.img}
               icon={card.icon}
               logoClass={card.class}
-              disable={card.disable} />
+              disable={card.disable}
+              darkClick={card.darkClick} />
           </div>
         ))}
       </div>

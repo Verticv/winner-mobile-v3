@@ -1,9 +1,7 @@
-
-
-//import LiveSportIcon from '../../../assets/images/mainPage/live-sport-icon.png'
+import React, { useState } from 'react'
 import SectionHeader from "../../Shared/SectionHeader";
+import SharedCard from "../../Shared/SharedCard";
 import Image1 from '../../../assets/images/mainPage/live-sport-game1.png'
-import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
 import LiveSportIcon from '../../../assets/images/mainPage/sectionTitle/icon31.png'
 
 const LiveSportsSection = () => {
@@ -16,22 +14,7 @@ const LiveSportsSection = () => {
     },
 
   ]
-
-
-  const Card = ({ id, title, img, onClick }) => {
-    return (
-      <div className='shared-card'>
-        <img src={img} alt="img" className='img' />
-        <div className='desc'>
-          <p>{title}</p>
-        </div>
-        <button>
-          <p>게임시작</p>
-          <img src={RArrow} alt="RArrow" className='img' />
-        </button>
-      </div>
-    );
-  };
+  const [clickEffect, setClickEffect] = useState(null);
 
   return (
     <div className='filter-content live-sport-section'>
@@ -40,10 +23,13 @@ const LiveSportsSection = () => {
         title={'실시간스포츠'} />
       <div className='cont'>
       {Items.map((card, index) => (
-        <Card
+        <SharedCard
           key={card.id}
+          id={card.id}
           title={card.title}
-          img={card.img} />
+          img={card.img}
+          clickEffect={clickEffect}
+          setClickEffect={setClickEffect}/>
       ))
         }</div>
     </div>

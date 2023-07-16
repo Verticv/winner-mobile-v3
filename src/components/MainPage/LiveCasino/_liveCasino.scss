@@ -75,6 +75,7 @@
       z-index: 5;
       &.coming-soon-btn {
         background: linear-gradient(to right, rgb(126, 126, 126), rgb(75, 75, 75));
+        cursor: not-allowed;
       }
       p {
         color: #fff;

@@ -9,6 +9,7 @@ const ProfileHeader = () => {
     <div className='profile-header'>
       <p>마이인포</p>
       <button
+        
         onClick={() =>  navigate("/main") }>
         <img src={Close} alt="right" className="close" />
       </button>

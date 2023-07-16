@@ -11,8 +11,9 @@ const LiveCasinoCard = ({ id, title, img, is_best = false, is_coming_soon = fals
       className={`live-casino-card ${clickEffect === id || id === 14? 'hover' : ''}`}
       onClick= {
         () => {
-          setClickEffect(id)
-         // navigate(path)
+          if (!is_coming_soon) {
+            setClickEffect(id)
+          }
         }
       }
      >

@@ -46,7 +46,7 @@ const EsportsSection = () => {
         <div className='desc'>
           <p>{title}</p>
         </div>
-        <button>
+        <button className='card-button'>
           <p>{btnText}</p>
           <img src={RArrow} alt="RArrow" className='img' />
         </button>

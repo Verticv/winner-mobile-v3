@@ -48,54 +48,9 @@
     width: 5.5rem;
     cursor: pointer;
   }
-  .card-hover {
-    display: none;
-    position: absolute;
-    left: 0.188rem;
-    right: 0.188rem;
-    top: 0.188rem;
-    bottom: 0.188rem;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 1.125rem;
-    z-index: 4;
-    .buttons {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 2.313rem;
-      z-index: 6;
-
-      button {
-        width: 18.5rem;
-        height: 4.75rem;
-        border-radius: 2.313rem;
-        background-image: linear-gradient(to right, rgb(223, 82, 255) 0%, rgb(107, 34, 255) 100%);
-       
-        box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 0.063rem;
-        p {
-          color: #fff;
-          font-family: 'SpoqaHanSansNeoBold';
-          font-size: 2.25rem;
-          margin: 0;
-          letter-spacing: -0.025em;
-          margin-top: 0.063rem;
-        }
-      }
-
-    }
-  }
+  
   &.hover {
-    .card-hover {
+    .card-overlay {
       display: block;
     }
     
@@ -128,13 +83,57 @@
       margin-top: -0.563rem;
     }
   }
-  .section__icon {
-    // padding-left: 0.125rem;
-    // padding-top: 0.188rem;
-    
-  }
   .section__content {
     margin-top: 0.063rem;
     padding: 0 1.875rem !important;
   }
 }
+
+ .card-overlay {
+   display: none;
+   position: absolute;
+   left: 0.188rem;
+   right: 0.188rem;
+   top: 0.188rem;
+   bottom: 0.188rem;
+   background-color: rgba(0, 0, 0, 0.6);
+   border-radius: 1.125rem;
+   z-index: 4;
+
+   .overlay-buttons {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     gap: 2.313rem;
+     z-index: 6;
+
+     button {
+       width: 18.5rem;
+       height: 4.75rem;
+       border-radius: 2.313rem;
+       background-image: linear-gradient(to right, rgb(223, 82, 255) 0%, rgb(107, 34, 255) 100%);
+
+       box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.5);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-right: 0.063rem;
+
+       p {
+         color: #fff;
+         font-family: 'SpoqaHanSansNeoBold';
+         font-size: 2.25rem;
+         margin: 0;
+         letter-spacing: -0.025em;
+         margin-top: 0.063rem;
+       }
+     }
+
+   }
+ }

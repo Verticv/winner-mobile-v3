@@ -99,9 +99,9 @@ function SportGame() {
       </div>
       <div className='section__slider1'>
         <CarouselProvider
-          currentSlide={51}
+          currentSlide={9}
           visibleSlides={1}
-          totalSlides={100}
+          totalSlides={15}
           step={1}
           naturalSlideWidth={1053}
           isIntrinsicHeight={true}
@@ -112,11 +112,16 @@ function SportGame() {
             <div className="slider__content">
               <div className='sport-container'>
                 <Slider classNameTrayWrap="carousel_tray_wrapper">
-                  {Array(100)
-                    .fill(0)
+                  {[
+                    ...sampleArray,
+                    ...sampleArray,
+                    ...sampleArray,
+                    ...sampleArray,
+                    ...sampleArray,
+                  ]
                     .map((item, index) => (
                       <Slide index={0} key={index}>
-                        <SportGameCard item={sampleArray[index % 3]} />
+                        <SportGameCard item={item} />
                       </Slide>
                     ))}
                 </Slider>

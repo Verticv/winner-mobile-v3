@@ -279,8 +279,11 @@
       }
     }
   }
-  .card-container {
-    //width: ;
+ 
+  &.hover {
+    .card-hover {
+     // display: block;
+    }
   }
 }
 

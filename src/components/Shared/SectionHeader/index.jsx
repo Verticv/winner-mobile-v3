@@ -1,5 +1,6 @@
 
-import './_sectionHeader.scss';
+import './_sectionHeader.scss'; 
+
 const SectionHeader = ({
   icon,
   title,

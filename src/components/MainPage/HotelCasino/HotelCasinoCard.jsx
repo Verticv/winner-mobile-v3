@@ -2,10 +2,15 @@
 import CardMenu from '../../../assets/images/mainPage/hotel-casino/card-menu.png'
 import React, { useState } from 'react'
 
-const HotelCasinoCard = ({ id, title, sub_title = null, img, icon, onClick, logoClass, disable }) => {
+const HotelCasinoCard = ({ id, title, sub_title = null, img, icon, darkClick=false, logoClass, disable }) => {
   const [hoverEffect, setHoverEffect] = useState(false);
   return (
     <div 
+      onClick={() => {
+        if (darkClick) {
+          setHoverEffect(!hoverEffect)
+        }
+      }}
       className={`hotel-casino-card ${logoClass} ${hoverEffect ? 'hover' : ''}`}
       >
       <img src={img} alt="HotelCasinoCard" className='casino-img' />
@@ -24,9 +29,9 @@ const HotelCasinoCard = ({ id, title, sub_title = null, img, icon, onClick, logo
           onClick={() => setHoverEffect(!hoverEffect)}
           src={CardMenu} alt="Menu" className='card-menu' />
       )}
-      {!disable && (<div className='card-hover'>
+      {(!disable || hoverEffect) && (<div className='card-overlay'>
        
-        <div className='buttons'>
+        <div className='overlay-buttons'>
           <button>
             <p>게임시작</p>
           </button>

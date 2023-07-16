@@ -1,8 +1,8 @@
-
+import React, { useState } from 'react'
 import SectionHeader from "../../Shared/SectionHeader";
+import SharedCard from "../../Shared/SharedCard";
 import Image1 from '../../../assets/images/mainPage/Holdem-game.png'
 import Image2 from '../../../assets/images/mainPage/Holdem-game2.png'
-import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
 import HoldemGameIcon from '../../../assets/images/mainPage/sectionTitle/HoldemGameIcon.png'
 
 const HoldemGameSection = () => {
@@ -21,23 +21,7 @@ const HoldemGameSection = () => {
       btn: '설명보기'
     },
   ]
-
-
-  const Card = ({ id, title, img, btn }) => {
-    return (
-      <div className='shared-card'>
-        <img src={img} alt="img" className='img' />
-        <div className='desc'>
-          <p>{title}</p>
-        </div>
-        <button>
-          <p>{btn}</p>
-          <img src={RArrow} alt="RArrow" className='img' />
-        </button>
-      </div>
-    );
-  };
-
+  const [clickEffect, setClickEffect] = useState(null);
   return (
     <div className='filter-content holdem-section'>
       <SectionHeader
@@ -45,12 +29,15 @@ const HoldemGameSection = () => {
         title={'홀덤게임'} />
       <div className='cont'>
         {Items.map((card, index) => (
-          <Card
-            key={card.id}
+          <SharedCard
+            id={card.id}
+            key={index}
             title={card.title}
             img={card.img}
-            btn={card.btn} />
-
+            btn={card.btn}
+            clickEffect={clickEffect}
+            setClickEffect={setClickEffect}
+          />
         ))
         }
       </div>

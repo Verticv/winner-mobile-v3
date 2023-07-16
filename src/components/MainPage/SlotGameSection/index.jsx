@@ -23,7 +23,6 @@ import TabsComponent from "../../Shared/TabsComponent";
 
 function SlotGameSection() {
   const [selectedTab, setSelectedTab] = useState(0);
-
   const tabsList = [
     {
       id: 0,
@@ -145,16 +144,20 @@ function SlotGameSection() {
       </div>
     );
   };
-
+  const [hoverEffect, setHoverEffect] = useState(false);
   return (
     <div className='slot-game-section'>
       <SectionHeader
         icon={SlotGameIcon}
         title={'슬롯게임'} />
       <div className='section__content'>
-        <div className='slot-games-banner'>
+        <div 
+          className={`slot-games-banner ${hoverEffect ? 'hover' : ''}`}>
           <img src={SlotBanner} alt="banner" />
-          <div className='banner-content'>
+          <div className='banner-content'
+            onClick={() => {
+              setHoverEffect(!hoverEffect)
+            }}>
             <p>수백여 개의 해외 유명한 인기 슬롯게임을</p>
             <p className='second-line'> <span>케이플레이슬롯</span>에서 즐겨보세요!</p>
             <button>
@@ -162,6 +165,7 @@ function SlotGameSection() {
               <img src={RArrow} alt="RArrow" className='img' />
             </button>
           </div>
+          {hoverEffect && (<div className='card-hover'></div>)}
         </div>
         <TabsComponent
           tabsData={tabsList}

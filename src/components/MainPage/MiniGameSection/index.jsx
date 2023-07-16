@@ -42,7 +42,7 @@ const MiniGameSection = () => {
         <div className='desc'>
           <p>{title}</p>
         </div>
-        <button>
+        <button className='card-button'>
           <p>게임시작</p>
           <img src={RArrow} alt="RArrow" className='img' />
         </button>

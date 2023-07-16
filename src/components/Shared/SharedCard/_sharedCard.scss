@@ -1,0 +1,111 @@
+.shared-card {
+  min-width: 100%;
+  margin: 0 1.875rem 1.875rem 1.875rem;
+  height: 24.563rem;
+  border-radius: 1.125rem;
+  box-shadow: 0 0.938rem 1.25rem 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+  max-width: fit-content;
+  margin: 0 auto 1.875rem;
+
+  img {
+    width: 100%;
+  }
+
+  .desc {
+    position: absolute;
+    top: 9.563rem;
+    right: 4.625rem;
+
+    p {
+      color: #eeeeee;
+      font-family: 'SpoqaHanSansNeoMedium';
+      font-size: 2.438rem;
+      margin: 0;
+    }
+  }
+
+  .card-button {
+    position: absolute;
+    bottom: 3.75rem;
+    right: 4.688rem;
+    border-radius: 2rem;
+    background: linear-gradient(to right, rgb(223, 82, 255), rgb(107, 34, 255));
+    box-shadow: 0 0 1.25rem 0.625rem rgba(0, 0, 0, 0.3);
+    color: #fff;
+
+    min-width: 16rem;
+    height: 4.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: -0.063rem;
+    padding-left: 3.25rem;
+    padding-right: 0.813rem;
+
+    p {
+      margin: 0.063rem 0 0 -0.188rem;
+      letter-spacing: -0.063rem;
+      font-size: 2rem;
+      font-family: 'SpoqaHanSansNeoBold';
+    }
+
+    img {
+      width: 3rem;
+    }
+  }
+  
+  &.dark-overlay {
+    .card-overlay {
+      display: block;
+    }
+  }
+    .card-overlay {
+      display: none;
+      position: absolute;
+      left: 0.188rem;
+      right: 0.188rem;
+      top: 0.188rem;
+      bottom: 0.188rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 1.125rem;
+      z-index: 4;
+
+      .overlay-buttons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2.313rem;
+        z-index: 6;
+
+        button {
+          width: 18.5rem;
+          height: 4.75rem;
+          border-radius: 2.313rem;
+          background-image: linear-gradient(to right, rgb(223, 82, 255) 0%, rgb(107, 34, 255) 100%);
+
+          box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 0.063rem;
+
+          p {
+            color: #fff;
+            font-family: 'SpoqaHanSansNeoBold';
+            font-size: 2.25rem;
+            margin: 0;
+            letter-spacing: -0.025em;
+            margin-top: 0.063rem;
+          }
+        }
+
+      }
+    }
+}
