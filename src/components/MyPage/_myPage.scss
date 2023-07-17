@@ -105,10 +105,12 @@
     padding-right: 0.375rem;
     padding-left: 1.875rem;
     img {
-        width: 4.813rem;
-      }
+      width: 4.813rem;
+      height: 4.875rem;
+      margin-top: 0.188rem;
+    }
     &:first-of-type {
-      margin-bottom: 1.063rem;
+      margin-bottom: 0.938rem;
     }
     >div {
       display: flex;
@@ -336,7 +338,7 @@
     height: 5.813rem;
     background-color: #ccceff;
     padding: 0.375rem;
-    border-radius: 0.5rem;
+    border-radius: 1.2rem;
     margin-left: -0.25rem;
     margin-top: -0.125rem;
     @media screen and (max-width: 700px) {
@@ -346,7 +348,7 @@
     img {
       width: 7.813rem;
       height: 5.063rem;
-      border-radius: 0.375rem;
+      border-radius:1rem;
      
     }
   }
@@ -444,7 +446,7 @@
       img {
         width: 7.813rem;
         height: 5.063rem;
-        border-radius: 0.375rem;
+        border-radius: 1rem;
       }
       label {
         width: 100%;

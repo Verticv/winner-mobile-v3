@@ -270,6 +270,7 @@
       letter-spacing: -0.025em;
       text-align: left;
       padding-left: 2.438rem;
+      z-index: 6;
       img {
         position: absolute;
         right: 2.5rem;
@@ -279,10 +280,20 @@
       }
     }
   }
- 
+  .card-overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1.5rem;
+    z-index: 4;
+  }
   &.hover {
-    .card-hover {
-     // display: block;
+    .card-overlay {
+      display: block;
     }
   }
 }

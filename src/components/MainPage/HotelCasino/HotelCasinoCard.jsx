@@ -29,16 +29,16 @@ const HotelCasinoCard = ({ id, title, sub_title = null, img, icon, darkClick=fal
           onClick={() => setHoverEffect(!hoverEffect)}
           src={CardMenu} alt="Menu" className='card-menu' />
       )}
-      {(!disable || hoverEffect) && (<div className='card-overlay'>
+      {hoverEffect && (<div className='card-overlay'>
        
-        <div className='overlay-buttons'>
-          <button>
-            <p>게임시작</p>
-          </button>
-          <button>
-            <p>이용가이드</p>
-          </button>
-        </div>
+        {!disable && < div className='overlay-buttons'>
+        <button>
+          <p>게임시작</p>
+        </button>
+        <button>
+          <p>이용가이드</p>
+        </button>
+      </div>}
 
       </div>)}
     </div>

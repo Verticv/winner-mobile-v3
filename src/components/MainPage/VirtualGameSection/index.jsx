@@ -1,11 +1,10 @@
 
-
-//import VirtualGameIcon from '../../../assets/images/mainPage/virtual-game-icon.png'
+import React, { useState } from 'react'
 import VirtualGameIcon from '../../../assets/images/mainPage/sectionTitle/icon81.png'
 import SectionHeader from "../../Shared/SectionHeader";
+import SharedCard from "../../Shared/SharedCard";
 import Image1 from '../../../assets/images/mainPage/virtual-game1.png'
 
-import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
 const VirtualGameSection = () => {
 
   const Items = [
@@ -16,22 +15,7 @@ const VirtualGameSection = () => {
     },
    
   ]
-
-
-  const Card = ({ id, title, img, onClick }) => {
-    return (
-      <div className='shared-card'>
-        <img src={img} alt="img" className='img' />
-        <div className='desc'>
-          <p>{title}</p>
-        </div>
-        <button className='card-button'>
-          <p>게임시작</p>
-          <img src={RArrow} alt="RArrow" className='img' />
-        </button>
-      </div>
-    );
-  };
+  const [clickEffect, setClickEffect] = useState(null);
 
   return (
     <div className='filter-content virtual-games-section'>
@@ -40,10 +24,13 @@ const VirtualGameSection = () => {
         title={'키론가상게임'} />
       <div className='cont'>
       {Items.map((card, index) => (
-        <Card
+        <SharedCard
+          id={card.id}
           key={card.id}
           title={card.title}
-          img={card.img} />
+          img={card.img}
+          clickEffect={clickEffect}
+          setClickEffect={setClickEffect}/>
       ))
         }</div>
     </div>

@@ -152,12 +152,12 @@ function SlotGameSection() {
         title={'슬롯게임'} />
       <div className='section__content'>
         <div 
-          className={`slot-games-banner ${hoverEffect ? 'hover' : ''}`}>
+          className={`slot-games-banner ${hoverEffect ? 'hover' : ''}`}
+          onClick={() => {
+            setHoverEffect(!hoverEffect)
+          }}>
           <img src={SlotBanner} alt="banner" />
-          <div className='banner-content'
-            onClick={() => {
-              setHoverEffect(!hoverEffect)
-            }}>
+          <div className='banner-content'>
             <p>수백여 개의 해외 유명한 인기 슬롯게임을</p>
             <p className='second-line'> <span>케이플레이슬롯</span>에서 즐겨보세요!</p>
             <button>
@@ -165,7 +165,7 @@ function SlotGameSection() {
               <img src={RArrow} alt="RArrow" className='img' />
             </button>
           </div>
-          {hoverEffect && (<div className='card-hover'></div>)}
+          {hoverEffect && (<div className='card-overlay'></div>)}
         </div>
         <TabsComponent
           tabsData={tabsList}

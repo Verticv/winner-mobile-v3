@@ -1,12 +1,12 @@
 
 
-//import MiniGameIcon from '../../../assets/images/mainPage/mini-game-icon.png'
+import React, { useState } from 'react'
 import SectionHeader from "../../Shared/SectionHeader";
+import SharedCard from "../../Shared/SharedCard";
 import Image1 from '../../../assets/images/mainPage/miniGames/mini-game1.png'
 import Image2 from '../../../assets/images/mainPage/miniGames/mini-game2.png'
 import Image3 from '../../../assets/images/mainPage/miniGames/mini-game3.png'
 import Image4 from '../../../assets/images/mainPage/miniGames/mini-game4.png'
-import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
 import MiniGameIcon from '../../../assets/images/mainPage/sectionTitle/icon7-1.png'
 
 const MiniGameSection = () => {
@@ -34,22 +34,7 @@ const MiniGameSection = () => {
     },
   ]
 
-
-  const Card = ({ id, title, img, onClick }) => {
-    return (
-      <div className='shared-card'>
-        <img src={img} alt="img" className='img' />
-        <div className='desc'>
-          <p>{title}</p>
-        </div>
-        <button className='card-button'>
-          <p>게임시작</p>
-          <img src={RArrow} alt="RArrow" className='img' />
-        </button>
-      </div>
-    );
-  };
-
+  const [clickEffect, setClickEffect] = useState(null);
   return (
     <div className='filter-content mini-games-section'>
       <SectionHeader
@@ -57,11 +42,14 @@ const MiniGameSection = () => {
         title={'미니게임'} />
       <div className='cont'>
       {Items.map((card, index) => (
-        <Card
+        <SharedCard
+          id={card.id}
           key={card.id}
           title={card.title}
-          img={card.img} />
-      ))
+          img={card.img}
+          clickEffect={clickEffect}
+          setClickEffect={setClickEffect}/>
+          ))
         }</div>
     </div>
   )

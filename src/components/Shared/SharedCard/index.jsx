@@ -16,14 +16,7 @@ const SharedCard = ({ id, title, img, btn = '게임시작', clickEffect, setClic
         <img src={RArrow} alt="RArrow" className='img' />
       </button>
       {clickEffect === id && (<div className='card-overlay'>
-        <div className='overlay-buttons'>
-          <button>
-            <p>{btn}</p>
-          </button>
-          <button>
-            <p>이용가이드</p>
-          </button>
-        </div>
+        
       </div>)}
     </div>
   );

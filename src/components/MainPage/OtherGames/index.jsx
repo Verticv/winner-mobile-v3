@@ -16,8 +16,7 @@ const OtherGames = () => {
     {
       id: 0,
       title: 'K-홀덤',
-      img: image0,
-      showOverlay: true
+      img: image0
     },
     {
       id: 1,
@@ -51,26 +50,13 @@ const OtherGames = () => {
     return (
       <div 
         className={`other-game-card ${clickEffect === id ? 'hover' : ''}`}
-        onClick={() => {
-          if (showOverlay) {
-            setClickEffect(id)
-          }
-        }}>
+        onClick={() => { setClickEffect(id) }}>
         <img src={img} alt="OtherGame1" className='other-img' />
         <div className='desc'>
           <p>{title}</p>
         </div>
-        {clickEffect === id && (<div className='card-overlay'>
-          <div className='overlay-buttons'>
-            <button>
-              <p>게임시작</p>
-            </button>
-            <button>
-              <p>이용가이드</p>
-            </button>
-          </div>
-
-        </div>)}
+        {clickEffect === id &&
+          (<div className='card-overlay'></div>)}
       </div>
     );
   };
