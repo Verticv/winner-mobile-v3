@@ -22,7 +22,7 @@ import HoldemGameSection from "../components/MainPage/HoldemGameSection";
 import FixedMenu from '../components/FixedMenu';
 
 function MainPage({ setFooterDefaultState }) {
-  const [selectedTab, setSelectedTab] = useState(0)
+  const [selectedTab, setSelectedTab] = useState(5)
 
   const setFooterDefault = useCallback(() => {
     setFooterDefaultState()
