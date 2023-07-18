@@ -64,7 +64,7 @@ function App() {
 							<>
 								<Header/>
 								<MainPage setFooterDefaultState={setFooterDefaultState} />
-								<Footer isExpanded={isExpanded} setExpanded={setExpanded} />
+								<Footer isExpanded={isExpanded} setExpanded={setExpanded} /> 
 							</>
 						}
 					/>

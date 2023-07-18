@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import logo from "../../assets/images/header/logo.png";
 import ProfileIcon from "../../assets/images/header/profile.png";
 import SupportIcon from "../../assets/images/header/support.png";
 import ExchangeIcon from "../../assets/images/header/exchange.png";
+import MyPage from '../../pages/MyPage';
 
 function Header() {
+  const [isOpen, setOpen] = useState(false)
   const navigate = useNavigate();
   return (
+    <>
     <div className="header">
       <div className="header__image">
         <img
@@ -20,7 +23,7 @@ function Header() {
       <div className="header__navbar">
         <div className="navbar__list">
           <div className="navbar__item"
-            onClick={() => navigate('/mypage')}>
+            onClick={() => setOpen(true)}>
             <img
               className="icon1"
               src={ProfileIcon}
@@ -46,8 +49,18 @@ function Header() {
             />
           </div>
         </div>
-      </div>
+        </div>
+        {
+          isOpen && (
+            < div className='menu-modal'>
+              <MyPage
+                setOpen={setOpen} />
+            </div>
+          )
+        }
     </div>
+    
+    </>
   );
 }
 
