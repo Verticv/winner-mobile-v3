@@ -57,13 +57,12 @@ function App() {
 	return (
 		<Router>
 			<div className="app">
-				{/* <Router> */}
 				<Routes>
 					<Route
 						path="/main"
 						element={
 							<>
-								<Header />
+								<Header/>
 								<MainPage setFooterDefaultState={setFooterDefaultState} />
 								<Footer isExpanded={isExpanded} setExpanded={setExpanded} />
 							</>
@@ -109,8 +108,6 @@ function App() {
 						}
 					></Route>
 				</Routes>
-				{/* <Outlet /> */}
-				{/* </Router> */}
 			</div>
 		</Router>
 	);

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import NoticeBanner from "../components/MainPage/NoticeBanner";
 import Slider from "../components/MainPage/Slider";
 import Jackpot from "../components/MainPage/Jackpot";
@@ -22,15 +22,12 @@ import HoldemGameSection from "../components/MainPage/HoldemGameSection";
 import FixedMenu from '../components/FixedMenu';
 
 function MainPage({ setFooterDefaultState }) {
-  const [selectedTab, setSelectedTab] = useState(5)
-
-  const setFooterDefault = useCallback(() => {
-    setFooterDefaultState()
-  }, []);// eslint-disable-line react-hooks/exhaustive-deps
+  const [selectedTab, setSelectedTab] = useState(0)
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-    setFooterDefault()   
+    console.log('ddddddddddddddddddddd')
+    //window.scrollTo(0, 0);
+    setFooterDefaultState()   
   }, [selectedTab])// eslint-disable-line react-hooks/exhaustive-deps
 
  
@@ -42,7 +39,16 @@ function MainPage({ setFooterDefaultState }) {
       <Slider />
       <Jackpot />
       
-      
+      {selectedTab === 0 && (
+        <div>
+          <SlotGame />
+          <SportGame />
+          <LiveCasino />
+          <HotelCasino />
+          <OtherGames /> 
+          <BoardsSection />
+        </div>
+      )}
       {selectedTab === 1 && (
         <div id="live-casino" className="filter-content">
           <LiveCasino />
@@ -68,7 +74,6 @@ function MainPage({ setFooterDefaultState }) {
         <div id="hotel-casino"  className="filter-content">
           <HotelCasino filter={true} />
         </div>
-
       )}
       {selectedTab === 6 && (
         <div id="e-sports">
@@ -100,16 +105,7 @@ function MainPage({ setFooterDefaultState }) {
           <HoldemGameSection />
         </div>
       )}
-      {selectedTab === 0 && (
-        <div>
-          <SlotGame />
-          <SportGame />
-          <LiveCasino />
-          <HotelCasino />
-          <OtherGames /> 
-          <BoardsSection />
-        </div>
-      )}
+      
       <FixedMenu
         selectedTab={selectedTab}
         setSelectedTab={setSelectedTab}
