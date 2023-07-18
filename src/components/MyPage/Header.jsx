@@ -10,7 +10,7 @@ const ProfileHeader = () => {
       <p>마이인포</p>
       <button
         
-        onClick={() =>  navigate("/main") }>
+        onClick={() => navigate("/bet-combination") }>
         <img src={Close} alt="right" className="close" />
       </button>
       

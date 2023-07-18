@@ -25,8 +25,7 @@ function MainPage({ setFooterDefaultState }) {
   const [selectedTab, setSelectedTab] = useState(0)
 
   useEffect(() => {
-    console.log('ddddddddddddddddddddd')
-    //window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     setFooterDefaultState()   
   }, [selectedTab])// eslint-disable-line react-hooks/exhaustive-deps
 
