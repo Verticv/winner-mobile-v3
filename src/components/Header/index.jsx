@@ -50,16 +50,15 @@ function Header() {
           </div>
         </div>
         </div>
-        {
-          isOpen && (
-            < div className='menu-modal'>
-              <MyPage
-                setOpen={setOpen} />
-            </div>
-          )
-        }
     </div>
-    
+      {
+        isOpen && (
+          < div className='menu-modal'>
+            <MyPage
+              setOpen={setOpen} />
+          </div>
+        )
+      }
     </>
   );
 }
