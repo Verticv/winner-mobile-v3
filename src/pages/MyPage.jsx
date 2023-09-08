@@ -16,7 +16,7 @@ import activeBG from '../assets/mainPage/points/active-bg.png'
 import icon1 from '../assets/bigIcons/1.png';
 import icon2 from '../assets/images/bottom-nav/menu1.png';
 import icon3 from '../assets/images/bottom-nav/menu2.png';
-import icon4 from '../assets/images/bottom-nav/menu3.png';
+// import icon4 from '../assets/images/bottom-nav/menu3.png';
 import icon5 from '../assets/images/bottom-nav/menu4.png';
 import icon6 from '../assets/images/bottom-nav/menu5.png';
 import icon7 from '../assets/images/bottom-nav/menu6.png';
@@ -24,13 +24,13 @@ import icon8 from '../assets/images/bottom-nav/menu7.png';
 import icon9 from '../assets/images/bottom-nav/menu8.png';
 import icon10 from '../assets/images/bottom-nav/menu9.png';
 import icon11 from '../assets/images/bottom-nav/menu10.png';
-import icon12 from '../assets/images/bottom-nav/menu11.png';
+// import icon12 from '../assets/images/bottom-nav/menu11.png';
 // import HotelCasinoBetHistory from '../HotelCasinoBetHistory'
 
 import icon1Active from '../assets/bigIcons/1-active.png';
 import icon2Active from '../assets/images/bottom-nav/menu-on1.png';
 import icon3Active from '../assets/images/bottom-nav/menu-on2.png';
-import icon4Active from '../assets/images/bottom-nav/menu-on3.png';
+// import icon4Active from '../assets/images/bottom-nav/menu-on3.png';
 import icon5Active from '../assets/images/bottom-nav/menu-on4.png';
 import icon6Active from '../assets/images/bottom-nav/menu-on5.png';
 import icon7Active from '../assets/images/bottom-nav/menu-on6.png';
@@ -38,7 +38,7 @@ import icon8Active from '../assets/images/bottom-nav/menu-on7.png';
 import icon9Active from '../assets/images/bottom-nav/menu-on8.png';
 import icon10Active from '../assets/images/bottom-nav/menu-on9.png';
 import icon11Active from '../assets/images/bottom-nav/menu-on10.png';
-import icon12Active from '../assets/images/bottom-nav/menu-on11.png';
+// import icon12Active from '../assets/images/bottom-nav/menu-on11.png';
 
 
 function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
@@ -46,12 +46,12 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
   const [selectedSubTab, setSelectedSubTab] = useState(0)
   const [subActiveButton, setSubActiveButton] = useState();
 
- 
+ console.log(selectedSubTab);
   useEffect(() => {
     if (window.location.pathname === '/mypage') {
         setSubActiveButton('')
     }
-})
+}, [])
 useEffect(() => {
     window.scrollTo(0, 0);
 }, [])

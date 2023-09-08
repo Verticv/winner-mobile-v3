@@ -14,7 +14,7 @@ import HorizontalSubMenu from '../MyPage/HorizontalSubMenuDefault';
 import PowerLadderBetHistoryPanel from '../MyPage/PowerLadderBetHistoryPanel'
 import KinoLadderBetHistoryPanel from '../MyPage/KinoLadderBetHistoryPanel'
 import { Route, Routes, useNavigate } from 'react-router-dom'
-import Pagination from '../MyPage/Pagination'
+// import Pagination from '../MyPage/Pagination'
 
 const subTabsArray = [
     { text: "전체", path: "/mypage/bet-history/all/minigame", icon: Icon1, id: 0, width: '16.375rem', marginIcon: '', },
@@ -489,7 +489,7 @@ const MinigameBetHistory = ({ isState = 0, setState, showSub = true, isPopup = f
     const [checkedState, setCheckedState] = useState(new Array(10).fill(false))
     const [isAllSelected, setAllSelected] = useState(false)
     const [isPopupOpen, setPopupOpen] = useState(true)
-    const [page, setPage] = useState(0)
+    // const [page, setPage] = useState(0)
     const [selectedTab, setSelectedTab] = useState()
     const [selectedSubTab, setSelectedSubTab] = useState()
     const navigate = useNavigate()
