@@ -99,7 +99,6 @@ useEffect(() => {
                             <BetHistory isAuthenticated={isAuthenticated}
                             subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton} />
 
-
                             {/* </div> */}
                             <FixedMenu
         selectedTab={selectedTab}
