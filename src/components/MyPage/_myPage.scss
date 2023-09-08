@@ -460,3 +460,856 @@
   padding-left: 2.7rem !important;
   padding-top: 2rem !important;
 }
+
+.Home-page-top-banner {
+  // background: #1e1e1e;
+  height: 9.33rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left-arrow {
+      width: 2.275rem;
+      height: auto;
+      height: 3.375rem;
+      /* background: blue; */
+      // margin-top: 3rem;
+      margin-left: 3.6rem;
+  }
+
+  .page-title {
+      color: #fffffe;
+      font-size: 3.74375rem;
+      margin-left: 2.1rem;
+      margin-top: 0.3875rem;
+      letter-spacing: -0.1rem;
+      font-family: "SpoqaHanSansNeoBold";
+  }
+
+  .home-icon {
+      width: 4.375rem;
+      height: auto;
+      margin-right: 3.7rem;
+      margin-top: 0.1rem;
+
+  }
+}
+
+.HorizontalMenu {
+  display: flex;
+  flex-direction: row;
+
+  &::-webkit-scrollbar {
+      display: none;
+  }
+
+  .nav-button {
+      margin: 0;
+      width: 19.6rem;
+      height: 14.2rem;
+      padding: 0;
+      flex-shrink: 0;
+      margin-right: -0.7rem;
+
+      &.active {
+          button {
+              background: url('../../assets/bigIcons/shadow-active-btn-v3.png') round;
+          }
+          .text {
+              color: #ffffff;
+          }
+      }
+
+      button {
+          background: url('../../assets/bigIcons/inactive-btn-v3.png') round;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          padding-bottom: 0.2rem;
+      }
+
+      .text {
+          margin-bottom: 0;
+          margin-right: 0.35rem;
+          font-size: 2.5rem;
+      }
+  }
+}
+
+.div-shadow {
+  position: relative;
+
+  .nav-shadow {
+      height: 14.1rem;
+      width: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #191920;
+      box-shadow: 0rem 0 3rem 2.5rem #19191c;
+      transform: rotate(180deg);
+  }
+}
+
+.nav-shadow {
+  height: 14.1rem;
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #191920;
+  box-shadow: 0rem 0 3rem 2.5rem #5423a0;
+  transform: rotate(180deg);
+}
+
+.first-row {
+  margin-top: 1.15rem;
+  margin-bottom: -1.125rem;
+  display: flex;
+
+  input {
+      outline: none;
+      background: #ffffff;
+      border: 0;
+      height: 7rem;
+      width: 34.06rem;
+      font-size: 2.624375rem;
+      margin-left: 1.875rem;
+      // border: 0.1875rem solid #404040;
+      border-radius: 0.5rem;
+      color: red;
+      font-family: 'SpoqaHanSansNeoMedium';
+      letter-spacing: -0.07rem;
+      padding: 0.35rem 0 0 1.65rem;
+  }
+
+  ::placeholder {
+      color: #ccc2b6;
+  }
+}
+
+
+
+
+.second-row {
+  display: flex;
+
+  input {
+      outline: none;
+      background: #ffffff;
+      border: 0;
+      padding: 0;
+      height: 7rem;
+      width: 34.06rem;
+      font-size: 2.624375rem;
+      // margin-left: 1.875rem;
+      border: 0.1875rem solid #404040;
+      border-radius: 0.5rem;
+      color: #666666;
+      font-family: 'RobotoMedium';
+      padding-left: 1.65rem;
+      letter-spacing: -0.1rem;
+      padding-top: 0.15rem;
+  }
+
+  .date-picker {
+      position: relative;
+
+      img {
+          position: absolute;
+          top: 3.48rem;
+          right: 2rem;
+      }
+  }
+
+  .Signal {
+      color: #eeeeee;
+      font-family: 'SpoqaHanSansNeoMedium';
+      font-size: 2.624375rem;
+      margin-top: 3.88rem;
+      margin-left: 0.2rem;
+      margin-right: -1.55rem;
+  }
+
+}
+
+.buttons-container2 {
+  // background: red;
+  display: flex;
+  margin: 0 1.9rem;
+  margin-top: 0.7rem;
+  gap: 0.92rem;
+  color: #ffdfbd;
+  font-family: 'SpoqaHanSansNeoMedium';
+  font-size: 2.624375rem;
+  padding-bottom: 1.8rem;
+
+  .common-button12 {
+      width: 13.25rem;
+      height: 7.3125rem;
+      background: linear-gradient(to top, #ada8a8, #d0d0d0);
+      padding: 0.1875rem;
+      border-radius: 0.6rem;
+      box-shadow: 0 0.312rem 0.625rem 0 rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+
+      &:hover {
+          filter: brightness(125%);
+      }
+
+      .text-con {
+          background: linear-gradient(to top, #e5e5e5,#ffffff);
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0.4rem;
+
+          span {
+              color: #666666;
+              margin-top: 0.2rem;
+              letter-spacing: -0.07rem;
+              // text-shadow: rgb(0 0 0) 0rem 0rem 0.4375rem;
+          }
+      }
+  }
+
+  .date12 {
+      padding-top: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .buttons-container2 {
+      .common-button12 {
+          padding: 1px;
+      }
+
+      // .common-button12>div {
+      //     width: calc(100% - 1px);
+      //     height: calc(100% - 1px);
+      // }
+  }
+
+}
+
+.react-datepicker__year-dropdown,
+.react-datepicker__month-dropdown,
+.react-datepicker__month-year-dropdown {
+  left: -11% !important;
+  top: 5rem !important;
+  height: 46rem !important;
+  width: 11.9875rem  !important;
+  background: rgba(26, 26, 26) !important;
+  color: rgba(204, 194, 182);
+  font-size: 2.6rem;
+  border: 0.1875rem solid rgba(64, 64, 64) !important;
+  overflow-y: scroll;
+  font-family: 'RobotoMedium';
+
+  &::-webkit-scrollbar {
+      display: block;
+      height: 0.5rem !important;
+      width: 1rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background: #967c52;
+      border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+      margin: 2px;
+      background: #1e1e1e;
+      border-radius: 10px;
+  }
+}
+
+
+.react-datepicker__year-dropdown .react-datepicker__year-option:last-child {
+display: none !important;
+}
+
+.react-datepicker__year-dropdown {
+  .react-datepicker__year-option {
+      &:nth-last-child(n):nth-last-child(n + 103) {
+          display: none !important;
+      }
+
+  }
+}
+// react-datepicker__year-option
+
+
+.react-datepicker__year-option,
+.react-datepicker__month-option,
+.react-datepicker__month-year-option {
+  height: 4.5rem;
+  display: flex !important;
+  justify-content: left;
+  align-items: center;
+}
+
+.react-datepicker__year-option:hover,
+.react-datepicker__month-option:hover,
+.react-datepicker__month-year-option:hover {
+  height: 4.5rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+
+.react-datepicker__header__dropdown,
+.react-datepicker__header__dropdown--scroll {
+  position: absolute !important;
+  width: 17rem !important;
+  left: 38% !important;
+  top: 1rem !important;
+  height: 3rem !important;
+  margin: auto !important;
+  // background: antiquewhite !important;
+  // display: none;
+  // opacity: 0;
+}
+
+.react-datepicker__year-dropdown-container--select,
+.react-datepicker__month-dropdown-container--select,
+.react-datepicker__month-year-dropdown-container--select,
+.react-datepicker__year-dropdown-container--scroll,
+.react-datepicker__month-dropdown-container--scroll,
+.react-datepicker__month-year-dropdown-container--scroll {
+  width: 100% !important;
+  // background: red !important;
+  height: 100% !important;
+  margin: 0 !important;
+  // opacity: 1;
+  // display: none !important;
+}
+
+.react-datepicker__year-read-view,
+.react-datepicker__month-read-view,
+.react-datepicker__month-year-read-view {
+  color: #ffffff00;
+}
+
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  border-color: #ffffff00 !important
+}
+
+.react-datepicker__year-read-view,
+.react-datepicker__month-read-view,
+.react-datepicker__month-year-read-view {
+  height: 100%;
+  width: 100%;
+}
+
+.react-datepicker__year-option--selected,
+.react-datepicker__month-option--selected,
+.react-datepicker__month-year-option--selected {
+  left: 1.5rem !important;
+}
+
+.react-datepicker__year-option, .react-datepicker__month-option, .react-datepicker__month-year-option {
+  padding-left: 2rem;
+}
+
+.react-datepicker__year-option--selected {
+  display: none;
+}
+
+.상세보기 {
+  width: 10.875rem;
+  height: 10.875rem;
+  background-color: #5d659f;
+  border-radius: 1.1rem;
+  box-shadow: rgb(0 0 0 / 60%) 0px 0.375rem 0px 0px;
+  cursor: pointer;
+
+  .상세보기-span {
+      font-size: 2.7rem;
+      line-height: 1.25;
+      width: 10.875rem;
+      margin-top: 0.2375rem;
+      font-family: SpoqaHanSansNeoMedium;
+      color: #eeeeee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // text-shadow: rgb(0 0 0 / 50%) 0.3125rem 0.125rem 0.4375rem;
+      // text-shadow: rgb(0 0 0) 0rem 0rem 0.6rem;
+  }
+
+  &:hover {
+      filter: brightness(125%);
+  }
+}
+
+
+.LiveCasinoHistoryDetailPopup {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  // left: 0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  z-index: 201;
+  margin: auto;
+  overflow-y: scroll;
+
+
+  .거래-상세-내역-popup {
+      height: 9.2rem;
+      font-size: 3.75rem;
+      background: #272726;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 100%;
+      border-top-left-radius: 2.7rem;
+      border-top-right-radius: 2.7rem;
+      // border-top-left-radius: 3rem;
+      // border-top-right-radius: 3rem;
+
+      label {
+          color: #ad9e8c;
+          letter-spacing: -0.1rem;
+          font-size: 3.75rem;
+          font-family: 'SpoqaHanSansNeoBold';
+          margin-left: -0.35rem;
+          margin-top: 0.1rem;
+      }
+
+      button {
+          position: absolute;
+          right: 0;
+          background: bottom;
+          margin-right: 4.2rem;
+
+          img {
+              width: 3.1875rem;
+              height: 3.1875rem;
+          }
+      }
+  }
+
+  .WINlouie3-div2 {
+      height: 5.1875rem;
+      font-size: 2.8125rem;
+      padding-top: 0.875rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #272726;
+      margin-top: 2.6rem;
+      border-radius: 3rem;
+      width: 41.4rem;
+      margin-bottom: 3.6rem;
+  }
+}
+
+
+.select-all-buttons {
+  margin: 4.05rem 0px 2.5rem;
+
+  .flex-btn {
+      display: flex;
+      justify-content: center;
+  }
+
+  button {
+      height: 7.3125rem;
+      padding: 0.1875rem;
+      font-size: 2.8125rem;
+      margin-right: 0.75rem;
+      width: 24.125rem;
+      // background: linear-gradient(to top, rgb(77, 60, 10), rgb(156, 123, 74) 50%, rgb(231, 183, 134));
+      border-radius: 1rem;
+      cursor: pointer;
+
+      &:last-child {
+          margin-right: 0;
+      }
+
+      &:hover {
+          filter: brightness(125%);
+      }
+
+      .div-text {
+          width: 100%;
+          height: 100%;
+          // background: linear-gradient(to top, rgb(128, 96, 63), rgb(147, 110, 72) 50%, rgb(165, 123, 82));
+          border-radius: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: 'SpoqaHanSansNeoMedium';
+
+          span {
+              font-size: 2.8125rem;
+              margin-top: 0.2rem;
+              letter-spacing: -0.07rem;
+              text-shadow: rgb(0 0 0) 0rem 0rem 0.4375rem;
+          }
+      }
+  }
+}
+
+.bet-history {
+
+  .date12 {
+      margin: 0.9rem 1.875rem;
+      padding-top: 0.5rem;
+  }
+
+
+}
+
+.LiveCasinoBetHistory {
+  #scroll-wrapper1 {
+      padding: 0px 0px 0rem 1.1rem !important;
+      margin-top: 0.9rem;
+      margin-bottom: -0.2rem;
+
+      #container {
+          .nav-button {
+              width: 21.6rem;
+              height: 11.18rem;
+              margin-right: 0.2rem;
+
+              .icon {
+                  margin-top: 0;
+                  object-fit: none;
+              }
+
+              .text{
+                color: #666666;
+              }
+
+              &.active {
+                  button {
+                      background: url('../../assets/myPage/second-btns/active-bg-v3.png') round !important;
+                      background-repeat: round;
+                      width: 20.9rem;
+                      height: 13.6rem;
+                      margin-right: 0.2rem;
+                      padding-top: 0.5rem;
+                      margin-left: 0.35rem;
+
+                      .text {
+                          color: #ffffff;
+                      }
+                  }
+              }
+          }
+      }
+  }
+  .select-overlay {
+      width: 100%;
+  }
+}
+
+
+///////////////////////Pagination
+button {
+  padding: 0;
+  border: 0;
+}
+
+.buttons-container {
+  margin-right: -12px;
+  font-family: 'RobotoMedium';
+  button {
+      font-family: 'RobotoMedium';
+      // margin: 0.09375rem;
+      // padding: 3px;
+      // background: linear-gradient(to top, #594614, #a48251 50%, #e7b786 );
+      // border-radius: 1rem;
+  }
+}
+
+// .item {
+//     align-items: center;
+//     color: #454545;
+//     cursor: pointer;
+//     display: flex;
+//     font-size: 12px;
+//     justify-content: center;
+//     width: 10px;
+//     height: 10px;
+// }
+
+.item:hover {
+  filter: brightness(120%)
+}
+
+// .disabled-page {
+//     color: #808e9b;
+// }
+
+// .active {
+//     background: linear-gradient(#1491fc, #0675db);
+//     border-radius: 4px;
+//     border: solid 1px #0070d9;
+//     box-shadow: inset 0 0 1px 1px #2ab0ed;
+//     color: white;
+//     width: 10px;
+//     height: 32px;
+// }
+
+// .active :hover {
+//     filter: brightness(100%)
+// }
+
+// .next {
+//     position: absolute;
+//     left: 183px;
+//     width: 32px;
+//     height: 32px;
+// }
+
+// .next:hover {
+//     filter: brightness(50%);
+// }
+
+// .pagination {
+//     align-items: center;
+//     display: flex;
+//     flex-direction: row;
+//     height: 32px;
+//     justify-content: center;
+//     list-style-type: none;
+//     position: relative;
+//     width: 170px;
+// }
+
+// .pagination-page {
+//     width: 160px;
+// }
+
+// .previous {
+//     height: 32px;
+//     position: absolute;
+//     width: 8px;
+//     left: -31px;
+//     top: 10px;
+// }
+
+// .previous:hover {
+//     filter: brightness(150%);
+// }
+
+
+
+//////// checkbox
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+input[type='checkbox'] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+input[type='radio'] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  background-color: #1e1e1e;
+  margin: 0;
+  font: inherit;
+  color: #927c55;
+  width: 3rem;
+  height: 3rem;
+  border: 0.2rem solid #41403f;
+  border-radius: 0.9rem;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type='radio'] {
+  appearance: none;
+  background-color: #1e1e1e;
+  margin: 0;
+  font: inherit;
+  color: #927c55;
+  width: 3rem;
+  height: 3rem;
+  border: 0.2rem solid #41403f;
+  border-radius: 0.9rem;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type='radio'].radio-input {
+  border-radius: 50%;
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+
+input[type='checkbox']::before {
+  content: '';
+  width: 1.875rem;
+  height: 1.875rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #cb78e6;
+  background-color: #cb78e6;
+  border-radius: 0.6rem;
+}
+
+input[type='radio']::before {
+  content: '';
+  width: 1.875rem;
+  height: 1.875rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #927c55;
+  background-color: #927c55;
+  border-radius: 0.6rem;
+}
+
+input[type='checkbox']:checked::before {
+  transform: scale(1);
+}
+
+input[type='radio']:checked::before {
+  transform: scale(1);
+}
+
+input[type='radio'].radio-input:checked::before {
+  border-radius: 50%;
+}
+
+
+
+//////////////////////////////////////
+.SportsBetHistory {
+  #container {
+      .nav-button {
+          margin-right: -0.25rem;
+      }
+
+  }
+
+  .date12 {
+      .container {
+          height: 7.5rem;
+      }
+  }
+
+  .date12 {
+      // margin: 0.9rem 1.875rem;
+      margin: 1.1rem 1.875rem;
+      padding-top: 0.5rem;
+  }
+
+  .first-row {
+      margin-top: 1.15rem;
+  }
+
+  .two-buttons-container {
+      width: 100%;
+      display: flex;
+      margin-left: 0.1rem;
+      gap: 1.1rem;
+      border-radius: 1rem;
+      margin: 0 1.1rem;
+
+      button {
+          width: 48%;
+          background: #8458cd;
+          // background: linear-gradient(to top, #3e4d8f, #6394bc 50%, #87d8e7);
+          border-radius: 1rem;
+          margin-left: -0.1rem;
+          margin-top: 1.1rem;
+          margin-bottom: 1.2rem;
+          font-size: 2.811875rem;
+
+          span {
+              font-family: "SpoqaHanSansNeoMedium";
+              // margin-top: 0.35rem;
+              letter-spacing: -0.07rem;
+              margin-right: 0.1rem;
+              text-shadow: rgb(0 0 0) 0rem 0rem 0.4375rem;
+              font-size: 2.625rem;
+          }
+      }
+  }
+
+  .select-overlay {
+      width: 100%;
+  }
+}
+
+
+////////////////////
+.cardContent {
+
+  .two-buttons-container {
+      button {
+          cursor: pointer;
+          // box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.5);
+
+          &:hover {
+              filter: brightness(125%);
+          }
+      }
+  }
+}
+
+//////////////////////////
+.PowerLadderBetHistoryPanel {
+  .two-buttons-container {
+      button {
+          margin-bottom: 1rem;
+      }
+  }
+}
+
+
+/////////////////////
+.ar-date {
+  .container {
+      width: 100%;
+      height: 7rem;
+
+      .select-overlay {
+          width: 100%;
+      }
+  }
+}
