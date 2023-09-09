@@ -11,7 +11,6 @@ import HorizontalMenu from "../components/MyPage/HorizontalMenu";
 import FixedMenu from '../components/FixedMenu';
 import "../components/MyPage/_myPage.scss"
 
-
 import activeBG from '../assets/mainPage/points/active-bg.png'
 import icon1 from '../assets/bigIcons/1.png';
 import icon2 from '../assets/images/bottom-nav/menu1.png';
@@ -99,7 +98,6 @@ useEffect(() => {
                             <BetHistory isAuthenticated={isAuthenticated}
                             subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton} />
 
-                            {/* </div> */}
                             <FixedMenu
         selectedTab={selectedTab}
         setSelectedTab={setSelectedTab}
