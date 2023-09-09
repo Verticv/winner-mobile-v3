@@ -1,8 +1,8 @@
 import React from 'react';
 import FootballIcon from '../../assets/myPage/sports/football-v3.png'
-import USFlagIcon from '../../assets/myPage/sports/usaFlag.png'
-import UKFlagIcon from '../../assets/myPage/sports/englandFlag.png'
-import SpainFlagIcon from '../../assets/flag.png'
+// import USFlagIcon from '../../assets/myPage/sports/usaFlag.png'
+// import UKFlagIcon from '../../assets/myPage/sports/englandFlag.png'
+// import SpainFlagIcon from '../../assets/flag.png'
 import ClockIcon from '../../assets/myPage/sports/clock.png'
 import Icon3 from '../../assets/gameresults/mini-icon1.png'
 
@@ -11,12 +11,12 @@ import Icon5 from '../../assets/minigameResults/3.png'
 import Icon6 from '../../assets/minigameResults/4.png'
 
 const CardHeader = ({ flag = 'us', name = '축구 / 미국 - 메이저리그사커', date = '06-29 15:45', isMinigame = false, minigameType = "powerball", smallCard, width6 }) => {
-    const flags = {
-        us: USFlagIcon,
-        uk: UKFlagIcon,
-        spain: SpainFlagIcon
-    }
-    const headerFlag = flags[flag]
+    // const flags = {
+    //     us: USFlagIcon,
+    //     uk: UKFlagIcon,
+    //     spain: SpainFlagIcon
+    // }
+    // const headerFlag = flags[flag]
 
     if (isMinigame === true) return (
         <div style={{ height: '7.2rem', paddingLeft: "1.4rem", background: 'linear-gradient(to right, #6c553e, #473b35)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '' }} className="flex items-center justify-between h-56px w-full bg-blue-r3591d5 border-b border-gray-dddddd pr-7">
