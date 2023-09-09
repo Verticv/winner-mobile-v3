@@ -2,6 +2,7 @@
 
 import Logo from '../../../assets/images/mainPage/light-log.png'
 import Close from '../../../assets/images/mainPage/close-icon.png'
+import { useNavigate } from 'react-router-dom'
 
 const MenuList = ({
   items,
@@ -9,6 +10,7 @@ const MenuList = ({
   setOpen,
   setSelectedTab
 }) => {
+  const navigate = useNavigate();
   return (
   <div className='menu-modal'>
     <div className='menu-modal-header'>
@@ -26,6 +28,7 @@ const MenuList = ({
               onClick={() => {
                 setOpen(false)
                 setSelectedTab({ index: item.id,item:item})
+                navigate(item?.path)
               }
               }>
               <div className='menu-item1'>

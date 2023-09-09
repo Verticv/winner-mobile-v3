@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom';
 import horizontalsScroll from '../../utils/horizontalsScroll';
-import inactive from '../../assets/inactive-bg.png';
+import inactive from '../../assets/inactive-bg-v3.png';
 
 const HorizontalSubMenu = ({
     itemsArray,
@@ -57,10 +57,13 @@ const HorizontalSubMenu = ({
                         style={{
                             background: `url(${inactive})`,
                             backgroundRepeat: 'round',
-                            width: '20.9rem',
-                            height: '11.18rem',
+                            width: '21.188rem',
+                            height: '11.688rem',
                             marginLeft: '0',
-                            paddingTop: '0'
+                            paddingTop: '0',
+                            border: "3px solid #2a2a2a",
+                            borderRadius: "0.813rem"
+                            
                         }}
                     >
 
@@ -80,7 +83,7 @@ const HorizontalSubMenu = ({
     }
 
     return (
-        <div id="container" className="HorizontalMenu" >
+        <div id="container" style={{marginLeft: "0.188rem"}} className="HorizontalMenu" >
             <div style={{ width: '0.6rem', height: '10rem', flexShrink: 0 }}></div>
             <TabsList items={itemsArray} />
             <div style={{ width: '1rem', height: '10rem', flexShrink: 0 }}></div>

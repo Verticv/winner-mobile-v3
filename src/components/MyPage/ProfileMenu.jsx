@@ -56,12 +56,14 @@ import MenuIcon_1_9 from '../../assets/images/mainPage/menu9.png'
 import MenuIcon_1_10 from '../../assets/images/mainPage/menu10.png'
 import MenuIcon_1_11 from '../../assets/images/mainPage/menu11.png'
 import MenuList from '../Shared/MenuList'
+import { useNavigate } from 'react-router-dom'
 
 const ProfileMenu = () => {
   const [isOpen, setOpen] = useState(false)
   const [selectedTab, setSelectedTab] = useState(false)
   const [subItems, setSubItems] = useState([])
   const [selectedSubTab, setSelectedSubTab] = useState([])
+  const navigate = useNavigate();
   
   const Items = [
     {
@@ -71,18 +73,21 @@ const ProfileMenu = () => {
       title: '베팅내역',
       hasList: true,
       hasBadge: false,
+      // path: '/mypage/bet-history',
       subItems: [
         {
           id: 1,
           icon2: MenuIcon_1_1,
           OnIcon: MenuOn1,
-          title: '라이브카지노'
+          title: '라이브카지노',
+          path: '/mypage/bet-history/all/live-casino'
         },
         {
           id: 2,
           icon2: MenuIcon_1_2,
           title: '스포츠',
           OnIcon: MenuOn2,
+          path: '/mypage/bet-history/all/sports'
         },
 
         {
@@ -90,42 +95,49 @@ const ProfileMenu = () => {
           icon2: MenuIcon_1_3,
           title: '실시간스포츠',
           OnIcon: MenuOn3,
+          path: '/mypage/bet-history/all/sports'
         },
         {
           id: 4,
           icon2: MenuIcon_1_4,
           title: '슬롯게임',
           OnIcon: MenuOn4,
+          path: '/mypage/bet-history/all/slot-game'
         },
         {
           id: 5,
           icon2: MenuIcon_1_5,
           title: '호텔카지노',
           OnIcon: MenuOn5,
+          path: '/mypage/bet-history/all/hotel-casino'
         },
         {
           id: 11,
           icon2: MenuIcon_1_11,
           title: '홀덤게임',
           OnIcon: MenuOn11,
+          path: '/mypage/bet-history/all/hotel-casino'
         },
         {
           id: 6,
           icon2: MenuIcon_1_6,
           title: 'e-스포츠',
           OnIcon: MenuOn6,
+          path: '/mypage/bet-history/all/hotel-casino'
         },
         {
           id: 7,
           icon2: MenuIcon_1_7,
           title: '미니게임',
           OnIcon: MenuOn7,
+          path: '/mypage/bet-history/all/e-sports'
         },
         {
           id: 8,
           icon2: MenuIcon_1_8,
           title: '키론가상게임',
           OnIcon: MenuOn8,
+          path: '/mypage/bet-history/all/minigame'
         },
 
         {
@@ -133,12 +145,14 @@ const ProfileMenu = () => {
           icon2: MenuIcon_1_9,
           title: '피싱게임',
           OnIcon: MenuOn9,
+          path: '/mypage/bet-history/all/ar-game'
         },
         {
           id: 10,
           icon2: MenuIcon_1_10,
           title: '티비벳',
           OnIcon: MenuOn10,
+          path: '/mypage/bet-history/all/fishing-game'
         }
       ]
     },
@@ -268,6 +282,7 @@ const ProfileMenu = () => {
               if (item.subItems) {
                 setOpen(true)
                 setSubItems(item.subItems)
+                navigate(item?.path)
               }
             }
             }>
