@@ -10,9 +10,18 @@ import HomePageTopBanner from "../components/MyPage/HomePageTopBanner";
 import HorizontalMenu from "../components/MyPage/HorizontalMenu";
 import FixedMenu from '../components/FixedMenu';
 import "../components/MyPage/_myPage.scss"
+import MoneyCharge from '../components/MyPage/MoneyCharge';
+import ScrollButton from '../components/MyPage/ScrollButton';
+import HorizontalMenu1 from '../components/MyPage/HorizontalMenu1';
+import MoneyChargeHistory from '../components/MyPage/MoneyChargeHistory';
+
+import activeIcon1 from '../assets/mainPage/icons/recharge-application2-v3.png';
+import activeIcon2 from '../assets/mainPage/icons/active-icon22-v3.png';
+import Icon2 from '../assets/mainPage/icons/charging-history2-v3.png';
+import Icon1 from '../assets/mainPage/icons/Icon12-v3.png';
 
 import activeBG from '../assets/mainPage/points/active-bg.png'
-import icon1 from '../assets/bigIcons/1.png';
+import icon1 from '../assets/bigIcons/1-v3.png';
 import icon2 from '../assets/images/bottom-nav/menu1.png';
 import icon3 from '../assets/images/bottom-nav/menu2.png';
 // import icon4 from '../assets/images/bottom-nav/menu3.png';
@@ -26,7 +35,7 @@ import icon11 from '../assets/images/bottom-nav/menu10.png';
 // import icon12 from '../assets/images/bottom-nav/menu11.png';
 // import HotelCasinoBetHistory from '../HotelCasinoBetHistory'
 
-import icon1Active from '../assets/bigIcons/1-active.png';
+import icon1Active from '../assets/bigIcons/1-active-v3.png';
 import icon2Active from '../assets/images/bottom-nav/menu-on1.png';
 import icon3Active from '../assets/images/bottom-nav/menu-on2.png';
 // import icon4Active from '../assets/images/bottom-nav/menu-on3.png';
@@ -45,6 +54,9 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
   const [selectedSubTab, setSelectedSubTab] = useState(0)
   const [subActiveButton, setSubActiveButton] = useState();
 
+  const [selectedTab1, setSelectedTab1] = useState(0)
+    const [selectedSubTab1, setSelectedSubTab1] = useState(0)
+    console.log(selectedSubTab1, selectedTab1)
  console.log(selectedSubTab);
   useEffect(() => {
     if (window.location.pathname === '/mypage') {
@@ -66,6 +78,11 @@ useEffect(() => {
     { text: "키론가상게임", icon: icon9, activeIcon: icon9Active, id: 6, path: "/mypage/bet-history/all/ar-game", activeBG: activeBG },
     { text: "피싱게임", icon: icon10, activeIcon: icon10Active, id: 7, path: "/mypage/bet-history/all/fishing-game", activeBG: activeBG },
     { text: "티비벳", icon: icon11, activeIcon: icon11Active, id: 8, path: "/mypage/bet-history/all/bet", activeBG: activeBG }
+];
+
+const tabsArray1 = [
+  { text: "충전신청", icon: Icon1, activeIcon: activeIcon1, id: 0, path: "/mypage/money/charge", width: '7.875rem' },
+  { text: "충전내역", icon: Icon2, activeIcon: activeIcon2, id: 1, path: "/mypage/money/charge/history", width: '7.875rem' },
 ];
   return (
     <>
@@ -104,7 +121,45 @@ useEffect(() => {
       />                
       </>}>
       </Route>
+
+      {/* <div style={{ maxWidth: '1242px', paddingBottom: '16rem' }} className="relative w-full flex flex-col justify-center overflow-hidden money-page"> */}
+
+      <Route path="/money/*" element={
+         <>
+         <Header/> 
+        <NoticeBanner />
+        <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' />
+                 <div style={{ maxWidth: '1242px', paddingBottom: '16rem' }} className="relative w-full flex flex-col justify-center overflow-hidden money-page">
+                 <div id='container-nav'>
+                                <HorizontalMenu1 itemsArray={tabsArray1} setSelectedTab={setSelectedTab1} setSelectedSubTab={setSelectedSubTab1} isMoneyPage='true' />
+                            </div>
+          <Routes>
+            <Route path="/charge" element={
+              <>
+              <ScrollButton />
+              <MoneyCharge subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton} />
+              </>
+            } ></Route>
+            <Route path="/charge/history" element={
+              <>
+              <ScrollButton />
+              <div style={{ marginTop: '1rem' }}>
+                <MoneyChargeHistory subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}/>
+              </div>
+              </>
+            } ></Route>
+          </Routes>
+          <FixedMenu
+        selectedTab={selectedTab}
+        setSelectedTab={setSelectedTab}
+      />                
+          </div>
+         </>
+      }></Route>
+      {/* </div> */}
+
     </Routes>
+    
     </>
   )
 }

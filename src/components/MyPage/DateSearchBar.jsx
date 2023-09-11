@@ -101,8 +101,8 @@ const DateSearchBar = ({
                             menu.style.marginBottom = '-14.075rem'
                         }}
                         onBlur={() => {
-                            const menu = document.querySelector('#main-menu');
-                            menu.style.marginBottom = '0'
+                            // const menu = document.querySelector('#main-menu');
+                            // menu.style.marginBottom = '0'
                         }}
                     />
                     <input
@@ -114,8 +114,7 @@ const DateSearchBar = ({
                             menu.style.marginBottom = '-14.075rem'
                         }}
                         onBlur={() => {
-                            const menu = document.querySelector('#main-menu');
-                            menu.style.marginBottom = '0'
+                           
                         }}
                     />
 
@@ -126,15 +125,15 @@ const DateSearchBar = ({
                 <div className="first-row">
                     <DropDownInput isBetCombination={false} withArrow />
                     <input
-                        style={{ marginLeft: '2rem', marginTop: '0.1rem', color: "yellow" }}
+                        style={{ marginLeft: '2rem', marginTop: '0.1rem', color: "#666666" }}
                         placeholder="팀명검색"
                         onFocus={() => {
-                            const menu = document.querySelector('#main-menu');
-                            menu.style.marginBottom = '-14.075rem'
+                            // const menu = document.querySelector('#main-menu');
+                            // menu.style.marginBottom = '-14.075rem'
                         }}
                         onBlur={() => {
-                            const menu = document.querySelector('#main-menu');
-                            menu.style.marginBottom = '0'
+                            // const menu = document.querySelector('#main-menu');
+                            // menu.style.marginBottom = '0'
                         }}
                     />
                 </div>
@@ -421,12 +420,12 @@ const DateSearchBar = ({
                             placeholder="아이디"
                             className="place-color-grey placeholder:text-gray-r7b7b7b flex-shrink-0 outline-none rounded-2xl border border-gray-dddddd font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c"
                             onFocus={() => {
-                                const menu = document.querySelector('#main-menu');
-                                menu.style.marginBottom = '-14.075rem'
+                                // const menu = document.querySelector('#main-menu');
+                                // menu.style.marginBottom = '-14.075rem'
                             }}
                             onBlur={() => {
-                                const menu = document.querySelector('#main-menu');
-                                menu.style.marginBottom = '0'
+                                // const menu = document.querySelector('#main-menu');
+                                // menu.style.marginBottom = '0'
                             }}
                         />
                     </div>

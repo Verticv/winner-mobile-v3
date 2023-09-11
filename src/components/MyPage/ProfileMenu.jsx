@@ -55,6 +55,10 @@ import MenuIcon_1_8 from '../../assets/images/mainPage/menu8.png'
 import MenuIcon_1_9 from '../../assets/images/mainPage/menu9.png'
 import MenuIcon_1_10 from '../../assets/images/mainPage/menu10.png'
 import MenuIcon_1_11 from '../../assets/images/mainPage/menu11.png'
+
+import Icon1 from '../../assets/mainPage/icons/icon1.png';
+import Icon2 from '../../assets/mainPage/icons/icon2.png';
+
 import MenuList from '../Shared/MenuList'
 import { useNavigate } from 'react-router-dom'
 
@@ -162,7 +166,23 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_2,
       title: '머니충전',
       hasBadge: false,
-      hasList: true
+      hasList: true,
+      // path: '/mypage/money'
+      subItems: [
+        {
+          id: 1,
+          icon2: Icon1,
+          OnIcon: MenuOn1,
+          title: '충전신청',
+          path: '/mypage/money/charge'
+        },
+        {
+          id: 2,
+          icon2: Icon2,
+          title: '충전내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/money/charge/history'
+        },]
     },
 
     {
@@ -288,12 +308,12 @@ const ProfileMenu = () => {
             }>
             <div className='menu-item1'>
               {item.hasList && (<div className='menu-item-arrow'>
-                {selectedTab === item.id && (<img src={LightArrow} alt="right" className="ml-10px object-none" />)}
-                {selectedTab !== item.id && (<img src={DarkArrow} alt="right" className="ml-10px object-none" />)}
+                {selectedTab === item.id && (<img src={LightArrow} alt="right" style={{objectFit: "none"}} className="ml-10px object-none" />)}
+                {selectedTab !== item.id && (<img src={DarkArrow} alt="right" style={{objectFit: "none"}} className="ml-10px object-none" />)}
               </div>)}
               <div className='menu-item-logo'>
-                {selectedTab === item.id && (<img src={item.icon2} alt="right" className="ml-10px object-none" />)}
-                {selectedTab !== item.id && (<img src={item.icon} alt="right" className="ml-10px object-none" />)}
+                {selectedTab === item.id && (<img src={item.icon2} alt="right" style={{objectFit: "none"}} className="ml-10px object-none" />)}
+                {selectedTab !== item.id && (<img src={item.icon} alt="right" style={{objectFit: "none"}} className="ml-10px object-none" />)}
               </div>
               <div className='menu-item-title'>
                 <p>{item.title}</p>

@@ -1,5 +1,5 @@
 import React from 'react'
-import DownArrowIcon from '../../assets/down-arrow1.png'
+// import DownArrowIcon from '../../assets/down-arrow1.png'
 import Dropdown from '../../old-components/Dropdown';
 
 const DropDownInput = ({ isLeagueSelection = true, isBetCombination = false, withArrow }) => {
@@ -45,7 +45,7 @@ const DropDownInput = ({ isLeagueSelection = true, isBetCombination = false, wit
             <div style={{ width: '34.06rem', height: '7rem', fontSize: '2.625rem' }}>
                 <div style={{ borderWidth: '1px' }} >
                     <Dropdown labelStyle={{ marginLeft: '1.75rem', color: '#7b7b7b' }} options={isLeagueSelection === true ? carrierOptions1 : carrierOptions2} isLeagueSelection={isLeagueSelection}>
-                        <img style={{ width: '1.5625rem', marginRight: '1.875rem', height: '1rem', position: 'absolute', right: '0', top: '4.2rem' }} src={DownArrowIcon} alt="arrow" />
+                        {/* <img style={{ width: '1.5625rem', marginRight: '1.875rem', height: '1rem', position: 'absolute', right: '0', top: '4.2rem' }} src={DownArrowIcon} alt="arrow" /> */}
                     </Dropdown>
                 </div>
             </div>

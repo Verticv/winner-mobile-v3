@@ -9,6 +9,7 @@ const SortBy = ({ children, options, value, onChange, onClick, multiple, withArr
     >
         <select
             // style={{position: 'absolute', zIndex: -1}}
+            style={{height: "100%"}}
             className="select-overlay"
             id="filter-select"
             name="filter-select[]"
