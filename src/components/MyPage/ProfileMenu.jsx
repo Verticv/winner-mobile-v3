@@ -59,6 +59,9 @@ import MenuIcon_1_11 from '../../assets/images/mainPage/menu11.png'
 import Icon1 from '../../assets/mainPage/icons/icon1.png';
 import Icon2 from '../../assets/mainPage/icons/icon2.png';
 
+import Icon_1 from '../../assets/mainPage/icons/icon-1-v3.png';
+import Icon_2 from '../../assets/mainPage/icons/charging-history-v3.png';
+
 import MenuList from '../Shared/MenuList'
 import { useNavigate } from 'react-router-dom'
 
@@ -191,7 +194,22 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_3,
       title: '머니환전',
       hasBadge: false,
-      hasList: true
+      hasList: true,
+      subItems: [
+        {
+          id: 1,
+          icon2: Icon_1,
+          OnIcon: MenuOn1,
+          title: '환전신청',
+          path: '/mypage/money/exchange/currency'
+        },
+        {
+          id: 2,
+          icon2: Icon_2,
+          title: '환전내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/money/exchange/currency/history'
+        },]
     },
     {
       id: 4,
@@ -199,7 +217,30 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_4,
       title: '포인트전환',
       hasBadge: false,
-      hasList: true
+      hasList: true,
+      subItems: [
+        {
+          id: 1,
+          icon2: Icon_1,
+          OnIcon: MenuOn1,
+          title: '포인트전환신청',
+          path: '/mypage/points/all'
+        },
+        {
+          id: 2,
+          icon2: Icon_2,
+          title: '포인트적립내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/points/all/points-accumulate-history'
+        },
+        {
+          id: 2,
+          icon2: Icon_2,
+          title: '포인트전환내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/points/all/points-transaction-history'
+        },
+      ]
     },
     {
       id: 5,

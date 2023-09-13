@@ -36,7 +36,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
         </div>
     )
 
-
+   console.log(setInputClicked);
 
 
     return (
@@ -126,20 +126,20 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                             <Title text="충전금액 입력" />
                             <div className="lable-or-input">
                                 <input
-                                    style={{ fontSize: '2.625rem', marginBottom: '0.9375rem', letterSpacing: '-0.1rem', border: "0px solid" }}
+                                    style={{ fontSize: '2.625rem', marginBottom: '0.9375rem', letterSpacing: '-0.1rem', border: "0px solid", outline: "none" }}
                                     placeholder="직접 입력시 숫자만 입력해 주세요."
                                     value={inputValue !== null ? nf.format(inputValue) : ""}
                                     onChange={e => setInputValue(e.target.value.replace(/,/g, ''))}
-                                    onFocus={() => {
-                                        const menu = document.querySelector('#main-menu');
-                                        menu.style.marginBottom = '-14.075rem'
-                                        setInputClicked(true)
-                                    }}
-                                    onBlur={() => {
-                                        const menu = document.querySelector('#main-menu');
-                                        menu.style.marginBottom = '0'
-                                        setInputClicked(false)
-                                    }}
+                                    // onFocus={() => {
+                                    //     const menu = document.querySelector('#main-menu');
+                                    //     menu.style.marginBottom = '-14.075rem'
+                                    //     setInputClicked(true)
+                                    // }}
+                                    // onBlur={() => {
+                                    //     const menu = document.querySelector('#main-menu');
+                                    //     menu.style.marginBottom = '0'
+                                    //     setInputClicked(false)
+                                    // }}
                                     onKeyPress={(event) => {
                                         if (!/[0-9]/.test(event.key)) {
                                             event.preventDefault();

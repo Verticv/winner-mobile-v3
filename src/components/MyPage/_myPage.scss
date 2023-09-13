@@ -1434,7 +1434,7 @@ input[type='radio'].radio-input:checked::before {
   padding-left: 1.7rem;
   padding-top: 1.3rem;
   padding-bottom: 2.2rem;
-  border-radius: 1.2rem;
+  border-radius: 1.125rem;
   border: 0.1875rem solid #cccccc;
   margin-bottom: 0.625rem;
   background: #ffffff;
@@ -1555,5 +1555,113 @@ input[type='radio'].radio-input:checked::before {
           }
       }
 
+  }
+}
+
+
+////////////////////////////////////
+.MoneyChargeHistory {
+  .change-top {
+      top: 6.2rem !important;
+  }
+
+  .two-buttons {
+      margin: 3.65rem 1.8rem 3.95rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+
+      button {
+          border: 0;
+          padding: 0;
+          height: 7.3125rem;
+          font-size: 2.8125rem;
+          width: 50%;
+          border-radius: 1.125rem;
+          // padding: 0.1875rem;
+          // background: blue;
+
+          .div-border {
+              padding: 0.1875rem;
+              // background: red;
+              width: 100%;
+              height: 100%;
+              border-radius: 1rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+              color: #ffffff;
+              font-family: 'SpoqaHanSansNeoMedium';
+              font-size: 2.811875rem;
+
+              .text {
+                  margin-right: -0.8rem;
+                  margin-top: 0.1rem;
+                  letter-spacing: -0.07rem;
+              }
+          }
+      }
+  }
+}
+
+
+/////////////////////////////
+.money-page2 {
+  #container-nav {
+      padding: 0.1rem 1.6rem;
+
+      #container {
+          margin-left: 0 !important;
+      }
+
+      button {
+          width: 38.3rem;
+          background-size: cover;
+          margin-right: -0.1rem;
+      }
+  }
+
+  .change-top {
+      top: 4rem !important;
+  }
+
+  .two-buttons {
+      margin: 3.65rem 1.8rem 3.95rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+
+      button {
+          border: 0;
+          padding: 0;
+          height: 7.3125rem;
+          font-size: 2.8125rem;
+          width: 50%;
+          border-radius: 1.125rem;
+          // padding: 0.1875rem;
+          // background: blue;
+
+          .div-border {
+              padding: 0.1875rem;
+              // background: red;
+              width: 100%;
+              height: 100%;
+              border-radius: 1rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              // text-shadow: #00000080 0.3125rem 0.125rem 0.4375rem;
+              color: #ffffff;
+              font-family: 'SpoqaHanSansNeoMedium';
+              font-size: 2.811875rem;
+
+              .text {
+                  margin-right: -0.8rem;
+                  margin-top: 0.1rem;
+                  letter-spacing: -0.07rem;
+              }
+          }
+      }
   }
 }

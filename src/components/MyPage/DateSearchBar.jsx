@@ -397,7 +397,7 @@ const DateSearchBar = ({
                             <div className="text-con"
                                 style={{ background: withBlackButton ? '' : 'linear-gradient(to top, #6b22ff, #df52ff)' }}
                             >
-                                <span style={{color: "#ffffff"}} className="font-spoqaMedium tracking-tight text-white pt-px">{withBlackButton ? "3개월" : "검색"}</span>
+                                <span className="font-spoqaMedium tracking-tight text-white pt-px">{withBlackButton ? "3개월" : "검색"}</span>
                             </div>
                         </div>
                     ) : (
@@ -431,9 +431,9 @@ const DateSearchBar = ({
                     </div>
                 )}
                 {withBlackButton && (
-                    <div style={{ minWidth: isDistributorPage ? '27.4375rem' : '70.1375rem', height: '7.3125rem', background: 'linear-gradient(to top, #4c3c0a, #9f7e4d 50%, #e6b786)', padding: '0.1875rem', margin: '-1.1rem 0 1.875rem 0', borderRadius: '0.5rem' }} className="shadow-to-box hover withBlackButton">
-                        <div style={{ background: 'linear-gradient(to top, #80603f, #946f49 50%, #a57b52)', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '0.5rem' }} className="flex w-full h-full items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
-                            <span style={{ fontSize: '2.625rem', color: '#ffdfbd', fontFamily: 'SpoqaHanSansNeoMedium', marginTop: '0.2rem' }} className="shadow-to-text">검색</span>
+                    <div style={{ minWidth: isDistributorPage ? '27.4375rem' : '70.1375rem', height: '7.3125rem', background: 'linear-gradient(to top, #4f3a7a, #e597ff)', padding: '0.1875rem', margin: '-1.1rem 0 1.875rem 0', borderRadius: '1.125rem',boxShadow: "0px 6px 12px 0px rgba(0, 0, 0, 0.6)" }} className="hover withBlackButton">
+                        <div style={{ background: 'linear-gradient(to top, #6b22ff, #df52ff)', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '1.125rem' }} className="flex w-full h-full items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
+                            <span style={{ fontSize: '2.625rem', color: '#ffffff', fontFamily: 'SpoqaHanSansNeoMedium', marginTop: '0.2rem' }} className="shadow-to-text">검색</span>
                         </div>
                     </div>
                 )}

@@ -118,11 +118,11 @@ const HistoryTable = ({
                 marginTop: `${index ? '0' : '1.875rem'}`,
                 margin: '1.86rem',
                 background: 'linear-gradient(to top, #dddddd, #bbbbbb)',
-                boxShadow: '0 0 0.5rem 0 rgba(0, 0, 0, 0.6)',
-                borderRadius: '1rem',
+                boxShadow: '0px 0px 12px 0px rgba(0, 0, 0, 0.8)',
+                borderRadius: '1.875rem',
             }}>
                 <div style={{
-                    borderRadius: '1rem',
+                    borderRadius: '1.875rem',
                     width: '100%',
                     height: '100%',
                     background: containerBackground && index % 2 ? '#ffffff' : '#ffffff',
@@ -232,9 +232,8 @@ const HistoryTable = ({
                             <button className="hover change-top" style={{
                                 width: '10.875rem',
                                 height: '10.875rem',
-                                backgroundColor: card[card.length - 1].buttonColor || 'red',
-                                borderRadius: '1.1rem',
-                                boxShadow: 'rgb(0 0 0 / 60%) 0px 0.375rem 0px 0px'
+                                backgroundColor: card[card.length - 1].buttonColor || '#5d659f',
+                                borderRadius: '1.875rem',
                             }}>
                                 <div style={{
                                     padding: `${wrapButtonText ? inlineText ? '2.2rem 1rem 2rem 1rem' : isMobile ? '2rem 2rem 2rem 2.2rem' : '2rem 2rem 2rem 2.2rem'
@@ -248,7 +247,7 @@ const HistoryTable = ({
                                             marginTop: '0.2375rem',
                                             fontFamily: 'SpoqaHanSansNeoMedium',
                                             textAlign: 'center',
-                                            color: card[card.length - 1].textColor ? card[card.length - 1].textColor : '#ffdfbd',
+                                            color: card[card.length - 1].textColor ? card[card.length - 1].textColor : '#eeeeee',
                                         }}
                                     >
                                         {card[card.length - 1].buttonText || '진행중'}

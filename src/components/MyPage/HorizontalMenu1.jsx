@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router';
 import horizontalsScroll from '../../utils/horizontalsScroll';
-import inactive from '../../assets/inactive-bg1.png';
+import inactive from '../../assets/inactive-bg1-v3.png';
 import activeBG from '../../assets/cscenter/leftMenu/active-btn.png'
 import moneyActive from '../../assets/mainPage/icons/active-bg-v3.png';
 import moneyInactive from '../../assets/mainPage/icons/inactive-bg-v3.png';
