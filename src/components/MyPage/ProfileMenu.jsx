@@ -55,6 +55,13 @@ import MenuIcon_1_8 from '../../assets/images/mainPage/menu8.png'
 import MenuIcon_1_9 from '../../assets/images/mainPage/menu9.png'
 import MenuIcon_1_10 from '../../assets/images/mainPage/menu10.png'
 import MenuIcon_1_11 from '../../assets/images/mainPage/menu11.png'
+
+import Icon1 from '../../assets/mainPage/icons/icon1.png';
+import Icon2 from '../../assets/mainPage/icons/icon2.png';
+
+import Icon_1 from '../../assets/mainPage/icons/icon-1-v3.png';
+import Icon_2 from '../../assets/mainPage/icons/charging-history-v3.png';
+
 import MenuList from '../Shared/MenuList'
 import { useNavigate } from 'react-router-dom'
 
@@ -162,7 +169,23 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_2,
       title: '머니충전',
       hasBadge: false,
-      hasList: true
+      hasList: true,
+      // path: '/mypage/money'
+      subItems: [
+        {
+          id: 1,
+          icon2: Icon1,
+          OnIcon: MenuOn1,
+          title: '충전신청',
+          path: '/mypage/money/charge'
+        },
+        {
+          id: 2,
+          icon2: Icon2,
+          title: '충전내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/money/charge/history'
+        },]
     },
 
     {
@@ -171,7 +194,22 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_3,
       title: '머니환전',
       hasBadge: false,
-      hasList: true
+      hasList: true,
+      subItems: [
+        {
+          id: 1,
+          icon2: Icon_1,
+          OnIcon: MenuOn1,
+          title: '환전신청',
+          path: '/mypage/money/exchange/currency'
+        },
+        {
+          id: 2,
+          icon2: Icon_2,
+          title: '환전내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/money/exchange/currency/history'
+        },]
     },
     {
       id: 4,
@@ -179,7 +217,30 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_4,
       title: '포인트전환',
       hasBadge: false,
-      hasList: true
+      hasList: true,
+      subItems: [
+        {
+          id: 1,
+          icon2: Icon_1,
+          OnIcon: MenuOn1,
+          title: '포인트전환신청',
+          path: '/mypage/points/all'
+        },
+        {
+          id: 2,
+          icon2: Icon_2,
+          title: '포인트적립내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/points/all/points-accumulate-history'
+        },
+        {
+          id: 2,
+          icon2: Icon_2,
+          title: '포인트전환내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/points/all/points-transaction-history'
+        },
+      ]
     },
     {
       id: 5,
@@ -288,12 +349,12 @@ const ProfileMenu = () => {
             }>
             <div className='menu-item1'>
               {item.hasList && (<div className='menu-item-arrow'>
-                {selectedTab === item.id && (<img src={LightArrow} alt="right" className="ml-10px object-none" />)}
-                {selectedTab !== item.id && (<img src={DarkArrow} alt="right" className="ml-10px object-none" />)}
+                {selectedTab === item.id && (<img src={LightArrow} alt="right" style={{objectFit: "none"}} className="ml-10px object-none" />)}
+                {selectedTab !== item.id && (<img src={DarkArrow} alt="right" style={{objectFit: "none"}} className="ml-10px object-none" />)}
               </div>)}
               <div className='menu-item-logo'>
-                {selectedTab === item.id && (<img src={item.icon2} alt="right" className="ml-10px object-none" />)}
-                {selectedTab !== item.id && (<img src={item.icon} alt="right" className="ml-10px object-none" />)}
+                {selectedTab === item.id && (<img src={item.icon2} alt="right" style={{objectFit: "none"}} className="ml-10px object-none" />)}
+                {selectedTab !== item.id && (<img src={item.icon} alt="right" style={{objectFit: "none"}} className="ml-10px object-none" />)}
               </div>
               <div className='menu-item-title'>
                 <p>{item.title}</p>

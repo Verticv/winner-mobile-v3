@@ -3,7 +3,7 @@ import DateSearchBar from '../MyPage/DateSearchBar'
 import HistoryTable from '../MyPage/HistoryTable'
 // import ScrollButton from '../ScrollButton'
 import SelectAllButton from '../MyPage/SelectAllButton'
-import Icon1 from '../../assets/ar-game/1.png';
+import Icon1 from '../../assets/ar-game/1-v3.png';
 import Icon2 from '../../assets/ar-game/2.png';
 import Icon3 from '../../assets/ar-game/3.png';
 import Icon4 from '../../assets/ar-game/4.png';

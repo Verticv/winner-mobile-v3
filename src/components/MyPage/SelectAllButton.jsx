@@ -81,15 +81,15 @@ const SelectAllButton = (
         <div style={{ margin: '3.75rem 1.875rem', marginTop: '1.875rem', marginBottom: '2.5rem' }} >
             <div className='two-buttons'>
                 <button
-                    style={{ height: '7.3125rem', background: 'linear-gradient(to top, rgb(77, 60, 10), rgb(163, 129, 79) 50%, rgb(231, 183, 134))' }}
-                    className="first-btn hover shadow-to-box "
+                    style={{ height: '7.3125rem', boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)" }}
+                    className="first-btn hover"
                     onClick={() => allSelectButtonPressed()}
                 >
                     <div
                         style={{
                             // background: "linear-gradient(to bottom, #555555, #333333)",
-                            background: 'linear-gradient(to top, rgb(128, 96, 63), rgb(150, 112, 74) 50%, rgb(165, 123, 82))',
-                            color: 'rgb(255, 223, 189)'
+                            background: '#936cee',
+                            color: '#ffffff'
                         }}
                         className="div-border flex items-center justify-center h-full w-full rounded-2xl border border-gray-r737579 cursor-pointer"
                     >
@@ -97,12 +97,12 @@ const SelectAllButton = (
                     </div>
                 </button>
                 <button
-                    style={{ height: '7.3125rem', background: 'linear-gradient(to top, rgb(77, 10, 37), rgb(163, 79, 99) 50%, rgb(231, 134, 148))' }}
-                    className="hover shadow-to-box common-button flex flex-1 items-center justify-center m-0 rounded-2xl bg-brown-r7e3636 hover:opacity-75"
+                    style={{ height: '7.3125rem', boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)" }}
+                    className="hover common-button flex flex-1 items-center justify-center m-0 rounded-2xl bg-brown-r7e3636 hover:opacity-75"
                 >
                     <div
                         style={{
-                            background: 'linear-gradient(to top, rgb(151, 53, 29), rgb(187, 76, 50) 50%, rgb(223, 99, 69))',
+                            background: 'linear-gradient(to right, #ff7760, #f14a53)',
                             
                         }}
                         className="div-border flex items-center justify-center h-full w-full rounded-2xl border border-red-f36576 cursor-pointer"
