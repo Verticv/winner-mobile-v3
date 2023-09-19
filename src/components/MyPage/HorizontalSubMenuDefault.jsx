@@ -73,7 +73,7 @@ const HorizontalSubMenu = ({
                         <div style={{ width: '100%', textAlign: 'center', height: '4.97rem', display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
                             <span
                                 id={item.id}
-                                style={{ marginTop: '0rem', marginLeft: item.textMargin }}
+                                style={{ marginLeft: item.textMargin }}
                                 className='text'>{item.text}</span>
                         </div>
                     </button>

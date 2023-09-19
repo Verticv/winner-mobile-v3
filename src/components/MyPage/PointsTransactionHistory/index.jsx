@@ -19,7 +19,7 @@ const tableData = [
             0: { 처리일시: "2021-06-30 14:45" }
         },
         {
-            buttonColor: '#826140',
+            buttonColor: '#5d659f',
             buttonText: '완료'
         }
     ],
@@ -37,9 +37,9 @@ const tableData = [
             0: { 처리일시: "2021-06-30 14:45" }
         },
         {
-            buttonColor: '#464646',
+            buttonColor: '#888888',
             buttonText: '취소',
-            textColor: '#c8c8c8',
+            textColor: '#ededeb',
         }
     ],
     [
@@ -56,7 +56,7 @@ const tableData = [
             0: { 처리일시: "2021-06-30 14:45" }
         },
         {
-            buttonColor: '#826140',
+            buttonColor: '#5d659f',
             buttonText: '완료'
         }
     ],
@@ -74,7 +74,7 @@ const tableData = [
             0: { 처리일시: "2021-06-30 14:45" }
         },
         {
-            buttonColor: '#826140',
+            buttonColor: '#5d659f',
             buttonText: '완료'
         }
     ],
@@ -92,7 +92,7 @@ const tableData = [
             0: { 처리일시: "2021-06-30 14:45" }
         },
         {
-            buttonColor: '#826140',
+            buttonColor: '#5d659f',
             buttonText: '완료'
         }
     ],
@@ -110,7 +110,7 @@ const tableData = [
             0: { 처리일시: "2021-06-30 14:45" }
         },
         {
-            buttonColor: '#826140',
+            buttonColor: '#5d659f',
             buttonText: '완료'
         }
     ],
@@ -128,7 +128,7 @@ const tableData = [
             0: { 처리일시: "2021-06-30 14:45" }
         },
         {
-            buttonColor: '#826140',
+            buttonColor: '#5d659f',
             buttonText: '완료'
         }
     ],
@@ -146,7 +146,7 @@ const tableData = [
             0: { 처리일시: "2021-06-30 14:45" }
         },
         {
-            buttonColor: '#826140',
+            buttonColor: '#5d659f',
             buttonText: '완료'
         }
     ],
@@ -188,9 +188,9 @@ const PointsTransactionHistory = ({ SubMenuList, subActiveButton, setSubActiveBu
                 marginTop: '2.5rem', letterSpacing: '-0.07rem', marginBottom: '1.4rem',
             }} className="font-spoqaMedium tracking-tight my-4 text-gray-r8c8c8c">
                 <span className="font-spoqaBold text-blue-r0056a6" style={{
-                    color: '#aa9264', fontFamily: 'SpoqaHanSansNeoBold', textOverflow: 'ellipsis', maxWidth: '34.4rem', overflow: 'hidden', whiteSpace: 'nowrap'
+                    color: '#ffd98b', fontFamily: 'SpoqaHanSansNeoBold', textOverflow: 'ellipsis', maxWidth: '34.4rem', overflow: 'hidden', whiteSpace: 'nowrap'
                 }}>{truncate('louie3', 22, 22)}</span>
-                <span className="" style={{ color: '#c8c8c8', fontFamily: 'SpoqaHanSansNeoMedium' }}>님의 포인트전환 정보입니다.</span>
+                <span className="" style={{ color: '#eeeeee', fontFamily: 'SpoqaHanSansNeoMedium' }}>님의 포인트전환 정보입니다.</span>
             </div>
 
             {SubMenuList}

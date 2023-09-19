@@ -15,11 +15,11 @@ const KinoLadderBetHistoryPanel = ({
     return (
         <div className='PowerLadderBetHistoryPanel'>
             <div style={{ background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0px 0px 1rem 0px rgba(0, 0, 0, 0.6)', padding: '0.1875rem', borderRadius: '1rem', margin: '0 1.86rem' }}>
-                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', background: '#323232' }} className="shadow-subNavbar bg-gray-fafafa">
+                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', background: '#ffffff' }} className="shadow-subNavbar bg-gray-fafafa">
                     <TableHeader middleText='VS' />
-                    <div style={{ padding: '0rem 0.9rem 0 0.7rem' }} className="w-full">
+                    <div style={{ padding: '0.438rem 0.9rem 0 0.7rem' }} className="w-full">
                         <div className="w-full rounded-lg">
-                            <div className='rounded-lg w-full shadow-to-box' style={{ border: '0.45rem solid #473b35', borderRadius: '0.4rem' }}>
+                            <div className='rounded-lg w-full shadow-to-box' style={{ border: '0.45rem solid #6852a7', borderRadius: '0.4rem' }}>
                                 <CardHeader flag='us' name='스피드키노' date='2021-06-29 15:45' isMinigame={true} minigameType={gameType} smallCard />
                                 <CardResults
                                     bet="right"
@@ -44,11 +44,11 @@ const KinoLadderBetHistoryPanel = ({
                 </div>
             </div>
             <div style={{ background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.6)', padding: '0.1875rem', borderRadius: '1.3rem', margin: '2.1rem 1.8rem' }}>
-                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', background: '#323232' }} className="shadow-subNavbar bg-gray-fafafa">
+                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', background: '#ffffff' }} className="shadow-subNavbar bg-gray-fafafa">
                     <TableHeader middleText='VS' />
-                    <div style={{ padding: '0rem 0.9rem 0 0.7rem' }} className="w-full">
+                    <div style={{ padding: '0.438rem 0.9rem 0 0.7rem' }} className="w-full">
                         <div className="w-full rounded-lg">
-                            <div className='rounded-lg w-full shadow-to-box' style={{ border: '0.45rem solid #473b35', borderRadius: '0.4rem' }}>
+                            <div className='rounded-lg w-full shadow-to-box' style={{ border: '0.45rem solid #6852a7', borderRadius: '0.4rem' }}>
                                 <CardHeader flag='us' name='스피드키노' date='2021-06-29 15:45' isMinigame={true} minigameType={gameType} />
                                 <CardResults
                                     bet="left"

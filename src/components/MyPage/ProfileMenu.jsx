@@ -62,6 +62,10 @@ import Icon2 from '../../assets/mainPage/icons/icon2.png';
 import Icon_1 from '../../assets/mainPage/icons/icon-1-v3.png';
 import Icon_2 from '../../assets/mainPage/icons/charging-history-v3.png';
 
+import icon1 from '../../assets/mainPage/points/1-v3.png';
+import icon2 from '../../assets/mainPage/points/2-v3.png';
+import icon3 from '../../assets/mainPage/points/3-v3.png';
+
 import MenuList from '../Shared/MenuList'
 import { useNavigate } from 'react-router-dom'
 
@@ -221,21 +225,21 @@ const ProfileMenu = () => {
       subItems: [
         {
           id: 1,
-          icon2: Icon_1,
+          icon2: icon1,
           OnIcon: MenuOn1,
           title: '포인트전환신청',
           path: '/mypage/points/all'
         },
         {
           id: 2,
-          icon2: Icon_2,
+          icon2: icon2,
           title: '포인트적립내역',
           OnIcon: MenuOn2,
           path: '/mypage/points/all/points-accumulate-history'
         },
         {
           id: 2,
-          icon2: Icon_2,
+          icon2: icon3,
           title: '포인트전환내역',
           OnIcon: MenuOn2,
           path: '/mypage/points/all/points-transaction-history'
@@ -248,7 +252,8 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_5,
       title: '총판페이지',
       hasBadge: false,
-      hasList: false
+      hasList: false,
+      path: '/distributor-page'
     },
     {
       id: 6,
@@ -272,7 +277,22 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_8,
       title: '경기결과',
       hasBadge: false,
-      hasList: true
+      hasList: true,
+      subItems: [
+        {
+          id: 1,
+          icon2: Icon_1,
+          OnIcon: MenuOn1,
+          title: '스포츠',
+          path: '/mypage/gameresults/all'
+        },
+        {
+          id: 2,
+          icon2: Icon_2,
+          title: '미니게임',
+          OnIcon: MenuOn2,
+          path: '/mypage/gameresults/minigame/powerball'
+        },]
     },
 
     {

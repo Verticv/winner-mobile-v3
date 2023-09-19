@@ -30,7 +30,7 @@ input[type='radio'] {
 
 input[type='checkbox'] {
   appearance: none;
-  background-color: #1e1e1e;
+  background-color: #281d45;
   margin: 0;
   font: inherit;
   color: #927c55;
@@ -46,7 +46,7 @@ input[type='checkbox'] {
 
 input[type='radio'] {
   appearance: none;
-  background-color: #1e1e1e;
+  background-color: #281d45;
   margin: 0;
   font: inherit;
   color: #927c55;

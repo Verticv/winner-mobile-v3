@@ -270,7 +270,7 @@ const LiveCasinoBetHistory = ({ isState = 0, setState, showSub = true, isPopup =
                 </>
             )}
             <DateSearchBar isLeagueSearch={false} isPoints />
-            <div style={{ marginTop: '-0.2rem', marginBottom: '-0.4rem' }}>
+            <div style={{ marginTop: '-0.013rem', marginBottom: '-0.4rem' }}>
                 <HistoryTable
                     containerBackground='#f7f9fc'
                     tableData={tableData}

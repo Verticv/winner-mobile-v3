@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import DatePicker from "react-datepicker";
 import { registerLocale } from "react-datepicker";
 import ko from 'date-fns/locale/ko';
-import DropDownInput from '../../old-components/DropDownInput'
+import DropDownInput from '../MyPage/DropDownInput'
 import CalendarIcon from '../../assets/myPage/CalendarIcon-v3.png';
 import { isIOS } from 'react-device-detect';
-import './DatePicker.css'
+import './DatePickerTest.css'
+import './_myPage.scss'
 import { getMonth, getYear } from 'date-fns';
 registerLocale('ko', ko)
 
@@ -87,12 +88,12 @@ const DateSearchBar = ({
             background: 'linear-gradient(to right,#5e2c89,#42227e)' ,
             borderRadius: '1.1rem',
             paddingTop: isPoints ? '0' : '0.65rem',
-            marginTop: isGameResultsSearch === true ? '2rem' : isPoints ? '2rem' : '',
+            marginTop: isGameResultsSearch === true ? '0.688rem' : isPoints ? '0.688rem' : '',
             marginBottom: isIOS ? '-0.3rem' : ''
         }} className="date12">
 
             {isLeagueSearch === true && (
-                <div className="space-x-5px">
+                <div className="space-x-5px inputStyle">
                     <input
                         placeholder="리그선택"
                         className="place-color-grey pt-px mt-px placeholder:text-gray-r7b7b7b flex-shrink-0 outline-none w-138px h-42px rounded-2xl border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c"
@@ -347,7 +348,7 @@ const DateSearchBar = ({
                                     }
                                 }}
                             />
-                            <img style={{ top: '3.44rem', right: '2rem', width: '3.5rem' }} src={CalendarIcon} alt="" className="w-14 absolute" />
+                            <img style={{ right: '2rem', width: '3.5rem' }} src={CalendarIcon} alt="" className="w-14 absolute" />
                         </>
                     ) : (
                         <DropDownInput isLeagueSelection={false} />
@@ -397,7 +398,7 @@ const DateSearchBar = ({
                             <div className="text-con"
                                 style={{ background: withBlackButton ? '' : 'linear-gradient(to top, #6b22ff, #df52ff)' }}
                             >
-                                <span className="font-spoqaMedium tracking-tight text-white pt-px">{withBlackButton ? "3개월" : "검색"}</span>
+                                <span style={{color: "#ffffff"}} className="shadow-to-text font-spoqaMedium tracking-tight text-white pt-px">{withBlackButton ? "3개월" : "검색"}</span>
                             </div>
                         </div>
                     ) : (

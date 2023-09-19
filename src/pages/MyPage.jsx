@@ -16,6 +16,7 @@ import HorizontalMenu1 from '../components/MyPage/HorizontalMenu1';
 import MoneyChargeHistory from '../components/MyPage/MoneyChargeHistory';
 import MoneyExchangePage from '../components/MyPage/MoneyExchangePage';
 import PointsPage from '../components/MyPage/PointsPage';
+import GameResultsPage from '../components/MyPage/GameResultsPage';
 
 import activeIcon1 from '../assets/mainPage/icons/recharge-application2-v3.png';
 import activeIcon2 from '../assets/mainPage/icons/active-icon22_v3.png';
@@ -136,6 +137,25 @@ const tabsArray1 = [
                          selectedTab={selectedTab}
                          setSelectedTab={setSelectedTab}
                         />  
+                    </>
+                }
+            >
+            </Route>
+
+
+            <Route path="/gameresults/*"
+                element={
+                    <>  
+                        <Header/> 
+                        <NoticeBanner />
+                        {/* <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' /> */}
+                        <GameResultsPage isAuthenticated={isAuthenticated} setAuthenticated={setAuthenticated}
+                            subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
+                        />
+                        <FixedMenu
+                         selectedTab={selectedTab}
+                         setSelectedTab={setSelectedTab}
+                        /> 
                     </>
                 }
             >

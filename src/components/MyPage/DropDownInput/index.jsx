@@ -1,6 +1,7 @@
 import React from 'react'
-// import DownArrowIcon from '../../assets/down-arrow1.png'
-import Dropdown from '../../old-components/Dropdown';
+import DownArrowIcon from '../../../assets/down-arrow1-v3.png'
+import Dropdown from '../../MyPage/Dropdown';
+import '../_myPage.scss'
 
 const DropDownInput = ({ isLeagueSelection = true, isBetCombination = false, withArrow }) => {
 
@@ -32,12 +33,12 @@ const DropDownInput = ({ isLeagueSelection = true, isBetCombination = false, wit
         <div
             style={{
                 width: withArrow ? '34.06rem' : '',
-                height: withArrow ? '7rem' : '',
+                height: withArrow ? '6.75rem' : '',
                 fontSize: withArrow ? '2.625rem' : '',
-                // background: withArrow ? '#1a1a1a' : '',
+                background: withArrow ? '#ffffff' : '',
                 // border: withArrow ? '0.1875rem solid #404040' : '',
                 position: withArrow ? 'relative' : '',
-                borderRadius: withArrow ? '0.5rem' : '',
+                borderRadius: withArrow ? '0.625rem' : '',
                 marginLeft: '1.875rem',
                 marginTop:'0.08rem'
             }}
@@ -45,7 +46,7 @@ const DropDownInput = ({ isLeagueSelection = true, isBetCombination = false, wit
             <div style={{ width: '34.06rem', height: '7rem', fontSize: '2.625rem' }}>
                 <div style={{ borderWidth: '1px' }} >
                     <Dropdown labelStyle={{ marginLeft: '1.75rem', color: '#7b7b7b' }} options={isLeagueSelection === true ? carrierOptions1 : carrierOptions2} isLeagueSelection={isLeagueSelection}>
-                        {/* <img style={{ width: '1.5625rem', marginRight: '1.875rem', height: '1rem', position: 'absolute', right: '0', top: '4.2rem' }} src={DownArrowIcon} alt="arrow" /> */}
+                        <img style={{ width: '1.5625rem', marginRight: '1.875rem', height: '1rem', position: 'absolute', right: '0', top: '4.2rem' }} src={DownArrowIcon} alt="arrow" />
                     </Dropdown>
                 </div>
             </div>
