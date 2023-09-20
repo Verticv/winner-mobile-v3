@@ -82,7 +82,7 @@ const HistoryTable = ({
                             }}
                         >
                             <div style={{ padding: `${wrapButtonText ? '2.2rem 2rem 2rem 2.1rem' : ''}` }} className="상세보기-div">
-                                <span className="상세보기-span shadow-to-text"> 상세 <br /> 보기</span>
+                                <span className="상세보기-span"> 상세 <br /> 보기</span>
                             </div>
                         </div>
                     </div>
@@ -113,10 +113,14 @@ const HistoryTable = ({
 
         return cards.map((card, index) => (
             <div style={{
-                minHeight: cardHeight, width: `${!hasButton ? '73.875rem' : ''}`,
+                // minHeight: cardHeight, width: `${!hasButton ? '73.875rem' : ''}`,
+                marginBottom: "1.923rem",
+                marginRight: "1.86rem",
+                marginLeft: "1.86rem",
+                marginTop: "1.86rem",
                 padding: '0.1875rem',
-                marginTop: `${index ? '0' : '1.875rem'}`,
-                margin: '1.86rem',
+                // marginTop: `${index ? '0' : '1.875rem'}`,
+                // margin: '1.86rem',
                 background: 'linear-gradient(to top, #dddddd, #bbbbbb)',
                 boxShadow: '0px 0px 12px 0px rgba(0, 0, 0, 0.8)',
                 borderRadius: '1.875rem',
@@ -127,7 +131,7 @@ const HistoryTable = ({
                     height: '100%',
                     background: containerBackground && index % 2 ? '#ffffff' : '#ffffff',
                     paddingRight: '1.875rem',
-                    padding: '2.125rem 2.7rem',
+                    padding: '2.125rem 2.7rem 1.688rem',
                     paddingTop: hasLeftInput ? (hasButton ? '2.4rem' : '3.3rem') : '2.4rem',
                     display: 'flex',
                     alignItems: 'center',
@@ -166,7 +170,7 @@ const HistoryTable = ({
                                     firstColumnColor = row[0][firstRowKeysName[0]].includes("+") ? "#e65454" : row[0][firstRowKeysName[0]].includes("-") ? '#4c98ff' : "#c8c8c8"
                                 }
                                 if (secondRowKeysName[0] === '적립포인트') {
-                                    secondColumnColor = '#4c98ff'
+                                    secondColumnColor = '#f04281'
                                 }
                                 if (firstRowKeysName[0] === '쿠폰금액') {
                                     firstColumnColor = '#e9441d'
@@ -187,7 +191,7 @@ const HistoryTable = ({
                                         }}>
                                             {firstRowKeysName[0] === '아이디' ? truncate(row[0][firstRowKeysName[0]], 16, 16) : row[0][firstRowKeysName[0]]}
                                         </span>
-                                        {secondRowKeysName?.length > 0 && <><span className='font-spoqaMedium text-gray-r585858' style={{ fontSize: '2.624375rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', marginLeft: '3.725rem' }}>{secondRowKeysName[0]} : </span><span style={{ fontFamily: 'SpoqaHanSansNeo', color: secondColumnColor }}> {row[1][secondRowKeysName[0]]}</span></>}
+                                        {secondRowKeysName?.length > 0 && <><span className='font-spoqaMedium text-gray-r585858' style={{ fontSize: '2.624375rem', color: '#444444', fontFamily: 'SpoqaHanSansNeoMedium', marginLeft: '3.725rem' }}>{secondRowKeysName[0]} : </span><span style={{ fontFamily: 'SpoqaHanSansNeo', color: secondColumnColor }}> {row[1][secondRowKeysName[0]]}</span></>}
                                     </div>
                                 )
                             }

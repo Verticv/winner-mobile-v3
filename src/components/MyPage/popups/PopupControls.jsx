@@ -45,7 +45,7 @@ export default function PopupControls({
         }
     }
     return (
-        <div>
+        <div style={{marginTop: "1.188rem", marginRight: "-0.813rem"}}>
             <div
                 className="flex items-center justify-center "
                 style={{ margin: hasMargin ? '-1.8rem 0rem 0 0.6rem' : '' }}

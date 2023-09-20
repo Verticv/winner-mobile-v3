@@ -23,13 +23,15 @@ const SelectAllButton = (
 
     if (buttonsNumber === 3) {
         return (
-            <div className="select-all-buttons">
+            <div className="select-all-buttons" style={{paddingTop: "0.063rem",
+                paddingLeft: "0.063rem"}}>
                 <div className="flex-btn">
                     <button
                         style={{
                             background: "#936cee",
+                            boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)"
                         }}
-                        className="shadow-to-box common-button flex flex-1 items-center justify-center mr-4 rounded-2xl bg-gray-r171a1d hover:opacity-75"
+                        className="common-button flex flex-1 items-center justify-center mr-4 rounded-2xl bg-gray-r171a1d hover:opacity-75"
                         onClick={() => allSelectButtonPressed()}
                     >
                         <div
@@ -44,8 +46,9 @@ const SelectAllButton = (
                     <button
                         style={{
                             background: "#936cee",
+                            boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)"
                         }}
-                        className="shadow-to-box common-button flex flex-1 items-center justify-center mr-4 rounded-2xl bg-brown-r7e3636 hover:opacity-75"
+                        className="common-button flex flex-1 items-center justify-center mr-4 rounded-2xl bg-brown-r7e3636 hover:opacity-75"
                     >
                         <div
                             style={{
@@ -59,8 +62,9 @@ const SelectAllButton = (
                     <button
                         style={{
                             background: 'linear-gradient(to right, #15cfee, #3197e5)',
+                            boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)"
                         }}
-                        className="shadow-to-box common-button flex flex-1 items-center justify-center rounded-2xl bg-blue-r0070d9 hover:opacity-75"
+                        className="common-button flex flex-1 items-center justify-center rounded-2xl bg-blue-r0070d9 hover:opacity-75"
                     // onClick={() => allSelectButtonPressed()}
                     >
                         <div

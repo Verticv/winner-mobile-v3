@@ -1,0 +1,25 @@
+.select-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 110%;
+    width: 20%;
+    opacity: 0;
+    max-height: 350px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sort-by-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15rem !important;
+}
+
+.sort-by-p {
+    margin-top: 1.65rem;
+    margin-left: -0.1rem;
+    font-family: 'SpoqaHanSansNeoMedium';
+    color: #ccc2b6
+}

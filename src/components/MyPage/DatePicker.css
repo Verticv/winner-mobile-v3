@@ -122,6 +122,9 @@
   border-top-color: #aeaeae;
 } */
 
+
+
+
 .react-datepicker-wrapper {
   display: inline-block;
   padding: 0;
@@ -697,7 +700,7 @@
 }
 
 .react-datepicker__input-container .left-input {
-  margin-left: 1.875rem;
+  margin-left: 1.813rem;
   margin-top: 1.875rem;
 }
 
