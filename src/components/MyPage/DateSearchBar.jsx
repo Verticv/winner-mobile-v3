@@ -83,12 +83,12 @@ const DateSearchBar = ({
     }
     return (
         <div style={{
-            margin: withMargin ? (!isFreeboard ? '0.9rem 1.875rem' : '1.2rem 1.875rem') : '0 3.875rem 0 0',
+            margin: withMargin ? (!isFreeboard ? '1rem 1.875rem' : '1.2rem 1.875rem') : '0 3.875rem 0 0',
             width: withMargin ? '' : '73.875rem',
-            background: 'linear-gradient(to right,#5e2c89,#42227e)' ,
+            background: 'linear-gradient(to right,#5e2c89,#42227e)',
             borderRadius: '1.1rem',
-            paddingTop: isPoints ? '0' : '0.65rem',
-            marginTop: isGameResultsSearch === true ? '0.688rem' : isPoints ? '0.688rem' : '',
+            // paddingTop: isPoints ? '0' : '0.65rem',
+            // marginTop: isGameResultsSearch === true ? '0' : isPoints ? '0.688rem' : '',
             marginBottom: isIOS ? '-0.3rem' : ''
         }} className="date12">
 
@@ -96,7 +96,7 @@ const DateSearchBar = ({
                 <div className="space-x-5px inputStyle">
                     <input
                         placeholder="리그선택"
-                        className="place-color-grey pt-px mt-px placeholder:text-gray-r7b7b7b flex-shrink-0 outline-none w-138px h-42px rounded-2xl border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c"
+                        className="place-color-grey placeholder:text-gray-r7b7b7b flex-shrink-0 outline-none h-42px rounded-2xl border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c"
                         onFocus={() => {
                             const menu = document.querySelector('#main-menu');
                             menu.style.marginBottom = '-14.075rem'
@@ -108,14 +108,14 @@ const DateSearchBar = ({
                     />
                     <input
                         placeholder="팀명검색"
-                        style={{color: "yellow"}}
-                        className="place-color-grey pt-px mt-px placeholder:text-gray-r7b7b7b placeholder-gray-r7b7b7b flex-shrink-0 outline-none w-138px h-42px rounded-2xl border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c"
+                        style={{ color: "yellow" }}
+                        className="place-color-grey placeholder:text-gray-r7b7b7b flex-shrink-0 outline-none h-42px rounded-2xl border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c"
                         onFocus={() => {
                             const menu = document.querySelector('#main-menu');
                             menu.style.marginBottom = '-14.075rem'
                         }}
                         onBlur={() => {
-                           
+
                         }}
                     />
 
@@ -398,7 +398,7 @@ const DateSearchBar = ({
                             <div className="text-con"
                                 style={{ background: withBlackButton ? '' : 'linear-gradient(to top, #6b22ff, #df52ff)' }}
                             >
-                                <span style={{color: "#ffffff"}} className="shadow-to-text font-spoqaMedium tracking-tight text-white pt-px">{withBlackButton ? "3개월" : "검색"}</span>
+                                <span style={{ color: "#ffffff" }} className="shadow-to-text font-spoqaMedium tracking-tight text-white pt-px">{withBlackButton ? "3개월" : "검색"}</span>
                             </div>
                         </div>
                     ) : (
@@ -432,7 +432,7 @@ const DateSearchBar = ({
                     </div>
                 )}
                 {withBlackButton && (
-                    <div style={{ minWidth: isDistributorPage ? '27.4375rem' : '70.1375rem', height: '7.3125rem', background: 'linear-gradient(to top, #4f3a7a, #e597ff)', padding: '0.1875rem', margin: '-1.1rem 0 1.875rem 0', borderRadius: '1.125rem',boxShadow: "0px 0.375rem 0.75rem 0px rgba(0, 0, 0, 0.6)" }} className="hover withBlackButton">
+                    <div style={{ minWidth: isDistributorPage ? '27.4375rem' : '70.1375rem', height: '7.3125rem', background: 'linear-gradient(to top, #4f3a7a, #e597ff)', padding: '0.1875rem', margin: '-1.1rem 0 1.875rem 0', borderRadius: '1.125rem', boxShadow: "0px 0.375rem 0.75rem 0px rgba(0, 0, 0, 0.6)" }} className="hover withBlackButton">
                         <div style={{ background: 'linear-gradient(to top, #6b22ff, #df52ff)', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '1.125rem' }} className="flex w-full h-full items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
                             <span style={{ fontSize: '2.625rem', color: '#ffffff', fontFamily: 'SpoqaHanSansNeoMedium', marginTop: '0.2rem' }} className="shadow-to-text">검색</span>
                         </div>

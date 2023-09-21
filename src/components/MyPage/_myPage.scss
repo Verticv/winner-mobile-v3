@@ -877,7 +877,7 @@
 }
 ///////////////////////////////////////////////////////
 .first-row {
-  margin-top: 1.15rem;
+  // margin-top: 1.15rem;
   margin-bottom: -1.125rem;
   display: flex;
 
@@ -907,6 +907,7 @@
 
 .second-row {
   display: flex;
+  margin-top: 0.3rem;
 
   input {
       outline: none;
@@ -940,9 +941,9 @@
       color: #eeeeee;
       font-family: 'SpoqaHanSansNeoMedium';
       font-size: 2.624375rem;
-      margin-top: 4.068rem;
-      margin-left: 0.2rem;
-      margin-right: -1.55rem;
+      margin-top: 3.368rem;
+      margin-left: 0.12rem;
+      margin-right: -1.85rem;
   }
 
 }
@@ -1562,7 +1563,7 @@ input[type='radio'].radio-input:checked::before {
   }
 
   .first-row {
-      margin-top: 1.15rem;
+      // margin-top: 1.15rem;
   }
 
   .two-buttons-container {

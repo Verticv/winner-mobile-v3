@@ -17,50 +17,6 @@
   font-style: normal;
 }
 
-
-@font-face {
-  font-family: 'SpoqaHanSansNeo';
-  src:url('./fonts/SpoqaHanSansNeo-Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SpoqaHanSansNeoBold';
-  src:url('./fonts/SpoqaHanSansNeo-Bold.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SpoqaHanSansNeoMedium';
-  src:url('./fonts/SpoqaHanSansNeo-Medium.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'RobotoRegular';
-  src:url('./fonts/Roboto-Regular.ttf');
-  font-weight: medium;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'RobotoMedium';
-  src:url('./fonts/Roboto-Medium.ttf');
-  font-weight: medium;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'RobotoBold';
-  src:url('./fonts/Roboto-Bold.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
 @layer utilities {
     @variants responsive {
         .text-shadow {
