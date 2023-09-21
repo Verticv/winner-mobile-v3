@@ -61,14 +61,14 @@ const HorizontalSubMenu = ({
                             height: '11.688rem',
                             marginLeft: '0',
                             paddingTop: '0',
-                            border: "3px solid #2a2a2a",
+                            border: "0.188rem solid #2a2a2a",
                             borderRadius: "0.813rem"
                             
                         }}
                     >
 
                         <div style={{ width: '100%', textAlign: 'center', height: '6.2rem', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: item.marginIcon ? item.marginIcon : '0.6rem' }}>
-                            <img id={item.id} className='icon' src={((isActive && popup) || (isSameLink && !popup)) ? (item.activeIcon ? item.activeIcon : item.icon) : item.icon} alt='' style={{ width: item.width || '7.875rem', height: item.height, marginTop: item.marginTop, objectFit: "none" }} />
+                            <img id={item.id} className='icon' src={((isActive && popup) || (isSameLink && !popup)) ? (item.activeIcon ? item.activeIcon : item.icon) : item.icon} alt='' style={{ width: item.width || '7.875rem', marginTop: item.marginTop }} />
                         </div>
                         <div style={{ width: '100%', textAlign: 'center', height: '4.97rem', display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
                             <span

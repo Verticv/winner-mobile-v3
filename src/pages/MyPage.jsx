@@ -21,7 +21,7 @@ import GameResultsPage from '../components/MyPage/GameResultsPage';
 import activeIcon1 from '../assets/mainPage/icons/recharge-application2-v3.png';
 import activeIcon2 from '../assets/mainPage/icons/active-icon22_v3.png';
 import Icon2 from '../assets/mainPage/icons/charging-history2_v3.png';
-import Icon1 from '../assets/mainPage/icons/Icon12-v3.png';
+import Icon1 from '../assets/mainPage/icons/Icon12_v3.png';
 
 
 

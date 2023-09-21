@@ -20,7 +20,7 @@ import './_myPage.scss'
 import { useNavigate } from 'react-router-dom';
 
 const subTabsArray = [
-    { text: "전체", icon: Icon1, id: 0, width: '16.375rem', marginIcon: '', path: '#' },
+    { text: "전체", icon: Icon1, id: 0, width: '5.25rem', marginIcon: '', path: '#' },
     { text: "축구", icon: Icon2, id: 1, width: '16.375rem', path: '#' },
     { text: "경마", icon: Icon3, id: 2, width: '16.375rem', path: '#' },
     { text: "개경주", icon: Icon4, id: 3, custom: "mt-8px", width: '16.375rem', path: '#' },

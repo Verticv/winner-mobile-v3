@@ -43,7 +43,7 @@ const Pagination = ({ page, setPage, withMarginBottom = true }) => {
             <LeftArrow />
             <div className="space-x-px flex items-center buttons-container">
                 <button
-                    style={{ background: selectedPage !== 1 ? "bottom" : `url(${bg}) round`,  borderRadius: '0.6rem', width: '7.3125rem', height: '7.3125rem', marginRight: '3px' }}
+                    style={{ background: selectedPage !== 1 ? "bottom" : `url(${bg}) round`,  borderRadius: '0.6rem', width: '7.3125rem', height: '7.3125rem', marginRight: '0.188rem' }}
                     className='hover'
                     onClick={() => setSelectedPage(1)}
                 >
@@ -52,7 +52,7 @@ const Pagination = ({ page, setPage, withMarginBottom = true }) => {
                     </div>
                 </button>
                 <button
-                    style={{ background: selectedPage !== 2 ? "bottom" : `url(${bg}) round`, borderRadius: '0.6rem', width: '7.3125rem', height: '7.3125rem', marginRight: '3px' }}
+                    style={{ background: selectedPage !== 2 ? "bottom" : `url(${bg}) round`, borderRadius: '0.6rem', width: '7.3125rem', height: '7.3125rem', marginRight: '0.188rem' }}
                     className='hover'
                     onClick={() => setSelectedPage(2)}
                 >
@@ -61,7 +61,7 @@ const Pagination = ({ page, setPage, withMarginBottom = true }) => {
                     </div>
                 </button>
                 <button
-                    style={{ background: selectedPage !== 3 ? "bottom" : `url(${bg}) round`, borderRadius: '0.6rem', width: '7.3125rem', height: '7.3125rem', marginRight: '3px' }}
+                    style={{ background: selectedPage !== 3 ? "bottom" : `url(${bg}) round`, borderRadius: '0.6rem', width: '7.3125rem', height: '7.3125rem', marginRight: '0.188rem' }}
                     className='hover'
                     onClick={() => setSelectedPage(3)}
                 >
@@ -70,7 +70,7 @@ const Pagination = ({ page, setPage, withMarginBottom = true }) => {
                     </div>
                 </button>
                 <button
-                    style={{ background: selectedPage !== 4 ? "bottom" : `url(${bg}) round`,  borderRadius: '0.6rem', width: '7.3125rem', height: '7.3125rem', marginRight: '3px' }}
+                    style={{ background: selectedPage !== 4 ? "bottom" : `url(${bg}) round`,  borderRadius: '0.6rem', width: '7.3125rem', height: '7.3125rem', marginRight: '0.188rem' }}
                     className='hover'
                     onClick={() => setSelectedPage(4)}
                 >
@@ -79,7 +79,7 @@ const Pagination = ({ page, setPage, withMarginBottom = true }) => {
                     </div>
                 </button>
                 <button
-                    style={{ background: selectedPage !== 5 ? "bottom" : `url(${bg}) round`, boxShadow: selectedPage !== 5 ? '' : '0.1rem 0.1rem 1rem black', borderRadius: '0.6rem', width: '7.3125rem', height: '7.3125rem', padding: '3px' }}
+                    style={{ background: selectedPage !== 5 ? "bottom" : `url(${bg}) round`, boxShadow: selectedPage !== 5 ? '' : '0.1rem 0.1rem 1rem black', borderRadius: '0.6rem', width: '7.3125rem', height: '7.3125rem', padding: '0.188rem' }}
                     className='hover'
                     onClick={() => setSelectedPage(5)}
                 >

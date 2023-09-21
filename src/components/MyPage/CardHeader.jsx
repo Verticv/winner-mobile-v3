@@ -40,23 +40,23 @@ const CardHeader = ({ flag = 'us', name = '축구 / 미국 - 메이저리그사�
     )
 
     else return (
-        <div style={{ height: '7.1rem', borderTopRightRadius: '0.5rem', borderTopLeftRadius: '0.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: smallCard ? '0 1.6rem' : '0px 1.75rem 0 1.6rem', background: '#6852a7', borderRadius: 0 }} className="flex items-center justify-between h-56px w-full bg-blue-r3591d5 border-b border-gray-dddddd px-8">
-            <div className="flex items-center" style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
-                <img style={{ width: '3.9375rem', height: '3.9375rem', marginTop: '-0.3rem' }} src={FootballIcon} alt="" />
+        <div style={{ height: '6.313rem', borderTopRightRadius: '0.5rem', borderTopLeftRadius: '0.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: smallCard ? '0 1.6rem' : '0px 1.75rem 0 1.6rem', background: '#6852a7', borderRadius: 0 }} className="flex items-center justify-between h-56px w-full bg-blue-r3591d5 border-b border-gray-dddddd px-8">
+            <div className="flex items-center" style={{ display: 'flex', alignItems: 'center', height: '100%', marginLeft: "-0.563rem" }}>
+                <img style={{ width: '3.188rem', height: '3.188rem', marginTop: '-0.3rem' }} src={FootballIcon} alt="" />
                 {/* <img style={{ width: '5.625', height: '3.3125rem', marginLeft: '1.0625rem', marginTop: '-0.3rem' }} src={headerFlag} alt="" /> */}
-                <span style={{ fontSize: '2.624375rem', paddingTop: '0.1875rem', marginLeft: '0.85rem', fontFamily: 'SpoqaHanSansNeo', color: '#ffffff', marginTop: '-0.3rem',
+                <span style={{ fontSize: '2.438rem', paddingTop: '0.063rem', marginLeft: '0.85rem', fontFamily: 'SpoqaHanSansNeo', color: '#ffffff', marginTop: '-0.3rem',
                     whiteSpace: 'nowrap', maxWidth: '32rem', overflow: 'hidden', textOverflow: 'ellipsis'
             }} className="ml-4 font-spoqaMedium text-20px tracking-tight text-white">{name}</span>
             </div>
-            <div className="flex items-center" style={{ display: 'flex' }}>
+            <div className="flex items-center" style={{ display: 'flex', marginRight: "-0.688rem" }}>
                 {/* <img style={{ width: '2.375rem', height: '2.375rem', marginTop: '0.3rem' }} src={ClockIcon} alt="" /> */}
                 <span
-                    style={{ color: "#ffffff", fontSize: '2.624375rem', marginLeft: '0.5rem', marginTop: '0.5rem', fontFamily: 'RobotoRegular', marginRight: '-0.2rem', letterSpacing: '-0.11rem' }}
+                    style={{ color: "#ffffff", fontSize: '2.438rem', marginLeft: '0.5rem', marginTop: '0rem', fontFamily: 'RobotoRegular', marginRight: '-0.2rem', letterSpacing: '-0.11rem' }}
                     className="font-spoqa text-16px tracking-tight text-white"
                 >
                     {date}
                 </span>
-            <img style={{ objectFit: "none", marginTop: '0.3rem', marginLeft: "1.438rem" }} src={flag} alt="" />
+            <img style={{ height: "2.75rem", width:"4.125rem", marginTop: '0.113rem', marginLeft: "1.438rem" }} src={flag} alt="" />
 
             </div>
         </div>

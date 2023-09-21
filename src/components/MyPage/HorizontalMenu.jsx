@@ -66,12 +66,12 @@ const HorizontalMenu = ({
                         }}
                     >
                         <div style={{ width: '100%', textAlign: 'center', height: '6.2rem', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: item.marginIcon ? item.marginIcon : '' }}>
-                            <img id={item.id} className='icon' src={((isActive && popup) || (isSameLink && !popup)) ? (item.activeIcon ? item.activeIcon : item.icon) : item.icon} alt='' style={{ width: item.width || '7.875rem', height: item.height, marginTop: item.marginTop, objectFit: "none" }} />
+                            <img id={item.id} className='icon' src={((isActive && popup) || (isSameLink && !popup)) ? (item.activeIcon ? item.activeIcon : item.icon) : item.icon} alt='' style={{ width: item.width || '7.875rem', height: item.height, marginTop: item.marginTop }} />
                         </div>
                         <div style={{ width: '100%', textAlign: 'center', height: '4.97rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <span
                                 id={item.id}
-                                style={{ marginTop: item.marginTop, marginLeft: item.textMargin, fontFamily:'SpoqaHanSansNeoMedium', fontSize: "36px" }}
+                                style={{ marginTop: item.marginTop, marginLeft: item.textMargin, fontFamily:'SpoqaHanSansNeoMedium', fontSize: "2.25rem" }}
                                 className='text'>{item.text}</span>
                         </div>
                     </button>

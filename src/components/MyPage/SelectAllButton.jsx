@@ -29,7 +29,7 @@ const SelectAllButton = (
                     <button
                         style={{
                             background: "#936cee",
-                            boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)"
+                            boxShadow: "0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.3)"
                         }}
                         className="common-button flex flex-1 items-center justify-center mr-4 rounded-2xl bg-gray-r171a1d hover:opacity-75"
                         onClick={() => allSelectButtonPressed()}
@@ -46,7 +46,7 @@ const SelectAllButton = (
                     <button
                         style={{
                             background: "#936cee",
-                            boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)"
+                            boxShadow: "0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.3)"
                         }}
                         className="common-button flex flex-1 items-center justify-center mr-4 rounded-2xl bg-brown-r7e3636 hover:opacity-75"
                     >
@@ -62,7 +62,7 @@ const SelectAllButton = (
                     <button
                         style={{
                             background: 'linear-gradient(to right, #15cfee, #3197e5)',
-                            boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)"
+                            boxShadow: "0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.3)"
                         }}
                         className="common-button flex flex-1 items-center justify-center rounded-2xl bg-blue-r0070d9 hover:opacity-75"
                     // onClick={() => allSelectButtonPressed()}
@@ -85,7 +85,7 @@ const SelectAllButton = (
         <div style={{ margin: '3.75rem 1.875rem', marginTop: '1.875rem', marginBottom: '2.5rem' }} >
             <div className='two-buttons'>
                 <button
-                    style={{ height: '7.3125rem', boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)" }}
+                    style={{ height: '7.3125rem', boxShadow: "0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.3)" }}
                     className="first-btn hover"
                     onClick={() => allSelectButtonPressed()}
                 >
@@ -101,7 +101,7 @@ const SelectAllButton = (
                     </div>
                 </button>
                 <button
-                    style={{ height: '7.3125rem', boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)" }}
+                    style={{ height: '7.3125rem', boxShadow: "0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.3)" }}
                     className="hover common-button flex flex-1 items-center justify-center m-0 rounded-2xl bg-brown-r7e3636 hover:opacity-75"
                 >
                     <div

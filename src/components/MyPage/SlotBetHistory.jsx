@@ -34,7 +34,7 @@ import { useNavigate } from 'react-router-dom'
 
 const subTabsArray = [
 
-    { text: "전체", icon: Icon0, id: 0, marginIcon: '', width: '16.375rem', path: '#' },
+    { text: "전체", icon: Icon0, id: 0, marginIcon: '', width: '5.25rem', path: '#' },
     { text: "마이크로게이밍", icon: Icon1, id: 1, width: '16.375rem', path: '#' },
     { text: "YGG드라실", icon: Icon2, id: 2, width: '16.375rem', path: '#' },
     { text: "드라군소프트", icon: Icon3, id: 3, width: '16.375rem', path: '#' },

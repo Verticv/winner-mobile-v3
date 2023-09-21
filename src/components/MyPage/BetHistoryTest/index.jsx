@@ -51,7 +51,7 @@ import subIcon9 from '../../../assets/bigIcons/leftMenu/10.png';
 
 
 import activeBG from '../../../assets/mainPage/points/active-bg.png'
-import icon1 from '../../../assets/bigIcons/1-v3.png';
+import icon1 from '../../../assets/bigIcons/1_v3.png';
 import icon2 from '../../../assets/images/bottom-nav/menu1.png';
 import icon3 from '../../../assets/images/bottom-nav/menu2.png';
 // import icon4 from '../assets/images/bottom-nav/menu3.png';
@@ -98,9 +98,9 @@ import FixedMenu from '../../FixedMenu';
 
 const tabsArray = [
     { text: "전체", icon: icon1, activeIcon: icon1Active, id: -1, path: "/mypage/bet-history/all", activeBG: activeBG },
-    { text: "라이브카지노", icon: icon2, activeIcon: icon2Active, id: 0, path: "/mypage/bet-history/all/live-casino", activeBG: activeBG },
-    { text: "스포츠", icon: icon3, activeIcon: icon3Active, id: 1, path: "/mypage/bet-history/all/sports", activeBG: activeBG },
-    { text: "슬롯", icon: icon5, activeIcon: icon5Active, id: 2, path: "/mypage/bet-history/all/slot-game", activeBG: activeBG },
+    { text: "라이브카지노", icon: icon2, activeIcon: icon2Active, id: 0, path: "/mypage/bet-history/all/live-casino", activeBG: activeBG, width: "7.75rem" },
+    { text: "스포츠", icon: icon3, activeIcon: icon3Active, id: 1, path: "/mypage/bet-history/all/sports", activeBG: activeBG , width: "7.75rem"},
+    { text: "슬롯", icon: icon5, activeIcon: icon5Active, id: 2, path: "/mypage/bet-history/all/slot-game", activeBG: activeBG , width: "6.625rem"},
     { text: "호텔카지노", icon: icon6, activeIcon: icon6Active, id: 3, path: "/mypage/bet-history/all/hotel-casino", activeBG: activeBG },
     { text: "e-스포츠", icon: icon7, activeIcon: icon7Active, id: 4, path: "/mypage/bet-history/all/e-sports", activeBG: activeBG },
     { text: "미니게임", icon: icon8, activeIcon: icon8Active, id: 5, path: "/mypage/bet-history/all/minigame", activeBG: activeBG, subPath: "/mypage/bet-history/all/minigame/powerball", subPath2: "/mypage/bet-history/all/minigame/powerladder", subPath3: "/mypage/bet-history/all/minigame/speedkino", subPath4: "/mypage/bet-history/all/minigame/kinoladder" },
@@ -264,9 +264,9 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                         />
                                         <Pagination page={page} setPage={setPage} />
                                         <FixedMenu
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
-      />   
+                                          selectedTab={selectedTab}
+                                          setSelectedTab={setSelectedTab}
+                                        />   
                                     </>
                                 }
                                 />
@@ -280,9 +280,9 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                             <Pagination page={page} setPage={setPage} />
                                             {/* <NavBottom /> */}
                                             <FixedMenu
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
-      />   
+                                              selectedTab={selectedTab}
+                                              setSelectedTab={setSelectedTab}
+                                            />   
                                         </>
                                     }
                                 >
@@ -297,9 +297,9 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                             />
                                             <Pagination page={page} setPage={setPage} />
                                             <FixedMenu
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
-      />   
+                                              selectedTab={selectedTab}
+                                              setSelectedTab={setSelectedTab}
+                                            />   
                                             
                                         </>
                                     }
@@ -361,6 +361,7 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                             <MinigameBetHistory isState={historySelectedSubTab2} setState={setHistorySelectedSubTab2}
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             />
+                                            <Pagination page={page} setPage={setPage} />
                                            <FixedMenu
         selectedTab={selectedTab}
         setSelectedTab={setSelectedTab}
