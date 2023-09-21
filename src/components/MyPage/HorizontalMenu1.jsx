@@ -22,7 +22,7 @@ const HorizontalMenu1 = ({
     const [isHover, setHover] = useState(null)
 
     const Image = React.memo(function Image({ icon, activeIcon, width, marginLeft, isSameLink }) {
-        return <img style={{ width: width, marginLeft: marginLeft, WebkitUserDrag: "none", MozUserDrag: "none", userDrag: "none", objectFit: "none" }} className="mt-5 object-contain select-none" src={isSameLink ? activeIcon : icon} alt="" />
+        return <img style={{ width: width, marginLeft: marginLeft, WebkitUserDrag: "none", MozUserDrag: "none", userDrag: "none" }} className="mt-5 object-contain select-none" src={isSameLink ? activeIcon : icon} alt="" />
     });
 
     useEffect(() => {

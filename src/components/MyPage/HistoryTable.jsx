@@ -122,7 +122,7 @@ const HistoryTable = ({
                 // marginTop: `${index ? '0' : '1.875rem'}`,
                 // margin: '1.86rem',
                 background: 'linear-gradient(to top, #dddddd, #bbbbbb)',
-                boxShadow: '0px 0px 12px 0px rgba(0, 0, 0, 0.8)',
+                boxShadow: '0px 0px 0.75rem 0px rgba(0, 0, 0, 0.8)',
                 borderRadius: '1.875rem',
             }}>
                 <div style={{

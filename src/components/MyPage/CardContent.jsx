@@ -108,18 +108,18 @@ const CardContent = ({
             </div>
             {withButtons && (
                 <div className="two-buttons-container">
-                    <button style={{ height: '7.3125rem' }}
+                    <button style={{ height: '7.3125rem',boxShadow: "0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.3)" }}
                         // onClick={() => navigate("/freeboard")} 
-                        className="shadow-to-box flex items-center justify-center w-1/2 mr-4 rounded-2xl bg-blue-r0070d9">
+                        className="flex items-center justify-center w-1/2 mr-4 rounded-2xl bg-blue-r0070d9">
                         <div style={{ width: '100%', height: '100%', borderRadius: '1rem', padding: '0.1875rem' }}>
                             <div style={{ width: '100%', height: '100%', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <span style={{ color: '#ffffff' }}>내역올리기</span>
                             </div>
                         </div>
                     </button>
-                    <button style={{ background: '#646eb6', height: '7.3125rem', padding: '0.1875rem', fontSize: '2.8125rem' }}
+                    <button style={{ background: '#646eb6', height: '7.3125rem', padding: '0.1875rem', fontSize: '2.8125rem',boxShadow: "0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.3)" }}
                         // onClick={() => navigate("/freeboard")} 
-                        className="shadow-to-box flex items-center justify-center w-1/2 rounded-2xl bg-gray-r171a1d">
+                        className="flex items-center justify-center w-1/2 rounded-2xl bg-gray-r171a1d">
                         <div style={{ width: '100%', height: '100%', borderRadius: '1rem' }}>
                             <div
                                 style={{ width: '100%', height: '100%', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}

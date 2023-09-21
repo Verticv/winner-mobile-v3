@@ -3,9 +3,9 @@ import PointsTransactionHistory from '../PointsTransactionHistory'
 // import HomePageTopBanner from '../HomePageTopBanner';
 import HorizontalMenu1 from '../HorizontalMenu1'
 import React, { useState, useEffect } from 'react'
-import Icon1 from '../../../assets/mainPage/points/1-v3.png';
-import Icon2 from '../../../assets/mainPage/points/2-v3.png';
-import Icon3 from '../../../assets/mainPage/points/3-v3.png';
+import Icon1 from '../../../assets/mainPage/points/1_v3.png';
+import Icon2 from '../../../assets/mainPage/points/2_v3.png';
+import Icon3 from '../../../assets/mainPage/points/3_v3.png';
 import Icon1Active from '../../../assets/mainPage/points/1-active-v3.png';
 import Icon2Active from '../../../assets/mainPage/points/2-active-v3.png';
 import Icon3Active from '../../../assets/mainPage/points/3-active-v3.png';

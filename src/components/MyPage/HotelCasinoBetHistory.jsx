@@ -11,7 +11,7 @@ import HorizontalSubMenu from '../MyPage/HorizontalSubMenuDefault'
 import { useNavigate } from 'react-router-dom'
 
 const subTabsArray = [
-    { text: "전체", icon: Icon1, id: 0, activeBG: activeBG, marginIcon: '', width: '16.375rem', path: '#' },
+    { text: "전체", icon: Icon1, id: 0, activeBG: activeBG, marginIcon: '', width: '5.25rem', path: '#' },
     { text: "두윈카지노", icon: Icon3, id: 2, activeBG: activeBG, marginIcon: '', width: '16.375rem', path: '#' },
     { text: "보타카지노", icon: Icon2, id: 1, activeBG: activeBG, width: '16.375rem', path: '#' },
     { text: "준비중", icon: Icon4, id: 3, activeBG: activeBG, width: '16.375rem', path: '#' },

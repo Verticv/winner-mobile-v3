@@ -62,9 +62,9 @@ import Icon2 from '../../assets/mainPage/icons/icon2.png';
 import Icon_1 from '../../assets/mainPage/icons/icon-1-v3.png';
 import Icon_2 from '../../assets/mainPage/icons/charging-history-v3.png';
 
-import icon1 from '../../assets/mainPage/points/1-v3.png';
-import icon2 from '../../assets/mainPage/points/2-v3.png';
-import icon3 from '../../assets/mainPage/points/3-v3.png';
+import icon1 from '../../assets/mainPage/points/1_v3.png';
+import icon2 from '../../assets/mainPage/points/2_v3.png';
+import icon3 from '../../assets/mainPage/points/3_v3.png';
 
 import MenuList from '../Shared/MenuList'
 import { useNavigate } from 'react-router-dom'
@@ -369,12 +369,12 @@ const ProfileMenu = () => {
             }>
             <div className='menu-item1'>
               {item.hasList && (<div className='menu-item-arrow'>
-                {selectedTab === item.id && (<img src={LightArrow} alt="right" style={{objectFit: "none"}} className="ml-10px object-none" />)}
-                {selectedTab !== item.id && (<img src={DarkArrow} alt="right" style={{objectFit: "none"}} className="ml-10px object-none" />)}
+                {selectedTab === item.id && (<img src={LightArrow} alt="right"  className="ml-10px object-none" />)}
+                {selectedTab !== item.id && (<img src={DarkArrow} alt="right"  className="ml-10px object-none" />)}
               </div>)}
               <div className='menu-item-logo'>
-                {selectedTab === item.id && (<img src={item.icon2} alt="right" style={{objectFit: "none"}} className="ml-10px object-none" />)}
-                {selectedTab !== item.id && (<img src={item.icon} alt="right" style={{objectFit: "none"}} className="ml-10px object-none" />)}
+                {selectedTab === item.id && (<img src={item.icon2} alt="right"  className="ml-10px object-none" />)}
+                {selectedTab !== item.id && (<img src={item.icon} alt="right" className="ml-10px object-none" />)}
               </div>
               <div className='menu-item-title'>
                 <p>{item.title}</p>
