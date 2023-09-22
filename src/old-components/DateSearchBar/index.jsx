@@ -49,7 +49,7 @@ const DateSearchBar = ({
             height: '4rem',
             justifyContent: 'center'
         }}>
-            <p style={{ fontFamily: 'SpoqaHanSansNeoBold', textAlign: 'center', fontSize: '2.6rem', paddingTop: '0.2rem' }}>{selectedYear}년</p>
+            <p style={{ textAlign: 'center', fontSize: '2.6rem', paddingTop: '0.2rem' }}>{selectedYear}년</p>
         </div>
     );
 
@@ -65,7 +65,7 @@ const DateSearchBar = ({
             height: '4rem',
             justifyContent: 'center'
         }}>
-            <p style={{ fontFamily: 'SpoqaHanSansNeoBold', textAlign: 'center', fontSize: '2.6rem', paddingTop: '0.2rem' }}>{selectedMonth}월</p>
+            <p style={{ textAlign: 'center', fontSize: '2.6rem', paddingTop: '0.2rem' }}>{selectedMonth}월</p>
         </div>
     );
 
@@ -95,7 +95,7 @@ const DateSearchBar = ({
                 <div className="space-x-5px">
                     <input
                         placeholder="리그선택"
-                        className="place-color-grey pt-px mt-px placeholder:text-gray-r7b7b7b flex-shrink-0 outline-none w-138px h-42px rounded-2xl border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c"
+                        className="place-color-grey pt-px mt-px placeholder:text-gray-r7b7b7b flex-shrink-0 outline-none w-138px h-42px rounded-2xl border border-gray-dddddd px-10px  text-15px tracking-tight text-gray-r8c8c8c"
                         onFocus={() => {
                             const menu = document.querySelector('#main-menu');
                             menu.style.marginBottom = '-14.075rem'
@@ -107,7 +107,7 @@ const DateSearchBar = ({
                     />
                     <input
                         placeholder="팀명검색"
-                        className="place-color-grey pt-px mt-px placeholder:text-gray-r7b7b7b placeholder-gray-r7b7b7b flex-shrink-0 outline-none w-138px h-42px rounded-2xl border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c"
+                        className="place-color-grey pt-px mt-px placeholder:text-gray-r7b7b7b placeholder-gray-r7b7b7b flex-shrink-0 outline-none w-138px h-42px rounded-2xl border border-gray-dddddd px-10px  text-15px tracking-tight text-gray-r8c8c8c"
                         onFocus={() => {
                             const menu = document.querySelector('#main-menu');
                             menu.style.marginBottom = '-14.075rem'
@@ -360,32 +360,32 @@ const DateSearchBar = ({
                     className="buttons-container2">
                     <div className="common-button12">
                         <div className="text-con">
-                            <span className="font-spoqaMedium tracking-tight text-white pt-px">오늘</span>
+                            <span className=" tracking-tight text-white pt-px">오늘</span>
                         </div>
                     </div>
 
                     <div className="common-button12">
                         <div className="text-con">
-                            <span className="font-spoqaMedium tracking-tight text-white pt-px">1주일</span>
+                            <span className=" tracking-tight text-white pt-px">1주일</span>
                         </div>
                     </div>
 
                     <div className="common-button12">
                         <div className="text-con">
-                            <span className="font-spoqaMedium tracking-tight text-white pt-px">15일</span>
+                            <span className=" tracking-tight text-white pt-px">15일</span>
                         </div>
                     </div>
 
                     <div className="common-button12">
                         <div className="text-con">
-                            <span className="font-spoqaMedium tracking-tight text-white pt-px">1개월</span>
+                            <span className=" tracking-tight text-white pt-px">1개월</span>
                         </div>
                     </div>
 
                     {has3MonthSearch && (
                         <div className="common-button12">
                             <div className="text-con">
-                                <span className="font-spoqaMedium tracking-tight text-white pt-px">3개월</span>
+                                <span className=" tracking-tight text-white pt-px">3개월</span>
                             </div>
                         </div>
                     )}
@@ -397,13 +397,13 @@ const DateSearchBar = ({
                             <div className="text-con"
                                 style={{ background: withBlackButton ? '' : 'linear-gradient(to top, #805f3f, #936e49 50%, #a57b52)' }}
                             >
-                                <span className="font-spoqaMedium tracking-tight text-white pt-px">{withBlackButton ? "3개월" : "검색"}</span>
+                                <span className=" tracking-tight text-white pt-px">{withBlackButton ? "3개월" : "검색"}</span>
                             </div>
                         </div>
                     ) : (
                         <div style={{ width: '13.25rem', height: '7.3125rem' }} className="common-button flex items-center justify-center rounded-lg bg-blue-r177cce hover:opacity-75">
                             <div className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r62b3f7 bg-gradient-to-b from-blue-r5497f4 via-blue-r3a93dd to-blue-r3d71b8 cursor-pointer">
-                                <span className="font-spoqaMedium tracking-tight text-white pt-px">3개월</span>
+                                <span className=" tracking-tight text-white pt-px">3개월</span>
                             </div>
                         </div>
                     )}
@@ -418,7 +418,7 @@ const DateSearchBar = ({
                         <input
                             style={{ marginLeft: '2rem' }}
                             placeholder="아이디"
-                            className="place-color-grey placeholder:text-gray-r7b7b7b flex-shrink-0 outline-none rounded-2xl border border-gray-dddddd font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c"
+                            className="place-color-grey placeholder:text-gray-r7b7b7b flex-shrink-0 outline-none rounded-2xl border border-gray-dddddd  text-15px tracking-tight text-gray-r8c8c8c"
                             onFocus={() => {
                                 const menu = document.querySelector('#main-menu');
                                 menu.style.marginBottom = '-14.075rem'
@@ -433,7 +433,7 @@ const DateSearchBar = ({
                 {withBlackButton && (
                     <div style={{ minWidth: isDistributorPage ? '27.4375rem' : '70.1375rem', height: '7.3125rem', background: 'linear-gradient(to top, #4c3c0a, #9f7e4d 50%, #e6b786)', padding: '0.1875rem', margin: '-1.1rem 0 1.875rem 0', borderRadius: '0.5rem' }} className="shadow-to-box hover withBlackButton">
                         <div style={{ background: 'linear-gradient(to top, #80603f, #946f49 50%, #a57b52)', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '0.5rem' }} className="flex w-full h-full items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
-                            <span style={{ fontSize: '2.625rem', color: '#ffdfbd', fontFamily: 'SpoqaHanSansNeoMedium', marginTop: '0.2rem' }} className="shadow-to-text">검색</span>
+                            <span style={{ fontSize: '2.625rem', color: '#ffdfbd', marginTop: '0.2rem' }} className="shadow-to-text">검색</span>
                         </div>
                     </div>
                 )}
@@ -443,7 +443,7 @@ const DateSearchBar = ({
             {hasIdSearch && (
                 <div className="flex space-x-5px">
                     <input
-                        className="w-138px h-42px rounded-lg border border-gray-dddddd bg-white outline-none text-15px font-spoqaMedium tracking-tight text-gray-r8c8c8c px-10px"
+                        className="w-138px h-42px rounded-lg border border-gray-dddddd bg-white outline-none text-15px  tracking-tight text-gray-r8c8c8c px-10px"
                         placeholder="아이디"
                     />
                     <div
@@ -462,7 +462,7 @@ const DateSearchBar = ({
                             }}
                             className="flex items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r585b5e to-gray-r303337 cursor-pointer"
                         >
-                            <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-14px text-white">검색</span>
+                            <span style={{ fontSize: '2.625rem' }} className=" tracking-tight text-14px text-white">검색</span>
                         </div>
                     </div>
                 </div>

@@ -29,12 +29,12 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
 
     const Title = ({ text }) => (
         <div style={{ width: "21rem", marginRight: '1.7rem', background: '#272726', flexShrink: '0', borderRadius: '0.5rem' }} className="form-Title">
-            <div style={{ fontSize: '2.8125rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', padding: '1.6rem 0 0 1.1rem', letterSpacing: '-0.25rem' }} className="text-gray-r454545 font-spoqaMedium">{text}</div>
+            <div style={{ fontSize: '2.8125rem', color: '#ccc2b6', padding: '1.6rem 0 0 1.1rem', letterSpacing: '-0.25rem' }} className="text-gray-r454545">{text}</div>
         </div>
     )
 
     return (
-        <div style={{ padding: '1.875rem', paddingTop: '0.9rem', fontFamily: 'SpoqaHanSansNeoMedium' }} className="flex flex-col items-center">
+        <div style={{ padding: '1.875rem', paddingTop: '0.9rem' }} className="flex flex-col items-center">
 
             <WarningMessage
                 title='확인 / 필독사항'
@@ -52,7 +52,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                     <div style={{ padding: '1.43rem 1.9rem 1rem 1.82rem', background: '#252525', borderRadius: '0.5rem', border: '0.1875rem solid #404040' }} className="w-full rounded-2xl border border-gray-dddddd bg-gray-f9f9f9">
                         <div
                             style={{ fontSize: '2.8125rem', color: '#ffdfbd', marginLeft: '-0.2rem' }}
-                            className="font-spoqaMedium tracking-tight text-gray-r393e41 flex items-center"
+                            className="tracking-tight text-gray-r393e41 flex items-center"
                         >
                             환전금액 입력
                         </div>
@@ -70,8 +70,8 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                         <div className="form-section">
                             <Title text="현재 보유머니" />
                             <div className="lable-or-input">
-                                <div style={{ fontSize: '2.625rem' }} className="text-gray-r393e41 font-spoqaMedium text-gray-r585858">
-                                    <span className="font-robotoBold text-red-e9441d" style={{ color: '#e9441d', fontFamily: 'RobotoBold' }}>478,000</span>
+                                <div style={{ fontSize: '2.625rem' }} className="text-gray-r393e41 text-gray-r585858">
+                                    <span className="font-robotoBold text-red-e9441d" style={{ color: '#e9441d' }}>478,000</span>
                                 </div>
                                 <div style={{ height: '0.1875rem', marginTop: '0.9375rem' }} className="w-full bg-gray-bebebe"></div>
                             </div>
@@ -80,7 +80,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                             <Title text="환전금액 입력" />
                             <div className="lable-or-input">
                                 <input
-                                    className="w-full font-spoqa text-gray-r585858 outline-none placeholder-gray-bebebe"
+                                    className="w-full  text-gray-r585858 outline-none placeholder-gray-bebebe"
                                     style={{ fontSize: '2.625rem', marginBottom: '0.9375rem', letterSpacing: '-0.1rem' }}
                                     placeholder="직접 입력시 숫자만 입력해 주세요."
                                     value={inputValue !== null ? nf.format(inputValue) : ""}
@@ -119,7 +119,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                                 onClick={() => setInputValue(inputValue + 10000)}
                             >
                                 <div className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r2a699c bg-gradient-to-b from-blue-r004b8a via-blue-r003d70 to-blue-r012d53 cursor-pointer">
-                                    <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-white">1만원</span>
+                                    <span style={{ fontSize: '2.625rem' }} className="tracking-tight text-white">1만원</span>
                                 </div>
                             </button>
 
@@ -129,7 +129,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                                 onClick={() => setInputValue(inputValue + 30000)}
                             >
                                 <div className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r2a699c bg-gradient-to-b from-blue-r004b8a via-blue-r003d70 to-blue-r012d53 cursor-pointer">
-                                    <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-white">3만원</span>
+                                    <span style={{ fontSize: '2.625rem' }} className="tracking-tight text-white">3만원</span>
                                 </div>
                             </button>
 
@@ -139,7 +139,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                                 onClick={() => setInputValue(inputValue + 50000)}
                             >
                                 <div className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r2a699c bg-gradient-to-b from-blue-r004b8a via-blue-r003d70 to-blue-r012d53 cursor-pointer">
-                                    <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-white">5만원</span>
+                                    <span style={{ fontSize: '2.625rem' }} className="tracking-tight text-white">5만원</span>
                                 </div>
                             </button>
 
@@ -149,7 +149,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                                 onClick={() => setInputValue(inputValue + 100000)}
                             >
                                 <div className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r3975ae bg-gradient-to-b from-blue-r125a9e via-blue-r0e508d to-blue-r0b447a cursor-pointer">
-                                    <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-white">10만원</span>
+                                    <span style={{ fontSize: '2.625rem' }} className="tracking-tight text-white">10만원</span>
                                 </div>
                             </button>
                         </div>
@@ -161,7 +161,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                                 onClick={() => setInputValue(inputValue + 300000)}
                             >
                                 <div className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r538dcf bg-gradient-to-b from-blue-r3176c5 via-blue-r286bb7 to-blue-r1c5ca5 cursor-pointer">
-                                    <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-white">30만원</span>
+                                    <span style={{ fontSize: '2.625rem' }} className="tracking-tight text-white">30만원</span>
                                 </div>
                             </button>
 
@@ -171,7 +171,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                                 onClick={() => setInputValue(inputValue + 500000)}
                             >
                                 <div className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r70a8f5 bg-gradient-to-b from-blue-r5497f4 via-blue-r4985d8 to-blue-r3d71b8 cursor-pointer">
-                                    <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-white">50만원</span>
+                                    <span style={{ fontSize: '2.625rem' }} className="tracking-tight text-white">50만원</span>
                                 </div>
                             </button>
 
@@ -181,7 +181,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                                 onClick={() => setInputValue(inputValue + 1000000)}
                             >
                                 <div className="flex items-center justify-center w-full h-full rounded-lg border border-blue-r62b3f7 bg-gradient-to-b from-blue-r5497f4 via-blue-r3a93dd to-blue-r3d71b8 cursor-pointer">
-                                    <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-white">100만원</span>
+                                    <span style={{ fontSize: '2.625rem' }} className="tracking-tight text-white">100만원</span>
                                 </div>
                             </button>
 
@@ -191,7 +191,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                                 onClick={() => setInputValue(0)}
                             >
                                 <div className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
-                                    <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-white">정정</span>
+                                    <span style={{ fontSize: '2.625rem' }} className="tracking-tight text-white">정정</span>
                                 </div>
                             </button>
                         </div>
@@ -315,7 +315,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                             onClick={() => setInputValue(inputValue + 300000)}
                         >
                             <div className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r538dcf bg-gradient-to-b from-blue-r3176c5 via-blue-r286bb7 to-blue-r1c5ca5 cursor-pointer">
-                                <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-white">30만원</span>
+                                <span style={{ fontSize: '2.625rem' }} className="tracking-tight text-white">30만원</span>
                             </div>
                         </button>
 
@@ -325,7 +325,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                             onClick={() => setInputValue(inputValue + 500000)}
                         >
                             <div className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r70a8f5 bg-gradient-to-b from-blue-r5497f4 via-blue-r4985d8 to-blue-r3d71b8 cursor-pointer">
-                                <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-white">50만원</span>
+                                <span style={{ fontSize: '2.625rem' }} className="tracking-tight text-white">50만원</span>
                             </div>
                         </button>
 
@@ -335,7 +335,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                             onClick={() => setInputValue(inputValue + 1000000)}
                         >
                             <div className="flex items-center justify-center w-full h-full rounded-lg border border-blue-r62b3f7 bg-gradient-to-b from-blue-r5497f4 via-blue-r3a93dd to-blue-r3d71b8 cursor-pointer">
-                                <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-white">100만원</span>
+                                <span style={{ fontSize: '2.625rem' }} className="tracking-tight text-white">100만원</span>
                             </div>
                         </button>
 
@@ -345,7 +345,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                             onClick={() => setInputValue(0)}
                         >
                             <div className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
-                                <span style={{ fontSize: '2.625rem' }} className="font-spoqaMedium tracking-tight text-white">정정</span>
+                                <span style={{ fontSize: '2.625rem' }} className="tracking-tight text-white">정정</span>
                             </div>
                         </button>
                     </div> */}
@@ -358,7 +358,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                         {/* </div> */}
                         <div className="lable-or-input">
                             <input
-                                className="w-full font-spoqa text-gray-bebebe outline-none placeholder-gray-bebebe"
+                                className="w-full  text-gray-bebebe outline-none placeholder-gray-bebebe"
                                 style={{ fontSize: '2.625rem', marginBottom: '0.9375rem' }}
                                 placeholder="비밀번호를 입력하세요."
                                 value={secondInputValue !== null ? secondInputValue : ""}
@@ -387,7 +387,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
             </div>
             {/* <button style={{ width: "36.4375rem", height: '7.3125rem', padding: '1px', marginTop: '3.75rem', marginBottom: '5.8125rem' }} className="flex items-center justify-center h-52px rounded-lg bg-blue-r0070d9 hover:opacity-75">
                 <div className="flex items-center justify-center rounded-lg w-full h-full border border-blue-r3ba3fc bg-gradient-to-b from-blue-r1491fc via-blue-r0e84ed to-blue-r0675db cursor-pointer">
-                    <span style={{ fontSize: '2.8125rem' }} className="font-spoqaMedium tracking-tight text-16px text-white">신청하기</span>
+                    <span style={{ fontSize: '2.8125rem' }} className="tracking-tight text-16px text-white">신청하기</span>
                 </div>
             </button> */}
             <div className='shadow-to-box' style={{ width: "36.4375rem", height: '7.3125rem', marginLeft: '18.7rem', borderRadius: '1rem', padding: '0.1875rem', marginBottom: '3.6rem', background: 'linear-gradient(to top, #3e4c8e, #679ac0 50%, #87d8e7 )', marginTop: '1.8rem' }}>
@@ -396,7 +396,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                     className="hover"
                 >
                     <div style={{ borderColor: "#ff8f63" }} className="w-full h-full flex items-center justify-center rounded-2xl border border-blue-r3ba3fc bg-gradient-to-b from-orange-ff7a45 via-orange-f56032 to-orange-e9441d cursor-pointer">
-                        <span style={{ fontSize: '2.8125rem', color: '#d6f3ff', display: 'inline-block', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem' }} className='shadow-to-text'>신청하기</span>
+                        <span style={{ fontSize: '2.8125rem', color: '#d6f3ff', display: 'inline-block', letterSpacing: '-0.07rem' }} className='shadow-to-text'>신청하기</span>
                     </div>
                 </button>
             </div>

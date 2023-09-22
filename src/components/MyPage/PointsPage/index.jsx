@@ -65,19 +65,19 @@ const PointsPage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSub
         <>
             <div style={{ padding: '1.75rem 1.875rem 0.975rem 1.9rem', display: 'flex' }}>
                 <div style={{ borderRadius: "1.125rem", padding: '0.563rem', marginRight: '1rem', height: '13.125rem', background: '#631e9a', width: '36.5rem' }}>
-                    <div style={{ borderRadius: "1.125rem", color: '#5e399a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', fontFamily: 'SpoqaHanSansNeoMedium' }}>
+                    <div style={{ borderRadius: "1.125rem", color: '#5e399a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
                         <div style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem' }}>잔여 포인트</div>
                         <div style={{ fontSize: '4.125rem', marginTop: '0.9rem', letterSpacing: '-0.13rem' }}>
-                            <span style={{ color: '#f04281', fontFamily: 'SpoqaHanSansNeoBold' }}>278</span>
+                            <span style={{ color: '#f04281' }}>278</span>
                             <span>P</span>
                         </div>
                     </div>
                 </div>
                 <div style={{ borderRadius: "1.125rem", padding: '0.563rem', marginRight: '', height: '13.125rem', background: '#631e9a', width: '36.5rem' }}>
-                    <div style={{ borderRadius: "1.125rem", color: '#594e6a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', fontFamily: 'SpoqaHanSansNeoMedium' }}>
+                    <div style={{ borderRadius: "1.125rem", color: '#594e6a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
                         <div style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem' }}>당월 적립포인트</div>
                         <div style={{ fontSize: '4.125rem', marginTop: '0.9rem', letterSpacing: '-0.13rem', color:"#5e399a" }}>
-                            <span style={{ fontFamily: 'SpoqaHanSansNeoBold' }}>50</span>
+                            <span style={{}}>50</span>
                             <span>P</span>
                         </div>
                     </div>
@@ -87,28 +87,28 @@ const PointsPage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSub
 
             <div style={{ padding: '1.875rem', paddingTop: '0', display: 'flex' }} className='w-full flex'>
                 <div style={{ borderRadius: "1.125rem", padding: '0.563rem', marginRight: '1rem', height: '13.125rem', background: '#631e9a', width: '24rem' }}>
-                    <div style={{ borderRadius: "1.125rem", color: '#594e6a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', fontFamily: 'SpoqaHanSansNeoMedium', paddingRight: '0.35rem' }}>
+                    <div style={{ borderRadius: "1.125rem", color: '#594e6a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', paddingRight: '0.35rem' }}>
                         <div style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem' }}>전월 적립포인트</div>
                         <div style={{ fontSize: '3.425rem', marginTop: '0.9rem', letterSpacing: '-0.13rem', color:"#5e399a" }}>
-                            <span style={{ fontFamily: 'SpoqaHanSansNeoBold' }}>228</span>
+                            <span style={{}}>228</span>
                             <span>P</span>
                         </div>
                     </div>
                 </div>
                 <div style={{ borderRadius: "1.125rem", padding: '0.563rem', marginRight: '1rem', height: '13.125rem', background: '#631e9a', width: '24rem' }}>
-                    <div style={{ borderRadius: "1.125rem", color: '#594e6a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', fontFamily: 'SpoqaHanSansNeoMedium', paddingRight: '0.26rem' }}>
-                        <div className="text-gray-r7b7b7b font-spoqaMedium text-4xl tracking-tight flex items-center" style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem' }}>총 누적포인트</div>
+                    <div style={{ borderRadius: "1.125rem", color: '#594e6a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', paddingRight: '0.26rem' }}>
+                        <div className="text-gray-r7b7b7b  text-4xl tracking-tight flex items-center" style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem' }}>총 누적포인트</div>
                         <div style={{ fontSize: '3.425rem', marginTop: '0.9rem', letterSpacing: '-0.13rem', color:"#5e399a" }}>
-                            <span style={{ fontFamily: 'SpoqaHanSansNeoBold' }}>278</span>
+                            <span style={{}}>278</span>
                             <span>P</span>
                         </div>
                     </div>
                 </div>
                 <div style={{ borderRadius: "1.125rem", padding: '0.563rem', marginRight: '', height: '13.125rem', background: '#631e9a', width: '24rem' }}>
-                    <div style={{ borderRadius: "1.125rem", color: '#594e6a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', fontFamily: 'SpoqaHanSansNeoMedium', paddingRight: '0.26rem' }}>
-                        <div className="text-gray-r7b7b7b font-spoqaMedium text-4xl tracking-tight flex items-center" style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem' }}>총 사용포인트</div>
+                    <div style={{ borderRadius: "1.125rem", color: '#594e6a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', paddingRight: '0.26rem' }}>
+                        <div className="text-gray-r7b7b7b  text-4xl tracking-tight flex items-center" style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem' }}>총 사용포인트</div>
                         <div style={{ fontSize: '3.425rem', marginTop: '0.9rem', letterSpacing: '-0.13rem', color:"#5e399a" }}>
-                            <span style={{ fontFamily: 'SpoqaHanSansNeoBold' }}>228</span>
+                            <span style={{}}>228</span>
                             <span>P</span>
                         </div>
                     </div>

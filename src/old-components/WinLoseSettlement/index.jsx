@@ -191,7 +191,7 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
             <Header />
             <HomePageTopBanner pageTitle='윈루즈정산' />
             <DateSearchBar isLeagueSearch={false} withBlackButton />
-            <div style={{ width: '73.875rem', height: '6.7rem', borderWidth: '0.1875rem', borderRadius: '3.1875rem', padding: '1.6rem 2rem', margin: '1.875rem 0', marginLeft: '1.875rem', display: 'flex', flexWrap: 'wrap', flexDirection: 'column', background: '#2e2e2e', border: '0.1875rem solid #635f5b', fontFamily: 'SpoqaHanSansNeoMedium' }}>
+            <div style={{ width: '73.875rem', height: '6.7rem', borderWidth: '0.1875rem', borderRadius: '3.1875rem', padding: '1.6rem 2rem', margin: '1.875rem 0', marginLeft: '1.875rem', display: 'flex', flexWrap: 'wrap', flexDirection: 'column', background: '#2e2e2e', border: '0.1875rem solid #635f5b' }}>
                 <div style={{
                     display: 'flex', alignItems: 'center', marginLeft: '0.2rem', width: '50%', justifyContent: 'center'
                 }}>
@@ -233,7 +233,7 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
                 />
             </div>
 
-            <div style={{ height: '7.5rem', width: '73.875rem', fontSize: '2.625rem', borderWidth: '0.1875rem', margin: '0px 1.875rem 1.875rem', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem', display: 'flex', alignItems: 'center', borderRadius: '0.5rem', padding: '0.1875rem', background: '#2e2e2e' }} className="shadow-to-box font-spoqaMedium text-14px tracking-tight border border-gray-ececec flex items-center shadow-subNavbar rounded-2xl">
+            <div style={{ height: '7.5rem', width: '73.875rem', fontSize: '2.625rem', borderWidth: '0.1875rem', margin: '0px 1.875rem 1.875rem', letterSpacing: '-0.07rem', display: 'flex', alignItems: 'center', borderRadius: '0.5rem', padding: '0.1875rem', background: '#2e2e2e' }} className="shadow-to-box text-14px tracking-tight border border-gray-ececec flex items-center shadow-subNavbar rounded-2xl">
                 <div style={{ borderRightWidth: '0.1875rem', width: '50%', background: 'rgb(65, 65, 65)', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderTopLeftRadius: '0.5rem', borderBottomLeftRadius: '0.5rem', color: '#ccc2b6' }} className='flex items-center justify-center h-full w-1/2 text-white bg-gray-a3b2c2 border-r border-gray-ececec rounded-l-2xl'>합계</div>
                 <div style={{ width: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#e65454' }} className='flex items-center justify-center h-full w-1/2 text-red-d52e2e rounded-2xl'>+244,119</div>
             </div>

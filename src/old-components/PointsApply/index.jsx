@@ -40,7 +40,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                 className="hover"
             >
                 <div style={{ borderColor: "#ff8f63" }} className="w-full h-full flex items-center justify-center rounded-2xl border border-blue-r3ba3fc bg-gradient-to-b from-orange-ff7a45 via-orange-f56032 to-orange-e9441d cursor-pointer">
-                    <span style={{ fontSize: '2.8125rem', color: '#d6f3ff', display: 'inline-block', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem', marginTop: '0.2rem', marginLeft: '' }} className='shadow-to-text'>신청하기</span>
+                    <span style={{ fontSize: '2.8125rem', color: '#d6f3ff', display: 'inline-block', letterSpacing: '-0.07rem', marginTop: '0.2rem', marginLeft: '' }} className='shadow-to-text'>신청하기</span>
                 </div>
             </button>
         </div>
@@ -48,7 +48,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
 
     const Title = ({ text }) => (
         <div style={{ width: "22.9rem", marginRight: '1.8rem', background: '#272726', flexShrink: '0', borderRadius: '0.5rem' }} className="form-Title">
-            <div style={{ fontSize: '2.8125rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', padding: '1.6rem 0px 0px 1.2rem', letterSpacing: '-0.25rem' }} className="text-gray-r454545 font-spoqaMedium">{text}</div>
+            <div style={{ fontSize: '2.8125rem', color: '#ccc2b6', padding: '1.6rem 0px 0px 1.2rem', letterSpacing: '-0.25rem' }} className="text-gray-r454545">{text}</div>
             {/* <div style={{ height: '0.1875rem', marginTop: '1.1875rem' }} className="w-full bg-gray-bebebe"></div> */}
         </div>
     )
@@ -66,18 +66,18 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
             />
             <div style={{ padding: '0.1875rem', paddingBottom: '0.1875rem', marginTop: '1.875rem', background: 'linear-gradient(to top, #1f1f1e, #333332 50%, #4a4a4a)', borderRadius: '1.3rem' }}>
                 <div style={{ padding: '0.9rem 1rem 0 0.8rem', background: '#323232', borderRadius: '1.2rem' }} className="w-full rounded-2xl shadow-subNavbar">
-                    <div style={{ padding: '1.4rem 2.0625rem 1.2rem', background: '#252525', border: '0.1875rem solid #404040', borderRadius: '0.5rem', letterSpacing: '-0.07rem', fontFamily: 'SpoqaHanSansNeoMedium', }} className="w-full rounded-2xl border border-gray-dddddd bg-gray-f9f9f9">
+                    <div style={{ padding: '1.4rem 2.0625rem 1.2rem', background: '#252525', border: '0.1875rem solid #404040', borderRadius: '0.5rem', letterSpacing: '-0.07rem', }} className="w-full rounded-2xl border border-gray-dddddd bg-gray-f9f9f9">
                         <div
                             style={{ fontSize: '2.8125rem', color: '#ffdfbd', marginLeft: '-0.4rem' }}
-                            className="font-spoqaMedium tracking-tight text-gray-r393e41 flex items-center"
+                            className=" tracking-tight text-gray-r393e41 flex items-center"
                         >
                             전환 포인트 입력
                         </div>
                         <div
                             style={{ fontSize: '2.625rem', marginRight: '4rem', marginTop: '0.8rem', marginLeft: '-0.4rem' }}
-                            className="font-spoqa tracking-tight text-gray-r7c7c7c flex items-center"
+                            className="tracking-tight text-gray-r7c7c7c flex items-center"
                         >
-                            <span style={{ fontFamily: 'SpoqaHanSansNeo', color: '#c8c8c8', lineHeight: '1.4' }}>현재 포인트가 보유머니로 전환되며, 최소<span style={{ color: '#4c98ff', fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '0' }}> 10,000</span>P부터 신청 가능합니다.</span>
+                            <span style={{ color: '#c8c8c8', lineHeight: '1.4' }}>현재 포인트가 보유머니로 전환되며, 최소<span style={{ color: '#4c98ff', fontSize: '2.625rem', letterSpacing: '0' }}> 10,000</span>P부터 신청 가능합니다.</span>
                         </div>
 
                     </div>
@@ -86,8 +86,8 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                         <div className="form-section">
                             <Title text="현재 잔여 포인트" />
                             <div className="lable-or-input">
-                                <div style={{ fontSize: '2.625rem', color: '#c8c8c8', fontFamily: 'SpoqaHanSansNeoMedium' }} className="text-gray-r393e41 font-spoqaMedium text-gray-r585858">
-                                    <span style={{ color: '#4c98ff', fontSize: '2.624375rem', fontFamily: 'SpoqaHanSansNeoBold' }}>278</span>P
+                                <div style={{ fontSize: '2.625rem', color: '#c8c8c8' }} className="text-gray-r393e41 text-gray-r585858">
+                                    <span style={{ color: '#4c98ff', fontSize: '2.624375rem' }}>278</span>P
                                 </div>
                                 <div style={{ height: '0.1875rem', marginTop: '0.9375rem' }} className="w-full bg-gray-bebebe"></div>
                             </div>
@@ -95,8 +95,8 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                         <div style={{ marginTop: '2.55rem' }} className="form-section">
                             <Title text="전환 예정 포인트" />
                             <div className="lable-or-input">
-                                <div style={{ fontSize: '2.625rem', color: '#c8c8c8', fontFamily: 'SpoqaHanSansNeoMedium' }} className="text-gray-r393e41 font-spoqaMedium text-gray-r585858">
-                                    <span style={{ fontSize: '2.624375rem', fontFamily: 'SpoqaHanSansNeoBold' }}>0</span>P
+                                <div style={{ fontSize: '2.625rem', color: '#c8c8c8' }} className="text-gray-r393e41 text-gray-r585858">
+                                    <span style={{ fontSize: '2.624375rem' }}>0</span>P
                                 </div>
                                 <div style={{ height: '0.1875rem', marginTop: '0.9375rem' }} className="w-full bg-gray-bebebe"></div>
                             </div>
@@ -104,8 +104,8 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                         <div style={{ marginTop: '2.55rem' }} className="form-section">
                             <Title text="전환 후 잔여 포인트" />
                             <div className="lable-or-input">
-                                <div style={{ fontSize: '2.625rem', color: '#c8c8c8', fontFamily: 'SpoqaHanSansNeoMedium' }} className="text-gray-r393e41 font-spoqaMedium text-gray-r585858">
-                                    <span style={{ fontSize: '2.624375rem', fontFamily: 'SpoqaHanSansNeoBold' }}>0</span>P
+                                <div style={{ fontSize: '2.625rem', color: '#c8c8c8' }} className="text-gray-r393e41 text-gray-r585858">
+                                    <span style={{ fontSize: '2.624375rem' }}>0</span>P
                                 </div>
                                 <div style={{ height: '0.1875rem', marginTop: '0.9375rem' }} className="w-full bg-gray-bebebe"></div>
                             </div>
@@ -114,7 +114,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                             <Title text="전환 포인트 입력" />
                             <div className="lable-or-input" style={{ paddingLeft: '1rem', paddingTop: '1.8rem' }}>
                                 <input
-                                    className="w-full font-spoqa text-gray-r585858 outline-none placeholder-gray-bebebe"
+                                    className="w-full text-gray-r585858 outline-none placeholder-gray-bebebe"
                                     style={{ fontSize: '2.625rem', marginBottom: '0.9375rem', letterSpacing: '-0.1rem',
                                     // padding: '0.4rem 2.2rem 0',
                                     display: 'flex',

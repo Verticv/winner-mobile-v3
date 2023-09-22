@@ -20,7 +20,7 @@ const HorizontalSubMenu1 = ({
                         ? "text-gray-r454545"
                         : "text-gray-b7b7b7"
                     } rounded-full min-w-fit text-black flex items-center`}
-                style={{ height: '6.375rem', minWidth: 'fit-content', fontSize: '2.625rem', marginRight: `${!index ? '0.9375rem' : '0.9375rem'}`, background: 'bottom', color: pathname === item.path ? '#ffdfbd' : '#929292', display: 'flex', alignItems: 'center', fontFamily: 'SpoqaHanSansNeoMedium' }}
+                style={{ height: '6.375rem', minWidth: 'fit-content', fontSize: '2.625rem', marginRight: `${!index ? '0.9375rem' : '0.9375rem'}`, background: 'bottom', color: pathname === item.path ? '#ffdfbd' : '#929292', display: 'flex', alignItems: 'center' }}
                 key={item.id}
 
                 onPointerDown={() => setHover(item.id)}
@@ -40,7 +40,7 @@ const HorizontalSubMenu1 = ({
                             className={`${pathname === item.path
                                     ? "text-gray-r454545"
                                     : "text-gray-b7b7b7 hover:text-black"
-                                } font-spoqa `}
+                                } `}
                         >{item.text}</span>
                     </div>
                 </div>

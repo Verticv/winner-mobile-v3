@@ -36,7 +36,7 @@ import SpeedKinoPolicy from '../../assets/cscenter/minigame/speedkino_policy.png
 //                     className={`${isActive
 //                         ? "bg-blue-r0056a6"
 //                         : "bg-white border border-gray-b7b7b7"
-//                         } w-1/2 rounded-full font-spoqaMedium`}
+//                         } w-1/2 rounded-full`}
 //                     style={{ height: '6.375rem', fontSize: '2.8125rem', marginRight: `${!index ? '0.9375rem' : ''}`, borderWidth: `${pathname !== item.path && !isActive ? '0.1875rem' : ''}` }}
 //                     key={item.id}
 
@@ -57,7 +57,7 @@ import SpeedKinoPolicy from '../../assets/cscenter/minigame/speedkino_policy.png
 //                                 className={`${isActive
 //                                     ? "text-white"
 //                                     : "text-gray-r7b7b7b"
-//                                     } font-spoqaMedium`}
+//                                     }`}
 //                             >{item.text}</span>
 //                         </div>
 //                     </div>
@@ -67,7 +67,7 @@ import SpeedKinoPolicy from '../../assets/cscenter/minigame/speedkino_policy.png
 //     }
 
 //     return (
-//         <div className="flex w-full font-spoqaMedium">
+//         <div className="flex w-full">
 //             <TabsList items={itemsArray} />
 //         </div>
 //     )
@@ -94,8 +94,8 @@ const HistoryMenu = ({
                     className={`${isActive
                         ? "bg-blue-r0056a6"
                         : "bg-white border border-gray-b7b7b7"
-                        } w-1/2 rounded-full font-spoqaMedium`}
-                    style={{ background: isActive ? '#826140' : '#1e1e1e', fontFamily: 'SpoqaHanSansNeoMedium', color: isActive ? '#ffdfbd' : '#ccc2b6', width: '49.2%', borderRadius: '4rem', marginTop: '1rem', height: '6.375rem', fontSize: '2.8125rem', marginRight: `${!index ? '1.15rem' : ''}`, border: `${pathname !== item.path && !isActive ? '0.1875rem solid #555555' : ''}`, letterSpacing: '-0.07rem' }}
+                        } w-1/2 rounded-full`}
+                    style={{ background: isActive ? '#826140' : '#1e1e1e', color: isActive ? '#ffdfbd' : '#ccc2b6', width: '49.2%', borderRadius: '4rem', marginTop: '1rem', height: '6.375rem', fontSize: '2.8125rem', marginRight: `${!index ? '1.15rem' : ''}`, border: `${pathname !== item.path && !isActive ? '0.1875rem solid #555555' : ''}`, letterSpacing: '-0.07rem' }}
                     key={item.id}
 
                     onPointerDown={() => setHover(item.id)}
@@ -157,7 +157,7 @@ const MinigamePolicy = () => {
             <div className="w-full relative top-0">
                 <div style={{ background: "linear-gradient(to right, #ffffff00, #ffffff", width: '3.125rem' }} className="absolute h-full right-0 z-50"></div>
                 <div className="">
-                    <div style={{ marginLeft: '4.8rem' }} className=" flex flex-shrink-0 w-full font-spoqaMedium">
+                    <div style={{ marginLeft: '4.8rem' }} className=" flex flex-shrink-0 w-full">
                         <HorizontalSubMenu1 itemsArray={tabsArray} setSelectedTab={setSelectedTab} setSelectedSubTab={setSelectedSubTab} />
                     </div>
                 </div>

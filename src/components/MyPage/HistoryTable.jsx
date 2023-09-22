@@ -95,7 +95,7 @@ const HistoryTable = ({
         const wideDetailButtonComponent = (
             <button style={{ width: '20.25rem', height: '14.0625rem', background: '#c65337', position: 'absolute', top: '7.56rem', right: '1.9rem', borderRadius: '1.1rem', boxShadow: 'rgb(0 0 0 / 60%) 0px 0.375rem 0px 0px' }} className="hover change-top">
                 <div style={{ padding: `${wrapButtonText ? '2.2rem 2rem 2rem 2.1rem' : ''}` }} className="flex w-full h-full items-center justify-center flex-wrap rounded-2xl cursor-pointer">
-                    <span style={{ fontSize: '2.7rem', lineHeight: '1.25', width: '10.875rem', marginTop: '0.2375rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#ffd2d2', textShadow: '#00000080 0.3125rem 0.125rem 0.4375rem' }} className="w-full -mt-2 font-font-spoqaMedium tracking-tight text-white"> 진행중 </span>
+                    <span style={{ fontSize: '2.7rem', lineHeight: '1.25', width: '10.875rem', marginTop: '0.2375rem', color: '#ffd2d2', textShadow: '#00000080 0.3125rem 0.125rem 0.4375rem' }} className="w-full -mt-2 tracking-tight text-white"> 진행중 </span>
                 </div>
             </button>
         )
@@ -180,9 +180,9 @@ const HistoryTable = ({
                                 }
                                 return (
                                     <div key={index} style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.375rem', color: firstColumnColor, letterSpacing: '-0.07rem', marginLeft: '0.14rem', display: 'flex', width: '100%' }}>
-                                        <span className='font-spoqaMedium text-gray-r585858' style={{ fontSize: '2.624375rem', color: '#444444', fontFamily: 'SpoqaHanSansNeoMedium', flexShrink: 0, marginRight: '0.8rem' }}>{firstRowKeysName[0]} : </span>
-                                        <span className='font-spoqa' style={{
-                                            fontFamily: 'SpoqaHanSansNeo', color: '', display: 'inline-flex',
+                                        <span className='text-gray-r585858' style={{ fontSize: '2.624375rem', color: '#444444', flexShrink: 0, marginRight: '0.8rem' }}>{firstRowKeysName[0]} : </span>
+                                        <span className='' style={{
+                                            color: '', display: 'inline-flex',
                                             wordBreak: 'break-all',
                                             maxWidth: firstRowKeysName[0] === '아이디' ? '' : isPointPage ? '57rem' : (firstRowKeysName[0] === '쿠폰명') ? isGift ? '42rem' : hasButton ? '48rem' : '47rem' : width45 ? '45rem' : hasButton ? isGift ? '32rem' : isCoupon ? '38rem' : '39.7rem' : '39.7rem',
                                             overflow: firstRowKeysName[0] === '아이디' ? 'hidden' : '',
@@ -191,7 +191,7 @@ const HistoryTable = ({
                                         }}>
                                             {firstRowKeysName[0] === '아이디' ? truncate(row[0][firstRowKeysName[0]], 16, 16) : row[0][firstRowKeysName[0]]}
                                         </span>
-                                        {secondRowKeysName?.length > 0 && <><span className='font-spoqaMedium text-gray-r585858' style={{ fontSize: '2.624375rem', color: '#444444', fontFamily: 'SpoqaHanSansNeoMedium', marginLeft: '3.725rem' }}>{secondRowKeysName[0]} : </span><span style={{ fontFamily: 'SpoqaHanSansNeo', color: secondColumnColor }}> {row[1][secondRowKeysName[0]]}</span></>}
+                                        {secondRowKeysName?.length > 0 && <><span className='text-gray-r585858' style={{ fontSize: '2.624375rem', color: '#444444', marginLeft: '3.725rem' }}>{secondRowKeysName[0]} : </span><span style={{ color: secondColumnColor }}> {row[1][secondRowKeysName[0]]}</span></>}
                                     </div>
                                 )
                             }
@@ -205,7 +205,7 @@ const HistoryTable = ({
                                 style={{ padding: '0.5625rem', width: '100%', height: '100%', background: 'linear-gradient(to top, #7f5f3f, #a67c52)', borderRadius: '1rem' }}
                                 className="hover shadow-to-box3"
                             >
-                                <div style={{ color: "#ffdfbd", fontSize: '2.7rem', fontFamily: 'SpoqaHanSansNeoMedium' }} className="shadow-to-text">
+                                <div style={{ color: "#ffdfbd", fontSize: '2.7rem' }} className="shadow-to-text">
                                     <p>사용하기</p>
                                 </div>
                             </button>
@@ -249,7 +249,6 @@ const HistoryTable = ({
                                             lineHeight: '1.25',
                                             width: '100%',
                                             marginTop: '0.2375rem',
-                                            fontFamily: 'SpoqaHanSansNeoMedium',
                                             textAlign: 'center',
                                             color: card[card.length - 1].textColor ? card[card.length - 1].textColor : '#eeeeee',
                                         }}

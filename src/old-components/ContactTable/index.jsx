@@ -54,7 +54,7 @@ const ContactTable = ({
                             paddingLeft: '0',
                             paddingBottom: "1.5rem",
                         }}
-                        className="flex items-center font-spoqaMedium tracking-tight text-gray-r454545 h-full" >
+                        className="flex items-center  tracking-tight text-gray-r454545 h-full" >
 
                         <div style={{ display: 'flex', flexDirection: 'column', marginTop: '-0.3rem' }}>
                             <div style={{ display: 'flex', alignItems: 'center', height: '5.4rem' }} >
@@ -62,7 +62,6 @@ const ContactTable = ({
                                     style={{
                                         marginRight: '1rem', fontSize: '2.4375rem',
                                         padding: '0rem 1.35rem',
-                                        fontFamily: 'SpoqaHanSansNeoMedium',
                                         paddingBottom: '0',
                                         backgroundColor: item.isRead === true ? "#494745" : "#7e7564", 
                                         color: item.isRead === true ? "#c8c8c8" : "#f1e7d5",
@@ -80,7 +79,7 @@ const ContactTable = ({
                                     <p style={{ marginTop: '0.45rem', letterSpacing: '-0.05rem' }}>{truncate(type, 6, 6)}</p>
                                 </div>
                                 <p style={{
-                                    textOverflow: 'ellipsis', maxWidth: '37rem', overflow: 'hidden', whiteSpace: 'nowrap', fontSize: '3rem', letterSpacing: '-0.07rem', fontFamily: 'SpoqaHanSansNeoMedium',
+                                    textOverflow: 'ellipsis', maxWidth: '37rem', overflow: 'hidden', whiteSpace: 'nowrap', fontSize: '3rem', letterSpacing: '-0.07rem',
                                     color: item.isRead === true ? '#a0a0a0' : '#eeeeee', marginTop: '0.5rem'
                                 }}>{item.text}</p>
                                 {item.isRead === false && (
@@ -91,11 +90,11 @@ const ContactTable = ({
                             </div>
 
                             <div
-                                className={`w-full flex justify-start font-spoqaMedium tracking-tight text-r585858 text-center`} style={{ display: 'flex' }}>
+                                className={`w-full flex justify-start  tracking-tight text-r585858 text-center`} style={{ display: 'flex' }}>
                                 <div style={{ marginTop: '0.125rem', display: 'flex', alignItems: 'center' }} className="w-full flex align-center">
-                                    <p className='flex items-center text-gray-r7b7b7b' style={{ fontSize: '2.625rem', color: '#929292', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem' }}>{item.category}</p>
+                                    <p className='flex items-center text-gray-r7b7b7b' style={{ fontSize: '2.625rem', color: '#929292', letterSpacing: '-0.07rem' }}>{item.category}</p>
                                     <div style={{ height: '1.75rem', width: '0.1875rem', margin: 'auto 1rem auto 0.9rem', background: '#555555' }} className='bg-gray-c5c5c5'></div>
-                                    <div style={{ fontSize: '2.625rem', color: '#929292', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.07rem' }} className="flex items-center text-gray-r7b7b7b font-spoqa">
+                                    <div style={{ fontSize: '2.625rem', color: '#929292', letterSpacing: '-0.07rem' }} className="flex items-center text-gray-r7b7b7b">
                                         {item.time}
                                     </div>
                                 </div>

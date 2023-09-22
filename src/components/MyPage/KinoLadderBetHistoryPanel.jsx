@@ -15,7 +15,7 @@ const KinoLadderBetHistoryPanel = ({
     return (
         <div className='PowerLadderBetHistoryPanel'>
             <div style={{ background: 'linear-gradient(to top,#ededeb, #cb78e6 )', boxShadow: '0px 0px 0.75rem 0px rgba(0, 0, 0, 0.8)', padding: '0.1875rem', borderRadius: '1.875rem', margin: '0 1.86rem' }}>
-                <div style={{ borderRadius: "1.875rem", paddingBottom: '0.5625rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', background: '#ffffff' }} className="shadow-subNavbar bg-gray-fafafa">
+                <div style={{ borderRadius: "1.875rem", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#ffffff' }} className="shadow-subNavbar bg-gray-fafafa">
                     <TableHeader middleText='VS' />
                     <div style={{ padding: '0.438rem 0.9rem 0 0.7rem' }} className="w-full">
                         <div className="w-full rounded-lg">
@@ -44,7 +44,7 @@ const KinoLadderBetHistoryPanel = ({
                 </div>
             </div>
             <div style={{ background: 'linear-gradient(to top,#ededeb, #cb78e6 )', boxShadow: '0px 0px 0.75rem 0px rgba(0, 0, 0, 0.8)', padding: '0.1875rem', borderRadius: '1.875rem', margin: '2.1rem 1.8rem' }}>
-                <div style={{ borderRadius: "1.875rem", paddingBottom: '0.5625rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', background: '#ffffff' }} className="shadow-subNavbar bg-gray-fafafa">
+                <div style={{ borderRadius: "1.875rem", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#ffffff' }} className="shadow-subNavbar bg-gray-fafafa">
                     <TableHeader middleText='VS' />
                     <div style={{ padding: '0.438rem 0.9rem 0 0.7rem' }} className="w-full">
                         <div className="w-full rounded-lg">

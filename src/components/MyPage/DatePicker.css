@@ -237,7 +237,6 @@
   color: #ccc2b6;
   font-weight: bold;
   font-size: 13px;
-  font-family: 'Spoqa Han Sans Neo';
 }
 
 .react-datepicker-time__header {
@@ -906,10 +905,8 @@
   width: 10rem;
   line-height: 7rem;
   font-size: 3.5em;
-  font-family: RobotoMedium;
 }
 .react-datepicker__day-name {
-  font-family: 'SpoqaHanSansNeo';
 }
 .react-datepicker__current-month,
 .react-datepicker-time__header,

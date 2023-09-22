@@ -6,11 +6,11 @@ import icon from '../../assets/sports/Icon.png'
 const EsportsStructure = () => {
 
     const TitleText = ({ number = "01" }) => (
-        <div style={{ display: 'flex', alignItems: 'center', fontFamily: 'SpoqaHanSansNeoMedium', fontSize: '3.41188rem', paddingTop: '2rem', paddingBottom: '1.8rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', fontSize: '3.41188rem', paddingTop: '2rem', paddingBottom: '1.8rem' }}>
             <img src={icon} alt="" style={{ marginLeft: '1.6rem', marginRight: '0.2rem', width: '2.5rem' }} />
             <div style={{ background: "linear-gradient(120deg, #2087f0, #1873cf", borderRadius: "3px" }}></div>
             <span style={{ letterSpacing: '-0.07rem', marginTop: '0.1rem', marginRight: '1rem', color: '#ccc2b6' }}>화면구성</span>
-            <div style={{ backgroundColor: "#494745", borderRadius: "100%", fontFamily: 'RobotoBold', padding: '0.4rem 0.5rem', color: '#ccc2b6' }}>
+            <div style={{ backgroundColor: "#494745", borderRadius: "100%", padding: '0.4rem 0.5rem', color: '#ccc2b6' }}>
                 {number}
             </div>
 
@@ -18,8 +18,8 @@ const EsportsStructure = () => {
     )
 
     const Item = ({ number = "1.", title = "게임종류선택", text = "다양한 게임을 선택할 수 있습니다.", marginTop, text2 = null, text3 = null, color1 = null, color2 = null, color3 = null, isflex, withoutP }) => (
-        <div style={{ fontFamily: 'SpoqaHanSansNeoMedium', lineHeight: '1.4', marginTop: marginTop }}>
-            <div style={{ fontFamily: 'SpoqaHanSansNeoBold', fontSize: '2.825rem' }}>
+        <div style={{ lineHeight: '1.4', marginTop: marginTop }}>
+            <div style={{ fontSize: '2.825rem' }}>
                 <span style={{ color: '#a67c52', marginRight: '0.4rem' }}>{number}</span>
                 <span style={{ color: '#ccc2b6' }}>{title}</span>
             </div>
@@ -34,8 +34,8 @@ const EsportsStructure = () => {
     )
 
     const LongItem = ({ number = "4.", title = "메뉴", marginTop, text = "결과 : 경기결과 확인 가능", text2 = "팔레이 : 팔레이(다폴더) 리스트 확인 가능", text3 = "내베팅 : 상세한 베팅내역 확인 가능  ", text4 = "베팅규정 : 베팅규정 확인 가능" }) => (
-        <div style={{ fontFamily: 'SpoqaHanSansNeoMedium', lineHeight: '1.4', marginTop: marginTop, fontSize: '2.625rem' }}>
-            <div style={{ fontFamily: 'SpoqaHanSansNeoBold', fontSize: '2.825rem' }}>
+        <div style={{  lineHeight: '1.4', marginTop: marginTop, fontSize: '2.625rem' }}>
+            <div style={{  fontSize: '2.825rem' }}>
                 <span style={{ color: '#a67c52', marginRight: '0.4rem' }}>{number}</span>
                 <span style={{ color: '#ccc2b6' }}>{title}</span>
             </div>
@@ -54,8 +54,8 @@ const EsportsStructure = () => {
         </div>
     )
     const LongItem2 = ({ number = "8.", title = "메뉴", marginTop, text = "내베팅 : 상세한 베팅내역 확인 가능", text2 = "팔레이 : 팔레이(다폴더) 리스트 확인 가능", marginBottom }) => (
-        <div style={{ fontFamily: 'SpoqaHanSansNeoMedium', lineHeight: '1.4', marginTop: marginTop, fontSize: '2.625rem', marginBottom: marginBottom }}>
-            <div style={{ fontFamily: 'SpoqaHanSansNeoBold', fontSize: '2.825rem' }}>
+        <div style={{  lineHeight: '1.4', marginTop: marginTop, fontSize: '2.625rem', marginBottom: marginBottom }}>
+            <div style={{  fontSize: '2.825rem' }}>
                 <span style={{ color: '#a67c52', marginRight: '0.4rem' }}>{number}</span>
                 <span style={{ color: '#ccc2b6' }}>{title}</span>
             </div>

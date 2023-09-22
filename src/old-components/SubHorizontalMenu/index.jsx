@@ -64,7 +64,7 @@ const SubHorizontalMenu = ({
                     >
                         <img style={{ width: imageWidth, marginTop: '0.6rem', WebkitUserDrag: "none", MozUserDrag: "none", userDrag: "none", height: '6.5rem' }} className="ml-2px w-10 object-contain" src={item.icon} alt="" />
                         <div style={{ marginTop: '-0.45rem', height: '4.2rem' }} className='h-28 flex-shrink-0'>
-                            <span className={`text-4xl font-spoqaMedium tracking-tight text-gray-r7b7b7b ${item.custom}`} >{item.text}</span>
+                            <span className={`text-4xl tracking-tight text-gray-r7b7b7b ${item.custom}`} >{item.text}</span>
                         </div>
                     </div>
                 </button>

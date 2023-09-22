@@ -30,16 +30,16 @@ const AnnouncementView = () => {
                         <div className='sflex w-full justify-center'>
                             <div
                                 style={{
-                                    backgroundColor: "#41b06c", fontSize: '2.4375rem', padding: '0.8rem 1.73rem', height: '4.5rem', marginTop: '0.65rem', letterSpacing: '-0.07rem', width: 'fit-content', color: '#ffffff', fontFamily: 'SpoqaHanSansNeoMedium', borderRadius: '3rem',
+                                    backgroundColor: "#41b06c", fontSize: '2.4375rem', padding: '0.8rem 1.73rem', height: '4.5rem', marginTop: '0.65rem', letterSpacing: '-0.07rem', width: 'fit-content', color: '#ffffff', borderRadius: '3rem',
                                     overflow: 'hidden',
                                     lineHeight: '3.3rem',
                                 }}
-                                className="announcementView4 rounded-full flex items-center justify-center font-spoqaMedium tracking-tight text-white"
+                                className="announcementView4 rounded-full flex items-center justify-center  tracking-tight text-white"
                             >
                                 스포츠
                             </div>
                         </div>
-                        <div style={{ color: '#c8c8c8', fontFamily: 'SpoqaHanSansNeoMedium', fontSize: '3rem', letterSpacing: '-0.07rem', marginLeft: '0.2rem' }} className="announcementView5 flex justify-center text-5xl w-full font-spoqaMedium tracking-tight text-gray-r454545">
+                        <div style={{ color: '#c8c8c8', fontSize: '3rem', letterSpacing: '-0.07rem', marginLeft: '0.2rem' }} className="announcementView5 flex justify-center text-5xl w-full  tracking-tight text-gray-r454545">
                             농구[쿼터]/배구[세트] 스페셜 규정
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const AnnouncementView = () => {
                         <img className="h-12 object-contain" src={WinnerLogo} alt="" />
                         <div className='announcementView7 flex mt-5'>
                             <div style={{ backgroundColor: '#555555' }} className='announcementView8 bg-gray-dddddd'></div>
-                            <p style={{ color: '#7b7b7b' }} className="text-gray-r7b7b7b tracking-tight -mt-1 font-spoqa">2021.06.28</p>
+                            <p style={{ color: '#7b7b7b' }} className="text-gray-r7b7b7b tracking-tight -mt-1 ">2021.06.28</p>
                         </div>
                     </div>
 
@@ -110,14 +110,14 @@ const AnnouncementView = () => {
 
             <div style={{ margin: '2.4rem 1.86rem', paddingBottom: '19.225rem' }}>
                 <button style={{ height: '7.3125rem', padding: '0.1875rem', fontSize: '2.8125rem', marginRight: '0.75rem', width: '24.125rem', background: 'linear-gradient(to top, #4d3c0a, #9c7b4a 50%, #e7b786)', borderRadius: '1rem' }} className="hover shadow-to-box">
-                    <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #80603f, #936e48 50%, #a57b52)', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily: 'SpoqaHanSansNeoMedium' }}>
+                    <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #80603f, #936e48 50%, #a57b52)', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <span className="shadow-to-text" style={{ color: '#ffdfbd', marginLeft: '', display: 'flex', marginTop: '0.2rem' }}>
                             이전
                         </span>
                     </div>
                 </button>
                 <button style={{ height: '7.3125rem', padding: '0.1875rem', fontSize: '2.8125rem', marginRight: '0.75rem', width: '24.125rem', background: 'linear-gradient(to top, #4d3c0a, #9c7b4a 50%, #e7b786)', borderRadius: '1rem' }} className="hover shadow-to-box" onClick={() => navigate('/cscenter/all/announcement')}>
-                    <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #80603f, #936e48 50%, #a57b52)', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily: 'SpoqaHanSansNeoMedium' }}>
+                    <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #80603f, #936e48 50%, #a57b52)', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <span className="shadow-to-text" style={{ color: '#ffdfbd', marginLeft: '', display: 'flex', marginTop: '0.2rem' }}>
                             목록보기
                         </span>
@@ -125,7 +125,7 @@ const AnnouncementView = () => {
                 </button>
 
                 <button style={{ height: '7.3125rem', padding: '0.1875rem', fontSize: '2.8125rem', width: '24.125rem', background: 'linear-gradient(to top, #4d3c0a, #9c7b4a 50%, #e7b786)', borderRadius: '1rem' }} className="hover shadow-to-box">
-                    <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #80603f, #936e48 50%, #a57b52)', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily: 'SpoqaHanSansNeoMedium' }}>
+                    <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #80603f, #936e48 50%, #a57b52)', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <span className="shadow-to-text" style={{ color: '#ffdfbd', marginLeft: '', display: 'flex', marginTop: '0.2rem' }}>
                             다음
                         </span>

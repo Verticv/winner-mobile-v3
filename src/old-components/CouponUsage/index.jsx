@@ -785,8 +785,8 @@ const HistoryMenu = ({
                     className={`${isActive
                         ? "bg-blue-r0056a6"
                         : "bg-white border border-gray-b7b7b7"
-                        } w-1/2 rounded-full font-spoqaMedium`}
-                    style={{ background: isActive ? '#826140' : '#1e1e1e', fontFamily: 'SpoqaHanSansNeoMedium', color: isActive ? '#ffdfbd' : '#ccc2b6', width: '49.2%', borderRadius: '4rem', marginTop: '1rem', height: '6.375rem', fontSize: '2.8125rem', marginRight: `${!index ? '1.15rem' : ''}`, border: `${pathname !== item.path && !isActive ? '0.1875rem solid #555555' : ''}`, letterSpacing: '-0.07rem' }}
+                        } w-1/2 rounded-full`}
+                    style={{ background: isActive ? '#826140' : '#1e1e1e', color: isActive ? '#ffdfbd' : '#ccc2b6', width: '49.2%', borderRadius: '4rem', marginTop: '1rem', height: '6.375rem', fontSize: '2.8125rem', marginRight: `${!index ? '1.15rem' : ''}`, border: `${pathname !== item.path && !isActive ? '0.1875rem solid #555555' : ''}`, letterSpacing: '-0.07rem' }}
                     key={item.id}
 
                     onPointerDown={() => setHover(item.id)}
@@ -847,10 +847,10 @@ const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
         return (
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: "2.6rem" }}>
                 <div style={{
-                    fontSize: '2.625rem', color: '#c8c8c8', fontFamily: 'SpoqaHanSansNeoMedium', marginLeft: '0rem', letterSpacing: '-0.15rem'
+                    fontSize: '2.625rem', color: '#c8c8c8', marginLeft: '0rem', letterSpacing: '-0.15rem'
                 }}>
                     <span>{text} </span>
-                    <span style={{ color: numberColor, fontFamily: 'RobotoBold' }}>{number}</span>
+                    <span style={{ color: numberColor }}>{number}</span>
                     <span>장</span>
                 </div>
             </div>
@@ -1004,9 +1004,9 @@ const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
                     isCoupon
                     isGift
                 />
-                <div style={{ marginBottom: '2.9375rem', fontFamily: 'SpoqaHanSansNeoMedium', textAlign: 'center', letterSpacing: '-0.07rem', color: '#c8c8c8', marginTop: '3.7rem' }} className='mt-4'>
-                    <p className='font-spoqaMedium text-gray-r7c7c7c text-center' style={{ fontSize: '2.625rem' }}>
-                        <span className='text-blue-r0056a6 font-spoqaBold' style={{ fontFamily: 'SpoqaHanSansNeoBold', color: '#4c98ff' }}>쿠폰선물하기</span> 버튼을 클릭하여 쿠폰받을 회원을 선택하세요.
+                <div style={{ marginBottom: '2.9375rem', textAlign: 'center', letterSpacing: '-0.07rem', color: '#c8c8c8', marginTop: '3.7rem' }} className='mt-4'>
+                    <p className='text-gray-r7c7c7c text-center' style={{ fontSize: '2.625rem' }}>
+                        <span className='text-blue-r0056a6' style={{ color: '#4c98ff' }}>쿠폰선물하기</span> 버튼을 클릭하여 쿠폰받을 회원을 선택하세요.
                     </p>
                 </div>
                 <div className="popup-style">
