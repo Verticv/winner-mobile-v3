@@ -392,24 +392,24 @@ const SpeedKinoRoundResult = () => {
                 />
             </Routes>
             {/* <Route exact path="/minigame/speedkino">
-                <div className="font-spoqaMedium tracking-tight text-gray-r454545 mt-8">
+                <div className=" tracking-tight text-gray-r454545 mt-8">
                     <div style={{fontSize: '2.25rem'}} className='flex w-full'>
                         <div style={{height: '5.25rem', marginRight:'0.1875rem', borderTopLeftRadius: '0.625rem', borderBottomLeftRadius: '0.625rem'}} className="flex w-1/2 justify-center items-center bg-gray-efefef">회차</div>
                         <div style={{height: '5.25rem'}} className="flex w-1/2 justify-center items-center bg-gray-efefef">홀/짝</div>
                     </div>
                 </div>
-                <div className="w-full text-585858 text-14px tracking-tight font-spoqaMedium">
+                <div className="w-full text-585858 text-14px tracking-tight ">
                     <Cells items={array} />
                 </div>
             </Route>
             <Route path="/minigame/speedkino/sum">
-                <div className="font-spoqaMedium tracking-tight text-gray-r454545 mt-8">
+                <div className=" tracking-tight text-gray-r454545 mt-8">
                     <div style={{fontSize: '2.25rem'}} className='flex w-full'>
                         <div style={{height: '5.25rem', marginRight:'0.1875rem', borderTopLeftRadius: '0.625rem', borderBottomLeftRadius: '0.625rem'}} className="flex w-1/2 justify-center items-center bg-gray-efefef">회차</div>
                         <div style={{height: '5.25rem'}} className="flex w-1/2 justify-center items-center bg-gray-efefef">언오버</div>
                     </div>
                 </div>
-                <div className="w-full text-585858 text-14px tracking-tight font-spoqaMedium">
+                <div className="w-full text-585858 text-14px tracking-tight ">
                     <Cells items={array1} />
                 </div>
             </Route> */}

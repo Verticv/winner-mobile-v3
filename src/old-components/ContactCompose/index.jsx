@@ -26,7 +26,7 @@ const ContactCompose = () => {
                             }} className="flex h-full bg-white rounded-2xl border border-gray-dddddd group">
                                 <div
                                     style={{ width: '26.25rem' }}
-                                    className="flex w-full text-gray-r393e41 font-spoqaMedium outline-none rounded-2xl  border-gray-dddddd h-full justify-between items-center tracking-tight dddd"
+                                    className="flex w-full text-gray-r393e41  outline-none rounded-2xl  border-gray-dddddd h-full justify-between items-center tracking-tight dddd"
                                 >
                                     <Dropdown labelClasses="group-hover:text-black" labelStyle={{ marginLeft: '1.6875rem', fontSize: '2.8125rem' }} options={carrierOptions} isContact={true}>
                                         <img style={{ width: '1.5625rem', height: '1rem', marginTop: '-0.3rem' }} className="w-10px h-6px object-contain" src={DownArrowIcon} alt="arrow" />
@@ -38,7 +38,7 @@ const ContactCompose = () => {
 
                         <div style={{ height: '9.1875rem', borderBottomWidth: '0.1875rem', paddingLeft: '2.4875rem', borderBottom: '0.1875rem solid #252525' }} className="w-full text-5xl bg-white border-b border-gray-dddddd">
                             <input
-                                className="bg-white outline-none w-full h-full font-spoqa tracking-tight place-color-grey-1"
+                                className="bg-white outline-none w-full h-full  tracking-tight place-color-grey-1"
                                 placeholder="제목을 입력하세요."
                                 onFocus={() => {
                                     const menu = document.querySelector('#main-menu');
@@ -57,7 +57,7 @@ const ContactCompose = () => {
                         <div className="textarea-container">
                             <textarea
                                 style={{ resize: "none", wordBreak: "keep-all" }}
-                                className="outline-none w-full h-full font-spoqa tracking-tight placeholder-gray-r454545 place-color-grey-1"
+                                className="outline-none w-full h-full  tracking-tight placeholder-gray-r454545 place-color-grey-1"
                                 placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제 되며 사이트 이용에 제한을 받을 수 있습니다."
                             />
                         </div>
@@ -68,12 +68,12 @@ const ContactCompose = () => {
                 {/* <div style={{ marginTop: '3.75rem', marginBottom: '14rem', fontSize: '2.8125rem' }} className="flex w-full items-center justify-center">
                     <button style={{ height: '7.3125rem', padding: '1px' }} className="flex items-center justify-center w-1/2 mr-4 rounded-2xl bg-blue-r0070d9">
                         <div className="flex items-center justify-center w-full h-full bg-black rounded-2xl border border-blue-r3ba3fc bg-gradient-to-b from-blue-r1491fc via-blue-r0e84ed to-blue-r0675db cursor-pointer">
-                            <span className="font-spoqaMedium tracking-tight text-white">신청하기</span>
+                            <span className=" tracking-tight text-white">신청하기</span>
                         </div>
                     </button>
                     <button style={{ height: '7.3125rem', padding: '1px', fontSize: '2.8125rem' }} className="flex items-center justify-center w-1/2 rounded-2xl bg-gray-r171a1d">
                         <div className="flex items-center justify-center w-full h-full rounded-2xl border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
-                            <span className="font-spoqaMedium tracking-tight text-white">취소하기</span>
+                            <span className=" tracking-tight text-white">취소하기</span>
                         </div>
                     </button>
                 </div> */}

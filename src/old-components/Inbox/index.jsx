@@ -137,9 +137,9 @@ const Inbox = ({ activeButton, setActiveButton }) => {
     const CouponTitle = ({ text = '사용 가능한 쿠폰', number = '10', numberColor = '#e65454', endText = '장' }) => {
         return (
             <div className="flex items-center space-x-20px coupon-title">
-                <div style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem', fontFamily: 'SpoqaHanSansNeoMedium' }} className="font-spoqaMedium tracking-tight text-gray-r8c8c8c">
+                <div style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem' }} className=" tracking-tight text-gray-r8c8c8c">
                     <span>{text} </span>
-                    <span style={{ color: numberColor, fontFamily: 'RobotoBold' }} className="font-robotoBold">{number}</span>
+                    <span style={{ color: numberColor }} className="font-robotoBold">{number}</span>
                     <span>{endText}&nbsp;</span>
                 </div>
             </div>
@@ -190,11 +190,10 @@ const Inbox = ({ activeButton, setActiveButton }) => {
                                 display: 'flex',
                                 justifyContent: 'center',
                                 alignItems: 'center',
-                                fontFamily: 'SpoqaHanSansNeoMedium',
                             }}
                             className="flex items-center justify-center h-full w-full rounded-2xl border border-gray-r737579 cursor-pointer"
                         >
-                            <span style={{ fontSize: '2.8125rem', marginTop: '0.2rem', letterSpacing: '-0.07rem', color: '#ffdfbd' }} className="shadow-to-text font-spoqaMedium tracking-tight text-14px text-white mb-2">{isAllSelected ? "선택해제" : "전체선택"}</span>
+                            <span style={{ fontSize: '2.8125rem', marginTop: '0.2rem', letterSpacing: '-0.07rem', color: '#ffdfbd' }} className="shadow-to-text  tracking-tight text-14px text-white mb-2">{isAllSelected ? "선택해제" : "전체선택"}</span>
                         </div>
                     </button>
                     <button
@@ -218,11 +217,10 @@ const Inbox = ({ activeButton, setActiveButton }) => {
                                 display: 'flex',
                                 justifyContent: 'center',
                                 alignItems: 'center',
-                                fontFamily: 'SpoqaHanSansNeoMedium',
                             }}
                             className="flex items-center justify-center h-full w-full rounded-2xl border border-red-f36576 cursor-pointer"
                         >
-                            <span style={{ fontSize: '2.8125rem', color: '#ffd2d2', marginTop: '0.2rem', letterSpacing: '-0.07rem' }} className="shadow-to-text font-spoqaMedium tracking-tight text-14px text-white pb-2">선택삭제</span>
+                            <span style={{ fontSize: '2.8125rem', color: '#ffd2d2', marginTop: '0.2rem', letterSpacing: '-0.07rem' }} className="shadow-to-text  tracking-tight text-14px text-white pb-2">선택삭제</span>
                         </div>
                     </button>
                     <button
@@ -247,11 +245,10 @@ const Inbox = ({ activeButton, setActiveButton }) => {
                                 display: 'flex',
                                 justifyContent: 'center',
                                 alignItems: 'center',
-                                fontFamily: 'SpoqaHanSansNeoMedium',
                             }}
                             className="flex items-center justify-center h-full w-full rounded-2xl border border-blue-r3ba3fc bg-gradient-to-b from-blue-r1491fc via-blue-r0e84ed to-blue-r0675db"
                         >
-                            <span style={{ fontSize: '2.8125rem', color: '#d6f3ff', marginTop: '0.2rem', letterSpacing: '-0.07rem' }} className="shadow-to-text font-spoqaMedium tracking-tight text-14px text-white pb-2">전체읽음처리</span>
+                            <span style={{ fontSize: '2.8125rem', color: '#d6f3ff', marginTop: '0.2rem', letterSpacing: '-0.07rem' }} className="shadow-to-text  tracking-tight text-14px text-white pb-2">전체읽음처리</span>
                         </div>
                     </button>
                 </div >

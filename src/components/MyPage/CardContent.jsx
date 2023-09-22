@@ -54,25 +54,25 @@ const CardContent = ({
                     )}
                     <div>
                         {showBetNumber && (
-                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.375rem', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.07rem', color: '#666666' }}><span style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#444444' }}>베팅번호 :</span> 1891241599</div>
+                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.375rem', letterSpacing: '-0.07rem', color: '#666666' }}><span style={{ fontSize: '2.625rem', color: '#444444' }}>베팅번호 :</span> 1891241599</div>
                         )}
-                        <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.25rem', fontFamily: 'SpoqaHanSansNeo', color: '#666666', letterSpacing: '-0.07rem' }}><span style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem', color: '#444444' }}>베팅시간 :</span>{time}</div>
+                        <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.25rem', color: '#666666', letterSpacing: '-0.07rem' }}><span style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem', color: '#444444' }}>베팅시간 :</span>{time}</div>
                         {hasHistory && (
-                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.375rem', fontFamily: 'SpoqaHanSansNeo', color: '#666666' }}><span style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#444444' }}>베팅내역 :</span>{hasHistory}</div>
+                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.375rem', color: '#666666' }}><span style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem', color: '#444444' }}>베팅내역 :</span>{hasHistory}</div>
                         )}
-                        <div style={{ marginBottom: '0.36rem', display: 'flex', letterSpacing: '-0.07rem', fontFamily: 'SpoqaHanSansNeo', color: '#666666' }} className='flex'>
-                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginRight: '3.8125rem', fontFamily: 'SpoqaHanSansNeo' }}><span style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#444444' }}>베팅금액 :</span> 5,000</div>
-                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeo' }}><span style={{ fontSize: '2.625rem', color: '#444444', fontFamily: 'SpoqaHanSansNeoMedium' }}>배당률 :</span> 4.34</div>
+                        <div style={{ marginBottom: '0.36rem', display: 'flex', letterSpacing: '-0.07rem', color: '#666666' }} className='flex'>
+                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginRight: '3.8125rem' }}><span style={{ fontSize: '2.625rem', color: '#444444' }}>베팅금액 :</span> 5,000</div>
+                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem' }}><span style={{ fontSize: '2.625rem', color: '#444444' }}>배당률 :</span> 4.34</div>
                         </div>
                         {isPopup ? (
                             <>
-                                <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginRight: '3.8125rem', marginBottom: '0.375rem', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.07rem', color: '#666666' }}><span style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#444444' }}>예상적중금액 :</span> 20,000</div>
-                                <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.07rem', marginBottom: '0.89rem' }}><span style={{ fontSize: '2.625rem', color: '#444444', fontFamily: 'SpoqaHanSansNeoMedium' }}>당첨금 :</span> <span style={{ color: winAmount.includes("+") ? '#e65454' : '#666666' }}>{winAmount}</span></div>
+                                <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginRight: '3.8125rem', marginBottom: '0.375rem', letterSpacing: '-0.07rem', color: '#666666' }}><span style={{ fontSize: '2.625rem', color: '#444444' }}>예상적중금액 :</span> 20,000</div>
+                                <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', letterSpacing: '-0.07rem', marginBottom: '0.89rem' }}><span style={{ fontSize: '2.625rem', color: '#444444' }}>당첨금 :</span> <span style={{ color: winAmount.includes("+") ? '#e65454' : '#666666' }}>{winAmount}</span></div>
                             </>
                         ) : (
-                            <div className='flex' style={{ display: 'flex', letterSpacing: '-0.07rem', fontFamily: 'SpoqaHanSansNeo' }}>
-                                <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginRight: '3.8125rem', fontFamily: 'SpoqaHanSansNeo', color: '#666666' }}><span style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#444444' }}>예상적중금액 :</span> 20,000</div>
-                                <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeo', color: '#666666' }}><span style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#444444' }}>당첨금 :</span> <span style={{ color: winAmount.includes("+") ? '#e65454' : '#666666' }}>{winAmount}</span></div>
+                            <div className='flex' style={{ display: 'flex', letterSpacing: '-0.07rem' }}>
+                                <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginRight: '3.8125rem', color: '#666666' }}><span style={{ fontSize: '2.625rem', color: '#444444' }}>예상적중금액 :</span> 20,000</div>
+                                <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', color: '#666666' }}><span style={{ fontSize: '2.625rem', color: '#444444' }}>당첨금 :</span> <span style={{ color: winAmount.includes("+") ? '#e65454' : '#666666' }}>{winAmount}</span></div>
                             </div>
                         )}
 

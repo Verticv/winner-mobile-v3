@@ -110,7 +110,7 @@ const BoardComposeViewPanel = ({
     return (
         <>
             <div style={{ background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.6)', padding: '0.1875rem', borderRadius: '1.3rem' }}>
-                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', background: '#323232' }} className="shadow-subNavbar">
+                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#323232' }} className="shadow-subNavbar">
                     <TableHeader />
                     <div style={{ padding: '0 0.9rem' }} className="w-full">
                         <div className="w-full rounded-lg">
@@ -136,7 +136,7 @@ const BoardComposeViewPanel = ({
                 </div>
             </div>
             <div style={{ background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.6)', padding: '0.1875rem', borderRadius: '1.3rem', marginTop: '2.3rem' }}>
-                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', background: '#323232' }} className="shadow-subNavbar">
+                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#323232' }} className="shadow-subNavbar">
                     <TableHeader smallCard />
                     <div style={{ padding: '0 1rem' }} className="w-full">
                         <div className="w-full rounded-lg">
@@ -179,7 +179,7 @@ const BoardComposeViewPanel = ({
                 </div>
             </div>
             <div style={{ background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.6)', padding: '0.1875rem', borderRadius: '1.3rem', marginTop: '2.3rem' }}>
-                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', background: '#323232' }} className="shadow-subNavbar">
+                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#323232' }} className="shadow-subNavbar">
                     <TableHeader />
                     <div style={{ padding: '0 1rem' }} className="w-full">
                         <div className="w-full rounded-lg">

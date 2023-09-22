@@ -21,9 +21,9 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
             {/* BREAK */}
             <div style={{ padding: '11.75rem 0', paddingBottom: '8.4375rem' }} className="w-full h-full flex flex-col items-center">
 
-                <div style={{ fontSize: '2.625rem', marginBottom: '5.625rem' }} className="flex text-gray-text flex-col items-center justify-center font-spoqaMedium">
+                <div style={{ fontSize: '2.625rem', marginBottom: '5.625rem' }} className="flex text-gray-text flex-col items-center justify-center">
                     <div className="flex items-center h-14">
-                        <span className="text-blue-gradLight font-spoqaBold">louie3</span>
+                        <span className="text-blue-gradLight">louie3</span>
                         <span>님의 회원정보를 수정합니다.</span>
                     </div>
                     <div className="flex items-center h-14">비밀번호를 다시 입력해 주세요.</div>
@@ -32,7 +32,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                 <div style={{ width: '54rem', marginBottom: '5.3125rem' }}>
                     <div
                         style={{ paddingBottom: '1.625rem' }}
-                        className="w-full text-5xl text-center text-gray-text outline-none font-spoqaMedium tracking-tight placeholder-gray-bebebe tracking-mimus05"
+                        className="w-full text-5xl text-center text-gray-text outline-none tracking-tight placeholder-gray-bebebe tracking-mimus05"
                         onFocus={(e) => {
                             e.target.placeholder = ""
                             setSelectedInput(0)
@@ -49,7 +49,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                 <div style={{ width: '54rem', marginBottom: '3.6875rem' }}>
                     <input
                         style={{ paddingBottom: '1.625rem' }}
-                        className="w-full text-5xl text-center outline-none font-spoqaMedium tracking-tight place-color-grey-2 placeholder-gray-bebebe tracking-mimus05"
+                        className="w-full text-5xl text-center outline-none tracking-tight place-color-grey-2 placeholder-gray-bebebe tracking-mimus05"
                         placeholder={"비밀번호"}
                         type="password"
                         onFocus={(e) => {
@@ -68,7 +68,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                 <div style={{ width: '54rem' }}>
                     <button
                         style={{ height: '8.4375rem', fontSize: '3rem', borderRadius: '0.5625rem' }}
-                        className="w-full rounded-2xl bg-gradient-to-r from-blue-gradLight to-blue-gradDark font-spoqaMedium text-white hover:opacity-75"
+                        className="w-full rounded-2xl bg-gradient-to-r from-blue-gradLight to-blue-gradDark text-white hover:opacity-75"
                         onClick={() => {
                             navigate("/mypage/edit-info")
                             setSelectedTab("/mypage/edit-info")

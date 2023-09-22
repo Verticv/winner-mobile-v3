@@ -286,7 +286,7 @@ const MinigamesRightPanel = ({
                 }}
                 className="content-RP1 shadow-to-box"
             >
-                <div style={{ fontSize: "2.625rem", fontFamily: 'SpoqaHanSansNeoMedium' }} className="content-RP2">
+                <div style={{ fontSize: "2.625rem" }} className="content-RP2">
                     <p
                         style={{ marginRight: "1.7rem", fontSize: "2.625rem", display: 'flex', alignItems: 'center' }}
                         className="content-RP3"
@@ -458,9 +458,9 @@ const MinigamesRightPanel = ({
                             {/* <div
                                 style={{ textAlign: 'center', marginLeft: '0.4rem', letterSpacing: '-0.07rem', marginTop: '-0.1rem' }}
                             >
-                                <span style={{ color: '#c8c8c8', fontSize: '1.875rem', fontFamily: 'SpoqaHanSansNeoMedium' }}>일반볼</span>
+                                <span style={{ color: '#c8c8c8', fontSize: '1.875rem' }}>일반볼</span>
                                 <br />
-                                <span style={{ color: '#4c98ff', fontSize: '2.25rem', fontFamily: 'SpoqaHanSansNeoBold' }}>
+                                <span style={{ color: '#4c98ff', fontSize: '2.25rem' }}>
 
                                     홀짝/언오버
                                 </span>
@@ -493,14 +493,14 @@ const MinigamesRightPanel = ({
 
 
                             {console.log('selectedOption', selectedOption[0])}
-                            <div style={{ width: "30rem", fontSize: '1.875rem', fontFamily: 'SpoqaHanSansNeoMedium', marginLeft: '1rem' }} className="rightpanel-content6">
+                            <div style={{ width: "30rem", fontSize: '1.875rem', marginLeft: '1rem' }} className="rightpanel-content6">
                                 {(selectedOption[0].type === "일반볼" || selectedOption[0].type === "파워볼") && (
                                     <p style={{ color: "rgb(200, 200, 200)" }} className="rightpanel-content7">{selectedOption[0].type}</p>
                                 )}
                                 {(selectedOption[0].type === "일반볼" || selectedOption[0].type === "파워볼") ? (
-                                    <p style={{ color: "#4c98ff", fontSize: '2.25rem', fontFamily: 'SpoqaHanSansNeoBold' }} className="rightpanel-content8">{selectedOption[0].name}</p>
+                                    <p style={{ color: "#4c98ff", fontSize: '2.25rem' }} className="rightpanel-content8">{selectedOption[0].name}</p>
                                 ) : (
-                                    <p style={{ color: "#4c98ff", fontSize: '2.25rem', fontFamily: 'SpoqaHanSansNeoBold' }} className="rightpanel-content9">{selectedOption[0].name}</p>
+                                    <p style={{ color: "#4c98ff", fontSize: '2.25rem' }} className="rightpanel-content9">{selectedOption[0].name}</p>
                                 )}
                             </div>
                             <div style={{ width: "16rem", marginTop: '-0.4rem'}} className="rightpanel-content10">

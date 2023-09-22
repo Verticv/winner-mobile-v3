@@ -259,7 +259,7 @@ const BetCombinationRightPanelCart = ({ addedCard, setAddedCard }) => {
             <div style={{ height: '5.75rem', paddingLeft: '3.4rem', paddingRight: '2rem', fontSize: '2.625rem', borderBottom: '0.1875rem solid #1e1e1e', background: '#323232' }} className="content-cart15">
                 <p className="content-cart16">베팅금액</p>
                 <input
-                    style={{ color: "#d52e2e", fontFamily: '2.625rem', width: "36.875rem", height: "4.8125rem", backgroundColor: "#1a1a1a", border: '0.1875rem solid #404040' }}
+                    style={{ color: "#d52e2e", width: "36.875rem", height: "4.8125rem", backgroundColor: "#1a1a1a", border: '0.1875rem solid #404040' }}
                     className="content-cart17"
                     placeholder="0"
                     value={nf.format(inputValue)}

@@ -32,7 +32,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
 
     const Title = ({ text }) => (
         <div style={{ width: "21rem", marginRight: '1.7rem', background: '#9b6bd4', flexShrink: '0', borderRadius: '0.5rem' }} className="form-Title">
-            <div style={{ fontSize: '2.8125rem', color: '#ffffff', fontFamily: 'SpoqaHanSansNeoMedium', padding: '1.6rem 0 0 1.1rem', letterSpacing: '-0.25rem' }} className="text-gray-r454545 font-spoqaMedium">{text}</div>
+            <div style={{ fontSize: '2.8125rem', color: '#ffffff', padding: '1.6rem 0 0 1.1rem', letterSpacing: '-0.25rem' }} className="text-gray-r454545">{text}</div>
         </div>
     )
 
@@ -40,7 +40,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
 
 
     return (
-        <div style={{ padding: '1.875rem', paddingTop: '0.9rem', fontFamily: 'SpoqaHanSansNeoMedium' }}>
+        <div style={{ padding: '1.875rem', paddingTop: '0.9rem' }}>
 
             <WarningMessage
                 title='확인 / 필독사항'
@@ -59,7 +59,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                     <div style={{ padding: '1.43rem 1.9rem 1rem 1.82rem', background: 'linear-gradient(to right, #9d3bbb, #5423a0)', borderRadius: '0.5rem' }} className="w-full rounded-2xl border border-gray-dddddd bg-gray-f9f9f9">
                         <div
                             style={{ fontSize: '2.8125rem', color: '#ffffff', marginLeft: '-0.2rem' }}
-                            className="font-spoqaMedium tracking-tight text-gray-r393e41 flex items-center"
+                            className="tracking-tight text-gray-r393e41 flex items-center"
                         >
                             입금 계좌 정보 확인
                         </div>
@@ -74,35 +74,35 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                                 className="m-auto flex items-center justify-center rounded-2xl hover:opacity-75 hover"
                             >
                                 <div style={{ borderColor: "#ff8f63" }} className="w-full h-full flex items-center justify-center rounded-2xl border border-blue-r3ba3fc bg-gradient-to-b from-orange-ff7a45 via-orange-f56032 to-orange-e9441d cursor-pointer">
-                                    <span style={{ fontSize: '2.8125rem', color: '#ffffff', display: 'inline-block', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem', marginTop: '0.2rem',textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)" }} className="font-spoqaMedium tracking-tight text-white">계좌번호 신청</span>
+                                    <span style={{ fontSize: '2.8125rem', color: '#ffffff', display: 'inline-block', letterSpacing: '-0.07rem', marginTop: '0.2rem',textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)" }} className="tracking-tight text-white">계좌번호 신청</span>
                                 </div>
                             </button>
 
                         </div>
 
-                        <div style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeo', color: '#c8c8c8', letterSpacing: '-0.07rem' }}>
+                        <div style={{ fontSize: '2.625rem', color: '#c8c8c8', letterSpacing: '-0.07rem' }}>
                             <div style={{ display: 'flex', alignItems: 'center', lineHeight: '1.45' }}>
                                 <div style={{ minWidth: '9.7rem', marginTop: '-3.6rem', marginLeft: '-0.1rem' }}>
                                     <img style={{ width: '7.9375rem' }} src={Step1} alt="" />
                                 </div>
-                                <div style={{ fontFamily: 'SpoqaHanSansNeo', color: '#eeeeee', marginRight: '2rem' }}>
-                                    위 <span className="font-spoqaBold text-gray-r454545 ml-3px" style={{ fontFamily: 'SpoqaHanSansNeoBold', color: '#fee300' }}>계좌번호 신청</span>버튼을 누르시면 계좌번호가 쪽지로 발송됩니다.
+                                <div style={{ color: '#eeeeee', marginRight: '2rem' }}>
+                                    위 <span className=" text-gray-r454545 ml-3px" style={{ color: '#fee300' }}>계좌번호 신청</span>버튼을 누르시면 계좌번호가 쪽지로 발송됩니다.
                                 </div>
                             </div>
                             <div style={{ marginTop: '0.6875rem', display: 'flex', alignItems: 'center', lineHeight: '1.45' }}>
                                 <div style={{ minWidth: '9.7rem', marginTop: '', marginLeft: '-0.1rem' }}>
                                     <img style={{ width: '7.9375rem', height: 'auto' }} src={Step2} alt="" />
                                 </div>
-                                <div className="font-spoqa" style={{ marginTop: '-0.2rem', color: '#eeeeee' }}>안내받은 계좌번호로 선입금 해주세요.</div>
+                                <div className="" style={{ marginTop: '-0.2rem', color: '#eeeeee' }}>안내받은 계좌번호로 선입금 해주세요.</div>
                             </div>
                             <div style={{ marginTop: '0.6875rem', display: 'flex', alignItems: 'center' }}>
                                 <div style={{ minWidth: '9.7rem', marginTop: '-4.1rem', marginLeft: '-0.1rem' }}>
                                     <img style={{ width: '7.9375rem', height: 'auto' }} src={Step3} alt="" />
                                 </div>
-                                <div style={{ lineHeight: '1.45', marginTop: '-0.1rem', color: '#eeeeee' }} className="font-spoqa">
-                                    <span style={{ fontFamily: 'SpoqaHanSansNeoBold', color: '#fee300' }}>충전금액 입력</span>
+                                <div style={{ lineHeight: '1.45', marginTop: '-0.1rem', color: '#eeeeee' }} className="">
+                                    <span style={{ color: '#fee300' }}>충전금액 입력</span>
                                     란에 실제 입금하신 금액과 동일한 금액을 입력하고
-                                    <span style={{ fontFamily: 'SpoqaHanSansNeoBold', color: '#fee300' }}> 신청하기 </span>
+                                    <span style={{ color: '#fee300' }}> 신청하기 </span>
                                     버튼을 눌러주세요.
                                 </div>
                             </div>
@@ -117,7 +117,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                             <Title text="현재 보유머니" />
                             <div className="lable-or-input">
                                 <div style={{ fontSize: '2.625rem' }}>
-                                    <span className="font-robotoBold text-red-e9441d" style={{ color: '#f04281', fontFamily: 'RobotoBold' }}>487,240</span>
+                                    <span className="font-robotoBold text-red-e9441d" style={{ color: '#f04281' }}>487,240</span>
                                 </div>
                                 <div style={{ height: '0.1875rem', marginTop: '0.9375rem', background:"#e2e2e2" }}></div>
                             </div>
@@ -246,7 +246,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                             <Title text="보너스 금액" />
                             <div className="lable-or-input">
                                 <div style={{ fontSize: '2.625rem' }}>
-                                    <span style={{ color: '#4c98ff', fontFamily: 'RobotoBold', letterSpacing: '-0.03rem' }}>100,000,000</span>
+                                    <span style={{ color: '#4c98ff', letterSpacing: '-0.03rem' }}>100,000,000</span>
                                 </div>
                                 <div style={{ height: '0.1875rem', marginTop: '0.9375rem', background: "#e2e2e2" }} className="w-full bg-gray-bebebe"></div>
                             </div>
@@ -258,7 +258,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                             <div style={{ width: '3.6rem', marginTop: '-3rem', marginRight: '1rem' }}>
                                 <img src={info} alt="" style={{ width: '2.8125rem' }} />
                             </div>
-                            <p style={{ margin: '0', color: '#666666', fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.07rem', marginRight: '1rem' }}>
+                            <p style={{ margin: '0', color: '#666666', fontSize: '2.625rem', letterSpacing: '-0.07rem', marginRight: '1rem' }}>
                                 첫 충전 보너스 머니를 받으실 경우 아래 버튼을 <span style={{ color: '#33a1e9' }}>선택</span>해 주세요.
                                 보너스를 받지 않을 경우 <span style={{ color: '#f04281' }}>받지않기 </span>버튼을 선택하세요.</p>
                         </div>
@@ -282,7 +282,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                                                 />
                                             </label>
                                         </div>
-                                        <span  style={{ fontSize: '2.625rem', color: '#ffffff', textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)", fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem', marginTop: '0.3rem' }}>슬롯게임</span>
+                                        <span  style={{ fontSize: '2.625rem', color: '#ffffff', textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)", letterSpacing: '-0.07rem', marginTop: '0.3rem' }}>슬롯게임</span>
                                     </div>
                                 </button>
 
@@ -310,7 +310,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                                                 />
                                             </label>
                                         </div>
-                                        <span style={{ fontSize: '2.625rem' , color: '#ffffff', textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)", fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem', marginTop: '0.3rem' }}>스포츠</span>
+                                        <span style={{ fontSize: '2.625rem' , color: '#ffffff', textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)", letterSpacing: '-0.07rem', marginTop: '0.3rem' }}>스포츠</span>
                                     </div>
                                 </button>
 
@@ -334,7 +334,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                                                 />
                                             </label>
                                         </div>
-                                        <span style={{ fontSize: '2.625rem', color: '#ffffff', textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)" , fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem', marginTop: '0.3rem' }}>키론가상게임</span>
+                                        <span style={{ fontSize: '2.625rem', color: '#ffffff', textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)" , letterSpacing: '-0.07rem', marginTop: '0.3rem' }}>키론가상게임</span>
                                     </div>
                                 </button>
 
@@ -360,7 +360,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                                                 />
                                             </label>
                                         </div>
-                                        <span style={{ fontSize: '2.625rem', color: '#ffffff', textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)" , fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem', marginTop: '0.3rem' }}>피싱게임</span>
+                                        <span style={{ fontSize: '2.625rem', color: '#ffffff', textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)" , letterSpacing: '-0.07rem', marginTop: '0.3rem' }}>피싱게임</span>
                                     </div>
                                 </button>
 
@@ -389,7 +389,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                                                 />
                                             </label>
                                         </div>
-                                        <span style={{ fontSize: '2.625rem', color: '#ffffff', textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)", fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem', marginTop: '0.3rem' }}>받지않기</span>
+                                        <span style={{ fontSize: '2.625rem', color: '#ffffff', textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)", letterSpacing: '-0.07rem', marginTop: '0.3rem' }}>받지않기</span>
                                     </div>
                                 </button>
 
@@ -402,7 +402,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                         <div style={{ display: 'flex', alignItems: 'center' }} >
                             <img src={AlertIcon} alt="" style={{ margin: '-0.2rem 1rem 0 0.8rem', width: '3.375rem' }} />
                             <div>
-                                <span style={{ color: '#f04281', fontSize: '2.8125rem', fontFamily: 'SpoqaHanSansNeoMedium' }}>알아두세요</span>
+                                <span style={{ color: '#f04281', fontSize: '2.8125rem' }}>알아두세요</span>
                             </div>
                         </div>
                         <div style={{ alignItems: 'flex-start', marginRight: '3.5rem', color: '#666666', fontSize: '2.625rem', lineHeight: '1.3', display: 'flex', marginTop: '2rem' }} >
@@ -423,14 +423,14 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                         className="hover"
                     >
                         <div style={{ borderColor: "#ff8f63" }} className="w-full h-full flex items-center justify-center rounded-2xl border border-blue-r3ba3fc bg-gradient-to-b from-orange-ff7a45 via-orange-f56032 to-orange-e9441d cursor-pointer">
-                            <span style={{ fontSize: '2.8125rem', color: '#ffffff', textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)",  display: 'inline-block', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem' }} >신청하기</span>
+                            <span style={{ fontSize: '2.8125rem', color: '#ffffff', textShadow: "0px 0px 15px rgba(0, 0, 0, 0.5)",  display: 'inline-block', letterSpacing: '-0.07rem' }} >신청하기</span>
                         </div>
                     </button>
                 </div>
             </div>
             <div style={{ marginTop: '4.75rem', display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                 <button style={{ background: 'linear-gradient(to right, #df52ff , #6b22ff)',boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)", width: '52rem', height: '6.5rem', borderRadius: '3.3rem', paddingTop: '0.15rem' }} className="">
-                    <span className='' style={{ color: '#ffffff', fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem' }}>은행점검시간</span>
+                    <span className='' style={{ color: '#ffffff', fontSize: '2.625rem', letterSpacing: '-0.07rem' }}>은행점검시간</span>
                 </button>
             </div>
 

@@ -13,7 +13,7 @@ const FreeBoardCompose = () => {
     const AttachButton = (
         <button
             // style={{ width: "19.3125rem", height: "6.75rem", fontSize: '2.4375rem', borderRadius: '0.5rem', backgroundColor: "#826140", color: '#ffdfbd', marginTop: '1.125rem' }}
-            // className="flex items-center justify-center rounded-2xl text-white tracking-tight font-spoqaMedium pt-1"
+            // className="flex items-center justify-center rounded-2xl text-white tracking-tight pt-1"
             className='popup-btn hover'
         >
             베팅내역첨부
