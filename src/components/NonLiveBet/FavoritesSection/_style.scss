@@ -1,0 +1,225 @@
+.favorites-section {
+  margin: 0.938rem;
+  border: 0.188rem solid #2e0450;
+  box-shadow: 0px 0px 0.75rem 0px rgba(0, 0, 0, 0.8);
+  border-radius: 1.125rem;
+  background: #420572;
+  padding: 0.563rem;
+  .category-header {
+      border-radius: 0.75rem;
+      background-color: rgb(118, 46, 173);
+      width: 74.25rem;
+      height: 7.125rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 0.938rem;
+  
+      p {
+        font-weight: bold;
+        font-size: 2.625rem;
+        color: #fff;
+        letter-spacing: -0.031em;
+      }
+  
+      img.close {
+        width: 2.938rem;
+        position: absolute;
+        right: 2.063rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+  }
+  .clear-button {
+    border: 0.188rem solid rgb(54, 21, 80);
+    border-radius: 1.125rem;
+    width: 74.5rem;
+    height: 7rem;
+    background-color: #936cee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: #fff;
+      font-weight: bold;
+      font-size: 2.438rem;
+    }
+  }
+  .favorite-title {
+    p {
+      color: #fff;
+      font-size: 2.25rem;
+      margin: 0.938rem 1.875rem;
+    }
+  }
+    .category-card {
+      border-radius: 0.75rem;
+      width: 74.125rem;
+      height: 6.563rem;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1.875rem;
+      margin-bottom: 0.313rem;
+
+      div p {
+        color: #444;
+        font-size: 2.438rem;
+        margin-left: 0.938rem;
+      }
+  
+      
+      img.sport-icon {
+        width: 3.813rem;
+      }
+      
+  
+    }
+        img.arrow {
+          width: 2.25rem;
+        }
+      img.star {
+        width: 3.375rem;
+      }
+    .favorite-card {
+      border-radius: 0.75rem;
+      background: #fff;
+      overflow: hidden;
+      margin-bottom: 0.938rem;
+    }
+    .team-name {
+      color: #444;
+      font-size: 2.438rem;
+    }
+    .time {
+      color: #f04281;
+      font-size: 2.438rem;
+    }
+    .favorite-date {
+      color: #0072bc;
+      font-size: 2.25rem;
+    }
+    .favorite-footer {
+      margin-top: 3.438rem;
+    }
+    .favorite-icons {
+      .arrow {
+        margin-left: 1.25rem;
+      }
+    }
+    .favorite-content {
+      padding: 1.875rem;
+      border-radius: 0.75rem;
+    }
+    .favorite-score {
+      border-top: 0.188rem solid #cccccc;
+      height: 5.813rem;
+      background-color: #eeeeee;
+      display: flex;
+      justify-content: space-between;
+      color: #444444;
+      font-size: 2.438rem;
+      .score {
+        color: #682aa7;
+      }
+      >div {
+        padding: 1.438rem;
+      }
+      >div:not(:last-of-type) {
+        border-right: 0.188rem solid #cccccc;
+      }
+    }
+}
+
+.popular-game {
+  position: relative;
+}
+.popular-card {
+  height: 9.625rem;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.938rem;
+  .card-tag {
+    position: absolute;
+    top: 0;
+    left: 0.938rem;
+    width: 4.375rem;
+  }
+  .tag-index {
+    position: absolute;
+    top: 0;
+    left: 0.938rem;
+    width: 4.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 2.625rem;
+    padding-top: 0.938rem;
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.875rem;
+    width: 1.5rem !important;
+  }
+  .popular-card-time {
+    height: 7.5rem;
+    color: #444444;
+    font-size: 2.438rem;
+    padding-left: 6.125rem;
+    padding-right: 0.938rem;
+    border-right: 0.188rem solid #e0e0e0;
+    display: flex;
+    align-items: center;
+  }
+  .popular-card-icon {
+    padding: 0 1.563rem;
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    border-right: 0.188rem solid #e0e0e0;
+    img {
+      width: 4.063rem;
+    }
+  }
+  .popular-card-teams {
+    padding-left: 0.75rem;
+    height: 7.5rem;
+    color: #444444;
+    font-size: 2.438rem;
+    p {
+      margin: 0;
+    }
+    >div {
+      margin-bottom: 0.5rem;
+      img {
+        margin-right: 0.5rem;
+        width: 3.625rem;
+      }
+    }
+    
+  }
+
+    .popular-card-icon-2 {
+      padding-left: 6.125rem !important;
+    }
+    
+}
+
+.popular-card-teams-2 {
+  display: flex;
+  align-items: center;
+
+  >div {
+    margin-bottom: 0;
+  }
+}

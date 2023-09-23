@@ -1,0 +1,35 @@
+.categories {
+  padding: 1.813rem 0.938rem 0.938rem;
+  .category {
+    gap: 0.313rem;
+    width: 100%;
+    .category-btn {
+      background: linear-gradient(to top, #4f3a7a, #e597ff);
+      padding: 0.188rem;
+      border-radius: 1.125rem;
+      height: 7.688rem;
+      width: 9.188rem;
+      flex-shrink: 0;
+      div {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to top, #6b22ff, #df52ff);
+        border-radius: 1.125rem;
+        gap: 0.875rem;
+        p {
+          color: #fff;
+          font-size: 2.625rem;
+          font-weight: bold;
+          letter-spacing: -0.031em;
+        }
+      }
+      &.with-title {
+        width: 17.875rem 
+      }
+      &.with-title div {
+       // padding: 0 1.313rem 0 1.5rem;
+      }
+    }
+  }
+
+}
