@@ -169,17 +169,17 @@ const BankTable = () => {
     //     </div>
     // )
     return (
-        <div style={{ marginTop: '1.9rem', background: 'linear-gradient(to top, #ededeb , #cb78e6)', padding: '0.1875rem', borderRadius: '1.125rem' }}>
+        <div style={{ marginTop: '1.838rem', background: 'linear-gradient(to top, #ededeb , #cb78e6)', padding: '0.1875rem', borderRadius: '1.125rem', boxShadow: "0px 0px 12px 0px rgba(0, 0, 0, 0.8)" }}>
             <div style={{ display: 'flex', height: '13.5rem', background: '#ffffff', borderTopLeftRadius: "1.125rem", borderTopRightRadius: "1.125rem" }}>
                 <div style={{ width: '50%', textAlign: 'center', borderRight: '0.1875rem solid #dddddd' }}>
-                    <div style={{ height: '10rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div style={{ height: '10rem', display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: "0.188rem" }}>
                         <img src={Bank1} alt="" style={{ width: '22.1875rem' }} />
                     </div>
                     <p style={{ margin: '-1.5rem 0 0 -0rem', color: '#666666', fontSize: '2.25rem', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.05rem' }}>00:00 ~00:20</p>
                 </div>
                 <div style={{ width: '50%', textAlign: 'center' }}>
                     <div style={{ height: '10rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <img src={Bank2} alt="" style={{ marginLeft: '-2rem', width: '17.8125rem' }} />
+                        <img src={Bank2} alt="" style={{ marginLeft: '-2rem', width: '17.188rem' }} />
                     </div>
                     <p style={{ margin: '-1.5rem 0 0 -0rem', color: '#666666', fontSize: '2.25rem', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.05rem' }}>11:50 ~01:00
                     </p>
@@ -209,7 +209,7 @@ const BankTable = () => {
                 </div>
                 <div style={{ width: '50%', textAlign: 'center' }}>
                     <div style={{ height: '10rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <img src={Bank6} alt="" style={{ width: '22.374375rem' }} />
+                        <img src={Bank6} alt="" style={{ width: '20.688rem' }} />
                     </div>
                     <p style={{ margin: '-1.5rem 0 0 -0rem', color: '#666666', fontSize: '2.25rem', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.05rem' }}>00:00 ~00:20
                     </p>
@@ -218,7 +218,7 @@ const BankTable = () => {
             <div style={{ display: 'flex', height: '13.7rem', background: '#f7f7f7', borderTop: '0.1875rem solid #dddddd' }}>
                 <div style={{ width: '50%', textAlign: 'center', borderRight: '0.1875rem solid #dddddd' }}>
                     <div style={{ height: '10rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <img src={Bank7} alt="" style={{ marginTop: '-1.6rem', width: '26.125rem' }} />
+                        <img src={Bank7} alt="" style={{ marginTop: '-1.6rem', width: '24.875rem' }} />
                     </div>
                     <p style={{ margin: '-1.5rem 0 0 -0rem', color: '#666666', fontSize: '2.25rem', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.05rem' }}>23:50 ~00:30</p>
                 </div>
@@ -314,7 +314,7 @@ const BankTable = () => {
                 </div>
                 <div style={{ width: '50%', textAlign: 'center' }}>
                     <div style={{ height: '10rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <img src={Bank20} alt="" style={{ marginTop: '-0.3rem', marginLeft: '0rem', width: '21.248125rem' }} />
+                        <img src={Bank20} alt="" style={{ marginTop: '-0.3rem', marginLeft: '0rem', width: '20.5rem' }} />
                     </div>
                     <p style={{ margin: '-2rem 0 0 -0rem', color: '#666666', fontSize: '2.25rem', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.05rem' }}>23:55 ~00:35
                     </p>
@@ -344,7 +344,7 @@ const BankTable = () => {
                 </div>
                 <div style={{ width: '50%', textAlign: 'center' }}>
                     <div style={{ height: '10rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <img src={Bank24} alt="" style={{ marginTop: '-0.3rem', marginLeft: '0rem', width: '26.25rem' }} />
+                        <img src={Bank24} alt="" style={{ marginTop: '-0.3rem', marginLeft: '0rem', width: '21.875rem' }} />
                     </div>
                     <p style={{ margin: '-2rem 0 0 -0rem', color: '#666666', fontSize: '2.25rem', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.05rem' }}>00:00 ~00:20
                     </p>
@@ -368,7 +368,7 @@ const BankTable = () => {
             <div style={{ display: 'flex', height: '13.7rem', background: '#f7f7f7', borderTop: '0.1875rem solid #dddddd' , borderBottomLeftRadius: "1.125rem", borderBottomRightRadius: "1.125rem" }}>
                 <div style={{ width: '50%', textAlign: 'center', borderRight: '0.1875rem solid #dddddd' }}>
                     <div style={{ height: '10rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <img src={Bank27} alt="" style={{ marginTop: '-1.6rem', marginLeft: '0', width: '20rem' }} />
+                        <img src={Bank27} alt="" style={{ marginTop: '-1.6rem', marginLeft: '0', width: '14.375rem' }} />
                     </div>
                     <p style={{ margin: '-1.5rem 0 0 -0rem', color: '#666666', fontSize: '2.25rem', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.05rem' }}>23:50 ~00:30</p>
                 </div>

@@ -22,7 +22,7 @@ const HorizontalMenu1 = ({
     const [isHover, setHover] = useState(null)
 
     const Image = React.memo(function Image({ icon, activeIcon, width, marginLeft, isSameLink }) {
-        return <img style={{ width: width, marginLeft: marginLeft, WebkitUserDrag: "none", MozUserDrag: "none", userDrag: "none" }} className="mt-5 object-contain select-none" src={isSameLink ? activeIcon : icon} alt="" />
+        return <img style={{ width: width, marginLeft: marginLeft, WebkitUserDrag: "none", MozUserDrag: "none", userDrag: "none", marginBottom: "0.813rem" }} className="mt-5 object-contain select-none" src={isSameLink ? activeIcon : icon} alt="" />
     });
 
     useEffect(() => {
@@ -57,7 +57,7 @@ const HorizontalMenu1 = ({
                     style={{
                         background: !isMoneyPage ? `url(${isSameLink ? (item.activeBG ? item.activeBG : activeBG) : (item.inActiveBG ? item.inActiveBG : inactive)}) round` : `url(${isSameLink ? moneyActive : moneyInactive}) round`,
                         backgroundSize: 'cover',
-                        marginRight: index === 0 ? '0.1rem' : ''
+                        marginRight: index === 0 ? '-0.688rem' : ''
                     }}
                     onPointerDown={() => setHover(item.id)}
                     onPointerUp={() => {
@@ -77,7 +77,7 @@ const HorizontalMenu1 = ({
                             <Image icon={item.icon} activeIcon={item.activeIcon} width={item.width} marginLeft={item.marginLeft} isSameLink={isSameLink} />
                         </div>
                         <div className='text'>
-                            <span style={{ color: isSameLink ? '#ffffff' : '#2d2834', fontFamily: 'SpoqaHanSansNeoBold' }}>{item.text}</span>
+                            <span style={{ color: isSameLink ? '#ffffff' : '#2d2834', fontFamily: 'SpoqaHanSansNeoMedium' }}>{item.text}</span>
                         </div>
                     </div>
                 </button>

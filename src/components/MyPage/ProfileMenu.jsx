@@ -85,6 +85,7 @@ const ProfileMenu = () => {
       hasList: true,
       hasBadge: false,
       // path: '/mypage/bet-history',
+      
       subItems: [
         {
           id: 1,
@@ -253,7 +254,8 @@ const ProfileMenu = () => {
       title: '총판페이지',
       hasBadge: false,
       hasList: false,
-      path: '/distributor-page'
+      path: '/distributor-page',
+      blank: true,
     },
     {
       id: 6,
@@ -364,6 +366,8 @@ const ProfileMenu = () => {
                 setOpen(true)
                 setSubItems(item.subItems)
                 navigate(item?.path)
+              } else {
+                item.blank? window.open(item?.path) : navigate(item?.path)
               }
             }
             }>

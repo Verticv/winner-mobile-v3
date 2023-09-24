@@ -51,7 +51,7 @@ const MoneyExchangePage = ({ isAuthenticated, setAuthenticated, subActiveButton,
     
 
     return (
-        <div style={{ maxWidth: '1242px', paddingBottom: '16rem' }} className="relative w-full flex flex-col justify-center overflow-hidden money-page2">
+        <div style={{ maxWidth: '1242px', paddingBottom: '14.5rem' }} className="relative w-full flex flex-col justify-center overflow-hidden money-page2">
             <Routes>
  
                 {/* <Route exact path="/*"
