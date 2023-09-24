@@ -56,7 +56,7 @@ import MenuIcon_1_9 from '../../assets/images/mainPage/menu9.png'
 import MenuIcon_1_10 from '../../assets/images/mainPage/menu10.png'
 import MenuIcon_1_11 from '../../assets/images/mainPage/menu11.png'
 
-import Icon1 from '../../assets/mainPage/icons/Icon1.png';
+import Icon1 from '../../assets/mainPage/icons/icon1.png';
 import Icon2 from '../../assets/mainPage/icons/icon2.png';
 
 import Icon_1 from '../../assets/mainPage/icons/icon-1-v3.png';
