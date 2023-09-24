@@ -22,14 +22,14 @@ const CardHeader = ({ flag = 'us', name = '축구 / 미국 - 메이저리그사�
         <div style={{ height: '7.2rem', paddingLeft: "1.4rem", background: '#6852a7', display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '' }} className="flex items-center justify-between h-56px w-full bg-blue-r3591d5 border-b border-gray-dddddd pr-7">
             <div className="flex items-center" style={{ display: 'flex', alignItems: 'center' }}>
                 <img style={{ width: minigameType === "powerladder" ? width6 ? '6.5rem' : '6.3rem' :  width6 ? '6rem' :'7rem', height: 'auto', marginTop: minigameType === "powerladder" ? '-0.44rem' : '-0.34rem', marginLeft: '' }} className='object-contain' src={minigameType === "powerladder" ? Icon4 : minigameType === "kinoladder" ? Icon6 : minigameType === "powerball" ? Icon3 : Icon5} alt="" />
-                <span style={{ fontSize: '2.625rem', paddingBottom: '0.2rem', marginLeft: '0.7rem', color: '#ffffff', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.07rem' }} className="ml-4 font-spoqaMedium text-20px tracking-tight text-white">{minigameType === "powerladder" ? "파워사다리" : minigameType === "kinoladder" ? "키노사다리" : minigameType === "powerball" ? "파워볼" : "스피드키노"}</span>
+                <span style={{ fontSize: '2.625rem', paddingBottom: '0.2rem', marginLeft: '0.7rem', color: '#ffffff', letterSpacing: '-0.07rem' }} className="ml-4 text-20px tracking-tight text-white">{minigameType === "powerladder" ? "파워사다리" : minigameType === "kinoladder" ? "키노사다리" : minigameType === "powerball" ? "파워볼" : "스피드키노"}</span>
             </div>
             {minigameType !== "powerball" && (
                 <div className="flex items-center" style={{ display: 'flex', alignItems: 'center', letterSpacing: '-0.1rem', marginRight: '1.5rem', marginTop: '-0.4rem' }}>
                     <img style={{ width: '2.374375rem', height: '2.374375rem' }} src={ClockIcon} alt="" />
                     <span
-                        style={{ color: "#ffffff", fontSize: '2.625rem', marginLeft: '0.5625rem', marginTop: '0.5rem', fontFamily: 'RobotoRegular', marginRight: '' }}
-                        className="font-spoqa text-16px tracking-tight text-white"
+                        style={{ color: "#ffffff", fontSize: '2.625rem', marginLeft: '0.5625rem', marginTop: '0.5rem', marginRight: '' }}
+                        className=" text-16px tracking-tight text-white"
                     >
                         {date}
                     </span>
@@ -44,15 +44,15 @@ const CardHeader = ({ flag = 'us', name = '축구 / 미국 - 메이저리그사�
             <div className="flex items-center" style={{ display: 'flex', alignItems: 'center', height: '100%', marginLeft: "-0.563rem" }}>
                 <img style={{ width: '3.188rem', height: '3.188rem', marginTop: '-0.3rem' }} src={FootballIcon} alt="" />
                 {/* <img style={{ width: '5.625', height: '3.3125rem', marginLeft: '1.0625rem', marginTop: '-0.3rem' }} src={headerFlag} alt="" /> */}
-                <span style={{ fontSize: '2.438rem', paddingTop: '0.063rem', marginLeft: '0.85rem', fontFamily: 'SpoqaHanSansNeo', color: '#ffffff', marginTop: '-0.3rem',
+                <span style={{ fontSize: '2.438rem', paddingTop: '0.063rem', marginLeft: '0.85rem', color: '#ffffff', marginTop: '-0.3rem',
                     whiteSpace: 'nowrap', maxWidth: '32rem', overflow: 'hidden', textOverflow: 'ellipsis'
-            }} className="ml-4 font-spoqaMedium text-20px tracking-tight text-white">{name}</span>
+            }} className="ml-4 text-20px tracking-tight text-white">{name}</span>
             </div>
             <div className="flex items-center" style={{ display: 'flex', marginRight: "-0.688rem" }}>
                 {/* <img style={{ width: '2.375rem', height: '2.375rem', marginTop: '0.3rem' }} src={ClockIcon} alt="" /> */}
                 <span
-                    style={{ color: "#ffffff", fontSize: '2.438rem', marginLeft: '0.5rem', marginTop: '0rem', fontFamily: 'RobotoRegular', marginRight: '-0.2rem', letterSpacing: '-0.11rem' }}
-                    className="font-spoqa text-16px tracking-tight text-white"
+                    style={{ color: "#ffffff", fontSize: '2.438rem', marginLeft: '0.5rem', marginTop: '0rem', marginRight: '-0.2rem', letterSpacing: '-0.11rem' }}
+                    className=" text-16px tracking-tight text-white"
                 >
                     {date}
                 </span>

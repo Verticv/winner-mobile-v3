@@ -84,7 +84,7 @@
 //                             className={`${pathname === item.path || isState === item.id
 //                                 ? "text-white"
 //                                 : "text-gray-r616161"
-//                                 } text-4xl font-spoqaMedium tracking-tight mt-0`}
+//                                 } text-4xl tracking-tight mt-0`}
 //                         >{item.text}</span>
 //                         {hasNumber && (
 //                             <div
@@ -220,12 +220,12 @@ const HorizontalMenu = ({
                         className={`${pathname === item.path || isState === item.id
                             ? "text-white"
                             : "text-gray-r616161"
-                            } text-4xl font-spoqaMedium tracking-tight mt-0`}
+                            } text-4xl tracking-tight mt-0`}
                     >{item.text}</p>
                     {hasNumber && (
                         <div
                             style={{
-                                width: '6.19rem', height: '2.785rem', marginTop: imageWidth ? '0.0625rem' : '', marginBottom: '2.1rem', marginLeft: '4.6rem', fontFamily: 'RobotoMedium', background: 'rgb(0 0 0 / 50%)', borderRadius: '2rem',
+                                width: '6.19rem', height: '2.785rem', marginTop: imageWidth ? '0.0625rem' : '', marginBottom: '2.1rem', marginLeft: '4.6rem', background: 'rgb(0 0 0 / 50%)', borderRadius: '2rem',
                                 display: 'flex', justifyContent: 'center', alignItems: 'center'
                             }}
                             className={`${pathname === item.path || isState === item.id

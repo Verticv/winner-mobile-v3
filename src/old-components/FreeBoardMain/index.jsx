@@ -262,7 +262,7 @@ const FreeBoardMain = ({ activeButton, setActiveButton, path = '/mypage/freeboar
                 // style={{ background: 'red', width: '74rem', marginLeft: '2rem' }}
 
                 key={item.id}
-                // className='relative font-spoqaMedium text-14px tracking-tight text-gray-r454545 w-full border-b border-gray-dddddd'
+                // className='relative text-14px tracking-tight text-gray-r454545 w-full border-b border-gray-dddddd'
                 onClick={() => navigate(item.path)}
             >
                 <div className='div-button'
@@ -282,7 +282,7 @@ const FreeBoardMain = ({ activeButton, setActiveButton, path = '/mypage/freeboar
                         <div
                             className='speaker'
                         // style={{ marginRight: '2.375rem' }}
-                        // className="font-spoqaMedium tracking-tight text-gray-r585858 flex items-center justify-center"
+                        // className="tracking-tight text-gray-r585858 flex items-center justify-center"
                         >
                             {item.type === "공지"
                                 ? <img
@@ -375,7 +375,6 @@ const FreeBoardMain = ({ activeButton, setActiveButton, path = '/mypage/freeboar
                                         padding: '0.6rem 1.6rem 0.4rem',
                                         borderRadius: '2rem',
                                         color: '#fff',
-                                        fontFamily: "SpoqaHanSansNeoMedium",
                                         marginBottom: '0.2rem',
                                         maxWidth: '17rem',
                                         overflow: 'hidden',
@@ -420,7 +419,7 @@ const FreeBoardMain = ({ activeButton, setActiveButton, path = '/mypage/freeboar
                                         }}>{item.author}</p>
                                         <div style={{ height: '1.75rem', width: '0.1875rem', margin: 'auto 1.1rem', background: '#555555' }} className='bg-gray-c5c5c5'></div>
                                         {item.type === "일반" && (
-                                            <div style={{ fontSize: '2.61875rem', fontFamily: 'SpoqaHanSansNeo', marginLeft: '-0.1rem', letterSpacing: '-0.059rem' }} className="flex items-center text-gray-r7b7b7b font-spoqa">
+                                            <div style={{ fontSize: '2.61875rem', marginLeft: '-0.1rem', letterSpacing: '-0.059rem' }} className="flex items-center text-gray-r7b7b7b">
                                                 {item.time}
                                             </div>
                                         )}

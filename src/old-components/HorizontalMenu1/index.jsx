@@ -77,7 +77,7 @@ const HorizontalMenu1 = ({
                             <Image icon={item.icon} activeIcon={item.activeIcon} width={item.width} marginLeft={item.marginLeft} isSameLink={isSameLink} />
                         </div>
                         <div className='text'>
-                            <span style={{ color: isSameLink ? '#252525' : '#ccc2b6', fontFamily: 'SpoqaHanSansNeoBold' }}>{item.text}</span>
+                            <span style={{ color: isSameLink ? '#252525' : '#ccc2b6' }}>{item.text}</span>
                         </div>
                     </div>
                 </button>

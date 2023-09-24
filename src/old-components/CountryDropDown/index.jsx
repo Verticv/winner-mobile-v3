@@ -38,7 +38,7 @@ const CountryDropDown = ({ setCountry, country, isBig }) => {
                 <div style={{ width: '5rem', height: '0.4rem', marginRight: '8px' }} className="rounded-full flex items-center justify-center">
                     <img className="" src={item.text === "KR" ? isBig ? Koreaflag2 : Koreaflag : isBig ? UKflag2 : UKflag} alt="flag" style={{ width: isBig ? '7.0625rem' : '5.625rem', marginTop: isBig ? '-0.7rem' : '' }}></img>
                 </div>
-                <label style={{ fontSize: isBig ? '3rem' : '2.4rem', color: 'rgb(255, 223, 189)', fontFamily: isBig ? 'SpoqaHanSansNeoBold' : 'SpoqaHanSansNeoMedium', marginLeft: '6.4rem' }} className={`${(selectedTab === item.id) ? "text-white" : "text-gray-subNavbar"} font-spoqaBold cursor-pointer`}>{item.text}</label>
+                <label style={{ fontSize: isBig ? '3rem' : '2.4rem', color: 'rgb(255, 223, 189)', marginLeft: '6.4rem' }} className={`${(selectedTab === item.id) ? "text-white" : "text-gray-subNavbar"} cursor-pointer`}>{item.text}</label>
             </div>
         ));
     }

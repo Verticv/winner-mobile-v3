@@ -32,7 +32,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
 
     const Title = ({ text }) => (
         <div style={{ width: "24rem", marginRight: '2.7rem', background: '#272726', flexShrink: '0', borderRadius: '0.5rem' }}>
-            <div style={{ fontSize: '2.8125rem', color: text === '레벨' ? '#ccc2b6' : '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', padding: '1.9rem 0 0 1.25rem', letterSpacing: '-0.07rem' }}>{text}</div>
+            <div style={{ fontSize: '2.8125rem', color: text === '레벨' ? '#ccc2b6' : '#ccc2b6', padding: '1.9rem 0 0 1.25rem', letterSpacing: '-0.07rem' }}>{text}</div>
         </div>
     )
 
@@ -58,7 +58,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                 style={{ borderBottom: selectedInput === 0 ? '0.375rem solid #191817' : '0.375rem solid #191817', overflow: 'hidden' }}
                                 onClick={() => setSelectedInput(0)}
                             >
-                                <label className="text-gray-r585858 font-spoqa" disabled>louie3</label>
+                                <label className="text-gray-r585858 " disabled>louie3</label>
                                 <div style={{ height: '0.1875rem' }}></div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                     onClick={() => setSelectedInput(1)}
                                 >
                                     <input
-                                        className="w-full font-spoqa text-gray-bebebe outline-none placeholder-gray-bebebe"
+                                        className="w-full  text-gray-bebebe outline-none placeholder-gray-bebebe"
                                         style={{ fontSize: '2.625rem' }}
                                         onFocus={(e) => {
                                             const menu = document.querySelector('#main-menu');
@@ -106,7 +106,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                     onClick={() => setSelectedInput(2)}
                                 >
                                     <input
-                                        className="w-full font-spoqa text-gray-bebebe outline-none placeholder-gray-bebebe"
+                                        className="w-full  text-gray-bebebe outline-none placeholder-gray-bebebe"
                                         style={{ fontSize: '2.625rem' }}
                                         onFocus={(e) => {
                                             const menu = document.querySelector('#main-menu');
@@ -137,7 +137,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                     onClick={() => setSelectedInput(3)}
                                 >
                                     <input
-                                        className="w-full font-spoqa text-gray-bebebe outline-none placeholder-gray-bebebe"
+                                        className="w-full  text-gray-bebebe outline-none placeholder-gray-bebebe"
                                         style={{ fontSize: '2.625rem' }}
                                         onFocus={(e) => {
                                             const menu = document.querySelector('#main-menu');
@@ -168,7 +168,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                     onClick={() => setSelectedInput(4)}
                                 >
                                     <input
-                                        className="w-full font-spoqa text-gray-bebebe outline-none placeholder-gray-bebebe"
+                                        className="w-full  text-gray-bebebe outline-none placeholder-gray-bebebe"
                                         style={{ fontSize: '2.625rem' }}
                                         onFocus={(e) => {
                                             const menu = document.querySelector('#main-menu');
@@ -193,7 +193,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
 
                             <div className="form-section">
                                 <div style={{ width: "24rem", marginRight: '2.7rem', background: '#272726', flexShrink: '0', borderRadius: '0.5rem', height: '10rem', display: 'flex', alignItems: 'center' }}>
-                                    <div style={{ fontSize: '2.8125rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', padding: '0 0 0 1.25rem', letterSpacing: '-0.07rem' }}>레벨</div>
+                                    <div style={{ fontSize: '2.8125rem', color: '#ccc2b6', padding: '0 0 0 1.25rem', letterSpacing: '-0.07rem' }}>레벨</div>
                                 </div>
                                 <div className="lable-or-input" style={{ height: '10rem', padding: '1.5rem 1.4rem' }}>
                                     <label style={{ letterSpacing: '-0.02rem' }}>
@@ -209,7 +209,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                             <div style={{ marginTop: '4.1rem' }} className="form-section">
                                 <Title text="스포츠" />
                                 <div className="lable-or-input" style={{ paddingLeft: '1.4rem' }}>
-                                    <label className="text-gray-r585858 font-spoqa">Bronze</label>
+                                    <label className="text-gray-r585858 ">Bronze</label>
                                     <div style={{ height: '0.1875rem' }}></div>
                                 </div>
                             </div>
@@ -218,7 +218,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                             <div style={{ marginTop: '1.3rem' }} className="form-section">
                                 <Title text="카지노" />
                                 <div className="lable-or-input" style={{ paddingLeft: '1.4rem' }}>
-                                    <label className="text-gray-r585858 font-spoqa">Bronze</label>
+                                    <label className="text-gray-r585858 ">Bronze</label>
                                     <div style={{ height: '0.1875rem' }}></div>
                                 </div>
                             </div>
@@ -227,7 +227,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                             <div style={{ marginTop: '1.6rem' }} className="form-section">
                                 <Title text="슬롯" />
                                 <div className="lable-or-input" style={{ paddingLeft: '1.4rem' }}>
-                                    <label className="text-gray-r585858 font-spoqa">Bronze</label>
+                                    <label className="text-gray-r585858 ">Bronze</label>
                                     <div style={{ height: '0.1875rem' }}></div>
                                 </div>
                             </div>
@@ -235,7 +235,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                             <div style={{ marginTop: '1.6rem' }} className="form-section">
                                 <Title text="미니게임" />
                                 <div className="lable-or-input" style={{ paddingLeft: '1.4rem' }}>
-                                    <label className="text-gray-r585858 font-spoqa">Bronze</label>
+                                    <label className="text-gray-r585858 ">Bronze</label>
                                     <div style={{ height: '0.1875rem' }}></div>
                                 </div>
                             </div>
@@ -255,7 +255,6 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                             <p style={{
                                 fontSize: '2.80625rem',
                                 color: '#ffd2d2',
-                                fontFamily: "SpoqaHanSansNeoMedium",
                                 marginRight: '-0.19rem',
                                 letterSpacing: '-0.06rem',
                                 textAlign: 'center',

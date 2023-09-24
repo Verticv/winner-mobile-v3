@@ -60,8 +60,8 @@ const DirectoryComponent = ({
             {/* <img className="object-none cursor-none" src={RightArrow} alt="" /> */}
             <span
                 className={`${!branch2
-                    ? "font-spoqaBold text-gray-r393e41"
-                    : "font-spoqaMedium text-gray-r7c7c7c"
+                    ? "text-gray-r393e41"
+                    : "text-gray-r7c7c7c"
                     }  text-13px tracking-tight cursor-pointer`}
                 onClick={() => { branch1Clicked(branch1) }}
             >
@@ -73,8 +73,8 @@ const DirectoryComponent = ({
                     <div>
                         <span
                             className={`${!branch3
-                                ? "font-spoqaBold text-gray-r393e41"
-                                : "font-spoqaMedium text-gray-r7c7c7c"
+                                ? "text-gray-r393e41"
+                                : "text-gray-r7c7c7c"
                                 } text-13px tracking-tight cursor-pointer`}
                             onClick={() => branch2Clicked(mainPath)}
                         >
@@ -86,13 +86,13 @@ const DirectoryComponent = ({
             {branch3 && (
                 <>
                     {/* <img className="object-none" src={RightArrow} alt="" /> */}
-                    <span className="font-spoqaBold text-13px text-gray-r393e41 tracking-tight cursor-pointer">{branch3}</span>
+                    <span className="text-13px text-gray-r393e41 tracking-tight cursor-pointer">{branch3}</span>
                 </>
             )}
             {branch4 && (
                 <>
                     {/* <img className="object-none" src={RightArrow} alt="" /> */}
-                    <span className="font-spoqaBold text-13px text-gray-r393e41 tracking-tight">{branch4}</span>
+                    <span className="text-13px text-gray-r393e41 tracking-tight">{branch4}</span>
                 </>
             )}
         </div>

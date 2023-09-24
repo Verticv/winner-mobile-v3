@@ -30,9 +30,9 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                 // letterSpacing: '-0.1rem',
                                 // background: 'red', width: '41.3rem' 
                             }} className="tracking-tight flex items-center">
-                                <p className="font-spoqaMedium" style={{ margin: '0', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.2rem', color: '#ffd98b' }}>플레이어 이름 :</p>
-                                <p className="font-spoqaBold text-blue-r0056a6" style={{
-                                    margin: '0', fontFamily: 'SpoqaHanSansNeoBold', letterSpacing: '-0.2rem', marginLeft: '0.4rem', color: '#eeeeee', whiteSpace: 'nowrap', maxWidth: '21.5rem', overflow: 'hidden ', textOverflow: 'ellipsis'
+                                <p className="" style={{ margin: '0', letterSpacing: '-0.2rem', color: '#ffd98b' }}>플레이어 이름 :</p>
+                                <p className="text-blue-r0056a6" style={{
+                                    margin: '0', letterSpacing: '-0.2rem', marginLeft: '0.4rem', color: '#eeeeee', whiteSpace: 'nowrap', maxWidth: '21.5rem', overflow: 'hidden ', textOverflow: 'ellipsis'
                                 }}> WINlouie3</p>
                             </div>
                             {/* <div style={{ backgroundColor: "#868686", height: '0.1875rem', minHeight: '0.1875rem', marginBottom: '44px', width: '45.4375rem' }} className=""></div> */}
@@ -45,18 +45,18 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                             <div className="flex flex-col" style={{ display: 'flex', flexDirection: 'column' }}>
                                 <div
                                     style={{
-                                        backgroundColor: "#6852a7", height: '5.375rem', display: 'flex', alignItems: 'center', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.053rem', justifyContent: 'center', paddingTop: '', color: '#ffffff'
+                                        backgroundColor: "#6852a7", height: '5.375rem', display: 'flex', alignItems: 'center', letterSpacing: '-0.053rem', justifyContent: 'center', paddingTop: '', color: '#ffffff'
                                         // , borderBottom: '0.1875rem solid #000'
                                     }}
-                                    className="flex items-center justify-center font-spoqaMedium tracking-tight text-white"
+                                    className="flex items-center justify-center  tracking-tight text-white"
                                 >
                                     바카라 On 2021-08-09 18:26:27
                                 </div>
 
                                 <div className="flex" style={{ display: 'flex' }}>
                                     <div
-                                        style={{ backgroundColor: "#ffffff", display: 'flex', flexDirection: 'column', width: '50%', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb' }}
-                                        className="flex flex-col w-full border-r border-gray-dddddd font-spoqaMedium tracking-tight text-gray-r585858"
+                                        style={{ backgroundColor: "#ffffff", display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb' }}
+                                        className="flex flex-col w-full border-r border-gray-dddddd  tracking-tight text-gray-r585858"
                                     >
                                         <div
                                             style={{
@@ -97,7 +97,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
 
                                         <div
                                             style={{ backgroundColor: "#6852a7", color: '#ffffff', height: '5.4rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-                                            className="flex items-center justify-center font-spoqaMedium tracking-tight text-white"
+                                            className="flex items-center justify-center  tracking-tight text-white"
                                         >
                                             뱅커 핸드
                                         </div>
@@ -113,14 +113,13 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                     </div>
 
                                     <div
-                                        style={{ backgroundColor: "#ffffff", display: 'flex', flexDirection: 'column', width: '50%', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.07rem' }}
+                                        style={{ backgroundColor: "#ffffff", display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem' }}
                                         className="flex flex-col w-full border-r border-gray-dddddd font-robotoRegular tracking-tight text-gray-r585858"
                                     >
                                         <div
                                             style={{
                                                 height: "5.57rem", display: 'flex', alignItems: 'center', justifyContent: 'center', borderBottom: '0.1875rem solid #bbbbbb',
                                                 paddingTop: '0.3rem', paddingLeft: '0.1rem',
-                                                fontFamily: 'RobotoRegular',
                                             }}
                                             className="border-b border-gray-dddddd flex items-center justify-center"
                                         >
@@ -130,7 +129,6 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                             style={{
                                                 height: "5.57rem", display: 'flex', alignItems: 'center', justifyContent: 'center', borderBottom: '0.1875rem solid #bbbbbb',
                                                 paddingTop: '0.3rem', paddingLeft: '0.1rem',
-                                                fontFamily: 'RobotoRegular',
                                             }}
                                             className="border-b border-gray-dddddd flex items-center justify-center"
                                         >
@@ -141,14 +139,13 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                                 height: "5.57rem", display: 'flex', alignItems: 'center', justifyContent: 'center', borderBottom: '0.1875rem solid #bbbbbb',
                                                 paddingTop: '0.3rem', paddingLeft: '0.1rem'
                                             }}
-                                            className="border-b border-gray-dddddd flex items-center justify-center font-spoqa"
+                                            className="border-b border-gray-dddddd flex items-center justify-center"
                                         >
                                             처리됨
                                         </div>
                                         <div
                                             style={{
                                                 height: "5.57rem", display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                                fontFamily: 'RobotoRegular',
                                                 paddingTop: '0.3rem', paddingLeft: '0.1rem'
                                             }}
                                             className="border-b border-gray-dddddd flex items-center justify-center"
@@ -158,7 +155,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
 
                                         <div
                                             style={{ backgroundColor: "#6852a7", color: '#ffffff', height: '5.375rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-                                            className="flex items-center justify-center font-spoqaMedium tracking-tight text-white"
+                                            className="flex items-center justify-center  tracking-tight text-white"
                                         >
                                             플레이어 핸드
                                         </div>
@@ -174,30 +171,30 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                     </div>
                                 </div>
 
-                                <div style={{ height: "5.875rem", width: '100%', display: 'flex', fontFamily: 'SpoqaHanSansNeoMedium', color: '#ffffff' }} className="flex W-FULL border-b border-gray-dddddd">
+                                <div style={{ height: "5.875rem", width: '100%', display: 'flex', color: '#ffffff' }} className="flex W-FULL border-b border-gray-dddddd">
                                     <div
                                         style={{ backgroundColor: "", display: 'flex', flex: '1', alignItems: 'center', justifyContent: 'center', borderRight: '0.1875rem solid #bbbbbb' }}
-                                        className=" flex flex-1 items-center justify-center font-spoqaMedium tracking-tight text-white border-r"
+                                        className=" flex flex-1 items-center justify-center  tracking-tight text-white border-r"
                                     >
                                         베팅
                                     </div>
                                     <div
                                         style={{ backgroundColor: "", display: 'flex', flex: '1', alignItems: 'center', justifyContent: 'center', borderRight: '0.1875rem solid #bbbbbb' }}
-                                        className=" flex flex-1 items-center justify-center font-spoqaMedium tracking-tight text-white border-r"
+                                        className=" flex flex-1 items-center justify-center  tracking-tight text-white border-r"
                                     >
                                         금액
                                     </div>
                                     <div
                                         style={{ backgroundColor: "", display: 'flex', flex: '1', alignItems: 'center', justifyContent: 'center' }}
-                                        className=" flex flex-1 items-center justify-center font-spoqaMedium tracking-tight text-white"
+                                        className=" flex flex-1 items-center justify-center  tracking-tight text-white"
                                     >
                                         회원승패
                                     </div>
                                 </div>
 
-                                <div style={{ height: "5.3rem", display: 'flex', fontFamily: 'RobotoRegular', background: '#ffffff' }} className="flex font-robotoRegular border-b border-gray-dddddd text-gray-r585858">
+                                <div style={{ height: "5.3rem", display: 'flex', background: '#ffffff' }} className="flex font-robotoRegular border-b border-gray-dddddd text-gray-r585858">
                                     <div
-                                        style={{ display: 'flex', flex: '1', alignItems: 'center', justifyContent: 'center', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb', fontFamily: 'SpoqaHanSansNeo' }}
+                                        style={{ display: 'flex', flex: '1', alignItems: 'center', justifyContent: 'center', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb' }}
                                         className=" flex flex-1 items-center justify-center tracking-tight text- border-r"
                                     >
                                         player
@@ -216,23 +213,23 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                     </div>
                                 </div>
 
-                                <div style={{ height: "5.7rem", display: 'flex', width: '100%', fontFamily: 'SpoqaHanSansNeoMedium', color: '#ffffff' }} className="flex w-full border-b border-gray-dddddd">
+                                <div style={{ height: "5.7rem", display: 'flex', width: '100%', color: '#ffffff' }} className="flex w-full border-b border-gray-dddddd">
                                     <div
                                         style={{ backgroundColor: "", display: 'flex', flex: '1', alignItems: 'center', justifyContent: 'center', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb' }}
-                                        className=" flex flex-1 items-center justify-center font-spoqaMedium tracking-tight text-white border-r"
+                                        className=" flex flex-1 items-center justify-center  tracking-tight text-white border-r"
                                     >
                                         거래아이디
                                     </div>
                                     <div
                                         style={{ backgroundColor: "", display: 'flex', flex: '1', alignItems: 'center', justifyContent: 'center', letterSpacing: '-0.07rem' }}
-                                        className=" flex flex-1 items-center justify-center font-spoqaMedium tracking-tight text-white border-r"
+                                        className=" flex flex-1 items-center justify-center  tracking-tight text-white border-r"
                                     >
                                         베팅시간
                                     </div>
                                 </div>
 
 
-                                <div style={{ display: 'flex', width: '100%', fontFamily: 'RobotoRegular', background: '#ffffff' }} className="flex w-full font-robotoRegular border-b border-gray-dddddd text-gray-r585858">
+                                <div style={{ display: 'flex', width: '100%', background: '#ffffff' }} className="flex w-full font-robotoRegular border-b border-gray-dddddd text-gray-r585858">
                                     <div
                                         style={{ height: '5.35rem', display: 'flex', flex: '1', alignItems: 'center', justifyContent: 'center', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb' }}
                                         className=" flex flex-1 items-center justify-center tracking-tight border-r"
@@ -249,8 +246,8 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
 
 
                                 <div
-                                    style={{ color: "#ffffff", height: '5.7rem', display: 'flex', alignItems: 'center', justifyContent: 'center', letterSpacing: '-0.07rem', fontFamily: 'SpoqaHanSansNeoMedium' }}
-                                    className="flex items-center justify-center font-spoqaMedium tracking-tight text-white border-b border-gray-dddddd"
+                                    style={{ color: "#ffffff", height: '5.7rem', display: 'flex', alignItems: 'center', justifyContent: 'center', letterSpacing: '-0.07rem' }}
+                                    className="flex items-center justify-center  tracking-tight text-white border-b border-gray-dddddd"
                                 >
                                     게임요약
                                 </div>
@@ -259,10 +256,10 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                 <div className="flex" style={{ display: 'flex' }}>
                                     <div
                                         style={{
-                                            backgroundColor: "#ffffff", display: 'flex', width: '50%', flexDirection: 'column', borderRight: '0.1875rem solid #bbbbbb', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem',
+                                            backgroundColor: "#ffffff", display: 'flex', width: '50%', flexDirection: 'column', borderRight: '0.1875rem solid #bbbbbb', letterSpacing: '-0.07rem',
                                             borderBottomLeftRadius: '1.1rem'
                                         }}
-                                        className="flex flex-col w-full border-r border-gray-dddddd font-spoqaMedium tracking-tight text-gray-r585858"
+                                        className="flex flex-col w-full border-r border-gray-dddddd  tracking-tight text-gray-r585858"
                                     >
                                         <div
                                             style={{
@@ -293,7 +290,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                         </div>
                                     </div>
                                     <div
-                                        style={{ backgroundColor: "#ffffff", borderBottomRightRadius: '1.1rem', display: 'flex', flexDirection: 'column', width: '50%', fontFamily: 'RobotoRegular', letterSpacing: '-0.07rem' }}
+                                        style={{ backgroundColor: "#ffffff", borderBottomRightRadius: '1.1rem', display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem' }}
                                         className="flex flex-col w-full border-r border-gray-dddddd font-robotoRegular tracking-tight text-gray-r585858"
                                     >
                                         <div

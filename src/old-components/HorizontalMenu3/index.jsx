@@ -89,7 +89,6 @@ const HorizontalMenu3 = ({
                             <span
                                 style={{
                                     fontSize: '2.9875rem', color: selectedTab === item.path ? '#252525' : '#ccc2b6',
-                                    fontFamily: 'SpoqaHanSansNeoBold',
 
                                     // textShadow: "-1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff"
                                 }}

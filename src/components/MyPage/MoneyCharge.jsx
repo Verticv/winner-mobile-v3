@@ -80,29 +80,29 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
 
                         </div>
 
-                        <div style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeo', color: '#c8c8c8', letterSpacing: '-0.07rem' }}>
+                        <div style={{ fontSize: '2.625rem', color: '#c8c8c8', letterSpacing: '-0.07rem' }}>
                             <div style={{ display: 'flex', alignItems: 'center', lineHeight: '1.45' }}>
                                 <div style={{ minWidth: '9.7rem', marginTop: '-3.6rem', marginLeft: '-0.1rem' }}>
                                     <img style={{ width: '7.9375rem' }} src={Step1} alt="" />
                                 </div>
-                                <div style={{ fontFamily: 'SpoqaHanSansNeo', color: '#eeeeee', marginRight: '2rem' }}>
-                                    위 <span className="font-spoqaBold text-gray-r454545 ml-3px" style={{ fontFamily: 'SpoqaHanSansNeoBold', color: '#fee300' }}>계좌번호 신청</span>버튼을 누르시면 계좌번호가 쪽지로 발송됩니다.
+                                <div style={{ color: '#eeeeee', marginRight: '2rem' }}>
+                                    위 <span className=" text-gray-r454545 ml-3px" style={{ color: '#fee300' }}>계좌번호 신청</span>버튼을 누르시면 계좌번호가 쪽지로 발송됩니다.
                                 </div>
                             </div>
                             <div style={{ marginTop: '0.6875rem', display: 'flex', alignItems: 'center', lineHeight: '1.45' }}>
                                 <div style={{ minWidth: '9.7rem', marginTop: '', marginLeft: '-0.1rem' }}>
                                     <img style={{ width: '7.9375rem', height: 'auto' }} src={Step2} alt="" />
                                 </div>
-                                <div className="font-spoqa" style={{ marginTop: '-0.2rem', color: '#eeeeee' }}>안내받은 계좌번호로 선입금 해주세요.</div>
+                                <div className="" style={{ marginTop: '-0.2rem', color: '#eeeeee' }}>안내받은 계좌번호로 선입금 해주세요.</div>
                             </div>
                             <div style={{ marginTop: '0.6875rem', display: 'flex', alignItems: 'center' }}>
                                 <div style={{ minWidth: '9.7rem', marginTop: '-4.1rem', marginLeft: '-0.1rem' }}>
                                     <img style={{ width: '7.9375rem', height: 'auto' }} src={Step3} alt="" />
                                 </div>
-                                <div style={{ lineHeight: '1.45', marginTop: '-0.1rem', color: '#eeeeee' }} className="font-spoqa">
-                                    <span style={{ fontFamily: 'SpoqaHanSansNeoBold', color: '#fee300' }}>충전금액 입력</span>
+                                <div style={{ lineHeight: '1.45', marginTop: '-0.1rem', color: '#eeeeee' }} className="">
+                                    <span style={{ color: '#fee300' }}>충전금액 입력</span>
                                     란에 실제 입금하신 금액과 동일한 금액을 입력하고
-                                    <span style={{ fontFamily: 'SpoqaHanSansNeoBold', color: '#fee300' }}> 신청하기 </span>
+                                    <span style={{ color: '#fee300' }}> 신청하기 </span>
                                     버튼을 눌러주세요.
                                 </div>
                             </div>
@@ -117,7 +117,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                             <Title text="현재 보유머니" />
                             <div className="lable-or-input">
                                 <div style={{ fontSize: '2.625rem' }}>
-                                    <span className="font-robotoBold text-red-e9441d" style={{ color: '#f04281', fontFamily: 'RobotoBold' }}>487,240</span>
+                                    <span className="font-robotoBold text-red-e9441d" style={{ color: '#f04281' }}>487,240</span>
                                 </div>
                                 <div style={{ height: '0.1875rem', marginTop: '1.375rem', background:"#e2e2e2" }}></div>
                             </div>
@@ -246,7 +246,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                             <Title text="보너스 금액" />
                             <div className="lable-or-input">
                                 <div style={{ fontSize: '2.625rem' }}>
-                                    <span style={{ color: '#4c98ff', fontFamily: 'RobotoBold', letterSpacing: '-0.03rem' }}>100,000,000</span>
+                                    <span style={{ color: '#4c98ff', letterSpacing: '-0.03rem' }}>100,000,000</span>
                                 </div>
                                 <div style={{ height: '0.1875rem', marginTop: '1.313rem', background: "#e2e2e2" }} className="w-full bg-gray-bebebe"></div>
                             </div>

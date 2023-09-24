@@ -38,10 +38,10 @@ const ESportsBetHistory = ({ isState = 0, setState, showSub = false, isPopup = f
                 boxShadow: '0px 6px 12px 0px rgba(0, 0, 0, 0.6)',
                 borderRadius: '1.125rem',
                 position: 'relative',
-                margin: '0 1.875rem', 
+                margin: '0 1.875rem',
                 marginTop: '1.875rem'
             }}>
-                <div style={{ background: 'linear-gradient(to top, #6b22ff, #df52ff)', WebkitTextStroke: "0.2px", fontSize: '2.625rem', color: '#ffffff', padding: '1.875rem', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem', borderRadius: '1.125rem' }}>
+                <div style={{ background: 'linear-gradient(to top, #6b22ff, #df52ff)', WebkitTextStroke: "0.2px", fontSize: '2.625rem', color: '#ffffff', padding: '1.875rem', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', letterSpacing: '-0.07rem', borderRadius: '1.125rem' }}>
                     베팅내역이 없습니다.
                 </div>
             </div>

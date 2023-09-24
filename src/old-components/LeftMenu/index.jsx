@@ -94,7 +94,7 @@ const LeftMenu = ({
         return (
             <div style={{ padding: '0 1.875rem', borderBottomWidth: '0.1875rem', background: '#242424', height: '12.375rem', borderBottom: '0.1875rem solid #323231' }} className='w-full border-b border-gray-ececec bg-gray-f7f7f7'>
                 <button
-                    style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', fontSize: '3rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#ffdfbd', background: isProfileActive ? 'linear-gradient(#a67c52, #7f5f3f)' : 'bottom', borderRadius: '1rem' }}
+                    style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', fontSize: '3rem', color: '#ffdfbd', background: isProfileActive ? 'linear-gradient(#a67c52, #7f5f3f)' : 'bottom', borderRadius: '1rem' }}
                     className={`${isProfileActive
                         ? "bg-gradient-to-br from-blue-gradLight to-blue-gradDark shadow-plain2"
                         : ""
@@ -118,7 +118,7 @@ const LeftMenu = ({
                             alt="icon" />
                     </div>
                     <div style={{ marginLeft: '2.65rem', marginRight: '4.8125rem', position: 'relative', justifyContent: 'space-between', alignItems: 'center', width: '', letterSpacing: '-0.07rem', marginTop: '0.3rem' }} className="w-full flex justify-between items-center">
-                        <label className={`${isProfileActive ? "text-white group-hover:text-white" : "text-black group-hover:text-gray-r454545"} font-spoqaMedium text-5xl cursor-pointer tracking-tight`}>{text}</label>
+                        <label className={`${isProfileActive ? "text-white group-hover:text-white" : "text-black group-hover:text-gray-r454545"}  text-5xl cursor-pointer tracking-tight`}>{text}</label>
                     </div>
                 </button>
             </div>
@@ -153,7 +153,7 @@ const LeftMenu = ({
                         <div className='h-full' style={{ padding: '0 1.875rem', width: '100%', background: index % 2 === 0 ? '#1e1e1e' : '#242424', height: '12.375rem', borderBottom: '0.1875rem solid #323231' }}>
                             <button
                                 style={{
-                                    padding: '2.3125rem 0 1.3125rem 1.3125rem', paddingRight: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', fontSize: '3rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#ffdfbd',
+                                    padding: '2.3125rem 0 1.3125rem 1.3125rem', paddingRight: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', fontSize: '3rem', color: '#ffdfbd',
                                     background: ((((selectedTab) === item?.path) || (distributorPageActive === '/distributor-page' && item.text === '총판페이지') || subActiveButton === item?.path)) || item?.path == '' || (state?.path === '/cscenter' && item.text === '고객센터' && distributorPageActive !== '/distributor-page') ? 'linear-gradient(#a67c52, #7f5f3f)' : 'bottom',
                                     borderRadius: '1rem'
                                 }}
@@ -204,7 +204,7 @@ const LeftMenu = ({
                                                 : isMouseHover === item.path
                                                     ? "text-gray-r454545"
                                                     : "text-black"
-                                                } font-spoqaMedium  text-5xl cursor-pointer tracking-tight`}
+                                                }   text-5xl cursor-pointer tracking-tight`}
                                         >
                                             {item.text}
                                         </label>

@@ -710,7 +710,7 @@ const BetCombinationPanel = ({
         return items.map(item => {
             let isChecked = checkedState[item.id]
             return (
-                <div onPointerUp={() => handleOnChange(item.id)} style={{ height: '8rem', paddingLeft: '3rem', paddingRight: '3rem', fontSize: '2.8125rem', fontWeight: '400', fontFamily: 'SpoqaHanSansNeoMedium', margin: '0' }} className="searchcell-style">
+                <div onPointerUp={() => handleOnChange(item.id)} style={{ height: '8rem', paddingLeft: '3rem', paddingRight: '3rem', fontSize: '2.8125rem', fontWeight: '400', margin: '0' }} className="searchcell-style">
                     <p>{item.text}</p>
                     <input
                         className='input-style w-12 h-12'

@@ -56,18 +56,18 @@ const HorizontalMenu14 = ({
                         <img style={{ width: item.width ? item.width : imageWidth ? imageWidth : withoutMargin ? '6.0625rem' : '5.0625rem', marginTop: '1.1rem', marginLeft: '0.4375rem', WebkitUserDrag: "none", MozUserDrag: "none", userDrag: "none" }} src={item.icon} alt="" />
                     </div>
                     <p
-                        style={{ margin: '0', marginTop: `${imageWidth ? '0.0625rem' : '0.7rem'}`, fontSize: '2.5rem', color: isState === item.id || (typeof (isState) !== 'number' && item.id === 0) ? '#252525' : '#ccc2b6', marginLeft: '0.6rem', fontFamily: 'SpoqaHanSansNeoMedium' }}
+                        style={{ margin: '0', marginTop: `${imageWidth ? '0.0625rem' : '0.7rem'}`, fontSize: '2.5rem', color: isState === item.id || (typeof (isState) !== 'number' && item.id === 0) ? '#252525' : '#ccc2b6', marginLeft: '0.6rem' }}
                         className="paragraph"
                     >{item.text}</p>
                     {hasNumber && (
                         <div
                             style={{
-                                width: '6.19rem', height: '2.785rem', marginTop: imageWidth ? '0.0625rem' : '', marginBottom: '2.1rem', marginLeft: '4.6rem', fontFamily: 'RobotoMedium', background: 'rgb(0 0 0 / 50%)', borderRadius: '2rem',
+                                width: '6.19rem', height: '2.785rem', marginTop: imageWidth ? '0.0625rem' : '', marginBottom: '2.1rem', marginLeft: '4.6rem', background: 'rgb(0 0 0 / 50%)', borderRadius: '2rem',
                                 display: 'flex', justifyContent: 'center', alignItems: 'center'
                             }}
                             className="hasNumber"
                         >
-                            <p style={{ margin: '0', fontSize: '2rem', marginLeft: '-0.2rem', color: '#ccc2b6', fontFamily: 'RobotoMedium' }}>{item.number}</p>
+                            <p style={{ margin: '0', fontSize: '2rem', marginLeft: '-0.2rem', color: '#ccc2b6' }}>{item.number}</p>
                         </div>
                     )}
                 </div>

@@ -90,7 +90,7 @@ class Calendar extends React.Component {
                                 : "Gray_Content"} 
                             Day_Content`}
                         >
-                            <p style={{ fontSize: '2.0625rem', margin: '0', fontFamily: 'RobotoBold', letterSpacing: '-0.07rem', width: '3.3rem', textAlign: 'center' }}>{isSameMonth(day, monthStart) && formattedDate}</p>
+                            <p style={{ fontSize: '2.0625rem', margin: '0', letterSpacing: '-0.07rem', width: '3.3rem', textAlign: 'center' }}>{isSameMonth(day, monthStart) && formattedDate}</p>
                         </div>
                         {isSameMonth(day, monthStart) && (
                             <img className="Day_Content2" src={isChecked && format(currendDate, dateFormat1) === formattedDate1 ? AttendanceFilled : AttendanceEmpty} alt="" />
