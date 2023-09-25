@@ -35,7 +35,7 @@ const ESportsBetHistory = ({ isState = 0, setState, showSub = false, isPopup = f
             <div style={{
                 padding: '0.1875rem',
                 background: 'linear-gradient(to top, #4f3a7a, #e597ff)',
-                boxShadow: '0px 6px 12px 0px rgba(0, 0, 0, 0.6)',
+                boxShadow: '0px 2px 4px 0px rgba(0, 0, 0, 0.5)',
                 borderRadius: '1.125rem',
                 position: 'relative',
                 margin: '0 1.875rem',

@@ -12,7 +12,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
             >
 
                 <div
-                    style={{ height: "100%", width: "100%", borderRadius: "2.7rem", background: '#ffffff', overflow: '' }}
+                    style={{ height: "100%", width: "100%", borderRadius: "2.7rem", background: 'rgb(223, 219, 250)', overflow: '' }}
                     className="bg-white overflow-hidden mb-64"
                 >
                     <div className="거래-상세-내역-popup">
@@ -25,27 +25,25 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                     <div style={{ padding: '0 2.0625rem', paddingBottom: '2.0625rem', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }} className="h-full bg-white flex flex-col items-center text-gray-r454545">
                         <div style={{}} className='WINlouie3-div2 flex flex-col items-center'>
                             <div style={{
-                                marginBottom: '1.0625rem', display: 'flex', alignItems: 'center',
+                                marginBottom: '1.0625rem', display: 'flex', alignItems: 'center', fontWeight: "bold",
                                 marginLeft: '-0.1rem'
-                                // letterSpacing: '-0.1rem',
-                                // background: 'red', width: '41.3rem' 
-                            }} className="tracking-tight flex items-center">
-                                <p className="" style={{ margin: '0', letterSpacing: '-0.2rem', color: '#ffd98b' }}>플레이어 이름 :</p>
+                            }}>
+                                <p className="" style={{ margin: '0', letterSpacing: '-0.2rem', color: '#fff' }}>플레이어 이름 :{" "}</p>
                                 <p className="text-blue-r0056a6" style={{
-                                    margin: '0', letterSpacing: '-0.2rem', marginLeft: '0.4rem', color: '#eeeeee', whiteSpace: 'nowrap', maxWidth: '21.5rem', overflow: 'hidden ', textOverflow: 'ellipsis'
-                                }}> WINlouie3</p>
+                                    margin: '0', letterSpacing: '-0.2rem', marginLeft: '1rem', color: 'rgb(255, 204, 0)', whiteSpace: 'nowrap', maxWidth: '21.5rem', overflow: 'hidden ', textOverflow: 'ellipsis'
+                                }}>{" "}WINlouie3</p>
                             </div>
                             {/* <div style={{ backgroundColor: "#868686", height: '0.1875rem', minHeight: '0.1875rem', marginBottom: '44px', width: '45.4375rem' }} className=""></div> */}
                         </div>
                         <div
-                            style={{ height: "", backgroundColor: "#6852a7", fontSize: '2.625rem', width: '68.3rem', overflow: 'hidden', borderRadius: '1.4rem', padding: '0.1875rem' }}
+                            style={{ height: "", backgroundColor: "rgb(144, 92, 196)", fontWeight: 'bold', fontSize: '2.625rem', width: '68.3rem', overflow: 'hidden', borderRadius: '1.4rem', padding: '0.1875rem' }}
                             className="w-full rounded-2xl shadow-subNavbar overflow-hidden"
                         >
 
                             <div className="flex flex-col" style={{ display: 'flex', flexDirection: 'column' }}>
                                 <div
                                     style={{
-                                        backgroundColor: "#6852a7", height: '5.375rem', display: 'flex', alignItems: 'center', letterSpacing: '-0.053rem', justifyContent: 'center', paddingTop: '', color: '#ffffff'
+                                        backgroundColor: "rgb(144, 92, 196)", fontWeight: 'bold', height: '5.375rem', display: 'flex', alignItems: 'center', letterSpacing: '-0.053rem', justifyContent: 'center', paddingTop: '', color: '#ffffff'
                                         // , borderBottom: '0.1875rem solid #000'
                                     }}
                                     className="flex items-center justify-center  tracking-tight text-white"
@@ -55,7 +53,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
 
                                 <div className="flex" style={{ display: 'flex' }}>
                                     <div
-                                        style={{ backgroundColor: "#ffffff", display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb' }}
+                                        style={{ backgroundColor: "#ffffff", display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb', color:"#444" }}
                                         className="flex flex-col w-full border-r border-gray-dddddd  tracking-tight text-gray-r585858"
                                     >
                                         <div
@@ -96,7 +94,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                         </div>
 
                                         <div
-                                            style={{ backgroundColor: "#6852a7", color: '#ffffff', height: '5.4rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                                            style={{ backgroundColor: "rgb(144, 92, 196)", fontWeight: 'bold', color: '#ffffff', height: '5.4rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                                             className="flex items-center justify-center  tracking-tight text-white"
                                         >
                                             뱅커 핸드
@@ -113,7 +111,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                     </div>
 
                                     <div
-                                        style={{ backgroundColor: "#ffffff", display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem' }}
+                                        style={{ backgroundColor: "#ffffff", display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem', fontWeight: 'normal', color:"#444" }}
                                         className="flex flex-col w-full border-r border-gray-dddddd font-robotoRegular tracking-tight text-gray-r585858"
                                     >
                                         <div
@@ -154,7 +152,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                         </div>
 
                                         <div
-                                            style={{ backgroundColor: "#6852a7", color: '#ffffff', height: '5.375rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                                            style={{ backgroundColor: "rgb(144, 92, 196)", fontWeight: 'bold', color: '#ffffff', height: '5.375rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                                             className="flex items-center justify-center  tracking-tight text-white"
                                         >
                                             플레이어 핸드
@@ -192,7 +190,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                     </div>
                                 </div>
 
-                                <div style={{ height: "5.3rem", display: 'flex', background: '#ffffff' }} className="flex font-robotoRegular border-b border-gray-dddddd text-gray-r585858">
+                                <div style={{ height: "5.3rem", display: 'flex', background: '#ffffff', fontWeight: 'normal', color:"#444" }} className="flex font-robotoRegular border-b border-gray-dddddd text-gray-r585858">
                                     <div
                                         style={{ display: 'flex', flex: '1', alignItems: 'center', justifyContent: 'center', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb' }}
                                         className=" flex flex-1 items-center justify-center tracking-tight text- border-r"
@@ -229,7 +227,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                 </div>
 
 
-                                <div style={{ display: 'flex', width: '100%', background: '#ffffff' }} className="flex w-full font-robotoRegular border-b border-gray-dddddd text-gray-r585858">
+                                <div style={{ display: 'flex', width: '100%', background: '#ffffff', fontWeight: 'normal', color: "#444" }} className="flex w-full font-robotoRegular border-b border-gray-dddddd text-gray-r585858">
                                     <div
                                         style={{ height: '5.35rem', display: 'flex', flex: '1', alignItems: 'center', justifyContent: 'center', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb' }}
                                         className=" flex flex-1 items-center justify-center tracking-tight border-r"
@@ -264,7 +262,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                         <div
                                             style={{
                                                 height: "5.6rem", display: 'flex', alignItems: 'center', justifyContent: 'center', borderBottom: '0.1875rem solid #bbbbbb',
-                                                paddingTop: '0.3rem', paddingLeft: '0.1rem',
+                                                paddingTop: '0.3rem', paddingLeft: '0.1rem', backgroundColor: 'rgb(247, 247, 247)', color: "#444"
                                             }}
                                             className="border-b border-gray-dddddd flex items-center justify-center"
                                         >
@@ -273,7 +271,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                         <div
                                             style={{
                                                 height: "5.6rem", display: 'flex', alignItems: 'center', justifyContent: 'center', borderBottom: '0.1875rem solid #bbbbbb',
-                                                paddingTop: '0.3rem', paddingLeft: '0.1rem',
+                                                paddingTop: '0.3rem', paddingLeft: '0.1rem', backgroundColor: 'rgb(247, 247, 247)', color: "#444"
                                             }}
                                             className="border-b border-gray-dddddd flex items-center justify-center"
                                         >
@@ -282,7 +280,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                         <div
                                             style={{
                                                 height: "5.4rem", display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                                paddingTop: '0.3rem', paddingLeft: '0.1rem',
+                                                paddingTop: '0.3rem', paddingLeft: '0.1rem', backgroundColor: 'rgb(247, 247, 247)', color: "#444"
                                             }}
                                             className="border-b border-gray-dddddd flex items-center justify-center"
                                         >
@@ -290,23 +288,23 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                         </div>
                                     </div>
                                     <div
-                                        style={{ backgroundColor: "#ffffff", borderBottomRightRadius: '1.1rem', display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem' }}
+                                        style={{ backgroundColor: "#ffffff", borderBottomRightRadius: '1.1rem', display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem', fontWeight: 'normal', color: "#444" }}
                                         className="flex flex-col w-full border-r border-gray-dddddd font-robotoRegular tracking-tight text-gray-r585858"
                                     >
                                         <div
-                                            style={{ height: "5.6rem", paddingRight: '1.8125rem', display: 'flex', alignItems: 'center', justifyContent: 'end', borderBottom: '0.1875rem solid #bbbbbb', paddingTop: '0.3rem', paddingLeft: '0.1rem' }}
+                                            style={{ height: "5.6rem", paddingRight: '1.8125rem', display: 'flex', alignItems: 'center', justifyContent: 'end', borderBottom: '0.1875rem solid #bbbbbb', paddingTop: '0.3rem', paddingLeft: '0.1rem', color: "#444" }}
                                             className="border-b border-gray-dddddd flex items-center justify-end"
                                         >
                                             5,000.00
                                         </div>
                                         <div
-                                            style={{ height: "5.6rem", paddingRight: '1.8125rem', display: 'flex', alignItems: 'center', justifyContent: 'end', borderBottom: '0.1875rem solid #bbbbbb', paddingTop: '0.3rem', paddingLeft: '0.1rem' }}
+                                            style={{ height: "5.6rem", paddingRight: '1.8125rem', display: 'flex', alignItems: 'center', justifyContent: 'end', borderBottom: '0.1875rem solid #bbbbbb', paddingTop: '0.3rem', paddingLeft: '0.1rem', color: "#444" }}
                                             className="border-b border-gray-dddddd flex items-center justify-end"
                                         >
                                             10,000.00
                                         </div>
                                         <div
-                                            style={{ height: "5.4rem", paddingRight: '1.8125rem', display: 'flex', alignItems: 'center', justifyContent: 'end', paddingTop: '0.3rem', paddingLeft: '0.1rem' }}
+                                            style={{ height: "5.4rem", paddingRight: '1.8125rem', display: 'flex', alignItems: 'center', justifyContent: 'end', paddingTop: '0.3rem', paddingLeft: '0.1rem', color: "#444" }}
                                             className="border-b border-gray-dddddd flex items-center justify-end"
                                         >
                                             5,000.00
