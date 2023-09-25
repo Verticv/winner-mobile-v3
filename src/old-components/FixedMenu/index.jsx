@@ -38,7 +38,7 @@ const FixedMenu = () => {
           <div className='nav-item1'>
             <img src={MenuIcon4} alt="right" className="ml-10px object-none" />
             <p>
-              실시간스포츠
+            라이브스포츠
             </p>
           </div>
         </div>

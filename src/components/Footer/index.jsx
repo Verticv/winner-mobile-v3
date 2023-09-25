@@ -46,7 +46,7 @@ function Footer({ isExpanded, setExpanded }) {
       list: [
         '조합베팅',
         '스페셜베팅',
-        '실시간스포츠',
+        '라이브스포츠',
       ]
     },
     {

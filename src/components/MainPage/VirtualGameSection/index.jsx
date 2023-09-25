@@ -4,6 +4,7 @@ import VirtualGameIcon from '../../../assets/images/mainPage/sectionTitle/icon81
 import SectionHeader from "../../Shared/SectionHeader";
 import SharedCard from "../../Shared/SharedCard";
 import Image1 from '../../../assets/images/mainPage/virtual-game1.png'
+import Image2 from '../../../assets/images/mainPage/virtual-game2.png'
 
 const VirtualGameSection = () => {
 
@@ -12,6 +13,11 @@ const VirtualGameSection = () => {
       id: 0,
       title: '키론가상게임',
       img: Image1
+    },
+    {
+      id: 1,
+      title: '이용가이드',
+      img: Image2
     },
    
   ]
