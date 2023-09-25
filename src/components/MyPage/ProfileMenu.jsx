@@ -105,7 +105,7 @@ const ProfileMenu = () => {
         {
           id: 3,
           icon2: MenuIcon_1_3,
-          title: '실시간스포츠',
+          title: '라이브스포츠',
           OnIcon: MenuOn3,
           path: '/mypage/bet-history/all/sports'
         },

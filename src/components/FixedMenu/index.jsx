@@ -86,7 +86,7 @@ const FixedMenu = ({
       icon: Menu3,
       icon2: MenuIcon_3,
       OnIcon: MenuOn3,
-      title: '실시간스포츠',
+      title: '라이브스포츠',
       section: 'live-sports'
     },
     {
