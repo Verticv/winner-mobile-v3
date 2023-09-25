@@ -114,9 +114,9 @@ const HistoryTable = ({
         return cards.map((card, index) => (
             <div style={{
                 // minHeight: cardHeight, width: `${!hasButton ? '73.875rem' : ''}`,
-                marginBottom: "1.923rem",
-                marginRight: "1.86rem",
-                marginLeft: "1.86rem",
+                marginBottom: "1.861rem",
+                marginRight: "1.798rem",
+                marginLeft: "1.923rem",
                 marginTop: "1.86rem",
                 padding: '0.1875rem',
                 // marginTop: `${index ? '0' : '1.875rem'}`,
@@ -131,14 +131,14 @@ const HistoryTable = ({
                     height: '100%',
                     background: containerBackground && index % 2 ? '#ffffff' : '#ffffff',
                     paddingRight: '1.875rem',
-                    padding: '2.125rem 2.7rem 1.688rem',
+                    padding: '2.125rem 2.7rem 1.126rem',
                     paddingTop: hasLeftInput ? (hasButton ? '2.4rem' : '3.3rem') : '2.4rem',
                     display: 'flex',
                     alignItems: 'center',
                     position: 'relative'
                 }}>
                     {hasLeftInput && (
-                        <div style={{ width: '5.8125rem', position: 'relative', marginRight: '1.35rem', marginTop: '-0.2rem' }}>
+                        <div style={{ width: '5.8125rem', position: 'relative', marginRight: '0.038rem', marginTop: '-0.95rem', marginLeft:"0.125rem" }}>
                             <label className="form-control">
                                 <input
                                     className='w-12 h-12'
@@ -179,10 +179,10 @@ const HistoryTable = ({
                                     firstColumnColor = row[0][firstRowKeysName[0]] === '사용가능' ? "#e65454" : "#7b7b7b"
                                 }
                                 return (
-                                    <div key={index} style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.375rem', color: firstColumnColor, letterSpacing: '-0.07rem', marginLeft: '0.14rem', display: 'flex', width: '100%' }}>
-                                        <span className='text-gray-r585858' style={{ fontSize: '2.624375rem', color: '#444444', flexShrink: 0, marginRight: '0.8rem' }}>{firstRowKeysName[0]} : </span>
-                                        <span className='' style={{
-                                            color: '', display: 'inline-flex',
+                                    <div key={index} style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginTop: "-0.313rem", marginBottom: '0.75rem', color: firstColumnColor, letterSpacing: '-0.07rem', marginLeft: '0.14rem', display: 'flex', width: '100%' }}>
+                                        <span className='font-spoqaMedium text-gray-r585858' style={{ fontSize: '2.624375rem', color: '#444444', fontFamily: 'SpoqaHanSansNeoMedium', flexShrink: 0, marginRight: '0.8rem' }}>{firstRowKeysName[0]} : </span>
+                                        <span className='font-spoqa' style={{
+                                            fontFamily: 'SpoqaHanSansNeo', color: '', display: 'inline-flex',
                                             wordBreak: 'break-all',
                                             maxWidth: firstRowKeysName[0] === '아이디' ? '' : isPointPage ? '57rem' : (firstRowKeysName[0] === '쿠폰명') ? isGift ? '42rem' : hasButton ? '48rem' : '47rem' : width45 ? '45rem' : hasButton ? isGift ? '32rem' : isCoupon ? '38rem' : '39.7rem' : '39.7rem',
                                             overflow: firstRowKeysName[0] === '아이디' ? 'hidden' : '',
@@ -234,6 +234,8 @@ const HistoryTable = ({
                         ) : hasButton &&
                         <div style={{ position: 'absolute', right: '1.9rem', height: '100%', display: 'flex', alignItems: 'center', top: '-0.1875rem' }}>
                             <button className="hover change-top" style={{
+                                marginTop: "0.376rem",
+                                marginRight: "-0.188rem",
                                 width: '10.875rem',
                                 height: '10.875rem',
                                 backgroundColor: card[card.length - 1].buttonColor || '#5d659f',

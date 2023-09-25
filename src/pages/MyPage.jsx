@@ -45,8 +45,8 @@ useEffect(() => {
 
 
 const tabsArray1 = [
-  { text: "충전신청", icon: Icon1, activeIcon: activeIcon1, id: 0, path: "/mypage/money/charge", width: '7.875rem' },
-  { text: "충전내역", icon: Icon2, activeIcon: activeIcon2, id: 1, path: "/mypage/money/charge/history", width: '7.875rem' },
+  { text: "충전신청", icon: Icon1, activeIcon: activeIcon1, id: 0, path: "/mypage/money/charge", width: '7.563rem' },
+  { text: "충전내역", icon: Icon2, activeIcon: activeIcon2, id: 1, path: "/mypage/money/charge/history", width: '7.563rem' },
 ];
   return (
     <>
@@ -62,7 +62,7 @@ const tabsArray1 = [
       <Route path="/bet-history/*" element={<>
         <Header/> 
         <NoticeBanner />
-        <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' />
+        <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' setOpen={setOpen} />
         <BetHistoryTest isAuthenticated={isAuthenticated}
                         subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
         />
@@ -76,8 +76,8 @@ const tabsArray1 = [
          <>
          <Header/> 
         <NoticeBanner />
-        <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' />
-                 <div style={{ maxWidth: '1242px', paddingBottom: '16rem' }} className="relative w-full flex flex-col justify-center overflow-hidden money-page">
+        <HomePageTopBanner pageTitle='머니충전' toPath='/mypage/bet-history' />
+                 <div style={{ maxWidth: '1242px', paddingBottom: '16.125rem' }} className="relative w-full flex flex-col justify-center overflow-hidden money-page">
                  <div id='container-nav'>
                                 <HorizontalMenu1 itemsArray={tabsArray1} setSelectedTab={setSelectedTab1} setSelectedSubTab={setSelectedSubTab1} isMoneyPage='true' />
                             </div>
@@ -91,7 +91,7 @@ const tabsArray1 = [
             <Route path="/charge/history" element={
               <>
               <ScrollButton />
-              <div style={{ marginTop: '1rem' }}>
+              <div style={{ marginTop: '0.625rem' }}>
                 <MoneyChargeHistory subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}/>
               </div>
               </>

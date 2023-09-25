@@ -83,12 +83,12 @@ const DateSearchBar = ({
     }
     return (
         <div style={{
-            margin: withMargin ? (!isFreeboard ? '1rem 1.875rem' : '1.2rem 1.875rem') : '0 3.875rem 0 0',
+            margin: withMargin ? (!isFreeboard ? '0.65rem 1.875rem 0.9rem 1.938rem' : '1.2rem 1.875rem') : '0 3.875rem 0 0',
             width: withMargin ? '' : '73.875rem',
             background: 'linear-gradient(to right,#5e2c89,#42227e)',
             borderRadius: '1.1rem',
-            // paddingTop: isPoints ? '0' : '0.65rem',
-            // marginTop: isGameResultsSearch === true ? '0' : isPoints ? '0.688rem' : '',
+            paddingTop: isPoints ? '0' : '0px',
+            marginTop: isGameResultsSearch === true ? '0.688rem' : isPoints ? '0.688rem' : '0.625rem',
             marginBottom: isIOS ? '-0.3rem' : ''
         }} className="date12">
 
@@ -141,7 +141,7 @@ const DateSearchBar = ({
             )}
 
             <div className="second-row">
-                <div className="date-picker left-date-picker" style={{ position: 'relative' }}>
+                <div className="date-picker left-date-picker" style={{ position: 'relative', marginTop: "-0.188rem" }}>
                     <DatePicker
                         showYearDropdown
                         yearDropdownItemNumber={100}
@@ -246,7 +246,7 @@ const DateSearchBar = ({
                     <img src={CalendarIcon} alt="" style={{ width: '3.5rem' }} className="w-14 absolute right-8" />
                 </div>
                 {!disableRange && <span className='Signal'>~</span>}
-                <div className="date-picker right-date-picker" style={{ position: 'relative' }}>
+                <div className="date-picker right-date-picker" style={{ position: 'relative', marginTop: "-0.188rem" }}>
                     {hasDateSuggestion ? (
                         <>
                             <DatePicker
@@ -398,7 +398,7 @@ const DateSearchBar = ({
                             <div className="text-con"
                                 style={{ background: withBlackButton ? '' : 'linear-gradient(to top, #6b22ff, #df52ff)' }}
                             >
-                                <span style={{ color: "#ffffff" }} className="shadow-to-text tracking-tight text-white pt-px">{withBlackButton ? "3개월" : "검색"}</span>
+                                <span style={{color: withBlackButton ? "" : "#ffffff"}} className={` ${ withBlackButton ? "" : "shadow-to-text"} font-spoqaMedium tracking-tight text-white pt-px`}>{withBlackButton ? "3개월" : "검색"}</span>
                             </div>
                         </div>
                     ) : (
@@ -432,7 +432,7 @@ const DateSearchBar = ({
                     </div>
                 )}
                 {withBlackButton && (
-                    <div style={{ minWidth: isDistributorPage ? '27.4375rem' : '70.1375rem', height: '7.3125rem', background: 'linear-gradient(to top, #4f3a7a, #e597ff)', padding: '0.1875rem', margin: '-1.1rem 0 1.875rem 0', borderRadius: '1.125rem', boxShadow: "0px 0.375rem 0.75rem 0px rgba(0, 0, 0, 0.6)" }} className="hover withBlackButton">
+                    <div style={{ minWidth: isDistributorPage ? '27.4375rem' : '70.1375rem', height: '7.25rem', background: 'linear-gradient(to top, #4f3a7a, #e597ff)', padding: '0.1875rem', margin: '-0.789rem 0.125rem 1.75rem 0.125rem', borderRadius: '1.125rem',boxShadow: "0px 0.375rem 0.75rem 0px rgba(0, 0, 0, 0.6)" }} className="hover withBlackButton">
                         <div style={{ background: 'linear-gradient(to top, #6b22ff, #df52ff)', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '1.125rem' }} className="flex w-full h-full items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
                             <span style={{ fontSize: '2.625rem', color: '#ffffff', marginTop: '0.2rem' }} className="shadow-to-text">검색</span>
                         </div>

@@ -82,10 +82,10 @@ const SelectAllButton = (
     }
 
     return (
-        <div style={{ margin: '3.75rem 1.875rem', marginTop: '1.875rem', marginBottom: '2.5rem' }} >
+        <div style={{ margin: '3.75rem 0', marginTop: '1.875rem', marginBottom: '2.5rem' }} >
             <div className='two-buttons'>
                 <button
-                    style={{ height: '7.3125rem', boxShadow: "0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.3)" }}
+                    style={{  marginLeft: "0.125rem",height: '7.3125rem', boxShadow: "0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.3)" }}
                     className="first-btn hover"
                     onClick={() => allSelectButtonPressed()}
                 >
@@ -97,7 +97,7 @@ const SelectAllButton = (
                         }}
                         className="div-border flex items-center justify-center h-full w-full rounded-2xl border border-gray-r737579 cursor-pointer"
                     >
-                        <span style={{ fontSize: '2.8125rem' }} className="shadow-to-text text  tracking-tight text-14px text-white  mb-2">{isAllSelected ? "선택해제" : "전체선택"}</span>
+                        <span style={{ fontSize: '2.8125rem' }} className="text font-spoqaMedium tracking-tight text-14px text-white  mb-2">{isAllSelected ? "선택해제" : "전체선택"}</span>
                     </div>
                 </button>
                 <button
@@ -111,7 +111,7 @@ const SelectAllButton = (
                         }}
                         className="div-border flex items-center justify-center h-full w-full rounded-2xl border border-red-f36576 cursor-pointer"
                     >
-                        <span style={{ fontSize: '2.8125rem' }} className="shadow-to-text text  tracking-tight text-14px text-white mb-2">{btn1Text}</span>
+                        <span style={{ fontSize: '2.8125rem' }} className="text font-spoqaMedium tracking-tight text-14px text-white mb-2">{btn1Text}</span>
                     </div>
                 </button>
             </div>
