@@ -54,7 +54,7 @@ import activeBG from '../../../assets/mainPage/points/active-bg.png'
 import icon1 from '../../../assets/bigIcons/1_v3.png';
 import icon2 from '../../../assets/images/bottom-nav/menu1.png';
 import icon3 from '../../../assets/images/bottom-nav/menu2.png';
-// import icon4 from '../assets/images/bottom-nav/menu3.png';
+import icon4 from '../../../assets/images/bottom-nav/menu3.png';
 import icon5 from '../../../assets/images/bottom-nav/menu4.png';
 import icon6 from '../../../assets/images/bottom-nav/menu5.png';
 import icon7 from '../../../assets/images/bottom-nav/menu6.png';
@@ -100,6 +100,7 @@ const tabsArray = [
     { text: "전체", icon: icon1, activeIcon: icon1Active, id: -1, path: "/mypage/bet-history/all", activeBG: activeBG },
     { text: "라이브카지노", icon: icon2, activeIcon: icon2Active, id: 0, path: "/mypage/bet-history/all/live-casino", activeBG: activeBG, width: "7.75rem" },
     { text: "스포츠", icon: icon3, activeIcon: icon3Active, id: 1, path: "/mypage/bet-history/all/sports", activeBG: activeBG , width: "7.75rem"},
+    { text: "라이브스포츠", icon: icon4, activeIcon: icon3Active, id: 1, path: "/mypage/bet-history/all/live-sports", activeBG: activeBG , width: "7.75rem"},
     { text: "슬롯", icon: icon5, activeIcon: icon5Active, id: 2, path: "/mypage/bet-history/all/slot-game", activeBG: activeBG , width: "6.625rem"},
     { text: "호텔카지노", icon: icon6, activeIcon: icon6Active, id: 3, path: "/mypage/bet-history/all/hotel-casino", activeBG: activeBG },
     { text: "e-스포츠", icon: icon7, activeIcon: icon7Active, id: 4, path: "/mypage/bet-history/all/e-sports", activeBG: activeBG },
@@ -271,6 +272,23 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                 }
                                 />
                                 <Route path="/sports"
+                                    element={
+                                        <>
+                                            <ScrollButton />
+                                            <SportsBetHistory key={55} checkedState={checkedState} setCheckedState={setCheckedState}
+                                                subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
+                                            />
+                                            <Pagination page={page} setPage={setPage} />
+                                            {/* <NavBottom /> */}
+                                            <FixedMenu
+                                              selectedTab={selectedTab}
+                                              setSelectedTab={setSelectedTab}
+                                            />   
+                                        </>
+                                    }
+                                >
+                                </Route>
+                                <Route path="/live-sports"
                                     element={
                                         <>
                                             <ScrollButton />

@@ -15,7 +15,7 @@ const Pagination = ({ page, setPage, withMarginBottom = true }) => {
         >
             <img style={{
                 width: '1.3125rem', height: '2.1875rem',
-                marginLeft: '1rem', marginTop: '-0.5rem'
+                marginLeft: '1rem', marginTop: '-1rem'
             }} className="cursor-pointer object-contain max-w-none ddddddddddddd" src={LeftIcon} alt="arrow" />
         </button>
     )
@@ -25,7 +25,7 @@ const Pagination = ({ page, setPage, withMarginBottom = true }) => {
             className='hover'
             onClick={() => selectedPage !== 5 && setSelectedPage(selectedPage + 1)}
         >
-            <img style={{ width: '1.3125rem', height: '2.1875rem', marginLeft: '0.9rem', marginTop: '-0.5rem' }} className="cursor-pointer max-w-none object-contain" src={RightIcon} alt="arrow" />
+            <img style={{ width: '1.3125rem', height: '2.1875rem', marginLeft: '0.9rem', marginTop: '-1rem' }} className="cursor-pointer max-w-none object-contain" src={RightIcon} alt="arrow" />
         </button>
     )
 
@@ -38,7 +38,7 @@ const Pagination = ({ page, setPage, withMarginBottom = true }) => {
                 className='hover'
                 onClick={() => setSelectedPage(1)}
             >
-                <img style={{ width: '2.125rem', height: '2.125rem', marginLeft: '0.1rem', marginTop: '-0.5rem' }} className="cursor-pointer object-contain max-w-none" src={DoubleLeftIcon} alt="" />
+                <img style={{ width: '2.125rem', height: '2.125rem', marginLeft: '0.1rem', marginTop: '-1rem' }} className="cursor-pointer object-contain max-w-none" src={DoubleLeftIcon} alt="" />
             </button>
             <LeftArrow />
             <div className="space-x-px flex items-center buttons-container">
@@ -83,7 +83,7 @@ const Pagination = ({ page, setPage, withMarginBottom = true }) => {
                     className='hover'
                     onClick={() => setSelectedPage(5)}
                 >
-                    <div style={{ marginTop: '-0.5rem' }}>
+                    <div style={{ marginTop: '-1rem' }}>
                         <span style={{ fontSize: '2.4375rem', color: selectedPage === 5 ? "#594e6a" : '#eeeeee' }} className={`${selectedPage === 5 ? " text-white" : " text-gray-r454545"} font-roboto tracking-tight text-14px pt-2px`}>5</span>
                     </div>
                 </button>
@@ -96,7 +96,7 @@ const Pagination = ({ page, setPage, withMarginBottom = true }) => {
                 className='hover'
                 onClick={() => setSelectedPage(5)}
             >
-                <img style={{ width: '2.125rem', height: '2.125rem', marginTop: '-0.5rem' }} className=" cursor-pointer object-contain max-w-none" src={DoubleRightIcon} alt="" />
+                <img style={{ width: '2.125rem', height: '2.125rem', marginTop: '-1rem' }} className=" cursor-pointer object-contain max-w-none" src={DoubleRightIcon} alt="" />
             </button>
         </div>
     )
