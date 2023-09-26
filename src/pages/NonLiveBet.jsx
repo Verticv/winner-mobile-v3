@@ -11,11 +11,16 @@ import FavoritesSection from "../components/NonLiveBet/FavoritesSection/index";
 import SearchSection from "../components/NonLiveBet/SearchSection/index";
 import Section3 from "../components/NonLiveBet/Section3/index";
 import Section4 from "../components/NonLiveBet/Section4/index";
+// import GameMarkets from "../components/NonLiveBet/GameMarkets/index";
+// import Settings from "../components/NonLiveBet/Settings/index";
+
 function NonLiveBet() {
   const [activeButton, setActiveButton] = useState(null)
  
   return (
     <div className="container relative">
+      {/* <GameMarkets/> */}
+
       <MainTabs />
       {!activeButton &&
         (<>
@@ -30,7 +35,8 @@ function NonLiveBet() {
       {activeButton === 'favorite' && (<FavoritesSection close={() => setActiveButton(null)} />)}
       {activeButton === 'win' && (<Section3 close={() => setActiveButton(null)} />)}
       {activeButton === 'win2' && (<Section4 close={() => setActiveButton(null)} />)}
-      {activeButton === 'search' && (<SearchSection close={() => setActiveButton(null)} /> )}
+      {activeButton === 'search' && (<SearchSection close={() => setActiveButton(null)} />)}
+      {/* <Settings/> */}
     </div>
 
   )
