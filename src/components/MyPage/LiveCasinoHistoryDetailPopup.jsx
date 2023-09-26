@@ -28,8 +28,8 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                 marginBottom: '1.0625rem', display: 'flex', alignItems: 'center', fontWeight: "bold",
                                 marginLeft: '-0.1rem'
                             }}>
-                                <p className="" style={{ margin: '0', letterSpacing: '-0.2rem', color: '#fff' }}>플레이어 이름 :{" "}</p>
-                                <p className="text-blue-r0056a6" style={{
+                                <p style={{ margin: '0', letterSpacing: '-0.2rem', color: '#fff' }}>플레이어 이름 :{" "}</p>
+                                <p style={{
                                     margin: '0', letterSpacing: '-0.2rem', marginLeft: '1rem', color: 'rgb(255, 204, 0)', whiteSpace: 'nowrap', maxWidth: '21.5rem', overflow: 'hidden ', textOverflow: 'ellipsis'
                                 }}>{" "}WINlouie3</p>
                             </div>
@@ -37,7 +37,6 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                         </div>
                         <div
                             style={{ height: "", backgroundColor: "rgb(144, 92, 196)", fontWeight: 'bold', fontSize: '2.625rem', width: '68.3rem', overflow: 'hidden', borderRadius: '1.4rem', padding: '0.1875rem' }}
-                            className="w-full rounded-2xl shadow-subNavbar overflow-hidden"
                         >
 
                             <div className="flex flex-col" style={{ display: 'flex', flexDirection: 'column' }}>
@@ -53,7 +52,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
 
                                 <div className="flex" style={{ display: 'flex' }}>
                                     <div
-                                        style={{ backgroundColor: "#ffffff", display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb', color:"#444" }}
+                                        style={{ backgroundColor: "#ffffff", display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb', color: "#444" }}
                                         className="flex flex-col w-full border-r border-gray-dddddd  tracking-tight text-gray-r585858"
                                     >
                                         <div
@@ -111,7 +110,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                     </div>
 
                                     <div
-                                        style={{ backgroundColor: "#ffffff", display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem', fontWeight: 'normal', color:"#444" }}
+                                        style={{ backgroundColor: "#ffffff", display: 'flex', flexDirection: 'column', width: '50%', letterSpacing: '-0.07rem', fontWeight: 'normal', color: "#444" }}
                                         className="flex flex-col w-full border-r border-gray-dddddd font-robotoRegular tracking-tight text-gray-r585858"
                                     >
                                         <div
@@ -190,7 +189,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                     </div>
                                 </div>
 
-                                <div style={{ height: "5.3rem", display: 'flex', background: '#ffffff', fontWeight: 'normal', color:"#444" }} className="flex font-robotoRegular border-b border-gray-dddddd text-gray-r585858">
+                                <div style={{ height: "5.3rem", display: 'flex', background: '#ffffff', fontWeight: 'normal', color: "#444" }} className="flex font-robotoRegular border-b border-gray-dddddd text-gray-r585858">
                                     <div
                                         style={{ display: 'flex', flex: '1', alignItems: 'center', justifyContent: 'center', letterSpacing: '-0.07rem', borderRight: '0.1875rem solid #bbbbbb' }}
                                         className=" flex flex-1 items-center justify-center tracking-tight text- border-r"
@@ -280,7 +279,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                                         <div
                                             style={{
                                                 height: "5.4rem", display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                                paddingTop: '0.3rem', paddingLeft: '0.1rem', backgroundColor: 'rgb(247, 247, 247)', color: "#444"
+                                                paddingTop: '0.3rem', paddingLeft: '0.1rem', backgroundColor: 'rgb(247, 247, 247)', color: "#444", borderBottomLeftRadius: '1.4rem'
                                             }}
                                             className="border-b border-gray-dddddd flex items-center justify-center"
                                         >

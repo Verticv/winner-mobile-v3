@@ -41,6 +41,7 @@ const LiveSportsSection = () => {
           title={card.title}
           img={card.img}
           clickEffect={clickEffect}
+          btn={(card.id === 1 || card.id === 2) ? "설명보기" : "게임시작"}
           setClickEffect={setClickEffect}/>
       ))
         }</div>

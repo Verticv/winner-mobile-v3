@@ -55,7 +55,7 @@
       margin-left: 0.625rem;
       margin-bottom: 3.375rem;
       p {
-        color: #666;
+        color: #444;
         font-size: 2.438rem;
         text-align: center;
         letter-spacing: -0.005em;
@@ -104,7 +104,7 @@
         input {
             background: bottom;
             border: 0;
-            color: #c8c8c8;
+            color: #444;
             font-size: 2.813rem;
             height: 100%;
             outline: none;
@@ -115,7 +115,11 @@
             width: 100%;
            
           }
+        ::placeholder {
+          color: #c8c8c8;
+        }
       }
+      
       .row {
         max-width: 100%;
         display: flex;

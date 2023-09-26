@@ -138,7 +138,7 @@ const HistoryTable = ({
                     position: 'relative'
                 }}>
                     {hasLeftInput && (
-                        <div style={{ width: '5.8125rem', position: 'relative', marginRight: '0.038rem', marginTop: '-0.95rem', marginLeft:"0.125rem" }}>
+                        <div style={{ width: '5.8125rem', position: 'relative', marginRight: '1rem', marginTop: '-0.95rem', marginLeft:"0.125rem" }}>
                             <label className="form-control">
                                 <input
                                     className='w-12 h-12'

@@ -35,6 +35,7 @@ const VirtualGameSection = () => {
           key={card.id}
           title={card.title}
           img={card.img}
+          btn={(card.id === 1) ? "설명보기" : "게임시작"}
           clickEffect={clickEffect}
           setClickEffect={setClickEffect}/>
       ))
