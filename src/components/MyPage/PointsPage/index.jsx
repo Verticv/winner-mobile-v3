@@ -1,7 +1,7 @@
 import PointsApply from '../PointsApply'
 import PointsTransactionHistory from '../PointsTransactionHistory'
 // import HomePageTopBanner from '../HomePageTopBanner';
-import HorizontalMenu1 from '../HorizontalMenu1'
+import HorizontalMenu3 from '../HorizontalMenu3'
 import React, { useState, useEffect } from 'react'
 import Icon1 from '../../../assets/mainPage/points/1_v3.png';
 import Icon2 from '../../../assets/mainPage/points/2_v3.png';
@@ -23,7 +23,7 @@ import './_pointsPage.scss';
 
 
 const tabsArray = [
-    { text: "포인트전환신청", icon: Icon1, activeIcon: Icon1Active, id: 0, path: "/mypage/points/all", activeBG: activeBG, width: '7.875rem' },
+    { text: "포인트전환신청", icon: Icon1, activeIcon: Icon1Active, id: 0, path: "/mypage/points/all", activeBG: activeBG, width: '7.5rem' },
     { text: "포인트적립내역", icon: Icon2, id: 1, activeIcon: Icon2Active, path: "/mypage/points/all/points-accumulate-history", activeBG: activeBG, width: '7.875rem' },
     { text: "포인트전환내역", icon: Icon3, id: 2, activeIcon: Icon3Active, path: "/mypage/points/all/points-transaction-history", activeBG: activeBG, width: '7.875rem' },
 ];
@@ -63,11 +63,11 @@ const PointsPage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSub
 
     const SubMenuList = (
         <>
-            <div style={{ padding: '1.75rem 1.875rem 0.975rem 1.9rem', display: 'flex' }}>
+            <div style={{ padding: '2rem 1.875rem 0.975rem 1.9rem', display: 'flex' }}>
                 <div style={{ borderRadius: "1.125rem", padding: '0.563rem', marginRight: '1rem', height: '13.125rem', background: '#631e9a', width: '36.5rem' }}>
                     <div style={{ borderRadius: "1.125rem", color: '#5e399a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-                        <div style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem' }}>잔여 포인트</div>
-                        <div style={{ fontSize: '4.125rem', marginTop: '0.9rem', letterSpacing: '-0.13rem' }}>
+                        <div style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem', marginTop: "-0.438rem" }}>잔여 포인트</div>
+                        <div style={{ fontSize: '4.125rem', marginTop: '0.463rem', letterSpacing: '-0.13rem' }}>
                             <span style={{ color: '#f04281' }}>278</span>
                             <span>P</span>
                         </div>
@@ -75,8 +75,8 @@ const PointsPage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSub
                 </div>
                 <div style={{ borderRadius: "1.125rem", padding: '0.563rem', marginRight: '', height: '13.125rem', background: '#631e9a', width: '36.5rem' }}>
                     <div style={{ borderRadius: "1.125rem", color: '#594e6a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-                        <div style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem' }}>당월 적립포인트</div>
-                        <div style={{ fontSize: '4.125rem', marginTop: '0.9rem', letterSpacing: '-0.13rem', color:"#5e399a" }}>
+                        <div style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem', marginTop: "-0.438rem" }}>당월 적립포인트</div>
+                        <div style={{ fontSize: '4.125rem', marginTop: '0.463rem', letterSpacing: '-0.13rem', color:"#5e399a" }}>
                             <span style={{}}>50</span>
                             <span>P</span>
                         </div>
@@ -88,8 +88,8 @@ const PointsPage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSub
             <div style={{ padding: '1.875rem', paddingTop: '0', display: 'flex' }} className='w-full flex'>
                 <div style={{ borderRadius: "1.125rem", padding: '0.563rem', marginRight: '1rem', height: '13.125rem', background: '#631e9a', width: '24rem' }}>
                     <div style={{ borderRadius: "1.125rem", color: '#594e6a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', paddingRight: '0.35rem' }}>
-                        <div style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem' }}>전월 적립포인트</div>
-                        <div style={{ fontSize: '3.425rem', marginTop: '0.9rem', letterSpacing: '-0.13rem', color:"#5e399a" }}>
+                        <div style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem', marginTop: "-0.438rem" }}>전월 적립포인트</div>
+                        <div style={{ fontSize: '3.425rem', marginTop: '0.463rem', letterSpacing: '-0.13rem', color:"#5e399a" }}>
                             <span style={{}}>228</span>
                             <span>P</span>
                         </div>
@@ -97,8 +97,8 @@ const PointsPage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSub
                 </div>
                 <div style={{ borderRadius: "1.125rem", padding: '0.563rem', marginRight: '1rem', height: '13.125rem', background: '#631e9a', width: '24rem' }}>
                     <div style={{ borderRadius: "1.125rem", color: '#594e6a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', paddingRight: '0.26rem' }}>
-                        <div className="text-gray-r7b7b7b  text-4xl tracking-tight flex items-center" style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem' }}>총 누적포인트</div>
-                        <div style={{ fontSize: '3.425rem', marginTop: '0.9rem', letterSpacing: '-0.13rem', color:"#5e399a" }}>
+                        <div className="text-gray-r7b7b7b  text-4xl tracking-tight flex items-center" style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem', marginTop: "-0.438rem" }}>총 누적포인트</div>
+                        <div style={{ fontSize: '3.425rem', marginTop: '0.463rem', letterSpacing: '-0.13rem', color:"#5e399a" }}>
                             <span style={{}}>278</span>
                             <span>P</span>
                         </div>
@@ -106,8 +106,8 @@ const PointsPage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSub
                 </div>
                 <div style={{ borderRadius: "1.125rem", padding: '0.563rem', marginRight: '', height: '13.125rem', background: '#631e9a', width: '24rem' }}>
                     <div style={{ borderRadius: "1.125rem", color: '#594e6a', paddingTop: '2.15rem', background: '#ffffff', width: '100%', height: '100%', display: 'flex', alignItems: 'center', flexDirection: 'column', paddingRight: '0.26rem' }}>
-                        <div className="text-gray-r7b7b7b  text-4xl tracking-tight flex items-center" style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem' }}>총 사용포인트</div>
-                        <div style={{ fontSize: '3.425rem', marginTop: '0.9rem', letterSpacing: '-0.13rem', color:"#5e399a" }}>
+                        <div className="text-gray-r7b7b7b  text-4xl tracking-tight flex items-center" style={{ fontSize: '2.25rem', letterSpacing: '-0.07rem', marginTop: "-0.438rem" }}>총 사용포인트</div>
+                        <div style={{ fontSize: '3.425rem', marginTop: '0.463rem', letterSpacing: '-0.13rem', color:"#5e399a" }}>
                             <span style={{}}>228</span>
                             <span>P</span>
                         </div>
@@ -139,7 +139,7 @@ const PointsPage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSub
     // }
 
     return (
-        <div style={{}} className="relative w-full flex flex-col justify-center overflow-hidden">
+        <div style={{marginTop: "-0.063rem"}} className="relative w-full flex flex-col justify-center overflow-hidden">
 
             <Routes>
                 {/* <Route index element={
@@ -153,8 +153,8 @@ const PointsPage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSub
                         {/* <Header /> */}
                         <ScrollButton />
                         {/* <HomePageTopBanner pageTitle='포인트' toPath='/mypage/points' /> */}
-                        <div className='mypage-points' id='container-nav'>
-                            <HorizontalMenu1 withSmallMarginTop itemsArray={tabsArray} setSelectedTab={setSelectedTab} setSelectedSubTab={setSelectedSubTab} />
+                        <div style={{padding: "0.038rem 1.288rem"}} className='mypage-points' id='container-nav'>
+                            <HorizontalMenu3 withSmallMarginTop itemsArray={tabsArray} setSelectedTab={setSelectedTab} setSelectedSubTab={setSelectedSubTab} />
                         </div>
                         <Routes>
                             <Route index element={

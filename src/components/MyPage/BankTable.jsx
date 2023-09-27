@@ -169,7 +169,7 @@ const BankTable = () => {
     //     </div>
     // )
     return (
-        <div style={{ marginTop: '1.838rem', background: 'linear-gradient(to top, #ededeb , #cb78e6)', padding: '0.1875rem', borderRadius: '1.125rem', boxShadow: "0px 0px 12px 0px rgba(0, 0, 0, 0.8)" }}>
+        <div style={{ marginTop: '1.838rem', background: 'linear-gradient(to top, #ededeb , #cb78e6)', padding: '0.1875rem', borderRadius: '1.125rem', boxShadow: "0px 0px 0.75rem 0px rgba(0, 0, 0, 0.8)" }}>
             <div style={{ display: 'flex', height: '13.5rem', background: '#ffffff', borderTopLeftRadius: "1.125rem", borderTopRightRadius: "1.125rem" }}>
                 <div style={{ width: '50%', textAlign: 'center', borderRight: '0.1875rem solid #dddddd' }}>
                     <div style={{ height: '10rem', display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: "0.188rem" }}>

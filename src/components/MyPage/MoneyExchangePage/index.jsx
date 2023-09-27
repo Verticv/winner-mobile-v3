@@ -19,8 +19,8 @@ import ScrollButton from '../ScrollButton';
 
 // currency exchange
 const tabsArray = [
-    { text: "환전신청", icon: Icon1, id: 0, activeIcon: activeIcon1, path: "/mypage/money/exchange/currency", width: '7.875rem' },
-    { text: "환전내역", icon: Icon2, id: 1, activeIcon: activeIcon2, path: "/mypage/money/exchange/currency/history", width: '7.875rem' },
+    { text: "환전신청", icon: Icon1, id: 0, activeIcon: activeIcon1, path: "/mypage/money/exchange/currency", width: '7.563rem' },
+    { text: "환전내역", icon: Icon2, id: 1, activeIcon: activeIcon2, path: "/mypage/money/exchange/currency/history", width: '7.563rem' },
 ];
 
 // const LeftMenuSubArray = [
@@ -51,7 +51,7 @@ const MoneyExchangePage = ({ isAuthenticated, setAuthenticated, subActiveButton,
     
 
     return (
-        <div style={{ maxWidth: '1242px', paddingBottom: '14.5rem' }} className="relative w-full flex flex-col justify-center overflow-hidden money-page2">
+        <div style={{ maxWidth: '1242px', paddingBottom: '16.125rem' }} className="relative w-full flex flex-col justify-center overflow-hidden money-page2">
             <Routes>
  
                 {/* <Route exact path="/*"
@@ -87,7 +87,7 @@ const MoneyExchangePage = ({ isAuthenticated, setAuthenticated, subActiveButton,
                                 <HomePageTopBanner pageTitle='머니환전' toPath='/mypage/money/exchange' />
                             </div> */}
 
-                            <div className="flex flex-col items-start limit:items-center w-full h-full">
+                            <div style={{marginBottom: "-16.2rem"}} className="flex flex-col items-start limit:items-center w-full h-full">
 
                                 <div className="w-full relative top-0">
                                     <div className="overflow-x-scroll overflow-y-hidden hide-scrollbar">
@@ -115,7 +115,7 @@ const MoneyExchangePage = ({ isAuthenticated, setAuthenticated, subActiveButton,
                                                 element={
                                                     <>
                                                         <MoneyExchange subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton} />
-                                                        <Pagination page={page} setPage={setPage} />
+                                                        {/* <Pagination page={page} setPage={setPage} /> */}
 
                                                     </>
                                                 }

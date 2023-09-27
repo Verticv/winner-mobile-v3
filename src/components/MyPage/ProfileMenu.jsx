@@ -254,7 +254,7 @@ const ProfileMenu = () => {
       title: '총판페이지',
       hasBadge: false,
       hasList: false,
-      path: '/distributor-page',
+      path: '/mypage/distributor-page',
       blank: true,
     },
     {

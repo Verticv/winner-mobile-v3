@@ -540,7 +540,7 @@
       top: 0;
       right: 0;
       background-color: #191920;
-      box-shadow: 0rem 0 3rem 2.5rem #19191c;
+      box-shadow: 0rem 0 3rem 2.5rem #351894;
       transform: rotate(180deg);
   }
 }
@@ -915,7 +915,7 @@
 
       img {
           position: absolute;
-          top: 3.73rem;
+          top: 3.355rem;
           right: 2rem;
       }
   }
@@ -1986,7 +1986,7 @@ input[type='radio'].radio-input:checked::before {
 /////////////////////////////
 .money-page2 {
   #container-nav {
-      padding: 0.1rem 1.6rem;
+      padding: 0.038rem 1.35rem;
 
       #container {
           margin-left: 0 !important;
@@ -2004,7 +2004,7 @@ input[type='radio'].radio-input:checked::before {
   }
 
   .two-buttons {
-      margin: 3.65rem 1.8rem 3.95rem;
+      margin: 3.775rem 1.8rem 3.95rem;
       display: flex;
       justify-content: space-between;
       gap: 1rem;
@@ -2036,6 +2036,7 @@ input[type='radio'].radio-input:checked::before {
                   margin-right: -0.8rem;
                   margin-top: 0.1rem;
                   letter-spacing: -0.07rem;
+                  text-shadow: 0px 0px 0.938rem rgba(0, 0, 0, 0.5);
               }
           }
       }

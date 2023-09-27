@@ -22,6 +22,7 @@ import activeIcon1 from '../assets/mainPage/icons/recharge-application2-v3.png';
 import activeIcon2 from '../assets/mainPage/icons/active-icon22_v3.png';
 import Icon2 from '../assets/mainPage/icons/charging-history2_v3.png';
 import Icon1 from '../assets/mainPage/icons/Icon12_v3.png';
+import DistributorPage from '../components/MyPage/DistributorPage';
 
 
 
@@ -29,6 +30,7 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
   const [selectedTab, setSelectedTab] = useState(0)
   const [selectedSubTab, setSelectedSubTab] = useState(0)
   const [subActiveButton, setSubActiveButton] = useState();
+  const [distributorPageActive, setDistributorPageActive] = useState();
 
   const [selectedTab1, setSelectedTab1] = useState(0)
     const [selectedSubTab1, setSelectedSubTab1] = useState(0)
@@ -129,7 +131,7 @@ const tabsArray1 = [
                     <>
                         <Header/> 
                         <NoticeBanner />
-                        <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' />
+                        <HomePageTopBanner pageTitle='포인트' toPath='/mypage/bet-history' />
                         <PointsPage isAuthenticated={true} setAuthenticated={setAuthenticated}
                             subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                         />
@@ -160,6 +162,32 @@ const tabsArray1 = [
                 }
             >
             </Route>
+
+            <Route path="/distributor-page"
+                element={
+                    <>  
+                    <Header/>
+                    <NoticeBanner />
+                    {/* <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' /> */}
+                    <DistributorPage isAuthenticated= {isAuthenticated} 
+                      setAuthenticated= {setAuthenticated}
+                      distributorPageActive = {distributorPageActive}
+                    setDistributorPageActive= {setDistributorPageActive}  />
+                        {/* <Header/>  */}
+                        {/* <NoticeBanner /> */}
+                        {/* <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' /> */}
+                        {/* <GameResultsPage isAuthenticated={isAuthenticated} setAuthenticated={setAuthenticated} */}
+                            {/* subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton} */}
+                        {/* /> */}
+                        <FixedMenu 
+                          selectedTab={selectedTab} 
+                          setSelectedTab={setSelectedTab}
+                        /> 
+                    </>
+                }
+            >
+            </Route>
+            
 
     </Routes>
     

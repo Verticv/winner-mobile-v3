@@ -34,28 +34,28 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
 
     const detailButton = (
         <div
-            style={{ width: "36.4375rem", height: '7.3125rem', marginLeft: '18.7rem', borderRadius: '1.125rem', marginBottom: '1.6rem', marginTop: '3.6rem', boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)" }}>
+            style={{ width: "36.4375rem", height: '7.3125rem', marginLeft: '18.763rem', borderRadius: '1.125rem', marginBottom: '1.6rem', marginTop: '3.725rem', boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)" }}>
             <button
 
                 style={{ width: "100%", height: '100%', marginBottom: '1.5625rem', background: 'linear-gradient(to right, #15cfee,  #3197e5)', borderRadius: '1.125rem' }}
                 className="hover"
             >
                 <div style={{ borderColor: "#ff8f63" }} className="w-full h-full flex items-center justify-center rounded-2xl border border-blue-r3ba3fc bg-gradient-to-b from-orange-ff7a45 via-orange-f56032 to-orange-e9441d cursor-pointer">
-                    <span style={{ fontSize: '2.8125rem', color: '#d6f3ff', display: 'inline-block', letterSpacing: '-0.07rem', marginTop: '0.2rem', marginLeft: '' }} className='shadow-to-text'>신청하기</span>
+                    <span style={{ fontSize: '2.8125rem', color: '#d6f3ff', display: 'inline-block', letterSpacing: '-0.07rem', marginTop: '-0.3rem', marginLeft: '0.313rem', textShadow: "0px 0px 0.938rem rgba(0, 0, 0, 0.5)" }} className='shadow-to-text'>신청하기</span>
                 </div>
             </button>
         </div>
     )
 
     const Title = ({ text }) => (
-        <div style={{ width: "22.9rem", marginRight: '1.8rem', background: '#9b6bd4', flexShrink: '0', borderRadius: '0.625rem' }} className="form-Title">
-            <div style={{ fontSize: '2.8125rem', color: '#ffffff', padding: '1.6rem 0px 0px 1.2rem', letterSpacing: '-0.25rem' }} className="text-gray-r454545 ">{text}</div>
+        <div style={{marginLeft: "0.063rem", width: "22.9rem", marginRight: '1.8rem', background: '#9b6bd4', flexShrink: '0', borderRadius: '0.625rem' }} className="form-Title">
+            <div style={{ fontSize: '2.625rem', color: '#ffffff', padding: '1.35rem 0px 0px 1.075rem', letterSpacing: '-0.25rem' }} className="text-gray-r454545 ">{text}</div>
             {/* <div style={{ height: '0.1875rem', marginTop: '1.1875rem' }} className="w-full bg-gray-bebebe"></div> */}
         </div>
     )
 
     return (
-        <div style={{ padding: '1.875rem', paddingTop: '1rem' }} className="flex flex-col items-center">
+        <div style={{ padding: '1.875rem', paddingTop: '0.625rem' }} className="flex flex-col items-center">
 
             <WarningMessage
                 title='확인 / 필독사항'
@@ -63,11 +63,11 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                 mr1='13.5rem'
                 message2='최소 10,000P 이상 신청 가능합니다.'
                 mr2='6.875rem'
-                message3='자세한 문의사항은 고객센터를 이용해 주시기 바랍니다.'
+                message4='자세한 문의사항은 고객센터를 이용해 주시기 바랍니다.'
             />
-            <div style={{ padding: '0.1875rem', paddingBottom: '0.1875rem', marginTop: '1.875rem', background: 'linear-gradient(to top, #ededeb, #cb78e6)', borderRadius: '1.125rem', boxShadow: "0px 0px 12px 0px rgba(0, 0, 0, 0.8)" }}>
-                <div style={{ padding: '0.9rem 1rem 0 0.8rem', background: '#ffffff', borderRadius: '1.125rem' }} className="w-full rounded-2xl shadow-subNavbar">
-                    <div style={{ padding: '1.4rem 2.0625rem 1.2rem', background: 'linear-gradient(to right, #9d3bbb, #5423a0)', borderRadius: '0.625rem', letterSpacing: '-0.07rem', }} className="w-full rounded-2xl border border-gray-dddddd bg-gray-f9f9f9">
+            <div style={{ padding: '0.1875rem', paddingBottom: '0.1875rem', marginTop: '1.876rem', background: 'linear-gradient(to top, #ededeb, #cb78e6)', borderRadius: '1.125rem', boxShadow: "0px 0px 0.75rem 0px rgba(0, 0, 0, 0.8)" }}>
+                <div style={{ padding: '0.713rem 1rem 0 0.8rem', background: '#ffffff', borderRadius: '1.125rem' }} className="w-full rounded-2xl shadow-subNavbar">
+                    <div style={{ marginLeft: "-0.063rem", padding: '1.4rem 2.0625rem 1.45rem', background: 'linear-gradient(to right, #9d3bbb, #5423a0)', borderRadius: '0.625rem', letterSpacing: '-0.07rem', }} className="w-full rounded-2xl border border-gray-dddddd bg-gray-f9f9f9">
                         <div
                             style={{ fontSize: '2.8125rem', color: '#ffffff', marginLeft: '-0.4rem' }}
                             className=" tracking-tight text-gray-r393e41 flex items-center"
@@ -90,7 +90,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                                 <div style={{ fontSize: '2.625rem', color: '#444444' }} className="text-gray-r393e41  text-gray-r585858">
                                     <span style={{ color: '#f04281', fontSize: '2.624375rem' }}>278</span>P
                                 </div>
-                                <div style={{ height: '0.1875rem', marginTop: '0.9375rem', background: "#e2e2e2" }} className="w-full bg-gray-bebebe"></div>
+                                <div style={{ height: '0.1875rem', marginTop: '1.375rem', background: "#e2e2e2" }} className="w-full bg-gray-bebebe"></div>
                             </div>
                         </div>
                         <div style={{ marginTop: '2.55rem' }} className="form-section">
@@ -99,7 +99,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                                 <div style={{ fontSize: '2.625rem', color: '#444444' }} className="text-gray-r393e41  text-gray-r585858">
                                     <span style={{ fontSize: '2.624375rem' }}>0</span>P
                                 </div>
-                                <div style={{ height: '0.1875rem', marginTop: '0.9375rem', background: "#e2e2e2" }} className="w-full bg-gray-bebebe"></div>
+                                <div style={{ height: '0.1875rem', marginTop: '1.375rem', background: "#e2e2e2" }} className="w-full bg-gray-bebebe"></div>
                             </div>
                         </div>
                         <div style={{ marginTop: '2.55rem' }} className="form-section">
@@ -108,7 +108,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                                 <div style={{ fontSize: '2.625rem', color: '#444444' }} className="text-gray-r393e41  text-gray-r585858">
                                     <span style={{ fontSize: '2.624375rem' }}>0</span>P
                                 </div>
-                                <div style={{ height: '0.1875rem', marginTop: '0.9375rem', background: "#e2e2e2" }} className="w-full bg-gray-bebebe"></div>
+                                <div style={{ height: '0.1875rem', marginTop: '1.375rem', background: "#e2e2e2" }} className="w-full bg-gray-bebebe"></div>
                             </div>
                         </div>
                         <div style={{ marginTop: '2.55rem' }} className="form-section">
@@ -121,7 +121,8 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                                     display: 'flex',
                                     alignItems: 'center',
                                     border: "0px solid",
-                                    outline: "none"
+                                    outline: "none",
+                                    width: "100%"
                                 }}
                                     placeholder="직접 입력시 숫자만 입력해 주세요."
                                     value={inputValue !== null ? nf.format(inputValue) : ""}
@@ -143,19 +144,19 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                                     }}
                                     type="tel"
                                 />
-                                <div style={{ height: '0.1875rem', background: "#e2e2e2" }} className={`${inputClicked ? "bg-blue-r1ca7ec" : "bg-gray-bebebe"} w-full`}></div>
+                                <div style={{ height: '0.1875rem', background: "#e2e2e2", marginTop: "1.375rem" }} className={`${inputClicked ? "bg-blue-r1ca7ec" : "bg-gray-bebebe"} w-full`}></div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="range-btn">
-                        <div className="f-div">
+                    <div style={{marginTop: "1.963rem", marginLeft: "0.188rem", paddingBottom:"0.788rem"}} className="range-btn">
+                        <div style={{marginBottom: "0.963rem"}} className="f-div">
                             <div className='div-range-border'>
                                 <button
                                     className="hover"
                                     onClick={() => setInputValue(inputValue + 1000)}
                                 >
-                                    <div className="s-div">
+                                    <div style={{marginTop: "-0.288rem", marginLeft: "0.313rem"}} className="s-div">
                                         <span>1천P</span>
                                     </div>
                                 </button>
@@ -165,7 +166,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                                     className="hover"
                                     onClick={() => setInputValue(inputValue + 5000)}
                                 >
-                                    <div className="s-div" >
+                                    <div style={{marginTop: "-0.288rem", marginLeft: "0.313rem"}} className="s-div" >
                                         <span>5천P</span>
                                     </div>
                                 </button>
@@ -175,7 +176,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                                     className="hover"
                                     onClick={() => setInputValue(inputValue + 10000)}
                                 >
-                                    <div className="s-div">
+                                    <div style={{marginTop: "-0.288rem", marginLeft: "0.313rem"}} className="s-div">
                                         <span>1만P</span>
                                     </div>
                                 </button>
@@ -185,7 +186,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                                     className="hover"
                                     onClick={() => setInputValue(inputValue + 50000)}
                                 >
-                                    <div className="s-div" >
+                                    <div style={{marginTop: "-0.288rem", marginLeft: "0.313rem"}} className="s-div" >
                                         <span style={{ fontSize: '2.625rem' }}>5만P</span>
                                     </div>
                                 </button>
@@ -198,7 +199,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                                     className="hover"
                                     onClick={() => setInputValue(inputValue + 100000)}
                                 >
-                                    <div className="s-div">
+                                    <div style={{marginTop: "-0.288rem", marginLeft: "0.313rem"}} className="s-div">
                                         <span>10만P</span>
                                     </div>
                                 </button>
@@ -208,14 +209,14 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                                     className="hover"
                                     onClick={() => setInputValue(inputValue + 500000)}
                                 >
-                                    <div className="s-div">
+                                    <div style={{marginTop: "-0.288rem", marginLeft: "0.313rem"}} className="s-div">
                                         <span>50만P</span>
                                     </div>
                                 </button>
                             </div>
                             <div className='div-range-border'>
                                 <button className="hover" onClick={() => setInputValue(inputValue + 1000000)}>
-                                    <div className="s-div">
+                                    <div style={{marginTop: "-0.288rem", marginLeft: "0.313rem"}} className="s-div">
                                         <span>100만P</span>
                                     </div>
                                 </button>
@@ -226,7 +227,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                                     style={{ background: 'linear-gradient(to top, #6b22ff, #df52ff)' }}
                                     onClick={() => setInputValue(0)}
                                 >
-                                    <div className="s-div">
+                                    <div style={{marginTop: "-0.288rem", marginLeft: "0.313rem"}} className="s-div">
                                         <span className='shadow-to-text' style={{ paddingRight: '0', color:"#ffffff" }}>정정</span>
                                     </div>
                                 </button>
