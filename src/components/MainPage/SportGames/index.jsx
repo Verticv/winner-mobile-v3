@@ -31,7 +31,7 @@ function SportGame() {
     },
     {
       id: 2,
-      title: '실시간스포츠'
+      title: '라이브스포츠'
     },
   ]
   const sampleArray = [

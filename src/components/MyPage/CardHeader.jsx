@@ -45,7 +45,7 @@ const CardHeader = ({ flag = 'us', name = '축구 / 미국 - 메이저리그사�
                 <img style={{ width: '3.188rem', height: '3.188rem', marginTop: '-0.3rem' }} src={FootballIcon} alt="" />
                 {/* <img style={{ width: '5.625', height: '3.3125rem', marginLeft: '1.0625rem', marginTop: '-0.3rem' }} src={headerFlag} alt="" /> */}
                 <span style={{ fontSize: '2.438rem', paddingTop: '0.063rem', marginLeft: '0.85rem', color: '#ffffff', marginTop: '-0.3rem',
-                    whiteSpace: 'nowrap', maxWidth: '32rem', overflow: 'hidden', textOverflow: 'ellipsis'
+                    whiteSpace: 'nowrap', maxWidth: '36rem', overflow: 'hidden', textOverflow: 'ellipsis'
             }} className="ml-4 text-20px tracking-tight text-white">{name}</span>
             </div>
             <div className="flex items-center" style={{ display: 'flex', marginRight: "-0.688rem" }}>

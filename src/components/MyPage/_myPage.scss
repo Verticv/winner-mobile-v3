@@ -17,6 +17,7 @@
     line-height: 1;
     margin-left: 0.063rem;
     margin-top: 0.125rem;
+    font-weight: bold;
   }
   img {
     position: absolute;
@@ -80,6 +81,7 @@
       line-height: 1;
       margin-right: 1.813rem;
       margin-bottom: 0.75rem;
+      font-weight: bold;
       &:first-child {
       }
       &:nth-child(2) {
@@ -132,6 +134,7 @@
         margin-top: 0.438rem;
         line-height: 1;
         letter-spacing: -0.025em;
+        font-weight: bold;
       }
     }
     &:nth-of-type(2) {
@@ -195,8 +198,8 @@
           font-size:2.625rem;
           line-height: 1;
           letter-spacing: -0.025em;
-          text-align: center
-
+          text-align: center;
+          font-weight: bold;
         }
       }
       &:first-child {
@@ -264,6 +267,7 @@
             margin-top: 0.188rem;
             letter-spacing: -0.025em;
             margin-right: 0.063rem;
+            font-weight: bold;
           }
         }
       
@@ -316,6 +320,7 @@
           color: #eeeeee;
           margin-left: 1.875rem;
           letter-spacing: 0.05rem;
+          font-weight: bold;
         }
       }
     }
@@ -476,6 +481,7 @@
       margin-left: 2.1rem;
       margin-top: 0.3875rem;
       letter-spacing: -0.1rem;
+      font-weight: bold;
   }
 
   .home-icon {
@@ -525,7 +531,8 @@
           margin-bottom: -0.125rem;
           margin-right: -0.088rem;
           font-size: 2.5rem;
-          color: #2d2834
+          color: #2d2834;
+          font-weight: bold;
       }
   }
 }
@@ -915,7 +922,11 @@
 
       img {
           position: absolute;
+<<<<<<< HEAD
           top: 3.355rem;
+=======
+          top: 3.2rem;
+>>>>>>> 1b65fa717de4a610ec3887d17d2a404b557b5a03
           right: 2rem;
       }
   }
@@ -923,7 +934,7 @@
   .Signal {
       color: #eeeeee;
       font-size: 2.624375rem;
-      margin-top: 3.368rem;
+      margin-top: 3rem;
       margin-left: 0.12rem;
       margin-right: -1.85rem;
   }
@@ -1183,6 +1194,7 @@ display: none !important;
           font-size: 3.75rem;
           margin-left: -0.35rem;
           margin-top: 0.1rem;
+          font-weight: bold;
       }
 
       button {
@@ -1201,11 +1213,11 @@ display: none !important;
   .WINlouie3-div2 {
       height: 5.1875rem;
       font-size: 2.8125rem;
-      padding-top: 0.875rem;
+      padding-top: 0.8rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: linear-gradient(to right, rgb(157, 59, 187), rgb(84, 35, 160));
+      background:rgb(104, 82, 167);
       margin-top: 2.6rem;
       border-radius: 3rem;
       width: 41.4rem;

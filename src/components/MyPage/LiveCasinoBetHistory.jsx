@@ -20,7 +20,7 @@ import { useNavigate } from 'react-router-dom'
 
 const subTabsArray = [
     { text: "전체", icon: Icon1, id: 0, activeBG: activeBG, marginIcon: '', width: '5.25rem', path: '#' },
-    { text: "프레그메틱플레이", icon: Icon3, id: 2, activeBG: activeBG, marginIcon: '', width: '11.5rem', path: '#' },
+    { text: "프레그메틱플레이", icon: Icon3, id: 2, activeBG: activeBG, marginIcon: '', width: '16.375rem', path: '#' },
     { text: "에볼루션", icon: Icon2, id: 1, activeBG: activeBG, width: '16.375rem', path: '#' },
     { text: "로얄지", icon: Icon4, id: 3, activeBG: activeBG, width: '16.375rem', path: '#' },
     { text: "아시아게이밍", icon: Icon5, id: 4, activeBG: activeBG, width: '16.375rem', path: '#' },

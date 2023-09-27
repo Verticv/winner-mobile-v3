@@ -56,7 +56,7 @@ import MenuIcon_1_9 from '../../assets/images/mainPage/menu9.png'
 import MenuIcon_1_10 from '../../assets/images/mainPage/menu10.png'
 import MenuIcon_1_11 from '../../assets/images/mainPage/menu11.png'
 
-import Icon1 from '../../assets/mainPage/icons/icon1.png';
+import Icon1 from '../../assets/mainPage/icons/Icon1.png';
 import Icon2 from '../../assets/mainPage/icons/icon2.png';
 
 import Icon_1 from '../../assets/mainPage/icons/icon-1-v3.png';
@@ -105,7 +105,7 @@ const ProfileMenu = () => {
         {
           id: 3,
           icon2: MenuIcon_1_3,
-          title: '실시간스포츠',
+          title: '라이브스포츠',
           OnIcon: MenuOn3,
           path: '/mypage/bet-history/all/sports'
         },

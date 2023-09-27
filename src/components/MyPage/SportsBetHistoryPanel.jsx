@@ -88,7 +88,7 @@ const SportsBetHistoryPanel = ({
                     <div style={{ padding: '0.438rem 0.9rem 0 0.7rem' }} className="w-full">
                         <div className="w-full rounded-lg" >
                             <div style={{ marginBottom: '-1rem', border: '0.45rem solid #6852a7', borderRadius: '0.625rem', boxShadow: "0px 0.188rem 0.563rem 0px rgba(0, 0, 0, 0.5)" }} className='rounded-lg w-full'>
-                                <CardHeader flag={ENFlagIcon} name='EPL' date='2021-06-29 15:45' />
+                                <CardHeader flag={ENFlagIcon} name='축구 / 잉글랜드 - 프리미어리그' date='06-29 15:45' />
                                 <CardResults
                                     bet="left"
                                     result="win"
@@ -104,7 +104,7 @@ const SportsBetHistoryPanel = ({
                                 />
                             </div>
                             <div className='rounded-lg w-full' style={{ border: '0.45rem solid #6852a7', borderRadius: '0.625rem', boxShadow: "0px 0.188rem 0.563rem 0px rgba(0, 0, 0, 0.5)", marginTop: '1.7rem' }}>
-                                <CardHeader flag={SpainFlagIcon} name='라리가' date='2021-06-29 15:45' />
+                                <CardHeader flag={SpainFlagIcon} name='축구 / 스페인 - 라리가' date='06-29 15:45' />
                                 <CardResults
                                     bet="left"
                                     result="lose"

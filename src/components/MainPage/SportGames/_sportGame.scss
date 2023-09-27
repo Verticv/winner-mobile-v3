@@ -8,11 +8,11 @@
       padding: 0 1.813rem 0 1.875rem;
   }
   .section__header h1 {
-    margin-top: -0.563rem;
+    margin-top: -1rem;
     margin-left: -0.188rem;
   }
   .section__actions p {
-    margin-top: -0.375rem;
+    margin-top: -1rem;
   }
   .carousel {
     width: 76.063rem;
@@ -64,7 +64,7 @@
   margin: 2.75rem 4.125rem;
   width: 65.563rem;
   height: 28.5rem;
-  background-color: #ededeb;
+  background-color: #fff;
   border-radius: 1.125rem;
   box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.4);
   padding-top: 0.75rem;
@@ -90,9 +90,11 @@
     }
     p {
       font-size: 2.813rem;
+      height: 4.6rem;
       color: #fff;
       margin: 0;
       margin-left: -0.188rem;
+      margin-bottom: -0.4rem;
       letter-spacing: -0.069rem;
       max-width: 43.75rem;
     }
