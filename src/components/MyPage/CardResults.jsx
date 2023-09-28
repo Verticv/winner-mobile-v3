@@ -42,7 +42,7 @@ const CardResults = ({
             <div style={{ display: 'flex' }}>
                 <div style={{
                     background: 'linear-gradient(to top, #2f2d29, #2f2d29 50%, #4f4a41)',
-                    boxShadow: '0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.5)',
+                    boxShadow: '0px 0.375rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
                     padding: '0.1875rem', width: smallCard ? '26.875rem' : '26.875rem', height: '7.4375rem', marginRight: '0.375rem',
                     textShadow: bet === "left" ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "", borderRadius: '0.6rem',
                 }}>
@@ -54,6 +54,7 @@ const CardResults = ({
                             background: bet === "left" ? "linear-gradient(to top, rgb(101, 79, 57), rgb(125, 99, 72) 50%, rgb(151, 120, 89))" : "#252525",
                             borderRadius: '0.6rem',
                             color: bet === "left" ? '#ffdfbd' : '#c8c8c8 ',
+                            fontWeight: bet === "left" ? 'bold' : ""
                         }}
                     >
                         <div style={{
@@ -77,7 +78,7 @@ const CardResults = ({
                 <div style={{
                     background: 'linear-gradient(to top, #2f2d29, #2f2d29 50%, #4f4a41)', padding: '0.1875rem', width: smallCard ? '10rem' : '10rem', height: '7.4375rem', marginRight: '0.375rem',
                     textShadow: bet === "left" ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "", borderRadius: '0.6rem',
-                    boxShadow: '0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.5)',
+                    boxShadow: '0px 0.375rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
                 }}>
                     <button
                         style={{
@@ -100,7 +101,7 @@ const CardResults = ({
                     background: 'linear-gradient(to top, #2f2d29, #2f2d29 50%, #4f4a41)', padding: '0.1875rem', width: smallCard ? '25.02rem' : '26.875rem', height: '7.4375rem', marginRight: '0.375rem',
                     textShadow: bet === "left" ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "", borderRadius: '0.6rem',
                     cursor: 'pointer',
-                    boxShadow: '0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.5)',
+                    boxShadow: '0px 0.375rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
                 }}>
                     <button style={{
                         width: '100%',
@@ -110,7 +111,8 @@ const CardResults = ({
                         borderRadius: '0.6rem',
                         display: 'flex',
                         alignItems: 'center',
-                        color: bet === "right" ? '#ffdfbd' : '#c8c8c8 '
+                        color: bet === "right" ? '#ffdfbd' : '#c8c8c8 ',
+                        fontWeight: bet === "right" ? '' : 'bold'
                     }}>
                         <div
                             style={{
@@ -135,12 +137,12 @@ const CardResults = ({
     )
 
     return (
-        <div style={{ borderBottomLeftRadius: withoutRadius ? '' : '0.5rem', borderBottomRightRadius: withoutRadius ? '' : '0.5rem', display: 'flex', alignItems: 'center', height: '6.938rem', padding: '0.375rem 0.3rem 0.4rem 0.4rem', paddingTop: secondCard ? '0.5rem' : '0.375rem', marginBottom: secondCard ? '0.05rem' : '', borderTop: secondCard ? '0.1875rem solid #dddddd' : '', marginTop: secondCard ? '0.063rem' : '' }}>
+        <div style={{ background: "#f7f7f7", borderBottomLeftRadius: withoutRadius ? '' : '0.5rem', borderBottomRightRadius: withoutRadius ? '' : '0.5rem', display: 'flex', alignItems: 'center', height: '6.938rem', padding: '0.375rem 0.3rem 0.4rem 0.4rem', paddingTop: secondCard ? '0.5rem' : '0.375rem', marginBottom: secondCard ? '0.05rem' : '', borderTop: secondCard ? '0.1875rem solid #dddddd' : '', marginTop: secondCard ? '0.063rem' : '' }}>
             <div style={{ display: 'flex', width: width92 ? '92%' : '' }} >
                 <div style={{
                     background: bet === "left" ? "#5523a0" : '#bbbbbb', padding: '0.1875rem', width: smallCard ? '26.875rem' : '26.875rem', height: '6.188rem', marginRight: '0.375rem',
                     textShadow: bet === "left" ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "", borderRadius: '0.6rem',
-                    boxShadow: '0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.5)',
+                    boxShadow: '0px 0.375rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
                 }}>
                     <button
                         style={{
@@ -151,6 +153,7 @@ const CardResults = ({
                             color: bet === "left" ? '#ffdfbd' : '#c8c8c8',
                             textShadow: bet === 'left' ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "",
                             cursor: 'pointer',
+                            fontWeight: bet === "left" ? 'bold' : ""
                         }}
                     >
                         <div
@@ -160,7 +163,7 @@ const CardResults = ({
                             }}
                         >
                             <span style={{
-                                fontSize: '2.25rem', marginTop: '0.1rem', whiteSpace: 'nowrap',
+                                fontSize: '2.25rem', marginTop: '-0.213rem', whiteSpace: 'nowrap',
                                 maxWidth: isCompose ? "17rem" : isFreeboard ? '17rem' : hasUp ? '15.6rem' : '21rem',
                                 overflow: 'hidden',
                                 textOverflow: 'ellipsis',
@@ -178,7 +181,7 @@ const CardResults = ({
                 <div style={{
                     background: '#bbbbbb', padding: '0.1875rem', width: smallCard ? '10rem' : '10rem', height: '6.188rem', marginRight: '0.375rem',
                     borderRadius: '0.6rem',
-                    boxShadow: '0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.5)',
+                    boxShadow: '0px 0.375rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
                     flexShrink: 0
                 }}>
                     <button
@@ -203,7 +206,7 @@ const CardResults = ({
                 <div style={{
                     background: bet === "right" ? "#5523a0" : '#bbbbbb', padding: '0.1875rem', width: smallCard ? '26.875rem' : '26.875rem', height: '6.188rem', marginRight: '0.375rem',
                     textShadow: bet === "left" ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "", borderRadius: '0.6rem',
-                    boxShadow: '0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.5)',
+                    boxShadow: '0px 0.375rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
                 }}>
                     <button style={{
                         width: '100%',
@@ -213,7 +216,8 @@ const CardResults = ({
                         borderRadius: '0.6rem',
                         display: 'flex',
                         alignItems: 'center',
-                        color: bet === "right" ? '#ffffff' : '#444444'
+                        color: bet === "right" ? '#ffffff' : '#444444',
+                        fontWeight: bet === 'right' ? 'bold' : ''
                     }}>
                         <div
                             style={{
@@ -230,6 +234,7 @@ const CardResults = ({
                                 {hasDown && <img style={{ width: '1.313rem', height: '1.188rem', objectFit: 'contain', marginLeft: '1.875rem' }} src={DownIcon} alt="" />}
                             </div>
                             <span style={{
+                                marginTop: "-0.563rem",
                                 fontSize: '2.25rem',
                                 maxWidth: isCompose ? "17rem" : isFreeboard ? '17rem' : hasDown ? '15.6rem' : '21rem',
                                 marginLeft: '', letterSpacing: '-0.07rem',
@@ -261,7 +266,7 @@ const CardResults = ({
                 >
                     {
                         result === "cancel"
-                            ? <p style={{ color: result === "cancel" ? '#4c98ff' : '', marginLeft: '0.45rem', letterSpacing: '-0.06rem' }}>취소</p>
+                            ? <p style={{ color: result === "cancel" ? '#4c98ff' : '', marginLeft: '0.45rem', letterSpacing: '-0.06rem', fontWeight: "bold" }}>취소</p>
                             : (result === "win" || result === "lose" || result === "equality")
                                 ? (
                                     <>
@@ -269,6 +274,7 @@ const CardResults = ({
                                             style={{
                                                 marginBottom: score.length > 4 ? '-0.5rem' : '-1.4rem',
                                                 marginLeft: '-0.2rem',
+                                                fontWeight: "bold",
                                                 color: result === "win" ? '#e65454' : result === "lose" ? '#666666' : result === 'equality' ? '#44bb60' : ''
                                             }}
                                         >
@@ -308,6 +314,7 @@ const CardResults = ({
                 </div>
             ) : (
                 <div style={{
+                    marginTop: "-0.563rem",
                     marginRight: isAttached && "5px",
                     fontSize: '2.25rem',
                     display: 'flex',
@@ -321,7 +328,7 @@ const CardResults = ({
                 }}
                 >
                     {result === "cancel"
-                        ? <p style={{ color: result === "cancel" ? '#33a1e9' : '', marginLeft: '0.45rem', letterSpacing: '-0.06rem' }}>취소</p>
+                        ? <p style={{ color: result === "cancel" ? '#33a1e9' : '', marginLeft: '0.45rem', letterSpacing: '-0.06rem', fontWeight: "bold" }}>취소</p>
                         : (result === "win" || result === "lose" || result === "equality")
                             ? (
                                 <p

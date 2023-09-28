@@ -870,7 +870,7 @@
 ///////////////////////////////////////////////////////
 .first-row {
   // margin-top: 1.15rem;
-  margin-bottom: -1.125rem;
+  margin-bottom: -1.25rem;
   display: flex;
 
   input {
@@ -972,7 +972,7 @@
 
           span {
               color: #666666;
-              margin-top: 0.2rem;
+              margin-top: -0.238rem;
               letter-spacing: -0.07rem;
               // text-shadow: rgb(0 0 0) 0rem 0rem 0.4375rem;
           }
@@ -1305,7 +1305,7 @@ display: none !important;
 
               &.active {
                   button {
-                      background: url('../../assets/myPage/second-btns/active-bg-v3.png') round !important;
+                      background: url('../../assets/myPage/second-btns/active_bg_v3.png') round !important;
                       background-repeat: round;
                       width: 20.9rem;
                       height: 13.6rem;

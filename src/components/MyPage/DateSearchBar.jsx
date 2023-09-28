@@ -83,13 +83,15 @@ const DateSearchBar = ({
     }
     return (
         <div style={{
-            margin: withMargin ? (!isFreeboard ? '0.65rem 1.875rem 0.9rem 1.938rem' : '1.2rem 1.875rem') : '0 3.875rem 0 0',
+            margin: withMargin ? (!isFreeboard ? '0.65rem 1.875rem 0.9rem 1.876rem' : '1.2rem 1.875rem') : '0 3.875rem 0 0',
             width: withMargin ? '' : '73.875rem',
             background: 'linear-gradient(to right,#5e2c89,#42227e)',
             borderRadius: '1.1rem',
-            paddingTop: isPoints ? '0' : '0px',
-            marginTop: isGameResultsSearch === true ? '0.688rem' : isPoints ? '0.688rem' : '0.625rem',
-            marginBottom: isIOS ? '-0.3rem' : ''
+            paddingTop: isPoints ? '0' : '',
+            marginTop: isGameResultsSearch === true ? '0.751rem' : isPoints ? '1.938rem' : '0.625rem',
+            marginLeft: isGameResultsSearch === true ? '1.751rem' : "1.876rem",
+            marginRight: isGameResultsSearch === true ? '2rem' : '1.875rem',
+            marginBottom: isIOS ? '-0.3rem' : '1.938rem'
         }} className="date12">
 
             {isLeagueSearch === true && (
@@ -126,7 +128,7 @@ const DateSearchBar = ({
                 <div className="first-row">
                     <DropDownInput isBetCombination={false} withArrow />
                     <input
-                        style={{ marginLeft: '2rem', marginTop: '0.1rem', color: "#666666" }}
+                        style={{ marginLeft: '2rem', marginTop: '0.225rem', color: "#666666" }}
                         placeholder="팀명검색"
                         onFocus={() => {
                             // const menu = document.querySelector('#main-menu');
@@ -140,7 +142,7 @@ const DateSearchBar = ({
                 </div>
             )}
 
-            <div className="second-row">
+            <div style={{paddingTop: "0.375rem"}} className="second-row">
                 <div className="date-picker left-date-picker" style={{ position: 'relative', marginTop: "-0.188rem" }}>
                     <DatePicker
                         showYearDropdown

@@ -68,7 +68,10 @@ const tabsArray1 = [
         <BetHistoryTest isAuthenticated={isAuthenticated}
                         subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
         />
-                          
+                <FixedMenu
+        selectedTab={selectedTab}
+        setSelectedTab={setSelectedTab}
+      />             
       </>}>
       </Route>
 
