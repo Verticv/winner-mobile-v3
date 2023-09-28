@@ -76,11 +76,9 @@ import icon8Active from '../../../assets/images/bottom-nav/menu-on7.png';
 import icon9Active from '../../../assets/images/bottom-nav/menu-on8.png';
 import icon10Active from '../../../assets/images/bottom-nav/menu-on9.png';
 import icon11Active from '../../../assets/images/bottom-nav/menu-on10.png';
-// import icon12Active from '../assets/images/bottom-nav/menu-on11.png';
-// import Header from '../Header';
-// import NavBottom from '../NavBottom';
+
 import ScrollButton from '../ScrollButton'
-import FixedMenu from '../../FixedMenu';
+
 // import './_betHistory1.scss';
 
 // const tabsArray = [
@@ -264,10 +262,7 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                             path="/mypage/bet-history/all"
                                         />
                                         <Pagination page={page} setPage={setPage} />
-                                        <FixedMenu
-                                          selectedTab={selectedTab}
-                                          setSelectedTab={setSelectedTab}
-                                        />   
+                                        
                                     </>
                                 }
                                 />
@@ -280,10 +275,7 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                             />
                                             <Pagination page={page} setPage={setPage} />
                                             {/* <NavBottom /> */}
-                                            <FixedMenu
-                                              selectedTab={selectedTab}
-                                              setSelectedTab={setSelectedTab}
-                                            />   
+                                            
                                         </>
                                     }
                                 >
@@ -297,10 +289,7 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                             />
                                             <Pagination page={page} setPage={setPage} />
                                             {/* <NavBottom /> */}
-                                            <FixedMenu
-                                              selectedTab={selectedTab}
-                                              setSelectedTab={setSelectedTab}
-                                            />   
+                                              
                                         </>
                                     }
                                 >
@@ -314,10 +303,7 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                                 path='/mypage/bet-history/all/live-casino'
                                             />
                                             <Pagination page={page} setPage={setPage} />
-                                            <FixedMenu
-                                              selectedTab={selectedTab}
-                                              setSelectedTab={setSelectedTab}
-                                            />   
+                                         
                                             
                                         </>
                                     }
@@ -331,10 +317,7 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             />
                                             <Pagination page={page} setPage={setPage} />
-                                            <FixedMenu
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
-      />   
+                                           
                                         </>
                                     }
                                 >
@@ -348,10 +331,7 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton} path='/mypage/bet-history/all/slot-game'
                                             />
                                             <Pagination page={page} setPage={setPage} />
-                                            <FixedMenu
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
-      />   
+                                           
                                         </>
                                     }
                                 >
@@ -364,10 +344,7 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                             <ESportsBetHistory isState={historySelectedSubTab} setState={setHistorySelectedSubTab}
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             />
-                                            <FixedMenu
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
-      />   
+                                           
                                         </>
                                     }
                                 >
@@ -380,10 +357,7 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             />
                                             <Pagination page={page} setPage={setPage} />
-                                           <FixedMenu
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
-      />   
+                                          
                                         </>
                                     }
                                 >
@@ -397,10 +371,7 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             />
                                             <Pagination page={page} setPage={setPage} />
-                                            <FixedMenu
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
-      />   
+                                           
                                         </>
                                     }
                                 >
@@ -415,10 +386,7 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                                 path='/mypage/bet-history/all/fishing-game'
                                             />
                                             <Pagination page={page} setPage={setPage} />
-                                            <FixedMenu
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
-      />   
+                                           
                                         </>
                                     }
                                 >
@@ -431,10 +399,7 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                             subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             path='/mypage/bet-history/all/bet' />
                                         <Pagination page={page} setPage={setPage} />
-                                        <FixedMenu
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
-      />   
+                                        
                                     </>
                                 }
                                 />

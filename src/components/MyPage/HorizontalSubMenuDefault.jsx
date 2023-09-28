@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom';
 import horizontalsScroll from '../../utils/horizontalsScroll';
-import inactive from '../../assets/inactive-bg-v3.png';
+import inactive from '../../assets/inactive_bg_v3.png';
 
 const HorizontalSubMenu = ({
     itemsArray,
@@ -61,7 +61,7 @@ const HorizontalSubMenu = ({
                             height: '11.688rem',
                             marginLeft: '0',
                             paddingTop: '0',
-                            border: "0.188rem solid #2a2a2a",
+                            // border: "0.188rem solid #2a2a2a",
                             borderRadius: "0.813rem"
                             
                         }}

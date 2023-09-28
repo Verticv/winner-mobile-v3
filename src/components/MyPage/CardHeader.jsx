@@ -44,19 +44,19 @@ const CardHeader = ({ flag = 'us', name = '축구 / 미국 - 메이저리그사�
             <div className="flex items-center" style={{ display: 'flex', alignItems: 'center', height: '100%', marginLeft: "-0.563rem" }}>
                 <img style={{ width: '3.188rem', height: '3.188rem', marginTop: '-0.3rem' }} src={FootballIcon} alt="" />
                 {/* <img style={{ width: '5.625', height: '3.3125rem', marginLeft: '1.0625rem', marginTop: '-0.3rem' }} src={headerFlag} alt="" /> */}
-                <span style={{ fontSize: '2.438rem', paddingTop: '0.063rem', marginLeft: '0.85rem', color: '#ffffff', marginTop: '-0.3rem',
+                <span style={{ fontSize: '2.438rem', paddingTop: '-0.738rem', marginLeft: '0.85rem', color: '#ffffff', marginTop: '-0.3rem',
                     whiteSpace: 'nowrap', maxWidth: '36rem', overflow: 'hidden', textOverflow: 'ellipsis'
             }} className="ml-4 text-20px tracking-tight text-white">{name}</span>
             </div>
             <div className="flex items-center" style={{ display: 'flex', marginRight: "-0.688rem" }}>
                 {/* <img style={{ width: '2.375rem', height: '2.375rem', marginTop: '0.3rem' }} src={ClockIcon} alt="" /> */}
                 <span
-                    style={{ color: "#ffffff", fontSize: '2.438rem', marginLeft: '0.5rem', marginTop: '0rem', marginRight: '-0.2rem', letterSpacing: '-0.11rem' }}
+                    style={{ color: "#ffffff", fontSize: '2.438rem', marginLeft: '0.5rem', marginTop: '-0.563rem', marginRight: '-0.2rem', letterSpacing: '-0.11rem' }}
                     className=" text-16px tracking-tight text-white"
                 >
                     {date}
                 </span>
-            <img style={{ height: "2.75rem", width:"4.125rem", marginTop: '0.113rem', marginLeft: "1.438rem" }} src={flag} alt="" />
+            <img style={{ height: "2.75rem", width:"4.125rem", marginTop: '-0.199rem', marginLeft: "1.438rem" }} src={flag} alt="" />
 
             </div>
         </div>

@@ -1,6 +1,6 @@
 import Pagination from '../Pagination'
 import React, { useState, useEffect } from 'react'
-import DateSearchBar from '../DateSearchBar'
+import DateSearchBar1 from '../DateSearchBar1'
 import HistoryTable from '../HistoryTable'
 import { useNavigate } from 'react-router-dom'
 // import ScrollButton from 'components/common/ScrollButton'
@@ -15,7 +15,7 @@ const tableData = [
             0: { 제목: "Rolling Bouns" }
         },
         {
-            0: { 아이디: "eric123 eric123 eric123 eric123 eric123 eric123 " },
+            0: { 아이디: "eric123" },
             1: { 종류: "스포츠" }
         },
         {
@@ -202,7 +202,7 @@ const PointsAccumulateHistory = ({ SubMenuList, subActiveButton, setSubActiveBut
 
                 <div style={{
                     fontSize: '2.624375rem', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    marginTop: '2.5rem', letterSpacing: '-0.07rem', marginBottom: '1.4rem',
+                    marginTop: '1.938rem', letterSpacing: '-0.07rem', marginBottom: '1.4rem', marginLeft: "1.688rem"
                 }}>
                     <span style={{
                         color: '#ffd98b', textOverflow: 'ellipsis', maxWidth: '34.4rem', overflow: 'hidden', whiteSpace: 'nowrap'
@@ -213,10 +213,10 @@ const PointsAccumulateHistory = ({ SubMenuList, subActiveButton, setSubActiveBut
 
                 {SubMenuList}
                 <div className='date-div'
-                    style={{ marginTop: '-1.1rem' }}
+                    style={{ marginTop: '-0.601rem' }}
                 >
 
-                    <DateSearchBar isLeagueSearch={false} withBlackButton isPoints='true' />
+                    <DateSearchBar1 isLeagueSearch={false} withBlackButton isPoints='true' />
                 </div>
                 {/* <ScrollButton /> */}
                 <div className="h-full">

@@ -10,7 +10,7 @@ import './_myPage.scss'
 import { getMonth, getYear } from 'date-fns';
 registerLocale('ko', ko)
 
-const DateSearchBar = ({
+const DateSearchBar1 = ({
     isLeagueSearch = false,
     hasIdSearch = false,
     has3MonthSearch = false,
@@ -83,15 +83,13 @@ const DateSearchBar = ({
     }
     return (
         <div style={{
-            margin: withMargin ? (!isFreeboard ? '0.65rem 1.875rem 0.9rem 1.876rem' : '1.2rem 1.875rem') : '0 3.875rem 0 0',
+            margin: withMargin ? (!isFreeboard ? '0.65rem 1.875rem 0.9rem 1.938rem' : '1.2rem 1.875rem') : '0 3.875rem 0 0',
             width: withMargin ? '' : '73.875rem',
             background: 'linear-gradient(to right,#5e2c89,#42227e)',
             borderRadius: '1.1rem',
-            paddingTop: isPoints ? '0' : '',
-            marginTop: isGameResultsSearch === true ? '0.751rem' : isPoints ? '1.938rem' : '0.625rem',
-            marginLeft: isGameResultsSearch === true ? '1.751rem' : "1.876rem",
-            marginRight: isGameResultsSearch === true ? '2rem' : '1.875rem',
-            marginBottom: isIOS ? '-0.3rem' : '1.938rem'
+            paddingTop: isPoints ? '0' : '0px',
+            marginTop: isGameResultsSearch === true ? '0.688rem' : isPoints ? '0.688rem' : '0.625rem',
+            marginBottom: isIOS ? '-0.3rem' : ''
         }} className="date12">
 
             {isLeagueSearch === true && (
@@ -128,7 +126,7 @@ const DateSearchBar = ({
                 <div className="first-row">
                     <DropDownInput isBetCombination={false} withArrow />
                     <input
-                        style={{ marginLeft: '2rem', marginTop: '0.225rem', color: "#666666" }}
+                        style={{ marginLeft: '2rem', marginTop: '0.1rem', color: "#666666" }}
                         placeholder="팀명검색"
                         onFocus={() => {
                             // const menu = document.querySelector('#main-menu');
@@ -434,11 +432,18 @@ const DateSearchBar = ({
                     </div>
                 )}
                 {withBlackButton && (
-                    <div style={{ minWidth: isDistributorPage ? '27.4375rem' : '70.1375rem', height: '7.25rem', background: 'linear-gradient(to top, #4f3a7a, #e597ff)', padding: '0.1875rem', margin: '-0.789rem 0.125rem 1.75rem 0.125rem', borderRadius: '1.125rem',boxShadow: "0px 0.375rem 0.75rem 0px rgba(0, 0, 0, 0.6)" }} className="hover withBlackButton">
+                    <>
+                    <div style={{ minWidth:'41.625rem', height: '6.75rem',  margin: '-0.789rem 0.125rem 1.75rem -1.875rem', borderRadius: '1.125rem' }}>   <input
+                    style={{ marginLeft: '2rem', paddingLeft: "1.813rem", fontSize: "2.625rem", marginTop: '-0.025rem', color: "#666666", width: "100%", height: "100%", borderRadius: "0.625rem", border: "0px", outline: "none" }}
+                    placeholder="아이디 입력"
+
+                /></div>
+                    <div style={{ minWidth: isDistributorPage ? '27.4375rem' : '27.438rem', height: '7.25rem', background: 'linear-gradient(to top, #4f3a7a, #e597ff)', padding: '0.1875rem', margin: '-0.789rem 0.125rem 1.75rem 0.125rem', borderRadius: '1.125rem',boxShadow: "0px 0.375rem 0.75rem 0px rgba(0, 0, 0, 0.6)" }} className="hover withBlackButton">
                         <div style={{ background: 'linear-gradient(to top, #6b22ff, #df52ff)', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '1.125rem' }} className="flex w-full h-full items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
                             <span style={{ fontSize: '2.625rem', color: '#ffffff', marginTop: '0.2rem' }} className="shadow-to-text">검색</span>
                         </div>
                     </div>
+                    </>
                 )}
             </div>
 
@@ -474,4 +479,4 @@ const DateSearchBar = ({
     )
 }
 
-export default DateSearchBar
+export default DateSearchBar1

@@ -152,7 +152,7 @@ const MoneyExchangeHistory = ({ subActiveButton, setSubActiveButton }) => {
     }, [setSubActiveButton, subActiveButton, navigate]);
 
     return (
-        <div className="flex flex-col items-center" style={{ marginTop: '1rem' }}>
+        <div className="flex flex-col items-center" style={{ marginTop: '0.625rem' }}>
 
             <DateSearchBar isLeagueSearch={false} withBlackButton />
             <div className="h-full">

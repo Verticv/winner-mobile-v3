@@ -1,6 +1,6 @@
 import Pagination from '../Pagination'
 import React, { useState, useEffect } from 'react'
-import DateSearchBar from '../DateSearchBar'
+import DateSearchBar1 from '../DateSearchBar1'
 import HistoryTable from '../HistoryTable'
 import { useNavigate } from 'react-router-dom'
 
@@ -185,7 +185,7 @@ const PointsTransactionHistory = ({ SubMenuList, subActiveButton, setSubActiveBu
 
             <div style={{
                 fontSize: '2.624375rem', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                marginTop: '2.5rem', letterSpacing: '-0.07rem', marginBottom: '1.4rem',
+                marginTop: '1.938rem', letterSpacing: '-0.07rem', marginBottom: '1.4rem', marginLeft:"1.688rem"
             }} className=" tracking-tight my-4 text-gray-r8c8c8c">
                 <span className=" text-blue-r0056a6" style={{
                     color: '#ffd98b', textOverflow: 'ellipsis', maxWidth: '34.4rem', overflow: 'hidden', whiteSpace: 'nowrap'
@@ -195,8 +195,8 @@ const PointsTransactionHistory = ({ SubMenuList, subActiveButton, setSubActiveBu
 
             {SubMenuList}
 
-            <div className='date-div' style={{ marginTop: '-1.1rem' }}>
-                <DateSearchBar isLeagueSearch={false} withBlackButton isPoints='true' />
+            <div className='date-div' style={{ marginTop: '-0.601rem' }}>
+                <DateSearchBar1 isLeagueSearch={false} withBlackButton isPoints='true' />
             </div>
             <div className="h-full w-full">
                 <HistoryTable
