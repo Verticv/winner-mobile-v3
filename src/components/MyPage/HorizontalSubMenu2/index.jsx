@@ -22,17 +22,26 @@ const HorizontalSubMenu = ({
         return items.map((item, index) => {
             const activeButton = selectedTab === item.id
             return (
-                <>
-                    <button
-                        style={{
+                <>  
+                   <div style={{
                             height: '6.375rem', width: isSameWidth ? '17.625rem' : '',
                             minWidth: item?.width ? item.width : 'fit-content',
                             fontSize: '2.8125rem',
                             marginRight: '1.125rem',
                             borderWidth: `${pathname !== item.path ? '0.1875rem' : ''}`,
-                            color: activeButton ? 'rgb(255, 223, 189)' : '',
-                            border: activeButton ? '0' : '',
-                            background: activeButton ? ' rgb(130, 97, 64)' : '',
+                            background: activeButton ? 'linear-gradient(to top, #4f3a7a, #cb78e6)' : 'linear-gradient(to top, #4f3a7a, #f0d3ff)',
+                            borderRadius: "3.2rem",
+                            padding: "0.1875rem",
+                            // boxShadow: "0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.6)"
+                        }}>
+                    <button
+                        style={{
+                            height: '100%', width: isSameWidth ? '100%' : '',
+                            fontSize: '2.8125rem',
+                            marginRight: '1.125rem',
+                            color: activeButton ? '#ffffff' : '#2d2834',
+                            background: activeButton ? 'linear-gradient(to top, #491f9c, #9e3cbc)' : 'linear-gradient(to top, #ccc4ff, #ffd9f5)',
+                            borderRadius: "3.2rem"
                         }}
                         key={item.id}
                         onPointerDown={() => setHover(item.id)}
@@ -51,6 +60,7 @@ const HorizontalSubMenu = ({
                             </div>
                         </div>
                     </button>
+                    </div>
                     {items?.length - 1 === index && (
                         <div style={{ minWidth: '0.8rem', height: '6.375rem' }}></div>
                     )}

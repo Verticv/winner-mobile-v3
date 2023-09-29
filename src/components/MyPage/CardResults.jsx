@@ -179,7 +179,7 @@ const CardResults = ({
                 </div>
 
                 <div style={{
-                    background: '#bbbbbb', padding: '0.1875rem', width: smallCard ? '10rem' : '10rem', height: '6.188rem', marginRight: '0.375rem',
+                    background: bet === 'middle' ? '#5523a0' : '#bbbbbb', padding: '0.1875rem', width: smallCard ? '10rem' : '10rem', height: '6.188rem', marginRight: '0.375rem',
                     borderRadius: '0.6rem',
                     boxShadow: '0px 0.375rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
                     flexShrink: 0
@@ -188,13 +188,13 @@ const CardResults = ({
                         style={{
                             width: '100%',
                             height: '100%',
-                            background: bet === "middle" ? "linear-gradient(to top,  #654f39,  #7d6348 50%, #977859)" : "#ffffff",
+                            background: bet === "middle" ? "linear-gradient(to top,  #5423a0,  #9d3bbb)" : "#ffffff",
                             textShadow: bet === "middle" ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "",
                             borderRadius: '0.6rem',
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            color: bet === "middle" ? '#ffdfbd' : '#444444',
+                            color: bet === "middle" ? '#ffffff' : '#444444',
                             cursor: 'pointer'
                         }}
                     >
@@ -290,9 +290,11 @@ const CardResults = ({
                                                         textAlign: 'start',
                                                         paddingLeft: '0.8rem',
                                                         // fontSize:'2.1rem',
-                                                        marginBottom: '3.2rem'
+                                                        marginBottom: '3.2rem',
+                                                        color: "#666666"
                                                     }}
-                                                >{score.split(':')[0]}:{'\n'}{score.split(':')[1]}</p>
+                                                >{score.split(':')[0]}:{'\n'}{score.split(':')[1]}
+                                                </p>
                                             </div>
 
                                         ) : (

@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import HorizontalMenu1 from '../HorizontalMenu1'
 import HorizontalSubMenu from '../HorizontalSubMenu2';
-import Icon1 from '../../../assets/gameresults/sport-1.png';
-import Icon2 from '../../../assets/gameresults/sport-2.png';
-import Icon1Active from '../../../assets/gameresults/sport-1-active.png';
-import Icon2Active from '../../../assets/gameresults/sport-2-active.png';
-import activeBG from '../../../assets/gameresults/active-bg.png';
-import inActiveBG from '../../../assets/gameresults/inactive-bg.png';
+import Icon1 from '../../../assets/gameresults/sport-1-v3.png';
+import Icon2 from '../../../assets/gameresults/sport-2-v3.png';
+import Icon1Active from '../../../assets/gameresults/sport-1-active-v3.png';
+import Icon2Active from '../../../assets/gameresults/sport-2-active-v3.png';
+import activeBG from '../../../assets/gameresults/active-bg-v3.png';
+import inActiveBG from '../../../assets/gameresults/inactive-bg-v3.png';
 import HomePageTopBanner from '../HomePageTopBanner'
 import Pagination from '../Pagination'
 import SportsContent from '../SportsContent'
@@ -26,18 +26,18 @@ import TableHeader2 from '../TableHeader2';
 // import Header from '../Header';
 // import NavBottom from '../NavBottom';
 import HorizontalMenu14 from '../HorizontalMenu14'
-import Icon9 from '../../../assets/gameresults/1.png'
-import Icon10 from '../../../assets/gameresults/2.png'
-import Icon3 from '../../../assets/gameresults/3.png'
-import Icon4 from '../../../assets/gameresults/4.png'
-import Icon5 from '../../../assets/gameresults/5.png'
-import Icon6 from '../../../assets/gameresults/6.png'
+import Icon9 from '../../../assets/gameresults/1active-v3.png'
+import Icon10 from '../../../assets/gameresults/2-v3.png'
+import Icon3 from '../../../assets/gameresults/3-v3.png'
+import Icon4 from '../../../assets/gameresults/4-v3.png'
+import Icon5 from '../../../assets/gameresults/5-v3.png'
+import Icon6 from '../../../assets/gameresults/6-v3.png'
 import Icon7 from '../../../assets/gameresults/7.png'
 import Icon8 from '../../../assets/gameresults/8.png'
 import Icon11 from '../../../assets/gameresults/10.png'
 import Icon12 from '../../../assets/gameresults/11.png'
-import subInactive from '../../../assets/gameresults/sub-inactive.png';
-import subActive from '../../../assets/gameresults/sub-active.png';
+import subInactive from '../../../assets/gameresults/sub-inactive-v3.png';
+import subActive from '../../../assets/gameresults/sub-active-v3.png';
 import ScrollButton from '../ScrollButton';
 import './_gameResultPage.scss'
 
@@ -47,16 +47,16 @@ const tabsArray = [
 ];
 
 const tabsArray2 = [
-    { text: "전체", icon: Icon9, id: 0, number: 854, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "축구", icon: Icon10, id: 1, number: 567, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "농구", icon: Icon3, id: 2, number: 227, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "야구", icon: Icon4, id: 3, number: 407, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "배구", icon: Icon5, id: 4, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "테니스", icon: Icon11, id: 5, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "배드민턴", icon: Icon12, id: 6, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "하키", icon: Icon6, id: 7, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "미식축구", icon: Icon7, id: 8, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "격투기", icon: Icon8, id: 9, number: 9, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "전체", icon: Icon9, activeIcon: Icon9, marginTop: "1.413rem", id: 0, number: 854, subInactive: subInactive, subActive: subActive, path: '#', width: "4.375rem" },
+    { text: "축구", icon: Icon10, activeIcon: Icon9,marginTop: "1.663rem", id: 1, number: 567, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "농구", icon: Icon3, activeIcon: Icon9,marginTop: "1.663rem", id: 2, number: 227, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "야구", icon: Icon4, activeIcon: Icon9,marginTop: "1.663rem", id: 3, number: 407, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "배구", icon: Icon5, activeIcon: Icon9,marginTop: "1.663rem", id: 4, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "테니스", icon: Icon6, activeIcon: Icon9,marginTop: "1.663rem", id: 5, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "배드민턴", icon: Icon12, activeIcon: Icon9,marginTop: "1.663rem", id: 6, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "하키", icon: Icon11, activeIcon: Icon9,marginTop: "1.663rem", id: 7, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "미식축구", icon: Icon7, activeIcon: Icon9,marginTop: "1.663rem", id: 8, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "격투기", icon: Icon8, activeIcon: Icon9,marginTop: "1.663rem", id: 9, number: 9, subInactive: subInactive, subActive: subActive, path: '#' },
 ];
 
 // const LeftMenuSubArray = [
