@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router';
 import horizontalsScroll from '../../utils/horizontalsScroll';
 import inactive from '../../assets/inactive-bg1-v3.png';
-import activeBG from '../../assets/cscenter/leftMenu/active-btn.png'
+import activeBG from '../../assets/cscenter/leftMenu/active-btn_v3.png'
 import moneyActive from '../../assets/mainPage/icons/active-bg-v3.png';
 import moneyInactive from '../../assets/mainPage/icons/inactive-bg-v3.png';
 
@@ -18,7 +18,7 @@ const HorizontalMenu1 = ({
 }) => {
 
     const navigate = useNavigate();
-    let pathname = window.location.pathname
+    let pathname = window.location.pathname 
     const [isHover, setHover] = useState(null)
 
     const Image = React.memo(function Image({ icon, activeIcon, width, marginLeft, isSameLink }) {

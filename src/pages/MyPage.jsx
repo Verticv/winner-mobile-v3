@@ -23,6 +23,7 @@ import activeIcon2 from '../assets/mainPage/icons/active-icon22_v3.png';
 import Icon2 from '../assets/mainPage/icons/charging-history2_v3.png';
 import Icon1 from '../assets/mainPage/icons/Icon12_v3.png';
 import DistributorPage from '../components/MyPage/DistributorPage';
+import WinLoseSettlement from '../components/MyPage/WinLoseSettlement';
 
 
 
@@ -35,6 +36,10 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
   const [selectedTab1, setSelectedTab1] = useState(0)
     const [selectedSubTab1, setSelectedSubTab1] = useState(0)
     console.log(selectedSubTab1, selectedTab1, setSelectedSubTab)
+
+    const [activeButton, setActiveButton] = useState()
+
+
  console.log(selectedSubTab);
   useEffect(() => {
     if (window.location.pathname === '/mypage') {
@@ -189,6 +194,24 @@ const tabsArray1 = [
                     </>
                 }
             >
+            </Route>
+
+            <Route path="/win-lose-settlement"
+                element={
+                    <>  
+                        <ScrollButton />
+                        <WinLoseSettlement isAuthenticated={true} setAuthenticated={setAuthenticated}
+                            activeButton={activeButton}
+                            setActiveButton={setActiveButton}
+                        />
+                        {/* <FixedMenu
+                         selectedTab={selectedTab}
+                         setSelectedTab={setSelectedTab}
+                        />  */}
+                    </>
+                }
+            >
+
             </Route>
             
 

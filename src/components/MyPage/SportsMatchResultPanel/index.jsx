@@ -3,6 +3,9 @@ import '../BoardComposeViewPanel/RadioButton.css';
 import TableHeader from '../TableHeader'
 import CardHeader from '../CardHeader'
 import CardResults from '../CardResults'
+import USFlagIcon from '../../../assets/myPage/sports/usaFlag.png'
+import ENFlagIcon from '../../../assets/myPage/sports/englandFlag.png'
+import SpainFlagIcon from '../../../assets/flag.png'
 
 const SportsMatchResultPanel = ({
     checkedState = null,
@@ -10,12 +13,12 @@ const SportsMatchResultPanel = ({
 }) => {
     return (
         <>
-            <div style={{ background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.6)', padding: '0.1875rem', margin: '0 1.875rem', borderRadius: '1.3rem' }}>
-                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#323232' }} className="shadow-subNavbar">
+            <div style={{ background: 'linear-gradient(to top,#ededeb, #cb78e6 )', boxShadow: '0px 0px 0.75rem 0px rgba(0, 0, 0, 0.8)', padding: '0.1875rem', margin: '0 1.875rem', borderRadius: '1.875rem' }}>
+                <div style={{ borderRadius: "1.875rem", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#ffffff' }} className="shadow-subNavbar">
                     <TableHeader />
                     <div style={{ padding: '0.438rem 0.9rem 0 0.7rem' }}>
-                        <div style={{ border: '0.45rem solid #473b35', borderRadius: '0.4rem', marginBottom: '2rem' }} className='shadow-to-box'>
-                            <CardHeader flag='us' name='MLS' date='2021-06-29 15:45' />
+                        <div style={{ border: '0.45rem solid #6852a7', borderRadius: '0.625rem', marginBottom: '2rem', boxShadow: "0px 0.188rem 0.563rem 0px rgba(0, 0, 0, 0.5)" }} className='shadow-to-box'>
+                            <CardHeader flag={USFlagIcon} name='축구 / 미국 - 메이저리그사커' date='06-29 15:45' />
                             <CardResults
                                 bet="middle"
                                 result="equality"
@@ -30,8 +33,8 @@ const SportsMatchResultPanel = ({
                                 hasDown={false}
                             />
                         </div>
-                        <div style={{ border: '0.45rem solid #473b35', borderRadius: '0.4rem', marginBottom: '1.75rem' }} className='shadow-to-box'>
-                            <CardHeader flag='uk' name='EPL' date='2021-06-29 15:45' />
+                        <div style={{ border: '0.45rem solid #6852a7', borderRadius: '0.4rem', marginBottom: '1.75rem' }} className='shadow-to-box'>
+                            <CardHeader flag={ENFlagIcon} name='축구 / 잉글랜드 - 프리미어리그' date='06-29 15:45' />
                             <CardResults
                                 bet="left"
                                 result="win"
@@ -61,8 +64,8 @@ const SportsMatchResultPanel = ({
                                 secondCard='true'
                             />
                         </div>
-                        <div style={{ border: '0.45rem solid #473b35', borderRadius: '0.4rem', marginBottom: '1.9rem' }} className='shadow-to-box'>
-                            <CardHeader flag='uk' name='EPL' date='2021-06-29 15:45' />
+                        <div style={{ border: '0.45rem solid #6852a7', borderRadius: '0.4rem', marginBottom: '1.9rem' }} className='shadow-to-box'>
+                            <CardHeader flag={ENFlagIcon} name='축구 / 잉글랜드 - 프리미어리그' date='06-29 15:45' />
                             <CardResults
                                 bet="left"
                                 result="win"
@@ -77,8 +80,8 @@ const SportsMatchResultPanel = ({
                                 hasDown={false}
                             />
                         </div>
-                        <div style={{ border: '0.45rem solid #473b35', borderRadius: '0.4rem' }} className='shadow-to-box'>
-                            <CardHeader flag='spain' name='라리가' date='2021-06-29 15:45' />
+                        <div style={{ border: '0.45rem solid #6852a7', borderRadius: '0.4rem' }} className='shadow-to-box'>
+                            <CardHeader flag={SpainFlagIcon} name='축구 / 스페인 - 라리가' date='06-29 15:45' />
                             <CardResults
                                 bet="left"
                                 result="win"

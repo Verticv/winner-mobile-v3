@@ -263,7 +263,9 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_6,
       title: 'e-윈루즈정산',
       hasBadge: false,
-      hasList: false
+      hasList: false,
+      path: '/mypage/win-lose-settlement',
+      blank: false,
     },
     {
       id: 7,
