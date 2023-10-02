@@ -57,7 +57,7 @@ const HorizontalMenu1 = ({
                     style={{
                         background: !isMoneyPage ? `url(${isSameLink ? (item.activeBG ? item.activeBG : activeBG) : (item.inActiveBG ? item.inActiveBG : inactive)}) round` : `url(${isSameLink ? moneyActive : moneyInactive}) round`,
                         backgroundSize: 'cover',
-                        marginRight: index === 0 ? '-0.688rem' : ''
+                        marginRight: index === 0 || index === 1 ? '-0.688rem' : ''
                     }}
                     onPointerDown={() => setHover(item.id)}
                     onPointerUp={() => {

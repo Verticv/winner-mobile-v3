@@ -53,7 +53,7 @@ const HorizontalMenu14 = ({
             >
                 <div style={{ marginTop: '-1.5rem', marginLeft: '-0.6rem' }}>
                     <div className='changeMargin' style={{ marginTop: '1.5rem', height: '5.9rem' }}>
-                        <img style={{ width: item.width ? item.width : imageWidth ? imageWidth : withoutMargin ? '6.0625rem' : '3.813rem', marginTop: item.marginTop , marginLeft: '0.4375rem', WebkitUserDrag: "none", MozUserDrag: "none", userDrag: "none" }} src={ isState === item.id || (typeof (isState) !== 'number' && item.id === 0) ? item.activeIcon : item.icon} alt="" />
+                        <img style={{ width: item.width ? item.width : imageWidth ? imageWidth : withoutMargin ? '6.0625rem' : '7.813rem', marginTop: item.marginTop , marginLeft: '0.4375rem', WebkitUserDrag: "none", MozUserDrag: "none", userDrag: "none" }} src={ isState === item.id || (typeof (isState) !== 'number' && item.id === 0) ? item.activeIcon : item.icon} alt="" />
                     </div>
                     <p
                         style={{ margin: '0', marginTop: `${imageWidth ? '0.0625rem' : '0.075rem'}`, fontSize: '2.25rem', color: isState === item.id || (typeof (isState) !== 'number' && item.id === 0) ? '#ffffff' : '#2d2834', marginLeft: '0.6rem' }}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MenuIcon_1 from '../../assets/images/menu2/menu1.png'
 import MenuIcon_2 from '../../assets/images/menu2/menu2.png'
 import MenuIcon_3 from '../../assets/images/menu2/menu3.png'
@@ -66,11 +66,18 @@ import icon1 from '../../assets/mainPage/points/1_v3.png';
 import icon2 from '../../assets/mainPage/points/2_v3.png';
 import icon3 from '../../assets/mainPage/points/3_v3.png';
 
+import icon_1 from '../../assets/gameresults/sport-1-v3.png';
+import icon_2 from '../../assets/gameresults/sport-2-v3.png';
+
+import Icon__1 from '../../assets/coupon/coupon1-v3.png'
+import Icon__2 from '../../assets/coupon/coupon2-v3.png'
+import Icon__3 from '../../assets/coupon/coupon3-v3.png'
+
 import MenuList from '../Shared/MenuList'
 import { useNavigate } from 'react-router-dom'
 
-const ProfileMenu = () => {
-  const [isOpen, setOpen] = useState(false)
+const ProfileMenu = ({ isOpen, setOpen }) => {
+  // const [isOpen, setOpen] = useState(false)
   const [selectedTab, setSelectedTab] = useState(false)
   const [subItems, setSubItems] = useState([])
   const [selectedSubTab, setSelectedSubTab] = useState([])
@@ -239,7 +246,7 @@ const ProfileMenu = () => {
           path: '/mypage/points/all/points-accumulate-history'
         },
         {
-          id: 2,
+          id: 3,
           icon2: icon3,
           title: '포인트전환내역',
           OnIcon: MenuOn2,
@@ -285,14 +292,14 @@ const ProfileMenu = () => {
       subItems: [
         {
           id: 1,
-          icon2: Icon_1,
+          icon2: icon_1,
           OnIcon: MenuOn1,
           title: '스포츠',
           path: '/mypage/gameresults/all'
         },
         {
           id: 2,
-          icon2: Icon_2,
+          icon2: icon_2,
           title: '미니게임',
           OnIcon: MenuOn2,
           path: '/mypage/gameresults/minigame/powerball'
@@ -315,6 +322,29 @@ const ProfileMenu = () => {
       hasList: true,
       hasBadge: true,
       badge_num: 1,
+      subItems: [
+        {
+          id: 1,
+          icon2: Icon__1,
+          OnIcon: MenuOn1,
+          title: '쿠폰사용',
+          path: '/mypage/coupon/all'
+        },
+        {
+          id: 2,
+          icon2: Icon__2,
+          title: '쿠폰선물',
+          OnIcon: MenuOn2,
+          path: '/mypage/coupon/all/coupon-gift'
+        },
+        {
+          id: 3,
+          icon2: Icon__3,
+          title: '쿠폰내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/coupon/all/coupon-history'
+        },
+      ]
     },
     {
       id: 11,
@@ -351,6 +381,10 @@ const ProfileMenu = () => {
     },
     
   ]
+
+  useEffect(() => {
+    console.log('isOpen3', isOpen)
+  })
   const setActiveTab = ({ index, item }) => {
     setSelectedSubTab(item.id)
   }

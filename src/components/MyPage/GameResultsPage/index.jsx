@@ -26,20 +26,31 @@ import TableHeader2 from '../TableHeader2';
 // import Header from '../Header';
 // import NavBottom from '../NavBottom';
 import HorizontalMenu14 from '../HorizontalMenu14'
-import Icon9 from '../../../assets/gameresults/1active-v3.png'
-import Icon10 from '../../../assets/gameresults/2-v3.png'
-import Icon3 from '../../../assets/gameresults/3-v3.png'
-import Icon4 from '../../../assets/gameresults/4-v3.png'
-import Icon5 from '../../../assets/gameresults/5-v3.png'
-import Icon6 from '../../../assets/gameresults/6-v3.png'
-import Icon7 from '../../../assets/gameresults/7.png'
-import Icon8 from '../../../assets/gameresults/8.png'
-import Icon11 from '../../../assets/gameresults/10.png'
-import Icon12 from '../../../assets/gameresults/11.png'
+import Icon9 from '../../../assets/gameresults/1-v3.png'
+import Icon_9 from '../../../assets/gameresults/1active_v3.png'
+import Icon10 from '../../../assets/gameresults/2_v3.png'
+import Icon_10 from '../../../assets/gameresults/2active-v3.png'
+import Icon3 from '../../../assets/gameresults/3_v3.png'
+import Icon_3 from '../../../assets/gameresults/3active-v3.png'
+import Icon4 from '../../../assets/gameresults/4_v3.png'
+import Icon_4 from '../../../assets/gameresults/4active-v3.png'
+import Icon5 from '../../../assets/gameresults/5_v3.png'
+import Icon_5 from '../../../assets/gameresults/5active-v3.png'
+import Icon6 from '../../../assets/gameresults/6_v3.png'
+import Icon_6 from '../../../assets/gameresults/6active-v3.png'
+import Icon7 from '../../../assets/gameresults/7_v3.png'
+import Icon_7 from '../../../assets/gameresults/7active-v3.png'
+import Icon8 from '../../../assets/gameresults/8_v3.png'
+import Icon_8 from '../../../assets/gameresults/8active-v3.png'
+import Icon11 from '../../../assets/gameresults/9_v3.png'
+import Icon_11 from '../../../assets/gameresults/9active-v3.png'
+import Icon12 from '../../../assets/gameresults/10_v3.png'
+import Icon_12 from '../../../assets/gameresults/10active-v3.png'
 import subInactive from '../../../assets/gameresults/sub-inactive-v3.png';
 import subActive from '../../../assets/gameresults/sub-active-v3.png';
 import ScrollButton from '../ScrollButton';
 import './_gameResultPage.scss'
+import '../DatePicker.css'
 
 const tabsArray = [
     { text: "스포츠", icon: Icon1, activeIcon: Icon1Active, id: 0, path: "/mypage/gameresults/all", activeBG: activeBG, inActiveBG: inActiveBG, width: '7.875rem' },
@@ -47,16 +58,16 @@ const tabsArray = [
 ];
 
 const tabsArray2 = [
-    { text: "전체", icon: Icon9, activeIcon: Icon9, marginTop: "1.413rem", id: 0, number: 854, subInactive: subInactive, subActive: subActive, path: '#', width: "4.375rem" },
-    { text: "축구", icon: Icon10, activeIcon: Icon9,marginTop: "1.663rem", id: 1, number: 567, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "농구", icon: Icon3, activeIcon: Icon9,marginTop: "1.663rem", id: 2, number: 227, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "야구", icon: Icon4, activeIcon: Icon9,marginTop: "1.663rem", id: 3, number: 407, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "배구", icon: Icon5, activeIcon: Icon9,marginTop: "1.663rem", id: 4, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "테니스", icon: Icon6, activeIcon: Icon9,marginTop: "1.663rem", id: 5, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "배드민턴", icon: Icon12, activeIcon: Icon9,marginTop: "1.663rem", id: 6, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "하키", icon: Icon11, activeIcon: Icon9,marginTop: "1.663rem", id: 7, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "미식축구", icon: Icon7, activeIcon: Icon9,marginTop: "1.663rem", id: 8, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
-    { text: "격투기", icon: Icon8, activeIcon: Icon9,marginTop: "1.663rem", id: 9, number: 9, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "전체", icon: Icon9, activeIcon: Icon_9, id: 0, number: 854, subInactive: subInactive, subActive: subActive, path: '#', width: "8.125rem" },
+    { text: "축구", icon: Icon10, activeIcon: Icon_10,marginTop: "", id: 1, number: 567, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "농구", icon: Icon3, activeIcon: Icon_3,marginTop: "", id: 2, number: 227, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "야구", icon: Icon4, activeIcon: Icon_4,marginTop: "", id: 3, number: 407, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "배구", icon: Icon5, activeIcon: Icon_5,marginTop: "", id: 4, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "테니스", icon: Icon6, activeIcon: Icon_6,marginTop: "", id: 5, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "배드민턴", icon: Icon12, activeIcon: Icon_12,marginTop: "", id: 6, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "하키", icon: Icon11, activeIcon: Icon_11,marginTop: "", id: 7, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "미식축구", icon: Icon7, activeIcon: Icon_7,marginTop: "", id: 8, number: 0, subInactive: subInactive, subActive: subActive, path: '#' },
+    { text: "격투기", icon: Icon8, activeIcon: Icon_8,marginTop: "", id: 9, number: 9, subInactive: subInactive, subActive: subActive, path: '#' },
 ];
 
 // const LeftMenuSubArray = [
@@ -205,19 +216,19 @@ const GameResults = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
                                 <Route path="/powerball"
                                     element={
                                         <>
-                                            <div style={{ background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.6)', padding: '0.1875rem', margin: '0 1.875rem', borderRadius: '1.3rem' }}>
+                                            <div style={{ background: 'linear-gradient(to top, rgb(237, 237, 235), rgb(203, 120, 230))', boxShadow: 'rgba(0, 0, 0, 0.8) 0px 0px 0.75rem 0px', padding: '0.1875rem', margin: '0 1.875rem', borderRadius: '1.125rem' }}>
                                                 <div style={{
                                                     width: '100%',
-                                                    background: '#323232',
-                                                    borderRadius: '1rem',
+                                                    background: '#ffffff',
+                                                    borderRadius: '1.125rem',
                                                     paddingBottom: '1rem'
                                                 }}>
                                                     <TableHeader2 isMinigame={true} />
-                                                    <div className="flex flex-col w-full px-4 pb-4" style={{ margin: '0.3rem 0.8rem 0 0.8rem', border: '0.375rem solid #473b35', borderRadius: '0.4rem', boxShadow: '0 0 0.75rem 0 rgba(0, 0, 0, 0.6)' }}>
+                                                    <div className="flex flex-col w-full px-4 pb-4" style={{ margin: '0.3rem 0.8rem 0 0.8rem', border: '0.375rem solid #6852a7', borderRadius: '0.4rem', boxShadow: '0 0 0.75rem 0 rgba(0, 0, 0, 0.6)' }}>
                                                         <CardHeader flag='us' name='파워볼' date='2021-06-29 15:45' isMinigame={true} minigameType="powerball" width6 />
                                                         <PowerballResultsTable able checkedState={checkedState} setCheckedState={setCheckedState} array={inboxArray} />
                                                     </div>
-                                                    <div className="flex flex-col w-full px-4 pb-4" style={{ margin: '2.19rem 0.8rem 0 0.8rem', border: '0.375rem solid #473b35', borderRadius: '0.4rem', boxShadow: '0 0 0.75rem 0 rgba(0, 0, 0, 0.6)' }}>
+                                                    <div className="flex flex-col w-full px-4 pb-4" style={{ margin: '2.19rem 0.8rem 0 0.8rem', border: '0.375rem solid #6852a7', borderRadius: '0.4rem', boxShadow: '0 0 0.75rem 0 rgba(0, 0, 0, 0.6)' }}>
                                                         <CardHeader flag='us' name='파워볼' date='2021-06-29 15:45' isMinigame={true} minigameType="powerball" />
                                                         <PowerballResultsTable able checkedState={checkedState} setCheckedState={setCheckedState} array={inboxArray} />
                                                     </div>

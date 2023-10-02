@@ -261,7 +261,7 @@ const LiveCasinoBetHistory = ({ isState = 0, setState, showSub = true, isPopup =
         <div className="LiveCasinoBetHistory" style={{ marginBottom: '3rem' }}>
             {showSub === true && (
                 <>
-                    <div style={{ width: '100%', display: 'flex', position: 'relative', top: '0', marginTop: "-0.375rem" }}>
+                    <div style={{ width: '100%', display: 'flex', position: 'relative', top: '0'}}>
                         <div id='scroll-wrapper1' style={{ padding: '1.875rem', paddingRight: '0', paddingTop: '0', overflowX: 'scroll', height: "11.75rem" }}>
                             <HorizontalSubMenu key={6} itemsArray={subTabsArray} setSelectedTab={setSelectedTab} selectedTab={selectedTab} selectedSubTab={selectedSubTab} setSelectedSubTab={setSelectedSubTab} popup />
                         </div>

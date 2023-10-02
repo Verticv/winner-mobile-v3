@@ -5,8 +5,8 @@ import Icon3 from '../../../assets/minigameResults/1.png'
 import Icon4 from '../../../assets/minigameResults/2.png'
 import Icon5 from '../../../assets/minigameResults/3.png'
 import Icon6 from '../../../assets/minigameResults/4.png'
-import subInactive from '../../../assets/gameresults/minigameResults/inactive-bg.png'
-import subActive from '../../../assets/gameresults/minigameResults/active-bg.png'
+import subInactive from '../../../assets/gameresults/minigameResults/inactive-bg-v3.png'
+import subActive from '../../../assets/gameresults/minigameResults/active-bg-v3.png'
 import { useNavigate } from 'react-router-dom'
 
 const tabsArray = [

@@ -20,6 +20,7 @@ import SlotGameSection from "../components/MainPage/SlotGameSection";
 import HoldemGameSection from "../components/MainPage/HoldemGameSection";
 
 import FixedMenu from '../components/FixedMenu';
+import '../components/MainPage/Style.css'
 
 function MainPage({ setFooterDefaultState }) {
   const [selectedTab, setSelectedTab] = useState(0)
