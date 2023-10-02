@@ -32,7 +32,7 @@ const CardResults = ({
     }
 
     if (isMinigame === true) return (
-        <div style={{ borderBottomLeftRadius: withoutRadius ? '' : '0.5rem', borderBottomRightRadius: withoutRadius ? '' : '0.5rem', display: 'flex', alignItems: 'center', marginTop: withTopBorder ? '0.7rem' : '0.8rem', borderTop: withTopBorder ? '0.1875rem solid #252525' : '', paddingTop: withTopBorder ? '0.6rem' : '' }}>
+        <div style={{ borderBottomLeftRadius: withoutRadius ? '' : '0.5rem', borderBottomRightRadius: withoutRadius ? '' : '0.5rem', display: 'flex', alignItems: 'center', marginTop: withTopBorder ? '0.7rem' : '0.8rem', borderTop: withTopBorder ? '0.1875rem solid #dddddd' : '', paddingTop: withTopBorder ? '0.6rem' : '' }}>
 
             <div style={{ marginLeft: '1.1rem', fontSize: '2.625rem', marginRight: '1rem' }}>
                 <div style={{ marginRight: isAttached && "0.313rem", fontSize: '2.5rem' }}>
@@ -41,19 +41,19 @@ const CardResults = ({
             </div>
             <div style={{ display: 'flex' }}>
                 <div style={{
-                    background: 'linear-gradient(to top, #2f2d29, #2f2d29 50%, #4f4a41)',
-                    boxShadow: '0px 0.375rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
+                    background: bet === 'left' ? '#5523a0' : '#bbbbbb',
+                    boxShadow: '0px 0.188rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
                     padding: '0.1875rem', width: smallCard ? '26.875rem' : '26.875rem', height: '7.4375rem', marginRight: '0.375rem',
-                    textShadow: bet === "left" ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "", borderRadius: '0.6rem',
+                    textShadow: bet === "left" ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "", borderRadius: '0.5rem',
                 }}>
                     <button
                         style={{
                             width: '100%',
                             height: '100%',
                             textShadow: bet === 'left' ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "",
-                            background: bet === "left" ? "linear-gradient(to top, rgb(101, 79, 57), rgb(125, 99, 72) 50%, rgb(151, 120, 89))" : "#252525",
-                            borderRadius: '0.6rem',
-                            color: bet === "left" ? '#ffdfbd' : '#c8c8c8 ',
+                            background: bet === "left" ? "linear-gradient(to top, #5423a0, #9d3bbb)" : "#ffffff",
+                            borderRadius: '0.5rem',
+                            color: bet === "left" ? '#ffffff' : '#444444',
                             fontWeight: bet === "left" ? 'bold' : ""
                         }}
                     >
@@ -76,43 +76,43 @@ const CardResults = ({
                 </div>
 
                 <div style={{
-                    background: 'linear-gradient(to top, #2f2d29, #2f2d29 50%, #4f4a41)', padding: '0.1875rem', width: smallCard ? '10rem' : '10rem', height: '7.4375rem', marginRight: '0.375rem',
-                    textShadow: bet === "left" ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "", borderRadius: '0.6rem',
-                    boxShadow: '0px 0.375rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
+                    background: '#bbbbbb', padding: '0.1875rem', width: smallCard ? '10rem' : '10rem', height: '7.4375rem', marginRight: '0.375rem',
+                    textShadow: bet === "left" ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "", borderRadius: '0.5rem',
+                    boxShadow: '0px 0.188rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
                 }}>
                     <button
                         style={{
                             width: '100%',
                             height: '100%',
-                            backgroundColor: bet === "left" ? "#252525" : "#252525",
-                            borderRadius: '0.6rem',
+                            backgroundColor: bet === "left" ? "#ffffff" : "#ffffff",
+                            borderRadius: '0.5rem',
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            color: bet === "left" ? '#ffdfbd' : '#c8c8c8 ',
+                            color: bet === "left" ? '#444444' : '#444444',
                         }}
                     >
                         <div style={{ paddingLeft: '0rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: bet === "middle" ? '' : '0.1rem' }}>
-                            <span style={{ fontSize: '2.625rem', color: '#c8c8c8' }} className="font-roboto tracking-tight text-14px">{stat2}</span>
+                            <span style={{ fontSize: '2.625rem', color: '#444444' }} className="font-roboto tracking-tight text-14px">{stat2}</span>
                         </div>
                     </button>
                 </div>
                 <div style={{
-                    background: 'linear-gradient(to top, #2f2d29, #2f2d29 50%, #4f4a41)', padding: '0.1875rem', width: smallCard ? '25.02rem' : '26.875rem', height: '7.4375rem', marginRight: '0.375rem',
-                    textShadow: bet === "left" ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "", borderRadius: '0.6rem',
+                    background: bet === 'right' ? '#5523a0' : '#bbbbbb', padding: '0.1875rem', width: smallCard ? '25.02rem' : '26.875rem', height: '7.4375rem', marginRight: '0.375rem',
+                    textShadow: bet === "left" ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "", borderRadius: '0.5rem',
                     cursor: 'pointer',
-                    boxShadow: '0px 0.375rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
+                    boxShadow: '0px 0.188rem 0.188rem 0px rgba(0, 0, 0, 0.5)',
                 }}>
                     <button style={{
                         width: '100%',
                         height: '100%',
                         textShadow: bet === 'right' ? "0.094rem 0.162rem 0px rgba(0, 0, 0, 0.5)" : "",
-                        background: bet === "right" ? "linear-gradient(to top,  #654f39,  #7d6348 50%, #977859)" : "#252525",
-                        borderRadius: '0.6rem',
+                        background: bet === "right" ? "linear-gradient(to top,  #5423a0,  #9d3bbb)" : "#ffffff",
+                        borderRadius: '0.5rem',
                         display: 'flex',
                         alignItems: 'center',
-                        color: bet === "right" ? '#ffdfbd' : '#c8c8c8 ',
-                        fontWeight: bet === "right" ? '' : 'bold'
+                        color: bet === "right" ? '#ffffff' : '#444444',
+                        fontWeight: bet === "right" ? 'bold' : ''
                     }}>
                         <div
                             style={{

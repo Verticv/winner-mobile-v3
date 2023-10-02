@@ -19,7 +19,7 @@ function App() {
   const [isAuthenticated, setAuthenticated] = useState(false);
   const pathname = window.location.pathname;
 	const [isExpanded, setExpanded] = useState(null);
-	const [isOpen, setOpen] = useState(false)
+	// const [isOpen, setOpen] = useState(false)
 	const setFooterDefaultState = () => {
 		setExpanded(null)
 	}
@@ -53,10 +53,10 @@ function App() {
     });
   }, []);
  
-const setOpen1  = (e) =>  {
-	console.log('fffffffffffffffffff')
-	setOpen(true)
-}
+// const setOpen1  = (e) =>  {
+// 	console.log('fffffffffffffffffff')
+// 	setOpen(true)
+// }
 
 	return (
 		<Router>
@@ -66,7 +66,8 @@ const setOpen1  = (e) =>  {
 						path="/main"
 						element={
 							<>
-								<Header setOpen={setOpen1} isOpen={isOpen}/>
+								{/* <Header setOpen={setOpen1} isOpen={isOpen}/> */}
+								<Header />
 								<MainPage setFooterDefaultState={setFooterDefaultState} />
 								<Footer isExpanded={isExpanded} setExpanded={setExpanded} /> 
 							</>
@@ -79,7 +80,7 @@ const setOpen1  = (e) =>  {
 						path="/mypage/*"
 						element={
 							<MyPage
-							    setOpen={setOpen1}
+							    // setOpen={setOpen1}
 								isAuthenticated={isAuthenticated}
 								setAuthenticated={setAuthenticated}
 							/>
@@ -91,7 +92,8 @@ const setOpen1  = (e) =>  {
 						path="/esports/*"
 						element={
 							<>
-								<Header setOpen={setOpen1} isOpen={isOpen}/>
+								{/* <Header setOpen={setOpen1} isOpen={isOpen}/> */}
+								<Header />
 								<EsportsPage
 									isAuthenticated={isAuthenticated}
 									setAuthenticated={setAuthenticated}

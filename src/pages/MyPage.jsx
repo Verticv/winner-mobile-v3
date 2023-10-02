@@ -24,6 +24,7 @@ import Icon2 from '../assets/mainPage/icons/charging-history2_v3.png';
 import Icon1 from '../assets/mainPage/icons/Icon12_v3.png';
 import DistributorPage from '../components/MyPage/DistributorPage';
 import WinLoseSettlement from '../components/MyPage/WinLoseSettlement';
+import CouponUsage from '../components/MyPage/CouponUsage';
 
 
 
@@ -32,6 +33,7 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
   const [selectedSubTab, setSelectedSubTab] = useState(0)
   const [subActiveButton, setSubActiveButton] = useState();
   const [distributorPageActive, setDistributorPageActive] = useState();
+  const [isOpen2, setOpen2] = useState(false)
 
   const [selectedTab1, setSelectedTab1] = useState(0)
     const [selectedSubTab1, setSelectedSubTab1] = useState(0)
@@ -63,13 +65,13 @@ const tabsArray1 = [
         <div className="container mypage">
         <ProfileHeader setOpen={setOpen} />
         <ProfileInfo />
-        <ProfileMenu />
+        <ProfileMenu isOpen={isOpen2} setOpen={setOpen2} />
       </div>
       }></Route>
       <Route path="/bet-history/*" element={<>
         <Header/> 
         <NoticeBanner />
-        <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' setOpen={setOpen} />
+        <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' isOpen={isOpen2} setOpen={setOpen2} />
         <BetHistoryTest isAuthenticated={isAuthenticated}
                         subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
         />
@@ -86,7 +88,7 @@ const tabsArray1 = [
          <>
          <Header/> 
         <NoticeBanner />
-        <HomePageTopBanner pageTitle='머니충전' toPath='/mypage/bet-history' />
+        <HomePageTopBanner pageTitle='머니충전' toPath='/mypage/bet-history' setOpen={setOpen}/>
                  <div style={{ maxWidth: '1242px', paddingBottom: '16.125rem' }} className="relative w-full flex flex-col justify-center overflow-hidden money-page">
                  <div id='container-nav'>
                                 <HorizontalMenu1 itemsArray={tabsArray1} setSelectedTab={setSelectedTab1} setSelectedSubTab={setSelectedSubTab1} isMoneyPage='true' />
@@ -121,7 +123,7 @@ const tabsArray1 = [
                     <>  
                         <Header/> 
                         <NoticeBanner />
-                        <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' />
+                        <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' setOpen={setOpen}/>
                         <MoneyExchangePage isAuthenticated={true} setAuthenticated={setAuthenticated}
                             subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                         />
@@ -139,7 +141,7 @@ const tabsArray1 = [
                     <>
                         <Header/> 
                         <NoticeBanner />
-                        <HomePageTopBanner pageTitle='포인트' toPath='/mypage/bet-history' />
+                        <HomePageTopBanner pageTitle='포인트' toPath='/mypage/bet-history' setOpen={setOpen}/>
                         <PointsPage isAuthenticated={true} setAuthenticated={setAuthenticated}
                             subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                         />
@@ -212,6 +214,17 @@ const tabsArray1 = [
                 }
             >
 
+            </Route>
+
+            <Route path="/coupon/*"
+                element={
+                    <>
+                        <CouponUsage isAuthenticated={isAuthenticated} setAuthenticated={setAuthenticated}
+                            subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
+                        />
+                    </>
+                }
+            >
             </Route>
             
 

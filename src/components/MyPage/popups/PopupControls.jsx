@@ -56,7 +56,7 @@ export default function PopupControls({
             >{buttonChild}</div>
             {open && (
                 <div style={{ zIndex: '201' }} className={`fixed flex items-center justify-center w-screen ${isNotFullScreen ? "overflow-y-scroll" : ""} h-screen bg-black bg-opacity-80 z-50 left-0 top-0 popup-page`} onClick={(e) => onHeaderClick(e)}>
-                    <div >
+                    <div style={{marginTop: '8.25rem'}}>
                         {children}
                     </div>
                 </div>

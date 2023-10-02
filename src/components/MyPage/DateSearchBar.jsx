@@ -83,14 +83,14 @@ const DateSearchBar = ({
     }
     return (
         <div style={{
-            margin: withMargin ? (!isFreeboard ? '0.65rem 1.875rem 0.9rem 1.876rem' : '1.2rem 1.875rem') : '0 3.875rem 0 0',
+            margin: withMargin ? (!isFreeboard ? '0.65rem 1.875rem 0.9rem 1.876rem' :  '1.2rem 1.875rem') : '0 3.875rem 0 0',
             width: withMargin ? '' : '73.875rem',
             background: 'linear-gradient(to right,#5e2c89,#42227e)',
             borderRadius: '1.1rem',
             paddingTop: isPoints ? '0' : '',
-            marginTop: isGameResultsSearch === true ? '0.751rem' : isPoints ? '1.938rem' : '0.625rem',
-            marginLeft: isGameResultsSearch === true ? '1.751rem' : "1.876rem",
-            marginRight: isGameResultsSearch === true ? '2rem' : '1.875rem',
+            marginTop: isGameResultsSearch === true ? '1.938rem' : isPoints ? '1.938rem' : '0.625rem',
+            marginLeft: isGameResultsSearch === true ? '1.876rem' : "1.876rem",
+            marginRight: isGameResultsSearch === true ? '1.875rem' : '1.875rem',
             marginBottom: isIOS ? '-0.3rem' : '1.938rem'
         }} className="date12">
 

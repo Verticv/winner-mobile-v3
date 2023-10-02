@@ -173,7 +173,7 @@ const HistoryTable = ({
                                     secondColumnColor = '#f04281'
                                 }
                                 if (firstRowKeysName[0] === '쿠폰금액') {
-                                    firstColumnColor = '#e9441d'
+                                    firstColumnColor = '#f04281'
                                 }
                                 if (firstRowKeysName[0] === '처리상태') {
                                     firstColumnColor = row[0][firstRowKeysName[0]] === '사용가능' ? "#e65454" : "#7b7b7b"
@@ -200,12 +200,12 @@ const HistoryTable = ({
                         })}
                     </div>
                     {isCouponUsage ? (
-                        <div style={{ height: '14rem', width: '24rem', padding: '0.1875rem', background: 'linear-gradient(to top, #4b3b09, #e8b888)', borderRadius: '1.1rem' }}>
+                        <div style={{ height: '14rem', width: '24rem', borderRadius: '1.1rem' }}>
                             <button
-                                style={{ padding: '0.5625rem', width: '100%', height: '100%', background: 'linear-gradient(to top, #7f5f3f, #a67c52)', borderRadius: '1rem' }}
+                                style={{ padding: '0.5625rem', width: '100%', height: '100%', background: '#5d659f', borderRadius: '1rem' }}
                                 className="hover shadow-to-box3"
                             >
-                                <div style={{ color: "#ffdfbd", fontSize: '2.7rem' }} className="shadow-to-text">
+                                <div style={{ color: "#ededeb", fontSize: '2.7rem' }} className="shadow-to-text">
                                     <p>사용하기</p>
                                 </div>
                             </button>
@@ -252,7 +252,7 @@ const HistoryTable = ({
                                             width: '100%',
                                             marginTop: '0.2375rem',
                                             textAlign: 'center',
-                                            color: card[card.length - 1].textColor ? card[card.length - 1].textColor : '#eeeeee',
+                                            color: card[card.length - 1].textColor ? card[card.length - 1].textColor : '#ffffff',
                                         }}
                                     >
                                         {card[card.length - 1].buttonText || '진행중'}

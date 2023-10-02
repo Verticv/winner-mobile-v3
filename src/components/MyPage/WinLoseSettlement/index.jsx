@@ -239,7 +239,7 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
                 />
             </div>
 
-            <div style={{ height: '7.5rem', width: '73.875rem', fontSize: '2.625rem', borderWidth: '0.1875rem', margin: '0px 1.875rem 1.875rem', letterSpacing: '-0.07rem', display: 'flex', alignItems: 'center', borderRadius: '0.5rem', padding: '#ffffff', background: 'rgb(52, 29, 90)', boxShadow: "rgba(0, 0, 0, 0.8) 0px 0px 0.75rem 0px" }} className="shadow-to-box text-14px tracking-tight border border-gray-ececec flex items-center shadow-subNavbar rounded-2xl">
+            <div style={{ height: '7.5rem', width: '73.875rem', fontSize: '2.625rem', borderWidth: '0.1875rem', margin: '0px 1.875rem 1.875rem', letterSpacing: '-0.07rem', display: 'flex', alignItems: 'center', borderRadius: '0.5rem', padding: '#ffffff', background: '#ffffff', boxShadow: "rgba(0, 0, 0, 0.8) 0px 0px 0.75rem 0px" }} className="shadow-to-box text-14px tracking-tight border border-gray-ececec flex items-center shadow-subNavbar rounded-2xl">
                 <div style={{ borderRightWidth: '0.1875rem', width: '50%', background: '#eaeaea', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderTopLeftRadius: '0.5rem', borderBottomLeftRadius: '0.5rem', color: 'rgb(68, 68, 68)' }} className='flex items-center justify-center h-full w-1/2 text-white bg-gray-a3b2c2 border-r border-gray-ececec rounded-l-2xl'>합계</div>
                 <div style={{ width: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#e9441d' }} className='flex items-center justify-center h-full w-1/2 text-red-d52e2e rounded-2xl'>+244,119</div>
             </div>

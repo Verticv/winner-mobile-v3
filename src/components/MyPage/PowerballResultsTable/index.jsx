@@ -9,7 +9,7 @@ const PowerballResultsTable = ({
         return items?.map(item => (
             <div
                 key={item.id}
-                style={{ height: item.id !== 5 ? '12.1rem' : '11.725rem', background: item.id % 2 === 0 ? '#323231' : '#2e2e2e', display: 'flex', borderBottom: item.id !== 5 ? '0.1875rem solid #252525' : '' }}
+                style={{ height: item.id !== 5 ? '12.1rem' : '11.725rem', background: item.id % 2 === 0 ? '#ffffff' : '#f7f7f7', display: 'flex', borderBottom: item.id !== 5 ? '0.1875rem solid #dddddd' : '' }}
                 className={`
                     } flex  text-14px tracking-tight text-gray-r454545 w-full border-b border-gray-dddddd group`}
             >
@@ -22,7 +22,7 @@ const PowerballResultsTable = ({
                     }}
                     className="flex items-center  tracking-tight text-gray-r454545 h-full" >
 
-                    <div style={{ fontSize: '2.625rem', display: 'flex', alignItems: 'center', color: "#c8c8c8", letterSpacing: '-0.07rem', textAlign: 'center' }} className='w-full h-full flex first-letter:space-x-12 items-center text-gray-585858 '>
+                    <div style={{ fontSize: '2.625rem', display: 'flex', alignItems: 'center', color: "#444444", letterSpacing: '-0.07rem', textAlign: 'center' }} className='w-full h-full flex first-letter:space-x-12 items-center text-gray-585858 '>
                         <p
                             style={{ maxWidth: '15rem', fontSize: '2.625rem' }}
                             className="group-hover:text-gray-r7b7b7b text-4xl text-center  flex-shrink-0 leading-tight">{item.time}</p>

@@ -26,7 +26,7 @@ const CardHeader = ({ flag = 'us', name = '축구 / 미국 - 메이저리그사�
             </div>
             {minigameType !== "powerball" && (
                 <div className="flex items-center" style={{ display: 'flex', alignItems: 'center', letterSpacing: '-0.1rem', marginRight: '1.5rem', marginTop: '-0.4rem' }}>
-                    <img style={{ width: '2.374375rem', height: '2.374375rem' }} src={ClockIcon} alt="" />
+                    <img style={{ width: '2.374375rem', height: '2.374375rem', marginTop: "1rem" }} src={ClockIcon} alt="" />
                     <span
                         style={{ color: "#ffffff", fontSize: '2.625rem', marginLeft: '0.5625rem', marginTop: '0.5rem', marginRight: '' }}
                         className=" text-16px tracking-tight text-white"

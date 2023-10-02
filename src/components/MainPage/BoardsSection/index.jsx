@@ -116,7 +116,7 @@ const BoardsSection = () => {
         >
           <div className="slider__container">
             <CarouselBackButton onClick={handleBackClick} />
-            <div className="slider__content">
+            <div  className="slider__content">
               <Slider classNameTrayWrap="carousel_tray_wrapper"
                 >
                 <Slide key={0} className="card_animation_slide_horizontal" index={0}>
