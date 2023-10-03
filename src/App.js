@@ -13,8 +13,6 @@ import MainPage from './pages/MainPage';
 import EsportsPage from './old-components/EsportsPage';
 import { getCookie, setCookie } from './utils';
 import MyPage from './pages/MyPage';
-import NonLiveBet from './pages/NonLiveBet';
- 
 import Authentication from './pages/Authentication';
 
 function App() {
@@ -68,9 +66,10 @@ function App() {
 						path="/main"
 						element={
 							<>
+								{/* <Header setOpen={setOpen1} isOpen={isOpen}/> */}
 								<Header />
 								<MainPage setFooterDefaultState={setFooterDefaultState} />
-								<Footer isExpanded={isExpanded} setExpanded={setExpanded} />
+								<Footer isExpanded={isExpanded} setExpanded={setExpanded} /> 
 							</>
 						}
 					/>
@@ -109,20 +108,6 @@ function App() {
 						element={
 							<>
 								<Authentication
-									isAuthenticated={isAuthenticated}
-									setAuthenticated={setAuthenticated}
-								/>
-							</>
-						}
-					></Route>
-				</Routes>
-				<Routes>
-					<Route
-						path="/bet-combination"
-						element={
-							<>
-								<Header />
-								<NonLiveBet
 									isAuthenticated={isAuthenticated}
 									setAuthenticated={setAuthenticated}
 								/>
