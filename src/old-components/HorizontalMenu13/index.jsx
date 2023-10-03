@@ -70,16 +70,16 @@ const HorizontalMenu13 = ({
 
                     </div>
                     <p
-                        style={{ margin: '0', marginTop: `${imageWidth ? '0.0625rem' : '0.7rem'}`, fontSize: '2.25rem', color: pathname === item.path || isState === item.id ? '#252525' : '#ccc2b6', marginLeft: '0.6rem', fontFamily: 'SpoqaHanSansNeoMedium' }}
+                        style={{ margin: '0', marginTop: `${imageWidth ? '0.0625rem' : '0.7rem'}`, fontSize: '2.25rem', color: pathname === item.path || isState === item.id ? '#252525' : '#ccc2b6', marginLeft: '0.6rem'}}
                         className={`${pathname === item.path || isState === item.id
                             ? "text-white"
                             : "text-gray-r616161"
-                            } text-4xl font-spoqaMedium tracking-tight mt-0 paragraph`}
+                            } text-4xl tracking-tight mt-0 paragraph`}
                     >{item.text}</p>
                     {hasNumber && (
                         <div
                             style={{
-                                width: '6.19rem', height: '2.785rem', marginTop: imageWidth ? '0.0625rem' : '', marginBottom: '2.1rem', marginLeft: '4.6rem', fontFamily: 'RobotoMedium', background: 'rgb(0 0 0 / 50%)', borderRadius: '2rem',
+                                width: '6.19rem', height: '2.785rem', marginTop: imageWidth ? '0.0625rem' : '', marginBottom: '2.1rem', marginLeft: '4.6rem', background: 'rgb(0 0 0 / 50%)', borderRadius: '2rem',
                                 display: 'flex', justifyContent: 'center', alignItems: 'center'
                             }}
                             className={`hasNumber ${pathname === item.path || isState === item.id

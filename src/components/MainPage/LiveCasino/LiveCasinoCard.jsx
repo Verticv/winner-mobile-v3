@@ -22,7 +22,7 @@ const LiveCasinoCard = ({ id, title, img, is_best = false, is_coming_soon = fals
       <img src={img} alt="LiveCasinoImage1" className='casino-img' />
       <button className={`${is_coming_soon ? 'coming-soon-btn' : ''}`} >
         <p >
-        {is_coming_soon && ('준비중')}
+        {is_coming_soon && id === 14 ? ('점검중') : is_coming_soon && ('준비중')}
           {!is_coming_soon && ('게임시작')}
           </p>
       </button>

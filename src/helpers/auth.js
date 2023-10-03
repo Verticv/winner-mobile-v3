@@ -1,3 +1,4 @@
+/* eslint-disable */
 class Auth {
     constructor() {
         this.authenticated = false

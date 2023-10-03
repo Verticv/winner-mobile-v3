@@ -16,6 +16,7 @@ import KinoLadderBetHistoryPanel from '../KinoLadderBetHistoryPanel'
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import Pagination from '../Pagination'
 
+
 const subTabsArray = [
     { text: "전체", path: "/mypage/bet-history/all/minigame", icon: Icon1, id: 0, width: '16.375rem', marginIcon: '', },
     { text: "파워볼", path: "/mypage/bet-history/all/minigame/powerball", icon: Icon3, id: 1, width: '7.2rem' },

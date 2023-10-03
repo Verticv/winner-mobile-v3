@@ -19,7 +19,7 @@ const ConfirmPopup = ({
           </div>
           <p className='confirm-title'>
             <span className='primary-color'>가입 신청이 완료 되었습니다.</span><br />
-            관리자 <span className='secondary-color'> 승인 대기중</span>입니다.</p>
+            관리자 <span style={{fontWeight:'bold'}} className='secondary-color'> 승인 대기중</span>입니다.</p>
           <div className='confirm-desc mb-46'>
             <p>관리자 승인 후 로그인 하시면.</p>
             <p> 정상적으로 서비스 이용이 가능합니다.</p>

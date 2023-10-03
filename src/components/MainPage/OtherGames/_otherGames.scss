@@ -4,7 +4,7 @@
   .section__header {
       margin: 3.938rem 2.438rem 1.313rem 1.813rem;
       h1 {
-        margin-top:-0.313rem !important;
+        margin-top:-1rem !important;
       }
     }
   .section__content {
@@ -61,11 +61,10 @@
     p {
       color: #ffffff;
       font-size: 3rem;
-      font-family: 'SpoqaHanSansNeoMedium';
       letter-spacing: -0.025em;
       margin: 0;
       line-height: 1;
-      margin-top: 0.125rem;
+      // margin-top: 0.125rem;
     }
   }
   .slider__container {

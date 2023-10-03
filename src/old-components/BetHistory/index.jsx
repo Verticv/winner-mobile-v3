@@ -245,6 +245,7 @@ const BetHistory = ({ isAuthenticated, setAuthenticated, subActiveButton, setSub
                                             />
                                             <Pagination page={page} setPage={setPage} />
                                             <NavBottom />
+                                            
                                         </>
                                     }
                                 >

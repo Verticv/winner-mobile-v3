@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MenuIcon_1 from '../../assets/images/menu2/menu1.png'
 import MenuIcon_2 from '../../assets/images/menu2/menu2.png'
 import MenuIcon_3 from '../../assets/images/menu2/menu3.png'
@@ -55,13 +55,33 @@ import MenuIcon_1_8 from '../../assets/images/mainPage/menu8.png'
 import MenuIcon_1_9 from '../../assets/images/mainPage/menu9.png'
 import MenuIcon_1_10 from '../../assets/images/mainPage/menu10.png'
 import MenuIcon_1_11 from '../../assets/images/mainPage/menu11.png'
-import MenuList from '../Shared/MenuList'
 
-const ProfileMenu = () => {
-  const [isOpen, setOpen] = useState(false)
+import Icon1 from '../../assets/mainPage/icons/Icon1.png';
+import Icon2 from '../../assets/mainPage/icons/icon2.png';
+
+import Icon_1 from '../../assets/mainPage/icons/icon-1-v3.png';
+import Icon_2 from '../../assets/mainPage/icons/charging-history-v3.png';
+
+import icon1 from '../../assets/mainPage/points/1_v3.png';
+import icon2 from '../../assets/mainPage/points/2_v3.png';
+import icon3 from '../../assets/mainPage/points/3_v3.png';
+
+import icon_1 from '../../assets/gameresults/sport-1-v3.png';
+import icon_2 from '../../assets/gameresults/sport-2-v3.png';
+
+import Icon__1 from '../../assets/coupon/coupon1-v3.png'
+import Icon__2 from '../../assets/coupon/coupon2-v3.png'
+import Icon__3 from '../../assets/coupon/coupon3-v3.png'
+
+import MenuList from '../Shared/MenuList'
+import { useNavigate } from 'react-router-dom'
+
+const ProfileMenu = ({ isOpen, setOpen }) => {
+  // const [isOpen, setOpen] = useState(false)
   const [selectedTab, setSelectedTab] = useState(false)
   const [subItems, setSubItems] = useState([])
   const [selectedSubTab, setSelectedSubTab] = useState([])
+  const navigate = useNavigate();
   
   const Items = [
     {
@@ -71,61 +91,72 @@ const ProfileMenu = () => {
       title: '베팅내역',
       hasList: true,
       hasBadge: false,
+      // path: '/mypage/bet-history',
+      
       subItems: [
         {
           id: 1,
           icon2: MenuIcon_1_1,
           OnIcon: MenuOn1,
-          title: '라이브카지노'
+          title: '라이브카지노',
+          path: '/mypage/bet-history/all/live-casino'
         },
         {
           id: 2,
           icon2: MenuIcon_1_2,
           title: '스포츠',
           OnIcon: MenuOn2,
+          path: '/mypage/bet-history/all/sports'
         },
 
         {
           id: 3,
           icon2: MenuIcon_1_3,
-          title: '실시간스포츠',
+          title: '라이브스포츠',
           OnIcon: MenuOn3,
+          path: '/mypage/bet-history/all/sports'
         },
         {
           id: 4,
           icon2: MenuIcon_1_4,
           title: '슬롯게임',
           OnIcon: MenuOn4,
+          path: '/mypage/bet-history/all/slot-game'
         },
         {
           id: 5,
           icon2: MenuIcon_1_5,
           title: '호텔카지노',
           OnIcon: MenuOn5,
+          path: '/mypage/bet-history/all/hotel-casino'
         },
         {
           id: 11,
           icon2: MenuIcon_1_11,
           title: '홀덤게임',
           OnIcon: MenuOn11,
+          path: '/mypage/bet-history/all/hotel-casino'
         },
         {
           id: 6,
           icon2: MenuIcon_1_6,
           title: 'e-스포츠',
           OnIcon: MenuOn6,
+          path: '/mypage/bet-history/all/hotel-casino'
         },
         {
           id: 7,
           icon2: MenuIcon_1_7,
           title: '미니게임',
           OnIcon: MenuOn7,
+          path: '/mypage/bet-history/all/e-sports'
         },
         {
           id: 8,
           icon2: MenuIcon_1_8,
           title: '키론가상게임',
           OnIcon: MenuOn8,
+          path: '/mypage/bet-history/all/minigame'
         },
 
         {
@@ -133,12 +164,14 @@ const ProfileMenu = () => {
           icon2: MenuIcon_1_9,
           title: '피싱게임',
           OnIcon: MenuOn9,
+          path: '/mypage/bet-history/all/ar-game'
         },
         {
           id: 10,
           icon2: MenuIcon_1_10,
           title: '티비벳',
           OnIcon: MenuOn10,
+          path: '/mypage/bet-history/all/fishing-game'
         }
       ]
     },
@@ -148,7 +181,23 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_2,
       title: '머니충전',
       hasBadge: false,
-      hasList: true
+      hasList: true,
+      // path: '/mypage/money'
+      subItems: [
+        {
+          id: 1,
+          icon2: Icon1,
+          OnIcon: MenuOn1,
+          title: '충전신청',
+          path: '/mypage/money/charge'
+        },
+        {
+          id: 2,
+          icon2: Icon2,
+          title: '충전내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/money/charge/history'
+        },]
     },
 
     {
@@ -157,7 +206,22 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_3,
       title: '머니환전',
       hasBadge: false,
-      hasList: true
+      hasList: true,
+      subItems: [
+        {
+          id: 1,
+          icon2: Icon_1,
+          OnIcon: MenuOn1,
+          title: '환전신청',
+          path: '/mypage/money/exchange/currency'
+        },
+        {
+          id: 2,
+          icon2: Icon_2,
+          title: '환전내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/money/exchange/currency/history'
+        },]
     },
     {
       id: 4,
@@ -165,7 +229,30 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_4,
       title: '포인트전환',
       hasBadge: false,
-      hasList: true
+      hasList: true,
+      subItems: [
+        {
+          id: 1,
+          icon2: icon1,
+          OnIcon: MenuOn1,
+          title: '포인트전환신청',
+          path: '/mypage/points/all'
+        },
+        {
+          id: 2,
+          icon2: icon2,
+          title: '포인트적립내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/points/all/points-accumulate-history'
+        },
+        {
+          id: 3,
+          icon2: icon3,
+          title: '포인트전환내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/points/all/points-transaction-history'
+        },
+      ]
     },
     {
       id: 5,
@@ -173,7 +260,9 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_5,
       title: '총판페이지',
       hasBadge: false,
-      hasList: false
+      hasList: false,
+      path: '/mypage/distributor-page',
+      blank: true,
     },
     {
       id: 6,
@@ -181,7 +270,9 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_6,
       title: 'e-윈루즈정산',
       hasBadge: false,
-      hasList: false
+      hasList: false,
+      path: '/mypage/win-lose-settlement',
+      blank: false,
     },
     {
       id: 7,
@@ -197,7 +288,22 @@ const ProfileMenu = () => {
       icon2: MenuIcon_Light_8,
       title: '경기결과',
       hasBadge: false,
-      hasList: true
+      hasList: true,
+      subItems: [
+        {
+          id: 1,
+          icon2: icon_1,
+          OnIcon: MenuOn1,
+          title: '스포츠',
+          path: '/mypage/gameresults/all'
+        },
+        {
+          id: 2,
+          icon2: icon_2,
+          title: '미니게임',
+          OnIcon: MenuOn2,
+          path: '/mypage/gameresults/minigame/powerball'
+        },]
     },
 
     {
@@ -216,6 +322,29 @@ const ProfileMenu = () => {
       hasList: true,
       hasBadge: true,
       badge_num: 1,
+      subItems: [
+        {
+          id: 1,
+          icon2: Icon__1,
+          OnIcon: MenuOn1,
+          title: '쿠폰사용',
+          path: '/mypage/coupon/all'
+        },
+        {
+          id: 2,
+          icon2: Icon__2,
+          title: '쿠폰선물',
+          OnIcon: MenuOn2,
+          path: '/mypage/coupon/all/coupon-gift'
+        },
+        {
+          id: 3,
+          icon2: Icon__3,
+          title: '쿠폰내역',
+          OnIcon: MenuOn2,
+          path: '/mypage/coupon/all/coupon-history'
+        },
+      ]
     },
     {
       id: 11,
@@ -252,6 +381,10 @@ const ProfileMenu = () => {
     },
     
   ]
+
+  useEffect(() => {
+    console.log('isOpen3', isOpen)
+  })
   const setActiveTab = ({ index, item }) => {
     setSelectedSubTab(item.id)
   }
@@ -268,16 +401,19 @@ const ProfileMenu = () => {
               if (item.subItems) {
                 setOpen(true)
                 setSubItems(item.subItems)
+                navigate(item?.path)
+              } else {
+                item.blank? window.open(item?.path) : navigate(item?.path)
               }
             }
             }>
             <div className='menu-item1'>
               {item.hasList && (<div className='menu-item-arrow'>
-                {selectedTab === item.id && (<img src={LightArrow} alt="right" className="ml-10px object-none" />)}
-                {selectedTab !== item.id && (<img src={DarkArrow} alt="right" className="ml-10px object-none" />)}
+                {selectedTab === item.id && (<img src={LightArrow} alt="right"  className="ml-10px object-none" />)}
+                {selectedTab !== item.id && (<img src={DarkArrow} alt="right"  className="ml-10px object-none" />)}
               </div>)}
               <div className='menu-item-logo'>
-                {selectedTab === item.id && (<img src={item.icon2} alt="right" className="ml-10px object-none" />)}
+                {selectedTab === item.id && (<img src={item.icon2} alt="right"  className="ml-10px object-none" />)}
                 {selectedTab !== item.id && (<img src={item.icon} alt="right" className="ml-10px object-none" />)}
               </div>
               <div className='menu-item-title'>

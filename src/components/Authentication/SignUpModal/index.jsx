@@ -74,7 +74,7 @@ const SignUpModal = ({
       height: '4rem',
       justifyContent: 'center'
     }}>
-      <p style={{ fontFamily: 'SpoqaHanSansNeoBold', textAlign: 'center', fontSize: '2.6rem', paddingTop: '0.2rem' }}>{selectedYear}년</p>
+      <p style={{ textAlign: 'center', fontSize: '2.6rem', paddingTop: '0.2rem' }}>{selectedYear}년</p>
     </div>
   );
   const MonthButton = ({ selectedMonth }) => (
@@ -89,7 +89,7 @@ const SignUpModal = ({
       height: '4rem',
       justifyContent: 'center'
     }}>
-      <p style={{ fontFamily: 'SpoqaHanSansNeoBold', textAlign: 'center', fontSize: '2.6rem', paddingTop: '0.2rem' }}>{selectedMonth}월</p>
+      <p style={{ textAlign: 'center', fontSize: '2.6rem', paddingTop: '0.2rem' }}>{selectedMonth}월</p>
     </div>
   );
   const CustomInput = (props) => {

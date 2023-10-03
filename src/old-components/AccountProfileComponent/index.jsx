@@ -58,7 +58,7 @@ const AccountProfileComponent = ({ isAuthenticated, setAuthenticated, subActiveB
                 alt="inbox_icon"
             />
             <div className="absolute flex items-center justify-center w-16 h-16 bg-red-notification top-0 right-0 -mt-3px -mr-3px rounded-full shadow-plain6" style={{ position: 'absolute', display: 'flex', justifyContent: 'center', alignItems: 'center', top: '-0.65rem', right: '-0.6rem', padding: '0.3rem 1.1rem', borderRadius: '0.9rem', background: '#e9441d', boxShadow: '0.09375rem 0.162375rem 0.0625rem 0 rgba(0, 0, 0, 0.51)' }}>
-                <label style={{ fontSize: '2.8125rem', marginLeft: '0.1875rem', fontFamily: 'RobotoMedium', color: '#ffffff' }} className="font-roboto">1</label>
+                <label style={{ fontSize: '2.8125rem', marginLeft: '0.1875rem', color: '#ffffff' }} className="font-roboto">1</label>
             </div>
         </button>
     );
@@ -100,7 +100,7 @@ const AccountProfileComponent = ({ isAuthenticated, setAuthenticated, subActiveB
             <div style={{ marginRight: '1.7rem', marginTop: '0.1rem', marginLeft: '2rem' }}>
                 <img style={{ width: '7.0625rem'}} className="" src={country === "KR" ? Koreaflag : UKflag} alt="flag"></img>
             </div>
-            <label style={{ marginRight: '2.45rem', fontSize: '3rem', marginTop: '0.225rem', fontFamily: 'SpoqaHanSansNeoBold', color: '#ffdfbd', textShadow: '#000000 0rem 0rem 1rem' }}>{country}</label>
+            <label style={{ marginRight: '2.45rem', fontSize: '3rem', marginTop: '0.225rem', color: '#ffdfbd', textShadow: '#000000 0rem 0rem 1rem' }}>{country}</label>
             <DropdownArrow isWhite isOpen={isCountryOpen} />
         </div>
     )
@@ -124,7 +124,7 @@ const AccountProfileComponent = ({ isAuthenticated, setAuthenticated, subActiveB
                         />
                     </button>
                 )}
-                <span style={{ fontSize: '4rem', marginTop: '0.35rem', fontFamily: 'SpoqaHanSansNeoBold', color: '#ad9e8c', letterSpacing: '-0.1rem', marginLeft: '-0.3rem' }} className="font-spoqaBold">마이 인포</span>
+                <span style={{ fontSize: '4rem', marginTop: '0.35rem', color: '#ad9e8c', letterSpacing: '-0.1rem', marginLeft: '-0.3rem' }} className="">마이 인포</span>
                 <img
                     onClick={() => navigate(isAuthenticated ? "/main" : "/")}
                     className="absolute right-12 top-12 w-14"
@@ -143,12 +143,12 @@ const AccountProfileComponent = ({ isAuthenticated, setAuthenticated, subActiveB
 
                         </div>
                         <div style={{ marginLeft: '2.5375rem', background: '', width: '43.1rem', height: '25rem' }} className="w-full">
-                            <p style={{ margin: '0.1rem 1.8rem 1.7rem 0', fontSize: '2.8125rem', lineHeight: '0.7', fontFamily: 'RobotoBold', color: '#ffffff', textAlign: 'right' }} className="font-robotoBold text-right text-gray-text">
+                            <p style={{ margin: '0.1rem 1.8rem 1.7rem 0', fontSize: '2.8125rem', lineHeight: '0.7', color: '#ffffff', textAlign: 'right' }} className="font-robotoBold text-right text-gray-text">
                                 LEVEL3
                             </p>
-                            <p style={{ margin: '0px 2rem 1.475rem 0px', letterSpacing: '-0.075rem', fontSize: '3.375rem', lineHeight: '1.1', textAlign: 'right', fontFamily: 'SpoqaHanSansNeoBold', color: '#aa9264', display: 'flex', justifyContent: 'end' }} className="font-spoqaBold text-right text-blue-r1ca7ec">
+                            <p style={{ margin: '0px 2rem 1.475rem 0px', letterSpacing: '-0.075rem', fontSize: '3.375rem', lineHeight: '1.1', textAlign: 'right', color: '#aa9264', display: 'flex', justifyContent: 'end' }} className=" text-right text-blue-r1ca7ec">
                                 <span style={{ whiteSpace: 'nowrap', width: '38rem', overflow: 'hidden', textOverflow: 'ellipsis' }}>마이마이프로틴화이팅</span>
-                                <span className="text-gray-a4b1b4 font-spoqaBold" style={{ color: '#c8c8c8' }}>님</span>
+                                <span className="text-gray-a4b1b4 " style={{ color: '#c8c8c8' }}>님</span>
                             </p>
                             <div style={{ background: '#252525', borderRadius: '0.9rem' }}>
                                 <div style={{ borderTopRightRadius: '3.75rem', borderTopLeftRadius: '3.75rem', padding: '0.9rem 2.1rem 0.75rem 0.75rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', letterSpacing: '-0.08rem', borderBottom: '0.1875rem solid #323231' }} className="flex w-full items-center bg-white rounded-t-2xl p-1.5 pr-4 border-b-2 border-blue-e8f3fd">
@@ -157,7 +157,7 @@ const AccountProfileComponent = ({ isAuthenticated, setAuthenticated, subActiveB
                                             <img className="object-contain ml-1" style={{ width: '5.5625rem', marginTop: '0.1125rem', marginLeft: '0.3rem' }} src={W} alt="₩" />
                                         </div>
                                     </div>
-                                    <p className="w-5/6 m-0 text-6xl text-right text-blue-gradLight font-robotoBold" style={{ margin: '0.679rem 0', fontFamily: 'RobotoBold', color: '#ad9e8c', fontSize: '3.75rem' }}>100,000,000 <span className="font-spoqaBold mr-3" style={{ color: '#c8c8c8', fontSize: '3.5rem', fontFamily: 'SpoqaHanSansNeoBold' }}>원</span></p>
+                                    <p className="w-5/6 m-0 text-6xl text-right text-blue-gradLight font-robotoBold" style={{ margin: '0.679rem 0', color: '#ad9e8c', fontSize: '3.75rem' }}>100,000,000 <span className=" mr-3" style={{ color: '#c8c8c8', fontSize: '3.5rem' }}>원</span></p>
                                 </div>
                                 <div style={{ borderBottomRightRadius: '3.75rem', borderBottomLeftRadius: '3.75rem', padding: '0.55rem 1.1rem 0.55rem 0.75rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }} className="flex w-full items-center bg-white rounded-b-2xl p-1.5 pr-4">
                                     <div className="w-1/6 ">
@@ -165,7 +165,7 @@ const AccountProfileComponent = ({ isAuthenticated, setAuthenticated, subActiveB
                                             <img className="object-contain mt-1" style={{ width: '5.5625rem', marginLeft: '0.3125rem', }} src={P} alt="P" />
                                         </div>
                                     </div>
-                                    <p className="w-5/6 m-0 text-6xl text-right text-orange-ff7e00 font-robotoBold"><span style={{ margin: '0', fontFamily: 'RobotoBold', color: '#ff8926', fontSize: '3.75rem', letterSpacing: '-0.08rem', marginRight: '1.25rem', marginTop: '0.1rem', display: 'inline-block' }} >12,500,000</span> <span style={{ marginRight: '1.1875rem', color: '#c8c8c8', fontSize: '3.5rem', fontFamily: 'SpoqaHanSansNeoBold' }} className="font-spoqaBold"> P</span></p>
+                                    <p className="w-5/6 m-0 text-6xl text-right text-orange-ff7e00 font-robotoBold"><span style={{ margin: '0', color: '#ff8926', fontSize: '3.75rem', letterSpacing: '-0.08rem', marginRight: '1.25rem', marginTop: '0.1rem', display: 'inline-block' }} >12,500,000</span> <span style={{ marginRight: '1.1875rem', color: '#c8c8c8', fontSize: '3.5rem' }} className=""> P</span></p>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +184,7 @@ const AccountProfileComponent = ({ isAuthenticated, setAuthenticated, subActiveB
                             <div style={{ marginRight: '1.8rem', marginTop: '0.1375rem', marginLeft: '-0.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }} className="w-16 h-16 rounded-full flex items-center justify-center">
                                 <img className="" src={Logout} alt="logout" style={{ width: '5.625rem' }}></img>
                             </div>
-                            <label style={{ marginTop: '0.225rem', fontFamily: 'SpoqaHanSansNeoBold', color: '#ffdfbd', fontSize: '3rem', textShadow: '#000000 0rem 0rem 1rem' }} className="shadow-to-text" onClick={() => {
+                            <label style={{ marginTop: '0.225rem', color: '#ffdfbd', fontSize: '3rem', textShadow: '#000000 0rem 0rem 1rem' }} className="shadow-to-text" onClick={() => {
                                 navigate("/")
                                 setAuthenticated(false)
                             }}>
@@ -209,7 +209,7 @@ const AccountProfileComponent = ({ isAuthenticated, setAuthenticated, subActiveB
                             src={KakaoLogo}
                             alt="kakao-icon"
                         />
-                        <span style={{ marginTop: '', marginLeft: '0.3rem', fontSize: '2.65rem', fontFamily: 'RobotoMedium', color: '#ad9e8c', letterSpacing: '0.05rem' }} className="text-brown-r351a1e font-roboto text-4xl leading-snug tracking-wide">
+                        <span style={{ marginTop: '', marginLeft: '0.3rem', fontSize: '2.65rem', color: '#ad9e8c', letterSpacing: '0.05rem' }} className="text-brown-r351a1e font-roboto text-4xl leading-snug tracking-wide">
                             test1234
                         </span>
                     </div>
@@ -221,7 +221,7 @@ const AccountProfileComponent = ({ isAuthenticated, setAuthenticated, subActiveB
                             src={TelegramLogo}
                             alt="kakao-icon"
                         />
-                        <span style={{ marginTop: '', marginLeft: '1.8375rem', fontSize: '2.65rem', fontFamily: 'RobotoMedium', color: '#ad9e8c', letterSpacing: '0.05rem' }} className="text-blue-r2aa1d5 font-roboto text-4xl leading-snug tracking-wide">
+                        <span style={{ marginTop: '', marginLeft: '1.8375rem', fontSize: '2.65rem', color: '#ad9e8c', letterSpacing: '0.05rem' }} className="text-blue-r2aa1d5 font-roboto text-4xl leading-snug tracking-wide">
                             test1234
                         </span>
                     </div>

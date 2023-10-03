@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import logo from "../../assets/images/header/logo.png";
 import ProfileIcon from "../../assets/images/header/profile.png";
@@ -9,6 +9,7 @@ import MyPage from '../../pages/MyPage';
 function Header() {
   const [isOpen, setOpen] = useState(false)
   const navigate = useNavigate();
+  // console.log('isOpen',isOpen)
   return (
     <>
     <div className="header">

@@ -57,13 +57,13 @@ const InboxTable = ({
                         paddingLeft: '0',
                         paddingBottom: "1.5rem",
                     }}
-                    className="flex items-center font-spoqaMedium tracking-tight text-gray-r454545 h-full" >
+                    className="flex items-center  tracking-tight text-gray-r454545 h-full" >
 
                     <div className='w-full h-full flex flex-wrap' style={{ display: 'flex', flexDirection: 'column', marginTop: '-0.3rem' }}>
                         <div
                             className={`${item.isRead === true
-                                ? "text-gray-r7b7b7b font-spoqaMedium"
-                                : "text-gray-r454545 font-spoqaMedium"
+                                ? "text-gray-r7b7b7b "
+                                : "text-gray-r454545 "
                                 } flex items-center cursor-pointer`}
                             onClick={() => navigate(item.path)}
                             style={{ display: 'flex', alignItems: 'center', height: '5.4rem' }}
@@ -76,7 +76,6 @@ const InboxTable = ({
                                         padding: '0.6rem 1.7rem 0.4rem',
                                         borderRadius: '2rem',
                                         color: '#fff',
-                                        fontFamily: "SpoqaHanSansNeoMedium",
                                         background: '#0469a3',
                                         marginTop: '0.5rem',
                                         marginLeft: '0.1rem',
@@ -96,7 +95,6 @@ const InboxTable = ({
                                             padding: '0.56rem 1.5rem 0.45rem',
                                             borderRadius: '2rem',
                                             color: '#fff',
-                                            fontFamily: "SpoqaHanSansNeoMedium",
                                             background: '#c08029',
                                             marginTop: '0.53rem',
                                             marginLeft: '0.1rem',
@@ -110,7 +108,7 @@ const InboxTable = ({
                                         : <div></div>
                             }
                             <p style={{
-                                textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap', maxWidth: item.type === '이벤트' ? '31rem' : item.type === "공지" ? '39rem' : !item.isRead ? '44rem' : '47rem', fontSize: '3rem', letterSpacing: '-0.07rem', fontFamily: 'SpoqaHanSansNeoMedium',
+                                textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap', maxWidth: item.type === '이벤트' ? '31rem' : item.type === "공지" ? '39rem' : !item.isRead ? '44rem' : '47rem', fontSize: '3rem', letterSpacing: '-0.07rem',
                                 color: item.isRead !== true ? '#eeeeee' : '#a0a0a0', marginTop: '0.5rem',
                             }} className="group-hover:text-gray-r585858 text-5xl text-ellipsis overflow-hidden whitespace-nowrap">{item.text}</p>
                             {item.isRead === false && (
@@ -123,9 +121,9 @@ const InboxTable = ({
                         </div>
 
                         {/* <div
-                            className={`w-full flex justify-start font-spoqaMedium tracking-tight text-r585858 text-center`} style={{ display: 'flex' }}>
+                            className={`w-full flex justify-start  tracking-tight text-r585858 text-center`} style={{ display: 'flex' }}>
                             <div className="w-full flex space-x-2px align-center">
-                                <div style={{ fontSize: '2.625rem' }} className="flex items-center text-gray-r7b7b7b font-spoqa">
+                                <div style={{ fontSize: '2.625rem' }} className="flex items-center text-gray-r7b7b7b">
                                     {item.time}
                                 </div>
 
@@ -133,11 +131,11 @@ const InboxTable = ({
                         </div> */}
 
                         <div
-                            className={`w-full flex justify-start font-spoqaMedium tracking-tight text-r585858 text-center`} style={{ display: 'flex' }}>
+                            className={`w-full flex justify-start  tracking-tight text-r585858 text-center`} style={{ display: 'flex' }}>
                             <div style={{ marginTop: '0.2rem', display: 'flex', alignItems: 'center' }} className="w-full flex align-center">
-                                {/* <p className='flex items-center text-gray-r7b7b7b' style={{ fontSize: '2.625rem', color: '#929292', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.07rem' }}>{item.category}</p> */}
+                                {/* <p className='flex items-center text-gray-r7b7b7b' style={{ fontSize: '2.625rem', color: '#929292', letterSpacing: '-0.07rem' }}>{item.category}</p> */}
                                 {/* <div style={{ height: '1.75rem', width: '0.1875rem', margin: 'auto 1rem auto 0.9rem', background: '#929292' }} className='bg-gray-c5c5c5'></div> */}
-                                <div style={{ fontSize: '2.625rem', color: '#929292', fontFamily: 'SpoqaHanSansNeo', letterSpacing: '-0.07rem' }} className="flex items-center text-gray-r7b7b7b font-spoqa">
+                                <div style={{ fontSize: '2.625rem', color: '#929292', letterSpacing: '-0.07rem' }} className="flex items-center text-gray-r7b7b7b">
                                     {item.time}
                                 </div>
                             </div>

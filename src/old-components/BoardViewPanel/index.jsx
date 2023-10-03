@@ -20,7 +20,7 @@ const BoardViewPanel = ({
         <>
             {attachedArray && attachedArray?.map((card, index) => (
                 <div key={card.id} style={{ margin: '1.875rem 0.9rem', background: '', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.6)', padding: '0.1875rem', borderRadius: '1.3rem', height: '50rem' }}>
-                    <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', fontFamily: 'SpoqaHanSansNeoMedium', background: '#323232' }} className="shadow-subNavbar bg-gray-fafafa">
+                    <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#323232' }} className="shadow-subNavbar bg-gray-fafafa">
                         <TableHeader smallCard isCompose/>
                         <div style={{ padding: '0 1rem' }} className="w-full">
                             <div className="w-full rounded-lg" style={{ padding: '0.2875rem 0.1875rem' }}>

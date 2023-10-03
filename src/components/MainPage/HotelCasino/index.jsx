@@ -42,9 +42,9 @@ const HotelCasinoList = [
     disable: true
   },
 ]
-const HotelCasino = ({ filter = false }) => {
+const HotelCasino = ({ filter = false, selectedTab }) => {
   return (
-    <div className='hotel-casino'>
+    <div className='hotel-casino' style={{ paddingBottom: selectedTab !== 5 && '0rem' }}>
       <SectionHeader
         icon={filter ? HotelCasinoIcon11 : HotelCasinoIcon}
         title={'호텔카지노'} />

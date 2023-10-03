@@ -29,37 +29,37 @@ const ContactView = () => {
                         <div className='sflex w-full justify-center'>
                             <div
                                 style={{
-                                    backgroundColor: "#41b06c", fontSize: '2.4375rem', padding: '0.8rem 1.73rem', height: '4.5rem', marginTop: '0.65rem', letterSpacing: '-0.07rem', width: 'fit-content', color: '#ffffff', fontFamily: 'SpoqaHanSansNeoMedium', borderRadius: '3rem',
+                                    backgroundColor: "#41b06c", fontSize: '2.4375rem', padding: '0.8rem 1.73rem', height: '4.5rem', marginTop: '0.65rem', letterSpacing: '-0.07rem', width: 'fit-content', color: '#ffffff', borderRadius: '3rem',
                                     overflow: 'hidden',
                                     lineHeight: '3.3rem',
                                 }}
-                                className="rounded-full flex items-center justify-center font-spoqaMedium tracking-tight text-white"
+                                className="rounded-full flex items-center justify-center  tracking-tight text-white"
                             >
                                 계좌문의
                             </div>
                         </div>
-                        <div style={{ color: '#c8c8c8', fontFamily: 'SpoqaHanSansNeoMedium', fontSize: '3rem', letterSpacing: '-0.07rem', marginLeft: '0.2rem' }} className="flex justify-center text-5xl w-full font-spoqaMedium tracking-tight text-gray-r454545">
+                        <div style={{ color: '#c8c8c8', fontSize: '3rem', letterSpacing: '-0.07rem', marginLeft: '0.2rem' }} className="flex justify-center text-5xl w-full  tracking-tight text-gray-r454545">
                             은행계좌정보
                         </div>
                     </div>
 
                     <div style={{ minHeight: '7.3125rem', padding: '1.4375rem 1.65rem', borderBottomWidth: '0.1875rem', background: '#2e2e2e', borderBottom: '0.1875rem solid rgb(37, 37, 37)', display: 'flex', alignItems: 'flex-start', position: 'relative' }} className="relative bg-gray-fafafa border-b border-gray-dddddd flex items-center">
                         <img style={{ width: "3.4375rem", height: '4.4375rem', marginTop: '0.6rem' }} src={Rank1} alt="" />
-                        <p className='flex mt-1.5 items-center text-gray-r585858 font-spoqaMedium' style={{ margin: '0', fontSize: '2.4375rem', marginLeft: '0.875rem', letterSpacing: '-0.07rem', color: '#929292', fontFamily: 'SpoqaHanSansNeoMedium', maxWidth: '52rem', marginTop: '1.1rem' }}>마이마이프로틴화이팅
+                        <p className='flex mt-1.5 items-center text-gray-r585858 ' style={{ margin: '0', fontSize: '2.4375rem', marginLeft: '0.875rem', letterSpacing: '-0.07rem', color: '#929292', maxWidth: '52rem', marginTop: '1.1rem' }}>마이마이프로틴화이팅
                             <div className='flex mt-2' style={{ display: 'inline-block' }}>
                                 <div style={{ height: '1.75rem', width: '0.1875rem', margin: '0.5rem 1rem 0px 1.1rem', background: '#555555', display: 'inline-block' }} className='bg-gray-dddddd'></div>
-                                <p style={{ fontSize: '2.25rem', color: '#7b7b7b', fontFamily: 'SpoqaHanSansNeo', marginTop: '2.8rem', letterSpacing: '-0.05rem', margin: '0', display: 'inline-block' }} className="-mt-1 text-gray-r7b7b7b tracking-tight font-spoqa">2021.06.28 15:36</p>
+                                <p style={{ fontSize: '2.25rem', color: '#7b7b7b', marginTop: '2.8rem', letterSpacing: '-0.05rem', margin: '0', display: 'inline-block' }} className="-mt-1 text-gray-r7b7b7b tracking-tight">2021.06.28 15:36</p>
                             </div>
                         </p>
 
                         <div
                             style={{
                                 position: 'absolute', right: '0', backgroundColor: "#7e7564", marginRight: '1.6rem', paddingBottom: '0', width: 'fit-content',
-                                fontSize: '2.4375rem', padding: '0.6rem 1.9rem', height: '4.125rem', marginTop: '0.35rem', letterSpacing: '-0.07rem', color: '#f1e7d5', fontFamily: 'SpoqaHanSansNeoMedium', borderRadius: '2rem', maxWidth: '17rem',
+                                fontSize: '2.4375rem', padding: '0.6rem 1.9rem', height: '4.125rem', marginTop: '0.35rem', letterSpacing: '-0.07rem', color: '#f1e7d5', borderRadius: '2rem', maxWidth: '17rem',
                                 overflow: 'hidden',
                                 lineHeight: '3.3rem'
                             }}
-                            className="absolute right-0 rounded-full flex items-center justify-center font-spoqaMedium tracking-tight text-white"
+                            className="absolute right-0 rounded-full flex items-center justify-center  tracking-tight text-white"
                         >
                             {truncate('답변대기', 6, 6)}
                         </div>
@@ -73,15 +73,13 @@ const ContactView = () => {
                         // marginTop: '-2.85rem',
                         // marginBottom: '1rem',
                         background: 'rgb(39, 39, 38)',
-                        // fontFamily: 'spoqaHenSansNeo'
-                    }} className="border border-gray-dddddd flex items-center font-spoqa tracking-tight text-gray-r585858">
+                    }} className="border border-gray-dddddd flex items-center tracking-tight text-gray-r585858">
                         <p style={{
                             fontSize: '2.8125rem',
                             // paddingLeft: '3.6875rem',
                             paddingTop: '1.9rem',
                             color: '#c8c8c8',
                             letterSpacing: '-0.07rem',
-                            fontFamily: 'SpoqaHanSansNeo',
                         }}>입금 계좌 요청합니다. [시스템 자동메시지]</p>
                     </div>
 
@@ -182,7 +180,7 @@ const ContactView = () => {
                         }}
                         className="flex items-center justify-center h-full w-full bg-black rounded-2xl border border-gray-r737579 cursor-pointer"
                     >
-                        <span className="font-spoqaMedium tracking-tight text-white">이전</span>
+                        <span className=" tracking-tight text-white">이전</span>
                     </div>
                 </button>
 
@@ -197,7 +195,7 @@ const ContactView = () => {
                         }}
                         className="flex items-center justify-center h-full w-full bg-black rounded-2xl border border-gray-r737579 cursor-pointer"
                     >
-                        <span className="font-spoqaMedium tracking-tight text-white">목록보기</span>
+                        <span className=" tracking-tight text-white">목록보기</span>
                     </div>
                 </button>
 
@@ -211,27 +209,27 @@ const ContactView = () => {
                         }}
                         className="flex items-center justify-center h-full w-full bg-black rounded-2xl border border-gray-r737579 cursor-pointer"
                     >
-                        <span className="font-spoqaMedium tracking-tight text-white">다음</span>
+                        <span className=" tracking-tight text-white">다음</span>
                     </div>
                 </button>
             </div> */}
             <div style={{ margin: '3.8rem 1.86rem', paddingBottom: '19.225rem' }} className="w-full flex items-start justify-between">
                 <button style={{ height: '7.3125rem', padding: '0.1875rem', fontSize: '2.8125rem', marginRight: '0.75rem', width: '24.125rem', background: 'linear-gradient(to top, #4d3c0a, #9c7b4a 50%, #e7b786)', borderRadius: '1rem' }} className="hover shadow-to-box">
-                    <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #80603f, #936e48 50%, #a57b52)', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily: 'SpoqaHanSansNeoMedium' }}>
+                    <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #80603f, #936e48 50%, #a57b52)', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div
                             style={{
                                 // background: 'linear gradient(to top, #80603f, #936e48 50%, #a57b52)'
                             }}
                             className="flex items-center justify-center h-full w-full bg-black rounded-2xl border border-gray-r737579 cursor-pointer"
                         >
-                            <span className="font-spoqaMedium tracking-tight text-white shadow-to-text" style={{
+                            <span className=" tracking-tight text-white shadow-to-text" style={{
                                 color: '#ffdfbd', marginLeft: '0.3rem', display: 'flex', marginTop: '0.2rem'
                             }}>이전</span>
                         </div>
                     </div>
                 </button>
                 <button style={{ height: '7.3125rem', padding: '0.1875rem', fontSize: '2.8125rem', marginRight: '0.75rem', width: '24.125rem', background: 'linear-gradient(to top, #4d3c0a, #9c7b4a 50%, #e7b786)', borderRadius: '1rem' }} className="hover shadow-to-box">
-                    <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #80603f, #936e48 50%, #a57b52)', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily: 'SpoqaHanSansNeoMedium' }}>
+                    <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #80603f, #936e48 50%, #a57b52)', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div
                             style={{
                                 // background: 'linear gradient(to top, #80603f, #936e48 50%, #a57b52)'
@@ -239,7 +237,7 @@ const ContactView = () => {
                             className="flex items-center justify-center h-full w-full bg-black rounded-2xl border border-gray-r737579 cursor-pointer"
                             onClick={() => navigate('/cscenter/all/contact/all')}
                         >
-                            <span className="font-spoqaMedium tracking-tight text-white shadow-to-text" style={{
+                            <span className=" tracking-tight text-white shadow-to-text" style={{
                                 color: '#ffdfbd', marginLeft: '0.3rem', display: 'flex', marginTop: '0.2rem'
                             }}>목록보기</span>
                         </div>
@@ -247,7 +245,7 @@ const ContactView = () => {
                 </button>
 
                 <button style={{ height: '7.3125rem', padding: '0.1875rem', fontSize: '2.8125rem', width: '24.125rem', background: 'linear-gradient(to top, #4d3c0a, #9c7b4a 50%, #e7b786)', borderRadius: '1rem' }} className="hover shadow-to-box">
-                    <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #80603f, #936e48 50%, #a57b52)', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily: 'SpoqaHanSansNeoMedium' }}>
+                    <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #80603f, #936e48 50%, #a57b52)', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div
                             style={{
                                 // background: 'linear gradient(to top, #80603f, #936e48 50%, #a57b52)'
@@ -255,7 +253,7 @@ const ContactView = () => {
 
                             className="flex items-center justify-center h-full w-full bg-black rounded-2xl border border-gray-r737579 cursor-pointer"
                         >
-                            <span className="font-spoqaMedium tracking-tight text-white shadow-to-text" style={{
+                            <span className=" tracking-tight text-white shadow-to-text" style={{
                                 color: '#ffdfbd', marginLeft: '0.3rem', display: 'flex', marginTop: '0.2rem'
                             }}>다음</span>
                         </div>

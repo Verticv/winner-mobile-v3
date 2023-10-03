@@ -23,21 +23,21 @@ const SignedUpPopup = ({ setCompletePopup, setSignup,isMobile }) => {
                 <div style={{ marginTop: "", display: 'flex', alignItems: 'center', flexDirection: 'column', width: '100%' }} className="w-full h-full flex flex-col items-center">
                     {/* BREAK */}
                     <div className="flex flex-col items-center justify-center -space-y-3" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', marginTop: '8.8rem', marginLeft: '-0.3rem' }}>
-                        <label style={{ fontSize: '3rem', marginTop: "3rem", color: '#ad9e8c', fontFamily: 'SpoqaHanSansNeoBold', letterSpacing: '-0.02rem' }} className="text-gray-r393e41 font-spoqaBold">가입 신청이 완료 되었습니다.</label>
-                        <div style={{ fontSize: '3rem', display: 'flex', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', }} className="flex text-gray-r393e41 font-spoqaMedium space-x-2">
+                        <label style={{ fontSize: '3rem', marginTop: "3rem", color: '#ad9e8c', letterSpacing: '-0.02rem' }} className="text-gray-r393e41">가입 신청이 완료 되었습니다.</label>
+                        <div style={{ fontSize: '3rem', display: 'flex', color: '#c8c8c8', }} className="flex text-gray-r393e41 space-x-2">
                             <label>관리자</label>
-                            <label style={{ color: '#1ca7ec', fontFamily: 'SpoqaHanSansNeoBold' }} className="font-spoqaBold">&nbsp;승인 대기중</label>
+                            <label style={{ color: '#1ca7ec' }} className="">&nbsp;승인 대기중</label>
                             <label>입니다.</label>
                         </div>
                     </div>
                     {/* BREAK */}
-                    <div style={{ fontSize: '2.625rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '5rem', color: '#c8c8c8', fontFamily: 'SpoqaHanSansNeoMedium', letterSpacing: '-0.015rem' }}>
+                    <div style={{ fontSize: '2.625rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '5rem', color: '#c8c8c8', letterSpacing: '-0.015rem' }}>
                         <span style={{ fontSize: '2.625rem' }}>관리자 승인 후 로그인 하시면</span>
                         <span style={{ fontSize: '2.625rem', marginTop: '-0.15rem' }} className='-mt-3'>정상적으로 서비스 이용이 가능합니다.</span>
                         <span style={{ fontSize: '2.625rem', marginTop: '3rem' }} className="mt-10 text-center">당사 사이트는 깨끗하고 안전한 운영을 자랑합니다. </span>
                     </div>
                     {/* BREAK */}
-                    <div style={{ paddingLeft: "3rem", paddingRight: "3rem", display: 'flex', position: 'relative', width: '100%', color: '#c8c8c8', fontSize: '1.875rem', fontFamily: 'SpoqaHanSansNeoMedium', textAlign: 'center', marginTop: '5.6rem' }}>
+                    <div style={{ paddingLeft: "3rem", paddingRight: "3rem", display: 'flex', position: 'relative', width: '100%', color: '#c8c8c8', fontSize: '1.875rem', textAlign: 'center', marginTop: '5.6rem' }}>
                         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '22.3125rem', height: isMobile ? '31rem' : '22.4375rem', background: '#272726', borderRadius: '0.5rem', marginRight: '0.5rem' }}>
                             <img className="h-26px object-contain" src={img1} alt="" style={{ marginTop: '2.4rem', marginLeft: '-0.6rem', marginBottom: '3rem', width: '6.125rem' }} />
                             <div className="w-full text-center mt-20px" style={{ letterSpacing: '-0.027em', marginTop: '-0.1rem' }}>
@@ -79,7 +79,7 @@ const SignedUpPopup = ({ setCompletePopup, setSignup,isMobile }) => {
                                     setSignup(false)
                                 }}
                             >
-                                <div style={{ color: "#ffdfbd", fontSize: '3rem', fontFamily: 'SpoqaHanSansNeoMedium' }} className="shadow-to-text">
+                                <div style={{ color: "#ffdfbd", fontSize: '3rem' }} className="shadow-to-text">
                                     <p className='mt-1' style={{ margin: '0.2rem 0 0 0', letterSpacing: '-0.07rem' }}>로그인</p>
                                 </div>
                             </button>
@@ -103,7 +103,7 @@ const SignedUpPopup = ({ setCompletePopup, setSignup,isMobile }) => {
                                     src={KakaoLogo}
                                     alt="kakao-icon"
                                 />
-                                <span style={{ marginTop: '', marginLeft: '0.3rem', fontSize: '2.875rem', fontFamily: 'RobotoMedium', color: '#ad9e8c', letterSpacing: '0.05rem' }} className="text-brown-r351a1e font-roboto text-4xl leading-snug tracking-wide">
+                                <span style={{ marginTop: '', marginLeft: '0.3rem', fontSize: '2.875rem', color: '#ad9e8c', letterSpacing: '0.05rem' }} className="text-brown-r351a1e font-roboto text-4xl leading-snug tracking-wide">
                                     test1234
                                 </span>
                             </div>
@@ -115,7 +115,7 @@ const SignedUpPopup = ({ setCompletePopup, setSignup,isMobile }) => {
                                     src={TelegramLogo}
                                     alt="kakao-icon"
                                 />
-                                <span style={{ marginTop: '', marginLeft: '1.8375rem', fontSize: '2.875rem', fontFamily: 'RobotoMedium', color: '#ad9e8c', letterSpacing: '0.05rem' }} className="text-blue-r2aa1d5 font-roboto text-4xl leading-snug tracking-wide">
+                                <span style={{ marginTop: '', marginLeft: '1.8375rem', fontSize: '2.875rem', color: '#ad9e8c', letterSpacing: '0.05rem' }} className="text-blue-r2aa1d5 font-roboto text-4xl leading-snug tracking-wide">
                                     test1234
                                 </span>
                             </div>

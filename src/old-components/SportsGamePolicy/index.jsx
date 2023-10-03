@@ -392,8 +392,8 @@ const HistoryMenu = ({
                     className={`${isActive
                         ? "bg-blue-r0056a6"
                         : "bg-white border border-gray-b7b7b7"
-                        } w-1/2 rounded-full font-spoqaMedium`}
-                    style={{ background: isActive ? '#826140' : '#1e1e1e', fontFamily: 'SpoqaHanSansNeoMedium', color: isActive ? '#ffdfbd' : '#c8c8c8', width: '49.2%', borderRadius: '4rem', marginTop: '1rem', height: '6.375rem', fontSize: '2.8125rem', marginRight: `${!index ? '1.15rem' : ''}`, border: `${pathname !== item.path && !isActive ? '0.1875rem solid #555555' : ''}`, letterSpacing: '-0.07rem' }}
+                        } w-1/2 rounded-full`}
+                    style={{ background: isActive ? '#826140' : '#1e1e1e', color: isActive ? '#ffdfbd' : '#c8c8c8', width: '49.2%', borderRadius: '4rem', marginTop: '1rem', height: '6.375rem', fontSize: '2.8125rem', marginRight: `${!index ? '1.15rem' : ''}`, border: `${pathname !== item.path && !isActive ? '0.1875rem solid #555555' : ''}`, letterSpacing: '-0.07rem' }}
                     key={item.id}
 
                     onPointerDown={() => setHover(item.id)}
@@ -481,14 +481,14 @@ const SportsGamePolicy = ({ setSelectedTab, subActiveButton, setSubActiveButton 
             </div>
 
 
-            <div style={{ margin: "0 5.8125rem", marginTop: '1.5rem', marginBottom: '3.2rem' }} className="flex flex-wrap items-center justify-center tracking-tight font-spoqa text-gray-r454545">
+            <div style={{ margin: "0 5.8125rem", marginTop: '1.5rem', marginBottom: '3.2rem' }} className="flex flex-wrap items-center justify-center tracking-tight text-gray-r454545">
                 <Routes>
 
                     <Route path="/soccer"
                         element={
                             <>
-                                <p style={{ fontSize: '2.625rem', textAlign: 'center', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 프로축구는 해당 리그의 공식협회가 인정하는</p>
-                                <p style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
+                                <p style={{ fontSize: '2.625rem', textAlign: 'center', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 프로축구는 해당 리그의 공식협회가 인정하는</p>
+                                <p style={{ fontSize: '2.625rem', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
                             </>
 
                         }
@@ -497,8 +497,8 @@ const SportsGamePolicy = ({ setSelectedTab, subActiveButton, setSubActiveButton 
                     <Route path="/baseball"
                         element={
                             <>
-                                <p style={{ fontSize: '2.625rem', textAlign: 'center', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 프로야구 경기는 해당 리그의 공식협회가 인정하는</p>
-                                <p style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
+                                <p style={{ fontSize: '2.625rem', textAlign: 'center', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 프로야구 경기는 해당 리그의 공식협회가 인정하는</p>
+                                <p style={{ fontSize: '2.625rem', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
                             </>
                         }
                     >
@@ -506,8 +506,8 @@ const SportsGamePolicy = ({ setSelectedTab, subActiveButton, setSubActiveButton 
                     <Route path="/basketball"
                         element={
                             <>
-                                <p style={{ fontSize: '2.625rem', textAlign: 'center', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 프로농구 경기는 해당 공식협회가 인정하는</p>
-                                <p style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
+                                <p style={{ fontSize: '2.625rem', textAlign: 'center', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 프로농구 경기는 해당 공식협회가 인정하는</p>
+                                <p style={{ fontSize: '2.625rem', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
                             </>
                         }
                     >
@@ -515,8 +515,8 @@ const SportsGamePolicy = ({ setSelectedTab, subActiveButton, setSubActiveButton 
                     <Route path="/volleyball"
                         element={
                             <>
-                                <p style={{ fontSize: '2.625rem', textAlign: 'center', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 프로배구 경기는 해당 공식협회가 인정하는</p>
-                                <p style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
+                                <p style={{ fontSize: '2.625rem', textAlign: 'center', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 프로배구 경기는 해당 공식협회가 인정하는</p>
+                                <p style={{ fontSize: '2.625rem', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
                             </>
                         }
                     >
@@ -524,8 +524,8 @@ const SportsGamePolicy = ({ setSelectedTab, subActiveButton, setSubActiveButton 
                     <Route path="/tennis"
                         element={
                             <>
-                                <p style={{ fontSize: '2.625rem', textAlign: 'center', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 테니스 경기는 해당 리그의 공식협회가 인정하는</p>
-                                <p style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
+                                <p style={{ fontSize: '2.625rem', textAlign: 'center', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 테니스 경기는 해당 리그의 공식협회가 인정하는</p>
+                                <p style={{ fontSize: '2.625rem', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
                             </>
                         }
                     >
@@ -533,8 +533,8 @@ const SportsGamePolicy = ({ setSelectedTab, subActiveButton, setSubActiveButton 
                     <Route path="/hockey"
                         element={
                             <>
-                                <p style={{ fontSize: '2.625rem', textAlign: 'center', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 아이스하키 경기는 해당 공식협회가 인정하는</p>
-                                <p style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
+                                <p style={{ fontSize: '2.625rem', textAlign: 'center', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 아이스하키 경기는 해당 공식협회가 인정하는</p>
+                                <p style={{ fontSize: '2.625rem', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
                             </>
                         }
                     >
@@ -542,8 +542,8 @@ const SportsGamePolicy = ({ setSelectedTab, subActiveButton, setSubActiveButton 
                     <Route path="/handball"
                         element={
                             <>
-                                <p style={{ fontSize: '2.625rem', textAlign: 'center', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 핸드볼 경기는 해당 공식협회가 인정하는</p>
-                                <p style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
+                                <p style={{ fontSize: '2.625rem', textAlign: 'center', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 핸드볼 경기는 해당 공식협회가 인정하는</p>
+                                <p style={{ fontSize: '2.625rem', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
                             </>
                         }
                     >
@@ -551,8 +551,8 @@ const SportsGamePolicy = ({ setSelectedTab, subActiveButton, setSubActiveButton 
                     <Route path="/football"
                         element={
                             <>
-                                <p style={{ fontSize: '2.625rem', textAlign: 'center', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 미식축구 경기는 해당 공식협회가 인정하는</p>
-                                <p style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
+                                <p style={{ fontSize: '2.625rem', textAlign: 'center', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 미식축구 경기는 해당 공식협회가 인정하는</p>
+                                <p style={{ fontSize: '2.625rem', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
                             </>
                         }
                     >
@@ -560,8 +560,8 @@ const SportsGamePolicy = ({ setSelectedTab, subActiveButton, setSubActiveButton 
                     <Route path="/e-sports"
                         element={
                             <>
-                                <p style={{ fontSize: '2.625rem', textAlign: 'center', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 e-스포츠 경기는 해당 리그의 공식협회가 인정하는</p>
-                                <p style={{ fontSize: '2.625rem', fontFamily: 'SpoqaHanSansNeoMedium', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
+                                <p style={{ fontSize: '2.625rem', textAlign: 'center', color: '#c8c8c8', margin: '0', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">모든 e-스포츠 경기는 해당 리그의 공식협회가 인정하는</p>
+                                <p style={{ fontSize: '2.625rem', color: '#c8c8c8', textAlign: 'center', margin: '0 0 0 0.35rem', letterSpacing: '-0.07rem' }} className="text-gray-r7b7b7b text-center w-full">경기 결과대로 반영됩니다.</p>
                             </>
                         }
                     >

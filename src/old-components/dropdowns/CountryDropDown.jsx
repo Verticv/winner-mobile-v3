@@ -30,7 +30,7 @@ const CountryDropDown = ({setCountry, country, isProfilePage}) => {
                 </div>
                 <div className="w-full flex justify-center mr-3">                
                     <label 
-                    className={`${(selectedTab === item.id) ? "text-white" : "text-gray-subNavbar"} font-spoqaBold text-3xl cursor-pointer`}>{item.text}</label>
+                    className={`${(selectedTab === item.id) ? "text-white" : "text-gray-subNavbar"} text-3xl cursor-pointer`}>{item.text}</label>
                 </div>
             </button>
         ));

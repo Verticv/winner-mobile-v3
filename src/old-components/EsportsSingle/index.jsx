@@ -8,8 +8,8 @@ import Image7 from '../../assets/sports/7.png'
 const EsportsSingle = () => {
 
     const Item = ({ number = "1.", title = "보유머니", text = "본인의 보유머니가 표시됩니다.", text2 = null, text3 = null, color1 = null, color2 = null, color3 = null, withoutP }) => (
-        <div style={{ fontFamily: 'SpoqaHanSansNeoMedium', lineHeight: '1.4', letterSpacing: '-0.04rem' }}>
-            <div style={{ fontFamily: 'SpoqaHanSansNeoBold', fontSize: '2.825rem' }}>
+        <div style={{ lineHeight: '1.4', letterSpacing: '-0.04rem' }}>
+            <div style={{ fontSize: '2.825rem' }}>
                 <span style={{ color: '#a67c52', marginRight: '0.4rem' }}>{number}</span>
                 <span style={{ color: '#ccc2b6' }}>{title}</span>
             </div>
@@ -30,8 +30,8 @@ const EsportsSingle = () => {
                 <img src={Image3} alt="" style={{ width: '70rem' }} />
                 <div style={{ backgroundColor: "#2b2b2a", padding: "2.15rem 1.8rem", marginTop: '2.3rem', borderRadius: '0.5rem' }}>
 
-                    <div style={{ fontFamily: 'SpoqaHanSansNeoMedium', lineHeight: '1.4', letterSpacing: '-0.04rem' }}>
-                        <div style={{ fontFamily: 'SpoqaHanSansNeoBold', fontSize: '2.825rem' }}>
+                    <div style={{ lineHeight: '1.4', letterSpacing: '-0.04rem' }}>
+                        <div style={{ fontSize: '2.825rem' }}>
                             <span style={{ color: '#a67c52', marginRight: '0.4rem' }}>1.</span>
                             <span style={{ color: '#ccc2b6' }}>종목 및 경기선택</span>
                         </div>
@@ -54,9 +54,9 @@ const EsportsSingle = () => {
 
             <div style={{}}>
                 <img src={Image5} alt="" style={{ width: '70rem' }} />
-                <div style={{ backgroundColor: "#2b2b2a", padding: "2.15rem 1.8rem", marginTop: '1.7rem', borderRadius: '0.5rem', letterSpacing: '-0.05rem', fontFamily: 'SpoqaHanSansNeoMedium' }}>
+                <div style={{ backgroundColor: "#2b2b2a", padding: "2.15rem 1.8rem", marginTop: '1.7rem', borderRadius: '0.5rem', letterSpacing: '-0.05rem' }}>
                     <Item number="3." title="베팅금액 입력" text="가. ① 베팅금액을 입력합니다." text2="나. ② [확인] 버튼을 누르면 베팅이 완료됩니다." withoutP />
-                    <div style={{ width: "15.8rem", flexShrink: 0, paddingTop: '0.2rem', paddingBottom: '0.2rem', display: 'flex', justifyContent: 'center', marginTop: "3.2rem", backgroundColor: "#f45400", fontSize: '2.825rem', color: '#ffffff', fontFamily: 'SpoqaHanSansNeoBold', marginLeft: '0.1rem', letterSpacing: '-0.03rem' }}>
+                    <div style={{ width: "15.8rem", flexShrink: 0, paddingTop: '0.2rem', paddingBottom: '0.2rem', display: 'flex', justifyContent: 'center', marginTop: "3.2rem", backgroundColor: "#f45400", fontSize: '2.825rem', color: '#ffffff', marginLeft: '0.1rem', letterSpacing: '-0.03rem' }}>
                         알아두세요!
                     </div>
                     <div style={{ marginTop: '0.5rem' }}>

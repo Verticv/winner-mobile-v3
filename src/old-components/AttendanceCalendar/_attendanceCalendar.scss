@@ -33,26 +33,22 @@
         .content_3 {
             display: flex;
             align-items: center;
-            font-family: 'RobotoMedium';
         }
 
         .content_4 {
             display: flex;
             align-items: center;
-            font-family: 'SpoqaHanSansNeoMedium';
         }
 
         .content_5 {
             display: flex;
             align-items: center;
-            font-family: 'RobotoMedium';
             margin-left: -0.25rem;
         }
 
         .content_6 {
             display: flex;
             align-items: center;
-            font-family: 'SpoqaHanSansNeoMedium';
         }
     }
 
@@ -104,7 +100,6 @@
 .renderDays_Container {
     color: rgba(69, 69, 69, 1);
     color: #c8c8c8;
-    font-family: 'SpoqaHanSansNeoBold';
     // border-color: rgba(221, 221, 221, 1);
     // border-left-width: 1px;
     border-top-left-radius: 0.5rem;
@@ -170,7 +165,6 @@
     }
 
     .Day_Content {
-        font-family: 'RobotoMedium';
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
@@ -192,7 +186,6 @@
 .calender_content1 {
     color: #c8c8c8;
     letter-spacing: -0.04rem;
-    font-family: 'SpoqaHanSansNeoMedium';
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -200,7 +193,6 @@
 
     .calender_content2 {
         color: #4c98ff;
-        font-family: 'SpoqaHanSansNeoBold';
         margin-left: 0.75rem;
         margin-right: 0.75rem;
     }
@@ -244,7 +236,6 @@
     .span_style {
         color: #d6f3ff;
         letter-spacing: -0.025rem;
-        font-family: 'SpoqaHanSansNeoMedium';
         margin-top: 0.2rem;
         letter-spacing: -0.07rem;
     }

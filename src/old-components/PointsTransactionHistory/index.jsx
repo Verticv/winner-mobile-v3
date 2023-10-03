@@ -186,11 +186,11 @@ const PointsTransactionHistory = ({ SubMenuList, subActiveButton, setSubActiveBu
             <div style={{
                 fontSize: '2.624375rem', display: 'flex', alignItems: 'center', justifyContent: 'center',
                 marginTop: '2.5rem', letterSpacing: '-0.07rem', marginBottom: '1.4rem',
-            }} className="font-spoqaMedium tracking-tight my-4 text-gray-r8c8c8c">
-                <span className="font-spoqaBold text-blue-r0056a6" style={{
-                    color: '#aa9264', fontFamily: 'SpoqaHanSansNeoBold', textOverflow: 'ellipsis', maxWidth: '34.4rem', overflow: 'hidden', whiteSpace: 'nowrap'
+            }} className=" tracking-tight my-4 text-gray-r8c8c8c">
+                <span className=" text-blue-r0056a6" style={{
+                    color: '#aa9264', textOverflow: 'ellipsis', maxWidth: '34.4rem', overflow: 'hidden', whiteSpace: 'nowrap'
                 }}>{truncate('louie3', 22, 22)}</span>
-                <span className="" style={{ color: '#c8c8c8', fontFamily: 'SpoqaHanSansNeoMedium' }}>님의 포인트전환 정보입니다.</span>
+                <span className="" style={{ color: '#c8c8c8' }}>님의 포인트전환 정보입니다.</span>
             </div>
 
             {SubMenuList}

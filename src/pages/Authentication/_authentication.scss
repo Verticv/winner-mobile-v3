@@ -51,14 +51,16 @@
         text-align: center;
         background: bottom;
         border: 0;
-        color: #7a7a7a;
+        color: #444;
         font-size: 2.813rem;
         height: 100%;
         outline: none;
         padding: 0.313rem 0 0 0;
-        font-family: 'SpoqaHanSansNeoMedium';
         line-height: 1;
       }
+      ::placeholder {
+        color: #c8c8c8;
+     } 
       &.username {
         input {
           margin-left: 0.25rem;
@@ -96,9 +98,9 @@
         p {
           color: #fff;
           font-size: 3.188rem;
-          font-family: 'SpoqaHanSansNeoMedium';
           letter-spacing: -0.025em;
-          margin: 0.063rem 0 0;
+          // margin: 0.063rem 0 0;
+          font-weight: bold;
         }
         &.register {
           background-image: linear-gradient(to right, rgb(157, 59, 187) 0%, rgb(84, 35, 160) 100%);

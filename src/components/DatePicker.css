@@ -234,7 +234,6 @@
   color: #ccc2b6;
   font-weight: bold;
   font-size: 13px;
-  font-family: 'Spoqa Han Sans Neo';
 }
 
 .react-datepicker-time__header {
@@ -691,19 +690,19 @@
 }
 
 .react-datepicker__input-container input {
-  height: 7rem;
+  height: 6.751rem;
   font-size: 2.625rem;
   width: 34.06rem;
 }
 
 .react-datepicker__input-container .left-input {
   margin-left: 1.875rem;
-  margin-top: 1.875rem;
+  /* margin-top: 2.063rem; */
 }
 
 .react-datepicker__input-container .right-input {
   margin-right: 1.875rem;
-  margin-top: 1.875rem;
+  /* margin-top: 1.875rem; */
 }
 
 .react-datepicker__year-read-view,
@@ -903,10 +902,8 @@
   width: 10rem;
   line-height: 7rem;
   font-size: 3.5em;
-  font-family: RobotoMedium;
 }
 .react-datepicker__day-name {
-  font-family: 'SpoqaHanSansNeo';
 }
 .react-datepicker__current-month,
 .react-datepicker-time__header,
