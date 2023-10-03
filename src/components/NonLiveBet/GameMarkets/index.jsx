@@ -1,10 +1,15 @@
 import './_style.scss'
 import BackIcon from '../../../assets/images/nonLiveBet/gameMarkets/back-arrow.png'
 import col1 from '../../../assets/images/nonLiveBet/col-1.png'
-import StarIcon from '../../../assets/images/nonLiveBet/satr.png'
+import MenuStarIcon from '../../../assets/images/nonLiveBet/gameMarkets/menu-star.png'
+import StarIcon from '../../../assets/images/nonLiveBet/gameMarkets/star.png'
 import FlagIcon from '../../../assets/images/nonLiveBet/flag.png'
 import ArrowUp from '../../../assets/images/nonLiveBet/arrow-up.png'
 import Banner from '../../../assets/images/nonLiveBet/gameMarkets/banner.png'
+import ScoreBanner from '../../../assets/images/nonLiveBet/gameMarkets/score-banner.png'
+import TeamLogo1 from '../../../assets/images/nonLiveBet/gameMarkets/team-logo1.png'
+import TeamLogo2 from '../../../assets/images/nonLiveBet/gameMarkets/team-logo2.png'
+import vsIcon from '../../../assets/images/nonLiveBet/gameMarkets/vs-icon.png'
 const GameMarkets = ({ close }) => {
   return (
     <div className='game-markets-container'>
@@ -19,14 +24,31 @@ const GameMarkets = ({ close }) => {
           <img src={StarIcon} alt='' className='star-btn' />
         </div>
       </div>
+      <div className='score-banner'>
+        <img src={ScoreBanner} alt='' />
+        <div className='score-banner__content'>
+          <div> 
+            <img src={TeamLogo1} alt='' className='' />
+            <p className='score-banner__team-name'>아스널</p>
+          </div>
+          <div className='vs-box'>
+            <img src={vsIcon} alt='' className='' />
+            <p>03-22 13:00</p>
+          </div>
+          <div>
+            <img src={TeamLogo2} alt='' className='' />
+            <p className='score-banner__team-name'>리버풀</p>
+          </div>
+        </div>
+      </div>
       <div className='game-markets__info flex content-between items-center'>
-        <div className='flex items-center'>
+        <div className='flex items-center' style={{ marginTop: '-0.125rem'}}>
           <p className='game-markets__time'>03-22 13:00</p>
           <p>아스널</p>
           <p className='game-markets__vs'>VS</p>
           <p>리버풀</p>
         </div>
-        <div >
+        <div>
           <img src={StarIcon} alt='' className='star-btn' />
         </div>
       </div>
@@ -37,7 +59,7 @@ const GameMarkets = ({ close }) => {
         <div className='game-markets__card'>
           <div className='game-markets__slider flex'>
             <button>
-              <img src={StarIcon} alt='' className='star-btn' />
+              <img src={MenuStarIcon} alt='' className='star-btn' />
             </button>
             <button className='active'>
               <p>전체</p>
@@ -54,15 +76,50 @@ const GameMarkets = ({ close }) => {
             <button >
               <p>조합</p>
             </button>
+            <button>
+              <p>핸디캡</p>
+            </button>
+            <button >
+              <p>조합</p>
+            </button>
           </div>
           <div className='game-markets__box'>
             <div className='game-markets__box-header flex content-between items-center'>
-              <div className='flex content-between items-center w-full' style={{ paddingRight: '1.875rem' }}
+              <div className='flex content-between items-center w-full' style={{ paddingRight: '1.75rem' }}
               >
                 <p>승무패 [정규시간]</p>
-                <img src={StarIcon} alt='' className='star-btn' />
+                <img src={MenuStarIcon} alt='' className='star-btn' />
               </div>
-              <div className='flex content-center items-center' style={{ width: '7.313rem', borderLeft: '0.188rem solid #764cbb', height: '100%' }}>
+              <div className='flex content-center items-center game-markets__arrow'>
+                <img src={ArrowUp} alt='' className='arrow' />
+              </div>
+            </div>
+            <div className='game-markets__box-body flex content-between items-center'>
+              <div className='game-markets__cell'>
+                <div className='flex content-between items-center'>
+                  <div>1</div>
+                  <div className='score'>1.98</div>
+                </div>
+                <div className='flex content-between items-center'>
+                  <div>X</div>
+                  <div className='score'>4.20</div>
+                </div>
+                <div className='flex content-between items-center'>
+                  <div>2</div>
+                  <div className='score'>3.31</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='game-markets__box'>
+            <div className='game-markets__box-header flex content-between items-center'>
+              <div className='flex content-between items-center w-full' style={{ paddingRight: '1.75rem' }}
+              >
+                <p>승무패 [정규시간]</p>
+                <img src={MenuStarIcon} alt='' className='star-btn' />
+              </div>
+              <div className='flex content-center items-center game-markets__arrow'>
                 <img src={ArrowUp} alt='' className='arrow' />
               </div>
             </div>
@@ -84,44 +141,15 @@ const GameMarkets = ({ close }) => {
             </div>
           </div>
 
-          <div className='game-markets__box'>
-            <div className='game-markets__box-header flex content-between items-center'>
-              <div className='flex content-between items-center w-full' style={{ paddingRight: '1.875rem' }}
-              >
-                <p>승무패 [정규시간]</p>
-                <img src={StarIcon} alt='' className='star-btn' />
-              </div>
-              <div className='flex content-center items-center' style={{ width: '7.313rem', borderLeft: '0.188rem solid #764cbb', height: '100%' }}>
-                <img src={ArrowUp} alt='' className='arrow' />
-              </div>
-            </div>
-            <div className='game-markets__box-body flex content-between items-center'>
-              <div className='game-markets__cell'>
-                <div className='flex content-between items-center'>
-                  <div>1X</div>
-                  <div className='score'>1.32</div>
-                </div>
-                <div className='flex content-between items-center'>
-                  <div>12</div>
-                  <div className='score'>1.32</div>
-                </div>
-                <div className='flex content-between items-center'>
-                  <div>X2</div>
-                  <div className='score'>1.77</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
 
           <div className='game-markets__box'>
             <div className='game-markets__box-header flex content-between items-center'>
-              <div className='flex content-between items-center w-full' style={{paddingRight:'1.875rem'}}
+              <div className='flex content-between items-center w-full' style={{paddingRight:'1.75rem'}}
                >
                 <p>승무패 [정규시간]</p>
-                <img src={StarIcon} alt='' className='star-btn'/>
+                <img src={MenuStarIcon} alt='' className='star-btn'/>
               </div>
-              <div className='flex content-center items-center' style={{ width: '7.313rem', borderLeft: '0.188rem solid #764cbb' ,height:'100%'}}>
+              <div className='flex content-center items-center game-markets__arrow'>
                 <img src={ArrowUp} alt='' className='arrow' />
               </div>
             </div>
@@ -142,12 +170,12 @@ const GameMarkets = ({ close }) => {
 
           <div className='game-markets__box'>
             <div className='game-markets__box-header flex content-between items-center'>
-              <div className='flex content-between items-center w-full' style={{ paddingRight: '1.875rem' }}
+              <div className='flex content-between items-center w-full' style={{ paddingRight: '1.75rem' }}
               >
                 <p>승무패 [정규시간]</p>
-                <img src={StarIcon} alt='' className='star-btn' />
+                <img src={MenuStarIcon} alt='' className='star-btn' />
               </div>
-              <div className='flex content-center items-center' style={{ width: '7.313rem', borderLeft: '0.188rem solid #764cbb', height: '100%' }}>
+              <div className='flex content-center items-center game-markets__arrow'>
                 <img src={ArrowUp} alt='' className='arrow' />
               </div>
             </div>
@@ -201,12 +229,12 @@ const GameMarkets = ({ close }) => {
 
           <div className='game-markets__box'>
             <div className='game-markets__box-header flex content-between items-center'>
-              <div className='flex content-between items-center w-full' style={{ paddingRight: '1.875rem' }}
+              <div className='flex content-between items-center w-full' style={{ paddingRight: '1.75rem' }}
               >
                 <p>승무패 [정규시간]</p>
-                <img src={StarIcon} alt='' className='star-btn' />
+                <img src={MenuStarIcon} alt='' className='star-btn' />
               </div>
-              <div className='flex content-center items-center' style={{ width: '7.313rem', borderLeft: '0.188rem solid #764cbb', height: '100%' }}>
+              <div className='flex content-center items-center game-markets__arrow'>
                 <img src={ArrowUp} alt='' className='arrow' />
               </div>
             </div>
@@ -231,12 +259,12 @@ const GameMarkets = ({ close }) => {
         
           <div className='game-markets__box'>
             <div className='game-markets__box-header flex content-between items-center'>
-              <div className='flex content-between items-center w-full' style={{ paddingRight: '1.875rem' }}
+              <div className='flex content-between items-center w-full' style={{ paddingRight: '1.75rem' }}
               >
                 <p>승무패 [정규시간]</p>
-                <img src={StarIcon} alt='' className='star-btn' />
+                <img src={MenuStarIcon} alt='' className='star-btn' />
               </div>
-              <div className='flex content-center items-center' style={{ width: '7.313rem', borderLeft: '0.188rem solid #764cbb', height: '100%' }}>
+              <div className='flex content-center items-center game-markets__arrow'>
                 <img src={ArrowUp} alt='' className='arrow' />
               </div>
             </div>
@@ -248,16 +276,16 @@ const GameMarkets = ({ close }) => {
               </div>
               <div className='game-markets__cell'>
                 <div className='flex content-between items-center'>
-                  <div>1X</div>
-                  <div className='score'>1.32</div>
+                  <div>1</div>
+                  <div className='score'>1.98</div>
                 </div>
                 <div className='flex content-between items-center'>
-                  <div>12</div>
-                  <div className='score'>1.32</div>
+                  <div>x</div>
+                  <div className='score'>4.20</div>
                 </div>
                 <div className='flex content-between items-center'>
-                  <div>X2</div>
-                  <div className='score'>1.77</div>
+                  <div>2</div>
+                  <div className='score'>3.31</div>
                 </div>
               </div>
               <div className='game-markets__cell'>

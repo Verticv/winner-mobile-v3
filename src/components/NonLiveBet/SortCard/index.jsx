@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import './_sortCard.scss'
 import clock from '../../../assets/images/nonLiveBet/clock.png'
-import clock1 from '../../../assets/images/nonLiveBet/clock1.png'
-import clock2 from '../../../assets/images/nonLiveBet/clock2.png'
+import clock1 from '../../../assets/images/nonLiveBet/clock12.png'
+import clock2 from '../../../assets/images/nonLiveBet/clock22.png'
 import DownArrowIcon from '../../../assets/images/nonLiveBet/down-arrow.png'
 import Dropdown from '../../Shared/Dropdown'
 const SortCard = () => {
@@ -29,7 +29,7 @@ const SortCard = () => {
         className='content dropdown'
       >
         <Dropdown options={selectOptions} isSignup={true}>
-          <img style={{ width: '1.5625rem' }} className="h-4 object-contain" src={DownArrowIcon} alt="arrow" />
+          <img style={{ width: '2.25rem' }} className="h-4 object-contain" src={DownArrowIcon} alt="arrow" />
         </Dropdown>
       </div>
     </div>
@@ -45,12 +45,12 @@ const SortCard = () => {
         </button>
         <button className={`${isActive === 2 ? 'active' : ''}`}
           onClick={() => setActive(2)}>
-          <img src={clock1} alt="right" style={{ width: '3.188rem' }} />
+          <img src={clock1} alt="right" style={{ width: '3.938rem' }} />
           <p>인기순</p>
         </button>
         <button className={`${isActive === 3 ? 'active' : ''}`}
           onClick={() => setActive(3)}>
-          <img src={clock2} alt="right" style={{ width: '3.188rem' }} />
+          <img src={clock2} alt="right" style={{ width: '3.938rem' }} />
           <p>리그순</p>
         </button>
       </div>

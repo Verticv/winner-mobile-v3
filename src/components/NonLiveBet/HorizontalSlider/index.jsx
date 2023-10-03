@@ -7,7 +7,7 @@ import Icon1 from '../../../assets/images/nonLiveBet/slider/Icon1.png'
 import Icon2 from '../../../assets/images/nonLiveBet/slider/Icon2.png'
 import Icon3 from '../../../assets/images/nonLiveBet/slider/Icon3.png'
 import Icon4 from '../../../assets/images/nonLiveBet/slider/Icon4.png'
-
+import Icon1_on from '../../../assets/images/nonLiveBet/slider/Icon1_on.png'
 const HorizontalSlider = () => {
   const [isActive, setActive] = useState(0);
 
@@ -25,25 +25,38 @@ const HorizontalSlider = () => {
       id: 1,
       title: '전체',
       icon: Icon1,
-      count: '854'
+      iconOn: Icon1_on,
+      count: '854',
+      style: {},
+      imgWidth: '73rem',
+      pStyle: {}
     },
     {
       id: 2,
       title: '축구',
       icon: Icon2,
-      count: '567'
+      iconOn: Icon2,
+      count: '567',
+      style: { paddingLeft: '2.063rem' },
+      pStyle: { marginLeft: '0.438rem',marginRight:'0.188rem'}
     },
     {
       id: 3,
       title: '농구',
       icon: Icon3,
-      count: '227'
+      iconOn: Icon3,
+      count: '227',
+      style: { paddingLeft: "2.25rem" },
+      pStyle: { marginLeft: '0.438rem' }
     },
     {
       id: 4,
       title: '전체',
       icon: Icon4,
-      count: '567'
+      iconOn: Icon4,
+      count: '567',
+      style: { paddingLeft: "2.25rem" },
+      pStyle: { marginLeft: '0.438rem' }
     }
   ]
 
@@ -60,9 +73,9 @@ const HorizontalSlider = () => {
             onClick={() => {
               setActive(tab.id)
             }}>
-            <div>
-                <img src={tab.icon} alt="right" />
-                <p>{tab.title}</p>
+            <div style={tab.style}>
+              <img src={isActive !== tab.id ? tab.icon:tab.iconOn} alt="right" width={tab.imgWidth}/>
+              <p style={tab.pStyle}>{tab.title}</p>
               <span className='badge'>{tab.count}</span>
             </div>
           </button>

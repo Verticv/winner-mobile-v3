@@ -166,44 +166,64 @@ const ResultList = () => {
               {result.scores.map((score, index) => (
               <div className='collapse-body'>
                 <div className='body1'>
-                  <p>{score.team1}</p>
-                  {score.up && (<span style={{ color: '#f04281', width: '7rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <img src={Up} alt="right" style={{ width: '1.313rem' }} />
+                    <p className='cell-team truncate'>{score.team1}</p>
+                    {score.up &&
+                      (<span className='flex content-between items-center' style={{ color: '#f04281', width: '6.813rem' }}>
+                      <img src={Up} alt="right" className='blink-style' style={{ width: '1.313rem' }} />
                     {score.team1_score}
                   </span>)}
-                  {score.down && (<span style={{ color: '#0072bc', width: '7rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <img src={Down} alt="right" style={{ width: '1.313rem' }} />
+                    {score.down &&
+                      (<span className='flex content-between items-center'  style={{ color: '#0072bc', width: '6.813rem' }}>
+                      <img src={Down} alt="right" className='blink-style' style={{ width: '1.313rem' }} />
                     {score.team1_score}
                   </span>)}
-                  {score.lock && (<span style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><img src={lock} alt="right" className='lock' /></span>)}
-                  {!score.up && !score.down && (<span>{score.team1_score}</span>)}
+                    {score.lock &&
+                      (<span
+                      className='flex content-center items-center'
+                      style={{width: '3.875rem', marginLeft: '0.063rem' }}>
+                        <img src={lock} alt="right" className='lock' />
+                      </span>)}
+                    {!score.up && !score.down && !score.lock && (<p className='cell-score'>{score.team1_score}</p>)}
                 </div>
                 <div className='body2'>
-                  {score.up && (<span style={{ color: '#f04281', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.938rem' }}>
-                    <img src={Up} alt="right" style={{ width: '1.313rem' }} />
+                    {score.up &&
+                      (<span className='flex content-center items-center '  style={{ color: '#f04281', gap: '0.938rem' }}>
+                      <img src={Up} alt="right" style={{ width: '1.313rem' }} className='arrow-cell blink-style'/>
                     {score.score}
                   </span>)}
-                  {score.down && (<span style={{ color: '#0072bc', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.938rem' }}>
-                    <img src={Down} alt="right" style={{ width: '1.313rem' }} />
+                    {score.down &&
+                      (<span className='flex content-center items-center '  style={{ color: '#0072bc' ,gap: '0.938rem' }}>
+                      <img src={Down} alt="right" style={{ width: '1.313rem' }} className='arrow-cell blink-style' />
                     {score.score}
                   </span>)}
-                  {score.lock && (<span style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><img src={lock} alt="right" className='lock' /></span>)}
-                  {!score.up && !score.down && (<span>{score.score}</span>)}
+                    {score.lock &&
+                      (<span className='flex content-center items-center '
+                      style={{ marginLeft: '0.063rem' }}>
+                        <img src={lock} alt="right" className='lock' />
+                      </span>)}
+                    {!score.up && !score.down && (<p className='cell-score'>{score.score}</p>)}
                 </div>
                 <div className='body3'>
-                  {!score.up && !score.down && (<span>{score.team2_score}</span>)}
-                  {score.down && (<span style={{ color: '#f04281', width: '7rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    {score.team2_score}
-                    <img src={Up} alt="right" style={{ width: '1.313rem' }} />
-                  
-                  </span>)}
-                  {score.up && (<span style={{ color: '#0072bc', width: '7rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    {score.team2_score}
-                    <img src={Down} alt="right" style={{ width: '1.313rem' }} />
-                  </span>)}
+                    {!score.up && !score.down && !score.lock && (<p className='cell-score'>{score.team2_score}</p>)}
+                    {score.down &&
+                      (<span className='flex content-between items-center ' style={{ color: '#f04281', width: '6.75rem'}}>
+                        {score.team2_score}
+                      <img src={Up} alt="right" style={{ width: '1.313rem' }} className='blink-style'/>
+                    
+                    </span>)}
+                    {score.up &&
+                      (<span className='flex content-between items-center '  style={{ color: '#0072bc', width: '6.75rem' }}>
+                      {score.team2_score}
+                      <img src={Down} alt="right" style={{ width: '1.313rem' }} className='blink-style' />
+                    </span>)}
 
-                  {score.lock && (<span style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><img src={lock} alt="right" className='lock' /></span>)}
-                  <p>{score.team2}</p>
+                    {score.lock &&
+                      (<span
+                      className='flex content-center items-center '
+                        style={{ width: '3.875rem',marginLeft:'0.063rem' }}>
+                        <img src={lock} alt="right" className='lock' />
+                      </span>)}
+                    <p className='cell-team truncate'>{score.team2}</p>
                 </div>
                 <div className='body4'>
                   <span>+{score.plus}</span>

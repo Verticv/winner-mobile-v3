@@ -3,7 +3,7 @@ import Icon2 from '../../../assets/images/nonLiveBet/slider/Icon2.png'
 import tag from '../../../assets/images/nonLiveBet/tag.png'
 import team1 from '../../../assets/images/nonLiveBet/team1.png'
 import team2 from '../../../assets/images/nonLiveBet/team2.png'
-import rightArrow from '../../../assets/images/nonLiveBet/rightArrow.png'
+import rightArrow from '../../../assets/images/nonLiveBet/light-arrow.png'
 
 
 const Section3 = ({ close }) => {
@@ -132,7 +132,7 @@ const Section3 = ({ close }) => {
   return (
     <div className='favorites-section'>
       <div className='category-header'>
-        <p>즐겨찾기</p>
+        <p>인기경기</p>
         <img src={CloseIcon} alt="close" className='close' onClick={close} />
       </div>
       <div className='popular-game'>
@@ -142,7 +142,7 @@ const Section3 = ({ close }) => {
             <div className='tag-index'>{index + 1}</div>
             <img src={rightArrow} alt="tag" className='arrow' />
             <div className='popular-card-time'>
-              {item.time}
+              <span>{item.time}</span> 
             </div>
             <div className='popular-card-icon'>
               <img src={item.icon} alt="Icon2" />
@@ -154,7 +154,7 @@ const Section3 = ({ close }) => {
               </div>
               <div className='flex'>
                 <img src={item.team2.icon} alt="Icon2" />
-                <p>{item.team2.name}</p>
+                <p className='team2-name'>{item.team2.name}</p>
               </div>
             </div>
           </div>

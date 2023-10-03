@@ -12,29 +12,34 @@ const Categories = ({ setActiveButton }) => {
         <CategoryButton
           title={'모든경기'}
           icon={Icon4}
-          style={{ width: '3.625rem' }}
-          onClick={() => setActiveButton('menu')}/>
+          imgStyle={{ width: '3.75rem' }}
+          style={{ gap: '0.688rem' }}
+          onClick={() => setActiveButton('menu')}
+           />
         
         <CategoryButton
           icon={Icon5}
-          style={{ width: '4.063rem' }}
+          imgStyle={{ width: '4.188rem' }}
+          hasBadge={true}
           onClick={() => setActiveButton('favorite')}/>
         
         <CategoryButton
           title={'인기경기'}
           icon={Icon6}
-          style={{ width: '3.813rem' }}
+          imgStyle={{ width: '3.938rem' }}
+          style={{ gap: '0.5rem', paddingRight:'1.25rem' }}
           onClick={() => setActiveButton('win')}/>
         
         <CategoryButton
           title={'인기리그'}
           icon={Icon7}
-          style={{ width: '2.938rem' }}
+          imgStyle={{ width: '3.063rem' }}
+          style={{ gap: '1.063rem', paddingRight: '1.563rem' }}
           onClick={() => setActiveButton('win2')}/>
        
         <CategoryButton
           icon={Icon8}
-          style={{ width: '3.75rem' }}
+          imgStyle={{ width: '3.875rem' }}
           onClick={() => setActiveButton('search')}/>
        
       </div>
