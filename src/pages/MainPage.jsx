@@ -72,7 +72,7 @@ function MainPage({ setFooterDefaultState }) {
       )}
       {selectedTab === 5 && (
         <div id="hotel-casino"  className="filter-content">
-          <HotelCasino filter={true} />
+          <HotelCasino filter={true} selectedTab={selectedTab} />
         </div>
       )}
       {selectedTab === 6 && (
