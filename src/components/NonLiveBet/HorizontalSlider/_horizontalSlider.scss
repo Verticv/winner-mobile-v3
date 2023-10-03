@@ -1,0 +1,113 @@
+
+.slide-button {
+  margin-top: 0.938rem;
+  border-radius: 1.125rem;
+  background-color: #fff;
+  box-shadow: 0px 0.188rem 0.938rem 0px rgba(0, 0, 0, 0.5);
+  width: 4.688rem;
+  height: 7.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 1.875rem;
+    height: 3.125rem;
+  }
+}
+
+.slide-left img  {
+  margin-left: -0.125rem;
+}
+.slide-right {
+  margin-left: 0.375rem;
+  position: relative;
+  img {
+    margin-right: -0.063rem;
+  }
+  &::after {
+    content: '';
+    height: 7.75rem;
+    width: .3rem;
+    background: transparent;
+    box-shadow: rgba(120, 47, 173, 0.5) -0.813rem 0px 0.5rem 0.5rem;
+    position: absolute;
+    left: -0.375rem;
+  }
+}
+.tabs-container {
+  display: flex;
+  padding: 0 0.938rem;
+  height: 12.5rem;
+}
+
+.tabs-slider {
+  width: 66.375rem;
+  padding: 0.938rem 0.313rem 0.938rem 0.563rem;
+  display: flex;
+  gap: 0.375rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tab-btn {
+  padding: 0.188rem;
+  background: linear-gradient(to top, #4f3a7a 0, #a05bf6 50%, #f0d3ff 100%);
+  border-radius: 1.125rem;
+  height: 7.688rem;
+  width: 20.063rem;
+  box-shadow: 0 0.125rem 0.938rem 0 rgba(0, 0, 0, 0.6);
+  flex-shrink: 0;
+  img {
+    margin-top: 0.063rem;
+  }
+  div {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #ccc4ff, #ffd9f5);
+    border-radius: 1.125rem;
+    display: flex;
+    align-items: center;
+    padding-right: 2.188rem;
+    padding-left: 1.625rem;
+    p {
+      color: #333;
+      font-size: 2.625rem;
+      font-weight: bold;
+      margin: 0;
+      margin-left: 0.063rem;
+      margin-right: 0;
+      margin-top: -0.125rem;
+    }
+  }
+  .badge {
+    border-radius: 1.125rem;
+    background-color: #74687c;
+    height: 3.188rem;
+    color: #fff;
+    font-size: 2.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.313rem;
+  }
+  &.active {
+    background: linear-gradient(to top, #4f3a7a 0, #a05bf6 50%, #cb78e6 100%);
+
+    div {
+      background: linear-gradient(to top, #491f9c, #9e3cbc);
+
+      p {
+        color: #fff;
+      }
+    }
+
+    .badge {
+      background-color: #3a1756;
+      color: #fff;
+    }
+  }
+}
+
+
+
+

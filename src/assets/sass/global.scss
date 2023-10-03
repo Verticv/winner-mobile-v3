@@ -1,3 +1,69 @@
 @import '../../components/Header/_header';
 
 @import '../../old-components/DateSearchBar/dateSearchBar';
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+.content-start {
+  justify-content: flex-start
+}
+.content-between {
+  justify-content: space-between;
+}
+.content-center {
+  justify-content: center
+}
+.h-full {
+  height: 100%;
+}
+.w-full {
+  width: 100%;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.relative {
+  position: relative;
+}
+.text-white {
+  color: white;
+}
+.badge {
+  display: block;
+  padding: 0.875rem 1.125rem;
+  border-radius: 50%;
+  color: #fff;
+
+  &--red {
+    background-color: rgb(240, 66, 129);
+  }
+}
+.text-bold {
+  font-weight: bold
+}
+.blink-style {
+  -webkit-animation: blink 2s infinite both;
+  animation: blink 2s infinite both;
+}
+
+@keyframes blink {
+
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
