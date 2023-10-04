@@ -11,6 +11,13 @@
     z-index: 11;
     z-index: 201;
     position: relative;
+    width: 77.625rem;
+    margin: auto;
+    &.fixed-header {
+        position: fixed;
+        top: 0;
+
+    }
     .header__image {
         height: 4.688rem;
         width: 19.063rem;
