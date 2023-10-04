@@ -15,6 +15,9 @@ import { getCookie, setCookie } from './utils';
 import MyPage from './pages/MyPage';
 import Authentication from './pages/Authentication';
 
+
+import NonLiveBet from './pages/NonLiveBet';
+
 function App() {
   const [isAuthenticated, setAuthenticated] = useState(false);
   const pathname = window.location.pathname;
@@ -69,7 +72,7 @@ function App() {
 								{/* <Header setOpen={setOpen1} isOpen={isOpen}/> */}
 								<Header />
 								<MainPage setFooterDefaultState={setFooterDefaultState} />
-								<Footer isExpanded={isExpanded} setExpanded={setExpanded} /> 
+								<Footer isExpanded={isExpanded} setExpanded={setExpanded} />
 							</>
 						}
 					/>
@@ -80,7 +83,7 @@ function App() {
 						path="/mypage/*"
 						element={
 							<MyPage
-							    // setOpen={setOpen1}
+								// setOpen={setOpen1}
 								isAuthenticated={isAuthenticated}
 								setAuthenticated={setAuthenticated}
 							/>
@@ -108,6 +111,21 @@ function App() {
 						element={
 							<>
 								<Authentication
+									isAuthenticated={isAuthenticated}
+									setAuthenticated={setAuthenticated}
+								/>
+							</>
+						}
+					></Route>
+				</Routes>
+
+				<Routes>
+					<Route
+						path="/bet-combination"
+						element={
+							<>
+								<Header />
+								<NonLiveBet
 									isAuthenticated={isAuthenticated}
 									setAuthenticated={setAuthenticated}
 								/>

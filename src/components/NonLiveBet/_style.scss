@@ -1,0 +1,81 @@
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.justify-content-start {
+  justify-content: flex-start
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+
+.text-white {
+  color: white;
+}
+
+.badge-new {
+  display: block;
+  padding: 0.875rem 1.125rem;
+  border-radius: 50%;
+  color: #fff;
+
+  &--red {
+    background-color: rgb(240, 66, 129);
+  }
+}
+
+.text-bold {
+  font-weight: bold
+}
+
+.blink-style {
+  -webkit-animation: blink 2s infinite both;
+  animation: blink 2s infinite both;
+}
+
+@keyframes blink {
+
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
