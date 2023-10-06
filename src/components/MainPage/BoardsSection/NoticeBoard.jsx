@@ -17,40 +17,57 @@ const NoticeBoard = ({ onClick }) => {
       </div>
       <div className='new-card-content'>
         <div className='board-item'>
-          <img src={TagIcon1} alt="right" />
-          <p>이벤트 신청합니다.</p>
+          <div className='left-side'>
+            <img src={TagIcon1} alt="right" />
+            <p>이벤트 신청합니다.</p>
+          </div>
+
+          <div className='right-side'>
+            <img src={TagIcon} alt="right" />
+            <p>신풍사우나나나</p>
+          </div>
+        </div>
+        <div className='board-item'>
+          <div className='left-side'>
+            <img src={TagIcon1} alt="right" />
+            <p>이벤트 신청합니다.</p>
+          </div>
+
           <div className='right-side'>
             <img src={TagIcon} alt="right" />
             <p>신풍사우나</p>
           </div>
         </div>
         <div className='board-item'>
-          <img src={TagIcon1} alt="right" />
-          <p>이벤트 신청합니다.</p>
+          <div className='left-side'>
+
+            <img src={TagIcon1} alt="right" />
+            <p>이벤트 신청합니다.</p>        </div>
+
           <div className='right-side'>
             <img src={TagIcon} alt="right" />
             <p>신풍사우나</p>
           </div>
         </div>
         <div className='board-item'>
-          <img src={TagIcon1} alt="right" />
-          <p>이벤트 신청합니다.</p>
+          <div className='left-side'>
+
+            <img src={TagIcon1} alt="right" />
+            <p>이벤트 신청합니다.</p>
+          </div>
+
           <div className='right-side'>
             <img src={TagIcon} alt="right" />
             <p>신풍사우나</p>
           </div>
         </div>
         <div className='board-item'>
-          <img src={TagIcon1} alt="right" />
-          <p>이벤트 신청합니다.</p>
-          <div className='right-side'>
-            <img src={TagIcon} alt="right" />
-            <p>신풍사우나</p>
+          <div className='left-side'>
+
+            <img src={TagIcon1} alt="right" />
+            <p>이벤트 신청합니다.</p>
           </div>
-        </div>
-        <div className='board-item'>
-          <img src={TagIcon1} alt="right" />
-          <p>이벤트 신청합니다.</p>
+
           <div className='right-side'>
             <img src={TagIcon} alt="right" />
             <p>신풍사우나</p>

@@ -23,7 +23,7 @@
     color: #666666;
     margin: 0;
     &.confirm-title {
-      font-size: 3rem;
+      font-size: 3.2rem;
       margin-bottom: 4.875rem;
       letter-spacing: -0.005em;
       font-weight: bold;
@@ -38,10 +38,11 @@
   }
   .confirm-desc {
     p {
-      font-size: 2.625rem;
+      font-size: 2.825rem;
       letter-spacing: -0.005em;
       margin: 0;
       margin-left: 0.875rem;
+      line-height: 3.6rem;
       color: #444;
       &:nth-of-type(2) {
         margin-left: 0.25rem;
