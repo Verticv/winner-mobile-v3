@@ -20,8 +20,8 @@ const Collapse = ({
    
   };
   return (
-    <button className={`collapse ${isExpanded === index ?'expanded':''}`} onClick={toggleCollapse}>
-      <div className="collapse__header">
+    <button className={`collapse ${isExpanded === index ?'expanded':''}`} >
+      <div className="collapse__header" onClick={toggleCollapse}>
         <p className="collapse__title">
           {title}
         </p>
