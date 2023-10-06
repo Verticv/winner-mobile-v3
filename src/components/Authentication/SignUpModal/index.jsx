@@ -104,12 +104,12 @@ const SignUpModal = ({
     )
   }
   return (
-    <div className= 'modal-overlay' >
+    <div className='modal-overlay' >
       <div className='sign-modal'>
         <div className='header'>
-          <p>회원가입</p> 
-            <img src={Close} alt="right" className="close"
-              onClick={() => setSignup(false)} />
+          <p>회원가입</p>
+          <img src={Close} alt="right" className="close"
+            onClick={() => setSignup(false)} />
         </div>
         <div className='modal-body'>
           <div className='title'>
@@ -117,8 +117,8 @@ const SignUpModal = ({
             <p>회원데이터는 안전한 서버에서 안전하게 보관됩니다.</p>
           </div>
           <div className='fields'>
-              <div className='field-container'
-                style={{ marginBottom:'1.625rem'}}>
+            <div className='field-container'
+              style={{ marginBottom: '1.625rem' }}>
               <div className='input-field'>
                 <input
                   type="text"
@@ -137,44 +137,43 @@ const SignUpModal = ({
 
             <div className='field-container'
               style={{ marginBottom: '2rem' }}>
-            <div className='input-field'>
-              <input
-              type="password"
-              placeholder={"비밀번호"}
-              onFocus={(e) => {
-                setSelectedInput(1)
-              }}
-              onBlur={(e) => {
-                setSelectedInput(false)
-              }}
-            />
-              {selectedInput === 1 && (<div className='input-line'></div>)}
-            </div>
-              <span >최소 6~16자 내외로 입력해주세요.
-              <br/>  (알파벳 소문자 + 특수문자 포함)
+              <div className='input-field'>
+                <input
+                  type="password"
+                  placeholder={"비밀번호"}
+                  onFocus={(e) => {
+                    setSelectedInput(1)
+                  }}
+                  onBlur={(e) => {
+                    setSelectedInput(false)
+                  }}
+                />
+                {selectedInput === 1 && (<div className='input-line'></div>)}
+              </div>
+              <span style={{ whiteSpace: 'pre-wrap' }} >{`최소 6~16자 내외로 입력해주세요.\n(알파벳 소문자 + 특수문자 포함)`}
               </span>
             </div>
-            
+
             <div className='field-container'
               style={{ marginBottom: '2rem' }}>
-            <div className='input-field'>
-            <input
-              type="password"
-              placeholder={"환전 비밀번호"}
-              onFocus={(e) => {
-                setSelectedInput(2)
-              }}
-              onBlur={(e) => {
-                setSelectedInput(false)
-              }}
-            />
-              {selectedInput === 2 && (<div className='input-line'></div>)}
+              <div className='input-field'>
+                <input
+                  type="password"
+                  placeholder={"환전 비밀번호"}
+                  onFocus={(e) => {
+                    setSelectedInput(2)
+                  }}
+                  onBlur={(e) => {
+                    setSelectedInput(false)
+                  }}
+                />
+                {selectedInput === 2 && (<div className='input-line'></div>)}
+              </div>
+              <span>영문 및 숫자를 1자 이상 반드시 포함하여 4~8자 내외로
+                <br />입력해주세요. (특수문자 사용불가)</span>
             </div>
-            <span>영문 및 숫자를 1자 이상 반드시 포함하여 4~8자 내외로
-              <br />입력해주세요. (특수문자 사용불가)</span>
-            </div>
-            
-              <div className='field-container'
+
+            <div className='field-container'
               style={{ marginBottom: '1.875rem' }}>
               <div className='input-field'>
                 <input
@@ -190,15 +189,15 @@ const SignUpModal = ({
               </div>
               <span>한글, 영문, 숫자를 포함한 4~16자로 입력해주세요.</span>
             </div>
-              <div className='field-container'
+            <div className='field-container'
               style={{ marginBottom: '1.5rem' }}>
               <div className='row'>
-                  <div className='input-field dropdown carrier-dropdown' style={{ width:"16.625rem"}}>
+                <div className='input-field dropdown carrier-dropdown' style={{ width: "16.625rem" }}>
                   <Dropdown options={carrierOptions} isSignup={true}>
                     <img style={{ width: '1.5625rem' }} className="h-4 object-contain" src={DownArrowIcon} alt="arrow" />
                   </Dropdown>
                 </div>
-                  <div className='input-field ' style={{ width: "100%" }}>
+                <div className='input-field ' style={{ width: "100%" }}>
                   <input
                     type="number"
                     placeholder={"휴대폰번호(숫자만 입력)"}
@@ -213,15 +212,15 @@ const SignUpModal = ({
                 </div>
               </div>
             </div>
-              <div className='field-container'
-                style={{ marginBottom: '2rem' }}>
+            <div className='field-container'
+              style={{ marginBottom: '2rem' }}>
               <div className='input-field date-field'>
-                  <img src={CalendarIcon} alt="" className='calendar-icon' />
+                <img src={CalendarIcon} alt="" className='calendar-icon' />
                 <DatePicker
                   showYearDropdown
                   yearDropdownItemNumber={100}
                   placeholderText='생년월일'
-                  customInput={<CustomInput/>}
+                  customInput={<CustomInput />}
                   locale="ko"
                   selected={endDate}
                   dateFormat="yyyy-MM-dd"
@@ -289,39 +288,38 @@ const SignUpModal = ({
                         </button>
                       </div>
                     )
-                    }}
-                    
-                    onChange={(date) => {
-                      setEndDate(date)
-                      setSelectedYear(getYear(date));
-                      setSelectedMonth(months[getMonth(date)]);
-                    }}
-                    onMonthChange={(date) => {
-                      setSelectedMonth(months[getMonth(date)]);
-                      setSelectedYear(getYear(date));
-                    }}
-                    onYearChange={(date) => setSelectedYear(getYear(date))}
-                    popperModifiers={{
-                      flip: {
-                        behavior: ["bottom"] // don't allow it to flip to be above
-                      },
-                      preventOverflow: {
-                        enabled: true // tell it not to try to stay within the view (this prevents the popper from covering the element you clicked)
-                      },
-                      hide: {
-                        enabled: true // turn off since needs preventOverflow to be enabled
-                      }
-                    }}
+                  }}
+
+                  onChange={(date) => {
+                    setEndDate(date)
+                    setSelectedYear(getYear(date));
+                    setSelectedMonth(months[getMonth(date)]);
+                  }}
+                  onMonthChange={(date) => {
+                    setSelectedMonth(months[getMonth(date)]);
+                    setSelectedYear(getYear(date));
+                  }}
+                  onYearChange={(date) => setSelectedYear(getYear(date))}
+                  popperModifiers={{
+                    flip: {
+                      behavior: ["bottom"] // don't allow it to flip to be above
+                    },
+                    preventOverflow: {
+                      enabled: true // tell it not to try to stay within the view (this prevents the popper from covering the element you clicked)
+                    },
+                    hide: {
+                      enabled: true // turn off since needs preventOverflow to be enabled
+                    }
+                  }}
                 />
-                </div>
-                <span>수기로 작성시 아이디 생성이 불가합니다.<br/>
-                  (달력으로 선택해주세요.)</span>
+              </div>
+              <span style={{ whiteSpace: 'pre-wrap' }}>{`수기로 작성시 아이디 생성이 불가합니다.\n(달력으로 선택해주세요.)`}</span>
             </div>
-              <div className='field-container'
-                style={{ marginBottom: '1.5rem' }}>
+            <div className='field-container'
+              style={{ marginBottom: '1.5rem' }}>
               <div className='input-field'>
-              <input
-                placeholder={"가입코드"}
+                <input
+                  placeholder={"가입코드"}
                   onFocus={(e) => {
                     setSelectedInput(5)
                   }}
@@ -332,16 +330,16 @@ const SignUpModal = ({
                 {selectedInput === 5 && (<div className='input-line'></div>)}
               </div>
             </div>
-              <div className='field-container'
-                style={{ marginBottom: '1.5rem' }}>
+            <div className='field-container'
+              style={{ marginBottom: '1.5rem' }}>
               <div className='row'>
                 <div className='input-field dropdown w-411'>
                   <Dropdown options={banksOptions} isSignup={true}>
-                  <img style={{ width: '1.5625rem' }} className="h-4 object-contain" src={DownArrowIcon} alt="arrow" />
-                </Dropdown>
-              </div>
-              <div className='input-field '>
-                <input
+                    <img style={{ width: '1.5625rem' }} className="h-4 object-contain" src={DownArrowIcon} alt="arrow" />
+                  </Dropdown>
+                </div>
+                <div className='input-field '>
+                  <input
                     placeholder={"예금주"}
                     onFocus={(e) => {
                       setSelectedInput(6)
@@ -351,14 +349,14 @@ const SignUpModal = ({
                     }}
                   />
                   {selectedInput === 6 && (<div className='input-line'></div>)}
-              </div>
+                </div>
               </div>
             </div>
             <div className='field-container'>
               <div className='input-field'>
                 <input
-                type="number"
-                placeholder={"계좌번호(숫자만 입력)"}
+                  type="number"
+                  placeholder={"계좌번호(숫자만 입력)"}
                   onFocus={(e) => {
                     setSelectedInput(7)
                   }}
@@ -369,26 +367,26 @@ const SignUpModal = ({
                 {selectedInput === 7 && (<div className='input-line'></div>)}
               </div>
             </div>
-            
-            </div>
-            <div className='modal-actions'>
+
+          </div>
+          <div className='modal-actions'>
             <button
               onClick={() => setConfirmPopup(true)} >
-                회원가입
-              </button>
+              회원가입
+            </button>
+          </div>
+          <div className='social'>
+            <div>
+              <img src={TalkIcon} alt="Contact" />
+              <p>test1234</p>
             </div>
-            <div className='social'>
-              <div>
-                <img src={TalkIcon} alt="Contact" />
-                <p>test1234</p>
-              </div>
-              <div>
-                <img src={TelegramIcon} alt="Contact" />
-                <p>test1234</p>
-              </div>
+            <div>
+              <img src={TelegramIcon} alt="Contact" />
+              <p>test1234</p>
             </div>
+          </div>
         </div>
-        </div>
+      </div>
       {toConfirmPopup === true && (
         <ConfirmPopup
           setConfirmPopup={setSignup} />

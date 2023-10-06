@@ -109,7 +109,6 @@ const DateSearchBar1 = ({
                     <input
                         placeholder="팀명검색"
                         style={{ color: "yellow" }}
-                        className="place-color-grey placeholder:text-gray-r7b7b7b flex-shrink-0 outline-none h-42px rounded-2xl border border-gray-dddddd px-10px text-15px tracking-tight text-gray-r8c8c8c"
                         onFocus={() => {
                             const menu = document.querySelector('#main-menu');
                             menu.style.marginBottom = '-14.075rem'
@@ -140,7 +139,7 @@ const DateSearchBar1 = ({
                 </div>
             )}
 
-            <div style={{paddingTop: "0.375rem"}} className="second-row">
+            <div style={{ paddingTop: "0.375rem" }} className="second-row">
                 <div className="date-picker left-date-picker" style={{ position: 'relative', marginTop: "-0.188rem" }}>
                     <DatePicker
                         showYearDropdown
@@ -398,7 +397,7 @@ const DateSearchBar1 = ({
                             <div className="text-con"
                                 style={{ background: withBlackButton ? '' : 'linear-gradient(to top, #6b22ff, #df52ff)' }}
                             >
-                                <span style={{color: withBlackButton ? "" : "#ffffff"}} className={` ${ withBlackButton ? "" : "shadow-to-text"} font-spoqaMedium tracking-tight text-white pt-px`}>{withBlackButton ? "3개월" : "검색"}</span>
+                                <span style={{ color: withBlackButton ? "" : "#ffffff" }} className={` ${withBlackButton ? "" : "shadow-to-text"} font-spoqaMedium tracking-tight text-white pt-px`}>{withBlackButton ? "3개월" : "검색"}</span>
                             </div>
                         </div>
                     ) : (
@@ -433,16 +432,16 @@ const DateSearchBar1 = ({
                 )}
                 {withBlackButton && (
                     <>
-                    <div style={{ minWidth:'41.625rem', height: '6.75rem',  margin: '-0.789rem 0.125rem 1.75rem -1.875rem', borderRadius: '1.125rem' }}>   <input
-                    style={{ marginLeft: '2rem', paddingLeft: "1.813rem", fontSize: "2.625rem", marginTop: '-0.025rem', color: "#666666", width: "100%", height: "100%", borderRadius: "0.625rem", border: "0px", outline: "none" }}
-                    placeholder="아이디 입력"
+                        <div style={{ minWidth: '41.625rem', height: '6.75rem', margin: '-0.789rem 0.125rem 1.75rem -1.875rem', borderRadius: '1.125rem' }}>   <input
+                            style={{ marginLeft: '2rem', paddingLeft: "1.813rem", fontSize: "2.625rem", marginTop: '-0.025rem', color: "#666666", width: "100%", height: "100%", borderRadius: "0.625rem", border: "0px", outline: "none" }}
+                            placeholder="아이디 입력"
 
-                /></div>
-                    <div style={{ minWidth: isDistributorPage ? '27.4375rem' : '27.438rem', height: '7.25rem', background: 'linear-gradient(to top, #4f3a7a, #e597ff)', padding: '0.1875rem', margin: '-0.789rem 0.125rem 1.75rem 0.125rem', borderRadius: '1.125rem',boxShadow: "0px 0.375rem 0.75rem 0px rgba(0, 0, 0, 0.6)" }} className="hover withBlackButton">
-                        <div style={{ background: 'linear-gradient(to top, #6b22ff, #df52ff)', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '1.125rem' }} className="flex w-full h-full items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
-                            <span style={{ fontSize: '2.625rem', color: '#ffffff', marginTop: '0.2rem' }} className="shadow-to-text">검색</span>
+                        /></div>
+                        <div style={{ minWidth: isDistributorPage ? '27.4375rem' : '27.438rem', height: '7.25rem', background: 'linear-gradient(to top, #4f3a7a, #e597ff)', padding: '0.1875rem', margin: '-0.789rem 0.125rem 1.75rem 0.125rem', borderRadius: '1.125rem', boxShadow: "0px 0.375rem 0.75rem 0px rgba(0, 0, 0, 0.6)" }} className="hover withBlackButton">
+                            <div style={{ background: 'linear-gradient(to top, #6b22ff, #df52ff)', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '1.125rem' }} className="flex w-full h-full items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
+                                <span style={{ fontSize: '2.625rem', color: '#ffffff', marginTop: '0.2rem' }} className="shadow-to-text">검색</span>
+                            </div>
                         </div>
-                    </div>
                     </>
                 )}
             </div>

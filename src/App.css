@@ -10,14 +10,13 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(to right,rgb(182, 68, 196), rgb(53, 24, 148));  
+  background: linear-gradient(to right, #9d3bbb, #5423a0);
 }
-
 
 .app {
   max-width: 1242px;
   min-height: 100vh;
-  margin: auto; 
+  margin: auto;
 }
 
 .mypage {

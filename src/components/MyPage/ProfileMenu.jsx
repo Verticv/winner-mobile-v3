@@ -75,6 +75,7 @@ import Icon__3 from '../../assets/coupon/coupon3-v3.png'
 
 import MenuList from '../Shared/MenuList'
 import { useNavigate } from 'react-router-dom'
+import Logo from '../../assets/images/footer/footer-log.png'
 
 const ProfileMenu = ({ isOpen, setOpen }) => {
   // const [isOpen, setOpen] = useState(false)
@@ -82,7 +83,7 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
   const [subItems, setSubItems] = useState([])
   const [selectedSubTab, setSelectedSubTab] = useState([])
   const navigate = useNavigate();
-  
+
   const Items = [
     {
       id: 1,
@@ -92,7 +93,7 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
       hasList: true,
       hasBadge: false,
       // path: '/mypage/bet-history',
-      
+
       subItems: [
         {
           id: 1,
@@ -379,7 +380,7 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
       hasBadge: false,
       hasList: false
     },
-    
+
   ]
 
   useEffect(() => {
@@ -390,51 +391,54 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
   }
   return (
     <>
-    <div className='profile-menu menu-list'>
-      {
-        Items.map((item, index) => (
-          <button
-            key={index}
-            className={`menu-item ${selectedTab === item.id ? 'active' : ''}`}
-            onClick={() => {
-              setSelectedTab(item.id)
-              if (item.subItems) {
-                setOpen(true)
-                setSubItems(item.subItems)
-                navigate(item?.path)
-              } else {
-                item.blank? window.open(item?.path) : navigate(item?.path)
+      <div className='profile-menu menu-list'>
+        {
+          Items.map((item, index) => (
+            <button
+              key={index}
+              className={`menu-item ${selectedTab === item.id ? 'active' : ''}`}
+              onClick={() => {
+                setSelectedTab(item.id)
+                if (item.subItems) {
+                  setOpen(true)
+                  setSubItems(item.subItems)
+                  navigate(item?.path)
+                } else {
+                  item.blank ? window.open(item?.path) : navigate(item?.path)
+                }
               }
-            }
-            }>
-            <div className='menu-item1'>
-              {item.hasList && (<div className='menu-item-arrow'>
-                {selectedTab === item.id && (<img src={LightArrow} alt="right"  className="ml-10px object-none" />)}
-                {selectedTab !== item.id && (<img src={DarkArrow} alt="right"  className="ml-10px object-none" />)}
-              </div>)}
-              <div className='menu-item-logo'>
-                {selectedTab === item.id && (<img src={item.icon2} alt="right"  className="ml-10px object-none" />)}
-                {selectedTab !== item.id && (<img src={item.icon} alt="right" className="ml-10px object-none" />)}
+              }>
+              <div className='menu-item1'>
+                {item.hasList && (<div className='menu-item-arrow'>
+                  {selectedTab === item.id && (<img src={LightArrow} alt="right" className="ml-10px object-none" />)}
+                  {selectedTab !== item.id && (<img src={DarkArrow} alt="right" className="ml-10px object-none" />)}
+                </div>)}
+                <div className='menu-item-logo'>
+                  {selectedTab === item.id && (<img src={item.icon2} alt="right" className="ml-10px object-none" />)}
+                  {selectedTab !== item.id && (<img src={item.icon} alt="right" className="ml-10px object-none" />)}
+                </div>
+                <div className='menu-item-title'>
+                  <p>{item.title}</p>
+                  {item.hasBadge && (<span className="badge badge--red badge--l">
+                    <span>{item.badge_num}</span>
+                  </span>)}
+                </div>
               </div>
-              <div className='menu-item-title'>
-                <p>{item.title}</p>
-                {item.hasBadge && (<span className="badge badge--red badge--l">
-                  <span>{item.badge_num}</span>
-                </span>)}
-              </div>
-            </div>
-          </button>
-        ))
-      }
-    </div>
-    { isOpen === true && (
-      <MenuList
-        key={0}
-        items={subItems}
-        selectedTab={selectedSubTab}
-        setOpen={setOpen}
-        setSelectedTab={setActiveTab} />
-    )}
+            </button>
+          ))
+        }
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30rem' }}>
+          <img src={Logo} alt="" style={{ height: '5rem', filter: 'brightness(40%)' }} />
+        </div>
+      </div>
+      {isOpen === true && (
+        <MenuList
+          key={0}
+          items={subItems}
+          selectedTab={selectedSubTab}
+          setOpen={setOpen}
+          setSelectedTab={setActiveTab} />
+      )}
     </>
   )
 }
