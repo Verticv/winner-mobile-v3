@@ -30,9 +30,11 @@ const ResultCell = ({ data, type }) => {
 
   useEffect(() => {
     /* eslint-disable */
-    score._id = type + score.id
-    let scoreIndex = betSlipData.findIndex(data => data._id === score._id)
-    setActive(scoreIndex > -1)
+    if (data) {
+      data._id = type + score.id
+      let scoreIndex = betSlipData.findIndex(data => data._id === data._id)
+      setActive(scoreIndex > -1)
+    }
   }, [betSlipData])
 
   return (

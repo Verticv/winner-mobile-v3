@@ -160,15 +160,17 @@
   p.cell-team {
     max-width: 16.5rem;
   }
-
+.cell.active span {
+  color: #fff !important;
+}
  
 }
 .cell.active {
    background: linear-gradient(to top, #5423a0, #9d3bbb);
-   color: #fff;
+   color: #fff !important;
 
    p {
-     color: #fff;
+     color: #fff !important;
    }
  }
 .body4 {

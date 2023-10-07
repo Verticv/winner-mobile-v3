@@ -14,6 +14,9 @@ const TableCellRight = ({ score }) => {
 
   const betSlipData = useSelector((state) => state.counter.betSlipData)
   const handleCellClick = (score) => {
+    if (score.lock) {
+      return
+    }
     setActive((prev) => !prev)
     score._id = ''
     score._id = 'R' + score.id
@@ -30,9 +33,11 @@ const TableCellRight = ({ score }) => {
   }
   useEffect(() => {
     /* eslint-disable */
-    score._id = 'R' + score.id
-    let scoreIndex = betSlipData.findIndex(data => data._id === score._id)
-    setActive(scoreIndex > -1)
+    if (score) {
+      score._id = 'R' + score.id
+      let scoreIndex = betSlipData.findIndex(data => data._id === score._id)
+      setActive(scoreIndex > -1)
+    }
   }, [betSlipData])
 
   return (
@@ -40,13 +45,15 @@ const TableCellRight = ({ score }) => {
       onClick={() => handleCellClick(score)}>
       {!score.up && !score.down && !score.lock && (<p className='cell-score'>{score.team2_score}</p>)}
       {score.down &&
-        (<span className='d-flex justify-content-between align-items-center ' style={{ color: '#f04281', width: '6.75rem' }}>
+        (<span className='d-flex justify-content-between align-items-center '
+        style={{ color: isActive ? '#fff' : '#f04281', width: '6.75rem' }}>
           {score.team2_score}
           <img src={Up} alt="right" style={{ width: '1.313rem' }} className='blink-style' />
 
         </span>)}
       {score.up &&
-        (<span className='d-flex justify-content-between align-items-center ' style={{ color: '#0072bc', width: '6.75rem' }}>
+        (<span className='d-flex justify-content-between align-items-center '
+        style={{ color: isActive ? '#fff' : '#0072bc', width: '6.75rem' }}>
           {score.team2_score}
           <img src={Down} alt="right" style={{ width: '1.313rem' }} className='blink-style' />
         </span>)}

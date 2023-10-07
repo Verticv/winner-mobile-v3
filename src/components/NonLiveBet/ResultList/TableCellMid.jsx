@@ -12,6 +12,9 @@ const TableCellMid = ({ score }) => {
 
   const betSlipData = useSelector((state) => state.counter.betSlipData)
   const handleCellClick = (score) => {
+    if (score.lock) {
+      return
+    }
     setActive((prev) => !prev)
     score._id = ''
     score._id = 'M' + score.id
@@ -29,21 +32,25 @@ const TableCellMid = ({ score }) => {
 
   useEffect(() => {
     /* eslint-disable */
-    score._id = 'M' + score.id
-    let scoreIndex = betSlipData.findIndex(data => data._id === score._id)
-    setActive(scoreIndex > -1)
+    if (score) {
+      score._id = 'M' + score.id
+      let scoreIndex = betSlipData.findIndex(data => data._id === score._id)
+      setActive(scoreIndex > -1)
+    }
   }, [betSlipData])
 
   return (
     <div className={`cell body2 ${isActive ? 'active' : ''}`}
       onClick={() => handleCellClick(score)}>
       {score.up &&
-        (<span className='d-flex content-center align-items-center ' style={{ color: '#f04281', gap: '0.938rem' }}>
+        (<span className='d-flex content-center align-items-center '
+        style={{ color: isActive ? '#fff' : '#f04281', gap: '0.938rem' }}>
           <img src={Up} alt="right" style={{ width: '1.313rem' }} className='arrow-cell blink-style' />
           {score.score}
         </span>)}
       {score.down &&
-        (<span className='d-flex content-center align-items-center ' style={{ color: '#0072bc', gap: '0.938rem' }}>
+        (<span className='d-flex content-center align-items-center '
+        style={{ color: isActive ? '#fff' : '#0072bc', gap: '0.938rem' }}>
           <img src={Down} alt="right" style={{ width: '1.313rem' }} className='arrow-cell blink-style' />
           {score.score}
         </span>)}
