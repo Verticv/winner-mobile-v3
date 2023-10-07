@@ -6,13 +6,12 @@ import flag from '../../../assets/images/nonLiveBet/flag.png'
 import flag2 from '../../../assets/images/nonLiveBet/flag2.png'
 import flag3 from '../../../assets/images/nonLiveBet/flag3.png'
 import flag4 from '../../../assets/images/nonLiveBet/flag4.png'
-import Up from '../../../assets/images/nonLiveBet/UpArrow.png'
-import Down from '../../../assets/images/nonLiveBet/DnArrow.png'
-import lock from '../../../assets/images/nonLiveBet/lock.png'
 import Collapsible from "../Collapsible/index";
-
+import TableCellLeft from './TableCellLeft'
+import TableCellMid from './TableCellMid'
+import TableCellRight from './TableCellRight'
 const ResultList = ({ showGameMarket }) => {
-
+  
   const results = [
     {
       header: '축구 / 잉글랜드 - 프리미어리그',
@@ -20,6 +19,7 @@ const ResultList = ({ showGameMarket }) => {
       flag: flag,
       scores: [
         {
+          id: 1,
           team1: '아스널',
           team1_score: '1.25',
           team2: '리버풀',
@@ -28,6 +28,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '123'
         },
         {
+          id: 2,
           team1: '첼시',
           team1_score: '2.25',
           team2: '토트넘',
@@ -44,6 +45,7 @@ const ResultList = ({ showGameMarket }) => {
       flag: flag2,
       scores: [
         {
+          id: 3,
           team1: 'FC바르셀로나',
           team1_score: '2.21',
           team2: '아틀레티코',
@@ -52,6 +54,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '24'
         },
         {
+          id: 4,
           team1: '레알마드리드',
           team1_score: '1.74',
           team2: '레알베티스',
@@ -60,6 +63,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '55'
         },
         {
+          id: 5,
           team1: '비야레알',
           team1_score: '2.34',
           team2: '마요르카',
@@ -76,6 +80,7 @@ const ResultList = ({ showGameMarket }) => {
       flag: flag3,
       scores: [
         {
+          id: 6,
           team1: '아인트라흐트프...',
           team1_score: '1.11',
           team2: 'SC프라이부르크',
@@ -85,6 +90,7 @@ const ResultList = ({ showGameMarket }) => {
           up: true
         },
         {
+          id: 7,
           team1: '바이어레버쿠젠',
           team1_score: '33.65',
           team2: '바이에른뮌헨',
@@ -94,6 +100,7 @@ const ResultList = ({ showGameMarket }) => {
           down: true
         },
         {
+          id: 8,
           team1: 'RB라이프치히',
           team1_score: '2.78',
           team2: 'FC샬케04',
@@ -102,6 +109,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '155'
         },
         {
+          id: 9,
           team1: '보루시아도르트...',
           team1_score: '',
           team2: 'FSV마인츠05',
@@ -120,6 +128,7 @@ const ResultList = ({ showGameMarket }) => {
       flag: flag4,
       scores: [
         {
+          id: 10,
           team1: '세비야',
           team1_score: '1.67',
           team2: '지로나',
@@ -128,6 +137,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '45'
         },
         {
+          id: 11,
           team1: '레알소스에다드',
           team1_score: '2.10',
           team2: '카디스',
@@ -144,6 +154,7 @@ const ResultList = ({ showGameMarket }) => {
       flag: flag,
       scores: [
         {
+          id: 12,
           team1: '아스널',
           team1_score: '1.25',
           team2: '리버풀',
@@ -152,6 +163,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '123'
         },
         {
+          id: 13,
           team1: '첼시',
           team1_score: '2.25',
           team2: '토트넘',
@@ -167,6 +179,7 @@ const ResultList = ({ showGameMarket }) => {
       flag: flag2,
       scores: [
         {
+          id: 14,
           team1: 'FC바르셀로나',
           team1_score: '2.21',
           team2: '아틀레티코',
@@ -175,6 +188,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '24'
         },
         {
+          id: 15,
           team1: '레알마드리드',
           team1_score: '1.77',
           team2: '레알베티스',
@@ -183,6 +197,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '55'
         },
         {
+          id: 16,
           team1: '비야레알',
           team1_score: '2.34',
           team2: '마요르카',
@@ -198,6 +213,7 @@ const ResultList = ({ showGameMarket }) => {
       flag: flag2,
       scores: [
         {
+          id: 17,
           team1: '아인트라흐트프랑크푸르트',
           team1_score: '1.11',
           team2: 'SC프라이부르크',
@@ -206,6 +222,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '99'
         },
         {
+          id: 18,
           team1: '바이어레버쿠젠',
           team1_score: '2.65',
           team2: '바이에른뮌헨',
@@ -214,6 +231,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '44'
         },
         {
+          id: 19,
           team1: 'RB라이프치히',
           team1_score: '2.78',
           team2: 'FC샬케04',
@@ -222,6 +240,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '155'
         },
         {
+          id: 20,
           team1: '보루시아도르트문트',
           team1_score: '2.25',
           team2: 'FSV마인츠05',
@@ -237,6 +256,7 @@ const ResultList = ({ showGameMarket }) => {
       flag: flag4,
       scores: [
         {
+          id: 21,
           team1: '세비야',
           team1_score: '1.67',
           team2: '지로나',
@@ -245,6 +265,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '45'
         },
         {
+          id: 22,
           team1: '레알소스에다드',
           team1_score: '2.10',
           team2: '카디스',
@@ -261,6 +282,7 @@ const ResultList = ({ showGameMarket }) => {
       flag: flag,
       scores: [
         {
+          id: 23,
           team1: '아스널',
           team1_score: '1.25',
           team2: '리버풀',
@@ -269,6 +291,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '123'
         },
         {
+          id: 24,
           team1: '첼시',
           team1_score: '2.25',
           team2: '토트넘',
@@ -284,6 +307,7 @@ const ResultList = ({ showGameMarket }) => {
       flag: flag4,
       scores: [
         {
+          id: 25,
           team1: '세비야',
           team1_score: '1.67',
           team2: '지로나',
@@ -292,6 +316,7 @@ const ResultList = ({ showGameMarket }) => {
           plus: '45'
         },
         {
+          id: 26,
           team1: '레알소스에다드',
           team1_score: '2.10',
           team2: '카디스',
@@ -302,13 +327,15 @@ const ResultList = ({ showGameMarket }) => {
       ]
     },
   ]
+  
+  
   return (
     <div className='collapse-section'>
-
       {results.map((result, index) => (
         <div className='hotel-section'
           key={index}>
           <div className='collapse-card'>
+            
             <Collapsible
               open
               headerChild={
@@ -326,68 +353,12 @@ const ResultList = ({ showGameMarket }) => {
                   </div>
                 </div>
               }>
+             
               {result.scores.map((score, index) => (
-                <div className='collapse-body'>
-                  <div className='body1'>
-                    <p className='cell-team truncate'>{score.team1}</p>
-                    {score.up &&
-                      (<span className='flex content-between items-center' style={{ color: '#f04281', width: '6.813rem' }}>
-                        <img src={Up} alt="right" className='blink-style' style={{ width: '1.313rem' }} />
-                        {score.team1_score}
-                      </span>)}
-                    {score.down &&
-                      (<span className='flex content-between items-center' style={{ color: '#0072bc', width: '6.813rem' }}>
-                        <img src={Down} alt="right" className='blink-style' style={{ width: '1.313rem' }} />
-                        {score.team1_score}
-                      </span>)}
-                    {score.lock &&
-                      (<span
-                        className='flex content-center items-center'
-                        style={{ width: '3.875rem', marginLeft: '0.063rem' }}>
-                        <img src={lock} alt="right" className='lock' />
-                      </span>)}
-                    {!score.up && !score.down && !score.lock && (<p className='cell-score'>{score.team1_score}</p>)}
-                  </div>
-                  <div className='body2'>
-                    {score.up &&
-                      (<span className='flex content-center items-center ' style={{ color: '#f04281', gap: '0.938rem' }}>
-                        <img src={Up} alt="right" style={{ width: '1.313rem' }} className='arrow-cell blink-style' />
-                        {score.score}
-                      </span>)}
-                    {score.down &&
-                      (<span className='flex content-center items-center ' style={{ color: '#0072bc', gap: '0.938rem' }}>
-                        <img src={Down} alt="right" style={{ width: '1.313rem' }} className='arrow-cell blink-style' />
-                        {score.score}
-                      </span>)}
-                    {score.lock &&
-                      (<span className='flex content-center items-center '
-                        style={{ marginLeft: '0.063rem' }}>
-                        <img src={lock} alt="right" className='lock' />
-                      </span>)}
-                    {!score.up && !score.down && (<p className='cell-score'>{score.score}</p>)}
-                  </div>
-                  <div className='body3'>
-                    {!score.up && !score.down && !score.lock && (<p className='cell-score'>{score.team2_score}</p>)}
-                    {score.down &&
-                      (<span className='flex content-between items-center ' style={{ color: '#f04281', width: '6.75rem' }}>
-                        {score.team2_score}
-                        <img src={Up} alt="right" style={{ width: '1.313rem' }} className='blink-style' />
-
-                      </span>)}
-                    {score.up &&
-                      (<span className='flex content-between items-center ' style={{ color: '#0072bc', width: '6.75rem' }}>
-                        {score.team2_score}
-                        <img src={Down} alt="right" style={{ width: '1.313rem' }} className='blink-style' />
-                      </span>)}
-
-                    {score.lock &&
-                      (<span
-                        className='flex content-center items-center '
-                        style={{ width: '3.875rem', marginLeft: '0.063rem' }}>
-                        <img src={lock} alt="right" className='lock' />
-                      </span>)}
-                    <p className='cell-team truncate'>{score.team2}</p>
-                  </div>
+                <div className='collapse-body' key={index}>
+                  <TableCellLeft score={score} />
+                  <TableCellMid score={score} />
+                  <TableCellRight score={score} />
                   <div className='body4' onClick={() => showGameMarket(true)}>
                     <span>+{score.plus}</span>
                   </div>

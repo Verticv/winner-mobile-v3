@@ -4,7 +4,7 @@ import InfoHeader from '../../../assets/images/nonLiveBet/gameMarkets/info-heade
 import CloseIcon from '../../../assets/images/nonLiveBet/close.png'
 import CheckIcon from '../../../assets/images/nonLiveBet/gameMarkets/check-icon.png'
 import WarningIcon from '../../../assets/images/nonLiveBet/gameMarkets/warning-icon.png'
-const RegulationsInformation = () => {
+const RegulationsInformation = ({ close }) => {
   return (
     <div className="info-container">
       <div className="info-header">
@@ -13,7 +13,7 @@ const RegulationsInformation = () => {
           <p>스포츠 베팅규정 안내</p>
         </div>
         
-        <img src={CloseIcon} alt="close" className='close'/>
+        <img src={CloseIcon} onClick={ close}  alt="close" className='close'/>
       </div>
 
       <div className="info-content">

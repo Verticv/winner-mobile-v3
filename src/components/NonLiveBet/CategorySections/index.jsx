@@ -1,6 +1,6 @@
 import './_style.scss';
 import CloseIcon from '../../../assets/images/nonLiveBet/close.png'
-import Icon2 from '../../../assets/images/nonLiveBet/slider/Icon2.png'
+import Icon2 from '../../../assets/images/nonLiveBet/slider/Icon12.png'
 import ArrowUp from '../../../assets/images/nonLiveBet/up-arrow.png'
 import flag from '../../../assets/images/nonLiveBet/flag.png'
 import Collapsible from "../Collapsible/index";

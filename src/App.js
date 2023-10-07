@@ -17,7 +17,7 @@ import Authentication from './pages/Authentication';
 
 
 import NonLiveBet from './pages/NonLiveBet';
-
+import ScrollToTop from './components/ScrollToTop'
 function App() {
   const [isAuthenticated, setAuthenticated] = useState(false);
   const pathname = window.location.pathname;
@@ -62,79 +62,82 @@ function App() {
 // }
 
 	return (
-		<Router>
-			<div className="app">
-				<Routes>
-					<Route
-						path="/main"
-						element={
-							<>
-								{/* <Header setOpen={setOpen1} isOpen={isOpen}/> */}
-								<Header />
-								<MainPage setFooterDefaultState={setFooterDefaultState} />
-								<Footer isExpanded={isExpanded} setExpanded={setExpanded} />
-							</>
-						}
-					/>
-				</Routes>
-				{/* my page */}
-				<Routes>
-					<Route
-						path="/mypage/*"
-						element={
-							<MyPage
-								// setOpen={setOpen1}
-								isAuthenticated={isAuthenticated}
-								setAuthenticated={setAuthenticated}
-							/>
-						}
-					/>
-				</Routes>
-				<Routes>
-					<Route
-						path="/esports/*"
-						element={
-							<>
-								{/* <Header setOpen={setOpen1} isOpen={isOpen}/> */}
-								<Header />
-								<EsportsPage
+		<>
+			<Router>
+				<div className="app">
+					<Routes>
+						<Route
+							path="/main"
+							element={
+								<>
+									{/* <Header setOpen={setOpen1} isOpen={isOpen}/> */}
+									<Header />
+									<MainPage setFooterDefaultState={setFooterDefaultState} />
+									<Footer isExpanded={isExpanded} setExpanded={setExpanded} />
+								</>
+							}
+						/>
+					</Routes>
+					{/* my page */}
+					<Routes>
+						<Route
+							path="/mypage/*"
+							element={
+								<MyPage
+									// setOpen={setOpen1}
 									isAuthenticated={isAuthenticated}
 									setAuthenticated={setAuthenticated}
 								/>
-							</>
-						}
-					></Route>
-				</Routes>
-				<Routes>
-					<Route
-						path="/"
-						element={
-							<>
-								<Authentication
-									isAuthenticated={isAuthenticated}
-									setAuthenticated={setAuthenticated}
-								/>
-							</>
-						}
-					></Route>
-				</Routes>
+							}
+						/>
+					</Routes>
+					<Routes>
+						<Route
+							path="/esports/*"
+							element={
+								<>
+									{/* <Header setOpen={setOpen1} isOpen={isOpen}/> */}
+									<Header />
+									<EsportsPage
+										isAuthenticated={isAuthenticated}
+										setAuthenticated={setAuthenticated}
+									/>
+								</>
+							}
+						></Route>
+					</Routes>
+					<Routes>
+						<Route
+							path="/"
+							element={
+								<>
+									<Authentication
+										isAuthenticated={isAuthenticated}
+										setAuthenticated={setAuthenticated}
+									/>
+								</>
+							}
+						></Route>
+					</Routes>
 
-				<Routes>
-					<Route
-						path="/bet-combination"
-						element={
-							<>
-								<Header />
-								<NonLiveBet
-									isAuthenticated={isAuthenticated}
-									setAuthenticated={setAuthenticated}
-								/>
-							</>
-						}
-					></Route>
-				</Routes>
-			</div>
-		</Router>
+					<Routes>
+						<Route
+							path="/bet-combination"
+							element={
+								<>
+									<Header />
+									<NonLiveBet
+										isAuthenticated={isAuthenticated}
+										setAuthenticated={setAuthenticated}
+									/>
+								</>
+							}
+						></Route>
+					</Routes>
+				</div>
+			</Router>
+			<ScrollToTop/>
+		</>
 	);
 }
 
