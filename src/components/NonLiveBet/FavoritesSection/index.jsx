@@ -1,6 +1,6 @@
 import './_style.scss';
 import CloseIcon from '../../../assets/images/nonLiveBet/close.png'
-import Icon2 from '../../../assets/images/nonLiveBet/slider/Icon2.png'
+import Icon2 from '../../../assets/images/nonLiveBet/slider/Icon12.png'
 import star from '../../../assets/images/nonLiveBet/gameMarkets/menu-star.png'
 import CardContent from './CardContent'
 const FavoritesSection = ({ close }) => {

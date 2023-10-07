@@ -161,16 +161,16 @@
     max-width: 16.5rem;
   }
 
-  &.active {
-    background: linear-gradient(to top, #5423a0, #9d3bbb);
-    color: #fff;
-
-    p {
-      color: #fff;
-    }
-  }
+ 
 }
+.cell.active {
+   background: linear-gradient(to top, #5423a0, #9d3bbb);
+   color: #fff;
 
+   p {
+     color: #fff;
+   }
+ }
 .body4 {
   width: 7.125rem;
 

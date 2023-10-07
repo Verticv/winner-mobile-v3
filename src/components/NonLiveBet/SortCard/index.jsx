@@ -1,9 +1,14 @@
 
 import React, { useState } from 'react';
 import './_style.scss'
-import clock from '../../../assets/images/nonLiveBet/clock.png'
-import clock1 from '../../../assets/images/nonLiveBet/clock12.png'
-import clock2 from '../../../assets/images/nonLiveBet/clock22.png'
+import Clock from '../../../assets/images/nonLiveBet/clock.png'
+import ClockOn from '../../../assets/images/nonLiveBet/clock-on.png'
+
+import Heart from '../../../assets/images/nonLiveBet/heart.png'
+import HeartOn from '../../../assets/images/nonLiveBet/heart-on.png'
+
+import Chart from '../../../assets/images/nonLiveBet/chart.png'
+import ChartOn from '../../../assets/images/nonLiveBet/chart-on.png'
 import DownArrowIcon from '../../../assets/images/nonLiveBet/down-arrow.png'
 import Dropdown from '../../Shared/Dropdown'
 const SortCard = () => {
@@ -40,18 +45,21 @@ const SortCard = () => {
       <div className='sort-list'>
         <button className={`${isActive === 1 ? 'active' : ''}`}
           onClick={() => setActive(1)}>
-          <img src={clock} alt="right" style={{ width: '3.938rem' }} />
+          {isActive === 1 && (<img src={ClockOn} alt="clockOn" />)}
+          {isActive !== 1 && (<img src={Clock} alt="clock" />)}
           <p>시간순</p>
         </button>
         <button className={`${isActive === 2 ? 'active' : ''}`}
           onClick={() => setActive(2)}>
-          <img src={clock1} alt="right" style={{ width: '3.938rem' }} />
-          <p>인기순</p>
+          {isActive === 2 && (<img src={HeartOn} alt="heartOn" style={{ marginLeft:'0.063rem'}}/>)}
+          {isActive !== 2 && (<img src={Heart} alt="heart" style={{ marginLeft: '0.063rem' }} />)}
+          <p style={{marginLeft:'0.125rem'}}>인기순</p>
         </button>
         <button className={`${isActive === 3 ? 'active' : ''}`}
           onClick={() => setActive(3)}>
-          <img src={clock2} alt="right" style={{ width: '3.938rem' }} />
-          <p>리그순</p>
+          {isActive === 3 && (<img src={ChartOn} alt="chartOn" style={{ marginLeft: '0.125rem' }} />)}
+          {isActive !== 3 && (<img src={Chart} alt="chart" style={{ marginLeft: '0.125rem' }} />)}
+          <p style={{ marginLeft: '0.25rem' }}>리그순</p>
         </button>
       </div>
       <div className='select-time'>

@@ -1,5 +1,5 @@
 import CloseIcon from '../../../assets/images/nonLiveBet/close.png'
-import Icon2 from '../../../assets/images/nonLiveBet/slider/Icon2.png'
+import Icon2 from '../../../assets/images/nonLiveBet/slider/Icon12.png'
 import tag from '../../../assets/images/nonLiveBet/tag.png'
 import team1 from '../../../assets/images/nonLiveBet/team1.png'
 import team2 from '../../../assets/images/nonLiveBet/team2.png'

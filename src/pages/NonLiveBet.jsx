@@ -15,31 +15,52 @@ import Section4 from "../components/NonLiveBet/Section4/index";
 import SearchSection from "../components/NonLiveBet/SearchSection/index";
 import RegulationsInformation from '../components/NonLiveBet/RegulationsInformation'
 import GameMarkets from "../components/NonLiveBet/GameMarkets";
+
+import CartButton from "../components/NonLiveBet/BetCart/CartButton";
+import BetCart from "../components/NonLiveBet/BetCart/index";
+
+import FixedMenu from '../components/FixedMenu';
+import { useSelector } from 'react-redux'
 function NonLiveBet() {
+  
   const [activeButton, setActiveButton] = useState(null)
   const [gameMarket, showGameMarket] = useState(false)
-  
-  useEffect(() => {
-    const Header = document.querySelector('.header');
-    const PageHeader = document.querySelector('.page-header');
-    const ScoreBanner = document.querySelector('.score-banner');
-
-    
+  const [isOpenInfo, openInfoCard] = useState(false)
+  const [isOpen, openCartBet] = useState(false)
+  const [isOpenedBefore, setOpenInfoCard] = useState(false)
+  const cartFlag = useSelector((state) => state.counter.cartFlag)
+  const handleGameMarket = () => {
+    if (isOpenedBefore) {
+      showGameMarket(true)
+    } else {
+      openInfoCard(true)
+      setOpenInfoCard(true)
+    }
+  }
+  useEffect(() => {    
     const addFixedClass = () => {
-      let list = PageHeader.classList
-      list.add("fixed-header");
-      let header_list = Header.classList
-      header_list.add("fixed-header");
-      ScoreBanner.style.display = 'block'
+      const Header = document.querySelector('.header');
+      const PageHeader = document.querySelector('.page-header');
+      const ScoreBanner = document.querySelector('.score-banner');
+
+      let list = PageHeader?.classList
+      list?.add("fixed-header");
+      let header_list = Header?.classList
+      header_list?.add("fixed-header");
+      if (ScoreBanner) ScoreBanner.style.display = 'block'
     }
 
 
     const removeFixedClass = () => {
-      let list = PageHeader.classList
-      list.remove("fixed-header");
-      let header_list = Header.classList
-      header_list.remove("fixed-header");
-      ScoreBanner.style.display = 'none'
+      const Header = document.querySelector('.header');
+      const PageHeader = document.querySelector('.page-header');
+      const ScoreBanner = document.querySelector('.score-banner');
+
+      let list = PageHeader?.classList
+      list?.remove("fixed-header");
+      let header_list = Header?.classList
+      header_list?.remove("fixed-header");
+      if (ScoreBanner) ScoreBanner.style.display = 'none'
     }
 
 
@@ -52,10 +73,15 @@ function NonLiveBet() {
       }
     });
   })
-
+  useEffect(() => {
+    if (cartFlag) {
+      openCartBet(true)
+    }
+  }, [cartFlag])
+  
   return (
     <div className="container relative">
-      {!gameMarket && (
+      {!gameMarket && !isOpenInfo &&(
         <>
         <MainTabs />
         {!activeButton &&
@@ -63,9 +89,9 @@ function NonLiveBet() {
             <MenusBar setActiveButton={setActiveButton} />
             <HorizontalSlider />
             <StatisticsCard />
-            <NoteCard />
+            <NoteCard openInfoCard={openInfoCard} />
             <SortCard />
-            <ResultList showGameMarket={showGameMarket} />
+            <ResultList showGameMarket={handleGameMarket} />
           </>)
         }
         {activeButton === 'menu' && (<CategorySections close={() => setActiveButton(null)} />)}
@@ -74,10 +100,20 @@ function NonLiveBet() {
         {activeButton === 'win2' && (<Section4 close={() => setActiveButton(null)} />)}
         {activeButton === 'search' && (<SearchSection close={() => setActiveButton(null)} />)}
 
-        <RegulationsInformation />
+
         </>
       )}
-      {gameMarket && (<GameMarkets close={() => showGameMarket(false)} />)}
+      {gameMarket && !isOpenInfo && (<GameMarkets close={() => showGameMarket(false)} />)}
+      <CartButton openCartBet={openCartBet} />
+
+     
+      {isOpen && (<BetCart close={() => (openCartBet(false))} />)}
+      {isOpenInfo && (<RegulationsInformation close={() => {
+        openInfoCard(false)
+        showGameMarket(true)
+      }
+      } />)}
+      <FixedMenu/>
     </div>
   )
 }

@@ -1,0 +1,872 @@
+.cart-btn {
+  width: 9.875rem;
+  height: 9.875rem;
+  border-radius: 50%;
+  background-color: rgba( 255,255,255,0.8);
+  border: 0.375rem solid #f04281;
+  box-shadow: 0.313rem 0.541rem 1.875rem 0 rgba(0, 0, 0, 0.8);
+  position: fixed;
+  bottom: 15.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  img {
+    margin-top: 0.625rem;
+    margin-left: -0.875rem;
+    width: 5.125rem;
+  }
+  .cart-badge {
+    position: absolute;
+    top: -1.125rem;
+    right: -1rem;
+    min-width: 4.25rem;
+    height: 4.25rem;
+    border-radius: 2.063rem;
+    background-color: #f04281;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    p {
+      margin: 0;
+      font-size: 2.813rem;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}
+.bet-cart__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 0.938rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  overflow: auto;
+  max-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  .bet-cart__container {
+    max-width: 75.75rem;
+    width: 75.75rem;
+    margin: 0 auto;
+    border-top-right-radius: 1.125rem;
+    border-top-left-radius: 1.125rem;
+    background-color: #fff;
+    background: linear-gradient(to top, #ffffff, #cb78e6);
+    padding: 0.188rem;
+    max-height: 100vh;
+    overflow: auto;
+  }
+  .bet-cart__header {
+    height: 7.5rem;
+    background: linear-gradient(to right, #9d3bbb, #5423a0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem 0 1.75rem;
+    border-top-right-radius: 1.125rem;
+    border-top-left-radius: 1.125rem;
+  }
+
+  .bet-cart__title {
+    color: #eeeeee;
+    font-size: 2.625rem;
+  }
+  .bet-cart__actions {
+    gap: 0.188rem;
+    margin-top: 0.188rem;
+
+    img {
+      width: 6.125rem;
+    }
+  }
+  .bet-cart__settings {
+    >div {
+      padding: 1.875rem 2.563rem 1.875rem 1.75rem;
+      border-bottom: 0.188rem solid #cccccc;
+  
+      &:first-of-type {
+        height: 9rem;
+        background-color: #eee;
+        border-top: 0.188rem solid #cccccc;
+  
+        p {
+          margin: 0;
+          color: #444444;
+          font-size: 2.438rem;
+          font-weight: bold;
+          margin-top: 0.375rem;
+          letter-spacing: -0.025em;
+        }
+  
+        img {
+          margin-top: 0.688rem;
+        }
+      }
+  
+      &:nth-of-type(2) {
+        height: 6.375rem;
+        background-color: #ddd;
+  
+        p {
+          margin: 0;
+          color: #444444;
+          font-size: 2.25rem;
+          font-weight: bold;
+          letter-spacing: -0.025em;
+        }
+      }
+  
+      &.check-group {
+        height: 6.375rem;
+        background-color: #ddd;
+  
+        p {
+          margin: 0;
+          padding-left: 1.875rem;
+          color: #666666;
+          font-size: 2.25rem;
+        }
+      }
+    }
+  }
+
+  .bet-cart__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8.563rem;
+  }
+  
+  .bet-cart__tab {
+    height: 8.563rem;
+    background: linear-gradient(to top, #a281cf, #f0d3ff);
+    padding: 0.188rem;
+    flex-shrink: 0;
+
+    >div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to top, #ccc4ff, #ffd9f5);
+      height: 100%;
+
+    }
+
+    p {
+      color: #5e399a;
+      font-size: 2.625rem;
+      font-weight: bold;
+      // margin-right: 0.688rem;
+      letter-spacing: -0.025em;
+    }
+
+    .count {
+      width: 3.688rem;
+      height: 3.688rem;
+      border: 0.188rem solid #f4ecce;
+      background-color: #682aa7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-left: 0.75rem;
+      p {
+        font-size: 2.25rem;
+        font-weight: bold;
+        color: #fff;
+        margin: 0;
+        margin-top: -0.188rem;
+      }
+    }
+
+    img {
+      margin-right: 0.938rem;
+    }
+
+    &.active {
+      background: linear-gradient(to top, #7452aa, #e597ff);
+
+      div {
+        background: linear-gradient(to top, #6b22ff, #df52ff);
+      }
+
+      p {
+        color: #fff;
+      }
+
+      .count {
+        background-color: #f04281 !important;
+      }
+    }
+
+    &:first-child {
+      width: 37.813rem;
+      padding-right: 0;
+
+      img {
+        margin-left: -0.625rem;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 37.938rem;
+
+      >div {
+        padding-left: 0.688rem;
+      }
+
+      img {
+        margin-left: -0.438rem;
+        margin-right: 1.313rem;
+      }
+
+    }
+  }
+
+
+  .bet-cart__details {
+    padding-top: 0.375rem;
+
+    .details__card {
+      width: 74.625rem;
+      border-radius: 1.125rem;
+      margin: auto;
+      background: linear-gradient(to right, #d4e8ff, #ffeaf5);
+      border: 0.188rem solid #bbbbbb;
+      overflow: hidden;
+      margin-bottom: 0.375rem;
+    }
+
+    .details__header {
+      height: 7.5rem;
+      padding: 0 1.375rem 0 1.188rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to right, #9d3bbb, #5423a0);
+
+      .details__id {
+        font-size: 2.438rem;
+        font-weight: bold;
+        letter-spacing: -0.025em;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin-top: -0.375rem;
+
+        button {
+          width: 9rem;
+          height: 4.313rem;
+          border: 0.188rem solid #6b2539;
+          background-color: #d60447;
+          border-radius: 0.75rem;
+          margin-left: 1.063rem;
+          margin-top: 0.375rem;
+
+          p {
+            margin: 0;
+            color: #fff;
+            font-size: 2.063rem;
+            font-weight: bold;
+            letter-spacing: -0.025em;
+            margin-left: -0.25rem;
+
+          }
+        }
+      }
+
+      .details__time {
+        p {
+          margin: 0;
+          color: #fff;
+          font-size: 2.438rem;
+          font-weight: bold;
+          letter-spacing: -0.025em;
+        }
+      }
+    }
+
+    .details__cell {
+      padding: 1.563rem 1.188rem 1.063rem 1.188rem;
+      background: linear-gradient(to left, #d4e8ff, #ffeaf5);
+      border-bottom: 0.188rem solid #bbbbbb;
+
+      p {
+        margin: 0;
+        font-size: 2.438rem;
+        letter-spacing: -0.025em;
+        color: #666666;
+        margin-bottom: 0.75rem;
+      }
+
+      span {
+        font-size: 2.438rem;
+        letter-spacing: -0.025em;
+        color: #0072bc;
+        font-weight: bold;
+        margin-right: 0.188rem;
+      }
+    }
+
+    .details__list {
+
+      >div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 6.375rem;
+        background-color: #ffffff;
+        border-bottom: 0.188rem solid #eeeeee;
+        padding: 0 1.375rem 0 1.188rem;
+      }
+
+      p {
+        margin: 0;
+        font-size: 2.438rem;
+        letter-spacing: -0.025em;
+        color: #666666;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .bet-cart__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.438rem 1.688rem 0.438rem 1.875rem;
+    height: 7.313rem;
+    background-color: #eeeeee;
+    border-top: 0.188rem solid #dddddd;
+    border-bottom: 0.188rem solid #dddddd;
+
+    .select-time {
+      width: 18.375rem;
+      height: 5.438rem;
+      background: #fff;
+      border: 0.188rem solid #aaaaaa;
+      border-radius: 0.75rem;
+      flex-shrink: 0;
+    }
+
+
+
+    .select-time .content .container {
+      height: 5.438rem;
+      width: 100%;
+    }
+
+    .select-time .content .container .select-overlay {
+      height: 100%;
+      width: 100%;
+    }
+
+    .select-time .content .container .sort-by-div p {
+      color: #444;
+      font-size: 2.25rem;
+    }
+
+    .sort-by-div {
+      align-items: center;
+      display: flex;
+      justify-content: space-between
+    }
+
+    .delete {
+      gap: 0.688rem;
+      cursor: pointer;
+      p {
+        color: #666666;
+        font-size: 2.438rem;
+        font-weight: bold;
+        margin: 0;
+        letter-spacing: -0.031em;
+        margin-top: 0.188rem;
+      }
+
+      img {
+        width: 3.25rem;
+      }
+    }
+  }
+  
+
+  .bet-cart__empty {
+    height: 13.5rem;
+    background-color: #5e399a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    p {
+      margin: 0;
+      color: #fff;
+      font-size: 2.438rem;
+      text-align: center;
+      letter-spacing: -0.025em;
+    }
+  }
+  .bet-cart__amounts {
+    border-top: 0.188rem solid #dddddd;
+    .bet-cart__amount-cell {
+      padding: 0 1.75rem;
+      height: 8.813rem;
+      background-color: #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 0.188rem solid #dddddd;
+
+      &:nth-child(2) {
+        border-color: #cccccc;
+      }
+
+      p {
+        margin: 0;
+        color: #444444;
+        font-size: 2.625rem;
+        font-weight: bold;
+        letter-spacing: -0.025em;
+        margin-bottom: 0.5rem;
+      }
+
+      .amount-held {
+        font-size: 2.813rem;
+        color: #33a1e9;
+        margin-bottom: 0.625rem;
+      }
+    }
+  }
+  .input-field {
+    width: 41.813rem;
+    height: 6.375rem;
+    border: 0.188rem solid #aaaaaa;
+    border-radius: 0.75rem;
+    position: relative;
+    overflow: hidden;
+    margin-right: 0.125rem;
+
+    input {
+      width: 100%;
+      height: 100%;
+      outline: none;
+      border-width: 0;
+      color: #f04281;
+      text-align: right;
+      padding-right: 1.875rem;
+      font-size: 2.625rem;
+      font-weight: bold;
+      letter-spacing: -0.025em;
+    }
+
+    ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #f04281;
+      /* Firefox */
+    }
+  }
+
+  .refresh-icon {
+    width: 5.625rem;
+    position: absolute;
+    left: 0.188rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .bet-cart__calculator {
+    // height: 28.563rem;
+    background-color: #dddddd;
+    border-bottom: 0.188rem solid #cccccc;
+    padding: 1.875rem;
+    padding-bottom: 1.938rem;
+  }
+  
+  .bet-cart__numbers {
+    gap: 0.563rem;
+    margin-bottom: 0.563rem;
+    display: flex;
+
+    button {
+      width: 9.875rem;
+      height: 8.5rem;
+      border-radius: 0.75rem;
+      background-color: #fff;
+      box-shadow: 0rem 0.188rem 0.313rem 0 rgba(0, 0, 0, 0.5);
+      color: #444444;
+      font-size: 2.625rem;
+      font-weight: bold;
+      letter-spacing: -0.025em;
+
+      &.cross-btn {
+        width: 19.438rem;
+
+        img {
+          margin-left: -0.5rem;
+        }
+
+      }
+    }
+  }
+  
+  .plus-btns {
+    gap: 0.563rem;
+    display: flex;
+
+    button {
+      border-radius: 0.75rem;
+      height: 6.563rem;
+      width: 16.813rem;
+      padding: 0.188rem;
+      background: linear-gradient(to top, #866bbe, #f0d3ff);
+      box-shadow: 0rem 0.188rem 0.375rem 0 rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+
+      >div {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.75rem;
+        background: linear-gradient(to top, #ccc4ff, #ffd9f5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #444444;
+        font-size: 2.625rem;
+        font-weight: bold;
+        letter-spacing: -0.025em;
+        text-shadow: 0px 0px 0.313rem rgba(0, 0, 0, 0.4);
+      }
+
+      &.active {
+        width: 19.438rem;
+        background: linear-gradient(to top, #3e1d6b, #c95fee);
+
+        >div {
+          background: linear-gradient(to top, #5423a0, #9d3bbb);
+          color: #fff;
+          text-shadow: 0px 0px 0.938rem rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+  .bill-info {
+    background-color: #fff;
+  }
+
+  .bill-info-content {
+    height: 15.375;
+
+  }
+
+  .bill-info-row {
+    padding: 1.875rem 1.875rem 1.875rem 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:nth-child(2) {
+      padding-top: 0.188rem;
+      padding-bottom: 3.063rem;
+    }
+
+    p {
+      margin: 0;
+      color: #444444;
+      font-size: 2.438rem;
+      font-weight: bold;
+      letter-spacing: -0.025em;
+      margin-top: 1rem;
+    }
+
+  }
+
+  .bill-info-row2 {
+    padding: 1.875rem 1.875rem 1.875rem 1.688rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8.625rem;
+
+    p {
+      margin: 0;
+      color: #5e399a;
+      font-size: 2.438rem;
+      font-weight: bold;
+      letter-spacing: -0.025em;
+    }
+
+  }
+
+  .divided-line {
+    height: 0.188rem;
+    width: 100%;
+    background-color: #eeeeee;
+  }
+
+  .bill-info-content2 {
+    background-color: #dddddd;
+    border-bottom: 0.188rem solid #cccccc;
+
+    .bill-info-content-row {
+      // padding: 1.875rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 6.5rem;
+      border-top: 0.188rem solid #cccccc;
+
+      >div {
+        height: 6.5rem;
+
+      }
+
+      p {
+        margin: 0;
+        color: #666666;
+        font-size: 2.438rem;
+      }
+    }
+
+    .v-line {
+      width: 0.188rem !important;
+      background-color: #cccccc;
+      flex-shrink: 0;
+    }
+  }
+
+  .submit-btn {
+    display: flex;
+    justify-content: center;
+    margin: 1.875rem 0;
+
+    button {
+      border-radius: 1.125rem;
+      height: 8.563rem;
+      width: 71.625rem;
+      padding: 0.188rem;
+      background: linear-gradient(to top, #921d5c, #ff85b1);
+      box-shadow: 0rem 0.375rem 0.375rem 0 rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+
+      >div {
+        height: 100%;
+        background: linear-gradient(to top, #911c5c, #f04281);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.563rem;
+        border-radius: 1.125rem;
+
+        img {
+          margin-top: 0.625rem;
+        }
+
+        p {
+          margin: 0;
+          color: #ffff;
+          font-size: 2.813rem;
+          font-weight: bold;
+          letter-spacing: -0.025em;
+          text-shadow: 0px 0px 0.938rem rgba(0, 0, 0, 0.5);
+          margin-top: 0.25rem;
+        }
+      }
+    }
+  }
+}
+
+
+.check-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  overflow: hidden;
+  height: 100vh;
+  .check-popup__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 72.75rem;
+    background-color: #fff;
+    border-radius: 3.75rem;
+    background: linear-gradient(90deg, rgb(204, 196, 255) 0%, rgb(255, 216, 245) 100%);
+    box-shadow: 0 0 3.12rem 0 rgba(0, 0, 0, 0.6), inset 0 0.375rem 0 0 rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+  }
+  .check-popup__header {
+    height: 9.25rem;
+    background: linear-gradient(to right,#9d3bbb 0%, #5423a0 100%);
+    padding-top: 0.188rem;
+    border-top-right-radius: 3.75rem;
+    border-top-left-radius: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  inset 0 0.375rem 0 0 rgba(255, 255, 255, 0.3);
+    p {
+      margin: 0;
+      color: #fff;
+      font-size: 3.75rem;
+      font-weight: bold;
+      margin-top: 0.438rem;
+    }
+    .close {
+      width: 3.625rem;
+      position: absolute;
+      top: 50%;
+      right: 2.938rem;
+      transform: translateY(-50%);
+    }
+  }
+  .check-popup__body {
+    background-color: #dfdbfa;
+    padding: 3.75rem 2.75rem 5.625rem;
+    margin: auto;
+    .check-popup__content {
+      width: 67.313rem;
+      height: 33rem;
+      background-color: rgb(255, 255, 255);
+      border-style: solid;
+      border-width: 0.188rem;
+      border-color: rgb(187, 187, 187);
+      border-radius: 1.875rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3.75rem;
+  
+      p {
+        margin: 0;
+        color: #666666;
+        font-size: 2.625rem;
+        letter-spacing: -0.025em;
+      }
+  
+      p.ticket-id {
+        font-size: 2.438rem;
+        font-weight: bold;
+        margin-top: 1.188rem;
+        span {
+          color: #0072bc;
+        }
+      }
+    }
+    button {
+      width: 56.625rem;
+      max-width: 56.625rem;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 8.438rem;
+      background: linear-gradient(to right, rgb(223, 82, 255) 0%, rgb(107, 34, 255) 100%);
+      border-radius: 4.188rem;
+      box-shadow: 0 0.563rem 0.938rem 0 rgba(0, 0, 0, 0.3);
+      p {
+        margin: 0;
+        color: #fff;
+        font-size: 3rem;
+        letter-spacing: -0.025em;
+      }
+    }
+  }
+  
+  
+}
+.bet-card {
+  margin: 0.625rem;
+  border: 0.188rem solid #ac8acb;
+  border-radius: 1.125rem;
+  // height: 18.25rem;
+  background: linear-gradient(to right, #ffeaf5, #d4e8ff);
+  overflow: hidden;
+
+  .bet-header {
+    height: 7.5rem;
+    background: linear-gradient(to right, #9d3bbb, #5423a0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.125rem 0 0.938rem;
+
+    p {
+      margin: 0;
+      color: #fff;
+      font-size: 2.438rem;
+      font-weight: bold;
+    }
+
+    .bet-actions {
+      img {
+        margin-left: 1.875rem;
+      }
+    }
+  }
+
+  .bet-body {
+    height: 10.5rem;
+    padding-top: 1.438rem;
+
+    >div {
+      padding: 0 1.125rem 0 0.938rem;
+
+      p {
+        margin: 0;
+        color: #666666;
+        font-size: 2.438rem;
+        margin-bottom: 0.75rem;
+      }
+    }
+  }
+}
+
+.bet-card2 {
+  height: 12.375rem;
+  margin: 0.563rem;
+  border: .188rem solid #5e399a;
+  border-radius: 1.125rem;
+  background: linear-gradient(to left, #6b22ff, #df52ff);
+  padding: 2.063rem 1.125rem 0 1.063rem;
+  position: relative;
+
+  .bet-card2-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.313rem;
+
+    img {
+      margin-right: 0.625rem;
+      margin-left: 0.125rem;
+    }
+  }
+
+  p {
+    margin: 0;
+    color: #fff;
+    font-size: 2.438rem;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+  }
+
+  .bet-card2-close {
+    position: absolute;
+    top: 1.063rem;
+    right: 1.125rem;
+    cursor: pointer;
+    width: 2.438rem;
+  }
+}
+

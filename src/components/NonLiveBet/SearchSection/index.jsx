@@ -3,7 +3,7 @@ import './_style.scss'
 import SearchBack from '../../../assets/images/nonLiveBet/search-back.png'
 import CloseIcon from '../../../assets/images/nonLiveBet/close-icon.png'
 import SearchIcon from '../../../assets/images/nonLiveBet/search-icon.png'
-import Icon2 from '../../../assets/images/nonLiveBet/slider/Icon2.png'
+import Icon2 from '../../../assets/images/nonLiveBet/slider/Icon12.png'
 const SearchSection = ({ close }) => {
   const [inputValue, setInputValue] = useState(null)
   return (
