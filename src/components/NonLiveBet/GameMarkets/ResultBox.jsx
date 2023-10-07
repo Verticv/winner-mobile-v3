@@ -194,7 +194,7 @@ const ResultBox = () => {
   return (
     <div>
       {results.map((result, index) => (
-        <CardBox data={result} />
+        <CardBox data={result} key={index}/>
         )
       )}
     

@@ -31,8 +31,8 @@ const ResultCell = ({ data, type }) => {
   useEffect(() => {
     /* eslint-disable */
     if (data) {
-      data._id = type + score.id
-      let scoreIndex = betSlipData.findIndex(data => data._id === data._id)
+      data._id = type + data.id
+      let scoreIndex = betSlipData.findIndex(d => d._id === data._id)
       setActive(scoreIndex > -1)
     }
   }, [betSlipData])
@@ -45,7 +45,8 @@ const ResultCell = ({ data, type }) => {
       {type === 'L' && (
         <>
         <div>{data.team1}</div>
-          {data.withArrows && <div className='score d-flex align-items-center justify-content-between' style={{ width: '6.75rem', color:'#f04281' }}>
+          {data.withArrows && <div className='score d-flex align-items-center justify-content-between'
+            style={{ width: '6.75rem', color: isActive?'#fff':'#f04281' }}>
             <img src={Up} alt="right" className='blink-style' style={{ width: '1.313rem' }} />
             {data.team1_score}
           </div>}
@@ -56,7 +57,8 @@ const ResultCell = ({ data, type }) => {
       {type === 'M' && (
         <>
           <div>{data.team2}</div>
-          {data.withArrows && <div className='score d-flex align-items-center justify-content-between' style={{ width: '6.75rem', color: '#0072bc' }}>
+          {data.withArrows && <div className='score d-flex align-items-center justify-content-between'
+            style={{ width: '6.75rem', color: isActive ? '#fff':'#0072bc' }}>
             <img src={Down} alt="right" className='blink-style' style={{ width: '1.313rem' }} />
             2.53</div>}
           {data.lock && <img src={lock} alt="right" className='lock' style={{ marginRight: '0.875rem' }} />}

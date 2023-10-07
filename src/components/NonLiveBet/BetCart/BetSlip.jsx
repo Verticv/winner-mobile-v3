@@ -96,7 +96,7 @@ const BetSlip = () => {
       </div>)}
       
       {betSlipData.map(item => (
-        <div className='bet-card'>
+        <div className='bet-card' key={item._id}>
           <div className='bet-header'>
             <p>아스널 VS 리버플</p>
             <div className='bet-actions'>
