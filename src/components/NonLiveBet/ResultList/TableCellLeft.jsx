@@ -14,6 +14,9 @@ const TableCellLeft = ({ score }) => {
   const betSlipData = useSelector((state) => state.counter.betSlipData)
 
   const handleCellClick = (score) => {
+    if (score.lock) {
+      return 
+    }
     setActive((prev) => !prev)
     score._id = ''
     score._id = 'L' + score.id
@@ -31,9 +34,11 @@ const TableCellLeft = ({ score }) => {
 
   useEffect(() => {
     /* eslint-disable */
-    score._id = 'L' + score.id
-    let scoreIndex = betSlipData.findIndex(data => data._id === score._id)
-    setActive(scoreIndex > -1)
+    if (score) {
+      score._id = 'L' + score.id
+      let scoreIndex = betSlipData.findIndex(data => data._id === score._id)
+      setActive(scoreIndex > -1)
+    }
   }, [betSlipData])
   
   return (
@@ -41,18 +46,20 @@ const TableCellLeft = ({ score }) => {
       onClick={() => handleCellClick(score)}>
       <p className='cell-team truncate'>{score.team1}</p>
       {score.up &&
-        (<span className='d-flex justify-content-between align-items-center' style={{ color: '#f04281', width: '6.813rem' }}>
+        (<span className='d-flex justify-content-between align-items-center'
+        style={{ color: isActive?'#fff':'#f04281', width: '6.813rem' }}>
           <img src={Up} alt="right" className='blink-style' style={{ width: '1.313rem' }} />
           {score.team1_score}
         </span>)}
       {score.down &&
-        (<span className='d-flex justify-content-between align-items-center' style={{ color: '#0072bc', width: '6.813rem' }}>
+        (<span className='d-flex justify-content-between align-items-center'
+        style={{ color: isActive ? '#fff' : '#0072bc', width: '6.813rem' }}>
           <img src={Down} alt="right" className='blink-style' style={{ width: '1.313rem' }} />
           {score.team1_score}
         </span>)}
       {score.lock &&
         (<span
-          className='d-flex content-center align-items-center'
+        className='d-flex justify-content-center align-items-center'
           style={{ width: '3.875rem', marginLeft: '0.063rem' }}>
           <img src={lock} alt="right" className='lock' />
         </span>)}
