@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import HomePageTopBanner from '../HomePageTopBanner';
 import Header from '../../Header'
@@ -248,7 +248,6 @@ const FreeBoard = ({
     const navigate = useNavigate();
     
     const [page, setPage] = useState(0);
-    const [selectedTab, setSelectedTab] = useState(0)
 
     useEffect(() => {
         if (activeButton) {
