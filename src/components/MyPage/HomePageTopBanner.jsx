@@ -2,6 +2,8 @@
 
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { createBrowserHistory } from "history";
+
 import HomeIcon from '../../assets/myPage/home-white.png'
 import LeftArrowIcon from '../../assets/myPage/LeftArrow-white.png'
 import './_myPage.scss';
@@ -9,6 +11,7 @@ import './_myPage.scss';
 
 const HomePageTopBanner = ({ pageTitle, toPath = "/mypage", isFreeboard = false, setOpen, isOpen }) => {
     const navigate = useNavigate();
+    const history = createBrowserHistory();
 
     useEffect(() => {
         console.log('isOpen2', isOpen);
@@ -19,15 +22,13 @@ const HomePageTopBanner = ({ pageTitle, toPath = "/mypage", isFreeboard = false,
         <>
             <div className='Home-page-top-banner'>
                 <img
-                    //  onClick={() => {
-                    //     // window.location.pathname.includes('/mypage/coupon/all') ? navigate('/mypage') :
-                    //     navigate('/mypage')
-                    // }
-                    // }
+
                     onClick={() => {
                         // window.location.pathname.includes('/mypage/coupon/all') ? navigate('mypage/coupon') :
-                        // isFreeboard ? navigate(-1) : navigate(toPath);
-                        setOpen(prev => !prev)
+                        // isFreeboard ? history.back() : navigate(toPath);
+                        // setOpen(prev => !prev)
+                        // window.location.pathname.includes('/mypage/coupon/all') ? navigate('mypage/coupon') : navigate(-1);
+                        history.back();
                     }
                     }
                     className='left-arrow'

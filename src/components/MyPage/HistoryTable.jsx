@@ -180,9 +180,9 @@ const HistoryTable = ({
                                 }
                                 return (
                                     <div key={index} style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginTop: "-0.313rem", marginBottom: '0.75rem', color: firstColumnColor, letterSpacing: '-0.07rem', marginLeft: '0.14rem', display: 'flex', width: '100%' }}>
-                                        <span className='font-spoqaMedium text-gray-r585858' style={{ fontSize: '2.624375rem', color: '#444444', fontFamily: 'SpoqaHanSansNeoMedium', flexShrink: 0, marginRight: '0.8rem' }}>{firstRowKeysName[0]} : </span>
-                                        <span className='font-spoqa' style={{
-                                            fontFamily: 'SpoqaHanSansNeo', color: '', display: 'inline-flex',
+                                        <span className='text-gray-r585858' style={{ fontSize: '2.624375rem', color: '#444444', flexShrink: 0, marginRight: '0.8rem' }}>{firstRowKeysName[0]} : </span>
+                                        <span style={{
+                                            color: '', display: 'inline-flex',
                                             wordBreak: 'break-all',
                                             maxWidth: firstRowKeysName[0] === '아이디' ? '' : isPointPage ? '57rem' : (firstRowKeysName[0] === '쿠폰명') ? isGift ? '42rem' : hasButton ? '48rem' : '47rem' : width45 ? '45rem' : hasButton ? isGift ? '32rem' : isCoupon ? '38rem' : '39.7rem' : '39.7rem',
                                             overflow: firstRowKeysName[0] === '아이디' ? 'hidden' : '',

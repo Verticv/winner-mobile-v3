@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-
-// import "./style.css";
+import './_dropdown.scss';
 
 
 const SortBy = ({ children, options, value, onChange, onClick, multiple, withArrow }) => (

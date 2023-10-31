@@ -908,8 +908,8 @@
   width: 15rem !important;
 
   div {
-    margin-left: 1.813rem;
-    margin-top: -0.438rem;
+    margin-left: 0.5rem;
+    margin-top: 2.5rem;
   }
 
   img {
@@ -2007,13 +2007,13 @@ input[type='radio'].radio-input:checked::before {
 
         .text {
           height: 4.4rem;
-          font-family: 'SpoqaHanSansNeoMedium';
           font-size: 2.25rem;
           letter-spacing: -0.2rem;
           display: flex;
           justify-content: center;
           align-items: center;
           color: #ccc2b6;
+          font-weight: 500;
         }
       }
     }

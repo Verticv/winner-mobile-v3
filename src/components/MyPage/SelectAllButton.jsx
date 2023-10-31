@@ -97,7 +97,7 @@ const SelectAllButton = (
                         }}
                         className="div-border flex items-center justify-center h-full w-full rounded-2xl border border-gray-r737579 cursor-pointer"
                     >
-                        <span style={{ fontSize: '2.8125rem' }} className="text font-spoqaMedium tracking-tight text-14px text-white  mb-2">{isAllSelected ? "선택해제" : "전체선택"}</span>
+                        <span style={{ fontSize: '2.8125rem' }} className="text tracking-tight text-14px text-white  mb-2">{isAllSelected ? "선택해제" : "전체선택"}</span>
                     </div>
                 </button>
                 <button
@@ -111,7 +111,7 @@ const SelectAllButton = (
                         }}
                         className="div-border flex items-center justify-center h-full w-full rounded-2xl border border-red-f36576 cursor-pointer"
                     >
-                        <span style={{ fontSize: '2.8125rem' }} className="text font-spoqaMedium tracking-tight text-14px text-white mb-2">{btn1Text}</span>
+                        <span style={{ fontSize: '2.8125rem' }} className="text tracking-tight text-14px text-white mb-2">{btn1Text}</span>
                     </div>
                 </button>
             </div>

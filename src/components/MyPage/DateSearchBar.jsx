@@ -399,7 +399,7 @@ const DateSearchBar = ({
                             <div className="text-con"
                                 style={{ background: withBlackButton ? '' : 'linear-gradient(to top, #6b22ff, #df52ff)' }}
                             >
-                                <span style={{color: withBlackButton ? "" : "#ffffff"}} className={` ${ withBlackButton ? "" : "shadow-to-text"} font-spoqaMedium tracking-tight text-white pt-px`}>{withBlackButton ? "3개월" : "검색"}</span>
+                                <span style={{color: withBlackButton ? "" : "#ffffff"}} className={` ${ withBlackButton ? "" : "shadow-to-text"} tracking-tight text-white pt-px`}>{withBlackButton ? "3개월" : "검색"}</span>
                             </div>
                         </div>
                     ) : (

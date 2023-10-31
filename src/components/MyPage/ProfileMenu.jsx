@@ -313,7 +313,8 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
       icon2: MenuIcon_Light_9,
       title: '게시판',
       hasBadge: false,
-      hasList: false
+      hasList: false,
+      path: '/mypage/freeboard'
     },
     {
       id: 10,

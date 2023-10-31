@@ -17,6 +17,7 @@ import MoneyChargeHistory from '../components/MyPage/MoneyChargeHistory';
 import MoneyExchangePage from '../components/MyPage/MoneyExchangePage';
 import PointsPage from '../components/MyPage/PointsPage';
 import GameResultsPage from '../components/MyPage/GameResultsPage';
+import FreeBoard from '../components/MyPage/FreeBoard';
 
 import activeIcon1 from '../assets/mainPage/icons/recharge-application2-v3.png';
 import activeIcon2 from '../assets/mainPage/icons/active-icon22_v3.png';
@@ -71,7 +72,7 @@ const tabsArray1 = [
       <Route path="/bet-history/*" element={<>
         <Header/> 
         <NoticeBanner />
-        <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' isOpen={isOpen2} setOpen={setOpen2} />
+        <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' />
         <BetHistoryTest isAuthenticated={isAuthenticated}
                         subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
         />
@@ -201,7 +202,6 @@ const tabsArray1 = [
             <Route path="/win-lose-settlement"
                 element={
                     <>  
-                        <ScrollButton />
                         <WinLoseSettlement isAuthenticated={true} setAuthenticated={setAuthenticated}
                             activeButton={activeButton}
                             setActiveButton={setActiveButton}
@@ -214,6 +214,22 @@ const tabsArray1 = [
                 }
             >
 
+            </Route>
+
+            <Route path="/freeboard"
+                element={
+                    <>  
+                      <FreeBoard isAuthenticated={true} setAuthenticated={setAuthenticated}
+                            activeButton={activeButton}
+                            setActiveButton={setActiveButton}
+                      />
+                        <FixedMenu 
+                          selectedTab={selectedTab} 
+                          setSelectedTab={setSelectedTab}
+                        /> 
+                    </>
+                }
+            >
             </Route>
 
             <Route path="/coupon/*"

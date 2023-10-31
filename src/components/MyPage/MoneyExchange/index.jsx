@@ -31,7 +31,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
 
     const Title = ({ text }) => (
         <div style={{ width: "21rem", marginRight: '1.7rem', background: '#9b6bd4', flexShrink: '0', borderRadius: '0.5rem', marginLeft:"0.125rem" }} className="form-Title">
-            <div style={{ fontSize: '2.625rem', fontFamily: "SpoqaHanSansNeoMedium", color: '#ffffff', padding: '1.6rem 0 0 1.1rem', letterSpacing: '-0.25rem' }} className="text-gray-r454545 ">{text}</div>
+            <div style={{ fontSize: '2.625rem', color: '#ffffff', padding: '1.6rem 0 0 1.1rem', letterSpacing: '-0.25rem' }} className="text-gray-r454545 ">{text}</div>
         </div>
     )
 
@@ -53,12 +53,12 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                 <div style={{ padding: '0.7375rem 0.765rem 0.363rem', background: '#ffffff', borderRadius: '1.125rem' }} className="w-full rounded-2xl shadow-subNavbar">
                     <div style={{ padding: '1.43rem 1.9rem 1rem 1.82rem', background: 'linear-gradient(to right, rgb(157, 59, 187), rgb(84, 35, 160))', borderRadius: '0.625rem' }} className="w-full rounded-2xl border border-gray-dddddd bg-gray-f9f9f9">
                         <div
-                            style={{ fontSize: '2.8125rem', color: '#ffffff', marginLeft: '-0.2rem', fontFamily:"SpoqaHanSansNeoMedium" }}
+                            style={{ fontSize: '2.8125rem', color: '#ffffff', marginLeft: '-0.2rem'}}
                             className=" tracking-tight text-gray-r393e41 flex items-center"
                         >
                             환전금액 입력
                         </div>
-                        <div style={{ fontSize: '2.625rem', color: '#eeeeee', marginTop: '0.8rem', lineHeight: '1.42', marginLeft: '-0.2rem', marginRight: '5.6rem', fontFamily: "SpoqaHanSansNeoRegular" }} >
+                        <div style={{ fontSize: '2.625rem', color: '#eeeeee', marginTop: '0.8rem', lineHeight: '1.42', marginLeft: '-0.2rem', marginRight: '5.6rem'}} >
                             환전 신청을 완료하게 되면 보유머니에서 신청한 금액만큼
                             차감되며 고객님의 계좌번호로 입금됩니다.
                         </div>
@@ -83,7 +83,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                             <div className="lable-or-input">
                                 <input
                                     className="w-full  text-gray-r585858 outline-none placeholder-gray-bebebe"
-                                    style={{ width: "100%" ,fontSize: '2.625rem', fontFamily: "SpoqaHanSansNeoRegular", marginBottom: '0.9375rem', letterSpacing: '-0.1rem', border: "0px solid", outline: "none" }}
+                                    style={{ width: "100%" ,fontSize: '2.625rem', marginBottom: '0.9375rem', letterSpacing: '-0.1rem', border: "0px solid", outline: "none" }}
                                     placeholder="직접 입력시 숫자만 입력해 주세요."
                                     value={inputValue !== null ? nf.format(inputValue) : ""}
                                     onChange={e => setInputValue(e.target.value.replace(/,/g, ''))}
@@ -361,7 +361,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                         <div className="lable-or-input">
                             <input
                                 className="w-full  text-gray-bebebe outline-none placeholder-gray-bebebe"
-                                style={{ fontSize: '2.625rem', fontFamily: "SpoqaHanSansNeoRegular", marginBottom: '0.9375rem', border: "0px solid", outline: "none" }}
+                                style={{ fontSize: '2.625rem', marginBottom: '0.9375rem', border: "0px solid", outline: "none" }}
                                 placeholder="비밀번호를 입력하세요."
                                 value={secondInputValue !== null ? secondInputValue : ""}
                                 onChange={e => setSecondInputValue(e.target.value)}
@@ -398,7 +398,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                     className="hover"
                 >
                     <div style={{ borderColor: "#ff8f63" }} className="w-full h-full flex items-center justify-center rounded-2xl border border-blue-r3ba3fc bg-gradient-to-b from-orange-ff7a45 via-orange-f56032 to-orange-e9441d cursor-pointer">
-                        <span style={{ fontSize: '2.8125rem', color: '#ffffff', display: 'inline-block', letterSpacing: '-0.07rem', textShadow:"rgba(0, 0, 0, 0.5) 0px 0px 0.938rem", fontFamily:"SpoqaHanSansNeoMedium", marginTop: "0.188rem" }} >신청하기</span>
+                        <span style={{ fontSize: '2.8125rem', color: '#ffffff', display: 'inline-block', letterSpacing: '-0.07rem', textShadow:"rgba(0, 0, 0, 0.5) 0px 0px 0.938rem", marginTop: "0.188rem" }} >신청하기</span>
                     </div>
                 </button>
             </div>

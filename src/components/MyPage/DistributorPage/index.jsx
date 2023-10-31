@@ -804,7 +804,7 @@ const DistributorPage = ({
     return (
         <div className="relative flex flex-col h-full">
             <ScrollButton />
-            <HomePageTopBanner pageTitle='총판페이지' toPath='/mypage' />
+            <HomePageTopBanner pageTitle='총판페이지' toPath='/mypage/distributor-page' />
             <div style={{ margin: '0', marginTop: '0', overflowX: 'hidden', marginRight: '0', marginBottom: '0' }} className="relative overflow-hidden flex flex-col h-full">
                 <div style={{ marginLeft: '-0.063rem', height: '11.1875rem', fontSize: '3rem', paddingTop: '' }} className='flex flex-col items-center'>
                     <div style={{ margin: 'auto', marginBottom: '0.25rem', background: '#342267', display: 'flex', width: '48.938rem', marginTop: '1.476rem', letterSpacing: '-0.07rem', height: '5.063rem', paddingTop: '0.7rem', borderRadius: '3rem', justifyContent: 'center' }} className="tracking-tight flex items-center">
