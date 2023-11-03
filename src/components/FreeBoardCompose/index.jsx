@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import BoardViewPanel from '../MyPage/BoardViewPanel';
@@ -8,6 +8,9 @@ import PopupControls from '../popups/PopupControls';
 import './_freeBoardCompose.scss';
 
 const FreeBoardCompose = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const navigate = useNavigate();
     const [isPopupOpen, setPopupOpen] = useState(true)

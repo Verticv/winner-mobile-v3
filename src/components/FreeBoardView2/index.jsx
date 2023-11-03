@@ -204,7 +204,7 @@ const FreeBoardView2 = () => {
             {/* COMMENT SECTION */}
             <div style={{ borderRadius: "1.1875rem", marginTop: '3.75rem', padding: '0.1875rem', background: 'linear-gradient(to top,#1f1f1e, #383838 50%, #4a4a4a )' }} className="w-full bg-gray-fafafa shadow-subNavbar shadow-box-myPage ">
                 <div style={{ width: '100%', height: '100%', background: '#dfdbfa', borderRadius: '1.1875rem', paddingBottom: '1.8rem', border: '1px solid #cb78e6' }}>
-                    <div style={{ padding: '0 1.7rem', borderBottomWidth: '0.1875rem', background: '#dfdbfa', borderTopLeftRadius: "1.1875rem", borderTopRightRadius: "1.1875rem", borderBottom: '0.1875rem solid #252525' }} className="border-b border-gray-dddddd">
+                    <div style={{ padding: '0 1.7rem', borderBottomWidth: '0.1875rem', background: '#dfdbfa', borderTopLeftRadius: "1.1875rem", borderTopRightRadius: "1.1875rem", borderBottom: '0.1875rem solid #b8b4d8', paddingBottom: '1rem' }} className="border-b border-gray-dddddd">
                         <div style={{ display: 'flex', alignItems: 'flex-start', marginLeft: '0.3rem', minHeight: '9rem', letterSpacing: '-0.07rem' }}>
                             <img style={{ width: '3.450625rem', height: '4.436875rem', marginRight: '0.5625rem', marginLeft: '-0.3rem', marginTop: '2.6rem' }} src={Rank2} alt="" />
                             <p style={{ fontSize: '2.624375rem', color: '#666666', paddingTop: '0.4rem' }}>신풍사우나</p>
@@ -233,7 +233,7 @@ const FreeBoardView2 = () => {
             </div>
             <div style={{ borderRadius: "1.1875rem", marginTop: '3.75rem', padding: '0.1875rem', background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)' }}>
                 <div style={{ borderRadius: "1.1875rem", marginTop: '', padding: '0.1875rem', paddingTop: '2.07rem', background: '#dfdbfa', border: '1px solid #cb78e6' }} className="w-full bg-gray-fafafa shadow-subNavbar">
-                    <div style={{ padding: '0 1.5rem', borderBottomWidth: '0.1875rem', borderBottom: '0.1875rem solid #252525' }}>
+                    <div style={{ padding: '0 1.5rem', borderBottomWidth: '0.1875rem', borderBottom: '0.1875rem solid #b8b4d8', paddingBottom: '1rem' }}>
 
                         <div style={{ display: 'flex', alignItems: 'flex-start', marginLeft: '0.3rem', minHeight: '4.8rem', letterSpacing: '-0.07rem' }}>
                             <img style={{ width: '3.450625rem', marginRight: '0.5625rem', marginLeft: '-0.3rem', marginTop: '0.2rem' }} src={Rank2} alt="" />
@@ -262,7 +262,7 @@ const FreeBoardView2 = () => {
             </div>
             <div style={{ borderRadius: "1.1875rem", marginTop: '3.9rem', padding: '0.1875rem', background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)' }}>
                 <div style={{ borderRadius: "1.1875rem", marginTop: '', padding: '0.1875rem', paddingTop: '', background: '#dfdbfa', border: '1px solid #cb78e6' }} className="w-full bg-gray-fafafa shadow-subNavbar">
-                    <div style={{ padding: '2.1rem 1.5rem 0', borderBottomWidth: '0.1875rem', borderBottom: '0.1875rem solid #252525' }} className="border-b border-gray-dddddd">
+                    <div style={{ padding: '2.1rem 1.5rem 0', borderBottomWidth: '0.1875rem', borderBottom: '0.1875rem solid #b8b4d8', paddingBottom: '1rem' }} className="border-b border-gray-dddddd">
                         <div style={{ display: 'flex', alignItems: 'flex-start', marginLeft: '0.3rem', minHeight: '4.8rem', letterSpacing: '-0.07rem' }}>
                             <img style={{ width: '3.450625rem', marginRight: '0.5625rem', marginLeft: '-0.3rem', marginTop: '0.2rem' }} src={Rank2} alt="" />
                             <span style={{ fontSize: '2.624375rem', color: '#666666', marginTop: '0.8rem' }}>신풍사우나</span>
