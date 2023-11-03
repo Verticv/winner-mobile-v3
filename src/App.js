@@ -7,7 +7,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePageTopBanner from './components/MyPage/HomePageTopBanner';
 import FixedMenu from './components/FixedMenu';
-import ScrollButton from './components/MyPage/ScrollButton';
 import NoticeBanner from "./components/MainPage/NoticeBanner";
 
 import MainPage from './pages/MainPage';
