@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-import HomePageTopBanner from '../HomePageTopBanner';
+import HomePageTopBanner from '../../MyPage/HomePageTopBanner';
 import Header from '../../Header'
 import NoticeBanner from '../../MainPage/NoticeBanner'
-import Pagination from '../Pagination';
+import Pagination from '../../MyPage/Pagination';
 import Search from '../../Search';
 
 import BlueSpeaker from '../../../assets/myPage/speaker/purple_speaker_1.png';
@@ -250,10 +250,8 @@ const FreeBoard = ({
     const [page, setPage] = useState(0);
 
     useEffect(() => {
-        if (activeButton) {
-            setActiveButton('/mypage/freeboard')
-        }
-    }, [setActiveButton, activeButton]);
+        setActiveButton('/mypage/freeboard')
+    }, [setActiveButton]);
 
     const truncate = (str, max, len) => {
         return str.length > max ? str.substring(0, len) : str;
@@ -262,8 +260,6 @@ const FreeBoard = ({
     function InboxList({ items }) {
         return items.map(item => (
             <button
-                // style={{ background: 'red', width: '74rem', marginLeft: '2rem' }}
-
                 key={item.id}
                 onClick={() => navigate(item.path)}
             >
@@ -437,7 +433,7 @@ const FreeBoard = ({
         <div className="relative flex flex-col h-full">
             <Header />
             <NoticeBanner />
-            <HomePageTopBanner pageTitle='게시판' toPath='/mypage/freeboard' />
+            <HomePageTopBanner pageTitle='게시판' />
         <>
             <div className='button-card'>
                 <div className='div-2'>
@@ -447,10 +443,10 @@ const FreeBoard = ({
                 </div>
 
 
-                <div className='button-class-div shadow-to-box'>
+                <div className='button-class-div shadow-box-myPage'>
                     <button className='button-class hover' onClick={() => navigate('/freeboard/compose')}>
                         <div style={{ marginTop: '0.2rem' }}>
-                            <span className='shadow-to-text' style={{ color: '#d6f3ff' }}>작성하기</span>
+                            <span className='shadow-text-myPage' style={{ color: '#ffffff' }}>작성하기</span>
                         </div>
                     </button>
                 </div>

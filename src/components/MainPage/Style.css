@@ -1,3 +1,18 @@
 *:focus {
     outline: none !important;
 }
+
+.shadow-box-myPage{
+    box-shadow: 0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-text-myPage{
+    text-shadow: 0px 0px 0.938rem rgba(0, 0, 0, 0.5);
+}
+
+.reply-color {
+    background: #5d659f;
+}
+.edit-color{
+    background: linear-gradient(to right, rgb(21, 207, 238), rgb(49, 151, 229));
+}

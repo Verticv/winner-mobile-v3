@@ -1,25 +1,12 @@
 .button-card {
-    // /* background: red; */
-    // width: 73.85rem;
-    // /* width: 74rem; */
-    // margin-left: 1.9rem;
-    // padding: 0.1875rem;
-    // border: 0;
-    // border-radius: 1.1rem;
-    // height: auto;
-    // background: linear-gradient(to top, #1f1f1e, #303030 50%, #4a4a4a);
-
     .div-2 {
-        // background: black;
         border-radius: 1.1rem;
         width: 100%;
         height: fit-content;
-        /* background: red; */
         width: 73.85rem;
-        /* width: 74rem; */
         margin-left: 1.9rem;
         padding: 0.1875rem;
-        border: 0;
+        border: 1px solid #cb78e6;
         border-radius: 1.1rem;
         height: auto;
         background: linear-gradient(to top, rgb(221, 221, 221), rgb(187, 187, 187));
@@ -195,10 +182,11 @@
     margin-bottom: 3.75rem;
     width: fit-content;
     padding: 0.1875rem;
-    background: linear-gradient(to top, #445896, #699ec3 50%, #87d8e7);
+    background: linear-gradient(to right, rgb(21, 207, 238), rgb(49, 151, 229));
     border-radius: 1rem;
     width: 36.4375rem;
     height: 7.3125rem;
+    border: none;
 
     .button-class {
         border: 0;
@@ -210,7 +198,7 @@
         // padding: 0.1875rem;
         border-radius: 1rem;
         background: linear-gradient(to right, rgb(21, 207, 238), rgb(49, 151, 229));
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 0.375rem 0.375rem 0px;
+        box-shadow: 0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.3);
 
         span {
             font-size: 2.80625rem;

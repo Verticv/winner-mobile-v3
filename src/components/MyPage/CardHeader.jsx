@@ -51,7 +51,7 @@ const CardHeader = ({ flag = 'us', name = '축구 / 미국 - 메이저리그사�
             <div className="flex items-center" style={{ display: 'flex', marginRight: "-0.688rem" }}>
                 {/* <img style={{ width: '2.375rem', height: '2.375rem', marginTop: '0.3rem' }} src={ClockIcon} alt="" /> */}
                 <span
-                    style={{ color: "#ffffff", fontSize: '2.438rem', marginLeft: '0.5rem', marginTop: '-0.563rem', marginRight: '-0.2rem', letterSpacing: '-0.11rem' }}
+                    style={{ lineHeight: '20px', color: "#ffffff", fontSize: '2.438rem', marginLeft: '0.5rem', marginTop: '-0.563rem', marginRight: '-0.2rem', letterSpacing: '-0.11rem' }}
                     className=" text-16px tracking-tight text-white"
                 >
                     {date}

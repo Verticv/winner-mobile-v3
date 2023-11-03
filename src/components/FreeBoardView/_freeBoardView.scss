@@ -1,0 +1,157 @@
+.freeboard-view {
+    margin: 2rem 1.875rem;
+    border-radius: 1rem;
+
+    .border-div {
+        background: #ffffff;
+        border-radius: 1.2rem;
+        margin-top: -2.01rem;
+        border: 1px solid #cb78e6;
+        padding: 0.1875rem;
+        box-shadow: #782e94 0px 0px 0.75rem 0px;
+
+        .content {
+            border-radius: 1.1rem;
+            background: #ffffff;
+
+            .first-card {
+                min-height: 13rem;
+                border-top-right-radius: 1.1rem;
+                border-top-left-radius: 1.1rem;
+                text-align: center;
+                padding: 1rem;
+                border-bottom: 0.1875rem solid #dddddd;
+                background: #ffffff;
+
+                .buttons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1rem;
+                    margin-top: 0.65rem;
+
+                    .button {
+                        background-color: #9c3bbb;
+                        font-size: 2.4375rem;
+                        padding: 0.35rem 1.8rem;
+                        // width: 8.4375rem;
+                        height: 4.5rem;
+                        border-radius: 2.3rem;
+                        font-family: 'SpoqaHanSansNeoMedium';
+                        color: #FFF;
+
+                        span {
+                            margin-top: 0.4rem;
+                            display: flex;
+                            // padding-left: 0.3rem;
+                        }
+
+                    }
+                }
+
+                .text {
+                    color: #444444;
+                    font-size: 2.999375rem;
+                    margin-top: 1.4rem;
+                    font-family: 'SpoqaHanSansNeoMedium';
+                    letter-spacing: -0.07rem;
+                }
+            }
+
+            .second-card {
+                height: 8.1rem;
+                padding: 1.4375rem 1.875rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #f7f7f7;
+                border-bottom: 0.1875rem solid #dddddd;
+
+                img {
+                    width: 12.0625rem;
+                }
+
+                .comment-container {
+                    padding: 0 1.5rem;
+                    height: 4.4375rem;
+                    font-size: 2.4375rem;
+                    display: flex;
+                    margin-right: -0.4rem;
+                    margin-left: -3.9rem;
+                    border-radius: 2.4rem;
+                    justify-content: center;
+                    align-items: center;
+                    border: 0.1875rem solid #454545;
+                    margin-top: 0.4rem;
+
+                    .comment {
+                        margin-right: 0.8rem;
+                        margin-top: 0.2rem;
+                        color: #666666;
+                    }
+
+                    .num-2 {
+                        margin-top: 0.2rem;
+                        color: #e65454;
+                        margin-left: -0.35rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .font-spoqa {
+        font-size: 2.811875rem;
+        font-family: 'SpoqaHanSansNeo';
+        color: #b4b4b4;
+    }
+
+    .two-buttons {
+        margin: 3.65rem 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        button {
+            border: 0;
+            padding: 0;
+            height: 7.3125rem;
+            font-size: 2.8125rem;
+            width: 50%;
+            border-radius: 1rem;
+            padding: 0.1875rem;
+            // background: blue;
+
+            .div-border {
+                padding: 0.1875rem;
+                // background: red;
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // text-shadow: #00000080 0.3125rem 0.125rem 0.4375rem;
+                color: #ffd2d2;
+                font-family: 'SpoqaHanSansNeoMedium';
+                font-size: 2.811875rem;
+
+                .text {
+                    margin-right: -0.1rem;
+                    margin-top: 0.2rem;
+                    letter-spacing: -0.07rem;
+                }
+            }
+        }
+    }
+
+    textarea::-webkit-scrollbar {
+        display: none;
+    }
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #b4b4b4;
+        opacity: 1;
+        /* Firefox */
+    }
+    
+}

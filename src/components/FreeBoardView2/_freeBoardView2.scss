@@ -1,0 +1,79 @@
+.free-board-view2 {
+    .title-div {
+        // background: red;
+        background: #ffffff;
+        box-shadow: #782e94 0px 0px 0.75rem 0px;
+        border: 1px solid #cb78e6;
+
+        .title {
+            background: #ffffff;
+            color: #444444;
+            font-size: 2.999375rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 0.1875rem solid #dddddd;
+            border-top-left-radius: 1.1rem;
+            border-top-right-radius: 1.1rem;
+            min-height: 7.3125rem;
+            padding: 1rem 2rem;
+            text-align: center;
+
+            .text {
+                // margin-left: 0.5rem;
+                letter-spacing: -0.07rem;
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    .two-buttons {
+        margin: 3.7rem 0 3.6rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        button {
+            border: 0;
+            padding: 0;
+            height: 7.3125rem;
+            font-size: 2.8125rem;
+            width: 50%;
+            border-radius: 1rem;
+
+            .div-border {
+                padding: 0.1875rem;
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
+                font-size: 2.811875rem;
+
+                .text {
+                    margin-right: -0.1rem;
+                    margin-top: 0.2rem;
+                    letter-spacing: -0.07rem;
+                }
+            }
+        }
+    }
+}
+
+textarea {
+    outline: none;
+    color: #b4b4b4;
+}
+textarea::-webkit-scrollbar {
+    display: none;
+
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #b4b4b4;
+    opacity: 1;
+    /* Firefox */
+}

@@ -9,7 +9,6 @@ import Header from "../components/Header";
 import NoticeBanner from "../components/MainPage/NoticeBanner";
 import HomePageTopBanner from "../components/MyPage/HomePageTopBanner";
 import FixedMenu from '../components/FixedMenu';
-import "../components/MyPage/_myPage.scss"
 import MoneyCharge from '../components/MyPage/MoneyCharge';
 import ScrollButton from '../components/MyPage/ScrollButton';
 import HorizontalMenu1 from '../components/MyPage/HorizontalMenu1';
@@ -17,7 +16,6 @@ import MoneyChargeHistory from '../components/MyPage/MoneyChargeHistory';
 import MoneyExchangePage from '../components/MyPage/MoneyExchangePage';
 import PointsPage from '../components/MyPage/PointsPage';
 import GameResultsPage from '../components/MyPage/GameResultsPage';
-import FreeBoard from '../components/MyPage/FreeBoard';
 
 import activeIcon1 from '../assets/mainPage/icons/recharge-application2-v3.png';
 import activeIcon2 from '../assets/mainPage/icons/active-icon22_v3.png';
@@ -26,7 +24,7 @@ import Icon1 from '../assets/mainPage/icons/Icon12_v3.png';
 import DistributorPage from '../components/MyPage/DistributorPage';
 import WinLoseSettlement from '../components/MyPage/WinLoseSettlement';
 import CouponUsage from '../components/MyPage/CouponUsage';
-
+import FreeBoard from '../components/MyPage/FreeBoard';
 
 
 function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
@@ -179,17 +177,10 @@ const tabsArray1 = [
                     <>  
                     <Header/>
                     <NoticeBanner />
-                    {/* <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' /> */}
                     <DistributorPage isAuthenticated= {isAuthenticated} 
                       setAuthenticated= {setAuthenticated}
                       distributorPageActive = {distributorPageActive}
                     setDistributorPageActive= {setDistributorPageActive}  />
-                        {/* <Header/>  */}
-                        {/* <NoticeBanner /> */}
-                        {/* <HomePageTopBanner pageTitle='베팅내역' toPath='/mypage/bet-history' /> */}
-                        {/* <GameResultsPage isAuthenticated={isAuthenticated} setAuthenticated={setAuthenticated} */}
-                            {/* subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton} */}
-                        {/* /> */}
                         <FixedMenu 
                           selectedTab={selectedTab} 
                           setSelectedTab={setSelectedTab}
@@ -219,9 +210,11 @@ const tabsArray1 = [
             <Route path="/freeboard"
                 element={
                     <>  
-                      <FreeBoard isAuthenticated={true} setAuthenticated={setAuthenticated}
-                            activeButton={activeButton}
-                            setActiveButton={setActiveButton}
+                      <FreeBoard 
+                        isAuthenticated={true} 
+                        setAuthenticated={setAuthenticated}
+                        activeButton={activeButton}
+                        setActiveButton={setActiveButton}
                       />
                         <FixedMenu 
                           selectedTab={selectedTab} 
