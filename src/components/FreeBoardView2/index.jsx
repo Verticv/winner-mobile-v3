@@ -26,16 +26,16 @@ const FreeBoardView2 = () => {
             <div style={{ height: "17.4375rem", borderRadius: "1.625rem", marginTop: '-0.4rem', fontSize: '2.8125rem', borderWidth: '0.1875rem', display: 'flex', position: 'relative' }} className="relative flex w-full bg-white border border-gray-dddddd overflow-hidden">
 
                 <textarea
-                    style={{ border: '1px solid #8d8d8d', width: "60.9375rem", padding: '3.3rem 4rem 3.5625rem 3.89rem', resize: "none", lineHeight: '1.32', WebkitTextStroke: "0.2px", borderRadius: '0.7rem', background: '#ffffff', fontSize: '2.5rem', color: '#aaaaaa'}}
+                    style={{ border: '1px solid #8d8d8d', width: "60.9375rem", padding: '3.3rem 4rem 3.5625rem 3.89rem', resize: "none", lineHeight: '1.32', WebkitTextStroke: "0.2px", borderRadius: '0.7rem', background: '#ffffff', fontSize: '2.81188rem', color: '#aaaaaa', fontFamily: 'Malgun Gothic'}}
                     className="place-color-grey overflow-hidden outline-none w-full tracking-tight placeholder-gray-r8f8f8f"
                     placeholder={placeholder}
                     onFocus={() => {
-                        const menu = document.querySelector('#main-menu');
-                        menu.style.marginBottom = '-14.075rem'
+                        // const menu = document.querySelector('#main-menu');
+                        // menu.style.marginBottom = '-14.075rem'
                     }}
                     onBlur={() => {
-                        const menu = document.querySelector('#main-menu');
-                        menu.style.marginBottom = '0'
+                        // const menu = document.querySelector('#main-menu');
+                        // menu.style.marginBottom = '0'
                     }}
                 />
 
