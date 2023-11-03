@@ -163,7 +163,6 @@ function App() {
                     }
                     isFreeboard={true}
                   />
-                  <ScrollButton />
                   <FreeBoardCompose />
                   <FixedMenu
                     selectedTab={selectedTab}
