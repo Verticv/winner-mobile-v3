@@ -98,6 +98,7 @@ const DateSearchBar = ({
                 <div className="space-x-5px inputStyle">
                     <input
                         placeholder="리그선택"
+                        style={{ color: "#666666" }}
                         className="place-color-grey placeholder:text-gray-r7b7b7b flex-shrink-0 outline-none h-42px rounded-2xl border border-gray-dddddd px-10px text-15px tracking-tight text-gray-r8c8c8c"
                         onFocus={() => {
                             const menu = document.querySelector('#main-menu');
@@ -127,7 +128,7 @@ const DateSearchBar = ({
                 <div className="first-row">
                     <DropDownInput isBetCombination={false} withArrow />
                     <input
-                        style={{ marginLeft: '2rem', marginTop: '0.225rem', color: "#666666" }}
+                        style={{ marginLeft: '2rem', color: "#666666" }}
                         placeholder="팀명검색"
                         onFocus={() => {
                             // const menu = document.querySelector('#main-menu');

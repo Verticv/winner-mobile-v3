@@ -80,15 +80,15 @@ const CardContent = ({
                 </div>
                 {withUploadButton === true && (
                     <div
-                        style={{ width: '9rem', height: '9rem', padding: '0.1875rem', margin: '-1.4rem -0.4rem 0 0', background: 'linear-gradient(to top, #3e4c8e, #6393bb 50%, #528bcc)', borderRadius: '1rem' }}
-                        className='shadow-to-box hover'
+                        style={{ width: '9rem', height: '9rem', padding: '0.1875rem', margin: '-1.4rem -0.4rem 0 0', background: '#8458cd', borderRadius: '1rem' }}
+                        className='shadow-box-myPage hover'
                     >
                         <button
                             onClick={() => canUpload === true && uploadHandler(id)}
-                            style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #3a6185, #4575a8 50%, #528bcc)', borderRadius: '0.7rem' }}
+                            style={{ width: '100%', height: '100%', background: '#8458cd', borderRadius: '0.7rem' }}
                             className="hover"
                         >
-                            <div className="flex w-full h-full items-center justify-center flex-wrap rounded-2xl border border-blue-r70a8f5 bg-gradient-to-b from-blue-r1491fc to-blue-r0675db cursor-pointer">
+                            <div className="w-full h-full flex-wrap rounded-2xl border border-blue-r70a8f5 bg-gradient-to-b from-blue-r1491fc to-blue-r0675db cursor-pointer" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                                 <img style={{ width: '3.1875rem', height: '3.25rem', marginTop: '0.1rem' }} className="object-contain" src={UploadIcon} alt="" />
                             </div>
                         </button>
@@ -97,10 +97,10 @@ const CardContent = ({
                 {withCancelButton && (
                     <button
                         onClick={() => cancelHandler(id)}
-                        style={{ width: '9rem', height: '9rem', padding: '0.1875rem', margin: '-1.4rem -0.4rem 0 0', background: 'linear-gradient(to top, #4d0a25, #a75366 50%, #e78795)', borderRadius: '1rem' }}
-                        className='shadow-to-box hover'
+                        style={{ width: '9rem', height: '9rem', padding: '0.1875rem', margin: '-1.4rem -0.4rem 0 0', background: '#c03a41', borderRadius: '1rem' }}
+                        className='shadow-box-myPage hover'
                     >
-                        <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to top, #98351e, #c45236 50%, #df6345)', borderRadius: '0.7rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <div style={{ width: '100%', height: '100%', background: '#c03a41', borderRadius: '0.7rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                             <img style={{ width: '2.5rem', height: '2.5rem' }} src={CloseIcon} alt="" />
                         </div>
                     </button>

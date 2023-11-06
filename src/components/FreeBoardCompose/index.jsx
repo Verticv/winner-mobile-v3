@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import BoardViewPanel from '../MyPage/BoardViewPanel';
-// import BetHistoryPopup from '../BetHistoryPopup';
+import BetHistoryPopup from '../BetHistoryPopup';
 import PopupControls from '../popups/PopupControls';
 
 import './_freeBoardCompose.scss';
@@ -61,7 +61,7 @@ const FreeBoardCompose = () => {
                     <div style={{ height: '9.1875rem', paddingLeft: '2.625rem', borderBottomWidth: '0.1875rem', background: '#f7f7f7', borderBottom: '0.1875rem solid #dddddd', display: 'flex', justifyContent: 'start' }} className="w-full bg-gray-fafafa border-b border-gray-dddddd flex items-center">
 
                         <PopupControls buttonChild={AttachButton} isPopupOpen={isPopupOpen} setPopupOpen={setPopupOpen}>
-                            {/* <BetHistoryPopup setPopupOpen={setPopupOpen} attachedArray={attachedArray} setAttachedArray={setAttachedArray} /> */}
+                            <BetHistoryPopup setPopupOpen={setPopupOpen} attachedArray={attachedArray} setAttachedArray={setAttachedArray} />
                         </PopupControls>
 
                     </div>

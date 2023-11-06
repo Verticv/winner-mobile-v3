@@ -4,14 +4,14 @@
     border-radius: 1.3rem;
 
     .div-border {
-        background: linear-gradient(to top, #1f1f1e, #313130 50%, #4a4a4a);
+        background: linear-gradient(to top,#ecebeb, #dbb0e8 50%, #cb78e6 );
         padding: 0.1875rem;
         border-radius: 1.3rem;
         box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
 
         .write-content {
-            border: 1px solid #cb78e6;
             border-radius: 1.3rem;
+            background: #ffffff;
             .input-div {
                 height: 9.1875rem;
                 border-bottom: 0.1875rem solid #dddddd;
@@ -42,6 +42,11 @@
                 }
             }
         }
+    }
+
+    .small-radius{
+        border-top-left-radius: 1rem !important;
+        border-top-right-radius: 1rem !important;
     }
 }
 

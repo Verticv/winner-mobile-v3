@@ -32,12 +32,12 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
                     className="place-color-grey overflow-hidden outline-none w-full tracking-tight placeholder-gray-r8f8f8f"
                     placeholder={placeholder}
                     onFocus={() => {
-                        const menu = document.querySelector('#main-menu');
-                        menu.style.marginBottom = '-14.075rem'
+                        // const menu = document.querySelector('#main-menu');
+                        // menu.style.marginBottom = '-14.075rem'
                     }}
                     onBlur={() => {
-                        const menu = document.querySelector('#main-menu');
-                        menu.style.marginBottom = '0'
+                        // const menu = document.querySelector('#main-menu');
+                        // menu.style.marginBottom = '0'
                     }}
                 />
 
@@ -200,8 +200,8 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
             </div>
 
             {/* COMPOSE COMMENT */}
-            <div style={{ borderRadius: "1.1875rem", padding: '0.1875rem', background: 'linear-gradient(to top, #1f1f1e, #313130 50%, #4a4a4a)', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)' }} className="w-full bg-gray-fafafa shadow-subNavbar shadow-box-myPage">
-                <div style={{ background: '#dfdbfa', padding: '0 1.5rem 1.6rem', width: '100%', height: '100%', borderRadius: "1.1875rem", border: '1px solid #cb78e6' }}>
+            <div style={{ borderRadius: "1.1875rem", padding: '0.1875rem', background: 'linear-gradient(to top,#513b7d, #9b56f1 50%, #cb78e6 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)' }} className="w-full bg-gray-fafafa shadow-subNavbar shadow-box-myPage">
+                <div style={{ background: '#dfdbfa', padding: '0 1.5rem 1.6rem', width: '100%', height: '100%', borderRadius: "1.1875rem" }}>
                     <div className="flex items-center justify-between" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingRight: '0.6rem' }}>
                         <p style={{ fontSize: '2.624375rem', color: '#666666', marginTop: '2.8rem', letterSpacing: '-0.07rem' }} className="tracking-tight text-gray-r454545">댓글 작성하기</p>
                         <div style={{
@@ -230,8 +230,8 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
             </div>
 
             {/* COMMENT SECTION */}
-            <div style={{ borderRadius: "1.1875rem", marginTop: '3.75rem', padding: '0.1875rem', background: 'linear-gradient(to top,#1f1f1e, #383838 50%, #4a4a4a )' }} className="w-full bg-gray-fafafa shadow-subNavbar shadow-box-myPage ">
-                <div style={{ width: '100%', height: '100%', background: '#dfdbfa', borderRadius: '1.1875rem', paddingBottom: '1.8rem', border: '1px solid #cb78e6' }}>
+            <div style={{ borderRadius: "1.1875rem", marginTop: '3.75rem', padding: '0.1875rem', background: 'linear-gradient(to top,#513b7d, #9b56f1 50%, #cb78e6)' }} className="w-full bg-gray-fafafa shadow-subNavbar shadow-box-myPage ">
+                <div style={{ width: '100%', height: '100%', background: '#dfdbfa', borderRadius: '1.1875rem', paddingBottom: '1.8rem' }}>
                     <div style={{ padding: '0 1.7rem', borderBottomWidth: '0.1875rem', background: '#dfdbfa', borderTopLeftRadius: "1.1875rem", borderTopRightRadius: "1.1875rem", borderBottom: '0.1875rem solid #b8b4d8', paddingBottom: '1rem' }} className="border-b border-gray-dddddd">
                         <div style={{ display: 'flex', alignItems: 'flex-start', marginLeft: '0.3rem', minHeight: '9rem', letterSpacing: '-0.07rem' }}>
                             <img style={{ width: '3.450625rem', height: '4.436875rem', marginRight: '0.5625rem', marginLeft: '-0.3rem', marginTop: '2.6rem' }} src={Rank2} alt="" />
@@ -259,8 +259,8 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
                     </div>
                 </div>
             </div>
-            <div style={{ borderRadius: "1.1875rem", marginTop: '3.75rem', padding: '0.1875rem', background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)' }}>
-                <div style={{ borderRadius: "1.1875rem", marginTop: '', padding: '0.1875rem', paddingTop: '2.07rem', background: '#dfdbfa', border: '1px solid #cb78e6' }} className="w-full bg-gray-fafafa shadow-subNavbar">
+            <div style={{ borderRadius: "1.1875rem", marginTop: '3.75rem', padding: '0.1875rem', background: 'linear-gradient(to top,#513b7d, #9b56f1 50%, #cb78e6 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)' }}>
+                <div style={{ borderRadius: "1.1875rem", marginTop: '', padding: '0.1875rem', paddingTop: '2.07rem', background: '#dfdbfa'}} className="w-full bg-gray-fafafa shadow-subNavbar">
                     <div style={{ padding: '0 1.5rem', borderBottomWidth: '0.1875rem', borderBottom: '0.1875rem solid #b8b4d8', paddingBottom: '1rem' }}>
 
                         <div style={{ display: 'flex', alignItems: 'flex-start', marginLeft: '0.3rem', minHeight: '4.8rem', letterSpacing: '-0.07rem' }}>
@@ -288,8 +288,8 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
                     </div>
                 </div>
             </div>
-            <div style={{ borderRadius: "1.1875rem", marginTop: '3.9rem', padding: '0.1875rem', background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)' }}>
-                <div style={{ borderRadius: "1.1875rem", marginTop: '', padding: '0.1875rem', paddingTop: '', background: '#dfdbfa', border: '1px solid #cb78e6' }} className="w-full bg-gray-fafafa shadow-subNavbar">
+            <div style={{ borderRadius: "1.1875rem", marginTop: '3.9rem', padding: '0.1875rem', background: 'linear-gradient(to top,#513b7d, #9b56f1 50%, #cb78e6 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)' }}>
+                <div style={{ borderRadius: "1.1875rem", marginTop: '', padding: '0.1875rem', paddingTop: '', background: '#dfdbfa' }} className="w-full bg-gray-fafafa shadow-subNavbar">
                     <div style={{ padding: '2.1rem 1.5rem 0', borderBottomWidth: '0.1875rem', borderBottom: '0.1875rem solid #b8b4d8', paddingBottom: '1rem' }} className="border-b border-gray-dddddd">
                         <div style={{ display: 'flex', alignItems: 'flex-start', marginLeft: '0.3rem', minHeight: '4.8rem', letterSpacing: '-0.07rem' }}>
                             <img style={{ width: '3.450625rem', marginRight: '0.5625rem', marginLeft: '-0.3rem', marginTop: '0.2rem' }} src={Rank2} alt="" />

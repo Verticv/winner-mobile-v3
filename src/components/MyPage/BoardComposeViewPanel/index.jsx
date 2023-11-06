@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import './RadioButton.css'
-import TableHeader from '../../TableHeader';
+import TableHeader from '../../MyPage/TableHeader';
 import CardHeader from '../../MyPage/CardHeader';
 import CardResults from '../../MyPage/CardResults'
 import CardContent from '../../MyPage/CardContent'
 import SelectAllButton from '../SelectAllButton'
+
+import USFlagIcon from '../../../assets/myPage/sports/usaFlag.png'
+import ENFlagIcon from '../../../assets/myPage/sports/englandFlag.png'
+import SpainFlagIcon from '../../../assets/flag.png'
 
 const BoardComposeViewPanel = ({
     setAttachedArray = null,
@@ -14,85 +18,85 @@ const BoardComposeViewPanel = ({
     const data = [
         {
             id: 0,
-            flag: 'us',
-            name: 'MLS',
-            date: '2021-06-29 15:45',
+            flag: USFlagIcon,
+            name: '축구 / 미국 - 메이저리그사커',
+            date: '06-29 15:45',
             bet: "right",
             result: "lose",
-            score: "1:2",
+            score: "4:4",
             team1: "CF파추카",
-            team2: "과달하라 차바extra text",
+            team2: "과달하라 차바스",
             stat1: "2.26",
             stat2: "2.96",
-            stat3: "3.40",
+            stat3: "3.47",
             winAmount: '0',
             hasUp: false,
             hasDown: false,
         },
         {
             id: 1,
-            flag: 'uk',
-            name: 'ELP',
-            date: '2021-06-29 15:45',
+            flag: ENFlagIcon,
+            name: '축구 / 잉글랜드 - 프리미어리그',
+            date: '06-29 15:45',
             bet: "left",
             result: "win",
-            score: "2:1",
+            score: "0:3",
             team1: "맨유",
             team2: "첼시",
-            stat1: "2.26",
-            stat2: "2.96",
-            stat3: "3.40",
+            stat1: "2.95",
+            stat2: "3.32",
+            stat3: "2.50",
             winAmount: '+900,000,000',
             hasUp: false,
             hasDown: false,
         },
         {
             id: 2,
-            flag: 'us',
-            name: 'MLS',
-            date: '2021-06-29 15:45',
+            flag: USFlagIcon,
+            name: '축구 / 미국 - 메이저리그사커',
+            date: '06-29 15:45',
             bet: "right",
             result: "lose",
-            score: "1:2",
+            score: "4:4",
             team1: "CF파추카",
-            team2: "과달하라 차바extra text",
+            team2: "과달하라 차바스",
             stat1: "2.26",
             stat2: "2.96",
-            stat3: "3.40",
+            stat3: "3.47",
             winAmount: '0',
             hasUp: false,
             hasDown: false,
         },
         {
             id: 3,
-            flag: 'us',
-            name: 'MLS',
-            date: '2021-06-29 15:45',
-            bet: "right",
-            result: "lose",
-            score: "1:2",
-            team1: "CF파추카",
-            team2: "과달하라 차바extra text",
-            stat1: "2.26",
-            stat2: "2.96",
-            stat3: "3.40",
-            winAmount: '0',
+            flag: ENFlagIcon,
+            name: '축구 / 잉글랜드 - 프리미어리그',
+            date: '06-29 15:45',
+            bet: "left",
+            result: "win",
+            score: "0:3",
+            team1: "맨유",
+            team2: "첼시",
+            stat1: "2.95",
+            stat2: "3.32",
+            stat3: "2.50",
+            winAmount: '+900,000,000',
             hasUp: false,
             hasDown: false,
         },
         {
             id: 4,
-            flag: 'us',
-            name: 'MLS',
-            date: '2021-06-29 15:45',
+            flag: USFlagIcon,
+            name: '축구 / 미국 - 메이저리그사커',
+            date: '06-29 15:45',
             bet: "right",
             result: "lose",
-            score: "1:2",
+            score: "4:4",
             team1: "CF파추카",
-            team2: "과달하라 차바extra text",
+            team2: "과달하라 차바스",
             stat1: "2.26",
             stat2: "2.96",
-            stat3: "3.40",
+            stat3: "3.47",
             winAmount: '0',
             hasUp: false,
             hasDown: false,
@@ -109,22 +113,22 @@ const BoardComposeViewPanel = ({
 
     return (
         <>
-            <div style={{ background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.6)', padding: '0.1875rem', borderRadius: '1.3rem' }}>
-                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#323232' }} className="shadow-subNavbar">
-                    <TableHeader />
+            <div style={{ background: 'linear-gradient(to top,#ecebeb, #dbb0e8 50%, #cb78e6 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)', padding: '0.1875rem', borderRadius: '1.3rem' }}>
+                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#ffffff' }} className="shadow-subNavbar">
+                    <TableHeader smallCard isFreeboard/>
                     <div style={{ padding: '0 0.9rem' }} className="w-full">
                         <div className="w-full rounded-lg">
-                            <div className='rounded-lg w-full shadow-to-box' style={{ border: '0.45rem solid #473b35', borderRadius: '0.4rem' }}>
-                                <CardHeader flag='us' name='MLS' date='2021-06-29 15:45' />
+                            <div className='rounded-lg w-full shadow-box-myPage' style={{ border: '0.45rem solid rgb(104, 82, 167)', borderRadius: '0.8rem', marginTop: '1rem' }}>
+                                <CardHeader flag={USFlagIcon} name='축구 / 미국 - 메이저리그사커' date='06-29 15:45' />
                                 <CardResults
                                     bet="right"
                                     result="lose"
-                                    score="1:2"
+                                    score="4:4"
                                     team1="CF파추카"
-                                    team2="과달하라 차바extra text"
+                                    team2="과달하라 차바스 과"
                                     stat1="2.26"
                                     stat2="2.96"
-                                    stat3="3.40"
+                                    stat3="3.47"
                                     isAttached={false}
                                     hasUp={false}
                                     hasDown={false}
@@ -135,21 +139,20 @@ const BoardComposeViewPanel = ({
                     </div>
                 </div>
             </div>
-            <div style={{ background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.6)', padding: '0.1875rem', borderRadius: '1.3rem', marginTop: '2.3rem' }}>
-                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#323232' }} className="shadow-subNavbar">
+            <div style={{ background: 'linear-gradient(to top,#ecebeb, #dbb0e8 50%, #cb78e6 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)', padding: '0.1875rem', borderRadius: '1.3rem', marginTop: '2.3rem' }}>
+                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#ffffff' }} className="shadow-subNavbar">
                     <TableHeader smallCard />
                     <div style={{ padding: '0 1rem' }} className="w-full">
                         <div className="w-full rounded-lg">
-                            <div className='rounded-lg w-full shadow-to-box' style={{ border: '0.45rem solid #473b35', borderRadius: '0.4rem' }}>
-                                <CardHeader flag='uk' name='EPL' date='2021-06-29 15:45' />
+                            <div className='rounded-lg w-full shadow-box-myPage' style={{ border: '0.45rem solid rgb(104, 82, 167)', borderRadius: '0.8rem', marginTop: '1rem' }}>
+                                <CardHeader flag={ENFlagIcon} name='축구 / 잉글랜드 - 프리미어리그' date='06-29 15:45' />
                                 <CardResults
                                     bet="left"
                                     result="win"
-                                    score="5:0"
+                                    score="5:2"
                                     team1="맨유"
                                     team2="첼시"
                                     stat1="2.95"
-                                    stat2="4.62"
                                     stat3="1.39"
                                     isAttached={false}
                                     hasUp={false}
@@ -159,12 +162,11 @@ const BoardComposeViewPanel = ({
                                 />
                                 <CardResults
                                     bet="right"
-                                    result="lose"
-                                    // choice="away"
-                                    score="1:2"
+                                    result="win"
+                                    score="0:3"
                                     team1="아스널"
                                     team2="맨시티"
-                                    stat1="2.26"
+                                    stat1="2.95"
                                     stat2="3.32"
                                     stat3="2.50"
                                     isAttached={false}
@@ -178,13 +180,13 @@ const BoardComposeViewPanel = ({
                     </div>
                 </div>
             </div>
-            <div style={{ background: 'linear-gradient(to top,#20201f, #343433 50%, #494949 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.6)', padding: '0.1875rem', borderRadius: '1.3rem', marginTop: '2.3rem' }}>
-                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#323232' }} className="shadow-subNavbar">
+            <div style={{ background: 'linear-gradient(to top,#ecebeb, #dbb0e8 50%, #cb78e6 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)', padding: '0.1875rem', borderRadius: '1.3rem', marginTop: '2.3rem' }}>
+                <div style={{ borderRadius: "1em", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#ffffff' }} className="shadow-subNavbar">
                     <TableHeader />
                     <div style={{ padding: '0 1rem' }} className="w-full">
                         <div className="w-full rounded-lg">
-                            <div style={{ marginBottom: '0.6875rem', border: '0.45rem solid #473b35', borderRadius: '0.4rem' }} className='rounded-lg w-full shadow-to-box'>
-                                <CardHeader flag='uk' name='EPL' date='2021-06-29 15:45' />
+                            <div style={{ marginBottom: '0.6875rem', border: '0.45rem solid rgb(104, 82, 167)', borderRadius: '0.8rem', marginTop: '1rem' }} className='rounded-lg w-full shadow-box-myPage'>
+                                <CardHeader flag={ENFlagIcon} name='축구 / 잉글랜드 - 프리미어리그' date='06-29 15:45' />
                                 <CardResults
                                     bet="left"
                                     result="win" 
@@ -199,8 +201,8 @@ const BoardComposeViewPanel = ({
                                     hasDown={false}
                                 />
                             </div>
-                            <div className='shadow-to-box' style={{ border: '0.45rem solid #473b35', borderRadius: '0.4rem', marginTop: '1.875rem' }}>
-                                <CardHeader flag='spain' name='라리가' date='2021-06-29 15:45' />
+                            <div className='shadow-box-myPage' style={{ border: '0.45rem solid rgb(104, 82, 167)', borderRadius: '0.8rem', marginTop: '1.875rem' }}>
+                                <CardHeader flag={SpainFlagIcon} name='라리가' date='06-29 15:45' />
                                 <CardResults
                                     bet="left"
                                     result="win" 
