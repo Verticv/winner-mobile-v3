@@ -267,7 +267,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                   <div
                     style={{ marginTop: '1.25rem', paddingBottom: '0.1rem' }}
                   >
-                    <Pagination page={page} setPage={setPage} />
+                    <Pagination page={page} setPage={setPage} isBetHistoryPopup={true} />
                   </div>
                 </>
               ) : selectedTab === 1 ? (
@@ -299,7 +299,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                   </div>
                   <div style={{ paddingBottom: '1rem' }}>
                     <div style={{ marginTop: '1.25rem' }}>
-                      <Pagination page={page} setPage={setPage} />
+                      <Pagination page={page} setPage={setPage} isBetHistoryPopup={true} />
                     </div>
                   </div>
                 </div>
@@ -313,7 +313,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                   <div
                     style={{ marginTop: '1.25rem', paddingBottom: '0.1rem' }}
                   >
-                    <Pagination page={page} setPage={setPage} />
+                    <Pagination page={page} setPage={setPage} isBetHistoryPopup={true} />
                   </div>
                 </>
               ) : selectedTab === 3 ? (
@@ -327,7 +327,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                   />
 
                   <div style={{ marginTop: '1.25rem' }}>
-                    <Pagination page={page} setPage={setPage} />
+                    <Pagination page={page} setPage={setPage} isBetHistoryPopup={true} />
                   </div>
                 </>
               ) : selectedTab === 4 ? (
@@ -363,7 +363,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                   <div
                     style={{ marginTop: '1.25rem', paddingBottom: '0.1rem' }}
                   >
-                    <Pagination page={page} setPage={setPage} />
+                    <Pagination page={page} setPage={setPage} isBetHistoryPopup={true} />
                   </div>
                 </>
               ) : selectedTab === 7 ? (
@@ -378,7 +378,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                   <div
                     style={{ marginTop: '1.25rem', paddingBottom: '0.1rem' }}
                   >
-                    <Pagination page={page} setPage={setPage} />
+                    <Pagination page={page} setPage={setPage} isBetHistoryPopup={true} />
                   </div>
                 </>
               ) : selectedTab === 8 ? (
@@ -394,7 +394,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                   <div
                     style={{ marginTop: '1.25rem', paddingBottom: '0.1rem' }}
                   >
-                    <Pagination page={page} setPage={setPage} />
+                    <Pagination page={page} setPage={setPage} isBetHistoryPopup={true} />
                   </div>
                 </>
               ) : (
