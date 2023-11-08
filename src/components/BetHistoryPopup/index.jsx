@@ -263,7 +263,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                   </div>
                 </div>
                 <div
-                  style={{ height: '13.5rem', top: '2.3rem', right: '3rem', boxShadow: 'rgb(194, 172, 239) 0rem 0px 1.3rem 1.5rem' }}
+                  style={{ height: '13.5rem', top: '2.7rem', right: '3rem', boxShadow: 'rgb(194, 172, 239) 0rem 0px 1rem 1.5rem' }}
                   className="nav-shadow absolute h-full left-0 z-50"
                 ></div>
               </div>
