@@ -3,17 +3,19 @@ import { useNavigate } from 'react-router-dom';
 
 import BoardComposeViewPanel from '../../components/MyPage/BoardComposeViewPanel';
 import CloseIcon from '../../assets/images/nonLiveBet/close.png';
-import icon2 from '../../assets/images/mainPage/menu1.png'
-import icon3 from '../../assets/images/mainPage/menu4.png'
-import icon4 from '../../assets/images/mainPage/menu2.png'
+import icon1 from '../../assets/images/mainPage/menu1.png';
+import icon2 from '../../assets/images/mainPage/menu4.png';
+import icon3 from '../../assets/images/mainPage/menu3.png';
+import icon4 from '../../assets/images/mainPage/menu2.png';
 import icon5 from '../../assets/images/mainPage/menu5.png';
 import icon6 from '../../assets/images/mainPage/menu6.png';
 import icon7 from '../../assets/images/mainPage/menu7.png';
 import icon8 from '../../assets/images/mainPage/menu8.png';
 import icon9 from '../../assets/images/mainPage/menu9.png';
 import icon10 from '../../assets/images/mainPage/menu10.png';
-import icon2Active from '../../assets/images/bottom-nav/menu-on1.png'
-import icon3Active from '../../assets/images/bottom-nav/menu-on4.png'
+import icon1Active from '../../assets/images/bottom-nav/menu-on1.png'
+import icon2Active from '../../assets/images/bottom-nav/menu-on4.png'
+import icon3Active from '../../assets/images/bottom-nav/menu-on3.png'
 import icon4Active from '../../assets/images/bottom-nav/menu-on2.png'
 import icon5Active from '../../assets/images/bottom-nav/menu-on5.png';
 import icon6Active from '../../assets/images/bottom-nav/menu-on6.png';
@@ -38,8 +40,8 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
   const tabsArray = [
     {
       id: 0,
-      icon: icon2,
-      activeIcon: icon2Active,
+      icon: icon1,
+      activeIcon: icon1Active,
       text: '라이브카지노',
       width: '7.875rem',
       marginTop: '0.4rem',
@@ -48,8 +50,8 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
     },
     {
       id: 1,
-      icon: icon4,
-      activeIcon: icon4Active,
+      icon: icon2,
+      activeIcon: icon2Active,
       text: '스포츠',
       width: '7.875rem',
       marginTop: '0.4rem',
@@ -61,6 +63,17 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
       id: 2,
       icon: icon3,
       activeIcon: icon3Active,
+      text: '라이브스포츠',
+      width: '7.875rem',
+      marginTop: '0.4rem',
+      textMargin: '0.7rem',
+      isActive: true,
+      path: '/freeboard/compose',
+    },
+    {
+      id: 3,
+      icon: icon4,
+      activeIcon: icon4Active,
       text: '슬롯',
       width: '7.875rem',
       marginTop: '0.5rem',
@@ -69,7 +82,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
       path: '/freeboard/compose',
     },
     {
-      id: 3,
+      id: 4,
       icon: icon5,
       activeIcon: icon5Active,
       text: '호텔카지노',
@@ -80,7 +93,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
       path: '/freeboard/compose',
     },
     {
-      id: 4,
+      id: 5,
       icon: icon6,
       activeIcon: icon6Active,
       text: 'e-스포츠',
@@ -90,7 +103,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
       path: '/freeboard/compose',
     },
     {
-      id: 5,
+      id: 6,
       icon: icon7,
       activeIcon: icon7Active,
       text: '미니게임',
@@ -100,7 +113,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
       path: '/freeboard/compose',
     },
     {
-      id: 6,
+      id: 7,
       icon: icon8,
       activeIcon: icon8Active,
       text: '키론가상게임',
@@ -110,7 +123,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
       path: '/freeboard/compose',
     },
     {
-      id: 7,
+      id: 8,
       icon: icon9,
       activeIcon: icon9Active,
       text: '피싱게임',
@@ -120,7 +133,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
       path: '/freeboard/compose',
     },
     {
-      id: 8,
+      id: 9,
       icon: icon10,
       activeIcon: icon10Active,
       text: '티비벳',
@@ -223,6 +236,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                   id="scroll-wrapper"
                   style={{
                     overflowX: 'scroll',
+                    overflowY: 'hidden',
                     background: '#c2acef',
                     marginTop: '10px',
                     marginLeft: '10px',
@@ -236,12 +250,12 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                 >
                   <div
                     className=" flex flex-shrink-0 w-full"
-                    style={{ overflowX: 'scroll' }}
+                    style={{ display: 'flex', flexShrink: '0'  }}
                   >
                     <HorizontalMenu
+                      itemsArray={tabsArray}
                       withoutFirst={false}
                       setSelectedTab={setSelectedTab}
-                      itemsArray={tabsArray}
                       selectedSubTab={selectedSubTab}
                       setSelectedSubTab={setSelectedSubTab}
                       popup={true}
@@ -249,7 +263,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                   </div>
                 </div>
                 <div
-                  style={{ height: '13.5rem', top: '2rem', right: '4rem', boxShadow: 'rgb(194, 172, 239) 0rem 0px 2rem 1.5rem' }}
+                  style={{ height: '13.5rem', top: '2.3rem', right: '3rem', boxShadow: 'rgb(194, 172, 239) 0rem 0px 1.3rem 1.5rem' }}
                   className="nav-shadow absolute h-full left-0 z-50"
                 ></div>
               </div>
@@ -295,6 +309,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                       noButtons={true}
                       checkedState={checkedState}
                       setCheckedState={setCheckedState}
+                      isSportsAndLiveSports={true}
                     />
                   </div>
                   <div style={{ paddingBottom: '1rem' }}>
@@ -304,6 +319,40 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                   </div>
                 </div>
               ) : selectedTab === 2 ? (
+                <div
+                  style={{ marginBottom: '5.625rem', paddingBottom: '0.1rem' }}
+                  className="w-full h-full"
+                >
+                  <div
+                    style={{ marginTop: '1rem' }}
+                    className="ar-date SportsBetHistory"
+                  >
+                    <DateSearchBar
+                      isGameResultsSearch={true}
+                      isFreeboard="true"
+                    />
+                  </div>
+                  <div style={{ paddingBottom: '0.1rem', margin: '0 1.8rem' }}>
+                    <BoardComposeViewPanel
+                      attachedArray={attachedArray}
+                      setPopupOpen={setPopupOpen}
+                      setAttachedArray={setAttachedArray}
+                      type={0}
+                      winAmount="0"
+                      isAttached={true}
+                      noButtons={true}
+                      checkedState={checkedState}
+                      setCheckedState={setCheckedState}
+                      isSportsAndLiveSports={true}
+                    />
+                  </div>
+                  <div style={{ paddingBottom: '1rem' }}>
+                    <div style={{ marginTop: '1.25rem' }}>
+                      <Pagination page={page} setPage={setPage} isBetHistoryPopup={true} />
+                    </div>
+                  </div>
+                </div>
+              ) : selectedTab === 3 ? (
                 <>
                   <SlotBetHistory
                     isState={historySelectedSubTab}
@@ -316,7 +365,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                     <Pagination page={page} setPage={setPage} isBetHistoryPopup={true} />
                   </div>
                 </>
-              ) : selectedTab === 3 ? (
+              ) : selectedTab === 4 ? (
                 <>
                   <HotelCasinoBetHistory
                     isState={historySelectedSubTab}
@@ -330,7 +379,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                     <Pagination page={page} setPage={setPage} isBetHistoryPopup={true} />
                   </div>
                 </>
-              ) : selectedTab === 4 ? (
+              ) : selectedTab === 5 ? (
                 <>
                   <ESportsBetHistory
                     isState={historySelectedSubTab}
@@ -344,7 +393,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                     {/* <Pagination page={page} setPage={setPage} /> */}
                   </div>
                 </>
-              ) : selectedTab === 5 ? (
+              ) : selectedTab === 6 ? (
                 <>
                   <MinigameBetHistoryPopup
                     isState={historySelectedSubTab}
@@ -352,7 +401,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                     isPopup
                   />
                 </>
-              ) : selectedTab === 6 ? (
+              ) : selectedTab === 7 ? (
                 <>
                   <ARGameBetHistory
                     isState={historySelectedSubTab}
@@ -366,7 +415,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                     <Pagination page={page} setPage={setPage} isBetHistoryPopup={true} />
                   </div>
                 </>
-              ) : selectedTab === 7 ? (
+              ) : selectedTab === 8 ? (
                 <>
                   <SlotBetHistory
                     key={20}
@@ -381,7 +430,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
                     <Pagination page={page} setPage={setPage} isBetHistoryPopup={true} />
                   </div>
                 </>
-              ) : selectedTab === 8 ? (
+              ) : selectedTab === 9 ? (
                 <>
                   <LiveCasinoBetHistory
                     key={100}

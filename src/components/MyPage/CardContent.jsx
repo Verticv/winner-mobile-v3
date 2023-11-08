@@ -24,6 +24,7 @@ const CardContent = ({
     canUpload = false,
     secondCard,
     lastElement,
+    isSportsAndLiveSports = false,
 }) => {
 
     const handleOnChange = () => {
@@ -54,7 +55,7 @@ const CardContent = ({
                     )}
                     <div>
                         {showBetNumber && (
-                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.375rem', letterSpacing: '-0.07rem', color: '#666666' }}><span style={{ fontSize: '2.625rem', color: '#444444' }}>베팅번호 :</span> 1891241599</div>
+                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.375rem', letterSpacing: '-0.07rem', color: '#666666', display: isSportsAndLiveSports ? 'none' : 'unset' }}><span style={{ fontSize: '2.625rem', color: '#444444' }}>베팅번호 :</span> 1891241599</div>
                         )}
                         <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.25rem', color: '#666666', letterSpacing: '-0.07rem' }}><span style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem', color: '#444444' }}>베팅시간 :</span>{time}</div>
                         {hasHistory && (

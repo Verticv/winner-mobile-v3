@@ -12,7 +12,8 @@ import SpainFlagIcon from '../../../assets/flag.png'
 
 const BoardComposeViewPanel = ({
     setAttachedArray = null,
-    setPopupOpen
+    setPopupOpen,
+    isSportsAndLiveSports
 }) => {
 
     const data = [
@@ -134,7 +135,7 @@ const BoardComposeViewPanel = ({
                                     hasDown={false}
                                 />
                             </div>
-                            <CardContent canUpload={true} isPopup={true} withButtons={false} withInput={true} withUploadButton={true} number="0" id={data[0].id} uploadHandler={addEntryClick} checkedState={checkedState} setCheckedState={setCheckedState} />
+                            <CardContent canUpload={true} isPopup={true} withButtons={false} withInput={true} withUploadButton={true} number="0" id={data[0].id} uploadHandler={addEntryClick} checkedState={checkedState} setCheckedState={setCheckedState} isSportsAndLiveSports={isSportsAndLiveSports}/>
                         </div>
                     </div>
                 </div>
@@ -175,7 +176,7 @@ const BoardComposeViewPanel = ({
                                     smallCard
                                 />
                             </div>
-                            <CardContent canUpload={true} isPopup={true} withButtons={false} withInput={true} withUploadButton={true} number="1" id={data[1].id} uploadHandler={addEntryClick} checkedState={checkedState} setCheckedState={setCheckedState} winAmount="+900,000,000" />
+                            <CardContent canUpload={true} isPopup={true} withButtons={false} withInput={true} withUploadButton={true} number="1" id={data[1].id} uploadHandler={addEntryClick} checkedState={checkedState} setCheckedState={setCheckedState} winAmount="+900,000,000" isSportsAndLiveSports={isSportsAndLiveSports} />
                         </div>
                     </div>
                 </div>
@@ -217,7 +218,7 @@ const BoardComposeViewPanel = ({
                                     hasDown={false}
                                 />
                             </div>
-                            <CardContent canUpload={true} isPopup={true} withButtons={false} withInput={true} withUploadButton={true} number="2" id={data[1].id} uploadHandler={addEntryClick} checkedState={checkedState} setCheckedState={setCheckedState} winAmount="0" />
+                            <CardContent canUpload={true} isPopup={true} withButtons={false} withInput={true} withUploadButton={true} number="2" id={data[1].id} uploadHandler={addEntryClick} checkedState={checkedState} setCheckedState={setCheckedState} winAmount="0" isSportsAndLiveSports={isSportsAndLiveSports} />
                         </div>
                     </div>
                 </div>
