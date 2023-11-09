@@ -356,6 +356,7 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
       hasList: false,
       hasBadge: true,
       badge_num: 5,
+      path: '/mypage/inbox'
     },
     {
       id: 12,
