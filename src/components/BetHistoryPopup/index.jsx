@@ -50,8 +50,8 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
     },
     {
       id: 1,
-      icon: icon2,
-      activeIcon: icon2Active,
+      icon: icon4,
+      activeIcon: icon4Active,
       text: '스포츠',
       width: '7.875rem',
       marginTop: '0.4rem',
@@ -72,8 +72,8 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
     },
     {
       id: 3,
-      icon: icon4,
-      activeIcon: icon4Active,
+      icon: icon2,
+      activeIcon: icon2Active,
       text: '슬롯',
       width: '7.875rem',
       marginTop: '0.5rem',

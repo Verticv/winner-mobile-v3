@@ -67,7 +67,7 @@ const FreeBoardCompose = () => {
                     </div>
 
 
-                    <BoardViewPanel isAttached={true} attachedArray={attachedArray} setAttachedArray={setAttachedArray} />
+                    <BoardViewPanel isAttached={true} attachedArray={attachedArray} setAttachedArray={setAttachedArray} isSportsAndLiveSports={true} />
 
 
                     <div style={{ height: "70.25rem", paddingTop: '2.4rem', paddingLeft: '2.4875rem', fontSize: '2.8125rem', background: '#ffffff', borderBottomRightRadius: '1.1rem', borderBottomLeftRadius: '1.1rem' }} className="placeholder-white">
