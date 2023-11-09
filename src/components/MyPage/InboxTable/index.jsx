@@ -23,6 +23,7 @@ const InboxTable = ({ array, checkedState, setCheckedState }) => {
         key={item.id}
         onClick={() => navigate(item.path)}
         style={{
+          position: 'relative',
           background:
             item.isRead === false
               ? '#ecd7fa'
@@ -31,6 +32,7 @@ const InboxTable = ({ array, checkedState, setCheckedState }) => {
               : '#ffffff',
           display: 'flex',
           alignItems: 'center',
+          borderBottom: item.isLast ? '' : '1px solid #dddddd',
           borderTopLeftRadius: item.isFirst ? '1.1rem' : '',
           borderTopRightRadius: item.isFirst ? '1.1rem' : '',
           borderBottomLeftRadius: item.isLast ? '1.1rem' : '',

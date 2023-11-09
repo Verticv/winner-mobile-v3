@@ -26,6 +26,7 @@ import WinLoseSettlement from '../components/MyPage/WinLoseSettlement';
 import CouponUsage from '../components/MyPage/CouponUsage';
 import FreeBoard from '../components/MyPage/FreeBoard';
 import Inbox from '../components/MyPage/Inbox';
+import InboxView from '../components/MyPage/InboxView';
 
 function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -321,6 +322,20 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
               <FixedMenu
                 selectedTab={selectedTab}
                 setSelectedTab={setSelectedTab}
+              />
+            </>
+          }
+        ></Route>
+
+        <Route
+          path="/inbox/*"
+          element={
+            <>
+              <InboxView
+                isAuthenticated={isAuthenticated}
+                setAuthenticated={setAuthenticated}
+                activeButton={activeButton}
+                setActiveButton={setActiveButton}
               />
             </>
           }
