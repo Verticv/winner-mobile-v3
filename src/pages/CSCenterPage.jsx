@@ -8,9 +8,9 @@ import Icon4 from '../assets/cscenter/Icon_4.png'
 import Icon5 from '../assets/cscenter/Icon_5.png'
 
 import Icon1Active from '../assets/cscenter/Icon_1-active.png'
-import Icon2Active from '../assets/cscenter/leftMenu/icon_2-active.png'
+import Icon2Active from '../assets/cscenter/Icon_2-active.png'
 import Icon3Active from '../assets/cscenter/Icon_3-active.png'
-import Icon4Active from '../assets/cscenter/leftMenu/icon_4-active.png'
+import Icon4Active from '../assets/cscenter/Icon_4-active.png'
 import Icon5Active from '../assets/cscenter/Icon_5-active.png'
 
 import subIcon1 from '../assets/bigIcons/leftMenu/21.png';
@@ -42,9 +42,9 @@ export default function Test({ isAuthenticated, setAuthenticated }) {
     const tabsArray = [
         { text: "문의하기", icon: Icon1, activeIcon: Icon1Active, id: 0, path: "/cscenter/all/contact/all", hasSameParent: true, width: '5rem' },
         { text: "공지사항", icon: Icon2, activeIcon: Icon2Active, id: 1, path: "/cscenter/all/announcement", hasSameParent: true, width: '5.625rem', marginLeft: '0.2rem' },
-        { text: "자주묻는질문", icon: Icon3, activeIcon: Icon3Active, id: 2, path: "/cscenter/all/faq", hasSameParent: true, width: '5.375rem', marginLeft: '0.2rem' },
+        { text: "자주묻는질문", icon: Icon3, activeIcon: Icon3Active, id: 2, path: "/cscenter/all/faq", hasSameParent: true, width: '5.5rem', marginLeft: '0.2rem' },
         { text: "계좌문의", icon: Icon4, activeIcon: Icon4Active, id: 3, path: "#", width: '5.1875rem', marginLeft: '0.1rem' },
-        { text: "베팅규정", icon: Icon5, activeIcon: Icon5Active, id: 4, path: "/cscenter/all/policy/sportsgame/soccer", hasSameParent: true, width: '4.875rem', marginLeft: '0.1rem' },
+        { text: "베팅규정", icon: Icon5, activeIcon: Icon5Active, id: 4, path: "/cscenter/all/policy/sportsgame/soccer", hasSameParent: true, width: '5rem', marginLeft: '0.1rem' },
     ];
     const LeftMenuSubArray = [
         {
