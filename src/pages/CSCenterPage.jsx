@@ -123,7 +123,7 @@ export default function Test({ isAuthenticated, setAuthenticated }) {
         )
     }
     return (
-        <div className="cscenter-page">
+        <div className="cscenter-page" style={{overflow: 'hidden'}}>
         <Routes>
             <Route index element={<MyInfo />} />
             <Route

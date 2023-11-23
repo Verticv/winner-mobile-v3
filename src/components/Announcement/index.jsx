@@ -130,6 +130,10 @@ const Announcement = ({
     const navigate = useNavigate()
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+      
+    useEffect(() => {
         window.onpopstate = e => {
             setTimeout(() => {
                 setSubActiveButton('/cscenter/all/announcement')

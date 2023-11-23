@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router';
 import WinnerLogo from '../../assets/images/header/logo.png';
 import './_announcementView.scss';
@@ -23,6 +23,10 @@ const AnnouncementView = () => {
   const BodyText9 = 'https://www.kovo.co.kr/main.asp';
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="w-full announcementView">
@@ -272,7 +276,7 @@ const AnnouncementView = () => {
                 alignItems: 'center',
               }}
               className="flex items-center justify-center h-full w-full bg-black rounded-2xl border border-gray-r737579 cursor-pointer"
-              onClick={() => navigate('/mypage/inbox')}
+              onClick={() => navigate('/cscenter/all/announcement')}
             >
               <span
                 className=" tracking-tight text-white shadow-text-myPage"
