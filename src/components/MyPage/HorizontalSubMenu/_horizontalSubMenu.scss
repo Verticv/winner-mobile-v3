@@ -1,0 +1,22 @@
+.horizontal-btns {
+    overflow-x: scroll;
+    display: flex;
+    flex-shrink: 0;
+
+    .btn-back{
+        height: 6.375rem;
+        min-width: 11.5625rem;
+        border-radius: 3.2rem;
+        padding: 1px;
+        margin-right: 1.125rem;
+    }
+    .btn {
+        height: 100%;
+        width: 100%;
+        border-radius: 3.2rem;
+        span{
+            font-weight: 500;
+            font-size: 2.8125rem;
+        }
+    }
+}

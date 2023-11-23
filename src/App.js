@@ -17,6 +17,7 @@ import Authentication from './pages/Authentication';
 import FreeBoardView from './components/FreeBoardView';
 import FreeBoardView2 from './components/FreeBoardView2';
 import FreeBoardCompose from './components/FreeBoardCompose';
+import CSCenterPage from './pages/CSCenterPage';
 
 import NonLiveBet from './pages/NonLiveBet';
 import ScrollToTop from './components/ScrollToTop';
@@ -170,6 +171,17 @@ function App() {
               }
             ></Route>
           </Routes>
+          <Routes>
+          {/* cscenter  page*/}
+          <Route
+            path="/cscenter/*"
+            element={
+              <>
+                <CSCenterPage />
+              </>
+            }
+          />
+        </Routes>
           <Routes>
             <Route
               path="/esports/*"

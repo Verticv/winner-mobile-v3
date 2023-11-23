@@ -73,6 +73,15 @@ import Icon__1 from '../../assets/coupon/coupon1-v3.png'
 import Icon__2 from '../../assets/coupon/coupon2-v3.png'
 import Icon__3 from '../../assets/coupon/coupon3-v3.png'
 
+import CsCenterIcon_1 from '../../assets/cscenter/Icon_1.png'
+import CsCenterIcon_2 from '../../assets/cscenter/Icon_2.png'
+import CsCenterIcon_3 from '../../assets/cscenter/Icon_3.png'
+import CsCenterIcon_4 from '../../assets/cscenter/Icon_4.png'
+
+import MenuOnCsCenterIcon_1 from '../../assets/cscenter/Icon_1-active.png'
+import MenuOnCsCenterIcon_3 from '../../assets/cscenter/Icon_3-active.png'
+
+
 import MenuList from '../Shared/MenuList'
 import { useNavigate } from 'react-router-dom'
 import Logo from '../../assets/images/footer/footer-log.png'
@@ -364,7 +373,37 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
       icon2: MenuIcon_Light_12,
       title: '고객센터',
       hasBadge: false,
-      hasList: false
+      hasList: true,
+      subItems: [
+        {
+          id: 1,
+          icon2: CsCenterIcon_1,
+          OnIcon: MenuOnCsCenterIcon_1,
+          title: '문의하기',
+          path: '/cscenter/all/contact/all'
+        },
+        {
+          id: 2,
+          icon2: CsCenterIcon_2,
+          title: '공지사항',
+          OnIcon: MenuOn2,
+          path: '/cscenter/all/announcement'
+        },
+        {
+          id: 3,
+          icon2: CsCenterIcon_3,
+          title: '자주묻는질문',
+          OnIcon: MenuOnCsCenterIcon_3,
+          path: '/cscenter/all/faq'
+        },
+        {
+          id: 4,
+          icon2: CsCenterIcon_4,
+          title: '베팅규정',
+          OnIcon: MenuOn2,
+          path: '/cscenter/all/policy/sportsgame/soccer'
+        },
+      ]
     },
     {
       id: 13,

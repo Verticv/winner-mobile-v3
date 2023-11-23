@@ -1,0 +1,41 @@
+.contact-container {
+    margin-top: 1.08rem;
+
+    .two-buttons {
+        margin: 3.65rem 1.8rem 3.95rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        button {
+            border: 0;
+            padding: 0;
+            height: 7.3125rem;
+            font-size: 2.8125rem;
+            width: 50%;
+            border-radius: 1rem;
+            padding: 0.1875rem;
+            // background: blue;
+
+            .div-border {
+                padding: 0.1875rem;
+                // background: red;
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // text-shadow: #00000080 0.3125rem 0.125rem 0.4375rem;
+                color: #ffd2d2;
+                font-size: 2.811875rem;
+
+                .text {
+                    margin-right: -0.8rem;
+                    margin-top: 0.1rem;
+                    letter-spacing: -0.07rem;
+                }
+            }
+        }
+    }
+}

@@ -46,6 +46,7 @@ const InboxTable = ({ array, checkedState, setCheckedState }) => {
             display: 'flex',
             justifyContent: 'center',
           }}
+          onClick={(e) => e.stopPropagation()}
           className="flex justify-center items-center"
         >
           <label className="form-control">

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router';
 import Header from '../../Header';
 import NoticeBanner from '../../MainPage/NoticeBanner';
 import HomePageTopBanner from '../HomePageTopBanner';
+import FixedMenu from '../../FixedMenu';
 
 import WinnerSmall from '../../../assets/images/header/logo.png';
 
@@ -349,6 +350,7 @@ const InboxView = () => {
           </div>
         </button>
       </div>
+      <FixedMenu />
     </div>
   );
 };
