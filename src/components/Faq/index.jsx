@@ -15,75 +15,87 @@ const Faq = ({ subActiveButton, setSubActiveButton }) => {
       text: '카지노',
       id: 1,
       width: '13.4375rem',
-      path: '/cscenter/all/faq/live-casino',
-    },
-    {
-      text: '슬롯',
-      id: 2,
-      width: '11.5625rem',
-      path: '/cscenter/all/faq/slot',
+      path: '/cscenter/all/contact/all/live-casino',
     },
     {
       text: '스포츠',
-      id: 3,
+      id: 2,
       width: '13.4375rem',
-      path: '/cscenter/all/faq/sports',
+      path: '/cscenter/all/contact/all/sports',
+    },
+    {
+      text: '라이브스포츠',
+      id: 3,
+      width: '18.3125rem',
+      path: '/cscenter/all/contact/all/livesports',
+    },
+    {
+      text: '슬롯',
+      id: 4,
+      width: '11.5625rem',
+      path: '/cscenter/all/contact/all/slot',
     },
     {
       text: '호텔카지노',
-      id: 4,
+      id: 5,
       width: '18.3125rem',
-      path: '/cscenter/all/faq/e-sports1',
+      path: '/cscenter/all/contact/all/hotelcasino',
+    },
+    {
+      text: '홀덤',
+      id: 6,
+      width: '11.5625rem',
+      path: '/cscenter/all/contact/all/holdom',
     },
     {
       text: 'e-스포츠',
-      id: 5,
+      id: 7,
       width: '15.3125rem',
-      path: '/cscenter/all/faq/e-sports',
+      path: '/cscenter/all/contact/all/e-sports',
     },
     {
       text: '미니게임',
-      id: 6,
+      id: 8,
       width: '15.3125rem',
-      path: '/cscenter/all/faq/minigame',
+      path: '/cscenter/all/contact/all/minigame',
     },
     {
-      text: '키론가상게임',
+      text: '키론가상게임 ',
       width: '20.3125rem',
-      id: 7,
-      path: '/cscenter/all/faq/ar-game',
+      id: 9,
+      path: '/cscenter/all/contact/all/ar-game',
       additionLeftScroll: -90,
     },
     {
-      text: '피싱게임',
-      width: '16.3125rem',
-      id: 8,
-      path: '/cscenter/all/faq/ar-game1',
+      text: '피싱게임 ',
+      width: '20.3125rem',
+      id: 10,
+      path: '/cscenter/all/contact/all/ar-game1',
       additionLeftScroll: -90,
     },
     {
       text: '티비벳',
-      width: '16.3125rem',
-      id: 9,
-      path: '/cscenter/all/faq/ar-game2',
+      id: 11,
+      width: '16.5625rem',
+      path: '/cscenter/all/contact/all/slot2',
     },
     {
       text: '충전/환전',
       width: '16.3125rem',
-      id: 10,
-      path: '/cscenter/all/faq/transaction',
+      id: 12,
+      path: '/cscenter/all/contact/all/transaction',
     },
     {
       text: '베팅관련',
       width: '15.3125rem',
-      id: 11,
-      path: '/cscenter/all/faq/about-betting',
+      id: 13,
+      path: '/cscenter/all/contact/all/about-betting',
     },
     {
       text: '기타',
       width: '10.3125rem',
-      id: 12,
-      path: '/cscenter/all/faq/other',
+      id: 14,
+      path: '/cscenter/all/contact/all/other',
       additionLeftScroll: -200,
     },
   ];
@@ -214,107 +226,119 @@ const Faq = ({ subActiveButton, setSubActiveButton }) => {
         />
       </button>
       {openedCell === cellId && (
-        <div className="opened-cell">
-          <div className="flex flex-col">
-            <div
-              style={{ marginBottom: '6.1rem' }}
-              className=" tracking-tight text-gray-r585858"
-            >
-              <span className="no1">No.1</span>그 이상.! 최고를 넘어선 『 Winner
-              』입니다.
-            </div>
+        <div
+          style={{
+            background:
+              'linear-gradient(to top, #ecebeb, #dbb0e8 50%, #cb78e6)',
+            padding: '0.1875rem',
+            marginTop: '-6rem',
+            marginBottom: '1.875rem',
+            borderRadius:'2.8125rem',
+            position: 'relative'
+          }}
+        >
+          <div className="opened-cell">
+            <div className="flex flex-col">
+              <div
+                style={{ marginBottom: '6.1rem' }}
+                className=" tracking-tight text-gray-r585858"
+              >
+                <span className="no1">No.1</span>그 이상.! 최고를 넘어선 『
+                Winner 』입니다.
+              </div>
 
-            <div
-              style={{ marginBottom: '5rem' }}
-              className=" tracking-tight text-gray-r585858"
-            >
-              {BodyText1.split('\n').map((item, i) => (
-                <p key={i} className={`flex items-center`}>
-                  {parse(item)}
-                </p>
-              ))}
-            </div>
-            <div
-              style={{ marginBottom: '-0.3rem' }}
-              className=" tracking-tight text-gray-r585858"
-            >
-              {BodyText2.split('\n').map((item, i) => (
-                <p key={i} className={`flex items-center`}>
-                  {item}
-                </p>
-              ))}
-            </div>
-            <div
-              style={{ marginBottom: '0.9rem' }}
-              className=" tracking-tight text-gray-r585858"
-            >
-              {BodyText3.split('\n').map((item, i) => (
-                <p key={i} className={`flex items-center`}>
-                  {parse(item)}
-                </p>
-              ))}
-            </div>
-            <div
-              style={{ marginBottom: '1.9rem' }}
-              className=" tracking-tight text-gray-r585858"
-            >
-              - 스포츠 :{' '}
-              <span style={{ color: '#e65454' }} className="">
-                두폴더 이상{' '}
-              </span>{' '}
-              롤링 100% 최대 30만원
-            </div>
-            <div
-              style={{ marginBottom: '1.9rem' }}
-              className=" tracking-tight text-gray-r585858 "
-            >
-              - 스포츠단폴더, 가상게임, 미니게임, 카지노 :{' '}
-              <span style={{ color: '#e65454' }} className="">
-                이용불가
-              </span>
-            </div>
-            <div
-              style={{ marginBottom: '1rem' }}
-              className=" tracking-tight text-gray-r585858"
-            >
-              - 스포츠 2폴더 이상 100% 롤링 후 이용 가능
-            </div>
-
-            <div
-              style={{ marginBottom: '5.1rem', lineHeight: '1.9' }}
-              className=" tracking-tight text-gray-r585858"
-            >
-              스포츠 단폴더, 타 게임 이용 가능하며, 스포츠 2폴더 100% 롤링 전
-              타게임 이용시 보유금{' '}
-              <span style={{ color: '#e65454' }} className="">
-                전액 몰수처리
-              </span>
-            </div>
-
-            <div
-              style={{ marginBottom: '5.2rem', lineHeight: '1.9' }}
-              className=" tracking-tight text-gray-r585858"
-            >
-              ※ 모든게임의 롤링적용시점은 게임이 끝나서 마감처리된 때입니다.
-              이후에 출금신청해주셔야 처리가능합니다.
-            </div>
-
-            <div className=" tracking-tight text-gray-r585858">
-              {BodyText4.split('\n').map((item, i) => (
-                <span
-                  style={{ lineHeight: '1.9' }}
-                  key={i}
-                  className={`flex items-center`}
-                >
-                  {parse(item)}
+              <div
+                style={{ marginBottom: '5rem' }}
+                className=" tracking-tight text-gray-r585858"
+              >
+                {BodyText1.split('\n').map((item, i) => (
+                  <p key={i} className={`flex items-center`}>
+                    {parse(item)}
+                  </p>
+                ))}
+              </div>
+              <div
+                style={{ marginBottom: '-0.3rem' }}
+                className=" tracking-tight text-gray-r585858"
+              >
+                {BodyText2.split('\n').map((item, i) => (
+                  <p key={i} className={`flex items-center`}>
+                    {item}
+                  </p>
+                ))}
+              </div>
+              <div
+                style={{ marginBottom: '0.9rem' }}
+                className=" tracking-tight text-gray-r585858"
+              >
+                {BodyText3.split('\n').map((item, i) => (
+                  <p key={i} className={`flex items-center`}>
+                    {parse(item)}
+                  </p>
+                ))}
+              </div>
+              <div
+                style={{ marginBottom: '1.9rem' }}
+                className=" tracking-tight text-gray-r585858"
+              >
+                - 스포츠 :{' '}
+                <span style={{ color: '#e65454' }} className="">
+                  두폴더 이상{' '}
+                </span>{' '}
+                롤링 100% 최대 30만원
+              </div>
+              <div
+                style={{ marginBottom: '1.9rem' }}
+                className=" tracking-tight text-gray-r585858 "
+              >
+                - 스포츠단폴더, 가상게임, 미니게임, 카지노 :{' '}
+                <span style={{ color: '#e65454' }} className="">
+                  이용불가
                 </span>
-              ))}
-            </div>
-            <div
-              style={{ marginBottom: '4.625rem', marginTop: '1rem' }}
-              className="  tracking-tight text-gray-r585858 flex items-center"
-            >
-              감사합니다.
+              </div>
+              <div
+                style={{ marginBottom: '1rem' }}
+                className=" tracking-tight text-gray-r585858"
+              >
+                - 스포츠 2폴더 이상 100% 롤링 후 이용 가능
+              </div>
+
+              <div
+                style={{ marginBottom: '5.1rem', lineHeight: '1.9' }}
+                className=" tracking-tight text-gray-r585858"
+              >
+                스포츠 단폴더, 타 게임 이용 가능하며, 스포츠 2폴더 100% 롤링 전
+                타게임 이용시 보유금{' '}
+                <span style={{ color: '#e65454' }} className="">
+                  전액 몰수처리
+                </span>
+              </div>
+
+              <div
+                style={{ marginBottom: '5.2rem', lineHeight: '1.9' }}
+                className=" tracking-tight text-gray-r585858"
+              >
+                ※ 모든게임의 롤링적용시점은 게임이 끝나서 마감처리된 때입니다.
+                이후에 출금신청해주셔야 처리가능합니다.
+              </div>
+
+              <div className=" tracking-tight text-gray-r585858">
+                {BodyText4.split('\n').map((item, i) => (
+                  <span
+                    style={{ lineHeight: '1.9' }}
+                    key={i}
+                    className={`flex items-center`}
+                  >
+                    {parse(item)}
+                  </span>
+                ))}
+              </div>
+              <div
+                style={{ marginTop: '1rem' }}
+                className="  tracking-tight text-gray-r585858 flex items-center"
+              >
+                감사합니다.
+              </div>
             </div>
           </div>
         </div>
@@ -334,7 +358,6 @@ const Faq = ({ subActiveButton, setSubActiveButton }) => {
         className="w-full flex relative top-0"
         style={{ position: 'relative' }}
       >
-
         <div
           id="scroll-wrapper12"
           style={{
@@ -346,12 +369,12 @@ const Faq = ({ subActiveButton, setSubActiveButton }) => {
           }}
           className="overflow-x-scroll overflow-y-hidden hide-scrollbar"
         >
-            <HorizontalSubMenu
-              key={40}
-              itemsArray={tabsArray2}
-              setSelectedTab={setSelectedTab}
-              setSelectedSubTab={setSelectedSubTab}
-            />
+          <HorizontalSubMenu
+            key={40}
+            itemsArray={tabsArray2}
+            setSelectedTab={setSelectedTab}
+            setSelectedSubTab={setSelectedSubTab}
+          />
         </div>
         <div
           style={{ height: '98%', top: '2rem' }}

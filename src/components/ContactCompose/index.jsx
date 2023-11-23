@@ -7,9 +7,11 @@ import './_contactCompose.scss';
 const ContactCompose = () => {
   const carrierOptions = [
     '라이브카지노',
-    '슬롯게임',
     '스포츠',
+    '라이브스포츠',
+    '슬롯게임',
     '호텔카지노',
+    '홀덤게임',
     'e-스포츠',
     '미니게임',
     '키론가상게임 ',

@@ -22,71 +22,83 @@ const Contact = ({ subActiveButton, setSubActiveButton }) => {
       path: '/cscenter/all/contact/all/live-casino',
     },
     {
-      text: '슬롯',
-      id: 2,
-      width: '11.5625rem',
-      path: '/cscenter/all/contact/all/slot',
-    },
-    {
       text: '스포츠',
-      id: 3,
+      id: 2,
       width: '13.4375rem',
       path: '/cscenter/all/contact/all/sports',
     },
     {
-      text: '호텔카지노',
-      id: 4,
+      text: '라이브스포츠',
+      id: 3,
       width: '18.3125rem',
-      path: '/cscenter/all/contact/all/e-sports1',
+      path: '/cscenter/all/contact/all/livesports',
+    },
+    {
+      text: '슬롯',
+      id: 4,
+      width: '11.5625rem',
+      path: '/cscenter/all/contact/all/slot',
+    },
+    {
+      text: '호텔카지노',
+      id: 5,
+      width: '18.3125rem',
+      path: '/cscenter/all/contact/all/hotelcasino',
+    },
+    {
+      text: '홀덤',
+      id: 6,
+      width: '11.5625rem',
+      path: '/cscenter/all/contact/all/holdom',
     },
     {
       text: 'e-스포츠',
-      id: 5,
+      id: 7,
       width: '15.3125rem',
       path: '/cscenter/all/contact/all/e-sports',
     },
     {
       text: '미니게임',
-      id: 6,
+      id: 8,
       width: '15.3125rem',
       path: '/cscenter/all/contact/all/minigame',
     },
     {
       text: '키론가상게임 ',
       width: '20.3125rem',
-      id: 7,
+      id: 9,
       path: '/cscenter/all/contact/all/ar-game',
       additionLeftScroll: -90,
     },
     {
       text: '피싱게임 ',
       width: '20.3125rem',
-      id: 8,
+      id: 10,
       path: '/cscenter/all/contact/all/ar-game1',
       additionLeftScroll: -90,
     },
     {
       text: '티비벳',
-      id: 9,
+      id: 11,
       width: '16.5625rem',
       path: '/cscenter/all/contact/all/slot2',
     },
     {
       text: '충전/환전',
       width: '16.3125rem',
-      id: 10,
+      id: 12,
       path: '/cscenter/all/contact/all/transaction',
     },
     {
       text: '베팅관련',
       width: '15.3125rem',
-      id: 11,
+      id: 13,
       path: '/cscenter/all/contact/all/about-betting',
     },
     {
       text: '기타',
       width: '10.3125rem',
-      id: 12,
+      id: 14,
       path: '/cscenter/all/contact/all/other',
       additionLeftScroll: -200,
     },
@@ -217,12 +229,12 @@ const Contact = ({ subActiveButton, setSubActiveButton }) => {
           }}
           className="overflow-x-scroll overflow-y-hidden hide-scrollbar"
         >
-            <HorizontalSubMenu
-              key={40}
-              itemsArray={tabsArray}
-              setSelectedTab={setSelectedTab}
-              setSelectedSubTab={setSelectedSubTab}
-            />
+          <HorizontalSubMenu
+            key={40}
+            itemsArray={tabsArray}
+            setSelectedTab={setSelectedTab}
+            setSelectedSubTab={setSelectedSubTab}
+          />
         </div>
         <div
           style={{ height: '88%' }}
@@ -235,7 +247,8 @@ const Contact = ({ subActiveButton, setSubActiveButton }) => {
           borderRadius: '1em',
           margin: '1.875rem',
           marginTop: '1.875rem',
-          background: 'linear-gradient(to top, rgb(236, 235, 235), rgb(219, 176, 232) 50%, rgb(203, 120, 230))',
+          background:
+            'linear-gradient(to top, rgb(236, 235, 235), rgb(219, 176, 232) 50%, rgb(203, 120, 230))',
           boxShadow: 'rgba(0, 0, 0, 0.3) 0px 0.375rem 0.375rem 0px',
           padding: '0.1875rem',
         }}

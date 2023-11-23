@@ -3,7 +3,6 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import MailIcon from '../../assets/myPage/mail.png';
 import MailOpenedIcon from '../../assets/myPage/mail_opened.png';
 import Delete from '../../assets/myPage/delete.png';
-import DeleteDark from '../../assets/myPage/delete-dark.png';
 
 const ContactTable = ({ array, checkedState, setCheckedState }) => {
   const navigate = useNavigate();
@@ -33,6 +32,7 @@ const ContactTable = ({ array, checkedState, setCheckedState }) => {
             })
           }
           style={{
+            position: 'relative',
             background:
               item.isRead === false
                 ? '#ecd7fa'
@@ -210,7 +210,7 @@ const ContactTable = ({ array, checkedState, setCheckedState }) => {
             className="absolute right-0 "
             style={{
               position: 'absolute',
-              right: '4.5rem',
+              right: '5.3rem',
               background: 'bottom',
               zIndex: 5,
             }}
@@ -218,8 +218,8 @@ const ContactTable = ({ array, checkedState, setCheckedState }) => {
           >
             <img
               className="hover"
-              style={{ width: '4rem', height: '4.375rem' }}
-              src={item.isRead ? DeleteDark : Delete}
+              style={{    width: '3.7rem', height: '4.5rem' }}
+              src={item.isRead ? Delete : Delete}
               alt=""
             />
           </button>
