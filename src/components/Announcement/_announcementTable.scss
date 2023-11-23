@@ -9,8 +9,8 @@
 
     .announcementTable {
         padding: 0.1875rem;
-        background: linear-gradient(#4a4a4a, #1f1f1e);
-        box-shadow: 0px 0px 1rem 0px rgb(0 0 0 / 60%);
+        background: linear-gradient(to top, rgb(236, 235, 235), rgb(219, 176, 232) 50%, rgb(203, 120, 230));
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 0.375rem 0.375rem 0px;
         margin-top: 1.875rem;
         border-radius: 1rem;
         width: 100%;
@@ -21,7 +21,6 @@
             letter-spacing: -0.07rem;
             width: 100%;
             color: #eeeeee;
-            border-bottom: 0.1875rem solid #252525;
             height: 11.8rem;
 
             &:first-child {

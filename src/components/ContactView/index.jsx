@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Rank1 from '../../assets/myPage/freeboard/1.png';
 import parse from 'html-react-parser';
@@ -26,6 +26,10 @@ const ContactView = () => {
   const truncate = (str, max, len) => {
     return str.length > max ? str.substring(0, len) : str;
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="w-full">

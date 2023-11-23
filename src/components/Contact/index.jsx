@@ -248,7 +248,7 @@ const Contact = ({ subActiveButton, setSubActiveButton }) => {
           margin: '1.875rem',
           marginTop: '1.875rem',
           background: 'linear-gradient(to top, rgb(236, 235, 235), rgb(219, 176, 232) 50%, rgb(203, 120, 230))',
-          boxShadow: 'rgba(0, 0, 0, 0.8) 0px 0px 0.75rem 0px',
+          boxShadow: 'rgba(0, 0, 0, 0.3) 0px 0.375rem 0.375rem 0px',
           padding: '0.1875rem',
         }}
         className="shadow-subNavbar overflow-hidden"
