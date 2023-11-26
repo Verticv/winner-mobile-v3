@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import ProfileHeader from '../components/MyPage/Header';
 import ProfileInfo from '../components/MyPage/ProfileInfo';
 import ProfileMenu from '../components/MyPage/ProfileMenu';
-// import BetHistory from "../components/MyPage/BetHistory";
+
 import BetHistoryTest from '../components/MyPage/BetHistoryTest';
 import Header from '../components/Header';
 import NoticeBanner from '../components/MainPage/NoticeBanner';
@@ -27,6 +27,7 @@ import CouponUsage from '../components/MyPage/CouponUsage';
 import FreeBoard from '../components/MyPage/FreeBoard';
 import Inbox from '../components/MyPage/Inbox';
 import InboxView from '../components/MyPage/InboxView';
+import EditInfo from '../components/MyPage/EditInfo';
 
 function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -336,6 +337,25 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
                 setAuthenticated={setAuthenticated}
                 activeButton={activeButton}
                 setActiveButton={setActiveButton}
+              />
+            </>
+          }
+        ></Route>
+      </Routes>
+      <Routes>
+        <Route
+          path="/edit-info"
+          element={
+            <>
+              <Header />
+              <NoticeBanner />
+              <EditInfo
+                activeButton={activeButton}
+                setActiveButton={setActiveButton}
+              />
+              <FixedMenu
+                selectedTab={selectedTab}
+                setSelectedTab={setSelectedTab}
               />
             </>
           }

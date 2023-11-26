@@ -2,7 +2,11 @@
   max-width: 1242px;
   margin: auto;
 }
-
+.placeholder-gray-c8c8c8{
+  &::placeholder{
+    color : #c8c8c8;
+  }
+}
 .profile-header {
   height: 10.313rem;
   background-image: linear-gradient(to right, rgb(157, 59, 187) 0%, rgb(84, 35, 160) 100%);
