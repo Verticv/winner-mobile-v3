@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CloseIcon from '../../assets/myInfo/close.png';
 import LoginIcon from '../../assets/myInfo/edit_info_icon.png';
-import username from '../../assets/myInfo/username.png';
+import username from '../../assets/myInfo/username_icon.png';
 import password from '../../assets/myInfo/password.png';
 
 const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
