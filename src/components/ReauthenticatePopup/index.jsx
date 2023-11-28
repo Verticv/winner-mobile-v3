@@ -31,22 +31,42 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
         style={{
           borderRadius: '20px',
           background: 'linear-gradient(to right, #9d3bbb, #5423a0)',
-          position: 'relative'
+          position: 'relative',
         }}
         className="overflow-hidden"
       >
-        <div style={{ height: '68px' }} className="w-full">
+        <div
+          style={{
+            height: '9.375rem',
+            boxShadow: 'inset 0 0.375rem 0 0 #b675ce',
+            borderTopLeftRadius : '3.75rem',
+            borderTopRightRadius : '3.75rem',
+          }}
+          className="w-full"
+        >
           <button
-            style={{ position: 'absolute', top: '23px', right: '22px', background: 'transparent' }}
+            style={{
+              position: 'absolute',
+              top: '12px',
+              right: '22px',
+              background: 'transparent',
+            }}
             className="cursor-pointer z-20 filter hover:brightness-125"
             onClick={() => setPopupOpen(false)}
           >
             <img src={CloseIcon} alt="close_icon" />
           </button>
 
-          <div className="w-full h-full" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <div
+            className="w-full h-full"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
             <label
-              style={{ color: '#ffffff', fontSize: '4rem', fontWeight: '700'}}
+              style={{ color: '#ffffff', fontSize: '4rem', fontWeight: '700' }}
             >
               회원정보수정
             </label>
@@ -57,7 +77,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
             width: '72.75rem',
             position: 'relative',
             borderBottomLeftRadius: '2rem',
-            borderBottomRightRadius: '2rem'
+            borderBottomRightRadius: '2rem',
           }}
           className="relative bg-white rounded-xl shadow-popup"
         >
@@ -68,7 +88,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
               height: '100%',
               borderBottomLeftRadius: '2rem',
               borderBottomRightRadius: '2rem',
-              padding: '6rem 0'
+              padding: '6rem 0',
             }}
           >
             <div
@@ -129,6 +149,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                       maxWidth: '22.5rem',
                       overflow: 'hidden',
                       textOverflow: 'ellipsis',
+                      fontWeight: 'bold',
                     }}
                   >
                     louie3
@@ -169,10 +190,10 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                   style={{
                     paddingTop: '0.6rem',
                     width: '100%',
-                    color: '#c8c8c8',
+                    color: '#9da3b0',
                     fontSize: '3rem',
                   }}
-                  className="w-full text-5xl text-center text-gray-text outline-none tracking-tight placeholder-gray-bebebe tracking-mimus05"
+                  className="w-full text-5xl text-center text-gray-text outline-none tracking-tight placeholder-9da3b0 tracking-mimus05"
                   onFocus={(e) => {
                     e.target.placeholder = '';
                     setSelectedInput(0);
@@ -218,7 +239,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                 />
                 <input
                   style={{ color: '#444444', fontSize: '3rem' }}
-                  className="w-full text-5xl text-center outline-none tracking-tight place-color-grey-2 placeholder-gray-c8c8c8 tracking-mimus05"
+                  className="w-full text-5xl text-center outline-none tracking-tight place-color-grey-2 placeholder-9da3b0 tracking-mimus05"
                   placeholder={'비밀번호'}
                   type="password"
                   onFocus={(e) => {
@@ -277,7 +298,11 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                     >
                       <span
                         className="shadow-text-myPage"
-                        style={{ color: '#ffffff', marginTop: '' }}
+                        style={{
+                          color: '#ffffff',
+                          marginTop: '',
+                          fontWeight: 'bold',
+                        }}
                       >
                         확인
                       </span>

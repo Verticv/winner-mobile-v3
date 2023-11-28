@@ -47,7 +47,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
 
                 <div style={{ fontSize: '2.625rem' }} className="edit-info-text">
                     <div className="flex items-center h-14">
-                        <span style={{ textOverflow: 'ellipsis', maxWidth: '25rem', overflow: 'hidden', whiteSpace: 'nowrap', display: 'inline-flex' }} className="input-with-text">{truncate('louie3', 10, 16)}</span>
+                        <span style={{ textOverflow: 'ellipsis', maxWidth: '25rem', overflow: 'hidden', whiteSpace: 'nowrap', display: 'inline-flex', fontWeight: 'bold' }} className="input-with-text">{truncate('louie3', 10, 16)}</span>
                         <span>님의 회원정보를 수정합니다.</span>
                     </div>
                     <span className="flex items-center h-14" style={{ margin: '0.5rem 0 0 0.5rem' }}>아이디와 비밀번호 보안에 신경써주십시오.</span>
