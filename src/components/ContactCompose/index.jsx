@@ -23,11 +23,6 @@ const ContactCompose = () => {
   ];
   return (
     <>
-      {/* <img src={img} alt="" style={{ position: 'absolute', top: '0', opacity: '0.5' }} /> */}
-      {/* <HomePageTopBanner
-                pageTitle="문의하기"
-                toPath="/cscenter/all/contact/all"
-            /> */}
       <div style={{ margin: '0.0625rem 1.875rem' }} className="contact-compose">
         <div
           style={{
