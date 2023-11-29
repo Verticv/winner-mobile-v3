@@ -74,13 +74,18 @@ import Icon__1 from '../../assets/coupon/coupon1-v3.png';
 import Icon__2 from '../../assets/coupon/coupon2-v3.png';
 import Icon__3 from '../../assets/coupon/coupon3-v3.png';
 
-import CsCenterIcon_1 from '../../assets/cscenter/Icon_1.png';
-import CsCenterIcon_2 from '../../assets/cscenter/Icon_2.png';
-import CsCenterIcon_3 from '../../assets/cscenter/Icon_3.png';
-import CsCenterIcon_4 from '../../assets/cscenter/Icon_4.png';
+import CsCenterIcon_1 from '../../assets/images/menu2/csCenterIcon_1.png';
+import CsCenterIcon_2 from '../../assets/images/menu2/csCenterIcon_2.png';
+import CsCenterIcon_3 from '../../assets/images/menu2/csCenterIcon_3.png';
+import CsCenterIcon_4 from '../../assets/images/menu2/csCenterIcon_4.png';
+// import CsCenterIcon_5 from '../../assets/images/menu2/csCenterIcon_4.png';
 
-import MenuOnCsCenterIcon_1 from '../../assets/cscenter/Icon_1-active.png';
-import MenuOnCsCenterIcon_3 from '../../assets/cscenter/Icon_3-active.png';
+import MenuOnCsCenterIcon_1 from '../../assets/images/menu2/csCenterIcon_1-active.png';
+import MenuOnCsCenterIcon_2 from '../../assets/images/menu2/csCenterIcon_2-active.png';
+import MenuOnCsCenterIcon_3 from '../../assets/images/menu2/csCenterIcon_3-active.png';
+import MenuOnCsCenterIcon_4 from '../../assets/images/menu2/csCenterIcon_4-active.png';
+// import MenuOnCsCenterIcon_5 from '../../assets/images/menu2/csCenterIcon_5-active.png';
+
 import Logo from '../../assets/images/footer/footer-log.png';
 
 import MenuList from '../Shared/MenuList';
@@ -390,7 +395,7 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
           id: 2,
           icon2: CsCenterIcon_2,
           title: '공지사항',
-          OnIcon: MenuOn2,
+          OnIcon: MenuOnCsCenterIcon_2,
           path: '/cscenter/all/announcement',
         },
         {
@@ -404,7 +409,7 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
           id: 4,
           icon2: CsCenterIcon_4,
           title: '베팅규정',
-          OnIcon: MenuOn2,
+          OnIcon: MenuOnCsCenterIcon_4,
           path: '/cscenter/all/policy/sportsgame/soccer',
         },
       ],
