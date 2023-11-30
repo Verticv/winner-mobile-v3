@@ -130,6 +130,7 @@ const ContactTable = ({ array, checkedState, setCheckedState }) => {
                     whiteSpace: 'nowrap',
                     fontSize: '3rem',
                     letterSpacing: '-0.07rem',
+                    fontWeight: item.isRead === false ? '700' : 'unset',
                     color: item.isRead === true ? '#666666' : '#444444',
                     margin: '0',
                   }}

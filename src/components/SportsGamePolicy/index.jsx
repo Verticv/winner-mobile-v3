@@ -2842,7 +2842,7 @@ const HistoryMenu = ({
                 className="mt-2"
                 style={{ marginRight: '-0.2rem', paddingTop: '0.3rem' }}
               >
-                <span>
+                <span style={{fontWeight:'700'}}>
                   {item.text}
                 </span>
               </div>

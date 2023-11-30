@@ -38,6 +38,7 @@ const AnnouncementTable = ({ array, checkedState, setCheckedState }) => {
                   textOverflow: 'ellipsis',
                   overflow: 'hidden',
                   whiteSpace: 'nowrap',
+                  fontWeight: item.isNew === true ? '700' : 'unset',
                   color: item.isNew === true ? '#444444' : '#666666',
                 }}
               >

@@ -30,7 +30,7 @@ const Contact = ({ subActiveButton, setSubActiveButton }) => {
     {
       text: '라이브스포츠',
       id: 3,
-      width: '18.3125rem',
+      width: '21.3125rem',
       path: '/cscenter/all/contact/all/livesports',
     },
     {
@@ -65,14 +65,14 @@ const Contact = ({ subActiveButton, setSubActiveButton }) => {
     },
     {
       text: '키론가상게임 ',
-      width: '20.3125rem',
+      width: '21.3125rem',
       id: 9,
       path: '/cscenter/all/contact/all/ar-game',
       additionLeftScroll: -90,
     },
     {
       text: '피싱게임 ',
-      width: '20.3125rem',
+      width: '15.3125rem',
       id: 10,
       path: '/cscenter/all/contact/all/ar-game1',
       additionLeftScroll: -90,
@@ -80,7 +80,7 @@ const Contact = ({ subActiveButton, setSubActiveButton }) => {
     {
       text: '티비벳',
       id: 11,
-      width: '16.5625rem',
+      width: '13.5625rem',
       path: '/cscenter/all/contact/all/slot2',
     },
     {
