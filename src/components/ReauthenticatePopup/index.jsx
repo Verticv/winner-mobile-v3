@@ -66,7 +66,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
             }}
           >
             <label
-              style={{ color: '#ffffff', fontSize: '4rem', fontWeight: '700' }}
+              style={{ color: '#ffffff', fontSize: '3.75rem', fontWeight: '700' }}
             >
               회원정보수정
             </label>

@@ -33,17 +33,17 @@ import MenuIcon_Light_14 from '../../assets/images/menu2/menu-light14.png';
 import DarkArrow from '../../assets/images/menu/dark-arrow.png';
 import LightArrow from '../../assets/images/menu/light-arrow.png';
 
-import MenuOn1 from '../../assets/images/bottom-nav/menu-on1.png';
-import MenuOn2 from '../../assets/images/bottom-nav/menu-on2.png';
-import MenuOn3 from '../../assets/images/bottom-nav/menu-on3.png';
-import MenuOn4 from '../../assets/images/bottom-nav/menu-on4.png';
-import MenuOn5 from '../../assets/images/bottom-nav/menu-on5.png';
-import MenuOn6 from '../../assets/images/bottom-nav/menu-on6.png';
-import MenuOn7 from '../../assets/images/bottom-nav/menu-on7.png';
-import MenuOn8 from '../../assets/images/bottom-nav/menu-on8.png';
-import MenuOn9 from '../../assets/images/bottom-nav/menu-on9.png';
-import MenuOn10 from '../../assets/images/bottom-nav/menu-on10.png';
-import MenuOn11 from '../../assets/images/bottom-nav/menu-on11.png';
+import MenuOn1 from '../../assets/images/mainPage/menu-on1.png';
+import MenuOn2 from '../../assets/images/mainPage/menu-on2.png';
+import MenuOn3 from '../../assets/images/mainPage/menu-on3.png';
+import MenuOn4 from '../../assets/images/mainPage/menu-on4.png';
+import MenuOn5 from '../../assets/images/mainPage/menu-on5.png';
+import MenuOn6 from '../../assets/images/mainPage/menu-on6.png';
+import MenuOn7 from '../../assets/images/mainPage/menu-on7.png';
+import MenuOn8 from '../../assets/images/mainPage/menu-on8.png';
+import MenuOn9 from '../../assets/images/mainPage/menu-on9.png';
+import MenuOn10 from '../../assets/images/mainPage/menu-on10.png';
+import MenuOn11 from '../../assets/images/mainPage/menu-on11.png';
 
 import MenuIcon_1_1 from '../../assets/images/mainPage/menu1.png';
 import MenuIcon_1_2 from '../../assets/images/mainPage/menu2.png';
@@ -57,28 +57,57 @@ import MenuIcon_1_9 from '../../assets/images/mainPage/menu9.png';
 import MenuIcon_1_10 from '../../assets/images/mainPage/menu10.png';
 import MenuIcon_1_11 from '../../assets/images/mainPage/menu11.png';
 
-import Icon1 from '../../assets/mainPage/icons/Icon1.png';
-import Icon2 from '../../assets/mainPage/icons/icon2.png';
+// import Icon1 from '../../assets/mainPage/icons/Icon1.png';
+// import Icon2 from '../../assets/mainPage/icons/icon2.png';
 
-import Icon_1 from '../../assets/mainPage/icons/icon-1-v3.png';
-import Icon_2 from '../../assets/mainPage/icons/charging-history-v3.png';
+// import Icon_1 from '../../assets/mainPage/icons/icon-1-v3.png';
+// import Icon_2 from '../../assets/mainPage/icons/charging-history-v3.png';
 
-import icon1 from '../../assets/mainPage/points/1_v3.png';
-import icon2 from '../../assets/mainPage/points/2_v3.png';
-import icon3 from '../../assets/mainPage/points/3_v3.png';
+// import icon1 from '../../assets/mainPage/points/1_v3.png';
+// import icon2 from '../../assets/mainPage/points/2_v3.png';
+// import icon3 from '../../assets/mainPage/points/3_v3.png';
 
-import icon_1 from '../../assets/gameresults/sport-1-v3.png';
-import icon_2 from '../../assets/gameresults/sport-2-v3.png';
+// import icon_1 from '../../assets/gameresults/sport-1-v3.png';
+// import icon_2 from '../../assets/gameresults/sport-2-v3.png';
 
-import Icon__1 from '../../assets/coupon/coupon1-v3.png';
-import Icon__2 from '../../assets/coupon/coupon2-v3.png';
-import Icon__3 from '../../assets/coupon/coupon3-v3.png';
+// import Icon__1 from '../../assets/coupon/coupon1-v3.png';
+// import Icon__2 from '../../assets/coupon/coupon2-v3.png';
+// import Icon__3 from '../../assets/coupon/coupon3-v3.png';
+
+
+import MoneyChargeIcon_1 from '../../assets/images/menu2/moneyChargeIcon_1.png';
+import MoneyChargeIcon_2 from '../../assets/images/menu2/moneyChargeIcon_2.png';
+
+import MoneyExchangeIcon_1 from '../../assets/images/menu2/moneyExchangeIcon_1.png';
+import MoneyExchangeIcon_2 from '../../assets/images/menu2/moneyExchangeIcon_2.png';
+
+import PointChangeIcon_1 from '../../assets/images/menu2/pointChangeIcon_1.png';
+import PointChangeIcon_2 from '../../assets/images/menu2/pointChangeIcon_2.png';
+import PointChangeIcon_3 from '../../assets/images/menu2/pointChangeIcon_3.png';
+
+import CouponManageIcon_1 from '../../assets/images/menu2/couponManageIcon_1.png';
+import CouponManageIcon_2 from '../../assets/images/menu2/couponManageIcon_2.png';
+import CouponManageIcon_3 from '../../assets/images/menu2/couponManageIcon_3.png';
 
 import CsCenterIcon_1 from '../../assets/images/menu2/csCenterIcon_1.png';
 import CsCenterIcon_2 from '../../assets/images/menu2/csCenterIcon_2.png';
 import CsCenterIcon_3 from '../../assets/images/menu2/csCenterIcon_3.png';
 import CsCenterIcon_4 from '../../assets/images/menu2/csCenterIcon_4.png';
 // import CsCenterIcon_5 from '../../assets/images/menu2/csCenterIcon_4.png';
+
+import MenuOnMoneyChargeIcon_1 from '../../assets/images/menu2/moneyChargeIcon_1-active.png';
+import MenuOnMoneyChargeIcon_2 from '../../assets/images/menu2/moneyChargeIcon_2-active.png';
+
+import MenuOnMoneyExchangeIcon_1 from '../../assets/images/menu2/moneyExchangeIcon_1-active.png';
+import MenuOnMoneyExchangeIcon_2 from '../../assets/images/menu2/moneyExchangeIcon_2-active.png';
+
+import MenuOnPointChangeIcon_1 from '../../assets/images/menu2/pointChangeIcon_1-active.png';
+import MenuOnPointChangeIcon_2 from '../../assets/images/menu2/pointChangeIcon_2-active.png';
+import MenuOnPointChangeIcon_3 from '../../assets/images/menu2/pointChangeIcon_3-active.png';
+
+import MenuOnCouponManageIcon_1 from '../../assets/images/menu2/couponManageIcon_1-active.png';
+import MenuOnCouponManageIcon_2 from '../../assets/images/menu2/couponManageIcon_2-active.png';
+import MenuOnCouponManageIcon_3 from '../../assets/images/menu2/couponManageIcon_3-active.png';
 
 import MenuOnCsCenterIcon_1 from '../../assets/images/menu2/csCenterIcon_1-active.png';
 import MenuOnCsCenterIcon_2 from '../../assets/images/menu2/csCenterIcon_2-active.png';
@@ -148,45 +177,45 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
         },
         {
           id: 11,
-          icon2: MenuIcon_1_11,
-          title: '홀덤게임',
-          OnIcon: MenuOn11,
-          path: '/mypage/bet-history/all/hotel-casino',
-        },
-        {
-          id: 6,
           icon2: MenuIcon_1_6,
-          title: 'e-스포츠',
+          title: '홀덤게임',
           OnIcon: MenuOn6,
           path: '/mypage/bet-history/all/hotel-casino',
         },
         {
-          id: 7,
+          id: 6,
           icon2: MenuIcon_1_7,
-          title: '미니게임',
+          title: 'e-스포츠',
           OnIcon: MenuOn7,
+          path: '/mypage/bet-history/all/hotel-casino',
+        },
+        {
+          id: 7,
+          icon2: MenuIcon_1_8,
+          title: '미니게임',
+          OnIcon: MenuOn8,
           path: '/mypage/bet-history/all/e-sports',
         },
         {
           id: 8,
-          icon2: MenuIcon_1_8,
+          icon2: MenuIcon_1_9,
           title: '키론가상게임',
-          OnIcon: MenuOn8,
+          OnIcon: MenuOn9,
           path: '/mypage/bet-history/all/minigame',
         },
 
         {
           id: 9,
-          icon2: MenuIcon_1_9,
+          icon2: MenuIcon_1_10,
           title: '피싱게임',
-          OnIcon: MenuOn9,
+          OnIcon: MenuOn10,
           path: '/mypage/bet-history/all/ar-game',
         },
         {
           id: 10,
-          icon2: MenuIcon_1_10,
+          icon2: MenuIcon_1_11,
           title: '티비벳',
-          OnIcon: MenuOn10,
+          OnIcon: MenuOn11,
           path: '/mypage/bet-history/all/fishing-game',
         },
       ],
@@ -202,16 +231,16 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
       subItems: [
         {
           id: 1,
-          icon2: Icon1,
-          OnIcon: MenuOn1,
+          icon2: MoneyChargeIcon_1,
+          OnIcon: MenuOnMoneyChargeIcon_1,
           title: '충전신청',
           path: '/mypage/money/charge',
         },
         {
           id: 2,
-          icon2: Icon2,
+          icon2: MoneyChargeIcon_2,
+          OnIcon: MenuOnMoneyChargeIcon_2,
           title: '충전내역',
-          OnIcon: MenuOn2,
           path: '/mypage/money/charge/history',
         },
       ],
@@ -227,16 +256,16 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
       subItems: [
         {
           id: 1,
-          icon2: Icon_1,
-          OnIcon: MenuOn1,
+          icon2: MoneyExchangeIcon_1,
+          OnIcon: MenuOnMoneyExchangeIcon_1,
           title: '환전신청',
           path: '/mypage/money/exchange/currency',
         },
         {
           id: 2,
-          icon2: Icon_2,
+          icon2: MoneyExchangeIcon_2,
           title: '환전내역',
-          OnIcon: MenuOn2,
+          OnIcon: MenuOnMoneyExchangeIcon_2,
           path: '/mypage/money/exchange/currency/history',
         },
       ],
@@ -251,23 +280,23 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
       subItems: [
         {
           id: 1,
-          icon2: icon1,
-          OnIcon: MenuOn1,
+          icon2: PointChangeIcon_1,
+          OnIcon: MenuOnPointChangeIcon_1,
           title: '포인트전환신청',
           path: '/mypage/points/all',
         },
         {
           id: 2,
-          icon2: icon2,
+          icon2: PointChangeIcon_2,
           title: '포인트적립내역',
-          OnIcon: MenuOn2,
+          OnIcon: MenuOnPointChangeIcon_2,
           path: '/mypage/points/all/points-accumulate-history',
         },
         {
           id: 3,
-          icon2: icon3,
+          icon2: PointChangeIcon_3,
           title: '포인트전환내역',
-          OnIcon: MenuOn2,
+          OnIcon: MenuOnPointChangeIcon_3,
           path: '/mypage/points/all/points-transaction-history',
         },
       ],
@@ -310,16 +339,16 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
       subItems: [
         {
           id: 1,
-          icon2: icon_1,
-          OnIcon: MenuOn1,
+          icon2: MenuIcon_1_2,
+          OnIcon: MenuOn2,
           title: '스포츠',
           path: '/mypage/gameresults/all',
         },
         {
           id: 2,
-          icon2: icon_2,
+          icon2: MenuIcon_1_8,
           title: '미니게임',
-          OnIcon: MenuOn2,
+          OnIcon: MenuOn8,
           path: '/mypage/gameresults/minigame/powerball',
         },
       ],
@@ -345,23 +374,23 @@ const ProfileMenu = ({ isOpen, setOpen }) => {
       subItems: [
         {
           id: 1,
-          icon2: Icon__1,
-          OnIcon: MenuOn1,
+          icon2: CouponManageIcon_1,
+          OnIcon: MenuOnCouponManageIcon_1,
           title: '쿠폰사용',
           path: '/mypage/coupon/all',
         },
         {
           id: 2,
-          icon2: Icon__2,
+          icon2: CouponManageIcon_2,
           title: '쿠폰선물',
-          OnIcon: MenuOn2,
+          OnIcon: MenuOnCouponManageIcon_2,
           path: '/mypage/coupon/all/coupon-gift',
         },
         {
           id: 3,
-          icon2: Icon__3,
+          icon2: CouponManageIcon_3,
           title: '쿠폰내역',
-          OnIcon: MenuOn2,
+          OnIcon: MenuOnCouponManageIcon_3,
           path: '/mypage/coupon/all/coupon-history',
         },
       ],
