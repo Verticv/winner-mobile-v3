@@ -1,11 +1,17 @@
+import { useNavigate } from 'react-router';
+
 import './_sharedCard.scss';
 import RArrow from '../../../assets/images/mainPage/right-arrow-1.png'
 
-const SharedCard = ({ id, title, img, btn = '게임시작', clickEffect, setClickEffect }) => {
+
+const SharedCard = ({ id, path, title, img, btn = '게임시작', clickEffect, setClickEffect }) => {
+  const navigate = useNavigate();
+
   return (
     <div className={`shared-card ${clickEffect === id ? 'dark-overlay' : ''}`}
       onClick={() => {
-        setClickEffect(id)
+        // setClickEffect(path)
+        navigate(path)
       }}>
       <img src={img} alt="img" className='img' />
       <div className='desc'>

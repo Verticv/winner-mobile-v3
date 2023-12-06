@@ -1,33 +1,38 @@
-import './assets/sass/global.scss';
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
+import { getCookie, setCookie } from './utils';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePageTopBanner from './components/MyPage/HomePageTopBanner';
 import FixedMenu from './components/FixedMenu';
-import NoticeBanner from "./components/MainPage/NoticeBanner";
+import NoticeBanner from './components/MainPage/NoticeBanner';
 
 import MainPage from './pages/MainPage';
-import EsportsPage from './old-components/EsportsPage';
-import { getCookie, setCookie } from './utils';
 import MyPage from './pages/MyPage';
+import CSCenterPage from './pages/CSCenterPage';
 import Authentication from './pages/Authentication';
+import NonLiveBet from './pages/NonLiveBet';
+
+import EsportsPage from './old-components/EsportsPage';
 import FreeBoardView from './components/FreeBoardView';
 import FreeBoardView2 from './components/FreeBoardView2';
 import FreeBoardCompose from './components/FreeBoardCompose';
-import CSCenterPage from './pages/CSCenterPage';
-
-import NonLiveBet from './pages/NonLiveBet';
+import MinigamesPage from './components/MinigamesPage';
 import ScrollToTop from './components/ScrollToTop';
+
+
+import './App.css';
+import './assets/sass/global.scss';
+
+
 function App() {
   const [isAuthenticated, setAuthenticated] = useState(false);
   const [selectedTab, setSelectedTab] = useState(0);
 
   const pathname = window.location.pathname;
   const [isExpanded, setExpanded] = useState(null);
-  // const [isOpen, setOpen] = useState(false)
+
   const setFooterDefaultState = () => {
     setExpanded(null);
   };
@@ -48,6 +53,7 @@ function App() {
     const app = document.querySelector('.app');
     const html = document.querySelector('html');
     const bodyWidth = app.offsetWidth;
+    
     if (bodyWidth <= 1242) {
       const fontSize = (bodyWidth * 16) / 1242;
       html.style.fontSize = `${fontSize}px`;
@@ -103,7 +109,7 @@ function App() {
               element={
                 <>
                   <Header />
-				  <NoticeBanner />
+                  <NoticeBanner />
                   <HomePageTopBanner
                     pageTitle="게시판"
                     toPath={
@@ -128,7 +134,7 @@ function App() {
               element={
                 <>
                   <Header />
-				  <NoticeBanner />
+                  <NoticeBanner />
                   <HomePageTopBanner
                     pageTitle="게시판"
                     toPath={
@@ -153,7 +159,7 @@ function App() {
               element={
                 <>
                   <Header />
-				  <NoticeBanner />
+                  <NoticeBanner />
                   <HomePageTopBanner
                     pageTitle="게시판"
                     toPath={
@@ -167,21 +173,22 @@ function App() {
                   <FixedMenu
                     selectedTab={selectedTab}
                     setSelectedTab={setSelectedTab}
-                  />                </>
+                  />{' '}
+                </>
               }
             ></Route>
           </Routes>
           <Routes>
-          {/* cscenter  page*/}
-          <Route
-            path="/cscenter/*"
-            element={
-              <>
-                <CSCenterPage />
-              </>
-            }
-          />
-        </Routes>
+            {/* cscenter  page*/}
+            <Route
+              path="/cscenter/*"
+              element={
+                <>
+                  <CSCenterPage />
+                </>
+              }
+            />
+          </Routes>
           <Routes>
             <Route
               path="/esports/*"
@@ -225,6 +232,97 @@ function App() {
               }
             ></Route>
           </Routes>
+          <Routes>
+            <Route
+              path="/minigame/*"
+              element={
+                <>
+                  <MinigamesPage
+                    isAuthenticated={isAuthenticated}
+                    setAuthenticated={setAuthenticated}
+                  />
+                  <FixedMenu
+                    selectedTab={selectedTab}
+                    setSelectedTab={setSelectedTab}
+                  />
+                </>
+              }
+            />
+          </Routes>
+          {/* <Routes>
+            <Route
+              path="/minigame/powerball/*"
+              element={
+                <>
+                  <div className="powerball_top">
+                    <div className="powerball_area">
+                      <iframe
+                        id="game_frame"
+                        src="https://ntry.com/scores/powerball/live.php"
+                        scrolling="no"
+                        frameborder="0"
+                        title="powerball"
+                      ></iframe>
+                    </div>
+                  </div>{' '}
+                </>
+              }
+            />
+            <Route
+              path="/powerladder/*"
+              element={
+                <>
+                  <div className="powerball_top">
+                    <div className="powerball_area">
+                      <iframe
+                        id="game_frame"
+                        src="https://ntry.com/scores/power_ladder/live.php"
+                        scrolling="yes"
+                        frameborder="0"
+                        title="powerball"
+                      ></iframe>
+                    </div>
+                  </div>
+                </>
+              }
+            />
+            <Route
+              path="/speedkino/*"
+              element={
+                <>
+                  <div className="powerball_top">
+                    <div className="powerball_area">
+                      <iframe
+                        id="game_frame"
+                        src="https://ntry.com/scores/speedkeno/live.php"
+                        scrolling="yes"
+                        frameborder="0"
+                        title="powerball"
+                      ></iframe>
+                    </div>
+                  </div>
+                </>
+              }
+            />
+            <Route
+              path="/kinoladder/*"
+              element={
+                <>
+                  <div className="powerball_top">
+                    <div className="powerball_area">
+                      <iframe
+                        id="game_frame"
+                        src="https://ntry.com/scores/keno_ladder/live.php"
+                        scrolling="yes"
+                        frameborder="0"
+                        title="kinoladder"
+                      ></iframe>
+                    </div>
+                  </div>
+                </>
+              }
+            />
+          </Routes> */}
         </div>
       </Router>
       <ScrollToTop />

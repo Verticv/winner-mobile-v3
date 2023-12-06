@@ -1,0 +1,386 @@
+.kinoladdergame-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    p {
+        margin: 0;
+    }
+
+    .kinoladdergame-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .kinoladdergame-content1 {
+            display: flex;
+            flex-direction: column;
+
+            .kinoladdergame-content2 {
+                display: flex;
+
+                .kinoladdergame-content3 {
+                    display: flex;
+
+                }
+            }
+        }
+    }
+
+    .kinoladdergame-content4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+
+        .kinoladdergame-content5 {
+            display: flex;
+            align-items: center;
+
+            .kinoladdergame-content6 {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+            }
+        }
+
+        .kinoladdergame-content12 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+
+            .kinoladdergame-content13 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .kinoladdergame-content14 {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    div:hover {
+                        opacity: 0.75;
+                    }
+
+                    .kinoladdergame-content15 {
+                        object-fit: contain;
+                    }
+
+                    .kinoladdergame-content16 {
+                        z-index: 20;
+                        position: absolute;
+                        font-family: Swagger;
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+
+                .kinoladdergame-content17 {
+                    letter-spacing: -0.025em;
+                    color: #ffffff;
+                    margin-top: -0.6rem;
+                    margin-left: -0.3rem;
+                }
+            }
+
+            .kinoladdergame-content18 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .kinoladdergame-content19 {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    div:hover {
+                        opacity: 0.75;
+                    }
+
+                    .kinoladdergame-content20 {
+                        object-fit: contain;
+                    }
+
+                    .kinoladdergame-content21 {
+                        z-index: 20;
+                        position: absolute;
+                        font-family: Swagger;
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+
+                .kinoladdergame-content22 {
+                    letter-spacing: -0.025em;
+                    color: #ffffff;
+                    margin-top: -0.6rem;
+                    margin-left: -0.3rem;
+                }
+            }
+        }
+    }
+}
+
+
+.kinoladdergame-content23 {
+    display: flex;
+}
+
+.kinoladdergame-content7 {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 1px;
+
+    .kinoladdergame-content8 {
+        display: flex;
+        flex-shrink: 0;
+        border-width: 1px;
+        border-color: rgba(255, 255, 255, 1);
+        border-radius: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: -0.025em;
+        color: rgba(255, 255, 255, 1);
+
+        .kinoladdergame-content9 {
+            padding-bottom: 1px;
+        }
+    }
+
+    .kinoladdergame-content10 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0.25rem;
+
+        .kinoladdergame-content11 {
+            letter-spacing: -0.025em;
+            color: rgba(88, 88, 88, 1);
+            display: flex;
+            align-items: center;
+            margin-top: 0.75rem;
+        }
+    }
+}
+
+.three-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    .three-card-content {
+        display: flex;
+        align-items: center;
+
+        .three-card-content1 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .three-card-content2 {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                align-items: center;
+                // margin-left: 5rem;
+
+                .three-card-content3 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    // margin-left: 1.25rem;
+
+                    .three-card-content4 {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        div:hover {
+                            opacity: 0.75;
+                        }
+
+                        .three-card-content5 {
+                            object-fit: contain;
+                        }
+
+                        .three-card-content6 {
+                            z-index: 20;
+                            font-family: swagger;
+                            color: rgba(255, 255, 255, 1);
+                            position: absolute;
+                        }
+
+                        .three-card-content7 {
+                            position: absolute;
+                            border-radius: 9999px;
+                            background-color: rgba(0, 0, 0, 1);
+                            padding-top: 0.25rem;
+                            flex-shrink: 0;
+                            z-index: 20;
+                            left: 1rem;
+                            top: 0.8rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .three-card-content8 {
+                                color: rgba(255, 255, 255, 1);
+                                letter-spacing: -0.025em;
+                                margin-bottom: 0.25rem;
+                                margin-right: 1px;
+                            }
+                        }
+                    }
+
+                    .three-card-content9 {
+                        letter-spacing: -0.025em;
+                        color: #ffffff;
+                        margin-top: -0.95rem;
+                        margin-left: -0.1rem;
+                    }
+                }
+
+                .three-card-content10 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .three-card-content11 {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        div:hover {
+                            opacity: 0.75;
+                        }
+
+                        .three-card-content12 {
+                            object-fit: contain;
+                        }
+
+                        .three-card-content13 {
+                            z-index: 20;
+                            font-family: swagger;
+                            color: rgba(255, 255, 255, 1);
+                            position: absolute;
+                        }
+
+                        .three-card-content14 {
+                            position: absolute;
+                            border-radius: 9999px;
+                            background-color: rgba(0, 0, 0, 1);
+                            padding-top: 0.25rem;
+                            flex-shrink: 0;
+                            z-index: 20;
+                            right: 1rem;
+                            top: 0.8rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+
+                            .three-card-content15 {
+                                color: rgba(255, 255, 255, 1);
+                                letter-spacing: -0.025em;
+                                margin-bottom: 0.25rem;
+                                margin-left: -0.25rem;
+                            }
+                        }
+                    }
+
+                    .three-card-content16 {
+                        letter-spacing: -0.025em;
+                        color: #ffffff;
+                        margin-top: -0.95rem;
+                        margin-left: -0.6rem;
+                    }
+                }
+
+                .three-card-content17 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    .three-card-content18 {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        div:hover {
+                            opacity: 0.75;
+                        }
+
+                        .three-card-content19 {
+                            object-fit: contain;
+                        }
+
+                        .three-card-content20 {
+                            z-index: 20;
+                            font-family: swagger;
+                            color: rgba(255, 255, 255, 1);
+                            position: absolute;
+                        }
+
+                        .three-card-content21 {
+                            position: absolute;
+                            border-radius: 9999px;
+                            background-color: rgba(0, 0, 0, 1);
+                            padding-top: 0.25rem;
+                            flex-shrink: 0;
+                            z-index: 20;
+                            left: 1rem;
+                            top: 0.8rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .three-card-content22 {
+                                color: rgba(255, 255, 255, 1);
+                                letter-spacing: -0.025em;
+                                margin-bottom: 0.25rem;
+                                // margin-right: 1px;
+                                margin-left: -0.25rem;
+                            }
+                        }
+                    }
+
+                    .three-card-content23 {
+                        letter-spacing: -0.025em;
+                        color: #ffffff;
+                        margin-top: -0.95rem;
+                        margin-left: -0.3rem;
+                    }
+
+                }
+
+
+
+            }
+        }
+    }
+}

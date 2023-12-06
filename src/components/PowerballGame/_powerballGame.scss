@@ -1,0 +1,374 @@
+.containerball {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    p {
+        margin: 0;
+    }
+}
+
+.contentball {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contentball1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentball2 {
+    display: flex;
+    // margin-bottom: 0.07rem;
+}
+
+.contentball3 {
+    display: flex;
+    margin-top: 0px;
+}
+
+
+.betoptions-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.betoptions-style1 {
+    display: flex;
+    align-items: center;
+}
+
+.betoptions-style2 {
+    width: 100%;
+    height: 100%;
+    // border-bottom-right-radius: 0.25rem;
+    // border-bottom-left-radius: 0.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.betoptions-style3 {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 1px;
+    padding-left: 0.15rem;
+}
+
+.betoptions-style4 {
+    flex-shrink: 0;
+    border-radius: 0.6rem;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.025em;
+    color: #ffffff;
+}
+
+.betoptions-style5 {
+    padding-bottom: 1px;
+}
+
+
+.betoptions-style6 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.25rem;
+}
+
+.betoptions-style7 {
+    letter-spacing: -0.025em;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-top: 0.65rem;
+}
+
+
+
+.betoptions-style8 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.betoptions-style9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.betoptions-style10 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    div:hover {
+        opacity: 0.75;
+    }
+}
+
+.betoptions-style11 {
+    object-fit: contain;
+    margin-top: 0.4rem
+}
+
+.betoptions-style12 {
+    z-index: 20;
+    font-family: Swagger;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+}
+
+
+.betoptions-style13 {
+    letter-spacing: -0.025em;
+    color: #ffffff;
+    margin-top: -0.75rem;
+}
+
+
+.betoptions-style14 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.betoptions-style15 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    div:hover {
+        opacity: 0.75;
+    }
+}
+
+.betoptions-style16 {
+    object-fit: contain;
+    margin-top: 0.4rem;
+}
+
+.betoptions-style17 {
+    z-index: 20;
+    font-family: 'Swagger';
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    margin-top: 0.7rem !important;
+}
+
+
+.betoptions-style18 {
+    letter-spacing: -0.025em;
+    color: #ffffff;
+    margin-top: -0.75rem;
+    margin-left: -0.4rem;
+    margin-top: -0.1rem;
+
+}
+
+
+.betoption-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+    .betoption-content1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 11.375rem;
+
+        img {
+            margin-top: 0.4rem;
+        }
+
+        .betoption-content8 {
+            margin: -0.1rem 0.1rem !important;
+        }
+    }
+
+    // .betoptions-style17 {
+    //     margin-top: 0.7rem !important;
+    // }
+
+
+}
+
+.betoption-content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.betoption-content-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin-right: 2.5rem;
+    // margin-left: 1rem;
+}
+
+.betoption-content--1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin-right: 3.5rem;
+    // margin-left: 3.5rem;
+}
+
+
+.betoption-content2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    div:hover {
+        opacity: 0.75;
+    }
+}
+
+.betoption-content3 {
+    object-fit: contain;
+}
+
+.betoption-content4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.betoption-content5 {
+    z-index: 20;
+    font-family: 'Swagger';
+    color: rgba(255, 255, 255, 1);
+    margin-top: 1.5rem !important;
+}
+
+.betoption-content6 {
+    height: 2.5rem;
+}
+
+.betoption-content7 {
+    z-index: 20;
+    letter-spacing: -0.025em;
+    color: rgba(255, 255, 255, 1);
+    margin-top: -1rem;
+}
+
+
+.betoption-content8 {
+    letter-spacing: -0.025em;
+    color: #ffffff;
+    margin-top: -0.75rem;
+    margin: -0.25rem 0 0 -0.3rem !important;
+}
+
+
+
+.betoption-content9 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+}
+
+.betoption-content9-space {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0.8rem 3rem 0;
+    // margin-left: 3.7rem;
+}
+
+.betoption-space {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0.4rem 3.3rem 0 3.3rem;
+    // margin-left: 0.75rem;
+}
+
+.betoption-spacey {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding-top: 1rem;
+    // margin-top: 0.75rem;
+}
+
+.betoption-space-x15 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding-left: 1px;
+    padding: 0rem 1rem;
+    margin-top: -0.8rem;
+    // margin-left: 3.7rem;
+}
+
+.betoption-content10 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.betoption-content11 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding-left: 1px;
+}
+
+.indexstyle {
+    z-index: 20;
+}
+
+.indexstyle1 {
+    z-index: 10;
+}
+
+.betoptions-style-17 {
+    z-index: 20;
+    font-family: Swagger;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+}
+
+.changeChange {
+    padding: 0.4rem 2.3rem 0 2.5rem;
+}
