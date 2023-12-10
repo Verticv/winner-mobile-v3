@@ -14,18 +14,12 @@
 }
 
 .tabslistspeedkino {
-    // background-color: rgba(0, 86, 166, 1);
-    background: rgb(130, 97, 64);
-    // color: rgb(255, 223, 189) !important;
+    background: #6852a7;
 }
 
 .tabslistspeedkino1 {
-    // background-color: rgba(255, 255, 255, 1);
-    // border-width: 1px;
-    // border-color: rgba(183, 183, 183, 1);
-    // border-style: solid;
-    background: rgb(30, 30, 30);
-    border: 0.1875rem solid rgb(85, 85, 85);
+    background: #ffffff;
+    border: 0.1875rem solid #aaaaaa;
 }
 
 .tabslistspeedkino2 {
@@ -36,11 +30,13 @@
 }
 
 .tabslistspeedkino3 {
-    color: #ffdfbd;
+    color: #ffffff;
+    font-weight: 700;
 }
 
 .tabslistspeedkino4 {
-    color: rgb(204, 194, 182);
+    color: #666666;
+    font-weight: 700;
 }
 
 .tabslistspeedkino5 {
@@ -49,7 +45,8 @@
 .speedkino-path {
     margin-top: 2rem;
     letter-spacing: -0.025em;
-    color: #ccc2b6;
+    color: #666666;
+    font-weight: 700;
 
     .speedkino-path1 {
         display: flex;
@@ -60,7 +57,7 @@
             width: 50%;
             align-items: center;
             justify-content: center;
-            background-color: #252525;
+            background-color: #eeeeee;
         }
     }
 }
@@ -74,7 +71,8 @@
 .speedkino-sum {
     margin-top: 2rem;
     letter-spacing: -0.025em;
-    color: #ccc2b6;
+    color: #666666;
+    font-weight: 700;
 
     .speedkino-sum1 {
         display: flex;
@@ -85,7 +83,7 @@
             width: 50%;
             align-items: center;
             justify-content: center;
-            background-color: #252525;
+            background-color: #eeeeee;
         }
     }
 }
@@ -101,9 +99,9 @@
     width: 100%;
     align-items: center;
     border-bottom-style: solid;
-    border-color: #252525;
+    border-color: #dddddd;
     letter-spacing: -0.025em;
-    color: #c8c8c8;
+    color: #666666;
 
     .content-cells {
         display: flex;

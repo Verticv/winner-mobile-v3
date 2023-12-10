@@ -1,23 +1,29 @@
-.roundresultpopup-container{
+.roundresultpopup-container {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     border-radius: 0.5rem;
+    width: 77.625rem;
+    height: 100vh;
 
-    .roundresultpopup-content{
+    .roundresultpopup-content {
         position: relative;
         display: flex;
         flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        background-color: #272726;
+        background: linear-gradient(to right, rgb(157, 59, 187), rgb(84, 35, 160));
+        border-top-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+        box-shadow: rgb(182, 117, 206) 0px 0.375rem 0px 0px inset;
 
-        .roundresultpopup-content1{
+
+        .roundresultpopup-content1 {
             letter-spacing: -0.025em;
             color: rgba(255, 255, 255, 1);
         }
 
-        .roundresultpopup-content2{
+        .roundresultpopup-content2 {
             position: absolute;
             right: 0px;
             z-index: 20;
@@ -27,9 +33,9 @@
         }
     }
 
-    .roundresultpopup-content3{
+    .roundresultpopup-content3 {
         width: 100%;
         height: 100%;
-        // background-color: rgba(255, 255, 255, 1);
+        background: #ffffff;
     }
 }

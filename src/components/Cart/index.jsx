@@ -51,10 +51,9 @@ const Cart = ({ selectedOption }) => {
               border: '0.5rem solid #f04281',
               borderRadius: '50%',
               position: 'absolute',
-              // bottom: window.location.pathname.includes('powerball') ? '140rem' : '30rem',
               bottom: '28rem',
               left: '43%',
-              display: 'flex',
+              display: openedCart ? 'none' : 'flex',
               justifyContent: 'center',
               alignItems: 'center',
               boxShadow: '1px 1px 1px #00000060',
@@ -124,7 +123,7 @@ const Cart = ({ selectedOption }) => {
           >
             <div
               style={{
-                background: '#262626',
+                background: '#eeeeee',
                 // background: 'rgb(255 163 163 / 33%)',
                 width: '100%',
                 height: '100%',

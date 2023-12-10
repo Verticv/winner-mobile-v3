@@ -1,15 +1,10 @@
-// button{
-//     padding: 0;
-//     line-height: inherit;
-//     color: inherit;
-//     background-color: transparent;
-//     background-image: none;
-// }
 .speedkino-container{
     display: flex;
     flex-direction: column;
     overflow: hidden;
     border-radius: 0.5rem;
+    width: 77.625rem;
+    height: 100vh;
 
     .speedkino-content{
         position: relative;
@@ -17,7 +12,10 @@
         flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        background-color: rgba(93, 121, 156, 1);
+        background: linear-gradient(to right, rgb(157, 59, 187), rgb(84, 35, 160));
+        border-top-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+        box-shadow: rgb(182, 117, 206) 0px 0.375rem 0px 0px inset;
 
         .speedkino-content1{
             letter-spacing: -0.025em;
@@ -35,6 +33,6 @@
     .speedkino-content3{
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 1);
+        background: #ffffff;
     }
 }

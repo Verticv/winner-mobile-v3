@@ -31,7 +31,7 @@
 
     input {
         outline: none;
-        background: #1a1a1a;
+        background: #ffffff;
         border: 0;
         padding: 0;
         height: 7rem;
@@ -40,7 +40,7 @@
         // margin-left: 1.875rem;
         border: 0.1875rem solid #404040;
         border-radius: 0.5rem;
-        color: #ccc2b6;
+        color: #666666;
         padding-left: 1.65rem;
         letter-spacing: -0.1rem;
         padding-top: 0.15rem;
@@ -79,7 +79,7 @@
     .common-button12 {
         width: 13.25rem;
         height: 7.3125rem;
-        background: linear-gradient(to top, #403e38, #72695d, #a59484);
+        background: #d0cfcf;
         padding: 0.1875rem;
         border-radius: 0.6rem;
         box-shadow: 0 0.312rem 0.625rem 0 rgba(0, 0, 0, 0.3);
@@ -90,7 +90,7 @@
         }
 
         .text-con {
-            background: linear-gradient(to top, #4c4743, #615952, #776c62);
+            background: linear-gradient(to top, #e9e9e9, #f3f3f3, #fcfcfc);
             width: 100%;
             height: 100%;
             display: flex;
@@ -101,7 +101,7 @@
             span {
                 margin-top: 0.2rem;
                 letter-spacing: -0.07rem;
-                // text-shadow: rgb(0 0 0) 0rem 0rem 0.4375rem;
+                color: #666666;
             }
         }
     }

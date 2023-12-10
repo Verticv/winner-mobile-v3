@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
 import BlueButton from '../../assets/minigames/blue.png';
 import RedButton from '../../assets/minigames/red.png';
 import YellowButton from '../../assets/minigames/yellow.png';
@@ -7,9 +8,20 @@ import RedButtonPressed from '../../assets/minigames/red_pressed.png';
 import BlueButtonPressed from '../../assets/minigames/blue_pressed.png';
 import GreenButtonPressed from '../../assets/minigames/green_pressed.png';
 import YellowButtonPressed from '../../assets/minigames/yellow_pressed.png';
+
 import './_powerballGame.scss';
 
 const PowerballGame = ({ state, setChosen, setSelectedOption }) => {
+  const [isActive, setActive] = useState(false)
+
+  useEffect(() => {
+    console.log('isActive:' + isActive)
+  });
+
+  const handleClick = () => {
+    setActive((prev) => !prev)
+  }
+
   const BetOptions = ({
     width = 28.725,
     height = 23.375,
@@ -177,6 +189,7 @@ const PowerballGame = ({ state, setChosen, setSelectedOption }) => {
                         : BlueButton
                     }
                     alt=""
+                    onClick={() => handleClick()}
                   />
                   <p
                     style={{
