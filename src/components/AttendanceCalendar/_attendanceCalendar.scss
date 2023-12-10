@@ -1,0 +1,235 @@
+.Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .content_img {
+        cursor: pointer;
+        // transform: rotate(180deg);
+        margin-top: -0.1rem;
+        margin-left: 0.35rem;
+
+        img:hover {
+            opacity: 0.75;
+        }
+    }
+
+    .content_2 {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        letter-spacing: -0.04rem;
+
+
+        .content_3 {
+            display: flex;
+            align-items: center;
+        }
+
+        .content_4 {
+            display: flex;
+            align-items: center;
+        }
+
+        .content_5 {
+            display: flex;
+            align-items: center;
+            margin-left: -0.25rem;
+        }
+
+        .content_6 {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .content_7 {
+        opacity: 1;
+
+        img:hover {
+            opacity: 0.75;
+        }
+    }
+
+    .content_8 {
+        opacity: 0.2;
+    }
+
+    .content_9 {
+        cursor: pointer;
+        transform: rotate(180deg);
+        margin-top: -0.1rem;
+    }
+}
+
+.calendar_container {
+    width: 100%;
+    position: relative;
+    border: 0.1rem solid #aaaaaa;    
+    border-radius: 1.3rem;
+    border-width: 1px;
+    border-color: rgba(221, 221, 221, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.calender_info {
+    width: 100%;
+    & > img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.calender_content {
+   margin-top: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 100%;
+    // border: 1px solid #252525;
+    border-left: 0;
+}
+
+.renderDays_Container {
+    color: #ffffff;
+    font-weight: 700;
+    // border-color: rgba(221, 221, 221, 1);
+    // border-left-width: 1px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: flex;
+    padding-top: 0.1rem;
+    background: #7c40aa;
+    // border-left: 1px solid #252525;
+
+
+    .renderDays_Content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        color: #ff7f7f;
+    }
+
+    .renderDays_SameContent {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.renderCells_Container {
+    overflow: hidden;
+}
+
+.Rows_Content {
+    display: flex;
+}
+
+.Days_Content {
+    // border-color: rgba(221, 221, 221, 1);
+    background: #ffffff;
+    // border-top-width: 1px;
+    // border-left-width: 1px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    position: relative;
+    // border-top: 0.1875rem solid ;
+    // border-left: 0.1875rem solid;
+    border: 0.09375rem solid #eeeeee;
+
+    // border-bottom: ;
+    // border-top: 0;
+    // &:first-child {
+    //     // border-top: 0;
+    // }
+
+
+    .Red_Content {
+        color: #f04281;
+    }
+
+    .Gray_Content {
+        color: #666666;
+    }
+
+    .Day_Content {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        // margin-left: 1.1rem;
+        margin-top: 0.9rem;
+    }
+
+    .Day_Content2 {
+        // height: 5.75rem;
+        width: 5.875rem;
+        // margin-left: -0.2rem;
+        // margin-top: -0.45rem;
+        position: absolute;
+    }
+}
+
+.calender_content1 {
+    color: #666666;
+    letter-spacing: -0.04rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+
+    .calender_content2 {
+        color: #4c98ff;
+        font-weight: 700;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+}
+
+.Button_Style {
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    font-size: 2.625rem;
+    background-color: rgba(0, 112, 217, 1);
+    background: linear-gradient(to right, rgb(21, 207, 238), rgb(49, 151, 229));
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    button:hover {
+        opacity: 0.75;
+    }
+}
+
+.button-content {
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+
+    .span_style {
+        color: #ffffff;
+        letter-spacing: -0.025rem;
+        margin-top: 0.2rem;
+        letter-spacing: -0.07rem;
+    }
+}

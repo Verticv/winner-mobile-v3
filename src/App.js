@@ -20,7 +20,7 @@ import FreeBoardView2 from './components/FreeBoardView2';
 import FreeBoardCompose from './components/FreeBoardCompose';
 import MinigamesPage from './components/MinigamesPage';
 import ScrollToTop from './components/ScrollToTop';
-
+import AttendPage from './components/AttendPage';
 
 import './App.css';
 import './assets/sass/global.scss';
@@ -249,80 +249,19 @@ function App() {
               }
             />
           </Routes>
-          {/* <Routes>
-            <Route
-              path="/minigame/powerball/*"
-              element={
-                <>
-                  <div className="powerball_top">
-                    <div className="powerball_area">
-                      <iframe
-                        id="game_frame"
-                        src="https://ntry.com/scores/powerball/live.php"
-                        scrolling="no"
-                        frameborder="0"
-                        title="powerball"
-                      ></iframe>
-                    </div>
-                  </div>{' '}
-                </>
-              }
-            />
-            <Route
-              path="/powerladder/*"
-              element={
-                <>
-                  <div className="powerball_top">
-                    <div className="powerball_area">
-                      <iframe
-                        id="game_frame"
-                        src="https://ntry.com/scores/power_ladder/live.php"
-                        scrolling="yes"
-                        frameborder="0"
-                        title="powerball"
-                      ></iframe>
-                    </div>
-                  </div>
-                </>
-              }
-            />
-            <Route
-              path="/speedkino/*"
-              element={
-                <>
-                  <div className="powerball_top">
-                    <div className="powerball_area">
-                      <iframe
-                        id="game_frame"
-                        src="https://ntry.com/scores/speedkeno/live.php"
-                        scrolling="yes"
-                        frameborder="0"
-                        title="powerball"
-                      ></iframe>
-                    </div>
-                  </div>
-                </>
-              }
-            />
-            <Route
-              path="/kinoladder/*"
-              element={
-                <>
-                  <div className="powerball_top">
-                    <div className="powerball_area">
-                      <iframe
-                        id="game_frame"
-                        src="https://ntry.com/scores/keno_ladder/live.php"
-                        scrolling="yes"
-                        frameborder="0"
-                        title="kinoladder"
-                      ></iframe>
-                    </div>
-                  </div>
-                </>
-              }
-            />
-          </Routes> */}
+          <Routes>
+          <Route
+            path="/attendance"
+            element={
+              <>
+                <AttendPage
+                  isAuthenticated={isAuthenticated}
+                  setAuthenticated={setAuthenticated}
+                />
+              </>
+            }
+          ></Route>
+        </Routes>
         </div>
       </Router>
       <ScrollToTop />

@@ -13,12 +13,14 @@ const SportsSection = () => {
     {
       id: 0,
       title: '조합베팅',
-      img: Image1
+      img: Image1,
+      path: '/bet-combination'
     },
     {
       id: 1,
       title: '스페셜베팅',
-      img: Image2
+      img: Image2,
+      path: '/bet-combination'
     },
   ]
   const [clickEffect, setClickEffect] = useState(null);
@@ -35,6 +37,7 @@ const SportsSection = () => {
           id={card.id}
           title={card.title}
           img={card.img}
+          path={card.path}
           clickEffect={clickEffect}
           setClickEffect={setClickEffect}/>
         ))

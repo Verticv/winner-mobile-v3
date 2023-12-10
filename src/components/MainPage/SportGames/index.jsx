@@ -23,11 +23,11 @@ function SportGame() {
   const tabsList = [
     {
       id: 0,
-      title: '조합베팅'
+      title: '조합베팅',
     },
     {
       id: 1,
-      title: '스페셜베팅'
+      title: '스페셜베팅',
     },
     {
       id: 2,

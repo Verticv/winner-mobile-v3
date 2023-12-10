@@ -101,7 +101,7 @@ const ProfileInfo = () => {
           </div>
           <div className='profile-buttons'>
             <div className='profile-button2'>
-              <button className='audience-btn'>
+              <button className='audience-btn' onClick={() => navigate("/attendance")}>
                 <div className='button-img2' ><img src={Button5} alt="Button1" /></div>
                 <p>출석부</p>
               </button>
