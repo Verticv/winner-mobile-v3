@@ -21,10 +21,11 @@ import FreeBoardCompose from './components/FreeBoardCompose';
 import MinigamesPage from './components/MinigamesPage';
 import ScrollToTop from './components/ScrollToTop';
 import AttendPage from './components/AttendPage';
+import KironGuide from './components/KironGuide';
+import HoldemGuide from './components/HoldemGuide';
 
 import './App.css';
 import './assets/sass/global.scss';
-
 
 function App() {
   const [isAuthenticated, setAuthenticated] = useState(false);
@@ -53,7 +54,7 @@ function App() {
     const app = document.querySelector('.app');
     const html = document.querySelector('html');
     const bodyWidth = app.offsetWidth;
-    
+
     if (bodyWidth <= 1242) {
       const fontSize = (bodyWidth * 16) / 1242;
       html.style.fontSize = `${fontSize}px`;
@@ -250,18 +251,52 @@ function App() {
             />
           </Routes>
           <Routes>
-          <Route
-            path="/attendance"
-            element={
-              <>
-                <AttendPage
-                  isAuthenticated={isAuthenticated}
-                  setAuthenticated={setAuthenticated}
-                />
-              </>
-            }
-          ></Route>
-        </Routes>
+            <Route
+              path="/kiron/guide"
+              element={
+                <>
+                  <Header />
+                  <NoticeBanner />
+                  <HomePageTopBanner pageTitle="키론가상게임" />
+                  <KironGuide />
+                  <FixedMenu
+                    selectedTab={selectedTab}
+                    setSelectedTab={setSelectedTab}
+                  />
+                </>
+              }
+            />
+          </Routes>
+          <Routes>
+            <Route
+              path="/holdem/guide"
+              element={
+                <>
+                  <Header />
+                  <NoticeBanner />
+                  <HomePageTopBanner pageTitle="홀덤게임" />
+                  <HoldemGuide />
+                  <FixedMenu
+                    selectedTab={selectedTab}
+                    setSelectedTab={setSelectedTab}
+                  />
+                </>
+              }
+            />
+          </Routes>
+          <Routes>
+            <Route
+              path="/attendance"
+              element={
+                <>
+                  <AttendPage
+                    isAuthenticated={isAuthenticated}
+                    setAuthenticated={setAuthenticated}
+                  />
+                </>
+              }
+            ></Route>
+          </Routes>
         </div>
       </Router>
       <ScrollToTop />

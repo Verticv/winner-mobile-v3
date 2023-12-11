@@ -17,7 +17,8 @@ const VirtualGameSection = () => {
     {
       id: 1,
       title: '이용가이드',
-      img: Image2
+      img: Image2,
+      path: '/kiron/guide'
     },
    
   ]
@@ -35,6 +36,7 @@ const VirtualGameSection = () => {
           key={card.id}
           title={card.title}
           img={card.img}
+          path={card.path}
           btn={(card.id === 1) ? "설명보기" : "게임시작"}
           clickEffect={clickEffect}
           setClickEffect={setClickEffect}/>

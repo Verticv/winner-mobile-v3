@@ -18,7 +18,8 @@ const HoldemGameSection = () => {
       id: 1,
       title: '이용가이드',
       img: Image2,
-      btn: '설명보기'
+      btn: '설명보기',
+      path: '/holdem/guide'
     },
   ]
   const [clickEffect, setClickEffect] = useState(null);
@@ -35,6 +36,7 @@ const HoldemGameSection = () => {
             title={card.title}
             img={card.img}
             btn={card.btn}
+            path={card.path}
             clickEffect={clickEffect}
             setClickEffect={setClickEffect}
           />
