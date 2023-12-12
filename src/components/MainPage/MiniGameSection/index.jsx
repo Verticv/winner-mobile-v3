@@ -49,7 +49,7 @@ const MiniGameSection = () => {
         <SectionHeader icon={MiniGameIcon} title={'미니게임'} />
         <div className="cont">
           <div className="content1" style={{ marginTop: '1rem' }}>
-            <div style={{ padding: '0 1.8rem', marginBottom: '1.6rem' }}>
+            <div style={{ marginBottom: '1.6rem' }}>
               {Items.map((card, index) => (
                 <SharedCard
                   id={card.id}

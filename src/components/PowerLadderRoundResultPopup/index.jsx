@@ -1,6 +1,6 @@
 import React from 'react';
 import PowerLadderResults from '../PowerLadderResults';
-import CloseIcon from '../../assets/minigames/close-white.png';
+import CloseIcon from '../../assets/images/nonLiveBet/close.png';
 import './_powerLadderRoundResultPopup.scss';
 
 const PowerLadderRoundResultPopup = ({ setPopupOpen }) => {
@@ -21,13 +21,13 @@ const PowerLadderRoundResultPopup = ({ setPopupOpen }) => {
           width: '100%',
           borderTopLeftRadius: '4rem',
           borderTopRightRadius: '4rem',
-          background: '#323231',
+          background: '#ffffff',
         }}
         className="roundresultpopup-container"
       >
         <div style={{ height: '9.4rem' }} className="roundresultpopup-content">
           <label
-            style={{ fontSize: '3.75rem', color: '#ad9e8c' }}
+            style={{ fontSize: '3.75rem', color: '#ffffff', fontWeight: '700' }}
             className="roundresultpopup-content1"
           >
             회차결과

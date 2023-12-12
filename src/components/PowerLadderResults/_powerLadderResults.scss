@@ -11,7 +11,8 @@
 
     .powerladderresults-content {
         letter-spacing: -0.025em;
-        color: #ccc2b6;
+        color: #666666;
+        font-weight: 700;
 
         .powerladderresults-content1 {
             display: flex;
@@ -22,7 +23,7 @@
                 width: 50%;
                 align-items: center;
                 justify-content: center;
-                background-color: #252525;
+                background-color: #eeeeee;
             }
         }
     }
@@ -37,9 +38,9 @@
             width: 100%;
             align-items: center;
             border-bottom-style: solid;
-            border-color: #252525;
+            border-color: #ffffff;
             letter-spacing: -0.025em;
-            color: #c8c8c8;
+            color: #666666;
 
             .powerladderresults-content5 {
                 display: flex;
