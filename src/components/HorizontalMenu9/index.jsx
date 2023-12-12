@@ -21,22 +21,25 @@ const HorizontalMenu9 = ({
       <div
         className="shadow-box-myPage"
         style={{
-          width: '100%',
+          width: isFlex ? '100%' : `calc( 100% / ${items.length} )`,
           borderRadius: '1rem',
           background:
-            'linear-gradient(to top, rgb(85, 61, 132), rgb(159, 90, 245) 50%, rgb(196, 115, 236))',
+            pathname === item.path
+              ? 'linear-gradient(to top, rgb(85, 61, 132), rgb(159, 90, 245) 50%, rgb(196, 115, 236))'
+              : 'linear-gradient(to top, rgb(79, 58, 122), rgb(240, 211, 255))',
           padding: '0.2rem',
+          marginRight: '0.5rem'
         }}
       >
         <button
           key={item.id}
           style={{
             height: '8.375rem',
-            width: isFlex ? '100%' : '25rem',
+            width: '100%',
             background:
               pathname === item.path
                 ? 'linear-gradient(to top, rgb(73, 31, 156) 0%, rgb(158, 60, 188) 100%)'
-                : 'linear-gradient(to top, #a6926f, #f9f0d3)',
+                : 'linear-gradient(to top, rgb(204, 196, 255), rgb(255, 217, 245))',
             // background: `url(${items.length === 1 ? activeBtn2 : pathname === item.path ? activeBtn : inactiveBtn}) round`,
             borderRadius: '1rem',
           }}
@@ -66,7 +69,7 @@ const HorizontalMenu9 = ({
             <span
               style={{
                 fontSize: '2.5rem',
-                color: pathname === item.path ? '#ffffff' : '#ccc2b6',
+                color: pathname === item.path ? '#ffffff' : '#2d2834',
                 height: '100%',
                 display: 'flex',
                 justifyContent: 'center',

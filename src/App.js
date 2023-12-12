@@ -14,7 +14,7 @@ import CSCenterPage from './pages/CSCenterPage';
 import Authentication from './pages/Authentication';
 import NonLiveBet from './pages/NonLiveBet';
 
-import EsportsPage from './old-components/EsportsPage';
+import EsportsPage from './components/EsportsPage';
 import FreeBoardView from './components/FreeBoardView';
 import FreeBoardView2 from './components/FreeBoardView2';
 import FreeBoardCompose from './components/FreeBoardCompose';
@@ -23,6 +23,7 @@ import ScrollToTop from './components/ScrollToTop';
 import AttendPage from './components/AttendPage';
 import KironGuide from './components/KironGuide';
 import HoldemGuide from './components/HoldemGuide';
+import LiveSportsGuide from './components/LiveSportsGuide';
 
 import './App.css';
 import './assets/sass/global.scss';
@@ -197,6 +198,8 @@ function App() {
                 <>
                   {/* <Header setOpen={setOpen1} isOpen={isOpen}/> */}
                   <Header />
+                  <NoticeBanner />
+                  <HomePageTopBanner pageTitle="e-스포츠" />
                   <EsportsPage
                     isAuthenticated={isAuthenticated}
                     setAuthenticated={setAuthenticated}
@@ -276,6 +279,23 @@ function App() {
                   <NoticeBanner />
                   <HomePageTopBanner pageTitle="홀덤게임" />
                   <HoldemGuide />
+                  <FixedMenu
+                    selectedTab={selectedTab}
+                    setSelectedTab={setSelectedTab}
+                  />
+                </>
+              }
+            />
+          </Routes>
+          <Routes>
+            <Route
+              path="/liveSports/guide"
+              element={
+                <>
+                  <Header />
+                  <NoticeBanner />
+                  <HomePageTopBanner pageTitle="라이브스포츠" />
+                  <LiveSportsGuide />
                   <FixedMenu
                     selectedTab={selectedTab}
                     setSelectedTab={setSelectedTab}

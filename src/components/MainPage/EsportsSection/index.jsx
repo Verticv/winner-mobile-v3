@@ -21,19 +21,22 @@ const EsportsSection = () => {
       id: 1,
       title: '화면구성설명',
       img: Image2,
-      btnText: '설명보기'
+      btnText: '설명보기',
+      path: '/esports/structure'
     },
     {
       id: 2,
       title: '단폴더베팅방법',
       img: Image3,
-      btnText: '설명보기'
+      btnText: '설명보기',
+      path: '/esports/single'
     },
     {
       id: 4,
       title: '다폴더베팅방법',
       img: Image4,
-      btnText: '설명보기'
+      btnText: '설명보기',
+      path: '/esports/multi'
     },
   ]
   const [clickEffect, setClickEffect] = useState(null);
@@ -51,6 +54,7 @@ const EsportsSection = () => {
           title={card.title}
           img={card.img}
           btn={card.btnText}
+          path={card.path}
           clickEffect={clickEffect}
           setClickEffect={setClickEffect}/>
         ))}

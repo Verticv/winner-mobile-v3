@@ -17,12 +17,14 @@ const LiveSportsSection = () => {
     {
       id: 1,
       title: '화면구성설명',
-      img: Image2
+      img: Image2,
+      path: '/liveSports/guide'
     },
     {
       id: 2,
       title: '베팅방법',
-      img: Image3
+      img: Image3,
+      // path: '/liveSports/guide2'
     },
 
   ]
@@ -40,6 +42,7 @@ const LiveSportsSection = () => {
           id={card.id}
           title={card.title}
           img={card.img}
+          path={card.path}
           clickEffect={clickEffect}
           btn={(card.id === 1 || card.id === 2) ? "설명보기" : "게임시작"}
           setClickEffect={setClickEffect}/>
