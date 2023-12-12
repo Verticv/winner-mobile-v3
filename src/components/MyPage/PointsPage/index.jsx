@@ -12,13 +12,7 @@ import Icon3Active from '../../../assets/mainPage/points/3-active-v3.png';
 import activeBG from '../../../assets/mainPage/points/active-bg-v3.png';
 import { Route, Routes } from 'react-router-dom';
 import PointsAccumulateHistory from '../PointsAccumulateHistory';
-// import Logo from "../../../assets/myInfo/Logo.png";
-// import AccountProfileComponent from '../AccountProfileComponent'
-// import LeftMenu from "../LeftMenu";
-// import subIcon1 from '../../../assets/bigIcons/leftMenu/13.png';
-// import subIcon2 from '../../../assets/bigIcons/leftMenu/14.png';
-// import subIcon3 from '../../../assets/bigIcons/leftMenu/15.png';
-import ScrollButton from '../ScrollButton';
+
 import './_pointsPage.scss';
 
 
@@ -151,7 +145,6 @@ const PointsPage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSub
                 <Route path='/all/*'
                     element={<>
                         {/* <Header /> */}
-                        <ScrollButton />
                         {/* <HomePageTopBanner pageTitle='포인트' toPath='/mypage/points' /> */}
                         <div style={{padding: "0.038rem 1.288rem"}} className='mypage-points' id='container-nav'>
                             <HorizontalMenu3 withSmallMarginTop itemsArray={tabsArray} setSelectedTab={setSelectedTab} setSelectedSubTab={setSelectedSubTab} />

@@ -15,7 +15,6 @@ import activeIcon1 from '../../../assets/mainPage/icons/recharge-application-v3.
 import activeIcon2 from '../../../assets/mainPage/icons/active-icon2-v3.png';
 import Pagination from '../Pagination';
 // import Header from '../Header';
-import ScrollButton from '../ScrollButton';
 
 // currency exchange
 const tabsArray = [
@@ -81,7 +80,6 @@ const MoneyExchangePage = ({ isAuthenticated, setAuthenticated, subActiveButton,
                 <Route path="/currency/*"
                     element={
                         <>
-                            <ScrollButton />
                             {/* <div className="w-full z-30 flex flex-col items-center">
                                 <Header />
                                 <HomePageTopBanner pageTitle='머니환전' toPath='/mypage/money/exchange' />

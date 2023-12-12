@@ -14,6 +14,10 @@
   }
 }
 
+.carousel__slide--focused{
+  display: none !important;
+}
+
 .profile-header {
   height: 10.313rem;
   background-image: linear-gradient(to right, rgb(157, 59, 187) 0%, rgb(84, 35, 160) 100%);
@@ -554,7 +558,6 @@
     color: #fffffe;
     font-size: 3.74375rem;
     margin-left: 2.1rem;
-    margin-top: 0.3875rem;
     letter-spacing: -0.1rem;
     font-weight: bold;
   }
@@ -1269,7 +1272,6 @@
       letter-spacing: -0.1rem;
       font-size: 3.75rem;
       margin-left: -0.35rem;
-      margin-top: 0.1rem;
       font-weight: bold;
     }
 

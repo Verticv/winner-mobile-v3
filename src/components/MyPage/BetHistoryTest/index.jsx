@@ -256,7 +256,6 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                             <Routes>
                             <Route index element={
                                     <>
-                                        <ScrollButton />
                                         <LiveCasinoBetHistory key={1} showSub={false} isState={historySelectedSubTab} setState={setHistorySelectedSubTab}
                                             subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             path="/mypage/bet-history/all"
@@ -269,7 +268,6 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                 <Route path="/sports"
                                     element={
                                         <>
-                                            <ScrollButton />
                                             <SportsBetHistory key={55} checkedState={checkedState} setCheckedState={setCheckedState}
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             />
@@ -283,7 +281,6 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                 <Route path="/live-sports"
                                     element={
                                         <>
-                                            <ScrollButton />
                                             <SportsBetHistory key={55} checkedState={checkedState} setCheckedState={setCheckedState}
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             />
@@ -297,7 +294,6 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                 <Route path="/live-casino/*"
                                     element={
                                         <>
-                                            <ScrollButton />
                                             <LiveCasinoBetHistory key={2} isState={historySelectedSubTab} setState={setHistorySelectedSubTab}
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                                 path='/mypage/bet-history/all/live-casino'
@@ -312,7 +308,6 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                 <Route path="/hotel-casino/*"
                                     element={
                                         <>
-                                            <ScrollButton />
                                             <HotelCasinoBetHistory isState={historySelectedSubTab4} setState={setHistorySelectedSubTab4}
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             />
@@ -326,7 +321,6 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                 <Route path="/slot-game/*"
                                     element={
                                         <>
-                                            <ScrollButton />
                                             <SlotBetHistory key={1} isState={selectedSubTab} setState={setSelectedSubTab}
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton} path='/mypage/bet-history/all/slot-game'
                                             />
@@ -340,7 +334,6 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                 <Route path="/e-sports"
                                     element={
                                         <>
-                                            <ScrollButton />
                                             <ESportsBetHistory isState={historySelectedSubTab} setState={setHistorySelectedSubTab}
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             />
@@ -352,7 +345,6 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                 <Route path="/minigame/*"
                                     element={
                                         <>
-                                            <ScrollButton />
                                             <MinigameBetHistory isState={historySelectedSubTab2} setState={setHistorySelectedSubTab2}
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             />
@@ -366,7 +358,6 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                 <Route path="/ar-game"
                                     element={
                                         <>
-                                            <ScrollButton />
                                             <ARGameBetHistory isState={historySelectedSubTab3} setState={setHistorySelectedSubTab3}
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             />
@@ -380,7 +371,6 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                 <Route path="/fishing-game"
                                     element={
                                         <>
-                                            <ScrollButton />
                                             <SlotBetHistory key={2} isState={selectedSubTab} setState={setSelectedSubTab}
                                                 subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                                 path='/mypage/bet-history/all/fishing-game'
@@ -394,7 +384,6 @@ const BetHistoryTest = ({ isAuthenticated, setAuthenticated, subActiveButton, se
                                 </Route>
                                 <Route path='/bet' element={
                                     <>
-                                        <ScrollButton />
                                         <LiveCasinoBetHistory key={11} showSub={false} isState={historySelectedSubTab} setState={setHistorySelectedSubTab}
                                             subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton}
                                             path='/mypage/bet-history/all/bet' />

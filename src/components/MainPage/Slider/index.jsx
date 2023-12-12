@@ -23,7 +23,7 @@ function Slider() {
     },
     {
       id: 3,
-      image: SliderImage
+      image: SliderImage1
     },
     {
       id: 4,

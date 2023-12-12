@@ -87,6 +87,7 @@ function App() {
                   <Header />
                   <MainPage setFooterDefaultState={setFooterDefaultState} />
                   <Footer isExpanded={isExpanded} setExpanded={setExpanded} />
+                  <ScrollToTop />
                 </>
               }
             />
@@ -96,11 +97,14 @@ function App() {
             <Route
               path="/mypage/*"
               element={
-                <MyPage
-                  // setOpen={setOpen1}
-                  isAuthenticated={isAuthenticated}
-                  setAuthenticated={setAuthenticated}
-                />
+                <>
+                  <MyPage
+                    // setOpen={setOpen1}
+                    isAuthenticated={isAuthenticated}
+                    setAuthenticated={setAuthenticated}
+                  />
+                  <ScrollToTop />
+                </>
               }
             />
           </Routes>
@@ -126,6 +130,7 @@ function App() {
                     selectedTab={selectedTab}
                     setSelectedTab={setSelectedTab}
                   />
+                  <ScrollToTop />
                 </>
               }
             />
@@ -151,6 +156,7 @@ function App() {
                     selectedTab={selectedTab}
                     setSelectedTab={setSelectedTab}
                   />
+                  <ScrollToTop />
                 </>
               }
             />
@@ -175,7 +181,8 @@ function App() {
                   <FixedMenu
                     selectedTab={selectedTab}
                     setSelectedTab={setSelectedTab}
-                  />{' '}
+                  />
+                  <ScrollToTop />
                 </>
               }
             ></Route>
@@ -187,6 +194,7 @@ function App() {
               element={
                 <>
                   <CSCenterPage />
+                  <ScrollToTop />
                 </>
               }
             />
@@ -204,6 +212,7 @@ function App() {
                     isAuthenticated={isAuthenticated}
                     setAuthenticated={setAuthenticated}
                   />
+                  <ScrollToTop />
                 </>
               }
             ></Route>
@@ -230,8 +239,10 @@ function App() {
                   <Header />
                   <NonLiveBet
                     isAuthenticated={isAuthenticated}
-                    setAuthenticated={setAuthenticated}
+                    setAu
+                    thenticated={setAuthenticated}
                   />
+                  <ScrollToTop />
                 </>
               }
             ></Route>
@@ -249,6 +260,7 @@ function App() {
                     selectedTab={selectedTab}
                     setSelectedTab={setSelectedTab}
                   />
+                  <ScrollToTop />
                 </>
               }
             />
@@ -266,6 +278,7 @@ function App() {
                     selectedTab={selectedTab}
                     setSelectedTab={setSelectedTab}
                   />
+                  <ScrollToTop />
                 </>
               }
             />
@@ -283,6 +296,7 @@ function App() {
                     selectedTab={selectedTab}
                     setSelectedTab={setSelectedTab}
                   />
+                  <ScrollToTop />
                 </>
               }
             />
@@ -300,6 +314,7 @@ function App() {
                     selectedTab={selectedTab}
                     setSelectedTab={setSelectedTab}
                   />
+                  <ScrollToTop />
                 </>
               }
             />
@@ -313,13 +328,14 @@ function App() {
                     isAuthenticated={isAuthenticated}
                     setAuthenticated={setAuthenticated}
                   />
+                  <ScrollToTop />
                 </>
               }
             ></Route>
           </Routes>
         </div>
       </Router>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
     </>
   );
 }

@@ -16,7 +16,6 @@ import SummaryIcon7 from '../../../assets/mainPage/distributor/SummaryIcon7-v3.p
 import SummaryIcon8 from '../../../assets/mainPage/distributor/SummaryIcon8-v3.png'
 import DefaultUser from '../../../assets/mainPage/distributor/default-v3.png'
 
-import ScrollButton from '../ScrollButton'
 import DateSearchBar from '../DateSearchBar'
 import Diamond1 from '../../../assets/mainPage/distributor/diamond1-v3.png'
 import Diamond from '../../../assets/mainPage/distributor/diamond-v3.png'
@@ -803,7 +802,6 @@ const DistributorPage = ({
 
     return (
         <div className="relative flex flex-col h-full">
-            <ScrollButton />
             <HomePageTopBanner pageTitle='총판페이지' toPath='/mypage/distributor-page' />
             <div style={{ margin: '0', marginTop: '0', overflowX: 'hidden', marginRight: '0', marginBottom: '0' }} className="relative overflow-hidden flex flex-col h-full">
                 <div style={{ marginLeft: '-0.063rem', height: '11.1875rem', fontSize: '3rem', paddingTop: '' }} className='flex flex-col items-center'>

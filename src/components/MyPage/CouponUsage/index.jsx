@@ -15,15 +15,9 @@ import Icon3 from '../../../assets/coupon/coupon3-v3.png'
 import Icon1Active from '../../../assets/coupon/coupon1-active-v3.png'
 import Icon2Active from '../../../assets/coupon/coupon2-active-v3.png'
 import Icon3Active from '../../../assets/coupon/coupon3-active-v3.png'
-// import Logo from "../../../assets/myInfo/Logo.png";
-// import LeftMenu from "../LeftMenu";
-// import AccountProfileComponent from '../AccountProfileComponent'
-// import subIcon1 from '../../../assets/bigIcons/leftMenu/18.png';
-// import subIcon2 from '../../../assets/bigIcons/leftMenu/19.png';
-// import subIcon3 from '../../../assets/bigIcons/leftMenu/20.png';
+
 import FixedMenu from '../../FixedMenu'
 import Header from '../../Header'
-import ScrollButton from '../ScrollButton'
 import './_couponUsage.scss'
 
 const tableData = [
@@ -1100,7 +1094,6 @@ const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
                 <Route path="/all/*"
                     element={
                         <>
-                            <ScrollButton />
                             <div className="w-full z-30 flex flex-col items-center">
                                 <Header />
                                 <HomePageTopBanner pageTitle='쿠폰관리' />

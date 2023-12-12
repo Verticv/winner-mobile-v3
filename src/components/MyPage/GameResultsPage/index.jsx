@@ -18,13 +18,7 @@ import CardHeader from '../CardHeader';
 import PowerballResultsTable from '../PowerballResultsTable';
 import MinigameTab from '../MinigameTab';
 import TableHeader2 from '../TableHeader2';
-// import subIcon1 from '../../../assets/bigIcons/leftMenu/16.png';
-// import subIcon2 from '../../../assets/bigIcons/leftMenu/17.png';
-// import Logo from "../../../assets/myInfo/Logo.png";
-// import LeftMenu from "../LeftMenu";
-// import AccountProfileComponent from '../AccountProfileComponent'
-// import Header from '../Header';
-// import NavBottom from '../NavBottom';
+
 import HorizontalMenu14 from '../HorizontalMenu14'
 import Icon9 from '../../../assets/gameresults/1-v3.png'
 import Icon_9 from '../../../assets/gameresults/1active_v3.png'
@@ -48,7 +42,7 @@ import Icon12 from '../../../assets/gameresults/10_v3.png'
 import Icon_12 from '../../../assets/gameresults/10active-v3.png'
 import subInactive from '../../../assets/gameresults/sub-inactive-v3.png';
 import subActive from '../../../assets/gameresults/sub-active-v3.png';
-import ScrollButton from '../ScrollButton';
+
 import './_gameResultPage.scss'
 import '../DatePicker.css'
 
@@ -168,7 +162,6 @@ const GameResults = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
                 <Route path="/all/*"
                     element={
                         <>
-                            <ScrollButton />
                             <div className='game-result'>
                                 {/* <Header /> */}
                                 <HomePageTopBanner pageTitle='경기결과' toPath='/mypage/gameresults' />
@@ -199,7 +192,6 @@ const GameResults = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
                 <Route path="/minigame/*"
                     element={
                         <>
-                            <ScrollButton />
                             {/* <Header /> */}
                             <div className='game-result'>
                                 <HomePageTopBanner pageTitle='경기결과' toPath='/mypage/gameresults' />
