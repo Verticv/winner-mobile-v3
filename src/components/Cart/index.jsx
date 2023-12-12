@@ -50,7 +50,7 @@ const Cart = ({ selectedOption }) => {
               opacity: '0.9',
               border: '0.5rem solid #f04281',
               borderRadius: '50%',
-              position: 'absolute',
+              position: 'fixed',
               bottom: '28rem',
               left: '43%',
               display: openedCart ? 'none' : 'flex',
