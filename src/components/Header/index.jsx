@@ -40,6 +40,7 @@ function Header() {
               className="icon2"
               src={SupportIcon}
               alt="Support"
+              onClick={() => navigate('/cscenter/all/contact/all')}
             />
           </div>
           <div className="navbar__item">
@@ -47,6 +48,7 @@ function Header() {
               className="icon3"
               src={ExchangeIcon}
               alt="Exchange"
+              onClick={() => navigate('/mypage/money/charge')}
             />
           </div>
         </div>
