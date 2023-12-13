@@ -24,6 +24,7 @@ import AttendPage from './components/AttendPage';
 import KironGuide from './components/KironGuide';
 import HoldemGuide from './components/HoldemGuide';
 import LiveSportsGuide from './components/LiveSportsGuide';
+import HotelCasinoStructure from './components/HotelCasinoStructure';
 
 import './App.css';
 import './assets/sass/global.scss';
@@ -310,6 +311,24 @@ function App() {
                   <NoticeBanner />
                   <HomePageTopBanner pageTitle="라이브스포츠" />
                   <LiveSportsGuide />
+                  <FixedMenu
+                    selectedTab={selectedTab}
+                    setSelectedTab={setSelectedTab}
+                  />
+                  <ScrollToTop />
+                </>
+              }
+            />
+          </Routes>
+          <Routes>
+            <Route
+              path="/hotelcasino/structure"
+              element={
+                <>
+                  <Header />
+                  <NoticeBanner />
+                  <HomePageTopBanner pageTitle="호텔카지노" />
+                  <HotelCasinoStructure />
                   <FixedMenu
                     selectedTab={selectedTab}
                     setSelectedTab={setSelectedTab}

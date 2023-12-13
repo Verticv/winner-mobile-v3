@@ -28,7 +28,7 @@ const HorizontalMenu9 = ({
               ? 'linear-gradient(to top, rgb(85, 61, 132), rgb(159, 90, 245) 50%, rgb(196, 115, 236))'
               : 'linear-gradient(to top, rgb(79, 58, 122), rgb(240, 211, 255))',
           padding: '0.2rem',
-          marginRight: '0.5rem'
+          marginRight: items.length === 1 ? '0' : '0.5rem'
         }}
       >
         <button

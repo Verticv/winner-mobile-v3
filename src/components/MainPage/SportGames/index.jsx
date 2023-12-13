@@ -97,7 +97,9 @@ function SportGame() {
       <SectionHeader
         icon={SportGameIcon}
         title={'스포츠'}
-        showAction={true} />
+        showAction={true} 
+        link='/bet-combination'
+        />
       <div className='section__content'>
         <TabsComponent
           tabsData={tabsList}

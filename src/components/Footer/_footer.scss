@@ -73,17 +73,24 @@ background-color: #221e3f;
     max-width: 1242px;
     margin: auto;
     padding-top: 2.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .logo {
       display: flex;
       justify-content: center;
       margin-bottom: 3.5rem;
       height: 4.688rem;
+      width: 20rem;
+      & > img{
+        width: 100%;
+      }
     }
     .contact__list {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 57.938rem;
+      width: 57.938rem;
       margin: auto;
     }
     .contact__item {

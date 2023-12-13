@@ -27,19 +27,19 @@ const SportGameCard = ({item}) => {
         </div>
       </div>
       <div className='card__footer'>
-        <button>
+        <button className="hover">
           <div>
             <div className='name'>W1</div>
             <div className='score'>1.93</div>
           </div>
         </button>
-        <button>
+        <button className="hover">
           <div>
             <div className='name'>X</div>
             <div className='score'>4.83</div>
           </div>
         </button>
-        <button>
+        <button className="hover">
           <div>
             <div className='name'>W2</div>
             <div className='score'>3.14</div>

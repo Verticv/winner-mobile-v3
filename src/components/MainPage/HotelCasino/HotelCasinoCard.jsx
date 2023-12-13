@@ -1,9 +1,13 @@
 
 import CardMenu from '../../../assets/images/mainPage/hotel-casino/card-menu.png'
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+
 
 const HotelCasinoCard = ({ id, title, sub_title = null, img, icon, darkClick=false, logoClass, disable }) => {
   const [hoverEffect, setHoverEffect] = useState(false);
+  const navigate = useNavigate();
+  
   return (
     <div 
       onClick={() => {
@@ -35,7 +39,7 @@ const HotelCasinoCard = ({ id, title, sub_title = null, img, icon, darkClick=fal
         <button>
           <p>게임시작</p>
         </button>
-        <button>
+        <button onClick={() => navigate('/hotelcasino/structure')}>
           <p>이용가이드</p>
         </button>
       </div>}

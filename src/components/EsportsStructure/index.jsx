@@ -113,7 +113,7 @@ const EsportsStructure = () => {
           {text2}
         </p>
       )}
-      {text3 && <p style={{ color: '#8c8c8c', margin: 0 }}>{text3}</p>}
+      {text3 && <p style={{ color: '#828282', margin: 0 }}>{text3}</p>}
     </div>
   );
 

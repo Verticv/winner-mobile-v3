@@ -1,5 +1,7 @@
 
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+
 import OtherGamesIcon from '../../../assets/images/mainPage/other-games/other-games1.png'
 import image0 from '../../../assets/images/mainPage/other-games/other-game0.png'
 import image1 from '../../../assets/images/mainPage/other-games/other-game1.png'
@@ -11,7 +13,7 @@ import image5 from '../../../assets/images/mainPage/other-games/other-game5.png'
 import '../OtherGames/_otherGames.scss';
 
 const OtherGames = () => {
-
+  const navigate = useNavigate();
   const GamesList = [
     {
       id: 0,
@@ -26,7 +28,8 @@ const OtherGames = () => {
     {
       id: 2,
       title: '미니게임',
-      img: image2
+      img: image2,
+      path: '/minigame/powerball'
     },
     {
       id: 3,
@@ -46,11 +49,11 @@ const OtherGames = () => {
   ]
   const [clickEffect, setClickEffect] = useState(null);
 
-  const Card = ({ id, title, img, showOverlay = false, onClick }) => {
+  const Card = ({ id, path, title, img, showOverlay = false, onClick }) => {
     return (
       <div 
         className={`other-game-card ${clickEffect === id ? 'hover' : ''}`}
-        onClick={() => { setClickEffect(id) }}>
+        onClick={() => { setClickEffect(id); navigate(path) }}>
         <img src={img} alt="OtherGame1" className='other-img' />
         <div className='desc'>
           <p>{title}</p>
@@ -78,7 +81,9 @@ const OtherGames = () => {
                 id={card.id}
                 title={card.title}
                 img={card.img}
-                showOverlay={card.showOverlay} />
+                showOverlay={card.showOverlay} 
+                path={card.path}
+                />
             </div>
           ))}
         

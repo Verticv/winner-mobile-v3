@@ -25,61 +25,127 @@ function Footer({ isExpanded, setExpanded }) {
     {
       title: '라이브카지노',
       list: [
-        '프레그메틱플레이',
-        '에볼루션',
-        '로얄지',
-        '아시아게이밍',
-        '드림게이밍',
-        '섹시게이밍',
-        '빅게이밍',
-        '오리엔탈게임',
-        '이주기',
-        '마이크로게이밍',
-        '베가스라운지',
-        '비터라이브',
-        '타이산',
-        '모티베이션'
+        {
+          title: '프레그메틱플레이',
+        },
+        {
+          title: '에볼루션',
+        },
+        {
+          title: '로얄지',
+        },
+        {
+          title: '아시아게이밍',
+        },
+        {
+          title: '드림게이밍',
+        },
+        {
+          title: '섹시게이밍',
+        },
+        {
+          title: '빅게이밍',
+        },
+        {
+          title: '오리엔탈게임',
+        },
+        {
+          title: '이주기',
+        },
+        {
+          title: '마이크로게이밍',
+        },
+        {
+          title: '베가스라운지',
+        },
+        {
+          title: '비터라이브',
+        },
+        {
+          title: '타이산',
+        },
+        {
+          title: '모티베이션',
+        },
       ]
     },
     {
       title: '스포츠',
       list: [
-        '조합베팅',
-        '스페셜베팅',
-        '라이브스포츠',
+        {
+          title: '조합베팅',
+          path: '/bet-combination'
+        },
+        {
+          title: '스페셜베팅',
+          path: '/bet-combination'
+        },
+        {
+          title: '라이브스포츠',
+        }
       ]
     },
     {
       title: '슬롯게임',
       list: [
-        '케이플레이슬롯'
+        {
+          title: '케이플레이슬롯',
+        },
       ]
     },
     {
       title: '호텔카지노',
       list: [
-        '두윈카지노',
-        '보타카지노'
+        {
+          title: '두윈카지노',
+        },
+        {
+          title: '보타카지노',
+        },
       ]
     },
     {
       title: '기타게임',
       list: [
-        'K-홀덤',
-        'e-스포츠',
-        '미니게임',
-        '키론가상게임',
-        '피싱게임',
-        '티비벳'
+        {
+          title: 'K-홀덤',
+        },
+        {
+          title: 'e-스포츠',
+        },
+        {
+          title: '미니게임',
+        },
+        {
+          title: '키론가상게임',
+        },
+        {
+          title: '피싱게임',
+        },
+        {
+          title: '티비벳',
+        },
       ]
     },
     {
       title: '고객센터',
       list: [
-        '문의하기',
-        '공지사항',
-        '자주묻는질문',
-        '베팅규정'
+        {
+          title: '문의하기',
+          path: '/cscenter/all/contact/all'
+        },
+        {
+          title: '공지사항',
+          path: '/cscenter/all/announcement'
+        },
+        {
+          title: '자주묻는질문',
+          path: '/cscenter/all/faq'
+        },
+        {
+          title: '베팅규정',
+          path: '/cscenter/all/policy/sportsgame/soccer'
+        },
       ]
     }
   ]

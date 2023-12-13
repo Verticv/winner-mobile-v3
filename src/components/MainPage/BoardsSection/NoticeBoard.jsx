@@ -24,7 +24,7 @@ const NoticeBoard = ({ onClick }) => {
 
           <div className='right-side'>
             <img src={TagIcon} alt="right" />
-            <p>신풍사우나나나</p>
+            <p>신풍사우나</p>
           </div>
         </div>
         <div className='board-item'>

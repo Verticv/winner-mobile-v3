@@ -51,6 +51,7 @@ const BetCombinationRightPanel = ({
     const [time, setTime] = useState(Date.now());
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const interval = setInterval(() => setTime(Date.now()), 1000);
         return () => {
             clearInterval(interval);
@@ -62,6 +63,7 @@ const BetCombinationRightPanel = ({
     };
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         handleResize();
         window.addEventListener("resize", handleResize);
 
