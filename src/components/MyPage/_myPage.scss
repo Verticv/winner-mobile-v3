@@ -991,7 +991,7 @@
     // margin-left: 1.875rem;
     // border: 0.1875rem solid #404040;
     border-radius: 0.625rem;
-    color: #666666;
+    color: #444444;
     padding-left: 1.65rem;
     letter-spacing: -0.1rem;
     padding-top: 0.15rem;
@@ -1226,8 +1226,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // text-shadow: rgb(0 0 0 / 50%) 0.3125rem 0.125rem 0.4375rem;
-    // text-shadow: rgb(0 0 0) 0rem 0rem 0.6rem;
+    & br{
+      display: block;
+      content: unset;
+    }
   }
 
   &:hover {
@@ -1378,7 +1380,7 @@
         }
 
         .text {
-          color: #666666;
+          color: #444444;
           letter-spacing: -0.025em;
           font-size: 2.25rem;
           margin-top: 0.313rem;
@@ -2016,6 +2018,9 @@ input[type='radio'].radio-input:checked::before {
           display: flex;
           justify-content: center;
           align-items: center;
+          & > img{
+            width: 7.75rem !important;
+          }
         }
 
         .text {

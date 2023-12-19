@@ -69,19 +69,19 @@ const ProfileInfo = () => {
           </div>
           <div className='profile-buttons'>
             <div className='profile-button'>
-              <button>
+              <button onClick={() => navigate("/mypage/money/charge")}>
                 <div className='button-img' ><img src={Button1} alt="Button1" /></div>
                 <p>충전</p>
               </button>
             </div>
             <div className='profile-button'>
-              <button>
+              <button onClick={() => navigate("/mypage/money/exchange/currency")}>
                 <div className='button-img' ><img src={Button2} alt="ProfileImg" /></div>
                 <p>환전</p>
               </button>
             </div>
             <div className='profile-button'>
-              <button>
+              <button onClick={() => navigate("/mypage/inbox")}>
                 <div className='button-img' >
                   <img src={Button3} alt="ProfileImg" />
                   <span className="badge badge--red badge--md">
@@ -93,7 +93,7 @@ const ProfileInfo = () => {
               </button>
             </div>
             <div className='profile-button'>
-              <button>
+              <button onClick={() => navigate("/cscenter/all/contact/all")}>
                 <div className='button-img' ><img src={Button4} alt="ProfileImg" /></div>
                 <p>문의</p>
               </button>

@@ -111,7 +111,7 @@ const LeftMenu = ({
                     >
                         <img
                             style={{
-                                height: '', width: '7.875rem',
+                                height: '', width: '7.75rem',
                                 marginLeft: '0.5rem'
                             }}
                             src={icon}
