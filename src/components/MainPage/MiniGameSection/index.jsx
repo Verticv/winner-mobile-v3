@@ -6,6 +6,9 @@ import Image1 from '../../../assets/images/mainPage/miniGames/mini-game1.png';
 import Image2 from '../../../assets/images/mainPage/miniGames/mini-game2.png';
 import Image3 from '../../../assets/images/mainPage/miniGames/mini-game3.png';
 import Image4 from '../../../assets/images/mainPage/miniGames/mini-game4.png';
+import Image5 from '../../../assets/images/mainPage/miniGames/mini-game5.png';
+import Image6 from '../../../assets/images/mainPage/miniGames/mini-game6.png';
+
 import MiniGameIcon from '../../../assets/images/mainPage/sectionTitle/icon7-1.png';
 
 import '../../../components/MinigamesPage/IframeStyle.scss';
@@ -14,27 +17,37 @@ const MiniGameSection = () => {
   const Items = [
     {
       id: 0,
+      title: '에볼루션파워볼',
+      img: Image5,
+    },
+    {
+      id: 1,
+      title: '프레그메틱파워볼',
+      img: Image6,
+    },
+    {
+      id: 2,
       title: '파워볼',
       img: Image1,
       path: '/minigame/powerball',
       routePath: '/powerball/*',
     },
     {
-      id: 1,
+      id: 3,
       title: '파워사다리',
       img: Image2,
       path: '/minigame/powerladder',
       routePath: '/powerladder/*',
     },
     {
-      id: 2,
+      id: 4,
       title: '스피드키노',
       img: Image3,
       path: '/minigame/speedkino',
       routePath: '/speedkino/*',
     },
     {
-      id: 3,
+      id: 5,
       title: '키노사다리',
       img: Image4,
       path: '/minigame/kinoladder',

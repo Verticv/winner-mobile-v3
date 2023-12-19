@@ -5,11 +5,13 @@ import HorizontalMenu9 from '../HorizontalMenu9';
 import Image1 from '../../assets/holdem/holdem_guide1_1.png';
 import Image2 from '../../assets/holdem/holdem_guide1_2.png';
 import Image3 from '../../assets/holdem/holdem_guide1_3.png';
-import Image4 from '../../assets/holdem/holdem_guide2.png';
-import Image5 from '../../assets/holdem/holdem_guide3.png';
 
-const HoldemGuide = () => {
-  const MenuArray = [{ text: '이용가이드', id: 0, path: '/holdem/guide' }];
+const HoldemType = () => {
+  const MenuArray = [
+    { text: '게임종류안내', id: 0, path: '/holdem/type' },
+    { text: '로비화면구성', id: 1, path: '/holdem/structure' },
+    { text: '게임화면구성', id: 2, path: '/holdem/game', lastOne: true },
+  ];
 
   const [, setSelectedTab] = useState(0);
 
@@ -73,45 +75,9 @@ const HoldemGuide = () => {
           alt=""
           style={{ width: '70rem' }}
         />
-
-        <div
-          style={{
-            width: '100%',
-            backgroundColor: '#aaaaaa',
-            margin: '4rem 0',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '0.2rem',
-          }}
-        />
-        <img
-          className="object-none"
-          src={Image4}
-          alt=""
-          style={{ width: '70rem' }}
-        />
-
-        <div
-          style={{
-            width: '100%',
-            backgroundColor: '#aaaaaa',
-            margin: '4rem 0',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '0.2rem',
-          }}
-        />
-        <img
-          className="object-none"
-          src={Image5}
-          alt=""
-          style={{ width: '70rem' }}
-        />
       </div>
     </div>
   );
 };
 
-export default HoldemGuide;
+export default HoldemType;

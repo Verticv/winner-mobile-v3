@@ -108,13 +108,14 @@ function Footer({ isExpanded, setExpanded }) {
       title: '기타게임',
       list: [
         {
-          title: 'K-홀덤',
+          title: '홀덤게임',
         },
         {
           title: 'e-스포츠',
         },
         {
           title: '미니게임',
+          path: '/minigame/powerball'
         },
         {
           title: '키론가상게임',

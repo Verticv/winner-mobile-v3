@@ -17,7 +17,7 @@ const OtherGames = () => {
   const GamesList = [
     {
       id: 0,
-      title: 'K-홀덤',
+      title: '홀덤게임',
       img: image0
     },
     {

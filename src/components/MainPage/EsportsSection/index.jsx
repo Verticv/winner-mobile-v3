@@ -36,7 +36,7 @@ const EsportsSection = () => {
       title: '다폴더베팅방법',
       img: Image4,
       btnText: '설명보기',
-      path: '/esports/multi'
+      path: '/esports/multi',
     },
   ]
   const [clickEffect, setClickEffect] = useState(null);

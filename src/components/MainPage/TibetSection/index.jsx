@@ -21,13 +21,15 @@ const TibetSection = () => {
       id: 1,
       title: '화면구성설명',
       img: Image2,
-      btnText: '설명보기'
+      btnText: '설명보기',
+      path: '/tvbet/structure'
     },
     {
       id: 2,
       title: '베팅방법',
       img: Image3,
-      btnText: '설명보기'
+      btnText: '설명보기',
+      path: '/tvbet/info'
     },
   ] 
 
@@ -46,6 +48,7 @@ const TibetSection = () => {
           title={card.title}
           img={card.img}
           btn={card.btnText}
+          path={card.path}
           clickEffect={clickEffect}
           setClickEffect={setClickEffect}/>
       ))

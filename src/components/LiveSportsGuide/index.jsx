@@ -11,7 +11,7 @@ import icon from '../../assets/sports/Icon.png';
 const LiveSportsGuide = () => {
   const MenuArray = [
     { text: '화면구성설명', id: 0, path: '/liveSports/guide' },
-    { text: '베팅방법', id: 0, path: '' },
+    { text: '베팅방법', id: 0, path: '', lastOne: true },
   ];
 
   const [, setSelectedTab] = useState(0);

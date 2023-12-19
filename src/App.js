@@ -15,6 +15,7 @@ import Authentication from './pages/Authentication';
 import NonLiveBet from './pages/NonLiveBet';
 
 import EsportsPage from './components/EsportsPage';
+import TvBetPage from './components/TvBetPage';
 import FreeBoardView from './components/FreeBoardView';
 import FreeBoardView2 from './components/FreeBoardView2';
 import FreeBoardCompose from './components/FreeBoardCompose';
@@ -22,7 +23,10 @@ import MinigamesPage from './components/MinigamesPage';
 import ScrollToTop from './components/ScrollToTop';
 import AttendPage from './components/AttendPage';
 import KironGuide from './components/KironGuide';
-import HoldemGuide from './components/HoldemGuide';
+import HoldemType from './components/HoldemType';
+import HoldemGame from './components/HoldemGame';
+import HoldemStructure from './components/HoldemStructure';
+
 import LiveSportsGuide from './components/LiveSportsGuide';
 import HotelCasinoStructure from './components/HotelCasinoStructure';
 
@@ -286,13 +290,49 @@ function App() {
           </Routes>
           <Routes>
             <Route
-              path="/holdem/guide"
+              path="/holdem/type"
               element={
                 <>
                   <Header />
                   <NoticeBanner />
                   <HomePageTopBanner pageTitle="홀덤게임" />
-                  <HoldemGuide />
+                  <HoldemType />
+                  <FixedMenu
+                    selectedTab={selectedTab}
+                    setSelectedTab={setSelectedTab}
+                  />
+                  <ScrollToTop />
+                </>
+              }
+            />
+          </Routes>
+          <Routes>
+            <Route
+              path="/holdem/structure"
+              element={
+                <>
+                  <Header />
+                  <NoticeBanner />
+                  <HomePageTopBanner pageTitle="홀덤게임" />
+                  <HoldemStructure />
+                  <FixedMenu
+                    selectedTab={selectedTab}
+                    setSelectedTab={setSelectedTab}
+                  />
+                  <ScrollToTop />
+                </>
+              }
+            />
+          </Routes>
+          <Routes>
+            <Route
+              path="/holdem/game"
+              element={
+                <>
+                  <Header />
+                  <NoticeBanner />
+                  <HomePageTopBanner pageTitle="홀덤게임" />
+                  <HoldemGame />
                   <FixedMenu
                     selectedTab={selectedTab}
                     setSelectedTab={setSelectedTab}
@@ -344,6 +384,20 @@ function App() {
               element={
                 <>
                   <AttendPage
+                    isAuthenticated={isAuthenticated}
+                    setAuthenticated={setAuthenticated}
+                  />
+                  <ScrollToTop />
+                </>
+              }
+            ></Route>
+          </Routes>
+          <Routes>
+            <Route
+              path="/tvbet/*"
+              element={
+                <>
+                  <TvBetPage
                     isAuthenticated={isAuthenticated}
                     setAuthenticated={setAuthenticated}
                   />

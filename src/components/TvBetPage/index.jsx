@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { Route, Routes } from 'react-router';
+import Header from '../Header';
+import HomePageTopBanner from '../MyPage/HomePageTopBanner';
+import NoticeBanner from '../MainPage/NoticeBanner';
 import HorizontalMenu9 from '../HorizontalMenu9';
-import EsportsStructure from '../EsportsStructure';
-import EsportsSingle from '../EsportsSingle';
-import EsportsMulti from '../EsportsMulti';
 import NavBottom from '../FixedMenu';
+import TvBetStructure from '../TvBetStructure';
+import TvBetInfo from '../TvBetInfo';
 
-const EsportsPage = ({ isAuthenticated, setAuthenticated }) => {
+const TvBetPage = ({ isAuthenticated, setAuthenticated }) => {
   const MenuArray = [
-    { text: '화면구성설명', id: 0, path: '/esports/structure' },
-    { text: '단폴더 베팅방법', id: 1, path: '/esports/single' },
-    { text: '다폴더 베팅방법', id: 2, path: '/esports/multi', lastOne: true },
+    { text: '화면구성설명', id: 0, path: '/tvbet/structure' },
+    { text: '베팅방법', id: 1, path: '/tvbet/info', lastOne: true },
   ];
 
   const [, setSelectedTab] = useState(0);
@@ -20,19 +21,21 @@ const EsportsPage = ({ isAuthenticated, setAuthenticated }) => {
       className="relative flex flex-col justify-center overflow-hidden"
       style={{ paddingBottom: '17rem' }}
     >
+      <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
+        <Header isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
+        <NoticeBanner />
+        <HomePageTopBanner pageTitle="티비벳" toPath="/main" />
+      </div>
+
       <div className="flex flex-col items-start limit:items-center limit1600:mt-92px mt-122px w-full h-full">
         <div style={{ marginTop: '0.1rem' }}>
           <HorizontalMenu9
             itemsArray={MenuArray}
             setSelectedTab={setSelectedTab}
+            isFlex
           />
         </div>
 
-        <div className="w-default">
-          <Routes>
-            <Route path="/structure" element={<></>}></Route>
-          </Routes>
-        </div>
         <div
           className="shadow-box-myPage"
           style={{
@@ -43,6 +46,7 @@ const EsportsPage = ({ isAuthenticated, setAuthenticated }) => {
           }}
         >
           <div
+            className="flex mt-20px mb-60px w-default"
             style={{
               borderRadius: ' 1rem',
               padding: '2rem 1.7rem 1.5rem',
@@ -50,9 +54,8 @@ const EsportsPage = ({ isAuthenticated, setAuthenticated }) => {
             }}
           >
             <Routes>
-              <Route path="/structure" element={<EsportsStructure />} />
-              <Route path="/single" element={<EsportsSingle />} />
-              <Route path="/multi" element={<EsportsMulti />} />
+              <Route path="/structure" element={<TvBetStructure />}></Route>
+              <Route path="/info" element={<TvBetInfo />}></Route>
             </Routes>
           </div>
         </div>
@@ -64,4 +67,4 @@ const EsportsPage = ({ isAuthenticated, setAuthenticated }) => {
   );
 };
 
-export default EsportsPage;
+export default TvBetPage;
