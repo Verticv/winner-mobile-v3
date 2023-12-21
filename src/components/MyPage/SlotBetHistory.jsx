@@ -4,28 +4,31 @@ import HistoryTable from '../MyPage/HistoryTable'
 // import ScrollButton from 'components/common/ScrollButton'
 import SelectAllButton from '../MyPage/SelectAllButton'
 import Icon0 from '../../assets/slotGame/1-v3.png'
-import Icon1 from '../../assets/slotGame/2.png'
-import Icon2 from '../../assets/slotGame/3-v3.png'
-import Icon3 from '../../assets/slotGame/4-v3.png'
-import Icon4 from '../../assets/slotGame/5-v3.png'
-import Icon5 from '../../assets/slotGame/6-v3.png'
-import Icon6 from '../../assets/slotGame/7-v3.png'
-import Icon7 from '../../assets/slotGame/8-v3.png'
-import Icon8 from '../../assets/slotGame/9.png'
-import Icon9 from '../../assets/slotGame/10-v3.png'
-import Icon10 from '../../assets/slotGame/11-v3.png'
-import Icon11 from '../../assets/slotGame/12-v3.png'
-import Icon12 from '../../assets/slotGame/13-v3.png'
-import Icon13 from '../../assets/slotGame/14-v3.png'
-import Icon14 from '../../assets/slotGame/15-v3.png'
-import Icon15 from '../../assets/slotGame/16-v3.png'
-import Icon17 from '../../assets/slotGame/17-v3.png'
-import Icon18 from '../../assets/slotGame/18-v3.png'
-import Icon19 from '../../assets/slotGame/19-v3.png'
-import Icon20 from '../../assets/slotGame/20.png'
-import Icon21 from '../../assets/slotGame/21-v3.png'
-import Icon22 from '../../assets/slotGame/22-v3.png'
-import Icon23 from '../../assets/slotGame/23-v3.png'
+import Icon1 from '../../assets/slotGame/slot_1.png'
+import Icon2 from '../../assets/slotGame/slot_2.png'
+import Icon3 from '../../assets/slotGame/slot_3.png'
+import Icon4 from '../../assets/slotGame/slot_4.png'
+import Icon5 from '../../assets/slotGame/slot_5.png'
+import Icon6 from '../../assets/slotGame/slot_6.png'
+import Icon7 from '../../assets/slotGame/slot_7.png'
+import Icon8 from '../../assets/slotGame/slot_8.png'
+import Icon9 from '../../assets/slotGame/slot_9.png'
+import Icon10 from '../../assets/slotGame/slot_10.png'
+import Icon11 from '../../assets/slotGame/slot_11.png'
+import Icon12 from '../../assets/slotGame/slot_12.png'
+import Icon13 from '../../assets/slotGame/slot_13.png'
+import Icon14 from '../../assets/slotGame/slot_14.png'
+import Icon15 from '../../assets/slotGame/slot_15.png'
+import Icon16 from '../../assets/slotGame/slot_16.png'
+import Icon17 from '../../assets/slotGame/slot_17.png'
+import Icon18 from '../../assets/slotGame/slot_18.png'
+import Icon19 from '../../assets/slotGame/slot_19.png'
+import Icon20 from '../../assets/slotGame/slot_20.png'
+import Icon21 from '../../assets/slotGame/slot_21.png'
+import Icon22 from '../../assets/slotGame/slot_22.png'
+import Icon23 from '../../assets/slotGame/slot_23.png'
+import Icon24 from '../../assets/slotGame/slot_24.png'
+import Icon25 from '../../assets/slotGame/slot_25.png'
 import HorizontalSubMenu from '../MyPage/HorizontalSubMenuDefault'
 import { useNavigate } from 'react-router-dom'
 // import Icon16 from '../../assets/slotGame/17.png'
@@ -34,29 +37,188 @@ import { useNavigate } from 'react-router-dom'
 
 const subTabsArray = [
 
-    { text: "전체", icon: Icon0, id: 0, marginIcon: '', width: '5.25rem', path: '#' },
-    { text: "마이크로게이밍", icon: Icon1, id: 1, width: '16.375rem', path: '#' },
-    { text: "YGG드라실", icon: Icon2, id: 2, width: '16.375rem', path: '#' },
-    { text: "드라군소프트", icon: Icon3, id: 3, width: '16.375rem', path: '#' },
-    { text: "분고", icon: Icon4, id: 4, custom: "mt-8px", width: '16.375rem', path: '#' },
-    { text: "플레이슨", icon: Icon5, id: 5, width: '16.375rem', path: '#' },
-    { text: "넷엔트", icon: Icon6, id: 6, width: '16.375rem', path: '#' },
-    { text: "프레그메틱플레이", icon: Icon7, id: 7, width: '16.375rem', path: '#' },
-    { text: "퀵스핀", icon: Icon8, id: 8, width: '16.375rem', path: '#' },
-    { text: "스페이드", icon: Icon9, id: 9, width: '16.375rem', path: '#' },
-    { text: "하바네로", icon: Icon10, id: 10, width: '16.375rem', path: '#' },
-    { text: "월드매치", icon: Icon11, id: 11, width: '16.375rem', path: '#' },
-    { text: "엘리시움", icon: Icon12, id: 12, width: '16.375rem', path: '#' },
-    { text: "플레이앤고", icon: Icon13, id: 13, width: '16.375rem', path: '#' },
-    { text: "YL게이밍", icon: Icon14, id: 14, width: '16.375rem', path: '#' },
-    { text: "레드타이거", icon: Icon15, id: 15, width: '16.375rem', path: '#' },
-    { text: "플레이텍", icon: Icon17, id: 16, width: '16.375rem', path: '#' },
-    { text: "스카이윈드", icon: Icon18, id: 17, width: '16.375rem', path: '#' },
-    { text: "씨큐나인", icon: Icon19, id: 18, width: '16.375rem', path: '#' },
-    { text: "올웨이스핀", icon: Icon20, id: 19, width: '16.375rem', path: '#' },
-    { text: "와즈단", icon: Icon21, id: 20, width: '16.375rem', path: '#' },
-    { text: "PG소프트", icon: Icon22, id: 21, width: '16.375rem', path: '#' },
-    { text: "로얄슬롯게이밍", icon: Icon23, id: 22, width: '16.375rem', path: '#' },
+    {
+        text: '전체',
+        icon: Icon0,
+        id: 0,
+        width: '5.25rem',
+        path: '#',
+      },
+      {
+        text: '프레그메틱플레이',
+        icon: Icon1,
+        id: 1,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '씨큐나인',
+        icon: Icon2,
+        id: 2,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '월드매치',
+        icon: Icon3,
+        id: 3,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '하바네로',
+        icon: Icon4,
+        id: 4,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '플레이앤고',
+        icon: Icon5,
+        id: 5,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '스페이드',
+        icon: Icon6,
+        id: 6,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '분고',
+        icon: Icon7,
+        id: 7,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '레드타이거',
+        icon: Icon8,
+        id: 8,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '엘리시움',
+        icon: Icon9,
+        id: 9,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '빅타임게이밍',
+        icon: Icon10,
+        id: 10,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '마이크로게이밍',
+        icon: Icon11,
+        id: 11,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: 'YL게이밍',
+        icon: Icon12,
+        id: 12,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '넷엔트',
+        icon: Icon13,
+        id: 13,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '드라군소프트',
+        icon: Icon14,
+        id: 14,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: 'YGG드라실',
+        icon: Icon15,
+        id: 15,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '플레이슨',
+        icon: Icon16,
+        id: 16,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '플레이텍',
+        icon: Icon17,
+        id: 17,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '스카이윈드',
+        icon: Icon18,
+        id: 18,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '와즈단',
+        icon: Icon19,
+        id: 19,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: 'PG소프트',
+        icon: Icon20,
+        id: 20,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '로얄슬롯게이밍',
+        icon: Icon21,
+        id: 21,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '노리미트시티',
+        icon: Icon22,
+        id: 22,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: 'CC88',
+        icon: Icon23,
+        id: 23,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '패스트스핀',
+        icon: Icon24,
+        id: 24,
+        width: '16.375rem',
+        path: '#',
+      },
+      {
+        text: '나가게임즈',
+        icon: Icon25,
+        id: 25,
+        width: '16.375rem',
+        path: '#',
+      },
 
 ];
 
