@@ -106,15 +106,18 @@ const Pagination = ({
         />
       </button>
       <LeftArrow />
-      <div className="space-x-px flex items-center buttons-container">
+      <div
+        className="space-x-px flex items-center buttons-container"
+        style={{ display: 'flex', alignItems: 'center', paddingTop: '1.2rem' }}
+      >
         <button
           style={{
             background: selectedPage !== 1 ? 'bottom' : `url(${bg}) round`,
             borderRadius: '0.6rem',
-            width: '7.3125rem',
-            height: '7.3125rem',
+            width: '8rem',
+            height: '8rem',
             marginRight: '0.188rem',
-            fontWeight: '700'
+            fontWeight: '700',
           }}
           className="hover"
           onClick={() => setSelectedPage(1)}
@@ -138,10 +141,10 @@ const Pagination = ({
           style={{
             background: selectedPage !== 2 ? 'bottom' : `url(${bg}) round`,
             borderRadius: '0.6rem',
-            width: '7.3125rem',
-            height: '7.3125rem',
+            width: '8rem',
+            height: '8rem',
             marginRight: '0.188rem',
-            fontWeight: '700'
+            fontWeight: '700',
           }}
           className="hover"
           onClick={() => setSelectedPage(2)}
@@ -168,10 +171,10 @@ const Pagination = ({
           style={{
             background: selectedPage !== 3 ? 'bottom' : `url(${bg}) round`,
             borderRadius: '0.6rem',
-            width: '7.3125rem',
-            height: '7.3125rem',
+            width: '8rem',
+            height: '8rem',
             marginRight: '0.188rem',
-            fontWeight: '700'
+            fontWeight: '700',
           }}
           className="hover"
           onClick={() => setSelectedPage(3)}
@@ -198,10 +201,10 @@ const Pagination = ({
           style={{
             background: selectedPage !== 4 ? 'bottom' : `url(${bg}) round`,
             borderRadius: '0.6rem',
-            width: '7.3125rem',
-            height: '7.3125rem',
+            width: '8rem',
+            height: '8rem',
             marginRight: '0.188rem',
-            fontWeight: '700'
+            fontWeight: '700',
           }}
           className="hover"
           onClick={() => setSelectedPage(4)}
@@ -228,15 +231,14 @@ const Pagination = ({
           style={{
             background: selectedPage !== 5 ? 'bottom' : `url(${bg}) round`,
             borderRadius: '0.6rem',
-            width: '7.3125rem',
-            height: '7.3125rem',
-            padding: '0.188rem',
-            fontWeight: '700'
+            width: '8rem',
+            height: '8rem',
+            fontWeight: '700',
           }}
           className="hover"
           onClick={() => setSelectedPage(5)}
         >
-          <div style={{ marginTop: '-1rem' }}>
+          <div style={{ marginTop: '-0.5rem' }}>
             <span
               style={{
                 fontSize: '2.4375rem',
