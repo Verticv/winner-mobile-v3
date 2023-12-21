@@ -1,6 +1,6 @@
 import React from 'react'
 import './BoardComposeViewPanel/RadioButton.css'
-import TableHeader from '../MyPage/TableHeader'
+import TableHeader from '../MyPage/SportsTableHeader'
 import CardHeader from '../MyPage/CardHeader'
 import CardResults from '../MyPage/CardResults'
 import CardContent from '../MyPage/CardContent'

@@ -949,7 +949,6 @@
 
 ///////////////////////////////////////////////////////
 .first-row {
-  // margin-top: 1.15rem;
   margin-bottom: -1.25rem;
   display: flex;
 
@@ -961,8 +960,7 @@
     width: 34.06rem;
     font-size: 2.624375rem;
     margin-left: 1.875rem;
-    // border: 0.1875rem solid #404040;
-    border-radius: 0.625rem;
+    border-radius: 1rem;
     color: red;
     letter-spacing: -0.07rem;
     padding: 0.35rem 0 0 1.65rem;
@@ -1018,11 +1016,10 @@
 }
 
 .buttons-container2 {
-  // background: red;
   padding-left: 0.063rem;
   display: flex;
   margin: 0 1.9rem;
-  margin-top: 0.951rem;
+  margin-top: 1.15rem;
   gap: 0.92rem;
   color: #ffdfbd;
   font-size: 2.624375rem;
