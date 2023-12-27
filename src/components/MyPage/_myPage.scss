@@ -1814,6 +1814,12 @@ input[type='radio'].radio-input:checked::before {
       letter-spacing: -0.07rem;
     }
 
+    input{
+      color: #444444;
+      &::placeholder{
+        color: #9da3b0;
+      }
+    }
   }
 
 }
@@ -1874,6 +1880,8 @@ input[type='radio'].radio-input:checked::before {
   background: #f7f7f7;
   padding: 1.7rem 3rem 1.513rem;
   letter-spacing: -0.07rem;
+  word-break: keep-all;
+  font-weight: 700;
 }
 
 .hover {
@@ -1914,6 +1922,8 @@ input[type='radio'].radio-input:checked::before {
   margin-bottom: 0.625rem;
   background: #ffffff;
   letter-spacing: -0.07rem;
+  font-weight: 700;
+  word-break: keep-all;
 
   .alert-icon-and-text {
     display: flex;

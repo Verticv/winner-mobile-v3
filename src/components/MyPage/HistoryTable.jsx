@@ -87,18 +87,14 @@ const HistoryTable = ({
         <button className="상세보기" onClick={() => setPopupOpen(true)}>
           <div
             style={{
-              // background: 'red',
               height: '100%',
               padding: ' 0.1825rem',
-              // borderRadius: '0.6rem',
-              // boxShadow: '0 0.312rem 0.625rem 0 rgba(0, 0, 0, 0.3)',
               cursor: 'pointer',
               overflow: 'hidden',
             }}
           >
             <div
               style={{
-                // background: '#5d659f',
                 width: '100%',
                 height: '100%',
                 display: 'flex',
@@ -174,14 +170,11 @@ const HistoryTable = ({
     return cards.map((card, index) => (
       <div
         style={{
-          // minHeight: cardHeight, width: `${!hasButton ? '73.875rem' : ''}`,
           marginBottom: '1.861rem',
           marginRight: '1.798rem',
           marginLeft: '1.923rem',
           marginTop: '1.86rem',
           padding: '0.1875rem',
-          // marginTop: `${index ? '0' : '1.875rem'}`,
-          // margin: '1.86rem',
           background: 'linear-gradient(to top, #dddddd, #bbbbbb)',
           boxShadow: '0px 0px 0.75rem 0px rgba(0, 0, 0, 0.8)',
           borderRadius: '1.875rem',
@@ -351,7 +344,6 @@ const HistoryTable = ({
                           {secondRowKeysName[0]} :{' '}
                         </span>
                         <span style={{ color: secondColumnColor }}>
-                          {' '}
                           {row[1][secondRowKeysName[0]]}
                         </span>
                       </>

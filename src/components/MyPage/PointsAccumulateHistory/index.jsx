@@ -205,7 +205,7 @@ const PointsAccumulateHistory = ({ SubMenuList, subActiveButton, setSubActiveBut
                     marginTop: '1.938rem', letterSpacing: '-0.07rem', marginBottom: '1.4rem', marginLeft: "1.688rem"
                 }}>
                     <span style={{
-                        color: '#ffd98b', textOverflow: 'ellipsis', maxWidth: '34.4rem', overflow: 'hidden', whiteSpace: 'nowrap'
+                        color: '#ffd98b', textOverflow: 'ellipsis', maxWidth: '34.4rem', overflow: 'hidden', whiteSpace: 'nowrap', fontWeight: '700'
                     }}>{truncate('louie3', 22, 22)}</span>
                     <span style={{ color: '#eeeeee'}}>님의 포인트적립 정보입니다.</span>
                 </div>
