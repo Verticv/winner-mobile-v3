@@ -100,7 +100,7 @@ const PointsPage = ({
           <div
             style={{
               borderRadius: '1.125rem',
-              color: '#5e399a',
+              color: '#594E6A',
               background: '#ffffff',
               width: '100%',
               height: '100%',
@@ -126,7 +126,7 @@ const PointsPage = ({
               }}
             >
               <span style={{ color: '#f04281'}}>278</span>
-              <span>P</span>
+              <span style={{ color: '#5E399A' }}>P</span>
             </div>
           </div>
         </div>
