@@ -12,19 +12,16 @@
             font-size: 2.8125rem;
             width: 50%;
             border-radius: 1rem;
-            // padding: 0.1875rem;
-            // background: blue;
 
             .div-border {
                 padding: 0.1875rem;
-                // background: red;
                 width: 100%;
                 height: 100%;
                 border-radius: 1rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                text-shadow: #00000080 0.3125rem 0.125rem 0.4375rem;
+                text-shadow: 0 0 0.938rem rgba(0, 0, 0, .5);
                 color: #ffffff;
                 font-size: 2.811875rem;
 

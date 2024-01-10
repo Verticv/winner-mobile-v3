@@ -234,26 +234,26 @@ const HistoryTable = ({
                 const secondRowKeysName = Object.keys(row?.[1] || {});
                 if (firstRowKeysName[0] === '적중/손실금액') {
                   firstColumnColor = row[0][firstRowKeysName[0]].includes('+')
-                    ? '#e65454'
+                    ? '#e9441d'
                     : '#666666';
                 }
                 if (firstRowKeysName[0] === '상태') {
                   firstColumnColor =
                     row[0][firstRowKeysName[0]] === '승'
-                      ? '#e65454'
+                      ? '#e9441d'
                       : '#666666';
                 }
                 if (firstRowKeysName[0] === '보너스금액') {
                   firstColumnColor = row[0][firstRowKeysName[0]].includes('+')
-                    ? '#e65454'
+                    ? '#e9441d'
                     : '#666666';
                 }
                 if (firstRowKeysName[0] === '금액') {
                   firstColumnColor = row[0][firstRowKeysName[0]].includes('+')
-                    ? '#e65454'
+                    ? '#e9441d'
                     : row[0][firstRowKeysName[0]].includes('-')
-                    ? '#4c98ff'
-                    : '#c8c8c8';
+                    ? '#0072bc'
+                    : '#666666';
                 }
                 if (secondRowKeysName[0] === '적립포인트') {
                   secondColumnColor = '#f04281';
@@ -264,14 +264,13 @@ const HistoryTable = ({
                 if (firstRowKeysName[0] === '처리상태') {
                   firstColumnColor =
                     row[0][firstRowKeysName[0]] === '사용가능'
-                      ? '#e65454'
+                      ? '#e9441d'
                       : '#7b7b7b';
                 }
                 return (
                   <div
                     key={index}
                     style={{
-                      WebkitTextStroke: '0.2px',
                       fontSize: '2.625rem',
                       marginTop: '-0.313rem',
                       marginBottom: '0.75rem',

@@ -102,7 +102,7 @@ const Dropdown = ({
             className={`sort-by-p ${labelClasses} ${ddda ? 'ddda' : ''} `}
             style={{ marginTop: sortValue === '전체회차' && '-0.4rem' }}
           >
-            <p style={{marginLeft: '0.2rem', marginTop:'-3rem'}}>{sortValue}</p>
+            <p style={{marginLeft: '0.2rem', marginTop: sortValue==='전체회차' ? 'unset' : '-3rem'}}>{sortValue}</p>
           </div>
           {children}
         </div>

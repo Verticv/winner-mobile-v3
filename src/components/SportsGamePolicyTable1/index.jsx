@@ -58,7 +58,6 @@ const SportsGamePolicyTable1 = ({ array }) => {
       <td
         style={{
           wordBreak: 'break-word',
-          WebkitTextStroke: '0.2px',
           textAlign: 'start',
           padding:
             rows === '2'

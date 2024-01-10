@@ -51,7 +51,6 @@ const ESportsBetHistory = ({
         <div
           style={{
             background: 'linear-gradient(to top, #6b22ff, #df52ff)',
-            WebkitTextStroke: '0.2px',
             fontSize: '2.625rem',
             color: '#ffffff',
             padding: '1.875rem',

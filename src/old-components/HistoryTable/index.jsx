@@ -174,7 +174,7 @@ const HistoryTable = ({
                                     firstColumnColor = row[0][firstRowKeysName[0]] === '사용가능' ? "#e65454" : "#7b7b7b"
                                 }
                                 return (
-                                    <div key={index} style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.375rem', color: firstColumnColor, letterSpacing: '-0.07rem', marginLeft: '0.14rem', display: 'flex', width: '100%' }}>
+                                    <div key={index} style={{ fontSize: '2.625rem', marginBottom: '0.375rem', color: firstColumnColor, letterSpacing: '-0.07rem', marginLeft: '0.14rem', display: 'flex', width: '100%' }}>
                                         <span className='text-gray-r585858' style={{ fontSize: '2.624375rem', color: '#ccc2b6', flexShrink: 0, marginRight: '0.8rem' }}>{firstRowKeysName[0]} : </span>
                                         <span className='' style={{
                                              color: '', display: 'inline-flex',

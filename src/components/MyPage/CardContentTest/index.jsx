@@ -54,25 +54,25 @@ const CardContent = ({
                     )}
                     <div>
                         {showBetNumber && (
-                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.375rem', letterSpacing: '-0.07rem', color: '#c8c8c8' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>베팅번호 :</span> 1891241599</div>
+                            <div style={{ fontSize: '2.625rem', marginBottom: '0.375rem', letterSpacing: '-0.07rem', color: '#c8c8c8' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>베팅번호 :</span> 1891241599</div>
                         )}
-                        <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.25rem', color: '#c8c8c8', letterSpacing: '-0.07rem' }}><span style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem', color: '#ccc2b6' }}>베팅시간 :</span>{time}</div>
+                        <div style={{ fontSize: '2.625rem', marginBottom: '0.25rem', color: '#c8c8c8', letterSpacing: '-0.07rem' }}><span style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem', color: '#ccc2b6' }}>베팅시간 :</span>{time}</div>
                         {hasHistory && (
-                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginBottom: '0.375rem', color: '#c8c8c8' }}><span style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem', color: '#ccc2b6' }}>베팅내역 :</span>{hasHistory}</div>
+                            <div style={{fontSize: '2.625rem', marginBottom: '0.375rem', color: '#c8c8c8' }}><span style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem', color: '#ccc2b6' }}>베팅내역 :</span>{hasHistory}</div>
                         )}
                         <div style={{ marginBottom: '0.36rem', display: 'flex', letterSpacing: '-0.07rem', color: '#c8c8c8' }} className='flex'>
-                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginRight: '3.8125rem' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>베팅금액 :</span> 5,000</div>
-                            <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>배당률 :</span> 4.34</div>
+                            <div style={{fontSize: '2.625rem', marginRight: '3.8125rem' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>베팅금액 :</span> 5,000</div>
+                            <div style={{fontSize: '2.625rem' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>배당률 :</span> 4.34</div>
                         </div>
                         {isPopup ? (
                             <>
-                                <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginRight: '3.8125rem', marginBottom: '0.375rem', letterSpacing: '-0.07rem', color: '#c8c8c8' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>예상적중금액 :</span> 20,000</div>
-                                <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', letterSpacing: '-0.07rem', marginBottom: '0.89rem' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>당첨금 :</span> <span style={{ color: winAmount.includes("+") ? '#e65454' : '#c8c8c8' }}>{winAmount}</span></div>
+                                <div style={{ fontSize: '2.625rem', marginRight: '3.8125rem', marginBottom: '0.375rem', letterSpacing: '-0.07rem', color: '#c8c8c8' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>예상적중금액 :</span> 20,000</div>
+                                <div style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem', marginBottom: '0.89rem' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>당첨금 :</span> <span style={{ color: winAmount.includes("+") ? '#e65454' : '#c8c8c8' }}>{winAmount}</span></div>
                             </>
                         ) : (
                             <div className='flex' style={{ display: 'flex', letterSpacing: '-0.07rem' }}>
-                                <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', marginRight: '3.8125rem', color: '#c8c8c8' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>예상적중금액 :</span> 20,000</div>
-                                <div style={{ WebkitTextStroke: "0.2px", fontSize: '2.625rem', color: '#c8c8c8' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>당첨금 :</span> <span style={{ color: winAmount.includes("+") ? '#e65454' : '#c8c8c8' }}>{winAmount}</span></div>
+                                <div style={{ fontSize: '2.625rem', marginRight: '3.8125rem', color: '#c8c8c8' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>예상적중금액 :</span> 20,000</div>
+                                <div style={{ fontSize: '2.625rem', color: '#c8c8c8' }}><span style={{ fontSize: '2.625rem', color: '#ccc2b6' }}>당첨금 :</span> <span style={{ color: winAmount.includes("+") ? '#e65454' : '#c8c8c8' }}>{winAmount}</span></div>
                             </div>
                         )}
 

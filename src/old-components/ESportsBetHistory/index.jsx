@@ -41,7 +41,7 @@ const ESportsBetHistory = ({ isState = 0, setState, showSub = false, isPopup = f
                 margin: '0 1.875rem', 
                 marginTop: '1.875rem'
             }}>
-                <div style={{ backgroundColor: "#323232", WebkitTextStroke: "0.2px", fontSize: '2.625rem', color: '#c8c8c8', padding: '1.875rem', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', letterSpacing: '-0.07rem', borderRadius: '1rem' }}>
+                <div style={{ backgroundColor: "#323232", fontSize: '2.625rem', color: '#c8c8c8', padding: '1.875rem', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', letterSpacing: '-0.07rem', borderRadius: '1rem' }}>
                     베팅내역이 없습니다.
                 </div>
             </div>

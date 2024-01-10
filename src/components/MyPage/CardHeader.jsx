@@ -179,7 +179,7 @@ const CardHeader = ({
         </div>
         <div
           className="flex items-center"
-          style={{ display: 'flex', marginRight: '-0.688rem' }}
+          style={{ display: 'flex', alignItems: 'center', marginRight: '-0.688rem' }}
         >
           {/* <img style={{ width: '2.375rem', height: '2.375rem', marginTop: '0.3rem' }} src={ClockIcon} alt="" /> */}
           <span
@@ -200,7 +200,7 @@ const CardHeader = ({
             style={{
               height: '2.75rem',
               width: '4.125rem',
-              marginTop: '-0.199rem',
+              marginTop: '-1rem',
               marginLeft: '1.438rem',
             }}
             src={flag}

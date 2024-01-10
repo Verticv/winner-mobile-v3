@@ -20,10 +20,12 @@ const CardResults = ({
   isMinigame = false,
   shouldTruncate = true.valueOf,
   secondCard,
+  lastCard,
   withTopBorder,
   width92,
   isFreeboard,
   isCompose,
+  isClicked= false,
   minigame,
 }) => {
   const truncate = (str, max, len) => {
@@ -41,6 +43,7 @@ const CardResults = ({
           marginTop: withTopBorder ? '0.7rem' : '0.8rem',
           borderTop: withTopBorder ? '0.1875rem solid #dddddd' : '',
           paddingTop: withTopBorder ? '0.6rem' : '',
+          paddingBottom: lastCard ? '0.6rem' : 'unset'
         }}
       >
         <div
@@ -56,7 +59,7 @@ const CardResults = ({
               fontSize: '2.5rem',
             }}
           >
-            <p style={{ marginTop: '2.2rem' }}>{score}</p>
+            <p style={{ marginTop: '2.2rem', color: '#444444' }}>{score}</p>
           </div>
         </div>
         <div style={{ display: 'flex' }}>
@@ -404,7 +407,7 @@ const CardResults = ({
                 paddingTop: bet === 'middle' ? '' : '0.1rem',
               }}
             >
-              <span style={{ fontSize: '2.25rem' }}>{stat2}</span>
+              <span style={{ fontSize: '2.25rem', fontWeight: isClicked ? '700' : 'unset' }}>{stat2}</span>
             </div>
           </button>
         </div>
@@ -548,11 +551,11 @@ const CardResults = ({
                   fontWeight: 'bold',
                   color:
                     result === 'win'
-                      ? '#e65454'
+                      ? '#f04281'
                       : result === 'lose'
-                      ? '#666666'
+                      ? '#444444'
                       : result === 'equality'
-                      ? '#44bb60'
+                      ? '#00A651'
                       : '',
                 }}
               >
@@ -581,7 +584,7 @@ const CardResults = ({
                       paddingLeft: '0.8rem',
                       // fontSize:'2.1rem',
                       marginBottom: '3.2rem',
-                      color: '#666666',
+                      color: '#444444',
                     }}
                   >
                     {score.split(':')[0]}:{'\n'}
@@ -595,7 +598,7 @@ const CardResults = ({
                     letterSpacing: score.length > 4 ? '-0.2rem' : '-0.07rem',
                     fontSize: score.length > 4 ? '2rem' : '',
                     lineHeight: score.length > 4 ? '2.3rem' : '',
-                    color: '#666666',
+                    color: '#444444',
                   }}
                 >
                   {score}
@@ -638,11 +641,11 @@ const CardResults = ({
                 marginLeft: '0.45rem',
                 color:
                   result === 'win'
-                    ? '#e65454'
+                    ? '#f04281'
                     : result === 'lose'
-                    ? '#666666'
+                    ? '#444444'
                     : result === 'equality'
-                    ? '#44bb60'
+                    ? '#00A651'
                     : '',
               }}
             >

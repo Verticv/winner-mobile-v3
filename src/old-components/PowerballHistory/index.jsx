@@ -23,10 +23,10 @@ const PowerballHistory = ({ array, checkedState, setCheckedState }) => {
                         onChange={() => handleOnChange(item.id)}
                     />
                 </div>
-                <div style={{ width: "117px", WebkitTextStroke: "0.2px" }} className="inbox-list-content1">{item.number}</div>
-                <div style={{ width: "147px", WebkitTextStroke: "0.2px" }} className="inbox-list-content1">{item.eventCount}</div>
-                <div style={{ width: "170px", WebkitTextStroke: "0.2px" }} className="inbox-list-content1">{item.betTime}</div>
-                <div style={{ width: "164px", WebkitTextStroke: "0.2px" }} className="inbox-list-content1">{item.type}</div>
+                <div style={{ width: "117px" }} className="inbox-list-content1">{item.number}</div>
+                <div style={{ width: "147px" }} className="inbox-list-content1">{item.eventCount}</div>
+                <div style={{ width: "170px" }} className="inbox-list-content1">{item.betTime}</div>
+                <div style={{ width: "164px" }} className="inbox-list-content1">{item.type}</div>
                 <div style={{ width: "95px" }} className="inbox-list-content2">
                     <div
                         style={{

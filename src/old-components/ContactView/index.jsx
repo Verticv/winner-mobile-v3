@@ -66,7 +66,7 @@ const ContactView = () => {
                     </div>
 
                     <div style={{
-                        borderRadius: "1rem", paddingLeft: '1.8rem', fontSize: '2.8125rem', margin: '3.75rem 1.7rem 3.7rem', WebkitTextStroke: "0.2px",
+                        borderRadius: "1rem", paddingLeft: '1.8rem', fontSize: '2.8125rem', margin: '3.75rem 1.7rem 3.7rem', 
                         minHeight: '7rem',
                         paddingRight: '1.8rem',
                         paddingBottom: '',

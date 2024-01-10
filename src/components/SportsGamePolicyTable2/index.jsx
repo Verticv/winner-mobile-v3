@@ -12,7 +12,7 @@ const SportsGamePolicyTable2 = ({ array }) => {
                         <span style={{ marginLeft: '5.0125rem', color: '#929292' }}>{item.title2}</span>
                     )}
                 </td>
-                <td style={{ padding: '1.2rem 0px 1.1rem 0rem', WebkitTextStroke: "0.2px", textAlign: 'start' }} className="">
+                <td style={{ padding: '1.2rem 0px 1.1rem 0rem', textAlign: 'start' }} className="">
                     <p>{parse(item.text)}</p>
                     <p>{item.text2}</p>
                     <p>{item.text3}</p>

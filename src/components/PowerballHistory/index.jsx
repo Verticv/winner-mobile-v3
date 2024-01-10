@@ -23,10 +23,10 @@ const PowerballHistory = ({ array, checkedState, setCheckedState }) => {
                         onChange={() => handleOnChange(item.id)}
                     />
                 </div>
-                <div style={{ width: "117px", WebkitTextStroke: "0.2px" }} className="inbox-list-content1">{item.number}</div>
-                <div style={{ width: "147px", WebkitTextStroke: "0.2px" }} className="inbox-list-content1">{item.eventCount}</div>
-                <div style={{ width: "170px", WebkitTextStroke: "0.2px" }} className="inbox-list-content1">{item.betTime}</div>
-                <div style={{ width: "164px", WebkitTextStroke: "0.2px" }} className="inbox-list-content1">{item.type}</div>
+                <div style={{ width: "117px" }} className="inbox-list-content1">{item.number}</div>
+                <div style={{ width: "147px" }} className="inbox-list-content1">{item.eventCount}</div>
+                <div style={{ width: "170px" }} className="inbox-list-content1">{item.betTime}</div>
+                <div style={{ width: "164px" }} className="inbox-list-content1">{item.type}</div>
                 <div style={{ width: "95px" }} className="inbox-list-content2">
                     <div
                         style={{
@@ -66,10 +66,10 @@ const PowerballHistory = ({ array, checkedState, setCheckedState }) => {
                         }
                     </div>
                 </div>
-                <div style={{ width: "126px", WebkitTextStroke: "0.2px" }} className="inbox-list-content5">{item.percentage}</div>
-                <div style={{ width: "112px", WebkitTextStroke: "0.2px" }} className="inbox-list-content6">{item.betAmount}</div>
-                <div style={{ width: "121px", color: item.profit.includes("+") ? "#d52e2e" : "#585858", WebkitTextStroke: "0.2px" }} className="inbox-list-content6">{item.profit}</div>
-                <div style={{ width: "107px", color: item.win ? "#d52e2e" : "#585858", WebkitTextStroke: "0.2px" }} className="inbox-list-content5">{item.win === true ? "승" : "패"}</div>
+                <div style={{ width: "126px" }} className="inbox-list-content5">{item.percentage}</div>
+                <div style={{ width: "112px" }} className="inbox-list-content6">{item.betAmount}</div>
+                <div style={{ width: "121px", color: item.profit.includes("+") ? "#d52e2e" : "#585858" }} className="inbox-list-content6">{item.profit}</div>
+                <div style={{ width: "107px", color: item.win ? "#d52e2e" : "#585858" }} className="inbox-list-content5">{item.win === true ? "승" : "패"}</div>
             </div>
         ));
     }

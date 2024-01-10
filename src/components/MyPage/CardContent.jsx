@@ -87,7 +87,6 @@ const CardContent = ({
             {showBetNumber && (
               <div
                 style={{
-                  WebkitTextStroke: '0.2px',
                   fontSize: '2.625rem',
                   marginBottom: '0.375rem',
                   letterSpacing: '-0.07rem',
@@ -103,7 +102,6 @@ const CardContent = ({
             )}
             <div
               style={{
-                WebkitTextStroke: '0.2px',
                 fontSize: '2.625rem',
                 marginBottom: '0.25rem',
                 color: '#666666',
@@ -125,7 +123,6 @@ const CardContent = ({
             {hasHistory && (
               <div
                 style={{
-                  WebkitTextStroke: '0.2px',
                   fontSize: '2.625rem',
                   marginBottom: '0.375rem',
                   color: '#666666',
@@ -155,7 +152,6 @@ const CardContent = ({
             >
               <div
                 style={{
-                  WebkitTextStroke: '0.2px',
                   fontSize: '2.625rem',
                   marginRight: '3.8125rem',
                 }}
@@ -165,7 +161,7 @@ const CardContent = ({
                 </span>{' '}
                 5,000
               </div>
-              <div style={{ WebkitTextStroke: '0.2px', fontSize: '2.625rem' }}>
+              <div style={{ fontSize: '2.625rem' }}>
                 <span style={{ fontSize: '2.625rem', color: '#444444', fontWeight: '700' }}>
                   배당률 :
                 </span>{' '}
@@ -176,7 +172,6 @@ const CardContent = ({
               <>
                 <div
                   style={{
-                    WebkitTextStroke: '0.2px',
                     fontSize: '2.625rem',
                     marginRight: '3.8125rem',
                     marginBottom: '0.375rem',
@@ -191,7 +186,6 @@ const CardContent = ({
                 </div>
                 <div
                   style={{
-                    WebkitTextStroke: '0.2px',
                     fontSize: '2.625rem',
                     letterSpacing: '-0.07rem',
                     marginBottom: '0.89rem',
@@ -216,7 +210,6 @@ const CardContent = ({
               >
                 <div
                   style={{
-                    WebkitTextStroke: '0.2px',
                     fontSize: '2.625rem',
                     marginRight: '3.8125rem',
                     color: '#666666',
@@ -229,7 +222,6 @@ const CardContent = ({
                 </div>
                 <div
                   style={{
-                    WebkitTextStroke: '0.2px',
                     fontSize: '2.625rem',
                     color: '#666666',
                   }}

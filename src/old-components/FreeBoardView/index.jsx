@@ -17,7 +17,7 @@ const FreeBoardView = () => {
             <div style={{ height: "17.4375rem", borderRadius: "1.625rem", marginTop: '-0.4rem', fontSize: '2.8125rem', borderWidth: '0.1875rem', display: 'flex', position: 'relative' }} className="relative flex w-full bg-white border border-gray-dddddd overflow-hidden">
 
                 <textarea
-                    style={{ border: '0', width: "60.9375rem", padding: '3.3rem 4rem 3.5625rem 3.89rem', resize: "none", lineHeight: '1.32', WebkitTextStroke: "0.2px", borderRadius: '0.7rem', background: '#272726' }}
+                    style={{ border: '0', width: "60.9375rem", padding: '3.3rem 4rem 3.5625rem 3.89rem', resize: "none", lineHeight: '1.32', borderRadius: '0.7rem', background: '#272726' }}
                     className="place-color-grey overflow-hidden outline-none w-full  tracking-tight placeholder-gray-r8f8f8f"
                     placeholder={placeholder}
                     onFocus={() => {
@@ -234,7 +234,7 @@ const FreeBoardView = () => {
                             <p style={{ fontSize: '2.25rem', color: '#929292',  marginTop: '3.2rem', flexShrink: 0 }}>2021.06.28 15:36</p>
                         </div>
 
-                        <div style={{ borderRadius: "0.8rem", WebkitTextStroke: "0.2px", minHeight: '8.5625rem', paddingBottom: '0.01rem', marginTop: '-2.85rem', marginBottom: '1rem', borderWidth: '0.1875rem', background: '#272726' }} className="w-full h-full bg-white border border-gray-dddddd flex items-center justify-between">
+                        <div style={{ borderRadius: "0.8rem", minHeight: '8.5625rem', paddingBottom: '0.01rem', marginTop: '-2.85rem', marginBottom: '1rem', borderWidth: '0.1875rem', background: '#272726' }} className="w-full h-full bg-white border border-gray-dddddd flex items-center justify-between">
                             <p style={{ fontSize: '2.8125rem', paddingLeft: '3.6875rem', paddingRight: '3.6875rem', paddingTop: '2.6rem' }} className=" text-gray-r585858">두개의 이벤트 모두 참여하였습니다</p>
                         </div>
                         <div style={{ marginLeft: '-0.2rem' }} className='flex'>
@@ -264,7 +264,7 @@ const FreeBoardView = () => {
                             <span style={{ fontSize: '2.25rem', color: '#929292',  marginTop: '1rem', flexShrink: 0 }}>2021.06.28 15:36</span>
                         </div>
 
-                        <div style={{ borderRadius: "0.625rem", WebkitTextStroke: "0.2px", minHeight: '8.6rem', marginTop: '2.03rem', marginBottom: '0.95rem', borderWidth: '0.1875rem', display: 'flex', background: '#272726' }} className="w-full bg-white border border-gray-dddddd flex items-center justify-between">
+                        <div style={{ borderRadius: "0.625rem", minHeight: '8.6rem', marginTop: '2.03rem', marginBottom: '0.95rem', borderWidth: '0.1875rem', display: 'flex', background: '#272726' }} className="w-full bg-white border border-gray-dddddd flex items-center justify-between">
                             <p style={{ marginLeft: '3.6875rem', paddingRight: '3.6875rem', marginTop: '2.5rem', fontSize: '2.811875rem', color: '' }} className=" text-gray-r585858">두개의 이벤트 모두 참여하였습니다</p>
                         </div>
                         <div style={{ marginLeft: '-0.2rem' }} className='flex'>
@@ -293,7 +293,7 @@ const FreeBoardView = () => {
                         </div>
 
 
-                        <div style={{ borderRadius: "0.625rem", WebkitTextStroke: "0.2px", minHeight: '8.5625rem', marginTop: '2.06rem', marginBottom: '1.1rem', borderWidth: '0.1875rem', display: 'flex', background: '#272726' }} className="w-full bg-white border border-gray-dddddd flex items-center justify-between">
+                        <div style={{ borderRadius: "0.625rem", minHeight: '8.5625rem', marginTop: '2.06rem', marginBottom: '1.1rem', borderWidth: '0.1875rem', display: 'flex', background: '#272726' }} className="w-full bg-white border border-gray-dddddd flex items-center justify-between">
                             <p style={{ marginLeft: '3.6875rem', paddingRight: '3.6875rem', marginTop: '2.5rem', fontSize: '2.811875rem', color: '' }} className=" text-gray-r585858">두개의 이벤트 모두 참여하였습니다</p>
                         </div>
                         <div style={{ marginTop: '-0.1rem', marginLeft: '-0.2rem', display: 'flex', marginBottom: '-0.2rem' }} className='flex'>
