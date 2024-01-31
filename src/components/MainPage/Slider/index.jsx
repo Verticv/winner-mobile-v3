@@ -11,23 +11,26 @@ function Slider() {
   const dataSlider = [
     {
       id: 0,
-      image: SliderImage
+      image: SliderImage,
+      url: "/bet-combination"
     },
     {
       id: 1,
-      image: SliderImage1
+      image: SliderImage1,
     },
     {
       id: 2,
-      image: SliderImage
+      image: SliderImage,
+      url: "/bet-combination"
     },
     {
       id: 3,
-      image: SliderImage1
+      image: SliderImage1,
     },
     {
       id: 4,
-      image: SliderImage
+      image: SliderImage,
+      url: "/bet-combination"
     },
   ];
 
@@ -61,8 +64,9 @@ function Slider() {
             <div
               key={index}
               className="slide"
-            style={{ backgroundImage: `url(${dataSlider[slideIndex-1].image})` }}
-              onClick={() => (slideIndex === index ? navigate("/live-casino") : navigate("/bet-combination"))}
+              style={{ backgroundImage: `url(${dataSlider[slideIndex-1].image})` }}
+              // onClick={() => (slideIndex === index ? navigate("/live-casino") : navigate("/bet-combination"))}
+              onClick={() => {if(dataSlider[slideIndex-1].url) navigate(`${dataSlider[slideIndex-1].url}`);}}
             >
             </div>
         )

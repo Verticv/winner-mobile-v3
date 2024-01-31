@@ -77,7 +77,11 @@ function MainPage({ setFooterDefaultState }) {
           <EsportsSection />
         </div>
       )}
-      {selectedTab === 7 && <div id="mini-game"><MiniGameSection /></div>}
+      {selectedTab === 7 && (
+        <div id="mini-game">
+          <MiniGameSection />
+        </div>
+      )}
       {selectedTab === 8 && (
         <div id="virtual-game">
           <VirtualGameSection />

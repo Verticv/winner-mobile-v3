@@ -39,10 +39,21 @@
 
   img {
     position: absolute;
-    right: 2.375rem;
     top: 50%;
     transform: translateY(-50%);
     width: 3.5rem;
+  }
+  
+  img.close {
+    right: 2.375rem;
+  }
+
+  img.left-arrow {
+    left: 2.375rem;
+    width: 2.275rem;
+    height: 3.375rem;
+    /* background: blue; */
+    // margin-top: 3rem;
   }
 }
 
@@ -1008,11 +1019,11 @@
   .Signal {
     color: #ffffff;
     font-size: 2.624375rem;
-    margin-top: 3rem;
+    // margin-top: 3rem;
+    margin-top: 3.7rem;
     margin-left: 0.12rem;
     margin-right: -1.85rem;
   }
-
 }
 
 .buttons-container2 {
@@ -1046,10 +1057,12 @@
       justify-content: center;
       align-items: center;
       border-radius: 1.125rem;
+      padding-top: -3rem;
 
       span {
         color: #666666;
         margin-top: -0.238rem;
+        margin-left: -0.338rem;
         letter-spacing: -0.07rem;
         // text-shadow: rgb(0 0 0) 0rem 0rem 0.4375rem;
       }

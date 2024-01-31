@@ -101,6 +101,7 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
               <FixedMenu
                 selectedTab={selectedTab}
                 setSelectedTab={setSelectedTab}
+                isMyPage={true} //!- true: if click FixedMenu, go to home
               />
             </>
           }

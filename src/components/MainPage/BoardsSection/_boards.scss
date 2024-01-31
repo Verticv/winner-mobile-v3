@@ -95,8 +95,17 @@
    }
  }
 
+ //!- to align AnnouncementCard & NoticeBoard rows
+ .row-alignment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100% - 6rem);
+ }
+
  .new-card-content {
-   padding: 2.625rem 2.75rem;
+  //  padding: 2.625rem 2.75rem;
+   padding: 1.5rem 2.75rem;
    // max-height: 100%;
    overflow: hidden;
 
@@ -105,7 +114,7 @@
      display: flex;
      align-items: center;
      justify-content: space-between;
-     margin-bottom: 1.75rem;
+    //  margin-bottom: 1.75rem;
 
      img {
        width: 2.438rem;

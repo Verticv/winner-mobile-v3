@@ -15,7 +15,7 @@ const NoticeBoard = ({ onClick }) => {
           <p>더보기 > </p>
         </div>
       </div>
-      <div className='new-card-content'>
+      <div className='new-card-content row-alignment'>
         <div className='board-item'>
           <div className='left-side'>
             <img src={TagIcon1} alt="right" />

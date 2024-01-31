@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import HorizontalMenu9 from '../HorizontalMenu9';
 
@@ -228,6 +228,13 @@ const HotelCasinoStructure = () => {
       </p>
     </div>
   );
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      // behavior: 'smooth'
+    });
+  });
 
   return (
     <div style={{ borderRadius: '1em' }}>

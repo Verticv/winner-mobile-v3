@@ -314,7 +314,8 @@ const BetHistoryTest = ({
                 }}
               >
                 <div
-                  id="scroll-wrapper"
+                  //!- this had a bug to be scrolled by clicking FixedMenu because of the same className. changed className from scroll-wrapper to ...-horizontalMenu
+                  id="scroll-wrapper-horizontalMenu"
                   style={{
                     padding: '0.1rem 0 0.1rem 1.2rem',
                     paddingRight: '0',

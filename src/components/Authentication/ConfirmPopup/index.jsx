@@ -18,8 +18,11 @@ const ConfirmPopup = ({
             <img src={ConfirmIcon} alt="Confirm" />
           </div>
           <p className='confirm-title' style={{ whiteSpace: 'pre-wrap' }}>
-            <span className='primary-color' >가입 신청이 완료 되었습니다.</span>{`\n`}
-            관리자 <span style={{ fontWeight: 'bold' }} className='secondary-color'>승인 대기중</span>입니다.</p>
+            {/* <span className='primary-color' >가입 신청이 완료 되었습니다.</span>{`\n`}
+            관리자 <span style={{ fontWeight: 'bold' }} className='secondary-color'>승인 대기중</span>입니다.</p> */}
+            <div><span className='primary-color' >가입 신청이 완료 되었습니다.</span></div>
+            <div>관리자 <span style={{ fontWeight: 'bold' }} className='secondary-color'>승인 대기중</span>입니다.</div>
+          </p>
           <div className='confirm-desc mb-46'>
             <p>관리자 승인 후 로그인 하시면.</p>
             <p>정상적으로 서비스 이용이 가능합니다.</p>
@@ -32,7 +35,8 @@ const ConfirmPopup = ({
             <div className='box'>
               <img src={Confirm1} alt="Confirm" />
               <div className='box-des' style={{ whiteSpace: 'pre-wrap' }}>
-                <p>{`회원님의 모든 데이터는\n암호화되어 안전하게\n보관됩니다.`}</p>
+                {/* <p>{`회원님의 모든 데이터는\n암호화되어 안전하게\n보관됩니다.`}</p> */}
+                <p>회원님의 모든 데이터는</p><p>암호화되어 안전하게</p><p>보관됩니다.</p>
                 {/* <p>회원님의 모든 데이터는</p>
                 <p className='-mt-1 ml-1'> 암호화되어 안전하게</p>
                 <p className='-mt-1 ml-1'> 보관됩니다.</p> */}
@@ -41,8 +45,8 @@ const ConfirmPopup = ({
             <div className='box'>
               <img src={Confirm2} alt="Confirm" />
               <div className='box-des' style={{ whiteSpace: 'pre-wrap' }}>
-                <p>{`아이디/비밀번호를\n분실되지 않도록 보안에\n신경 써 주세요.`}</p>
-
+                {/* <p>{`아이디/비밀번호를\n분실되지 않도록 보안에\n신경 써 주세요.`}</p> */}
+                <p>아이디/비밀번호를</p><p>분실되지 않도록 보안에</p><p>신경 써 주세요.</p>
                 {/* <p>아이디/비밀번호를</p>
                 <p className='-mt-1 ml-1'>분실되지 않도록 보안에</p>
                 <p className='-mt-1 ml-1'> 신경 써 주세요.</p> */}
@@ -51,8 +55,8 @@ const ConfirmPopup = ({
             <div className='box'>
               <img src={Confirm3} alt="Confirm" />
               <div className='box-des' style={{ whiteSpace: 'pre-wrap' }}>
-              <p>{`회원 탈퇴 후\n회원님의 정보는\n완전히 삭제됩니다.`}</p>
-
+              {/* <p>{`회원 탈퇴 후\n회원님의 정보는\n완전히 삭제됩니다.`}</p> */}
+              <p>회원 탈퇴 후</p><p>회원님의 정보는</p><p>완전히 삭제됩니다.</p>
                 {/* <p>회원 탈퇴 후</p>
                 <p className='-mt-1 ml-1'> 회원님의 정보는</p>
                 <p className='-mt-1 ml-1'>완전히 삭제됩니다.</p> */}

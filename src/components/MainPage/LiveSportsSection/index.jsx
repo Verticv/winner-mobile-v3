@@ -24,7 +24,7 @@ const LiveSportsSection = () => {
       id: 2,
       title: '베팅방법',
       img: Image3,
-      // path: '/liveSports/guide2'
+      path: '/liveSports/guide'
     },
 
   ]

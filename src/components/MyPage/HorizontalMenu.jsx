@@ -22,7 +22,8 @@ const HorizontalMenu = ({
 
     useEffect(() => {
         if (withoutFirst) {
-            horizontalsScroll(itemsArray, 't', 'scroll-wrapper')
+            //!- this had a bug to be scrolled by clicking FixedMenu because of the same className. changed className from scroll-wrapper to ...-horizontalMenu
+            horizontalsScroll(itemsArray, 't', 'scroll-wrapper-horizontalMenu')
         }
     }, [itemsArray])
 
@@ -51,7 +52,8 @@ const HorizontalMenu = ({
                     onPointerDown={() => setHover(item.id)}
                     onPointerUp={() => {
                         setHover(null)
-                        horizontalsScroll(itemsArray, 't', 'scroll-wrapper', index)
+                        //!- this had a bug to be scrolled by clicking FixedMenu because of the same className. changed className from scroll-wrapper to ...-horizontalMenu
+                        horizontalsScroll(itemsArray, 't', 'scroll-wrapper-horizontalMenu', index)
                         navigate(item.path)
                         setSelectedSubTab(item.id)
                         setSelectedTab(item.id)

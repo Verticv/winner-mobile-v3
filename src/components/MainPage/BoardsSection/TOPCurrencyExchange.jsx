@@ -97,7 +97,7 @@ const TOPCurrencyExchange = ({ onClick }) => {
     allWithClass.forEach(element => {
       let list = element.classList
       list.toggle("stop-animation");
-    })
+    });
   }
   return (
     <div className='board new-card'>

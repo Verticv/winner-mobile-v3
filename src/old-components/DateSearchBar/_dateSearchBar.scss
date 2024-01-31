@@ -63,49 +63,49 @@
 
 }
 
-.buttons-container2 {
-    display: flex;
-    margin: 0 1.9rem;
-    margin-top: 1.15rem;
-    gap: 0.92rem;
-    color: #ffdfbd;
-    font-size: 2.624375rem;
-    padding-bottom: 1.8rem;
+// .buttons-container2 {
+//     display: flex;
+//     margin: 0 1.9rem;
+//     margin-top: 1.15rem;
+//     gap: 0.92rem;
+//     color: #ffdfbd;
+//     font-size: 2.624375rem;
+//     padding-bottom: 1.8rem;
 
-    .common-button12 {
-        width: 13.25rem;
-        height: 7.3125rem;
-        background: #d0cfcf;
-        padding: 0.1875rem;
-        border-radius: 1.125rem;
-        box-shadow: 0 0.312rem 0.625rem 0 rgba(0, 0, 0, 0.3);
-        cursor: pointer;
+//     .common-button12 {
+//         width: 13.25rem;
+//         height: 7.3125rem;
+//         background: #d0cfcf;
+//         padding: 0.1875rem;
+//         border-radius: 1.125rem;
+//         box-shadow: 0 0.312rem 0.625rem 0 rgba(0, 0, 0, 0.3);
+//         cursor: pointer;
 
-        &:hover {
-            filter: brightness(125%);
-        }
+//         &:hover {
+//             filter: brightness(125%);
+//         }
 
-        .text-con {
-            background: linear-gradient(to top, #e9e9e9, #f3f3f3, #fcfcfc);
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 1.125rem;
+//         .text-con {
+//             background: linear-gradient(to top, #e9e9e9, #f3f3f3, #fcfcfc);
+//             width: 100%;
+//             height: 100%;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             border-radius: 1.125rem;
 
-            span {
-                margin-top: 0.2rem;
-                letter-spacing: -0.07rem;
-                color: #444444;
-            }
-        }
-    }
+//             span {
+//                 margin-top: 0.2rem;
+//                 letter-spacing: -0.07rem;
+//                 color: #444444;
+//             }
+//         }
+//     }
 
-    .date12 {
-        padding-top: 0.7rem;
-    }
-}
+//     .date12 {
+//         padding-top: 0.7rem;
+//     }
+// }
 
 @media (max-width: 600px) {
     .buttons-container2 {

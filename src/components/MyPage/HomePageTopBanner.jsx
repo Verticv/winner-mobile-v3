@@ -28,7 +28,8 @@ const HomePageTopBanner = ({ pageTitle, toPath = "/mypage", isFreeboard = false,
                         // isFreeboard ? history.back() : navigate(toPath);
                         // setOpen(prev => !prev)
                         // window.location.pathname.includes('/mypage/coupon/all') ? navigate('mypage/coupon') : navigate(-1);
-                        history.back();
+                        // history.back();
+                        navigate(-1);
                     }
                     }
                     className='left-arrow'

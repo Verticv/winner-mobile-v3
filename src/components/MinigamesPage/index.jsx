@@ -91,6 +91,13 @@ const MinigamesPage = ({ isAuthenticated, setAuthenticated }) => {
     };
   }
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      // behavior: 'smooth'
+  });
+  })
+
   return (
     <div style={{ maxWidth: '1242px' }} className="container">
       <Header isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />

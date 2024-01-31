@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import DateSearchBar from '../MyPage/DateSearchBar';
+// import DateSearchBar from '../MyPage/DateSearchBar';
+import DateSearchBar from './DateSearchBar';
 import SportsBetHistoryPanel from '../MyPage/SportsBetHistoryPanel';
 import SelectAllButton from '../MyPage/SelectAllButton';
 import { useNavigate } from 'react-router-dom';
