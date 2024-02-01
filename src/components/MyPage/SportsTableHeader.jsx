@@ -81,7 +81,8 @@ const SportsTableHeader = ({
             ? '2.2rem'
             : smallCard
             ? '1.8rem'
-            : '2rem',
+            // : '2rem',
+            : '1.7rem',
           letterSpacing: '-0.07rem',
           color: 'rgb(204, 194, 182)',
           marginBottom: smallCard ? '' : '0.3rem',

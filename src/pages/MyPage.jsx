@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import ProfileHeader from '../components/MyPage/Header';
 import ProfileInfo from '../components/MyPage/ProfileInfo';
 import ProfileMenu from '../components/MyPage/ProfileMenu';
+import ProfileMenu2 from '../components/MyPage/ProfileMenu2';
 
 import BetHistoryTest from '../components/MyPage/BetHistoryTest';
 import Header from '../components/Header';
@@ -79,7 +80,7 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
             <div className="container mypage">
               <ProfileHeader setOpen={setOpen} />
               <ProfileInfo />
-              <ProfileMenu isOpen={isOpen2} setOpen={setOpen2} />
+              <ProfileMenu2 isOpen={isOpen2} setOpen={setOpen2} />
             </div>
           }
         ></Route>
