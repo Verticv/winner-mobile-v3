@@ -126,7 +126,7 @@ const TOPCurrencyExchange = ({ onClick }) => {
                         {item.id === 3 && <img className="" src={BronzeCrown} alt="" />}
                         {item.id > 3 && <span>{item.id}</span>}
                       </div>
-                      <p className={`${item.id === 1 || item.id === 2 || item.id === 3 ? 'text-red' : ''}`}
+                      <p className={`${item.id === 1 || item.id === 2 || item.id === 3 ? 'text-red' : 'text-normal'}`}
                       >Happy***</p>
                     </div>
                     <div className='right-side'>
