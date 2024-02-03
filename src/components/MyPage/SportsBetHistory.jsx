@@ -36,7 +36,8 @@ const SportsBetHistory = ({
       <DateSearchBar isGameResultsSearch={true} />
       <div
         className="w-full h-full z-10"
-        style={{ padding: '1.938rem 1.875rem 1.938rem 1.876rem' }}
+        // style={{ padding: '1.938rem 1.875rem 1.938rem 1.876rem' }}
+        style={{ padding: '1.938rem 1.875rem 0rem 1.876rem' }}
       >
         <SportsBetHistoryPanel
           isPopup={!showSub}
@@ -47,7 +48,8 @@ const SportsBetHistory = ({
           setAttachedArray={setAttachedArray}
           setPopupOpen={setPopupOpen}
         />
-        <div style={{ margin: '0 1.9rem', marginBottom: '3rem' }}>
+        {/* <div style={{ margin: '0 1.9rem', marginBottom: '3rem' }}> */}
+        <div style={{ marginBottom: '3rem' }}>
           <SelectAllButton
             btn2Text="내역올리기"
             buttonsNumber={3}
