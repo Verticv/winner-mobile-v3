@@ -105,7 +105,7 @@ const CardHeader = ({
               style={{
                 width: '2.374375rem',
                 height: '2.374375rem',
-                marginTop: '1rem',
+                // marginTop: '1rem',
               }}
               src={ClockIcon}
               alt=""
@@ -115,7 +115,8 @@ const CardHeader = ({
                 color: '#ffffff',
                 fontSize: '2.625rem',
                 marginLeft: '0.5625rem',
-                marginTop: '0.5rem',
+                // marginTop: '0.5rem',
+                marginTop: '0.7rem',
                 marginRight: '',
               }}
               className=" text-16px tracking-tight text-white"
