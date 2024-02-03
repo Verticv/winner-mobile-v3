@@ -34,7 +34,7 @@ const MenuList = ({
               <div className='menu-item1'>
                 <div className='menu-item-logo'>
                   {/* <img src={item.icon2} alt="right" className="ml-10px object-none" /> */}
-                  {selectedTab !== item.id && (<img src={item.icon2} alt="right" className="ml-10px object-none" />)}
+                  {selectedTab !== item.id && (<img src={item.icon} alt="right" className="ml-10px object-none" />)}
                   {selectedTab === item.id && (<img src={item.OnIcon} alt="right" className="ml-10px object-none" />)}
                 </div>
                 <div className='menu-item-title'>

@@ -61,9 +61,9 @@ const FixedMenu = ({
   const Items = [
     {
       id: 0,
-      icon: MenuIcon0,
-      icon2: MenuIcon_0,
-      OnIcon: MenuIcon_0,
+      icon: MenuIcon0, //!- see more 더보기 - puple
+      icon2: MenuIcon_0, //!- ? - blue
+      OnIcon: MenuIcon_0, //!- selected
       title: '홈',
       section: null
     },
