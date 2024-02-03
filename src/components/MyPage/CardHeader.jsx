@@ -164,7 +164,10 @@ const CardHeader = ({
           <span
             style={{
               fontSize: '2.438rem',
-              paddingTop: '-0.738rem',
+              // paddingTop: '-0.738rem',
+              height:'100%',
+              lineHeight:'6.313rem',
+              // verticalAlign:'bottom',
               marginLeft: '0.85rem',
               color: '#ffffff',
               whiteSpace: 'nowrap',
@@ -184,7 +187,8 @@ const CardHeader = ({
           {/* <img style={{ width: '2.375rem', height: '2.375rem', marginTop: '0.3rem' }} src={ClockIcon} alt="" /> */}
           <span
             style={{
-              lineHeight: '20px',
+              // lineHeight: '20px',
+              lineHeight:'6.313rem',
               color: '#ffffff',
               fontSize: '2.438rem',
               marginLeft: '0.5rem',
@@ -200,7 +204,7 @@ const CardHeader = ({
             style={{
               height: '2.75rem',
               width: '4.125rem',
-              marginTop: '-1rem',
+              marginTop: '-.5rem',
               marginLeft: '1.438rem',
             }}
             src={flag}

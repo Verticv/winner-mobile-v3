@@ -14,7 +14,8 @@
         border-radius: 1rem;
         color: #ccc2b6;
         letter-spacing: -0.07rem;
-        padding: 0.35rem 0 0 1.65rem;
+        // padding: 0.35rem 0 0 1.65rem;
+        padding: 0.10rem 0 0 1.65rem;
     }
 
     ::placeholder {
@@ -27,6 +28,7 @@
 
 .second-row {
     display: flex;
+    align-items: center;
 
     input {
         outline: none;
@@ -54,9 +56,12 @@
     }
 
     .Signal {
+        height: 7rem;
+        line-height: 7rem;
         color: #ffffff;
         font-size: 2.624375rem;
-        margin-top: 3rem;
+        margin-top: 1.7rem; //!- added to block .Signal in _myPage.scss
+        vertical-align: bottom;
         margin-left: 0.2rem;
         margin-right: -1.55rem;
     }
