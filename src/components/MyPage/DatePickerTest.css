@@ -696,13 +696,17 @@
 }
 
 .react-datepicker__input-container .left-input {
-  margin-left: 1.875rem;
-  margin-top: 1.7rem;
+  /* margin-left: 1.875rem;
+  margin-top: 1.7rem; */
+  margin-left: 1.3rem;
+  margin-top: 1.3rem;
 }
 
 .react-datepicker__input-container .right-input {
-  margin-right: 1.875rem;
-  margin-top: 1.7rem;
+  /* margin-right: 1.875rem;
+  margin-top: 1.7rem; */
+  margin-right: 1.3rem;
+  margin-top: 1.3rem;
 }
 
 .react-datepicker__year-read-view,

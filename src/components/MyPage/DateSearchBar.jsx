@@ -171,7 +171,8 @@ const DateSearchBar = ({
         </div>
       )}
 
-      <div style={{ paddingTop: '0.375rem' }} className="second-row">
+      {/* <div style={{ paddingTop: '0.175rem' }} className="second-row"> */}
+      <div className="second-row">
         <div
           className="date-picker left-date-picker"
           style={{ position: 'relative', marginTop: '-0.188rem' }}
