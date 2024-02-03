@@ -106,7 +106,7 @@ const CardResults = ({
                   paddingRight: bet === 'left' ? '' : '0.15rem',
                 }}
               >
-                <span style={{ fontSize: '2.625rem', marginTop: '0.1rem' }}>
+                <span style={{ fontSize: '2.625rem', marginTop: '0.5rem' }}>
                   {shouldTruncate ? truncate(team1, 11, 11) : team1}
                 </span>
                 <div style={{ width: '7rem', textAlign: 'center' }}>
@@ -316,15 +316,18 @@ const CardResults = ({
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
-                paddingTop: bet === 'left' ? '' : '0.1rem',
+                // paddingTop: bet === 'left' ? '' : '0.1rem',
+                paddingTop: bet === 'left' ? '' : '-0.1rem',
                 paddingRight: bet === 'left' ? '' : '0.15rem',
                 color: bet === 'left' ? '#ffffff' : '#444444',
               }}
             >
               <span
                 style={{
+                  height: '6.188rem',
+                  lineHeight: '6.188rem',
                   fontSize: '2.25rem',
-                  marginTop: '-0.213rem',
+                  // marginTop: '-0.213rem',
                   whiteSpace: 'nowrap',
                   maxWidth: isCompose
                     ? '17rem'
@@ -354,6 +357,8 @@ const CardResults = ({
                 )}
                 <span
                   style={{
+                    height: '6.188rem',
+                    lineHeight: '6.188rem',
                     fontSize: '2.25rem',
                     marginRight: '0.2rem',
                     textAlign: 'right',
@@ -407,7 +412,7 @@ const CardResults = ({
                 paddingTop: bet === 'middle' ? '' : '0.1rem',
               }}
             >
-              <span style={{ fontSize: '2.25rem', fontWeight: isClicked ? '700' : 'unset' }}>{stat2}</span>
+              <span style={{ height: '100%', lineHeight: '6.188rem', marginTop: '.2rem', fontSize: '2.25rem', fontWeight: isClicked ? '700' : 'unset' }}>{stat2}</span>
             </div>
           </button>
         </div>
@@ -469,6 +474,8 @@ const CardResults = ({
               >
                 <span
                   style={{
+                    height: '6.188rem',
+                    lineHeight: '6.188rem',
                     fontSize: '2.25rem',
                     textAlign: 'center',
                     display: 'flex',
@@ -493,6 +500,8 @@ const CardResults = ({
               </div>
               <span
                 style={{
+                  height: '6.188rem',
+                  lineHeight: '6.188rem',
                   fontSize: '2.25rem',
                   maxWidth: isCompose
                     ? '17rem'
@@ -628,7 +637,7 @@ const CardResults = ({
             <p
               style={{
                 color: result === 'cancel' ? '#33a1e9' : '',
-                marginLeft: '0.45rem',
+                // marginLeft: '0.45rem',
                 letterSpacing: '-0.06rem',
                 fontWeight: 'bold',
               }}
