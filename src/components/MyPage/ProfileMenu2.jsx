@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import MenuIcon_0 from '../../assets/images/menu2/menu0.png';
 import MenuIcon_1 from '../../assets/images/menu2/menu1.png';
 import MenuIcon_2 from '../../assets/images/menu2/menu2.png';
 import MenuIcon_3 from '../../assets/images/menu2/menu3.png';
@@ -16,6 +17,7 @@ import MenuIcon_12 from '../../assets/images/menu2/menu12.png';
 import MenuIcon_13 from '../../assets/images/menu2/menu13.png';
 import MenuIcon_14 from '../../assets/images/menu2/menu14.png';
 
+import MenuIcon_Light_0 from '../../assets/images/menu2/menu-light0.png';
 import MenuIcon_Light_1 from '../../assets/images/menu2/menu-light1.png';
 import MenuIcon_Light_2 from '../../assets/images/menu2/menu-light2.png';
 import MenuIcon_Light_3 from '../../assets/images/menu2/menu-light3.png';
@@ -119,6 +121,16 @@ import Logo from '../../assets/images/footer/footer-log.png';
 // const ProfileMenu = ({ isOpen, setOpen }) => {
 const ProfileMenu2 = () => {
   const Items = [
+    {
+      id: 0,
+      icon: MenuIcon_0,
+      icon2: MenuIcon_Light_0,
+      title: '전체보기',
+      hasBadge: false,
+      hasList: false,
+      path: '/mypage/bet-history/all',
+      blank: false,
+    },
     {
       id: 1,
       icon: MenuIcon_1,
