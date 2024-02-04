@@ -35,7 +35,8 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
   const [selectedSubTab, setSelectedSubTab] = useState(0);
   const [subActiveButton, setSubActiveButton] = useState();
   const [distributorPageActive, setDistributorPageActive] = useState();
-  const [isOpen2, setOpen2] = useState(false);
+  // const [isOpen2, setOpen2] = useState(false);
+  const [showSubMenu, setShowSubMenu] = useState(false); //!-- once pushing (main)menu, this valuable becomes true, it shows sub menu then.
 
   const [selectedTab1, setSelectedTab1] = useState(0);
   const [selectedSubTab1, setSelectedSubTab1] = useState(0);
@@ -78,9 +79,11 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
           index
           element={
             <div className="container mypage">
-              <ProfileHeader setOpen={setOpen} />
+              {/* <ProfileHeader setOpen={setOpen} /> */}
+              <ProfileHeader showSubMenu={showSubMenu} setShowSubMenu={setShowSubMenu} />
               <ProfileInfo />
-              <ProfileMenu2 isOpen={isOpen2} setOpen={setOpen2} />
+              {/* <ProfileMenu2 isOpen={isOpen2} setOpen={setOpen2} /> */}
+              <ProfileMenu2 showSubMenu={showSubMenu} setShowSubMenu={setShowSubMenu} />
             </div>
           }
         ></Route>

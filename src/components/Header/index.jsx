@@ -24,7 +24,8 @@ function Header() {
       <div className="header__navbar">
         <div className="navbar__list">
           <div className="navbar__item"
-            onClick={() => setOpen(true)}>
+            // onClick={() => setOpen(true)}>
+            onClick={() => navigate('/mypage')}>
             <img
               className="icon1"
               src={ProfileIcon}
@@ -54,14 +55,14 @@ function Header() {
         </div>
         </div>
     </div>
-      {
+      {/* {
         isOpen && (
           < div className='menu-modal'>
             <MyPage
               setOpen={setOpen} />
           </div>
         )
-      }
+      } */}
     </>
   );
 }

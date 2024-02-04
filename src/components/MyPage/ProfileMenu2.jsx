@@ -1,5 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import {
+  setMyPageSelectedMainMenuId,
+  setMyPageSelectedSubMenuId,
+  resetMyPageSelectedMainMenuId,
+} from '../../counterSlice';
 
 import MenuIcon_0 from '../../assets/images/menu2/menu0.png';
 import MenuIcon_1 from '../../assets/images/menu2/menu1.png';
@@ -119,7 +125,7 @@ import MenuOnCsCenterIcon_4 from '../../assets/images/menu2/csCenterIcon_4-activ
 import Logo from '../../assets/images/footer/footer-log.png';
 
 // const ProfileMenu = ({ isOpen, setOpen }) => {
-const ProfileMenu2 = () => {
+const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
   const Items = [
     {
       id: 0,
@@ -468,122 +474,157 @@ const ProfileMenu2 = () => {
   const [selectedTab, setSelectedTab] = useState(-1); //!-- initial value: -1, onClick: item.id => 100ms later: -1
   const [subItems, setSubItems] = useState([]);
   const navigate = useNavigate();
-  const [showSubMenu, setShowSubMenu] = useState(false);
+  // const [showSubMenu, setShowSubMenu] = useState(false);
   // const [selectedSubTab, setSelectedSubTab] = useState([]);
   // const setActiveTab = ({ index, item }) => {
   //   setSelectedSubTab(item.id);
   // };
 
+  const selectedMainMenuId = useSelector(
+    (state) => state.counter.myPageSelectedMainMenuId
+  );
+  const selectedSubMenuId = useSelector(
+    (state) => state.counter.myPageSelectedSubMenuId
+  );
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if(selectedMainMenuId !== -1) {
+      const selectedMainMenu =  Items.find((item) => item.id === selectedMainMenuId);
+      setSubItems(selectedMainMenu.subItems);
+      if(selectedMainMenu.subItems) setShowSubMenu(true);
+    } else setShowSubMenu(false);
+  },[]);
   return (
     <>
       <div className="profile-menu menu-list">
         {/* if clicking main menu, shows sub menu on the same space */}
         {!showSubMenu
-          ? Items.map((item, index) => ( //!- main menu
-              <button
-                key={index}
-                className={`menu-item ${
-                  selectedTab === item.id ? 'active' : ''
-                }`}
-                onClick={() => {
-                  setSelectedTab(item.id);
-                  setTimeout(() => {
-                    setSelectedTab(-1);
-                    if (item.subItems) {
-                      setSubItems(item.subItems);
-                      setShowSubMenu(true);
-                      // navigate(item?.path);
-                    } else {
-                      item.blank
-                        ? window.open(item?.path)
-                        : navigate(item?.path);
-                    }
-                    if (item.title === '회원정보수정') {
-                      setReauthPopupOpen(true);
-                    }
-                  }, 100);
-                }}
-              >
-                <div className="menu-item1">
-                  {item.hasList && (
-                    <div className="menu-item-arrow">
-                      {selectedTab === item.id && (
+          ? Items.map(
+              (
+                item,
+                index //!- main menu
+              ) => (
+                <button
+                  key={index}
+                  className={`menu-item ${
+                    // selectedTab === item.id ? 'active' : ''
+                    selectedMainMenuId === item.id ? 'active' : ''
+                  }`}
+                  onClick={() => {
+                    // setSelectedTab(item.id);
+                    dispatch(setMyPageSelectedMainMenuId(item.id));
+                    // console.log(selectedMainMenuId);
+                    // setTimeout(() => {
+                      // setSelectedTab(-1);
+                      if (item.subItems) {
+                        setSubItems(item.subItems);
+                        setShowSubMenu(true);
+                        // navigate(item?.path);
+                      } else {
+                        item.blank
+                          ? window.open(item?.path)
+                          : navigate(item?.path);
+                      }
+                      if (item.title === '회원정보수정') {
+                        setReauthPopupOpen(true);
+                      }
+                    // }, 100);
+                  }}
+                >
+                  <div className="menu-item1">
+                    {item.hasList && (
+                      <div className="menu-item-arrow">
+                        {/* {selectedTab === item.id && ( */}
+                        {selectedMainMenuId === item.id && (
+                          <img
+                            src={LightArrow}
+                            alt="right"
+                            className="ml-10px object-none"
+                          />
+                        )}
+                        {/* {selectedTab !== item.id && ( */}
+                        {selectedMainMenuId !== item.id && (
+                          <img
+                            src={DarkArrow}
+                            alt="right"
+                            className="ml-10px object-none"
+                          />
+                        )}
+                      </div>
+                    )}
+                    <div className="menu-item-logo">
+                      {/* {selectedTab === item.id && ( */}
+                      {selectedMainMenuId === item.id && (
                         <img
-                          src={LightArrow}
+                          src={item.icon2}
                           alt="right"
                           className="ml-10px object-none"
                         />
                       )}
-                      {selectedTab !== item.id && (
+                      {/* {selectedTab !== item.id && ( */}
+                      {selectedMainMenuId !== item.id && (
                         <img
-                          src={DarkArrow}
+                          src={item.icon}
                           alt="right"
                           className="ml-10px object-none"
                         />
                       )}
                     </div>
-                  )}
-                  <div className="menu-item-logo">
-                    {selectedTab === item.id && (
-                      <img
-                        src={item.icon2}
-                        alt="right"
-                        className="ml-10px object-none"
-                      />
-                    )}
-                    {selectedTab !== item.id && (
-                      <img
-                        src={item.icon}
-                        alt="right"
-                        className="ml-10px object-none"
-                      />
-                    )}
+                    <div className="menu-item-title">
+                      <p>{item.title}</p>
+                      {item.hasBadge && (
+                        <span className="badge badge--red badge--l">
+                          <span>{item.badge_num}</span>
+                        </span>
+                      )}
+                    </div>
                   </div>
-                  <div className="menu-item-title">
-                    <p>{item.title}</p>
-                    {item.hasBadge && (
-                      <span className="badge badge--red badge--l">
-                        <span>{item.badge_num}</span>
-                      </span>
-                    )}
+                </button>
+              )
+            )
+          : subItems.map(
+              (
+                item,
+                index //!- sub menu
+              ) => (
+                <button
+                  key={index}
+                  className={`menu-item ${
+                    // selectedTab === item.id ? 'active' : ''
+                    selectedSubMenuId === item.id ? 'active' : ''
+                  }`}
+                  onClick={() => {
+                    // setOpen(false)
+                    // setSelectedTab({ index: item.id, item: item });
+                    dispatch(setMyPageSelectedSubMenuId(item.id));
+                    navigate(item?.path);
+                  }}
+                >
+                  <div className="menu-item1">
+                    <div className="menu-item-logo">
+                      {/* <img src={item.icon2} alt="right" className="ml-10px object-none" /> */}
+                      {/* {selectedTab !== item.id && ( */}
+                      {selectedSubMenuId !== item.id && (
+                        <img
+                          src={item.icon2}
+                          alt="right"
+                          className="ml-10px object-none"
+                        />
+                      )}
+                      {/* {selectedTab === item.id && ( */}
+                      {selectedSubMenuId === item.id && (
+                        <img
+                          src={item.OnIcon}
+                          alt="right"
+                          className="ml-10px object-none"
+                        />
+                      )}
+                    </div>
+                    <div className="menu-item-title">{item.title}</div>
                   </div>
-                </div>
-              </button>
-            ))
-          : subItems.map((item, index) => ( //!- sub menu
-              <button
-                key={index}
-                className={`menu-item ${
-                  selectedTab === item.id ? 'active' : ''
-                }`}
-                onClick={() => {
-                  // setOpen(false)
-                  setSelectedTab({ index: item.id, item: item });
-                  navigate(item?.path);
-                }}
-              >
-                <div className="menu-item1">
-                  <div className="menu-item-logo">
-                    {/* <img src={item.icon2} alt="right" className="ml-10px object-none" /> */}
-                    {selectedTab !== item.id && (
-                      <img
-                        src={item.icon2}
-                        alt="right"
-                        className="ml-10px object-none"
-                      />
-                    )}
-                    {selectedTab === item.id && (
-                      <img
-                        src={item.OnIcon}
-                        alt="right"
-                        className="ml-10px object-none"
-                      />
-                    )}
-                  </div>
-                  <div className="menu-item-title">{item.title}</div>
-                </div>
-              </button>
-            ))}
+                </button>
+              )
+            )}
       </div>
     </>
   );
