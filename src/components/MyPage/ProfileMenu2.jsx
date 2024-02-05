@@ -495,6 +495,7 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
       if(selectedMainMenu.subItems) setShowSubMenu(true);
     } else setShowSubMenu(false);
     console.log(selectedTab);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
   return (
     <>
