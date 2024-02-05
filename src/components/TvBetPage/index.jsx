@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router';
 import Header from '../Header';
 import HomePageTopBanner from '../MyPage/HomePageTopBanner';
@@ -15,6 +15,11 @@ const TvBetPage = ({ isAuthenticated, setAuthenticated }) => {
   ];
 
   const [, setSelectedTab] = useState(0);
+
+  //!- to show(scroll to) top when showing
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div

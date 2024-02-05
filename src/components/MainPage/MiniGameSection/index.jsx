@@ -61,21 +61,21 @@ const MiniGameSection = () => {
       <div className="filter-content mini-games-section">
         <SectionHeader icon={MiniGameIcon} title={'미니게임'} />
         <div className="cont">
-          <div className="content1" style={{ marginTop: '1rem' }}>
-            <div style={{ marginBottom: '1.6rem' }}>
-              {Items.map((card, index) => (
-                <SharedCard
-                  id={card.id}
-                  path={card.path}
-                  key={card.id}
-                  title={card.title}
-                  img={card.img}
-                  clickEffect={clickEffect}
-                  setClickEffect={setClickEffect}
-                />
-              ))}
-            </div>
-          </div>
+          {/* <div className="content1" style={{ marginTop: '1rem' }}> */}
+          {/* <div style={{ marginBottom: '1.6rem' }}> */}
+          {Items.map((card, index) => (
+            <SharedCard
+              id={card.id}
+              path={card.path}
+              key={card.id}
+              title={card.title}
+              img={card.img}
+              clickEffect={clickEffect}
+              setClickEffect={setClickEffect}
+            />
+          ))}
+          {/* </div> */}
+          {/* </div> */}
         </div>
       </div>
     </>

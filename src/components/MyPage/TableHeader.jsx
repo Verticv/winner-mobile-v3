@@ -103,7 +103,8 @@ const TableHeader = ({
               : '',
             fontWeight: 'bold',
             marginTop: '-0.626rem',
-            marginRight: isSportsResult? '-2rem': '-1.813rem',
+            // marginRight: isSportsResult? '-2rem': '-1.813rem',
+            marginRight: isSportsResult? '-2rem': '0.0rem',
           }}
           className="h-full flex items-center justify-end"
         >
@@ -147,7 +148,8 @@ const TableHeader = ({
               : '14.388rem',
             fontWeight: 'bold',
             marginTop: '-0.626rem',
-            marginRight: '-1.188rem',
+            // marginRight: '-1.188rem',
+            marginRight: '-0.188rem',
           }}
           className="h-full flex items-center justify-end"
         >
@@ -169,7 +171,8 @@ const TableHeader = ({
               : '10rem',
             fontWeight: 'bold',
             marginTop: '-1.001rem',
-            marginRight: isSportsResult?'0.5rem':''
+            // marginRight: isSportsResult?'0.5rem':''
+            marginRight: isSportsResult?'0.5rem':'0.5rem'
           }}
           className="h-full flex items-center justify-end"
         >

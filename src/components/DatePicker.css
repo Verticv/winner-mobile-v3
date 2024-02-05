@@ -697,12 +697,12 @@
 
 .react-datepicker__input-container .left-input {
   margin-left: 1.875rem;
-  /* margin-top: 2.063rem; */
+  margin-top: 2.063rem;
 }
 
 .react-datepicker__input-container .right-input {
   margin-right: 1.875rem;
-  /* margin-top: 1.875rem; */
+  margin-top: 1.875rem;
 }
 
 .react-datepicker__year-read-view,

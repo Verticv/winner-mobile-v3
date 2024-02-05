@@ -114,9 +114,11 @@ const DateSearchBar = ({
         paddingTop: isPoints ? '0' : '',
         marginTop:
           isGameResultsSearch === true
-            ? '1.938rem'
+            // ? '1.938rem'
+            ? '1.1rem'
             : isPoints
-            ? '1.938rem'
+            // ? '1.938rem'
+            ? '1.1rem'
             : '0.625rem',
         marginLeft: isGameResultsSearch === true ? '1.876rem' : '1.876rem',
         marginRight: isGameResultsSearch === true ? '1.875rem' : '1.875rem',
@@ -169,7 +171,8 @@ const DateSearchBar = ({
         </div>
       )}
 
-      <div style={{ paddingTop: '0.375rem' }} className="second-row">
+      {/* <div style={{ paddingTop: '0.175rem' }} className="second-row"> */}
+      <div className="second-row">
         <div
           className="date-picker left-date-picker"
           style={{ position: 'relative', marginTop: '-0.188rem' }}

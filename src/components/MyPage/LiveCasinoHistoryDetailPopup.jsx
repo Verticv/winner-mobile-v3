@@ -64,6 +64,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
               >
                 <p
                   style={{
+                    lineHeight:'5.1875rem',
                     margin: '0',
                     letterSpacing: '-0.2rem',
                     color: '#fff',
@@ -73,6 +74,7 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                 </p>
                 <p
                   style={{
+                    verticalAlign:'middle',
                     margin: '0',
                     letterSpacing: '-0.2rem',
                     marginLeft: '1rem',

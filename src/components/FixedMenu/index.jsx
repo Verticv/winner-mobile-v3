@@ -45,10 +45,13 @@ import MenuIcon_11 from '../../assets/images/mainPage/menu11.png'
 
 import horizontalsScroll from '../../utils/horizontalsScroll';
 import MenuList from '../Shared/MenuList'
+
+import { useNavigate } from "react-router-dom";
 const FixedMenu = ({
   setSelectedTab,
   selectedTab,
-  setSelectedSection
+  setSelectedSection,
+  isMyPage = false,
 }) => {
 
   const [isOpen, setOpen] = useState(false)
@@ -58,9 +61,9 @@ const FixedMenu = ({
   const Items = [
     {
       id: 0,
-      icon: MenuIcon0,
-      icon2: MenuIcon_0,
-      OnIcon: MenuIcon_0,
+      icon: MenuIcon0, //!- see more 더보기 - puple
+      icon2: MenuIcon_0, //!- ? - blue
+      OnIcon: MenuIcon_0, //!- selected
       title: '홈',
       section: null
     },
@@ -162,6 +165,8 @@ const FixedMenu = ({
     //setSelectedSection(item.section)
     setSelectedTab(item.id)
   }
+  
+  const navigate = useNavigate();
 
   return (
     <>
@@ -175,7 +180,8 @@ const FixedMenu = ({
                 key={item.id}
                 id={`t-sub${index}`}
                 onPointerUp={() => {
-                  setActiveTab({index,item})
+                  if (isMyPage) navigate("/main"); //!- on myPage, go to /main
+                  else setActiveTab({index,item})
                 }}>
                 { selectedTab !== item.id && (<img src={item.icon} alt="right" className="ml-10px object-none" />)}
                 { selectedTab === item.id && (<img src={item.OnIcon} alt="right" className="ml-10px object-none" />)}

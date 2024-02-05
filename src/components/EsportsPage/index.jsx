@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Route, Routes } from 'react-router';
 import HorizontalMenu9 from '../HorizontalMenu9';
 import EsportsStructure from '../EsportsStructure';
@@ -14,6 +14,10 @@ const EsportsPage = ({ isAuthenticated, setAuthenticated }) => {
   ];
 
   const [, setSelectedTab] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div

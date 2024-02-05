@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import HorizontalMenu9 from '../HorizontalMenu9';
 
@@ -15,6 +15,11 @@ const LiveSportsGuide = () => {
   ];
 
   const [, setSelectedTab] = useState(0);
+
+  //!- to show(scroll to) top when showing
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const TitleText = ({ number = '01', titleText = '화면구성', noNumber }) => (
     <div

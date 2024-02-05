@@ -71,7 +71,8 @@ const SportsTableHeader = ({
           borderTopLeftRadius: '1.875rem',
           borderTopRightRadius: '1.875rem',
           paddingTop: smallCard ? '1.69rem' : '1.688rem',
-          paddingBottom: '1.438rem',
+          // paddingBottom: '1.438rem',
+          paddingBottom: '1.0rem',
           display: 'flex',
           justifyContent: 'right',
           alignItems: 'center',
@@ -81,7 +82,8 @@ const SportsTableHeader = ({
             ? '2.2rem'
             : smallCard
             ? '1.8rem'
-            : '2rem',
+            // : '2rem',
+            : '1.7rem',
           letterSpacing: '-0.07rem',
           color: 'rgb(204, 194, 182)',
           marginBottom: smallCard ? '' : '0.3rem',

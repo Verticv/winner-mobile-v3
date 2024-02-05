@@ -95,28 +95,48 @@
    }
  }
 
+ //!- to align AnnouncementCard & NoticeBoard rows
+ .row-alignment {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: calc(100% - 6rem);
+ }
+
  .new-card-content {
-   padding: 2.625rem 2.75rem;
+   //  padding: 2.625rem 2.75rem;
+  //  padding: 1.5rem 2.75rem;
+   padding: 2.75rem;
    // max-height: 100%;
    overflow: hidden;
+    display: flex;
+    gap: 0.5rem;
+   flex-direction: column;
+   
 
    //height: 551px;
    .board-item {
+      height: 4.5rem;
      display: flex;
      align-items: center;
      justify-content: space-between;
-     margin-bottom: 1.75rem;
+     //  margin-bottom: 1.75rem;
 
      img {
        width: 2.438rem;
+       padding-bottom: .4rem;
        object-fit: contain;
      }
 
      p {
        color: #666666;
+       height: 100%;
+       line-height: 4.5rem;
        font-size: 2.625rem;
+       vertical-align: bottom;
        margin: 0;
        // width: 70%;
+        // padding-top: .2rem;
        max-width: 91%;
        text-overflow: ellipsis;
        overflow: hidden;
@@ -125,7 +145,6 @@
        margin-left: 1.75rem;
        margin-right: .75rem;
        letter-spacing: -.025em;
-
      }
 
      .left-side {
@@ -134,22 +153,28 @@
      }
 
      .right-side {
+        height: 4.5rem;
        display: flex;
        align-items: center;
        justify-content: flex-end;
-       gap: 1rem;
+       gap: 0rem;
        flex-shrink: 0;
        //  max-width: 30%;
 
        img {
-         width: 2.438rem;
-         object-fit: contain;
+        width: 2.438rem;
+        padding-bottom: .4rem;
+        object-fit: contain;
        }
 
        p {
+        height: 100%;
+        line-height: 4.4rem;
+        font-size: 2.625rem;
+        vertical-align: bottom;
          color: #666666;
-         font-size: 2.625rem;
-         margin: 0;
+         margin-bottom: .5rem;
+         margin-left: 1rem;
          max-width: 15rem;
          width: auto;
          text-overflow: ellipsis;
@@ -179,6 +204,7 @@
    justify-content: space-between;
    margin-bottom: 1.75rem;
    overflow: hidden;
+   height: 3.8rem;
 
    .left-side {
      display: flex;
@@ -197,6 +223,7 @@
        }
 
        span {
+        height: 3.1rem;
          display: flex;
          color: #666666;
          font-size: 2.625rem;
@@ -224,9 +251,13 @@
      overflow: hidden;
      white-space: nowrap;
      flex-shrink: 0;
-     margin-left: 1.75rem;
      margin-right: .75rem;
+     margin-left: 1.75rem;
    }
+
+  //  .text-normal {
+  //    padding-bottom: 1.5rem;
+  //  }
  }
 
  .currency-exchange-wrapper {
