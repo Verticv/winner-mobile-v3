@@ -502,7 +502,7 @@ const DateSearchBar1 = ({
           alignItems: 'center',
           justifyContent: isPoints ? 'unset' :'space-between',
         }}
-        className="flex w-full h-full items-center justify-between distributor-page-btn"
+        // className="flex w-full h-full items-center justify-between distributor-page-btn"
       >
         {withBlackButton && !withMargin && (
           <div className="first-row">
@@ -523,7 +523,7 @@ const DateSearchBar1 = ({
         )}
         {withBlackButton && (
           <>
-            <div
+            {/* <div
               style={{
                 minWidth: '41.625rem',
                 height: '6.75rem',
@@ -548,14 +548,16 @@ const DateSearchBar1 = ({
                 }}
                 placeholder="아이디 입력"
               />
-            </div>
+            </div> */}
             <div
               style={{
-                minWidth: isDistributorPage ? '27.4375rem' : '27.438rem',
+                // minWidth: isDistributorPage ? '27.4375rem' : '27.438rem',
+                width: '100%',
                 height: '7.25rem',
                 background: 'linear-gradient(to top, #4f3a7a, #e597ff)',
                 padding: '0.1875rem',
-                margin: isPoints ? '-0.789rem 0.125rem 1.75rem 2.7rem' : '-0.789rem 0.125rem 1.75rem 0.125rem',
+                // margin: isPoints ? '-0.789rem 0.125rem 1.75rem 2.7rem' : '-0.789rem 0.125rem 1.75rem 0.125rem',
+                margin: isPoints ? '-0.789rem 0.2rem 1.75rem 0' : '-0.789rem 0.125rem 1.75rem 0.125rem',
                 borderRadius: '1.125rem',
                 boxShadow: '0px 0.375rem 0.75rem 0px rgba(0, 0, 0, 0.6)',
               }}
@@ -571,7 +573,7 @@ const DateSearchBar1 = ({
                   alignItems: 'center',
                   borderRadius: '1.125rem',
                 }}
-                className="flex w-full h-full items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer"
+                // className="flex w-full h-full items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer"
               >
                 <span
                   style={{

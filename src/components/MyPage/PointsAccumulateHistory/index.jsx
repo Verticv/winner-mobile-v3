@@ -24,7 +24,7 @@ const tableData = [
         },
         {
             0: { 베팅금액: "5,000" },
-            1: { 적립포인트: "50P" }
+            1: { 적립포인트: "50" }
         }
     ],
     [
@@ -44,7 +44,7 @@ const tableData = [
         },
         {
             0: { 베팅금액: "5,000" },
-            1: { 적립포인트: "50P" }
+            1: { 적립포인트: "50" }
         }
     ],
     [
@@ -64,7 +64,7 @@ const tableData = [
         },
         {
             0: { 베팅금액: "5,000" },
-            1: { 적립포인트: "50P" }
+            1: { 적립포인트: "50" }
         }
     ],
     [
@@ -84,7 +84,7 @@ const tableData = [
         },
         {
             0: { 베팅금액: "5,000" },
-            1: { 적립포인트: "50P" }
+            1: { 적립포인트: "50" }
         }
     ],
     [
@@ -104,7 +104,7 @@ const tableData = [
         },
         {
             0: { 베팅금액: "5,000" },
-            1: { 적립포인트: "50P" }
+            1: { 적립포인트: "50" }
         }
     ],
     [
@@ -124,7 +124,7 @@ const tableData = [
         },
         {
             0: { 베팅금액: "5,000" },
-            1: { 적립포인트: "50P" }
+            1: { 적립포인트: "50" }
         }
     ],
     [
@@ -144,7 +144,7 @@ const tableData = [
         },
         {
             0: { 베팅금액: "5,000" },
-            1: { 적립포인트: "50P" }
+            1: { 적립포인트: "50" }
         }
     ],
     [
@@ -164,7 +164,7 @@ const tableData = [
         },
         {
             0: { 베팅금액: "5,000" },
-            1: { 적립포인트: "50P" }
+            1: { 적립포인트: "50" }
         }
     ],
 ]
@@ -201,13 +201,15 @@ const PointsAccumulateHistory = ({ SubMenuList, subActiveButton, setSubActiveBut
 
 
                 <div style={{
+                    // fontSize: '2.624375rem', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    // marginTop: '1.938rem', letterSpacing: '-0.07rem', marginBottom: '1.4rem', marginLeft: "1.688rem"
                     fontSize: '2.624375rem', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    marginTop: '1.938rem', letterSpacing: '-0.07rem', marginBottom: '1.4rem', marginLeft: "1.688rem"
+                    letterSpacing: '-0.07rem', marginLeft: "1.688rem", marginTop: '2.9rem', marginBottom: '0.9rem'
                 }}>
                     <span style={{
-                        color: '#ffd98b', textOverflow: 'ellipsis', maxWidth: '34.4rem', overflow: 'hidden', whiteSpace: 'nowrap', fontWeight: '700'
+                        color: '#ffd98b', textOverflow: 'ellipsis', maxWidth: '34.4rem', overflow: 'hidden', whiteSpace: 'nowrap', fontWeight: '700', lineHeight: '4rem'
                     }}>{truncate('louie3', 22, 22)}</span>
-                    <span style={{ color: '#eeeeee'}}>님의 포인트적립 정보입니다.</span>
+                    <span style={{ color: '#eeeeee', lineHeight: '4rem' }}>님의 포인트적립 정보입니다.</span>
                 </div>
 
 
