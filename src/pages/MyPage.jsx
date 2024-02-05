@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import ProfileHeader from '../components/MyPage/Header';
 import ProfileInfo from '../components/MyPage/ProfileInfo';
-import ProfileMenu from '../components/MyPage/ProfileMenu';
+// import ProfileMenu from '../components/MyPage/ProfileMenu';
 import ProfileMenu2 from '../components/MyPage/ProfileMenu2';
 
 import BetHistoryTest from '../components/MyPage/BetHistoryTest';
@@ -11,7 +11,7 @@ import NoticeBanner from '../components/MainPage/NoticeBanner';
 import HomePageTopBanner from '../components/MyPage/HomePageTopBanner';
 import FixedMenu from '../components/FixedMenu';
 import MoneyCharge from '../components/MyPage/MoneyCharge';
-import ScrollButton from '../components/MyPage/ScrollButton';
+// import ScrollButton from '../components/MyPage/ScrollButton';
 import HorizontalMenu1 from '../components/MyPage/HorizontalMenu1';
 import MoneyChargeHistory from '../components/MyPage/MoneyChargeHistory';
 import MoneyExchangePage from '../components/MyPage/MoneyExchangePage';
@@ -141,7 +141,7 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
                     path="/charge"
                     element={
                       <>
-                        <ScrollButton />
+                        {/* <ScrollButton /> */}
                         <MoneyCharge
                           subActiveButton={subActiveButton}
                           setSubActiveButton={setSubActiveButton}
@@ -153,7 +153,7 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
                     path="/charge/history"
                     element={
                       <>
-                        <ScrollButton />
+                        {/* <ScrollButton /> */}
                         <div style={{ marginTop: '0.625rem' }}>
                           <MoneyChargeHistory
                             subActiveButton={subActiveButton}
@@ -181,7 +181,7 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
               <Header />
               <NoticeBanner />
               <HomePageTopBanner
-                pageTitle="베팅내역"
+                pageTitle="머니환전"
                 toPath="/mypage/bet-history"
                 setOpen={setOpen}
               />

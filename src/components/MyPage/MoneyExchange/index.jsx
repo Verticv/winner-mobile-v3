@@ -118,8 +118,19 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                 marginRight: '5.6rem',
               }}
             >
-              환전 신청을 완료하게 되면 보유머니에서 신청한 금액만큼 차감되며
-              고객님의 계좌번호로 입금됩니다.
+              환전 신청을 완료하게 되면 보유머니에서 신청한 금액만큼
+            </div>
+            <div
+              style={{
+                fontSize: '2.625rem',
+                color: '#eeeeee',
+                marginTop: '0.2rem',
+                lineHeight: '1.42',
+                marginLeft: '-0.2rem',
+                marginRight: '5.6rem',
+              }}
+            >
+              차감되며 고객님의 계좌번호로 입금됩니다.
             </div>
           </div>
 
@@ -558,7 +569,8 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
           </div>
         </button>
       </div>
-      <div style={{ marginBottom: '258px' }}>
+      {/* <div style={{ marginBottom: '258px' }}> */}
+      <div style={{ marginBottom: '120px' }}>
         <BankTable />
       </div>
       {/* <BottomNavbar /> */}
