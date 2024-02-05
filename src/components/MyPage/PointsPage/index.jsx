@@ -112,6 +112,7 @@ const PointsPage = ({
           >
             <div
               style={{
+                marginBottom: '1rem',
                 fontSize: '2.25rem',
                 letterSpacing: '-0.07rem',
               }}
@@ -155,6 +156,7 @@ const PointsPage = ({
           >
             <div
               style={{
+                marginBottom: '1rem',
                 fontSize: '2.25rem',
                 letterSpacing: '-0.07rem',
               }}
@@ -205,6 +207,7 @@ const PointsPage = ({
           >
             <div
               style={{
+                marginBottom: '1rem',
                 fontSize: '2.25rem',
                 letterSpacing: '-0.07rem',
               }}
@@ -251,6 +254,7 @@ const PointsPage = ({
             <div
               className="text-gray-r7b7b7b  text-4xl tracking-tight flex items-center"
               style={{
+                marginBottom: '1rem',
                 fontSize: '2.25rem',
                 letterSpacing: '-0.07rem',
               }}
@@ -296,6 +300,7 @@ const PointsPage = ({
             <div
               className="text-gray-r7b7b7b  text-4xl tracking-tight flex items-center"
               style={{
+                marginBottom: '1rem',
                 fontSize: '2.25rem',
                 letterSpacing: '-0.07rem',
               }}
