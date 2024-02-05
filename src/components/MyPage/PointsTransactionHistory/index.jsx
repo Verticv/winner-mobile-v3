@@ -184,33 +184,16 @@ const PointsTransactionHistory = ({
 
   return (
     <div className="flex flex-col items-center">
-      <div
-        style={{
-          fontSize: '2.624375rem',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          marginTop: '1.938rem',
-          letterSpacing: '-0.07rem',
-          marginBottom: '1.4rem',
-          marginLeft: '1.688rem',
-        }}
-        className=" tracking-tight my-4 text-gray-r8c8c8c"
-      >
-        <span
-          className=" text-blue-r0056a6"
-          style={{
-            color: '#ffd98b',
-            textOverflow: 'ellipsis',
-            maxWidth: '34.4rem',
-            overflow: 'hidden',
-            whiteSpace: 'nowrap',
-            fontWeight: '700'
-          }}
-        >
-          {truncate('louie3', 22, 22)}
-        </span>
-        <span className="" style={{ color: '#eeeeee' }}>
+      <div style={{
+                    // fontSize: '2.624375rem', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    // marginTop: '1.938rem', letterSpacing: '-0.07rem', marginBottom: '1.4rem', marginLeft: "1.688rem"
+                    fontSize: '2.624375rem', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    letterSpacing: '-0.07rem', marginLeft: "1.688rem", marginTop: '3.0rem', marginBottom: '1.0rem'
+                }}>
+                    <span style={{
+                        color: '#ffd98b', textOverflow: 'ellipsis', maxWidth: '34.4rem', overflow: 'hidden', whiteSpace: 'nowrap', fontWeight: '700', lineHeight: '4rem'
+                    }}>{truncate('louie3', 22, 22)}</span>
+                    <span style={{ color: '#eeeeee', lineHeight: '4rem' }}>
           님의 포인트전환 정보입니다.
         </span>
       </div>
