@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
+// import { createBrowserHistory } from 'history';
 
 import HomeIcon from '../../assets/myPage/home-white.png';
 import LeftArrowIcon from '../../assets/myPage/LeftArrow-white.png';
@@ -21,7 +21,7 @@ const HomePageTopBanner = ({
   isOpen,
 }) => {
   const navigate = useNavigate();
-  const history = createBrowserHistory();
+//   const history = createBrowserHistory();
 
   useEffect(() => {
     console.log('isOpen2', isOpen);

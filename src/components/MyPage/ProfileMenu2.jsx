@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   setMyPageSelectedMainMenuId,
   setMyPageSelectedSubMenuId,
-  resetMyPageSelectedMainMenuId,
+  // resetMyPageSelectedMainMenuId,
 } from '../../counterSlice';
 
 import MenuIcon_0 from '../../assets/images/menu2/menu0.png';
@@ -123,6 +123,7 @@ import MenuOnCsCenterIcon_4 from '../../assets/images/menu2/csCenterIcon_4-activ
 // import MenuOnCsCenterIcon_5 from '../../assets/images/menu2/csCenterIcon_5-active.png';
 
 import Logo from '../../assets/images/footer/footer-log.png';
+import ReauthenticatePopup from '../../components/ReauthenticatePopup';
 
 // const ProfileMenu = ({ isOpen, setOpen }) => {
 const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
@@ -470,8 +471,8 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
     },
   ];
 
-  const [reauthPopupOpen, setReauthPopupOpen] = useState(false);
-  const [selectedTab, setSelectedTab] = useState(-1); //!-- initial value: -1, onClick: item.id => 100ms later: -1
+  const [isPopupOpen, setReauthPopupOpen] = useState(false);
+  const [selectedTab, setSelectedTab] = useState(false); //!-- initial value: -1, onClick: item.id => 100ms later: -1
   const [subItems, setSubItems] = useState([]);
   const navigate = useNavigate();
   // const [showSubMenu, setShowSubMenu] = useState(false);
@@ -493,6 +494,7 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
       setSubItems(selectedMainMenu.subItems);
       if(selectedMainMenu.subItems) setShowSubMenu(true);
     } else setShowSubMenu(false);
+    console.log(selectedTab);
   },[]);
   return (
     <>
@@ -625,6 +627,27 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
                 </button>
               )
             )}
+            <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: '30rem',
+          }}
+        >
+          <img
+            src={Logo}
+            alt=""
+            style={{ height: '5rem', filter: 'brightness(40%)' }}
+          />
+        </div>
+        {
+            isPopupOpen && (
+              <ReauthenticatePopup 
+                setPopupOpen={setReauthPopupOpen}
+                setSelectedTab={setSelectedTab}
+              />
+            )
+          }
       </div>
     </>
   );
