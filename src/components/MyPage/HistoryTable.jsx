@@ -345,6 +345,17 @@ const HistoryTable = ({
                         <span style={{ color: secondColumnColor }}>
                           {row[1][secondRowKeysName[0]]}
                         </span>
+                        {secondRowKeysName[0] === '적립포인트' && (
+                          <span
+                            className="text-gray-r585858"
+                            style={{
+                              fontSize: '2.624375rem',
+                              color: '#444444',
+                            }}
+                          >
+                            P
+                          </span>
+                        )}
                       </>
                     )}
                   </div>
