@@ -4102,7 +4102,7 @@ const DistributorPage = ({
               marginTop: '1.476rem',
               letterSpacing: '-0.07rem',
               height: '5.063rem',
-              paddingTop: '0.7rem',
+              // paddingTop: '0.7rem',
               borderRadius: '3rem',
               justifyContent: 'center',
               alignItems: 'center',
@@ -4111,11 +4111,15 @@ const DistributorPage = ({
           >
             <p
               style={{
+                height: '5.063rem',
+                lineHeight: '5.063rem',
+                verticalAlign: 'bottom',
                 margin: '0',
                 color: '#a5eefe',
                 marginRight: '1rem',
                 marginLeft: '1.4rem',
-                marginTop: '-0.251rem',
+                // marginTop: '-0.251rem',
+                marginTop: '0.0rem',
                 overflow: 'hidden',
                 textOverflow: 'ellipsis',
                 whiteSpace: 'nowrap',
@@ -4126,7 +4130,8 @@ const DistributorPage = ({
               {truncate('Louie3', 12, 12)}
             </p>
             <p
-              style={{ margin: '0', marginTop: '-0.251rem', color: '#ffffff' }}
+              style={{ height: '5.063rem',
+              lineHeight: '5.063rem', verticalAlign: 'bottom', margin: '0', marginTop: '-0.251rem', color: '#ffffff' }}
             >
               님의 총판 정보입니다.
             </p>
@@ -5137,29 +5142,32 @@ const DistributorPage = ({
                   height: '12.7rem',
                   borderWidth: '0.375rem',
                   borderRadius: '3.188rem',
-                  padding: '2.2rem 2.75rem',
+                  padding: '0 2.75rem',
                   margin: '1.875rem 0',
                   marginLeft: '1.875rem',
                   display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
                   flexWrap: 'wrap',
                   flexDirection: 'column',
                   background: '#341d5a',
                   border: '0.375rem solid #9361e5',
                 }}
-                className="flex flex-wrap w-full border-2 border-gray-b4b4b4 bg-gray-r5a6067"
+                // className="flex flex-wrap w-full border-2 border-gray-b4b4b4 bg-gray-r5a6067"
               >
                 <div
-                  className="w-1/2 flex flex-wrap items-center justify-center"
+                  // className="w-1/2 flex flex-wrap items-center justify-center"
                   style={{
                     display: 'flex',
                     flexWrap: 'wrap',
                     alignItems: 'center',
                     marginLeft: '0.2rem',
+                    marginTop: '0.8rem',
                     width: '50%',
                   }}
                 >
                   <div
-                    style={{ fontSize: '2.5rem', marginBottom: '1.55rem' }}
+                    style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}
                     className="w-full  tracking-tight"
                   >
                     <div
@@ -5236,9 +5244,10 @@ const DistributorPage = ({
                 </div>
 
                 <div
-                  className="w-1/2 flex flex-wrap items-center justify-center"
+                  // className="w-1/2 flex flex-wrap items-center justify-center"
                   style={{
                     width: '50%',
+                    marginTop: '0.8rem',
                     display: 'flex',
                     flexWrap: 'wrap',
                     alignItems: 'center',
@@ -5246,7 +5255,7 @@ const DistributorPage = ({
                   }}
                 >
                   <div
-                    style={{ fontSize: '2.5rem', marginBottom: '1.55rem' }}
+                    style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}
                     className="w-full  tracking-tight"
                   >
                     <div
@@ -7203,10 +7212,13 @@ const DistributorPage = ({
                     src={Diamond1}
                     alt=""
                   />
-                  <div style={{ marginTop: '0.15rem' }}>
-                    <span style={{ color: '#ffffff' }}>보유금 총합계 :</span>
+                  {/* <div style={{ marginTop: '1rem' }}> */}
+                  <div>
+                    <span style={{ height: '5.3125rem', lineHeight: '5.3125rem', color: '#ffffff' }}>보유금 총합계 :</span>
                     <span
                       style={{
+                        height: '5.3125rem',
+                        lineHeight: '5.3125rem',
                         color: '#ffcc00',
                         letterSpacing: '0',
                         marginLeft: '0.625rem',
