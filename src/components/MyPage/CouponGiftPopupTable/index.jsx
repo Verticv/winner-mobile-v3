@@ -30,71 +30,98 @@ const CouponGiftPopupTable = () => {
             </div>
             <div style={{ color: '#666666', flex: 1 }}>
                 <div style={{ height: '8.725rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={0} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>{truncate('louie32', 17, 17)}</td>
+                {/* <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
+                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td> */}
+                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
                     <td style={{
-                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis'
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
                     }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
                 <div style={{ height: '8.925rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
-                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td>
+                <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
+                    <td style={{
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
+                    }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
                 <div style={{ height: '8.725rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={2} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
-                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td>
+                <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
+                    <td style={{
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
+                    }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
                 <div style={{ height: '8.925rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={3} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
-                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td>
+                <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
+                    <td style={{
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
+                    }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
                 <div style={{ height: '8.725rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={4} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
-                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td>
+                <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
+                    <td style={{
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
+                    }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
                 <div style={{ height: '8.925rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={5} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
-                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td>
+                <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
+                    <td style={{
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
+                    }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
                 <div style={{ height: '8.725rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={6} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
-                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td>
+                <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
+                    <td style={{
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
+                    }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
                 <div style={{ height: '8.725rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={7} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
-                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td>
+                <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
+                    <td style={{
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
+                    }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
                 <div style={{ height: '8.725rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={8} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
-                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td>
+                <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
+                    <td style={{
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
+                    }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
                 <div style={{ height: '8.725rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={9} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
-                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td>
+                <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
+                    <td style={{
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
+                    }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
                 <div style={{ height: '8.725rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={10} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
-                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td>
+                <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
+                    <td style={{
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
+                    }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
                 <div style={{ height: '8.725rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={11} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
-                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td>
+                <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
+                    <td style={{
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
+                    }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
                 <div style={{ height: '8.725rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
-                    <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={12} /></td>
-                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>
-                    <td style={{ width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{truncate('위너테스트2', 10, 10)}</td>
+                <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
+                    <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', marginTop: '-0.2rem' }}>{truncate('louie32', 17, 17)}</td>
+                    <td style={{
+                        width: '26rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', marginTop: '0.6rem'
+                    }}>{truncate('위너테스트2', 10, 10)}</td>
                 </div>
             </div>
         </div>
