@@ -42,7 +42,7 @@ import icon12 from '../../../assets/images/bottom-nav/menu12.png';
 import icon1Active from '../../../assets/bigIcons/1-active-v3.png';
 import icon2Active from '../../../assets/images/bottom-nav/menu-on1.png';
 import icon3Active from '../../../assets/images/bottom-nav/menu-on2.png';
-// import icon4Active from '../assets/images/bottom-nav/menu-on3.png';
+import icon4Active from '../../../assets/images/bottom-nav/menu-on3.png';
 import icon5Active from '../../../assets/images/bottom-nav/menu-on4.png';
 import icon6Active from '../../../assets/images/bottom-nav/menu-on5.png';
 import icon7Active from '../../../assets/images/bottom-nav/menu-on6.png';
@@ -84,14 +84,14 @@ const tabsArray = [
   {
     text: '라이브스포츠',
     icon: icon4,
-    activeIcon: icon3Active,
+    activeIcon: icon4Active,
     id: 1,
     path: '/mypage/bet-history/all/live-sports',
     activeBG: activeBG,
     width: '7.75rem',
   },
   {
-    text: '슬롯',
+    text: '슬롯게임',
     icon: icon5,
     activeIcon: icon5Active,
     id: 2,

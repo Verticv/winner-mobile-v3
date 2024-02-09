@@ -36,7 +36,7 @@ const Announcement = ({ setSubActiveButton }) => {
         path: '/cscenter/all/announcement/livesports',
       },
       {
-        text: '슬롯',
+        text: '슬롯게임',
         id: 4,
         width: '11.5625rem',
         path: '/cscenter/all/cannouncementslot',
