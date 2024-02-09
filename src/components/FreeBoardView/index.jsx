@@ -218,8 +218,10 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
                             marginTop: '0.3rem',
                             background: '#ffffff'
                         }} className='flex justify-center mt-3 align-center rounded-full border-b border-gray-b7b7b7'>
-                            <div style={{ marginRight: '0.8rem', marginTop: '0.1rem', color: '#666666' }} className="tracking-tight text-gray-r7b7b7b mt-1">댓글</div>
-                            <div style={{ marginTop: '0.1rem', color: '#e65454', marginLeft: '-0.35rem' }}>2</div>
+                            {/* <div style={{ marginRVight: '0.8rem', marginTop: '0.1rem', color: '#666666' }} className="tracking-tight text-gray-r7b7b7b mt-1">댓글</div>
+                            <div style={{ marginTop: '0.1rem', color: '#e65454', marginLeft: '-0.35rem' }}>2</div> */}
+                            <div style={{ height: '4.4375rem', lineHeight: '4.4375rem', verticalAlign: 'bottom', marginRight: '0.8rem', color: '#666666' }} className="tracking-tight text-gray-r7b7b7b mt-1">댓글</div>
+                            <div style={{ height: '4.4375rem', lineHeight: '4.4375rem', verticalAlign: 'bottom', color: '#e65454', marginLeft: '-0.35rem' }}>2</div>
                         </div>
                     </div>
 

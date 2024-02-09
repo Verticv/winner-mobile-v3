@@ -20,7 +20,8 @@
                 text-align: center;
                 padding: 1rem;
                 border-bottom: 0.1875rem solid #dddddd;
-                background: #ffffff;
+                // background: #ffffff;
+                background: #f7f7f7;
 
                 .buttons {
                     display: flex;
@@ -81,13 +82,19 @@
                     margin-top: 0.4rem;
 
                     .comment {
+                        height: 4.4375rem;
+                        line-height: 4.4375rem;
+                        vertical-align: bottom;
                         margin-right: 0.8rem;
-                        margin-top: 0.2rem;
+                        // margin-top: 0.2rem;
                         color: #666666;
                     }
 
                     .num-2 {
-                        margin-top: 0.2rem;
+                        height: 4.4375rem;
+                        line-height: 4.4375rem;
+                        vertical-align: bottom;
+                        // margin-top: 0.2rem;
                         color: #e65454;
                         margin-left: -0.35rem;
                     }

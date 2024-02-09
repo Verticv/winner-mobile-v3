@@ -74,7 +74,7 @@ const BetHistoryPopup = ({ setPopupOpen, setAttachedArray, attachedArray }) => {
       id: 3,
       icon: icon2,
       activeIcon: icon2Active,
-      text: '슬롯',
+      text: '슬롯게임',
       width: '7.75rem',
       marginTop: '0.5rem',
       textMargin: '0.4rem',

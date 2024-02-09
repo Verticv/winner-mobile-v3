@@ -299,6 +299,7 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
                   }}
                 >
@@ -306,10 +307,11 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span style={{ letterSpacing: '-0.24rem' }}>프레그메틱</span>
@@ -321,8 +323,8 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
                   에볼루션
@@ -332,32 +334,32 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
                   로얄지
                 </td>
                 <td
                   style={{
-                    width: '16.5rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    paddingTop: '1.2rem',
-                    paddingLeft: '0.7rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>아시아</span>
+                  <br />
                   <span>게이밍</span>
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>드림</span>
@@ -366,10 +368,11 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>섹시</span>
@@ -381,19 +384,19 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
-                    letterSpacing: '-0.24rem',
                   }}
                 >
                   빅게이밍
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>오리엔탈</span>
@@ -405,19 +408,8 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
-                    letterSpacing: '-0.24rem',
-                  }}
-                >
-                  이주기
-                </td>
-                <td
-                  style={{
-                    width: '14.8rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
                   }}
                 >
                   <span>마이크로</span>
@@ -426,101 +418,83 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
-                  <span>YGG</span>
+                  <span>베가스</span>
                   <br />
-                  <span>드라실</span>
+                  <span>라운지</span>
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
-                  <span>드라군</span>
+                  <span>비터</span>
                   <br />
-                  <span>소프트</span>
+                  <span>라이브</span>
                 </td>
                 <td
                   style={{
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
-                  분고
+                  타이산
                 </td>
                 <td
                   style={{
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
-                  플레이슨
+                  <span>모티</span>
+                  <br />
+                  <span>베이션</span>
                 </td>
                 <td
                   style={{
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
-                  넷엔트
+                  히든버튼
                 </td>
                 <td
                   style={{
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
-                  퀵스핀
+                  씨큐나인
                 </td>
                 <td
                   style={{
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
-                  }}
-                >
-                  스페이드
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '',
-                    paddingLeft: '1.4rem',
-                  }}
-                >
-                  하바네로
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
                   월드매치
@@ -530,18 +504,19 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
-                  엘리시움
+                  하바네로
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>플레이</span>
@@ -550,22 +525,33 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
-                  <span>YL</span>
-                  <br />
-                  <span>게이밍</span>
+                  스페이드
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  분고
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>레드</span>
@@ -577,18 +563,104 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
+                  }}
+                >
+                  엘리시움
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  <span>빅타임</span>
+                  <br />
+                  <span>게이밍</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  <span>YL</span>
+                  <br />
+                  <span>게이밍</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  넷엔트
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  <span>드라군</span>
+                  <br />
+                  <span>소프트</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  <span>YGG</span>
+                  <br />
+                  <span>드라실</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  플레이슨
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   플레이텍
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>스카이</span>
@@ -600,42 +672,19 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
-                  씨큐나인
-                </td>
-                <td
-                  style={{
-                    width: '14.8rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
-                  }}
-                >
-                  <span>올웨이</span>
-                  <br />
-                  <span>스핀</span>
+                  와즈단
                 </td>
                 <td
                   style={{
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
-                  }}
-                >
-                  와즈단
-                </td>
-
-                <td
-                  style={{
-                    width: '14.8rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
                   }}
                 >
                   <span>PG</span>
@@ -644,23 +693,122 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  와즈단
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  <span>PG</span>
+                  <br />
+                  <span>소프트</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>로얄슬롯</span>
                   <br />
                   <span>게이밍</span>
                 </td>
-
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  <span>노리미트</span>
+                  <br />
+                  <span>시티</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  CC88
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  <span>패스트</span>
+                  <br />
+                  <span>스핀</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  <span>나가</span>
+                  <br />
+                  <span>게임즈</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  <span>넥스트</span>
+                  <br />
+                  <span>스핀</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  스피닉스
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>두윈</span>
@@ -669,39 +817,73 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>보타</span>
                   <br />
                   <span>카지노</span>
                 </td>
-
                 <td
                   style={{
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
-                  e-스포츠
+                  <span>홀덤게임</span>
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  <span>e-스포츠</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>키론</span>
                   <br />
                   <span>가상게임</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  <span>피싱게임</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  <span>티비벳</span>
                 </td>
 
                 <td
@@ -751,6 +933,156 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
                   }}
                 >
                   0.00%
@@ -1320,11 +1652,9 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8125rem',
+                    width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '0.5rem',
-                    letterSpacing: '-0.1rem',
                   }}
                 >
                   <span style={{ letterSpacing: '-0.24rem' }}>프레그메틱</span>
@@ -1336,7 +1666,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '0.5rem',
                   }}
                 >
                   에볼루션
@@ -1346,7 +1675,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '3rem',
                   }}
                 >
                   로얄지
@@ -1356,7 +1684,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '2rem',
                   }}
                 >
                   <span>아시아</span>
@@ -1368,7 +1695,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '2.5rem',
                   }}
                 >
                   <span>드림</span>
@@ -1380,7 +1706,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '2.5rem',
                   }}
                 >
                   <span>섹시</span>
@@ -1392,8 +1717,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '3rem',
-                    letterSpacing: '-0.24rem',
                   }}
                 >
                   빅게이밍
@@ -1403,7 +1726,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>오리엔탈</span>
@@ -1415,19 +1737,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '3rem',
-                    letterSpacing: '-0.24rem',
-                  }}
-                >
-                  이주기
-                </td>
-
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>마이크로</span>
@@ -1439,24 +1748,22 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
-                  <span>YGG</span>
+                  <span>베가스</span>
                   <br />
-                  <span>드라실</span>
+                  <span>라운지</span>
                 </td>
                 <td
                   style={{
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
-                  <span>드라군</span>
+                  <span>비터</span>
                   <br />
-                  <span>소프트</span>
+                  <span>라이브</span>
                 </td>
                 <td
                   style={{
@@ -1465,7 +1772,7 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
-                  분고
+                  타이산
                 </td>
                 <td
                   style={{
@@ -1474,7 +1781,9 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
-                  플레이슨
+                  <span>모티</span>
+                  <br />
+                  <span>베이션</span>
                 </td>
                 <td
                   style={{
@@ -1483,7 +1792,7 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
-                  넷엔트
+                  히든버튼
                 </td>
                 <td
                   style={{
@@ -1492,25 +1801,7 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
-                  퀵스핀
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
-                  }}
-                >
-                  스페이드
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
-                  }}
-                >
-                  하바네로
+                  씨큐나인
                 </td>
                 <td
                   style={{
@@ -1528,7 +1819,7 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
-                  엘리시움
+                  하바네로
                 </td>
                 <td
                   style={{
@@ -1548,9 +1839,16 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
-                  <span>YL</span>
-                  <br />
-                  <span>게이밍</span>
+                  스페이드
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  분고
                 </td>
                 <td
                   style={{
@@ -1562,6 +1860,77 @@ const DistributorPage = ({
                   <span>레드</span>
                   <br />
                   <span>타이거</span>
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  엘리시움
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  <span>빅타임</span>
+                  <br />
+                  <span>게이밍</span>
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  <span>YL</span>
+                  <br />
+                  <span>게이밍</span>
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  넷엔트
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  <span>드라군</span>
+                  <br />
+                  <span>소프트</span>
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  <span>YGG</span>
+                  <br />
+                  <span>드라실</span>
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  플레이슨
                 </td>
                 <td
                   style={{
@@ -1590,7 +1959,7 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
-                  씨큐나인
+                  와즈단
                 </td>
                 <td
                   style={{
@@ -1599,9 +1968,9 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
-                  <span>올웨이</span>
+                  <span>PG</span>
                   <br />
-                  <span>스핀</span>
+                  <span>소프트</span>
                 </td>
                 <td
                   style={{
@@ -1641,6 +2010,68 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
+                  <span>노리미트</span>
+                  <br />
+                  <span>시티</span>
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  CC88
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  <span>패스트</span>
+                  <br />
+                  <span>스핀</span>
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  <span>나가</span>
+                  <br />
+                  <span>게임즈</span>
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  <span>넥스트</span>
+                  <br />
+                  <span>스핀</span>
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  스피닉스
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
                   <span>두윈</span>
                   <br />
                   <span>카지노</span>
@@ -1656,16 +2087,23 @@ const DistributorPage = ({
                   <br />
                   <span>카지노</span>
                 </td>
-
                 <td
                   style={{
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
                   }}
-                  className="text-center h-full flex items-center justify-center"
                 >
-                  e-스포츠
+                  <span>홀덤게임</span>
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  <span>e-스포츠</span>
                 </td>
                 <td
                   style={{
@@ -1677,6 +2115,24 @@ const DistributorPage = ({
                   <span>키론</span>
                   <br />
                   <span>가상게임</span>
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  <span>피싱게임</span>
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'center',
+                    paddingTop: '0.5rem',
+                  }}
+                >
+                  <span>티비벳</span>
                 </td>
                 <td
                   style={{
@@ -2100,6 +2556,160 @@ const DistributorPage = ({
                   className="text-right"
                 >
                   3.06M
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
                 </td>
                 <td
                   style={{
@@ -2545,6 +3155,160 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
                     backgroundColor: '#f2f2f2',
                     color: '',
                     width: '13.8125rem',
@@ -2583,6 +3347,160 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'right',
                     paddingRight: '0.6rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
                     paddingBottom: '0rem',
                   }}
                   className="text-right"
@@ -4130,8 +5048,14 @@ const DistributorPage = ({
               {truncate('Louie3', 12, 12)}
             </p>
             <p
-              style={{ height: '5.063rem',
-              lineHeight: '5.063rem', verticalAlign: 'bottom', margin: '0', marginTop: '-0.251rem', color: '#ffffff' }}
+              style={{
+                height: '5.063rem',
+                lineHeight: '5.063rem',
+                verticalAlign: 'bottom',
+                margin: '0',
+                marginTop: '-0.251rem',
+                color: '#ffffff',
+              }}
             >
               님의 총판 정보입니다.
             </p>
@@ -4449,17 +5373,6 @@ const DistributorPage = ({
                               width: '14.5rem',
                               fontSize: '2.625rem',
                               textAlign: 'center',
-                              letterSpacing: '-0.24rem',
-                            }}
-                          >
-                            이주기
-                          </td>
-
-                          <td
-                            style={{
-                              width: '14.5rem',
-                              fontSize: '2.625rem',
-                              textAlign: 'center',
                             }}
                           >
                             <span>마이크로</span>
@@ -4473,9 +5386,9 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            <span>YGG</span>
+                            <span>베가스</span>
                             <br />
-                            <span>드라실</span>
+                            <span>라운지</span>
                           </td>
                           <td
                             style={{
@@ -4484,9 +5397,9 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            <span>드라군</span>
+                            <span>비터</span>
                             <br />
-                            <span>소프트</span>
+                            <span>라이브</span>
                           </td>
                           <td
                             style={{
@@ -4495,7 +5408,7 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            분고
+                            타이산
                           </td>
                           <td
                             style={{
@@ -4504,7 +5417,9 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            플레이슨
+                            <span>모티</span>
+                            <br />
+                            <span>베이션</span>
                           </td>
                           <td
                             style={{
@@ -4513,7 +5428,7 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            넷엔트
+                            히든버튼
                           </td>
                           <td
                             style={{
@@ -4522,25 +5437,7 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            퀵스핀
-                          </td>
-                          <td
-                            style={{
-                              width: '14.5rem',
-                              fontSize: '2.625rem',
-                              textAlign: 'center',
-                            }}
-                          >
-                            스페이드
-                          </td>
-                          <td
-                            style={{
-                              width: '14.5rem',
-                              fontSize: '2.625rem',
-                              textAlign: 'center',
-                            }}
-                          >
-                            하바네로
+                            씨큐나인
                           </td>
                           <td
                             style={{
@@ -4558,7 +5455,7 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            엘리시움
+                            하바네로
                           </td>
                           <td
                             style={{
@@ -4578,9 +5475,16 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            <span>YL</span>
-                            <br />
-                            <span>게이밍</span>
+                            스페이드
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            분고
                           </td>
                           <td
                             style={{
@@ -4592,6 +5496,77 @@ const DistributorPage = ({
                             <span>레드</span>
                             <br />
                             <span>타이거</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            엘리시움
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            <span>빅타임</span>
+                            <br />
+                            <span>게이밍</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            <span>YL</span>
+                            <br />
+                            <span>게이밍</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            넷엔트
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            <span>드라군</span>
+                            <br />
+                            <span>소프트</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            <span>YGG</span>
+                            <br />
+                            <span>드라실</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            플레이슨
                           </td>
                           <td
                             style={{
@@ -4620,7 +5595,7 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            씨큐나인
+                            와즈단
                           </td>
                           <td
                             style={{
@@ -4629,9 +5604,9 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            <span>올웨이</span>
+                            <span>PG</span>
                             <br />
-                            <span>스핀</span>
+                            <span>소프트</span>
                           </td>
                           <td
                             style={{
@@ -4671,6 +5646,68 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
+                            <span>노리미트</span>
+                            <br />
+                            <span>시티</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            CC88
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            <span>패스트</span>
+                            <br />
+                            <span>스핀</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            <span>나가</span>
+                            <br />
+                            <span>게임즈</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            <span>넥스트</span>
+                            <br />
+                            <span>스핀</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            스피닉스
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
                             <span>두윈</span>
                             <br />
                             <span>카지노</span>
@@ -4693,7 +5730,16 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            e-스포츠
+                            <span>홀덤게임</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            <span>e-스포츠</span>
                           </td>
                           <td
                             style={{
@@ -4705,6 +5751,24 @@ const DistributorPage = ({
                             <span>키론</span>
                             <br />
                             <span>가상게임</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            <span>피싱게임</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            <span>티비벳</span>
                           </td>
                         </tr>
                       </thead>
@@ -4788,6 +5852,146 @@ const DistributorPage = ({
                           <td
                             style={{
                               width: '16.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                              paddingLeft: '1rem',
+                            }}
+                          >
+                            0.00%
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
                               fontSize: '2.625rem',
                               textAlign: 'center',
                               paddingLeft: '1rem',
@@ -5443,6 +6647,18 @@ const DistributorPage = ({
                               paddingRight: '2.5rem',
                             }}
                           >
+                            <span>아시아</span>
+                            <br />
+                            <span>게이밍</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '2.5rem',
+                            }}
+                          >
                             <span>드림</span>
                             <br />
                             <span>게이밍</span>
@@ -5487,13 +6703,13 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
-                              paddingRight: '3rem',
-                              letterSpacing: '-0.24rem',
+                              paddingRight: '',
                             }}
                           >
-                            이주기
+                            <span>마이크로</span>
+                            <br />
+                            <span>게이밍</span>
                           </td>
-
                           <td
                             style={{
                               width: '13.8125rem',
@@ -5502,9 +6718,184 @@ const DistributorPage = ({
                               paddingRight: '',
                             }}
                           >
-                            <span>마이크로</span>
+                            <span>베가스</span>
+                            <br />
+                            <span>라운지</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>비터</span>
+                            <br />
+                            <span>라이브</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '3rem',
+                              letterSpacing: '-0.24rem',
+                            }}
+                          >
+                            타이산
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>모티</span>
+                            <br />
+                            <span>베이션</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            히든버튼
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            씨큐나인
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            월드매치
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            하바네로
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>플레이</span>
+                            <br />
+                            <span>엔고</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            스페이드
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            분고
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>레드</span>
+                            <br />
+                            <span>타이거</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            엘리시움
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>빅타임</span>
                             <br />
                             <span>게이밍</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>YL</span>
+                            <br />
+                            <span>게이밍</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            넷엔트
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>드라군</span>
+                            <br />
+                            <span>소프트</span>
                           </td>
                           <td
                             style={{
@@ -5526,26 +6917,6 @@ const DistributorPage = ({
                               paddingRight: '',
                             }}
                           >
-                            <span>드라군</span>
-                            <br />
-                            <span>소프트</span>
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
-                            }}
-                          >
-                            분고
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
-                            }}
-                          >
                             플레이슨
                           </td>
                           <td
@@ -5553,93 +6924,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
-                            }}
-                          >
-                            넷엔트
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
-                            }}
-                          >
-                            퀵스핀
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
-                            }}
-                          >
-                            스페이드
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
-                            }}
-                          >
-                            하바네로
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
-                            }}
-                          >
-                            월드매치
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
-                            }}
-                          >
-                            엘리시움
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
-                            }}
-                          >
-                            <span>플레이</span>
-                            <br />
-                            <span>엔고</span>
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
-                            }}
-                          >
-                            <span>YL</span>
-                            <br />
-                            <span>게이밍</span>
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
-                            }}
-                          >
-                            <span>레드</span>
-                            <br />
-                            <span>타이거</span>
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             플레이텍
@@ -5649,6 +6934,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>스카이</span>
@@ -5660,26 +6946,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
-                            }}
-                          >
-                            씨큐나인
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
-                            }}
-                          >
-                            <span>올웨이</span>
-                            <br />
-                            <span>스핀</span>
-                          </td>
-                          <td
-                            style={{
-                              width: '13.8125rem',
-                              textAlign: 'center',
-                              paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             와즈단
@@ -5689,6 +6956,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>PG</span>
@@ -5700,6 +6968,29 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            와즈단
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>PG</span>
+                            <br />
+                            <span>소프트</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>로얄슬롯</span>
@@ -5711,6 +7002,75 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>노리미트</span>
+                            <br />
+                            <span>시티</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            CC88
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>패스트</span>
+                            <br />
+                            <span>스핀</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>나가</span>
+                            <br />
+                            <span>게임즈</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>넥스트</span>
+                            <br />
+                            <span>스핀</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            스피닉스
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>두윈</span>
@@ -5722,6 +7082,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>보타</span>
@@ -5733,21 +7094,52 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
-                            className="text-center h-full flex items-center justify-center"
                           >
-                            e-스포츠
+                            <span>홀덤게임</span>
                           </td>
                           <td
                             style={{
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>e-스포츠</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>키론</span>
                             <br />
                             <span>가상게임</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>피싱게임</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '',
+                            }}
+                          >
+                            <span>티비벳</span>
                           </td>
                           <td
                             style={{
@@ -6170,6 +7562,171 @@ const DistributorPage = ({
                             }}
                             className="text-right"
                           >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
                             3.06M
                           </td>
                           {/* <td style={{ width: '13.8125rem', textAlign: 'right', paddingRight: '1.2rem', paddingBottom: '0.2rem' }} className="text-right pr-4">0</td> */}
@@ -6214,6 +7771,171 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'right',
                               paddingRight: '0.6rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
                               paddingBottom: '0.4rem',
                             }}
                             className="text-right"
@@ -7016,6 +8738,171 @@ const DistributorPage = ({
                           >
                             0
                           </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
                           {/* <td style={{ width: '13.8125rem', textAlign: 'right', paddingRight: '0.8rem', paddingBottom: '0rem' }} className="text-right pr-4">0</td> */}
                           <td
                             style={{
@@ -7214,7 +9101,15 @@ const DistributorPage = ({
                   />
                   {/* <div style={{ marginTop: '1rem' }}> */}
                   <div>
-                    <span style={{ height: '5.3125rem', lineHeight: '5.3125rem', color: '#ffffff' }}>보유금 총합계 :</span>
+                    <span
+                      style={{
+                        height: '5.3125rem',
+                        lineHeight: '5.3125rem',
+                        color: '#ffffff',
+                      }}
+                    >
+                      보유금 총합계 :
+                    </span>
                     <span
                       style={{
                         height: '5.3125rem',
@@ -7250,7 +9145,7 @@ const DistributorPage = ({
                     padding: '0',
                     width: '114.75rem',
                     background: 'red',
-                    overflow: 'hidden'
+                    overflow: 'hidden',
                   }}
                 >
                   <div
@@ -7270,7 +9165,7 @@ const DistributorPage = ({
                         display: 'flex',
                         flexDirection: 'column',
                         fontSize: '2.625rem',
-                        overflow: 'hidden'
+                        overflow: 'hidden',
                       }}
                     >
                       <div

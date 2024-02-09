@@ -196,6 +196,7 @@ const CardHeader = ({
               marginTop: '-0.563rem',
               marginRight: '-0.2rem',
               letterSpacing: '-0.11rem',
+              paddingTop: '0.5rem',
             }}
             className=" text-16px tracking-tight text-white"
           >
@@ -207,6 +208,7 @@ const CardHeader = ({
               width: '4.125rem',
               marginTop: '-.5rem',
               marginLeft: '1.438rem',
+              paddingTop: '0.3rem',
             }}
             src={flag}
             alt=""

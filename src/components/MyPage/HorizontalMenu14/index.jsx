@@ -137,7 +137,7 @@ const HorizontalMenu14 = ({
         <div style={{ width: '0.4rem', height: '10rem', flexShrink: 0 }}></div>
         <TabsList items={itemsArray} />
         <div style={{ width: '1.6rem', height: '10rem', flexShrink: 0 }}></div>
-        <div style={{ height: '14.4rem', position: 'unset' }} className="nav-shadow" />
+        {/* <div style={{ height: '14.4rem', position: 'unset' }} className="nav-shadow" /> */}
       </div>
     </>
   );

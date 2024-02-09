@@ -209,18 +209,21 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
           flexDirection: 'column',
           background: '#341d5a',
           border: '0.1875rem solid #9361e5',
+          padding: '0 3rem',
         }}
       >
         <div
           style={{
+            height: '100%',
             display: 'flex',
             alignItems: 'center',
             marginLeft: '0.2rem',
             width: '50%',
             justifyContent: 'center',
+            fontSize: '2.625rem',
           }}
         >
-          <div style={{ fontSize: '2.625rem'}}>
+          {/* <div style={{ fontSize: '2.625rem'}}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <img
                 style={{
@@ -244,7 +247,40 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
                 </span>
               </div>
             </div>
-          </div>
+          </div> */}
+          <img
+            style={{
+              width: '1.2rem',
+              height: '1.2rem',
+              marginRight: '1.2rem',
+            }}
+            src={Diamond}
+            alt=""
+          />
+          <span
+            style={{
+              marginRight: '0.625rem',
+              color: '#ffffff',
+              letterSpacing: '-0.12rem',
+              verticalAlign: 'bottom',
+              height: '6.7rem',
+              lineHeight: '6.7rem',
+            }}
+          >
+            진행중인 금액 :
+          </span>
+          <span
+            style={{
+              marginRight: '0.625rem',
+              color: '#ffcc00',
+              letterSpacing: '-0.12rem',
+              verticalAlign: 'bottom',
+              height: '6.7rem',
+              lineHeight: '6.7rem',
+            }}
+          >
+            200,520,000
+          </span>
         </div>
 
         <div
@@ -254,9 +290,10 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
             flexWrap: 'wrap',
             alignItems: 'center',
             justifyContent: 'center',
+            fontSize: '2.625rem',
           }}
         >
-          <div style={{ fontSize: '2.625rem'}}>
+          {/* <div style={{ fontSize: '2.625rem'}}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <img
                 style={{
@@ -280,7 +317,40 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
                 </span>
               </div>
             </div>
-          </div>
+          </div> */}
+          <img
+            style={{
+              width: '1.2rem',
+              height: '1.2rem',
+              marginRight: '1.2rem',
+            }}
+            src={Diamond}
+            alt=""
+          />
+          <span
+            style={{
+              marginRight: '0.625rem',
+              color: '#ffffff',
+              letterSpacing: '-0.12rem',
+              verticalAlign: 'bottom',
+              height: '6.7rem',
+              lineHeight: '6.7rem',
+            }}
+          >
+            정산 총 금액 :
+          </span>
+          <span
+            style={{
+              marginRight: '0.625rem',
+              color: '#ffcc00',
+              letterSpacing: '-0.12rem',
+              verticalAlign: 'bottom',
+              height: '6.7rem',
+              lineHeight: '6.7rem',
+            }}
+          >
+            500,000
+          </span>
         </div>
       </div>
 
@@ -346,7 +416,7 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
         </div>
       </div>
 
-      <div className="w-full" style={{padding: '0 1.875rem'}}>
+      <div className="w-full" style={{ padding: '0 1.875rem' }}>
         <SelectAllButton
           count={8}
           isAllSelected={isAllSelected}

@@ -289,7 +289,7 @@ const GameResults = ({
                 >
                   <div
                     id="bet-history"
-                    style={{ padding: '1.1rem 0 0 1.2rem', paddingRight: '0' }}
+                    style={{ padding: '1.1rem 0 0 1.2rem', paddingRight: '0', display: 'flex',}}
                   >
                     <HorizontalMenu14
                       key={15}
@@ -300,6 +300,8 @@ const GameResults = ({
                   </div>
                   <div style={{ height: '12.1rem' }}></div>
                 </div>
+                {/* this shadow has been moved from HorizontalMenu14. because It's place at the end of the scroll. */}
+                <div style={{ height: '14.4rem', position: 'absolute', top: '0', right: '0' }}  className="nav-shadow" />
               </div>
               <SportsContent
                 checkedState={checkedState}

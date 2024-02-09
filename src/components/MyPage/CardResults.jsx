@@ -43,11 +43,13 @@ const CardResults = ({
           marginTop: withTopBorder ? '0.7rem' : '0.8rem',
           borderTop: withTopBorder ? '0.1875rem solid #dddddd' : '',
           paddingTop: withTopBorder ? '0.6rem' : '',
-          paddingBottom: lastCard ? '0.6rem' : 'unset'
+          paddingBottom: lastCard ? '0.6rem' : 'unset',
+          marginBottom: '1.0rem',
         }}
       >
         <div
           style={{
+            height: '7.4375rem',
             marginLeft: '1.1rem',
             fontSize: '2.625rem',
             marginRight: '1rem',
@@ -55,11 +57,16 @@ const CardResults = ({
         >
           <div
             style={{
+              height: '100%',
+              padding: '0',
               marginRight: isAttached && '0.313rem',
               fontSize: '2.5rem',
+              display: 'flex',
+              alignItems: 'center',
             }}
           >
-            <p style={{ marginTop: '2.2rem', color: '#444444' }}>{score}</p>
+            {/* <p style={{ marginTop: '2.2rem', color: '#444444' }}>{score}</p> */}
+            <p style={{ height: '100%', lineHeight: '7.7375rem', margin: '0', color: '#444444' }}>{score}</p>
           </div>
         </div>
         <div style={{ display: 'flex' }}>
@@ -476,6 +483,7 @@ const CardResults = ({
                   style={{
                     height: '6.188rem',
                     lineHeight: '6.188rem',
+                    paddingTop: '0.2rem',
                     fontSize: '2.25rem',
                     textAlign: 'center',
                     display: 'flex',
@@ -502,6 +510,7 @@ const CardResults = ({
                 style={{
                   height: '6.188rem',
                   lineHeight: '6.188rem',
+                  paddingTop: '0.1rem',
                   fontSize: '2.25rem',
                   maxWidth: isCompose
                     ? '17rem'

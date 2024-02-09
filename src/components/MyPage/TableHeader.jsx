@@ -18,7 +18,7 @@ const TableHeader = ({
           paddingTop: '1.688rem',
           paddingBottom: '1rem',
           display: 'flex',
-          justifyContent: 'center',
+          // justifyContent: 'center',
           alignItems: 'center',
           letterSpacing: '-0.07rem',
           color: '#eeeeee',
@@ -29,7 +29,8 @@ const TableHeader = ({
         <div
           style={{
             fontSize: '2.625rem',
-            marginLeft: smallCard ? '11rem' : '',
+            // marginLeft: smallCard ? '11rem' : '2rem',
+            marginLeft: smallCard ? '11rem' : '2rem',
             flexShrink: 0,
           }}
         >
@@ -71,8 +72,10 @@ const TableHeader = ({
           background: 'linear-gradient(to right,#9d3bbb, #5423a0 )',
           borderTopLeftRadius: '1.875rem',
           borderTopRightRadius: '1.875rem',
-          paddingTop: smallCard ? '1.69rem' : '1.688rem',
-          paddingBottom: '1.438rem',
+          // paddingTop: smallCard ? '1.69rem' : '1.688rem',
+          // paddingBottom: '1.238rem',
+          paddingTop: smallCard ? '1.99rem' : '1.688rem',
+          paddingBottom: '0.938rem',
           display: 'flex',
           justifyContent: 'right',
           alignItems: 'center',
@@ -104,7 +107,7 @@ const TableHeader = ({
             fontWeight: 'bold',
             marginTop: '-0.626rem',
             // marginRight: isSportsResult? '-2rem': '-1.813rem',
-            marginRight: isSportsResult? '-2rem': '0.0rem',
+            marginRight: isSportsResult? '-2rem': isCompose ? '1.5rem' : smallCard ? '0.8rem' : '0.0rem',
           }}
           className="h-full flex items-center justify-end"
         >
@@ -118,7 +121,8 @@ const TableHeader = ({
             isCompose
               ? '13.7rem'
               : isFreeboard
-              ? '13.5rem'
+              // ? '13.5rem'
+              ? '13.0rem'
               : smallCard
               ? '13.5rem'
               : middleText === 'VS'
@@ -126,7 +130,8 @@ const TableHeader = ({
               : '15.7rem',
             fontWeight: 'bold',
             marginTop: '-1.064rem',
-            marginRight: isSportsResult?'-2.25rem':'-1.25rem',
+            // marginRight: isSportsResult?'-2.25rem':'-1.25rem',
+            marginRight: isSportsResult?'-4.25rem': isCompose ? '1rem' : smallCard ? '0.3rem' : '-1.25rem',
           }}
           className="h-full flex items-center justify-end"
         >
@@ -142,7 +147,8 @@ const TableHeader = ({
             :isCompose
               ? '12.5rem'
               : isFreeboard
-              ? '12.2rem'
+              // ? '12.2rem'
+              ? '13.5rem'
               : smallCard
               ? '13.2rem'
               : '14.388rem',
