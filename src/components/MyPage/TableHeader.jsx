@@ -18,7 +18,7 @@ const TableHeader = ({
           paddingTop: '1.688rem',
           paddingBottom: '1rem',
           display: 'flex',
-          justifyContent: 'center',
+          // justifyContent: 'center',
           alignItems: 'center',
           letterSpacing: '-0.07rem',
           color: '#eeeeee',
@@ -29,7 +29,8 @@ const TableHeader = ({
         <div
           style={{
             fontSize: '2.625rem',
-            marginLeft: smallCard ? '11rem' : '',
+            // marginLeft: smallCard ? '11rem' : '2rem',
+            marginLeft: smallCard ? '11rem' : '2rem',
             flexShrink: 0,
           }}
         >
