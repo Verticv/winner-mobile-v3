@@ -48,7 +48,7 @@ const SortBy = ({
       ))}
     </select>
     <label
-      style={{ fontSize: '2.625rem' }}
+      style={{ marginTop: '3.2rem', fontSize: '2.625rem' }}
       className="custom"
       htmlFor="filter-select"
     >
