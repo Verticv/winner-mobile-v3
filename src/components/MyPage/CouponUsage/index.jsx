@@ -18,6 +18,7 @@ import Icon3Active from '../../../assets/coupon/coupon3-active-v3.png'
 
 import FixedMenu from '../../FixedMenu'
 import Header from '../../Header'
+import NoticeBanner from '../../MainPage/NoticeBanner';
 import './_couponUsage.scss'
 
 const tableData = [
@@ -1096,6 +1097,7 @@ const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
                         <>
                             <div className="w-full z-30 flex flex-col items-center">
                                 <Header />
+                                <NoticeBanner />
                                 <HomePageTopBanner pageTitle='쿠폰관리' />
                             </div>
 
