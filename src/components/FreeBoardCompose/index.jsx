@@ -70,6 +70,7 @@ const FreeBoardCompose = () => {
 
                     <BoardViewPanel isAttached={true} attachedArray={attachedArray} setAttachedArray={setAttachedArray} isSportsAndLiveSports={true} />
 
+                    <div style={{ height: '0.2rem', marginTop: '4rem', backgroundColor: '#e5e7eb', }}></div>
 
                     <div style={{ height: "70.25rem", paddingTop: '2.4rem', paddingLeft: '2.4875rem', fontSize: '2.8125rem', background: '#ffffff', borderBottomRightRadius: '1.1rem', borderBottomLeftRadius: '1.1rem' }} className="placeholder-white">
                         <textarea
