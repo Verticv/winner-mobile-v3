@@ -295,7 +295,8 @@ const DateSearchBar = ({
         <div
           className="date-picker right-date-picker"
           // style={{ position: 'relative', marginTop: '-0.188rem' }}
-          style={{ position: 'relative', marginTop: '-1.6rem' }}
+          // style={{ position: 'relative', marginTop: '-1.6rem' }}
+          style={{ position: 'relative', marginTop: '-0.188rem' }}
         >
           {hasDateSuggestion ? (
             <>
