@@ -483,6 +483,7 @@ const CardResults = ({
                   style={{
                     height: '6.188rem',
                     lineHeight: '6.188rem',
+                    paddingTop: '0.2rem',
                     fontSize: '2.25rem',
                     textAlign: 'center',
                     display: 'flex',
@@ -509,6 +510,7 @@ const CardResults = ({
                 style={{
                   height: '6.188rem',
                   lineHeight: '6.188rem',
+                  paddingTop: '0.1rem',
                   fontSize: '2.25rem',
                   maxWidth: isCompose
                     ? '17rem'
