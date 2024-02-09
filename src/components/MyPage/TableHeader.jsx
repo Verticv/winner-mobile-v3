@@ -126,7 +126,8 @@ const TableHeader = ({
               : '15.7rem',
             fontWeight: 'bold',
             marginTop: '-1.064rem',
-            marginRight: isSportsResult?'-2.25rem':'-1.25rem',
+            // marginRight: isSportsResult?'-2.25rem':'-1.25rem',
+            marginRight: isSportsResult?'-4.25rem':'-1.25rem',
           }}
           className="h-full flex items-center justify-end"
         >
