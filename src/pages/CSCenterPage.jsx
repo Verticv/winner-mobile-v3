@@ -214,6 +214,7 @@ export default function Test({ isAuthenticated, setAuthenticated }) {
                                             <HorizontalMenu1 key={4} withSmallMarginTop={true} itemsArray={tabsArray} setSelectedTab={setSelectedTab} setSelectedSubTab={setSelectedSubTab} />
                                         </div>
                                         <SportsGamePolicy setSelectedTab={setSelectedTab} subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton} />
+                                        {/* <SportsGamePolicy selectedTab={selectedTab} subActiveButton={subActiveButton} setSubActiveButton={setSubActiveButton} /> */}
                                     </>}
                             />
                             <Route path="/policy/minigame/*"

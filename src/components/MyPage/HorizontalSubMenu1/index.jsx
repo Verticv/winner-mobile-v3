@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router';
 
 const HorizontalSubMenu1 = ({
   itemsArray,
-  setSelectedTab,
+  // setSelectedTab,
   setSelectedSubTab = null,
 }) => {
   const navigate = useNavigate();
@@ -32,7 +32,7 @@ const HorizontalSubMenu1 = ({
         onPointerDown={() => setHover(item.id)}
         onPointerUp={() => {
           navigate(item.path);
-          setSelectedTab(item.id);
+          // setSelectedTab(item.id);
           if (setSelectedSubTab !== null) {
             setSelectedSubTab(0);
           }

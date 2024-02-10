@@ -382,7 +382,8 @@ const Faq = ({ subActiveButton, setSubActiveButton }) => {
         ></div>
       </div>
 
-      <div style={{ margin: '1.875rem', paddingBottom: '14rem' }} className="">
+      {/* <div style={{ margin: '1.875rem', paddingBottom: '14rem' }} className=""> */}
+      <div style={{ margin: '1.875rem', }} className="">
         <MenuList items={questionArray} />
       </div>
     </div>

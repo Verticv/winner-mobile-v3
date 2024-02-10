@@ -2,8 +2,49 @@
 import React, { useState, useEffect } from 'react';
 import { Route, useNavigate, useLocation, Routes } from 'react-router';
 import HorizontalSubMenu1 from '../MyPage/HorizontalSubMenu1';
+import SportsGamePolicyTable0 from '../SportsGamePolicyTable0';
 import SportsGamePolicyTable1 from '../SportsGamePolicyTable1';
 import SportsGamePolicyTable2 from '../SportsGamePolicyTable2';
+
+
+const LiveSportsArray = [
+  {
+    id: 0,
+    type: '공통사항',
+    typeColor: 'rgb(240, 66, 129)',
+    overtime: true,
+    hasMargin: true,
+    ruleText: '라이브스포츠는 실시간 경기 진행 상황에 따라 베팅수락,지연 또는 거절 될 수 있습니다.',
+    ruleText2: '위험지대 베팅 PK, 코너킥, 프리킥, 파울, 부킹, 선수교체, VAR, 투수교체, 안타, 투수교체 등 경기 결과에 영향을 줄 수있는 상황이 진행중인 상태입니다. 대기중인 베팅은 경기에 영향을 끼칠 수 있다고 판단될 시, 거절/취소될 수 있으며 위엄지대 이후 경기 결과가 변동되지 않을 경우 베팅은 지연 수락될 수 있습니다.',
+    ruleText3: '베팅 종류별(승무패, 핸디캡 등) 정규시간, 연장포함, 특정 이닝/쿼터/세트 등 구분되며 정해진 경기시간 내 결과로 처리됩니다.',
+    rows: '3',
+  },
+  {
+    id: 1,
+    type: '축구',
+    typeColor: 'rgb(240, 66, 129)',
+    overtime: false,
+    hasMargin: true,
+    ruleText: '모든 베팅은 90분 경기 완료전 경기가 종료되었거나 중단될 경우 경기는 모두 무효처리 됩니다.',
+    ruleText2: '85분 이상 경기 진행 이후 심판이 공식결과를 발표하며 시합을 종료할 경우는 예외입니다.(공식 결과에 따릅니다.)',
+    ruleText3: '라이브 핸디캡 베팅의 경우 기존 점수는 포함 되지 않으며, 베팅 시점 핸디캡으로 반영 됩니다.',
+    ruleText4: '라이브 언더오버 베팅의 경우 기존 점수를 포함하며, 최종점수에 기준점이 반영 됩니다.',
+    ruleText5: '위험지대 베팅으로 대기중 베팅은 취소 될 수 있습니다.(파울, 부킹, 코너킥, 프리킥, PK, 선수교체 등)',
+    rows: '5',
+  },
+  {
+    id: 2,
+    type: '야구',
+    typeColor: 'rgb(240, 66, 129)',
+    overtime: false,
+    hasMargin: true,
+    ruleText: '승패 베팅시 시작 전에 진행된 베팅은 5회말(홈팀이 승리시 5회초 종료시 인정)이 완료되면 유효합니다.',
+    ruleText2: '핸디캡 베팅시 9이닝 정규이닝 종료시 정상처리, 홈팀 승리시 9회초 종료를 정규이닝으로 함.(그전 종료시 적특)',
+    ruleText3: '언더오버 베팅시 9이닝 정규이닝 종료시 정상처리, 홈팀 승리시 9회초 종료를 정규이닝으로 함.(그전 종료시 적특)',
+    rows: '3',
+  },
+];
+
 
 const SoccerArray = [
   {
@@ -2776,7 +2817,7 @@ const ESportsSubArray = [
 
 const HistoryMenu = ({
   itemsArray,
-  setSelectedTab,
+  // setSelectedTab,
   setSelectedSubTab = null,
 }) => {
   const navigate = useNavigate();
@@ -2788,7 +2829,9 @@ const HistoryMenu = ({
   }, []);
   function TabsList({ items }) {
     return items.map((item, index) => {
-      let isActive = pathname === item.path;
+      let completePath = String.prototype.concat(item.path, item.subPath);
+      // let isActive = pathname === item.path;
+      let isActive = pathname === completePath;
       let isLast = item.isLast;
       if (item.path.includes('/cscenter/all/policy/sportsgame')) {
         isActive = true;
@@ -2804,7 +2847,8 @@ const HistoryMenu = ({
             height: '6.375rem',
             borderRadius: '3.2rem',
             padding: '1px',
-            marginRight: isLast ? '0' : '1.125rem'
+            marginRight: isLast ? '0' : '1.125rem',
+            boxShadow: '0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.7)',
           }}
         >
           <button
@@ -2814,10 +2858,12 @@ const HistoryMenu = ({
                 : 'bg-white border border-gray-b7b7b7'
             } w-1/2 rounded-full`}
             style={{
-              background: pathname === item.path
+              // background: pathname === item.path
+              background: pathname.includes(item.path)
                 ? 'linear-gradient(to top, rgb(73, 31, 156) 0%, rgb(158, 60, 188) 100%)'
                 : 'rgb(229, 206, 250)',
-              color:  pathname === item.path ? '#ffffff' : '#2d2834',
+              // color:  pathname === item.path ? '#ffffff' : '#2d2834',
+              color:  pathname.includes(item.path) ? '#ffffff' : '#2d2834',
               width: '100%',
               borderRadius: '4rem',
               height: '6.375rem',
@@ -2828,8 +2874,8 @@ const HistoryMenu = ({
             key={item.id}
             onPointerDown={() => setHover(item.id)}
             onPointerUp={() => {
-              navigate(item.path);
-              setSelectedTab(item.id);
+              navigate(completePath);
+              // setSelectedTab(item.id);
               if (setSelectedSubTab !== null) {
                 setSelectedSubTab(0);
               }
@@ -2861,8 +2907,10 @@ const HistoryMenu = ({
 };
 
 const historyTabsArray = [
-  { text: '스포츠게임', id: 0, path: '/cscenter/all/policy/sportsgame/soccer' },
-  { text: '미니게임', id: 1, path: '/cscenter/all/policy/minigame/powerball', isLast: true },
+  // { text: '스포츠게임', id: 0, path: '/cscenter/all/policy/sportsgame/soccer' },
+  // { text: '미니게임', id: 1, path: '/cscenter/all/policy/minigame/powerball', isLast: true },
+  { text: '스포츠게임', id: 0, path: '/cscenter/all/policy/sportsgame', subPath: '/soccer' },
+  { text: '미니게임', id: 1, path: '/cscenter/all/policy/minigame', subPath: '/powerball', isLast: true },
 ];
 
 const SportsGamePolicy = ({
@@ -2886,6 +2934,7 @@ const SportsGamePolicy = ({
   }, [setSubActiveButton, subActiveButton, navigate]);
 
   const tabsArray = [
+    { text: '라이브스포츠', id: -1, path: '/cscenter/all/policy/sportsgame/livesports' },
     { text: '축구', id: 0, path: '/cscenter/all/policy/sportsgame/soccer' },
     { text: '농구', id: 1, path: '/cscenter/all/policy/sportsgame/basketball' },
     { text: '야구', id: 2, path: '/cscenter/all/policy/sportsgame/baseball' },
@@ -2906,13 +2955,14 @@ const SportsGamePolicy = ({
   ];
 
   return (
-    <div style={{ paddingBottom: '5rem' }}>
+    // <div style={{ paddingBottom: '5rem' }}>
+    <div style={{ paddingBottom: '5rem', marginTop: '1.08rem' }}>
       <div
         style={{ margin: '1.875rem', marginTop: '0.8rem', marginBottom: '2.1rem' }}
       >
         <HistoryMenu
           itemsArray={historyTabsArray}
-          setSelectedTab={setSelectedTab}
+          // setSelectedTab={setSelectedTab}
         />
       </div>
       <div
@@ -3236,6 +3286,10 @@ const SportsGamePolicy = ({
       </div>
 
       <Routes>
+        <Route
+          path="/livesports"
+          element={<SportsGamePolicyTable0 array={LiveSportsArray} />}
+        />
         <Route
           path="/soccer"
           element={<SportsGamePolicyTable1 array={SoccerArray} />}
