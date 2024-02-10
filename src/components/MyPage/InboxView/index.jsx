@@ -59,7 +59,8 @@ const InboxView = () => {
           <div
             style={{
               borderBottom: '0.1875rem solid #dddddd',
-              background: '#ffffff',
+              // background: '#ffffff',
+              background: 'rgb(247, 247, 247);',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',

@@ -141,9 +141,14 @@ const ContactTable = ({ array, checkedState, setCheckedState }) => {
                   <div
                     className="n-div"
                     style={{
+                      width: '3rem',
+                      height: '3rem',
+                      lineHeight: '3rem',
+                      margin: '0.0rem 0 -0.5rem 0',
                       backgroundColor: 'rgb(240, 66, 129)',
                       borderRadius: '50%',
-                      padding: '0.3rem 0.735rem 0rem',
+                      // padding: '0.3rem 0.735rem 0rem 0.735rem',
+                      padding: '0.2rem 0 0 0',
                       fontSize: '2.4375rem',
                       color: '#ffffff',
                       display: 'flex',
@@ -164,6 +169,7 @@ const ContactTable = ({ array, checkedState, setCheckedState }) => {
               >
                 <div
                   style={{
+                    height: '4.45rem',
                     marginTop: '0.5rem',
                     display: 'flex',
                     alignItems: 'center',
@@ -195,6 +201,8 @@ const ContactTable = ({ array, checkedState, setCheckedState }) => {
                   ></div>
                   <div
                     style={{
+                      height: '4.45rem',
+                      lineHeight: '4.45rem',
                       fontSize: '2.625rem',
                       color: '#666666',
                       letterSpacing: '-0.07rem',

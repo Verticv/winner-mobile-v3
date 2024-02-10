@@ -33,6 +33,7 @@ const Search = () => {
             <div style={{ borderWidth: '0.1875rem', marginLeft: '0.6875rem', width: '51.7rem', display: 'flex', justifyContent: 'start', height: '6.8rem', marginTop: '0.1rem' }} className="flex w-full h-full bg-white rounded-2xl border border-gray-dddddd">
                 <input
                     style={{
+                        height: '6.75rem', marginTop: '0.05rem',
                         fontSize: '2.80625rem', paddingLeft: '1.3rem', outline: 'none', color: '#b4b4b4', letterSpacing: '-0.05rem', border: '0.1875rem solid #404040', borderRight: 0,
                         borderRadius: '0.7rem', paddingTop: '0.1rem', width: '50rem', borderTopRightRadius: 0, borderBottomRightRadius: 0, background: '#ffffff',
                     }}

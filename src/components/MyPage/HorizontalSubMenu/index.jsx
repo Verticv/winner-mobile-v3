@@ -15,20 +15,21 @@ const HorizontalSubMenu = ({
   const pathname = window.location.pathname;
   const [, setHover] = useState(null);
 
-  useEffect(() => {
-    if (
-      withoutFirst &&
-      pathname !== '/cscenter/all/contact/all/other' &&
-      pathname !== '/cscenter/all/contact/all/ar-game' &&
-      pathname !== '/cscenter/all/contact/all/ar-game1' &&
-      pathname !== '/cscenter/all/announcement/ar-game' &&
-      pathname !== '/cscenter/all/announcement/other' &&
-      pathname !== '/cscenter/all/faq/ar-game' &&
-      pathname !== '/cscenter/all/faq/other'
-    ) {
-      horizontalsScroll(itemsArray, 't', 'scroll-wrapper12');
-    }
-  }, [itemsArray, pathname, withoutFirst]);
+  //!-- commented because if push a button, it scrolls to Y:0 and scrolls to the pushed button
+  // useEffect(() => {
+  //   if (
+  //     withoutFirst &&
+  //     pathname !== '/cscenter/all/contact/all/other' &&
+  //     pathname !== '/cscenter/all/contact/all/ar-game' &&
+  //     pathname !== '/cscenter/all/contact/all/ar-game1' &&
+  //     pathname !== '/cscenter/all/announcement/ar-game' &&
+  //     pathname !== '/cscenter/all/announcement/other' &&
+  //     pathname !== '/cscenter/all/faq/ar-game' &&
+  //     pathname !== '/cscenter/all/faq/other'
+  //   ) {
+  //     horizontalsScroll(itemsArray, 't', 'scroll-wrapper12');
+  //   }
+  // }, [itemsArray, pathname, withoutFirst]);
 
   useEffect(() => {
     if (

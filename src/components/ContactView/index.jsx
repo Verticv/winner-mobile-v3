@@ -54,7 +54,8 @@ const ContactView = () => {
           <div
             style={{
               borderBottom: '0.1875rem solid #dddddd',
-              background: '#ffffff',
+              // background: '#ffffff',
+              background: 'rgb(247, 247, 247)',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -168,7 +169,8 @@ const ContactView = () => {
               style={{
                 position: 'absolute',
                 right: '0',
-                backgroundColor: '#999999',
+                // backgroundColor: '#999999',
+                backgroundColor: 'rgb(112, 44, 170)',
                 marginRight: '1.6rem',
                 paddingBottom: '0',
                 width: 'fit-content',
@@ -207,6 +209,9 @@ const ContactView = () => {
           >
             <p
               style={{
+                height: '6rem',
+                lineHeight: '6rem',
+                paddingTop: '0.1rem',
                 fontSize: '2.8125rem',
                 color: '#666666',
                 letterSpacing: '-0.07rem',
@@ -220,7 +225,8 @@ const ContactView = () => {
           <div
             className="message-space"
             style={{
-              background: '#eeeeee',
+              // background: '#eeeeee',
+              background: '#dfdbfa',
               borderRadius: '1rem',
               margin: '0 1.6875rem 5.1875rem',
               paddingTop: '0.1rem',
