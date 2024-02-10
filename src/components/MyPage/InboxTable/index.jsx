@@ -193,11 +193,30 @@ const InboxTable = ({ array, checkedState, setCheckedState }) => {
                     marginLeft: '0.9rem',
                   }}
                 >
-                  <p
+                  {/* <p
                     style={{
                       backgroundColor: '#f04281',
                       borderRadius: '50%',
                       padding: '0.3rem 0.735rem 0rem 0.735rem',
+                      fontSize: '2.4375rem',
+                    }}
+                    className="text-white"
+                  >
+                    N
+                  </p> */}
+                  <p
+                    style={{
+                      width: '3rem',
+                      height: '3rem',
+                      lineHeight: '3rem',
+                      margin: '0.5rem 0 0.1rem 0',
+                      textAlign: 'center',
+                      verticalAlign: 'center',
+                      backgroundColor: '#f04281',
+                      // borderRadius: '50%',
+                      borderRadius: '3rem',
+                      // padding: '0.3rem 0.735rem 0rem 0.735rem',
+                      padding: '0.1rem 0 0 0',
                       fontSize: '2.4375rem',
                     }}
                     className="text-white"
