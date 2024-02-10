@@ -45,8 +45,9 @@ const AnnouncementView = () => {
           {/* TITLE */}
           <div
             style={{
-                borderBottom: '0.1875rem solid #dddddd',
-                background: '#ffffff',
+              borderBottom: '0.1875rem solid #dddddd',
+              // background: '#ffffff',
+              background: 'rgb(247, 247, 247)',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -199,7 +200,8 @@ const AnnouncementView = () => {
         </div>
       </div>
 
-      <div style={{ margin: '2.4rem 1.86rem', paddingBottom: '19.225rem' }}>
+      {/* <div style={{ margin: '2.4rem 1.86rem', paddingBottom: '19.225rem' }}> */}
+      <div style={{ margin: '2.4rem 1.86rem' }}>
       <button
           style={{
             height: '7.3125rem',
