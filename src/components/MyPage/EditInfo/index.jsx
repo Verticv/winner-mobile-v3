@@ -35,7 +35,8 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
 
     const Title = ({ text }) => (
         <div style={{ width: "24rem", marginRight: '2.7rem', background: '#9b6bd4', flexShrink: '0', borderRadius: '0.5rem' }}>
-            <div style={{ fontSize: '2.8125rem', color: text === '레벨' ? '#ffffff' : '#ffffff', padding: '1.9rem 0 0 1.25rem', letterSpacing: '-0.07rem' }}>{text}</div>
+            {/* <div style={{ fontSize: '2.8125rem', color: text === '레벨' ? '#ffffff' : '#ffffff', padding: '1.9rem 0 0 1.25rem', letterSpacing: '-0.07rem' }}>{text}</div> */}
+            <div style={{ fontSize: '2.8125rem', color: text === '레벨' ? '#ffffff' : '#ffffff', padding: '0rem 0 0 1.25rem', letterSpacing: '-0.07rem', height: '7.3rem', lineHeight: '7.3rem' }}>{text}</div>
         </div>
     )
 
@@ -50,7 +51,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                         <span style={{ textOverflow: 'ellipsis', maxWidth: '25rem', overflow: 'hidden', whiteSpace: 'nowrap', display: 'inline-flex', fontWeight: 'bold' }} className="input-with-text">{truncate('louie3', 10, 16)}</span>
                         <span>님의 회원정보를 수정합니다.</span>
                     </div>
-                    <span className="flex items-center h-14" style={{ margin: '0.5rem 0 0 0.5rem' }}>아이디와 비밀번호 보안에 신경써주십시오.</span>
+                    <span className="flex items-center " style={{ margin: '-0.7rem 0 0 0.5rem' }}>아이디와 비밀번호 보안에 신경써주십시오.</span>
                 </div>
 
                 <div className='edit-info-form'>
@@ -61,7 +62,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                 style={{ overflow: 'hidden' }}
                                 onClick={() => setSelectedInput(0)}
                             >
-                                <label className="text-gray-r585858 " disabled>louie3</label>
+                                <label className="text-gray-r585858 " disabled style={{ color: '#444444' }}>louie3</label>
                                 <div style={{ height: '0.1875rem' }}></div>
                             </div>
                         </div>
@@ -77,7 +78,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                 >
                                     <input
                                         className="w-full  text-gray-bebebe outline-none placeholder-gray-bebebe"
-                                        style={{ fontSize: '2.625rem' }}
+                                        style={{ fontSize: '2.625rem', color: '#444444' }}
                                         onFocus={(e) => {
                                             // const menu = document.querySelector('#main-menu');
                                             // menu.style.marginBottom = '-14.075rem'
@@ -110,7 +111,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                 >
                                     <input
                                         className="w-full  text-gray-bebebe outline-none placeholder-gray-bebebe"
-                                        style={{ fontSize: '2.625rem' }}
+                                        style={{ fontSize: '2.625rem', color: '#444444' }}
                                         onFocus={(e) => {
                                             // const menu = document.querySelector('#main-menu');
                                             // menu.style.marginBottom = '-14.075rem'
@@ -141,7 +142,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                 >
                                     <input
                                         className="w-full  text-gray-bebebe outline-none placeholder-gray-bebebe"
-                                        style={{ fontSize: '2.625rem' }}
+                                        style={{ fontSize: '2.625rem', color: '#444444' }}
                                         onFocus={(e) => {
                                             // const menu = document.querySelector('#main-menu');
                                             // menu.style.marginBottom = '-14.075rem'
@@ -172,7 +173,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                 >
                                     <input
                                         className="w-full  text-gray-bebebe outline-none placeholder-gray-bebebe"
-                                        style={{ fontSize: '2.625rem' }}
+                                        style={{ fontSize: '2.625rem', color: '#444444' }}
                                         onFocus={(e) => {
                                             // const menu = document.querySelector('#main-menu');
                                             // menu.style.marginBottom = '-14.075rem'
@@ -198,11 +199,18 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                 <div style={{ width: "24rem", marginRight: '2.7rem', background: '#9b6bd4', flexShrink: '0', borderRadius: '0.5rem', height: '10rem', display: 'flex', alignItems: 'center' }}>
                                     <div style={{ fontSize: '2.8125rem', color: '#ffffff', padding: '0 0 0 1.25rem', letterSpacing: '-0.07rem' }}>레벨</div>
                                 </div>
-                                <div className="lable-or-input" style={{ height: '10rem', padding: '1.5rem 1.4rem' }}>
-                                    <label style={{ letterSpacing: '-0.02rem' }}>
+                                {/* <div className="lable-or-input" style={{ height: '10rem', padding: '1.5rem 1.4rem' }}> */}
+                                <div className="lable-or-input" style={{ height: '10rem', padding: '1.5rem 1.4rem', display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
+                                    {/* <label style={{ letterSpacing: '-0.02rem', color: '#444444' }}>
                                         레벨 LV.1 (점수: 0) /
                                         <br />
-                                        다음레벨 LV.2 (점수: 20)</label>
+                                        다음레벨 LV.2 (점수: 20)</label> */}
+                                    <label style={{ letterSpacing: '-0.02rem', color: '#444444', lineHeight: '3.5rem'}}>
+                                        레벨 LV.1 (점수: 0) /
+                                    </label>
+                                    <label style={{ letterSpacing: '-0.02rem', color: '#444444', lineHeight: '3.5rem' }}>
+                                        다음레벨 LV.2 (점수: 20)
+                                    </label>
                                     <div style={{ height: '0.1875rem' }}></div>
                                 </div>
                             </div>
@@ -212,7 +220,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                             <div style={{ marginTop: '4.1rem' }} className="form-section">
                                 <Title text="스포츠" />
                                 <div className="lable-or-input" style={{ paddingLeft: '1.4rem' }}>
-                                    <label className="text-gray-r585858 ">Bronze</label>
+                                    <label className="text-gray-r585858 " style={{ color: '#444444' }}>Bronze</label>
                                     <div style={{ height: '0.1875rem' }}></div>
                                 </div>
                             </div>
@@ -221,7 +229,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                             <div style={{ marginTop: '1.3rem' }} className="form-section">
                                 <Title text="카지노" />
                                 <div className="lable-or-input" style={{ paddingLeft: '1.4rem' }}>
-                                    <label className="text-gray-r585858 ">Bronze</label>
+                                    <label className="text-gray-r585858 " style={{ color: '#444444' }}>Bronze</label>
                                     <div style={{ height: '0.1875rem' }}></div>
                                 </div>
                             </div>
@@ -230,7 +238,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                             <div style={{ marginTop: '1.6rem' }} className="form-section">
                                 <Title text="슬롯" />
                                 <div className="lable-or-input" style={{ paddingLeft: '1.4rem' }}>
-                                    <label className="text-gray-r585858 ">Bronze</label>
+                                    <label className="text-gray-r585858 " style={{ color: '#444444' }}>Bronze</label>
                                     <div style={{ height: '0.1875rem' }}></div>
                                 </div>
                             </div>
@@ -238,7 +246,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                             <div style={{ marginTop: '1.6rem' }} className="form-section">
                                 <Title text="미니게임" />
                                 <div className="lable-or-input" style={{ paddingLeft: '1.4rem' }}>
-                                    <label className="text-gray-r585858 ">Bronze</label>
+                                    <label className="text-gray-r585858 " style={{ color: '#444444' }}>Bronze</label>
                                     <div style={{ height: '0.1875rem' }}></div>
                                 </div>
                             </div>

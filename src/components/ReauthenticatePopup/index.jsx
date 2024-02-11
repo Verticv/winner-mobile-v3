@@ -41,10 +41,11 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
             boxShadow: 'inset 0 0.375rem 0 0 #b675ce',
             borderTopLeftRadius : '3.75rem',
             borderTopRightRadius : '3.75rem',
+            display: 'flex',
           }}
           className="w-full"
         >
-          <button
+          {/* <button
             style={{
               position: 'absolute',
               top: '12px',
@@ -70,7 +71,35 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
             >
               회원정보수정
             </label>
+          </div> */}
+          <div style={{ width: '72px' }}></div>
+          <div
+            className="w-full h-full"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <label
+              style={{ color: '#ffffff', fontSize: '3.75rem', fontWeight: '700' }}
+            >
+              회원정보수정
+            </label>
           </div>
+            <button
+              style={{
+                width: '72px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                background: 'transparent',
+              }}
+              className="cursor-pointer z-20 filter hover:brightness-125"
+              onClick={() => setPopupOpen(false)}
+            >
+              <img src={CloseIcon} alt="close_icon" />
+            </button>
         </div>
         <div
           style={{
@@ -102,7 +131,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
               <div className="flex items-center justify-center">
                 <img
                   style={{
-                    width: '19rem',
+                    width: '14rem',
                   }}
                   src={LoginIcon}
                   alt="login_icon"
@@ -141,9 +170,11 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                     marginLeft: '',
                   }}
                 >
-                  <span
+                  <p
                     className="text-blue-gradLight"
                     style={{
+                      height: '3.625rem',
+                      lineHeight: '3.62rem',
                       color: '#682aa7',
                       whiteSpace: 'nowrap',
                       maxWidth: '22.5rem',
@@ -153,15 +184,15 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                     }}
                   >
                     louie3
-                  </span>
-                  <span style={{ marginLeft: '0.6rem' }}>
+                  </p>
+                  <span style={{ height: '3.625rem', lineHeight: '3.62rem', marginLeft: '0.6rem' }}>
                     {' '}
                     님의 회원정보를 수정합니다.
                   </span>
                 </div>
                 <div
                   className="flex items-center h-14"
-                  style={{ marginTop: '0.4rem' }}
+                  style={{ height: '3.625rem', lineHeight: '3.62rem', marginTop: '0.1rem' }}
                 >
                   비밀번호를 다시 입력해 주세요.
                 </div>
@@ -176,8 +207,8 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                   borderRadius: '0.5rem',
                   display: 'flex',
                   alignItems: 'center',
-                  borderBottom:
-                    selectedInput !== 1 ? '0.375rem solid #682aa7' : 'unset',
+                  // borderBottom:
+                  //   selectedInput !== 1 ? '0.375rem solid #682aa7' : 'unset',
                   paddingTop: '0.5rem',
                 }}
               >
@@ -192,6 +223,8 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                     width: '100%',
                     color: '#9da3b0',
                     fontSize: '3rem',
+                    marginLeft: '-10rem',
+                    textAlign: 'center',
                   }}
                   className="w-full text-5xl text-center text-gray-text outline-none tracking-tight placeholder-9da3b0 tracking-mimus05"
                   onFocus={(e) => {
@@ -238,7 +271,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                   }}
                 />
                 <input
-                  style={{ color: '#444444', fontSize: '3rem' }}
+                  style={{ color: '#444444', fontSize: '3rem', textAlign:'center', marginLeft: '-10rem' }}
                   className="w-full text-5xl text-center outline-none tracking-tight place-color-grey-2 placeholder-9da3b0 tracking-mimus05"
                   placeholder={'비밀번호'}
                   type="password"
@@ -289,7 +322,9 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                         width: '100%',
                         height: '100%',
                         background:
-                          'linear-gradient(to right, rgb(223, 82, 255), rgb(111, 42, 253))',
+                          // 'linear-gradient(to right, rgb(223, 82, 255), rgb(111, 42, 253))',
+                          'linear-gradient(to right, rgb(223, 82, 255) 0%, rgb(107, 34, 255) 100%)',
+                        boxShadow: '0 0.563rem 0.938rem 0 rgba(0, 0, 0, 0.3)',
                         borderRadius: '5rem',
                         display: 'flex',
                         justifyContent: 'center',
