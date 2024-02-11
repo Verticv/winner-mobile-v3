@@ -207,8 +207,8 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                   borderRadius: '0.5rem',
                   display: 'flex',
                   alignItems: 'center',
-                  borderBottom:
-                    selectedInput !== 1 ? '0.375rem solid #682aa7' : 'unset',
+                  // borderBottom:
+                  //   selectedInput !== 1 ? '0.375rem solid #682aa7' : 'unset',
                   paddingTop: '0.5rem',
                 }}
               >
@@ -223,6 +223,8 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                     width: '100%',
                     color: '#9da3b0',
                     fontSize: '3rem',
+                    marginLeft: '-10rem',
+                    textAlign: 'center',
                   }}
                   className="w-full text-5xl text-center text-gray-text outline-none tracking-tight placeholder-9da3b0 tracking-mimus05"
                   onFocus={(e) => {
@@ -269,7 +271,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                   }}
                 />
                 <input
-                  style={{ color: '#444444', fontSize: '3rem' }}
+                  style={{ color: '#444444', fontSize: '3rem', textAlign:'center', marginLeft: '-10rem' }}
                   className="w-full text-5xl text-center outline-none tracking-tight place-color-grey-2 placeholder-9da3b0 tracking-mimus05"
                   placeholder={'비밀번호'}
                   type="password"
@@ -320,7 +322,9 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                         width: '100%',
                         height: '100%',
                         background:
-                          'linear-gradient(to right, rgb(223, 82, 255), rgb(111, 42, 253))',
+                          // 'linear-gradient(to right, rgb(223, 82, 255), rgb(111, 42, 253))',
+                          'linear-gradient(to right, rgb(223, 82, 255) 0%, rgb(107, 34, 255) 100%)',
+                        boxShadow: '0 0.563rem 0.938rem 0 rgba(0, 0, 0, 0.3)',
                         borderRadius: '5rem',
                         display: 'flex',
                         justifyContent: 'center',
