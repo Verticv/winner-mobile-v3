@@ -559,7 +559,7 @@
   .left-arrow {
     width: 2.275rem;
     height: auto;
-    height: 3.375rem;
+    // height: 3.375rem;
     /* background: blue; */
     // margin-top: 3rem;
     margin-left: 3.6rem;
@@ -571,6 +571,9 @@
     margin-left: 2.1rem;
     letter-spacing: -0.1rem;
     font-weight: bold;
+    height: 9.33rem;
+    line-height: 9.33rem;
+    padding-top: 0.6rem;
   }
 
   .home-icon {

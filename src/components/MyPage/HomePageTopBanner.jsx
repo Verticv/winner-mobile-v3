@@ -44,6 +44,8 @@ const HomePageTopBanner = ({
           className="left-arrow"
           src={LeftArrowIcon}
           alt="left_arrow_icon"
+          // style={{ marginTop: '0.5rem' }}
+          style={{ marginTop: '0.7rem' }}
         />
         <span className="page-title">{pageTitle}</span>
         <img
