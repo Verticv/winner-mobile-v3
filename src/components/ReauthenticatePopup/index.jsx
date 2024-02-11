@@ -41,10 +41,11 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
             boxShadow: 'inset 0 0.375rem 0 0 #b675ce',
             borderTopLeftRadius : '3.75rem',
             borderTopRightRadius : '3.75rem',
+            display: 'flex',
           }}
           className="w-full"
         >
-          <button
+          {/* <button
             style={{
               position: 'absolute',
               top: '12px',
@@ -70,7 +71,35 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
             >
               회원정보수정
             </label>
+          </div> */}
+          <div style={{ width: '72px' }}></div>
+          <div
+            className="w-full h-full"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <label
+              style={{ color: '#ffffff', fontSize: '3.75rem', fontWeight: '700' }}
+            >
+              회원정보수정
+            </label>
           </div>
+            <button
+              style={{
+                width: '72px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                background: 'transparent',
+              }}
+              className="cursor-pointer z-20 filter hover:brightness-125"
+              onClick={() => setPopupOpen(false)}
+            >
+              <img src={CloseIcon} alt="close_icon" />
+            </button>
         </div>
         <div
           style={{
@@ -102,7 +131,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
               <div className="flex items-center justify-center">
                 <img
                   style={{
-                    width: '19rem',
+                    width: '14rem',
                   }}
                   src={LoginIcon}
                   alt="login_icon"
@@ -141,9 +170,11 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                     marginLeft: '',
                   }}
                 >
-                  <span
+                  <p
                     className="text-blue-gradLight"
                     style={{
+                      height: '3.625rem',
+                      lineHeight: '3.62rem',
                       color: '#682aa7',
                       whiteSpace: 'nowrap',
                       maxWidth: '22.5rem',
@@ -153,15 +184,15 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                     }}
                   >
                     louie3
-                  </span>
-                  <span style={{ marginLeft: '0.6rem' }}>
+                  </p>
+                  <span style={{ height: '3.625rem', lineHeight: '3.62rem', marginLeft: '0.6rem' }}>
                     {' '}
                     님의 회원정보를 수정합니다.
                   </span>
                 </div>
                 <div
                   className="flex items-center h-14"
-                  style={{ marginTop: '0.4rem' }}
+                  style={{ height: '3.625rem', lineHeight: '3.62rem', marginTop: '0.1rem' }}
                 >
                   비밀번호를 다시 입력해 주세요.
                 </div>
