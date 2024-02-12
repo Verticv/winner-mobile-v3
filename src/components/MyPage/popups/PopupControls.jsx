@@ -59,8 +59,8 @@ export default function PopupControls({
       </div>
       {open && (
         <div
-          // style={{ zIndex: '9999', position: 'fixed', left: '0', top: '0' }}
-          style={{ zIndex: '10000', position: 'fixed', right: '0', top: '0', paddingLeft: '-2rem' }}
+          style={{ zIndex: '9999', position: 'fixed', left: '0', top: '0' }}
+          // style={{ zIndex: '10000', position: 'fixed', right: '0', top: '0', paddingLeft: '-2rem' }}
           className={`fixed flex items-center justify-center w-screen ${
             isNotFullScreen ? 'overflow-y-scroll' : ''
           } h-screen bg-black bg-opacity-80 z-50 left-0 top-0 popup-page`}

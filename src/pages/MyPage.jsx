@@ -334,7 +334,7 @@ function MyPage({ setOpen, isAuthenticated, setAuthenticated }) {
         ></Route>
 
         <Route
-          path="/inbox/*"
+          path="/inbox/view/*"
           element={
             <>
               <InboxView

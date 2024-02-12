@@ -7,6 +7,7 @@ import {
   setMyPageSelectedMainMenuId,
   setMyPageSelectedSubMenuId,
   // resetMyPageSelectedMainMenuId,
+  resetMyPageSelectedSubMenuId
 } from '../../counterSlice';
 
 import MenuIcon_0 from '../../assets/images/menu2/menu0.png';
@@ -522,6 +523,7 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
                     // setTimeout(() => {
                       // setSelectedTab(-1);
                       if (item.subItems) {
+                        dispatch(resetMyPageSelectedSubMenuId()); //!- to prevent already selected submenu
                         setSubItems(item.subItems);
                         setShowSubMenu(true);
                         // navigate(item?.path);
