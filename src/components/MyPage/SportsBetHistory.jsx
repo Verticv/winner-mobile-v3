@@ -37,7 +37,8 @@ const SportsBetHistory = ({
       <div
         className="w-full h-full z-10"
         // style={{ padding: '1.938rem 1.875rem 1.938rem 1.876rem' }}
-        style={{ padding: '1.938rem 1.875rem 0rem 1.876rem' }}
+        // style={{ padding: '1.938rem 1.875rem 0rem 1.876rem' }}
+        style={{ padding: '0rem 1.875rem 0rem 1.876rem' }}
       >
         <SportsBetHistoryPanel
           isPopup={!showSub}

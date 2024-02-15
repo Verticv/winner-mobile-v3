@@ -16,8 +16,9 @@ const PowerLadderBetHistoryPanel = ({
         <div className='PowerLadderBetHistoryPanel'>
             <div style={{ background: 'linear-gradient(to top,#ededeb, #cb78e6 )', boxShadow: '0px 0px 0.75rem 0px rgba(0, 0, 0, 0.8)', padding: '0.1875rem', borderRadius: '1.875rem', margin: '0 1.86rem' }}>
                 <div style={{ borderRadius: "1.875rem", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#ffffff' }} className="shadow-subNavbar bg-gray-fafafa">
-                    <TableHeader middleText='VS' />
-                    <div style={{ padding: '0.438rem 0.9rem 0 0.7rem' }} className="w-full">
+                    <TableHeader middleText='VS' isPowerLadder />
+                    {/* <div style={{ padding: '0.438rem 0.9rem 0 0.7rem' }} className="w-full"> */}
+                    <div style={{ padding: '0.838rem 0.938rem 0.638rem 0.938rem' }} className="w-full">
                         <div className="w-full rounded-lg">
                             <div className='rounded-lg w-full shadow-to-box' style={{ border: '0.45rem solid #6852a7', borderRadius: '0.625rem', boxShadow: "0px 0.188rem 0.563rem 0px rgba(0, 0, 0, 0.5)" }}>
                                 <CardHeader flag='us' name='파워사다리' date='2021-06-29 15:45' isMinigame={true} minigameType="powerladder" smallCard />
@@ -44,7 +45,7 @@ const PowerLadderBetHistoryPanel = ({
             </div>
             <div style={{ background: "linear-gradient(to top,#ededeb, #cb78e6)", boxShadow: '0px 0px 0.5rem 0px rgba(0, 0, 0, 0.6)', padding: '0.1875rem', borderRadius: '1.875rem', margin: '2.1rem 1.8rem' }}>
                 <div style={{ borderRadius: "1.875rem", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#ffffff' }} className="shadow-subNavbar bg-gray-fafafa">
-                    <TableHeader middleText='VS' />
+                    <TableHeader middleText='VS' isPowerLadder />
                     <div style={{ padding: '0.438rem 0.9rem 0 0.7rem' }} className="w-full">
                         <div className="w-full rounded-lg">
                             <div className='rounded-lg w-full shadow-to-box' style={{ border: '0.45rem solid #6852a7', borderRadius: '0.625rem', boxShadow: "0px 0.188rem 0.563rem 0px rgba(0, 0, 0, 0.5)" }}>

@@ -7,6 +7,7 @@ const TableHeader = ({
   isFreeboard,
   isCompose,
   isSportsResult,
+  isPowerLadder,
 }) => {
   if (isMinigame === true)
     return (
@@ -74,8 +75,8 @@ const TableHeader = ({
           borderTopRightRadius: '1.875rem',
           // paddingTop: smallCard ? '1.69rem' : '1.688rem',
           // paddingBottom: '1.238rem',
-          paddingTop: smallCard ? '1.99rem' : '1.688rem',
-          paddingBottom: '0.938rem',
+          paddingTop: smallCard ? '1.99rem' : isPowerLadder ? '1.788rem' : '1.688rem',
+          paddingBottom: isPowerLadder ? '0.838rem' : '0.938rem',
           display: 'flex',
           justifyContent: 'right',
           alignItems: 'center',
@@ -107,7 +108,7 @@ const TableHeader = ({
             fontWeight: 'bold',
             marginTop: '-0.626rem',
             // marginRight: isSportsResult? '-2rem': '-1.813rem',
-            marginRight: isSportsResult? '-2rem': isCompose ? '1.5rem' : smallCard ? '0.8rem' : '0.0rem',
+            marginRight: isSportsResult? '-2rem': isCompose ? '1.5rem' : smallCard ? '0.8rem' : isPowerLadder ? '0.3rem' : '0.0rem',
           }}
           className="h-full flex items-center justify-end"
         >
@@ -131,7 +132,7 @@ const TableHeader = ({
             fontWeight: 'bold',
             marginTop: '-1.064rem',
             // marginRight: isSportsResult?'-2.25rem':'-1.25rem',
-            marginRight: isSportsResult?'-4.25rem': isCompose ? '1rem' : smallCard ? '0.3rem' : '-1.25rem',
+            marginRight: isSportsResult?'-4.25rem': isCompose ? '1rem' : smallCard ? '0.3rem' : isPowerLadder ? '-0.45rem' : '-1.25rem',
           }}
           className="h-full flex items-center justify-end"
         >
@@ -174,6 +175,8 @@ const TableHeader = ({
               ? '8.8rem'
               : smallCard
               ? '10rem'
+              : isPowerLadder 
+              ? '9rem'
               : '10rem',
             fontWeight: 'bold',
             marginTop: '-1.001rem',

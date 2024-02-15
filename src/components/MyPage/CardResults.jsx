@@ -656,7 +656,8 @@ const CardResults = ({
           ) : result === 'win' || result === 'lose' || result === 'equality' ? (
             <p
               style={{
-                marginLeft: '0.45rem',
+                // marginLeft: '0.45rem',
+                marginLeft: '0.0rem',
                 color:
                   result === 'win'
                     ? '#f04281'

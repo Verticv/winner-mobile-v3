@@ -1070,7 +1070,8 @@
         line-height: 7.25rem;
         text-align: center;
         vertical-align: middle;
-        color: #666666;
+        // color: #666666;
+        color: #444444;
         // margin-top: -0.238rem;
         // margin-left: -0.338rem;
         letter-spacing: -0.07rem;
@@ -1269,7 +1270,8 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  z-index: 201;
+  // z-index: 201;
+  z-index: 9999;
   margin: auto;
   overflow-y: scroll;
 
@@ -1769,7 +1771,7 @@ input[type='radio'].radio-input:checked::before {
 .PowerLadderBetHistoryPanel {
   .two-buttons-container {
     button {
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
     }
   }
 }

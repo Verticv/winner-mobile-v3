@@ -132,16 +132,6 @@ import ReauthenticatePopup from '../../components/ReauthenticatePopup';
 const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
   const Items = [
     {
-      id: 0,
-      icon: MenuIcon_0,
-      icon2: MenuIcon_Light_0,
-      title: '전체보기',
-      hasBadge: false,
-      hasList: false,
-      path: '/mypage/bet-history/all',
-      blank: false,
-    },
-    {
       id: 1,
       icon: MenuIcon_1,
       icon2: MenuIcon_Light_1,
@@ -149,8 +139,14 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
       hasList: true,
       hasBadge: false,
       // path: '/mypage/bet-history',
-
       subItems: [
+        {
+          id: 0,
+          icon2: MenuIcon_0,
+          OnIcon: MenuIcon_Light_0,
+          title: '전체보기',
+          path: '/mypage/bet-history/all',
+        },
         {
           id: 1,
           icon2: MenuIcon_1_1,

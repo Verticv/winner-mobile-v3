@@ -153,7 +153,8 @@ const SportsTableHeader = ({
               ? '8.8rem'
               : smallCard
               ? '10rem'
-              : '10rem',
+              // : '10rem',
+              : '9.5rem',
             marginRight: '0.5rem',
             fontWeight: 'bold',
           }}
