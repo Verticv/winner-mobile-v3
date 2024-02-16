@@ -570,7 +570,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
         </button>
       </div>
       {/* <div style={{ marginBottom: '258px' }}> */}
-      <div style={{ marginBottom: '120px' }}>
+      <div style={{ marginBottom: '80px' }}>
         <BankTable />
       </div>
       {/* <BottomNavbar /> */}
