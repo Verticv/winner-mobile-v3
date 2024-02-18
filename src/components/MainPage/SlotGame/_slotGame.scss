@@ -36,6 +36,7 @@
   }
   .section__actions p {
     margin-top: -1rem;    
+    letter-spacing : -.025em;
   }  
 }
 .section__content {
@@ -124,7 +125,8 @@
     color: #fff;
     text-shadow: 0 0 0.938rem rgba(0, 0, 0, 0.5);
     margin: 0;
-    letter-spacing: -0.063rem;
+    // letter-spacing: -0.063rem;
+    letter-spacing : -.03rem;
   }
 }
 
@@ -202,7 +204,8 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    letter-spacing: -0.063rem;
+    // letter-spacing: -0.063rem;
+    letter-spacing : -.03rem;
     line-height: 1;
     margin-bottom: 0.063rem;
     font-weight: bold;
@@ -215,7 +218,8 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    letter-spacing: -0.063rem;
+    // letter-spacing: -0.063rem;
+    letter-spacing : -.03rem;
   }
   &.left-21 {
     left: 1.313rem;

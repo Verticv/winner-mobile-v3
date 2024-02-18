@@ -31,7 +31,8 @@ const SortBy = ({
         letterSpacing: '-0.025em',
         padding: '0.35rem 0 0 1.65rem',
         outline: 'none',
-        color: '#666666',
+        // color: '#666666',
+        color: '#444444',
       }}
       className="select-overlay"
       id="filter-select"
@@ -48,7 +49,8 @@ const SortBy = ({
       ))}
     </select>
     <label
-      style={{ marginTop: '3.2rem', fontSize: '2.625rem' }}
+      // style={{ marginTop: '3.2rem', fontSize: '2.625rem' }}
+      style={{ marginTop: '0rem', fontSize: '2.625rem', letterSpacing: '-0.015em' }}
       className="custom"
       htmlFor="filter-select"
     >
@@ -94,16 +96,16 @@ const Dropdown = ({
         <div
           className={`sort-by-div  ${ddda ? 'ddda' : ''}`}
           style={{
-
             width: '15rem',
+            marginTop: sortValue === '전체회차' ? '1.1rem' : sortValue === '리그선택' ? '1.7rem' : ''
           }}
         >
           <div
             className={`sort-by-p ${labelClasses} ${ddda ? 'ddda' : ''} `}
             // style={{ marginTop: sortValue === '전체회차' && '-0.4rem' }}
-            style={{ marginTop: sortValue === '전체회차' && '-1rem' }}
+            style={{ marginTop: sortValue === '전체회차' && '-1rem', color: '#444444' }}
           >
-            <p style={{marginLeft: '0.2rem', marginTop: sortValue==='전체회차' ? 'unset' : '-3rem'}}>{sortValue}</p>
+            <p style={{marginLeft: '0.2rem', marginTop: sortValue==='전체회차' ? 'unset' : sortValue==='리그선택' ? '-4.5rem' : '-3rem', letterSpacing: '-0.015em'}}>{sortValue}</p>
           </div>
           {children}
         </div>

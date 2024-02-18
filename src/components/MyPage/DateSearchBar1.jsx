@@ -23,6 +23,7 @@ const DateSearchBar1 = ({
   isDistributorPage,
   withArrow,
   disableRange,
+  isPointsAccumulateHistory,
 }) => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
@@ -97,6 +98,7 @@ const DateSearchBar1 = ({
         value={props.value}
         type="text"
         readOnly={true}
+        style={{ letterSpacing: '-0.015em' }}
       />
     );
   };
@@ -523,7 +525,8 @@ const DateSearchBar1 = ({
         )}
         {withBlackButton && (
           <>
-            {/* <div
+            {isPointsAccumulateHistory ? (
+            <div
               style={{
                 minWidth: '41.625rem',
                 height: '6.75rem',
@@ -548,10 +551,49 @@ const DateSearchBar1 = ({
                 }}
                 placeholder="아이디 입력"
               />
-            </div> */}
+            </div>) : null}
+            {isPointsAccumulateHistory ? ( 
             <div
               style={{
                 // minWidth: isDistributorPage ? '27.4375rem' : '27.438rem',
+                width: '100%',
+                height: '7.25rem',
+                background: 'linear-gradient(to top, #4f3a7a, #e597ff)',
+                padding: '0.1875rem',
+                margin: isPoints ? '-0.789rem 0.125rem 1.75rem 2.7rem' : '-0.789rem 0.125rem 1.75rem 0.125rem',
+                // margin: isPoints ? '-0.789rem 0.2rem 1.75rem 0' : '-0.789rem 0.125rem 1.75rem 0.125rem',
+                borderRadius: '1.125rem',
+                boxShadow: '0px 0.375rem 0.75rem 0px rgba(0, 0, 0, 0.6)',
+              }}
+              className="hover withBlackButton"
+            >
+              <div
+                style={{
+                  background: 'linear-gradient(to top, #6b22ff, #df52ff)',
+                  width: '100%',
+                  height: '100%',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  borderRadius: '1.125rem',
+                }}
+                // className="flex w-full h-full items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer"
+              >
+                <span
+                  style={{
+                    fontSize: '2.625rem',
+                    color: '#ffffff',
+                    marginTop: '0.2rem',
+                  }}
+                  className="shadow-to-text"
+                >
+                  검색
+                </span>
+              </div>
+            </div>) : ( 
+            <div
+              style={{
+                minWidth: isDistributorPage ? '27.4375rem' : '27.438rem',
                 width: '100%',
                 height: '7.25rem',
                 background: 'linear-gradient(to top, #4f3a7a, #e597ff)',
@@ -586,7 +628,7 @@ const DateSearchBar1 = ({
                   검색
                 </span>
               </div>
-            </div>
+            </div>)}
           </>
         )}
       </div>

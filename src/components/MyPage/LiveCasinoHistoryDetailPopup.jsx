@@ -66,7 +66,8 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                   style={{
                     lineHeight:'5.1875rem',
                     margin: '0',
-                    letterSpacing: '-0.2rem',
+                    // letterSpacing: '-0.2rem',
+                    letterSpacing : '-.025em',
                     color: '#fff',
                   }}
                 >
@@ -115,7 +116,8 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                     height: '5.375rem',
                     display: 'flex',
                     alignItems: 'center',
-                    letterSpacing: '-0.053rem',
+                    // letterSpacing: '-0.053rem',
+                    letterSpacing : '-.015em',
                     justifyContent: 'center',
                     paddingTop: '',
                     color: '#ffffff',
@@ -133,7 +135,8 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                       display: 'flex',
                       flexDirection: 'column',
                       width: '50%',
-                      letterSpacing: '-0.07rem',
+                      // letterSpacing: '-0.07rem',
+                      letterSpacing : '-.015em',
                       borderRight: '0.1875rem solid #bbbbbb',
                       color: '#444',
                     }}
@@ -234,7 +237,8 @@ const LiveCasinoHistoryDetailPopup = ({ setPopupOpen }) => {
                       display: 'flex',
                       flexDirection: 'column',
                       width: '50%',
-                      letterSpacing: '-0.07rem',
+                      // letterSpacing: '-0.07rem',
+                      letterSpacing : '-.015em',
                       fontWeight: 'normal',
                       color: '#444',
                     }}

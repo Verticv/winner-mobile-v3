@@ -76,7 +76,7 @@ const FreeBoardCompose = () => {
                         <textarea
                             className='textarea'
                             placeholder="욕설 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제 되며 사이트 이용에 제한을 받을 수 있습니다."
-                            style={{color:'#888888'}}
+                            style={{color:'#444444'}}
                             onFocus={() => {
                                 // const menu = document.querySelector('#main-menu');
                                 // menu.style.marginBottom = '-14.075rem'

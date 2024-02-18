@@ -227,33 +227,34 @@ const HistoryTable = ({
             }}
           >
             {card.map((row, index) => {
-              let firstColumnColor = '#666666';
-              let secondColumnColor = '#666666';
+              let firstColumnColor = '#444444';
+              let secondColumnColor = '#444444';
               if (row[0]) {
                 const firstRowKeysName = Object.keys(row[0]);
                 const secondRowKeysName = Object.keys(row?.[1] || {});
                 if (firstRowKeysName[0] === '적중/손실금액') {
                   firstColumnColor = row[0][firstRowKeysName[0]].includes('+')
                     ? '#e9441d'
-                    : '#666666';
+                    : '#444444';
                 }
                 if (firstRowKeysName[0] === '상태') {
                   firstColumnColor =
                     row[0][firstRowKeysName[0]] === '승'
-                      ? '#e9441d'
-                      : '#666666';
+                      // ? '#e9441d'
+                      ? '#f04281'
+                      : '#444444';
                 }
                 if (firstRowKeysName[0] === '보너스금액') {
                   firstColumnColor = row[0][firstRowKeysName[0]].includes('+')
                     ? '#e9441d'
-                    : '#666666';
+                    : '#444444';
                 }
                 if (firstRowKeysName[0] === '금액') {
                   firstColumnColor = row[0][firstRowKeysName[0]].includes('+')
                     ? '#e9441d'
                     : row[0][firstRowKeysName[0]].includes('-')
                     ? '#0072bc'
-                    : '#666666';
+                    : '#444444';
                 }
                 if (secondRowKeysName[0] === '적립포인트') {
                   secondColumnColor = '#f04281';
@@ -275,7 +276,8 @@ const HistoryTable = ({
                       marginTop: '-0.313rem',
                       marginBottom: '0.75rem',
                       color: firstColumnColor,
-                      letterSpacing: '-0.07rem',
+                      // letterSpacing: '-0.07rem',
+                      letterSpacing: '-0.015rem',
                       marginLeft: '0.14rem',
                       display: 'flex',
                       width: '100%',
@@ -289,6 +291,7 @@ const HistoryTable = ({
                         fontWeight: '700',
                         flexShrink: 0,
                         marginRight: '0.8rem',
+                        letterSpacing : '-.015em'
                       }}
                     >
                       {firstRowKeysName[0]} :{' '}
@@ -324,6 +327,7 @@ const HistoryTable = ({
                           firstRowKeysName[0] === '아이디' ? 'ellipsis' : '',
                         whiteSpace:
                           firstRowKeysName[0] === '아이디' ? 'nowrap' : '',
+                        
                       }}
                     >
                       {firstRowKeysName[0] === '아이디'

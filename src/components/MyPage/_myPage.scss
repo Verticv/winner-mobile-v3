@@ -30,7 +30,8 @@
     margin: 0;
     color: #fff;
     font-size: 3.75rem;
-    letter-spacing: -0.005em;
+    // letter-spacing: -0.005em;
+    letter-spacing : 0;
     line-height: 1;
     margin-left: 0.063rem;
     margin-top: 0.125rem;
@@ -249,7 +250,8 @@
           color: #444444;
           font-size: 2.625rem;
           line-height: 1;
-          letter-spacing: -0.025em;
+          // letter-spacing: -0.025em;
+          letter-spacing : -.1em;
           text-align: center;
           font-weight: bold;
         }
@@ -262,6 +264,7 @@
 
         p {
           margin-right: 0.188rem;
+          letter-spacing : -.1em;
         }
       }
 
@@ -326,7 +329,8 @@
           font-size: 2.625rem;
           line-height: 1;
           margin-top: 0.188rem;
-          letter-spacing: -0.025em;
+          // letter-spacing: -0.025em;
+          letter-spacing : -.1em;
           margin-right: 0.063rem;
           font-weight: bold;
         }
@@ -387,7 +391,8 @@
           font-size: 2.875rem;
           color: #eeeeee;
           margin-left: 1.875rem;
-          letter-spacing: 0.05rem;
+          // letter-spacing: 0.05rem;
+          letter-spacing : -.1em;
           font-weight: bold;
         }
       }
@@ -569,7 +574,8 @@
     color: #fffffe;
     font-size: 3.74375rem;
     margin-left: 2.1rem;
-    letter-spacing: -0.1rem;
+    // letter-spacing: -0.1rem;
+    letter-spacing: 0.0rem;
     font-weight: bold;
     height: 9.33rem;
     line-height: 9.33rem;
@@ -626,6 +632,7 @@
       font-size: 2.5rem;
       color: #2d2834;
       font-weight: bold;
+      letter-spacing : 0;
     }
   }
 }
@@ -1074,7 +1081,8 @@
         color: #444444;
         // margin-top: -0.238rem;
         // margin-left: -0.338rem;
-        letter-spacing: -0.07rem;
+        // letter-spacing: -0.07rem;
+        letter-spacing : -.015em;
         // text-shadow: rgb(0 0 0) 0rem 0rem 0.4375rem;
       }
     }
@@ -1293,7 +1301,8 @@
 
     label {
       color: #ffffff;
-      letter-spacing: -0.1rem;
+      // letter-spacing: -0.1rem;
+      letter-spacing : 0;
       font-size: 3.75rem;
       margin-left: -0.35rem;
       font-weight: bold;
@@ -1366,8 +1375,9 @@
 
       span {
         font-size: 2.8125rem;
-        margin-top: 0.2rem;
-        letter-spacing: -0.07rem;
+        // margin-top: 0.2rem;
+        // letter-spacing: -0.07rem;
+        letter-spacing : -.025em;
         text-shadow: 0px 0px 0.938rem rgba(0, 0, 0, 0.5);
       }
     }
@@ -1409,6 +1419,7 @@
           margin-top: 0.313rem;
           margin-left: 0.063rem;
           font-weight: normal;
+          letter-spacing : -.1em;
         }
 
         &.active {
@@ -1680,8 +1691,9 @@ input[type='radio'].radio-input:checked::before {
 
       span {
         // margin-top: 0.35rem;
-        letter-spacing: -0.07rem;
-        margin-right: 0.1rem;
+        // letter-spacing: -0.07rem;
+        letter-spacing : -.025em;
+        // margin-right: 0.1rem;
         text-shadow: 0px 0px 0.938rem rgba(0, 0, 0, 0.5);
         font-size: 2.625rem;
       }
@@ -1829,7 +1841,8 @@ input[type='radio'].radio-input:checked::before {
     // background: #191817;
     width: 46.9rem;
     padding: 1.7rem 1.1rem;
-    letter-spacing: -0.07rem;
+    // letter-spacing: -0.07rem;
+    letter-spacing: -0.025rem;
     border-radius: 0.5rem;
 
     label {
@@ -1905,7 +1918,8 @@ input[type='radio'].radio-input:checked::before {
   border-radius: 1.3rem;
   background: #f7f7f7;
   padding: 1.7rem 3rem 1.513rem;
-  letter-spacing: -0.07rem;
+  // letter-spacing: -0.07rem;
+  letter-spacing: -0.025rem;
   word-break: keep-all;
   font-weight: 700;
 }
@@ -1947,7 +1961,8 @@ input[type='radio'].radio-input:checked::before {
   border: 0.1875rem solid #cccccc;
   margin-bottom: 0.625rem;
   background: #ffffff;
-  letter-spacing: -0.07rem;
+  // letter-spacing: -0.07rem;
+  letter-spacing: -0.025em;
   font-weight: 700;
   word-break: keep-all;
 
@@ -2059,7 +2074,8 @@ input[type='radio'].radio-input:checked::before {
         .text {
           height: 4.4rem;
           font-size: 2.25rem;
-          letter-spacing: -0.2rem;
+          // letter-spacing: -0.2rem;
+          letter-spacing: -0.1em;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -2109,9 +2125,10 @@ input[type='radio'].radio-input:checked::before {
         font-size: 2.811875rem;
 
         .text {
-          margin-right: -0.8rem;
-          margin-top: 0.1rem;
-          letter-spacing: -0.07rem;
+          // margin-right: -0.8rem;
+          // margin-top: 0.1rem;
+          // letter-spacing: -0.07rem;
+          letter-spacing: -0.025em;
           text-shadow: 0px 0px 0.938rem rgba(0, 0, 0, 0.5);
         }
       }

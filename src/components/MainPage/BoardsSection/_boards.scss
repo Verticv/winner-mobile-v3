@@ -83,6 +83,7 @@
      font-size: 2.813rem;
      margin-top: -0.25rem;
      font-weight: bold;
+     letter-spacing : -.025em;
    }
  }
 
@@ -91,7 +92,8 @@
      color: #bfa4ff;
      font-size: 2.625rem;
      margin-right: 0.5rem;
-     letter-spacing: -.025em;
+    //  letter-spacing: -.025em;
+      letter-spacing : 0;
    }
  }
 
@@ -266,7 +268,7 @@
    -webkit-animation-timing-function: linear;
    animation-timing-function: linear;
    position: relative;
-
+   letter-spacing : -.025em;
  }
 
  .currency-exchange-wrapper.stop-animation {

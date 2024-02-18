@@ -121,19 +121,24 @@
 
                                 &.event-color {
                                     // background: yellow;
-                                    color: #3c3096;
+                                    // color: #3c3096;
+                                    color: #3709ad;
                                     // margin-left: 0.6rem;
                                     margin-top: -0.9rem;
+                                    font-weight: bold;
                                 }
 
                                 &.notice-color {
                                     // background: blue;
-                                    color: #3b2461;
+                                    // color: #3b2461;
+                                    color: #72148f;
+                                    font-weight: bold;
                                 }
 
                                 &.normal-color {
                                     // background: black;
-                                    color: #666666;
+                                    // color: #666666;
+                                    color: #444444;
                                     margin-left: -2.2rem;
                                     margin-top: -0.9rem;
                                 }
@@ -203,7 +208,8 @@
             color: #ffffff;
             margin-right: -0.19rem;
             width: fit-content;
-            letter-spacing: -0.06rem;
+            // letter-spacing: -0.06rem;
+            letter-spacing: -0.025em;
         }
     }
 }

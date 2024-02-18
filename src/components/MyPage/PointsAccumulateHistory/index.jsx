@@ -204,7 +204,7 @@ const PointsAccumulateHistory = ({ SubMenuList, subActiveButton, setSubActiveBut
                     // fontSize: '2.624375rem', display: 'flex', alignItems: 'center', justifyContent: 'center',
                     // marginTop: '1.938rem', letterSpacing: '-0.07rem', marginBottom: '1.4rem', marginLeft: "1.688rem"
                     fontSize: '2.624375rem', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    letterSpacing: '-0.07rem', marginLeft: "1.688rem", marginTop: '2.9rem', marginBottom: '0.9rem'
+                    letterSpacing: '-0.025rem', marginLeft: "1.688rem", marginTop: '2.9rem', marginBottom: '0.9rem'
                 }}>
                     <span style={{
                         color: '#ffd98b', textOverflow: 'ellipsis', maxWidth: '34.4rem', overflow: 'hidden', whiteSpace: 'nowrap', fontWeight: '700', lineHeight: '4rem'
@@ -218,7 +218,7 @@ const PointsAccumulateHistory = ({ SubMenuList, subActiveButton, setSubActiveBut
                     style={{ marginTop: '-0.601rem' }}
                 >
 
-                    <DateSearchBar1 isLeagueSearch={false} withBlackButton isPoints='true' />
+                    <DateSearchBar1 isLeagueSearch={false} withBlackButton isPoints='true' isPointsAccumulateHistory />
                 </div>
                 {/* <ScrollButton /> */}
                 <div className="h-full">

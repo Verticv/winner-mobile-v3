@@ -61,7 +61,7 @@ const HorizontalSubMenu = ({
             >
               <div style={{ margin: item?.width ? '0' : '0 2.6875rem' }}>
                 <div>
-                  <span style={{fontWeight: '700'}}>{item.text}</span>
+                  <span style={{fontWeight: '700', letterSpacing: '-0.1em'}}>{item.text}</span>
                 </div>
               </div>
             </button>

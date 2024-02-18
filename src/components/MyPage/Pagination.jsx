@@ -129,7 +129,8 @@ const Pagination = ({
                 color: isBetHistoryPopup
                   ? '#444444'
                   : selectedPage === 1
-                  ? '#594e6a'
+                  // ? '#594e6a'
+                  ? '#333333'
                   : '#eeeeee',
               }}
             >

@@ -34,7 +34,8 @@ const Search = () => {
                 <input
                     style={{
                         height: '6.75rem', marginTop: '0.05rem',
-                        fontSize: '2.80625rem', paddingLeft: '1.3rem', outline: 'none', color: '#b4b4b4', letterSpacing: '-0.05rem', border: '0.1875rem solid #404040', borderRight: 0,
+                        // fontSize: '2.80625rem', paddingLeft: '1.3rem', outline: 'none', color: '#b4b4b4', letterSpacing: '-0.05rem', border: '0.1875rem solid #404040', borderRight: 0,
+                        fontSize: '2.80625rem', paddingLeft: '1.3rem', outline: 'none', color: '#444444', letterSpacing: '-0.05rem', border: '0.1875rem solid #404040', borderRight: 0,
                         borderRadius: '0.7rem', paddingTop: '0.1rem', width: '50rem', borderTopRightRadius: 0, borderBottomRightRadius: 0, background: '#ffffff',
                     }}
                     className="rounded-2xl placeholder-gray-r7c7c7c w-full text-gray-r393e41  outline-none h-full justify-between items-center tracking-tight"

@@ -93,6 +93,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
               padding: '1.43rem 1.9rem 1rem 1.82rem',
               background: 'linear-gradient(to right, #9d3bbb, #5423a0)',
               borderRadius: '0.625rem',
+              letterSpacing: '-0.25rem',
             }}
             className="w-full rounded-2xl border border-gray-dddddd bg-gray-f9f9f9"
           >
@@ -114,7 +115,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                 marginTop: '0.8rem',
                 lineHeight: '1.42',
                 marginLeft: '-0.2rem',
-                letterSpacing: '-0.07rem',
+                // letterSpacing: '-0.07rem',
                 marginRight: '4rem',
                 wordBreak: 'keep-all',
               }}
@@ -161,7 +162,8 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                       fontSize: '2.8125rem',
                       color: '#ffffff',
                       display: 'inline-block',
-                      letterSpacing: '-0.07rem',
+                      // letterSpacing: '-0.07rem',
+                      letterSpacing: '-0.25rem',
                       marginTop: '0.2rem',
                       textShadow: '0px 0px 0.938rem rgba(0, 0, 0, 0.5)',
                     }}
@@ -177,7 +179,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
               style={{
                 fontSize: '2.625rem',
                 color: '#c8c8c8',
-                letterSpacing: '-0.07rem',
+                letterSpacing: '-0.025rem',
               }}
             >
               <div
@@ -277,15 +279,16 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
             style={{
               marginTop: '1.8rem',
               padding: '0 1rem',
+              letterSpacing: '-0.025em',
             }}
           >
             <div className="form-section">
               <Title text="현재 보유머니" />
               <div className="lable-or-input">
-                <div style={{ fontSize: '2.625rem' }}>
+                <div style={{ fontSize: '2.625rem' , letterSpacing: '-0.025em', }}>
                   <span
                     className="font-robotoBold text-red-e9441d"
-                    style={{ color: '#f04281' }}
+                    style={{ color: '#f04281', fontWeight: 'bold' }}
                   >
                     487,240
                   </span>
@@ -307,7 +310,8 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                     width: '100%',
                     fontSize: '2.625rem',
                     marginBottom: '0.9375rem',
-                    letterSpacing: '-0.1rem',
+                    // letterSpacing: '-0.1rem',
+                    letterSpacing: '-0.025rem',
                     border: '0px solid',
                     outline: 'none',
                   }}
@@ -355,7 +359,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                   onClick={() => setInputValue(inputValue + 10000)}
                 >
                   <div className="s-div">
-                    <span>1만원</span>
+                    <span style={{ letterSpacing: '-0.015' }}>1만원</span>
                   </div>
                 </button>
               </div>
@@ -365,7 +369,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                   onClick={() => setInputValue(inputValue + 30000)}
                 >
                   <div className="s-div">
-                    <span>3만원</span>
+                    <span style={{ letterSpacing: '-0.015' }}>3만원</span>
                   </div>
                 </button>
               </div>
@@ -375,7 +379,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                   onClick={() => setInputValue(inputValue + 50000)}
                 >
                   <div className="s-div">
-                    <span>5만원</span>
+                    <span style={{ letterSpacing: '-0.015' }}>5만원</span>
                   </div>
                 </button>
               </div>
@@ -385,7 +389,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                   onClick={() => setInputValue(inputValue + 100000)}
                 >
                   <div className="s-div">
-                    <span style={{ fontSize: '2.625rem' }}>10만원</span>
+                    <span style={{ fontSize: '2.625rem', letterSpacing: '-0.015' }}>10만원</span>
                   </div>
                 </button>
               </div>
@@ -398,7 +402,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                   onClick={() => setInputValue(inputValue + 300000)}
                 >
                   <div className="s-div">
-                    <span>30만원</span>
+                    <span style={{ letterSpacing: '-0.015' }}>30만원</span>
                   </div>
                 </button>
               </div>
@@ -408,7 +412,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                   onClick={() => setInputValue(inputValue + 500000)}
                 >
                   <div className="s-div">
-                    <span>50만원</span>
+                    <span style={{ letterSpacing: '-0.015' }}>50만원</span>
                   </div>
                 </button>
               </div>
@@ -418,7 +422,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                   onClick={() => setInputValue(inputValue + 1000000)}
                 >
                   <div className="s-div">
-                    <span>100만원</span>
+                    <span style={{ letterSpacing: '-0.015' }}>100만원</span>
                   </div>
                 </button>
               </div>
@@ -437,7 +441,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                 >
                   <div className="s-div">
                     <span
-                      style={{ paddingRight: '0', color: '#ffffff' }}
+                      style={{ paddingRight: '0', color: '#ffffff', letterSpacing: '-0.015' }}
                       className="shadow-to-text"
                     >
                       정정
@@ -460,7 +464,7 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
               <Title text="보너스 금액" />
               <div className="lable-or-input">
                 <div style={{ fontSize: '2.625rem' }}>
-                  <span style={{ color: '#4c98ff', letterSpacing: '-0.03rem' }}>
+                  <span style={{ color: '#4c98ff', letterSpacing: '-0.03rem', fontWeight: 'bold' }}>
                     100,000,000
                   </span>
                 </div>
@@ -500,7 +504,8 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                   margin: '0',
                   color: '#666666',
                   fontSize: '2.625rem',
-                  letterSpacing: '-0.07rem',
+                  // letterSpacing: '-0.07rem',
+                  letterSpacing : '-.025em',
                   marginRight: '1rem',
                 }}
               >
@@ -572,9 +577,10 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                         fontSize: '2.625rem',
                         color: '#ffffff',
                         textShadow: '0px 0px 0.938rem rgba(0, 0, 0, 0.5)',
-                        letterSpacing: '-0.07rem',
-                        marginTop: '0.113rem',
-                        marginLeft: '0.188rem',
+                        // letterSpacing: '-0.07rem',
+                        // marginTop: '0.113rem',
+                        // marginLeft: '0.188rem',
+                        letterSpacing: '-0.025rem',
                       }}
                     >
                       슬롯게임
@@ -633,8 +639,10 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                         fontSize: '2.625rem',
                         color: '#ffffff',
                         textShadow: '0px 0px 0.938rem rgba(0, 0, 0, 0.5)',
-                        letterSpacing: '-0.07rem',
-                        marginTop: '0.3rem',
+                        // letterSpacing: '-0.07rem',
+                        // marginTop: '0.113rem',
+                        // marginLeft: '0.188rem',
+                        letterSpacing: '-0.025rem',
                       }}
                     >
                       스포츠
@@ -693,9 +701,10 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                         fontSize: '2.625rem',
                         color: '#ffffff',
                         textShadow: '0px 0px 0.938rem rgba(0, 0, 0, 0.5)',
-                        letterSpacing: '-0.07rem',
-                        marginTop: '0.113rem',
-                        marginLeft: '0.75rem',
+                        // letterSpacing: '-0.07rem',
+                        // marginTop: '0.113rem',
+                        // marginLeft: '0.188rem',
+                        letterSpacing: '-0.025rem',
                       }}
                     >
                       키론가상게임
@@ -763,9 +772,10 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                         fontSize: '2.625rem',
                         color: '#ffffff',
                         textShadow: '0px 0px 0.938rem rgba(0, 0, 0, 0.5)',
-                        letterSpacing: '-0.07rem',
-                        marginTop: '0.113rem',
-                        marginLeft: '0.125rem',
+                        // letterSpacing: '-0.07rem',
+                        // marginTop: '0.113rem',
+                        // marginLeft: '0.188rem',
+                        letterSpacing: '-0.025rem',
                       }}
                     >
                       피싱게임
@@ -824,9 +834,10 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                         fontSize: '2.625rem',
                         color: '#ffffff',
                         textShadow: '0px 0px 0.938rem rgba(0, 0, 0, 0.5)',
-                        letterSpacing: '-0.07rem',
-                        marginTop: '0.113rem',
-                        marginLeft: '0.25rem',
+                        // letterSpacing: '-0.07rem',
+                        // marginTop: '0.113rem',
+                        // marginLeft: '0.188rem',
+                        letterSpacing: '-0.025rem',
                       }}
                     >
                       받지않기
@@ -929,7 +940,8 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
                   color: '#ffffff',
                   textShadow: '0px 0px 0.938rem rgba(0, 0, 0, 0.5)',
                   display: 'inline-block',
-                  letterSpacing: '-0.07rem',
+                  // letterSpacing: '-0.07rem',
+                  letterSpacing: '-0.025rem',
                   marginTop: '0.188rem',
                 }}
               >
@@ -963,7 +975,8 @@ const MoneyCharge = ({ subActiveButton, setSubActiveButton }) => {
             style={{
               color: '#ffffff',
               fontSize: '2.625rem',
-              letterSpacing: '-0.07rem',
+              // letterSpacing: '-0.07rem',
+              letterSpacing: '-0.025rem',
               marginRight: '0.063rem',
             }}
           >

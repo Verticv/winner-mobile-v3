@@ -409,6 +409,8 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
             justifyContent: 'center',
             alignItems: 'center',
             color: '#e9441d',
+            letterSpacing: '-0.015em',
+            fontWeight: 'bold'
           }}
           className="flex items-center justify-center h-full w-1/2 text-red-d52e2e rounded-2xl"
         >

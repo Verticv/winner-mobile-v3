@@ -157,7 +157,7 @@ const DateSearchBar = ({
         <div className="first-row">
           <DropDownInput isBetCombination={false} withArrow />
           <input
-            style={{ marginLeft: '2rem', color: '#666666' }}
+            style={{ marginLeft: '2rem', color: '#444444' }}
             placeholder="팀명검색"
             onFocus={() => {
               // const menu = document.querySelector('#main-menu');
@@ -424,32 +424,32 @@ const DateSearchBar = ({
         <div className="buttons-container2">
           <div className="common-button12">
             <div className="text-con">
-              <span className="tracking-tight text-white pt-px">오늘</span>
+              <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.025em' }}>오늘</span>
             </div>
           </div>
 
           <div className="common-button12">
             <div className="text-con">
-              <span className="tracking-tight text-white pt-px">1주일</span>
+              <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.025em' }}>1주일</span>
             </div>
           </div>
 
           <div className="common-button12">
             <div className="text-con">
-              <span className="tracking-tight text-white pt-px">15일</span>
+              <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.025em' }}>15일</span>
             </div>
           </div>
 
           <div className="common-button12">
             <div className="text-con">
-              <span className="tracking-tight text-white pt-px">1개월</span>
+              <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.025em' }}>1개월</span>
             </div>
           </div>
 
           {has3MonthSearch && (
             <div className="common-button12">
               <div className="text-con">
-                <span className="tracking-tight text-white pt-px">3개월</span>
+                <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.025em' }}>3개월</span>
               </div>
             </div>
           )}
@@ -472,7 +472,7 @@ const DateSearchBar = ({
                 }}
               >
                 <span
-                  style={{ color: withBlackButton ? '' : '#ffffff' }}
+                  style={{ color: withBlackButton ? '' : '#ffffff', letterSpacing: '-0.025em' }}
                   className={` ${
                     withBlackButton ? '' : 'shadow-to-text'
                   } tracking-tight text-white pt-px`}
@@ -487,7 +487,7 @@ const DateSearchBar = ({
               className="common-button flex items-center justify-center rounded-lg bg-blue-r177cce hover:opacity-75"
             >
               <div className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r62b3f7 bg-gradient-to-b from-blue-r5497f4 via-blue-r3a93dd to-blue-r3d71b8 cursor-pointer">
-                <span className="tracking-tight text-white pt-px">3개월</span>
+                <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.025em' }}>3개월</span>
               </div>
             </div>
           )}
@@ -555,6 +555,7 @@ const DateSearchBar = ({
                   fontSize: '2.625rem',
                   color: '#ffffff',
                   marginTop: '0.2rem',
+                  letterSpacing: '-0.025em',
                 }}
                 className="shadow-to-text"
               >
@@ -588,7 +589,7 @@ const DateSearchBar = ({
               className="flex items-center justify-center bg-black rounded-lg border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r585b5e to-gray-r303337 cursor-pointer"
             >
               <span
-                style={{ fontSize: '2.625rem' }}
+                style={{ fontSize: '2.625rem', letterSpacing: '-0.025em' }}
                 className="tracking-tight text-14px text-white"
               >
                 검색

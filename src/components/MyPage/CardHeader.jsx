@@ -77,7 +77,9 @@ const CardHeader = ({
               paddingBottom: '0.2rem',
               marginLeft: '0.7rem',
               color: '#ffffff',
-              letterSpacing: '-0.07rem',
+              // letterSpacing: '-0.07rem',
+              letterSpacing : '-.015em',
+              fontWeight: 'bold'
             }}
             className="ml-4 text-20px tracking-tight text-white"
           >
@@ -96,7 +98,8 @@ const CardHeader = ({
             style={{
               display: 'flex',
               alignItems: 'center',
-              letterSpacing: '-0.1rem',
+              // letterSpacing: '-0.1rem',
+              letterSpacing : '-.015em',
               marginRight: '1.5rem',
               marginTop: '-0.4rem',
             }}
@@ -175,6 +178,7 @@ const CardHeader = ({
               maxWidth: '36rem',
               overflow: 'hidden',
               textOverflow: 'ellipsis',
+              letterSpacing : '-.015em',
             }}
             className="ml-4 text-20px tracking-tight text-white"
           >
@@ -195,7 +199,8 @@ const CardHeader = ({
               marginLeft: '0.5rem',
               marginTop: '-0.563rem',
               marginRight: '-0.2rem',
-              letterSpacing: '-0.11rem',
+              // letterSpacing: '-0.11rem',
+              letterSpacing : '-.015em',
               paddingTop: '0.5rem',
             }}
             className=" text-16px tracking-tight text-white"
