@@ -29,6 +29,12 @@ input {
         color: #666666;
         font-weight: 500;
     }
+
+    .couponGiftID {
+        &::placeholder{
+            color: #444444;
+        } 
+    }
 }
 
 .textarea-container {

@@ -28,7 +28,8 @@ const CouponGiftPopupTable = () => {
                     <td style={{ width: '26rem', textAlign: 'center' }}>별명</td>
                 </div>
             </div>
-            <div style={{ color: '#666666', flex: 1 }}>
+            {/* <div style={{ color: '#666666', flex: 1 }}> */}
+            <div style={{ color: '#444444', flex: 1 }}>
                 <div style={{ height: '8.725rem', fontSize: '2.625rem', display: 'flex', alignItems: 'center', borderTop: '0.1875rem solid #eeeeee', letterSpacing: '-0.07rem', background: '#ffffff' }}>
                 {/* <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}><RadioButton id={1} /></td>
                     <td style={{ width: '23.8125rem', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap' }}>louie32</td>

@@ -789,7 +789,8 @@ const HistoryMenu = ({
                         ? "bg-blue-r0056a6"
                         : "bg-white border border-gray-b7b7b7"
                         } w-1/2 rounded-full`}
-                    style={{ background: isActive ? 'linear-gradient(to top,#491f9c,#9e3cbc)' : 'linear-gradient(to top,#ccc4ff,#ffd9f5)', color: isActive ? '#ffffff' : '#2d2834', width: '100%', borderRadius: '4rem', height: '100%', fontSize: '2.8125rem', marginRight: `${!index ? '1.15rem' : ''}`, letterSpacing: '-0.07rem' }}
+                    // style={{ background: isActive ? 'linear-gradient(to top,#491f9c,#9e3cbc)' : 'linear-gradient(to top,#ccc4ff,#ffd9f5)', color: isActive ? '#ffffff' : '#2d2834', width: '100%', borderRadius: '4rem', height: '100%', fontSize: '2.8125rem', marginRight: `${!index ? '1.15rem' : ''}`, letterSpacing: '-0.07rem' }}
+                    style={{ background: isActive ? 'linear-gradient(to top,#491f9c,#9e3cbc)' : 'linear-gradient(to top,#ccc4ff,#ffd9f5)', color: isActive ? '#ffffff' : '#2d2834', width: '100%', borderRadius: '4rem', height: '100%', fontSize: '2.8125rem', marginRight: `${!index ? '1.15rem' : ''}`, letterSpacing: '0' }}
                     key={item.id}
 
                     onPointerDown={() => setHover(item.id)}
@@ -852,10 +853,12 @@ const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
         return (
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: "2.6rem" }}>
                 <div style={{
-                    fontSize: '2.625rem', color: '#ffffff', marginLeft: '0rem', letterSpacing: '-0.15rem'
+                    // fontSize: '2.625rem', color: '#ffffff', marginLeft: '0rem', letterSpacing: '-0.15rem'
+                    fontSize: '2.625rem', color: '#ffffff', marginLeft: '0rem', letterSpacing: '-0.025em'
                 }}>
                     <span>{text} </span>
-                    <span style={{ color: numberColor }}>{number}</span>
+                    {/* <span style={{ color: numberColor }}>{number}</span> */}
+                    <span style={{ color: numberColor, fontWeight: 'bold' }}>{number}</span>
                     <span>장</span>
                 </div>
             </div>
@@ -1015,7 +1018,8 @@ const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
                 />
                 <div style={{ marginBottom: '2.9375rem', textAlign: 'center', letterSpacing: '-0.07rem', color: '#ffffff', marginTop: '3.7rem' }} className='mt-4'>
                     <p className='text-gray-r7c7c7c text-center' style={{ fontSize: '2.625rem' }}>
-                        <span className='text-blue-r0056a6' style={{ color: '#ffd98b' }}>쿠폰선물하기</span> 버튼을 클릭하여 쿠폰받을 회원을 선택하세요.
+                        {/* <span className='text-blue-r0056a6' style={{ color: '#ffd98b' }}>쿠폰선물하기</span> 버튼을 클릭하여 쿠폰받을 회원을 선택하세요. */}
+                        <span className='text-blue-r0056a6' style={{ color: '#ffd98b', letterSpacing: '-0.025em', fontWeight: 'bold' }}>쿠폰선물하기</span> 버튼을 클릭하여 쿠폰받을 회원을 선택하세요.
                     </p>
                 </div>
                 <div className="popup-style">
@@ -1055,11 +1059,14 @@ const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
 
                 <div style={{ marginBottom: '-0.8125rem', display: 'flex', justifyContent: 'center' }} >
                     <CouponTitle text='사용가능' number='32' />
-                    <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#555555' }}></div>
+                    {/* <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#555555' }}></div> */}
+                    <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#ebabff' }}></div>
                     <CouponTitle text='사용완료' number='8' numberColor='#33a1e9' />
-                    <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#555555' }}></div>
+                    {/* <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#555555' }}></div> */}
+                    <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#ebabff' }}></div>
                     <CouponTitle text='기간만료' number='0' numberColor='#aaaaaa' />
-                    <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#555555' }}></div>
+                    {/* <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#555555' }}></div> */}
+                    <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#ebabff' }}></div>
                     <CouponTitle text='회수된쿠폰' number='0' numberColor='#00a651' />
                 </div>
                 <div className="">
@@ -1122,13 +1129,20 @@ const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
                                                         </div>
 
                                                         <div style={{ marginBottom: '-0.8125rem', display: 'flex', justifyContent: 'center' }} className='mt-4 flex justify-center'>
-                                                            <CouponTitle text='사용가능' number='32' />
+                                                            {/* <CouponTitle text='사용가능' number='32' />
                                                             <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#555555' }}></div>
                                                             <CouponTitle text='사용완료' number='8' numberColor='#4c98ff' />
                                                             <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#555555' }}></div>
                                                             <CouponTitle text='기간만료' number='0' numberColor='#ffffff' />
                                                             <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#555555' }}></div>
-                                                            <CouponTitle text='회수된쿠폰' number='0' numberColor='#4aca68' />
+                                                            <CouponTitle text='회수된쿠폰' number='0' numberColor='#4aca68' /> */}
+                                                            <CouponTitle text='사용가능' number='32' />
+                                                            <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#ebabff' }}></div>
+                                                            <CouponTitle text='사용완료' number='8' numberColor='#4c98ff' />
+                                                            <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#ebabff' }}></div>
+                                                            <CouponTitle text='기간만료' number='0' numberColor='#aaaaaa' />
+                                                            <div style={{ height: '1.75rem', width: '0.1875rem', margin: '3.3rem 0.9375rem 0', background: '#ebabff' }}></div>
+                                                            <CouponTitle text='회수된쿠폰' number='0' numberColor='#00a651' />
                                                         </div>
                                                         <div className="">
                                                             <HistoryTable

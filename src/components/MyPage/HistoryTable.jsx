@@ -260,12 +260,14 @@ const HistoryTable = ({
                   secondColumnColor = '#f04281';
                 }
                 if (firstRowKeysName[0] === '쿠폰금액') {
-                  firstColumnColor = '#f04281';
+                  // firstColumnColor = '#f04281';
+                  firstColumnColor = '#e9441d';
                 }
                 if (firstRowKeysName[0] === '처리상태') {
                   firstColumnColor =
                     row[0][firstRowKeysName[0]] === '사용가능'
-                      ? '#e9441d'
+                      // ? '#e9441d'
+                      ? '#f04281'
                       : '#7b7b7b';
                 }
                 return (
@@ -387,7 +389,7 @@ const HistoryTable = ({
                 className="hover shadow-to-box3"
               >
                 <div
-                  style={{ color: '#ededeb', fontSize: '2.7rem' }}
+                  style={{ color: '#ededeb', fontSize: '2.7rem', letterSpacing: '-.025em' }}
                   className="shadow-to-text"
                 >
                   <p>사용하기</p>
