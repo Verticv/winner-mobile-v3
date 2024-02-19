@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 // import { createBrowserHistory } from 'history';
 
@@ -21,11 +21,11 @@ const HomePageTopBanner = ({
   isOpen,
 }) => {
   const navigate = useNavigate();
-//   const history = createBrowserHistory();
+  // const history = createBrowserHistory();
 
-  useEffect(() => {
-    console.log('isOpen2', isOpen);
-  });
+  // useEffect(() => {
+  //   console.log('isOpen2', isOpen);
+  // });
 
   const dispatch = useDispatch();
 
@@ -39,7 +39,18 @@ const HomePageTopBanner = ({
             // setOpen(prev => !prev)
             // window.location.pathname.includes('/mypage/coupon/all') ? navigate('mypage/coupon') : navigate(-1);
             // history.back();
-            navigate('/mypage');
+            // navigate('/mypage');
+            if(window.location.pathname.includes('/mypage/bet-history')) navigate('/mypage');
+            else if(window.location.pathname.includes('/mypage/coupon/all')) navigate('/mypage');
+            else if(window.location.pathname.includes('/mypage/money')) navigate('/mypage');
+            else if(window.location.pathname.includes('/mypage/points')) navigate('/mypage');
+            else if(window.location.pathname.includes('/mypage/win-lose-settlement')) navigate('/mypage');
+            else if(window.location.pathname.includes('/mypage/gameresults')) navigate('/mypage');
+            else if(window.location.pathname.includes('/mypage/freeboard')) navigate('/mypage');
+            else if(window.location.pathname.includes('/freeboard')) navigate('/mypage/freeboard');
+            else if(window.location.pathname.includes('/mypage/inbox/view')) navigate('/mypage/inbox');
+            else if(window.location.pathname.includes('/mypage/inbox')) navigate('/mypage');
+            else navigate(-1);
           }}
           className="left-arrow"
           src={LeftArrowIcon}

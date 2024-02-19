@@ -29,7 +29,8 @@ const PowerballResultsTable = ({ array, checkedState, setCheckedState }) => {
               display: 'flex',
               alignItems: 'center',
               color: '#444444',
-              letterSpacing: '-0.07rem',
+              // letterSpacing: '-0.07rem',
+              letterSpacing: '-0.015em',
               textAlign: 'center',
             }}
             className="w-full h-full flex first-letter:space-x-12 items-center text-gray-585858 "
@@ -53,7 +54,9 @@ const PowerballResultsTable = ({ array, checkedState, setCheckedState }) => {
             <p
               style={{
                 maxWidth: '15rem',
-                color: '#4c98ff',
+                // color: '#4c98ff',
+                color: '#0072bc',
+                fontWeight: 'bold',
                 fontSize: '2.625rem',
                 marginLeft: '9.2rem',
                 textAlign: 'center',
@@ -67,6 +70,7 @@ const PowerballResultsTable = ({ array, checkedState, setCheckedState }) => {
                 maxWidth: '20rem',
                 fontSize: '2.625rem',
                 marginLeft: '8.8rem',
+                fontWeight: 'bold',
               }}
               className="group-hover:text-gray-r7b7b7b text-4xl  text-center flex-shrink-0 leading-tight"
             >

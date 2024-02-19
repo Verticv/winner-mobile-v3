@@ -46,7 +46,8 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
         style={{
           fontSize: '2.625rem',
           color: '#ffffff',
-          letterSpacing: '-0.25rem',
+          // letterSpacing: '-0.25rem',
+          letterSpacing: '-0.025rem',
           fontWeight: '700'
         }}
         className="text-gray-r454545 "
@@ -94,6 +95,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
               background:
                 'linear-gradient(to right, rgb(157, 59, 187), rgb(84, 35, 160))',
               borderRadius: '0.625rem',
+              letterSpacing: '-0.025em',
             }}
             className="w-full rounded-2xl border border-gray-dddddd bg-gray-f9f9f9"
           >
@@ -150,7 +152,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                 >
                   <span
                     className="font-robotoBold text-red-e9441d"
-                    style={{ color: '#f04281' }}
+                    style={{ color: '#f04281', letterSpacing: '-0.025', fontWeight: 'bold' }}
                   >
                     478,000
                   </span>
@@ -174,9 +176,11 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                     width: '100%',
                     fontSize: '2.625rem',
                     marginBottom: '0.9375rem',
-                    letterSpacing: '-0.1rem',
+                    // letterSpacing: '-0.1rem',
+                    letterSpacing: '-0.025rem',
                     border: '0px solid',
                     outline: 'none',
+                    fontWeight: 'bold',
                   }}
                   placeholder="직접 입력시 숫자만 입력해 주세요."
                   value={inputValue !== null ? nf.format(inputValue) : ''}
@@ -310,7 +314,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                   onClick={() => setInputValue(inputValue + 10000)}
                 >
                   <div className="s-div">
-                    <span>1만원</span>
+                    <span style={{ letterSpacing: '-0.015em' }}>1만원</span>
                   </div>
                 </button>
               </div>
@@ -325,7 +329,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                     className="s-div"
                     //  className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r2a699c bg-gradient-to-b from-blue-r004b8a via-blue-r003d70 to-blue-r012d53 cursor-pointer"
                   >
-                    <span>3만원</span>
+                    <span style={{ letterSpacing: '-0.015em' }}>3만원</span>
                   </div>
                 </button>
               </div>
@@ -337,7 +341,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                   onClick={() => setInputValue(inputValue + 50000)}
                 >
                   <div className="s-div">
-                    <span>5만원</span>
+                    <span style={{ letterSpacing: '-0.015em' }}>5만원</span>
                   </div>
                 </button>
               </div>
@@ -350,7 +354,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                     className="s-div"
                     //  className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r2a699c bg-gradient-to-b from-blue-r004b8a via-blue-r003d70 to-blue-r012d53 cursor-pointer"
                   >
-                    <span style={{ fontSize: '2.625rem' }}>10만원</span>
+                    <span style={{ fontSize: '2.625rem', letterSpacing: '-0.015em' }}>10만원</span>
                   </div>
                 </button>
               </div>
@@ -365,7 +369,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                   onClick={() => setInputValue(inputValue + 300000)}
                 >
                   <div className="s-div">
-                    <span>30만원</span>
+                    <span style={{ letterSpacing: '-0.015em' }}>30만원</span>
                   </div>
                 </button>
               </div>
@@ -380,7 +384,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                     className="s-div"
                     //  className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r2a699c bg-gradient-to-b from-blue-r004b8a via-blue-r003d70 to-blue-r012d53 cursor-pointer"
                   >
-                    <span>50만원</span>
+                    <span style={{ letterSpacing: '-0.015em' }}>50만원</span>
                   </div>
                 </button>
               </div>
@@ -392,7 +396,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                   onClick={() => setInputValue(inputValue + 1000000)}
                 >
                   <div className="s-div">
-                    <span>100만원</span>
+                    <span style={{ letterSpacing: '-0.015em' }}>100만원</span>
                   </div>
                 </button>
               </div>
@@ -416,7 +420,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                     //  className="flex items-center justify-center w-full h-full bg-black rounded-lg border border-blue-r2a699c bg-gradient-to-b from-blue-r004b8a via-blue-r003d70 to-blue-r012d53 cursor-pointer"
                   >
                     <span
-                      style={{ paddingRight: '0', color: '#ffffff' }}
+                      style={{ paddingRight: '0', color: '#ffffff', letterSpacing: '-0.015em' }}
                       className="shadow-to-text"
                     >
                       정정
@@ -570,7 +574,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
         </button>
       </div>
       {/* <div style={{ marginBottom: '258px' }}> */}
-      <div style={{ marginBottom: '120px' }}>
+      <div style={{ marginBottom: '80px' }}>
         <BankTable />
       </div>
       {/* <BottomNavbar /> */}

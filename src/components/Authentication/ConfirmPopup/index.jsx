@@ -17,17 +17,17 @@ const ConfirmPopup = ({
           <div className='confirm-icon'>
             <img src={ConfirmIcon} alt="Confirm" />
           </div>
-          <p className='confirm-title' style={{ whiteSpace: 'pre-wrap' }}>
+          <div className='confirm-title' style={{ whiteSpace: 'pre-wrap' }}>
             {/* <span className='primary-color' >가입 신청이 완료 되었습니다.</span>{`\n`}
             관리자 <span style={{ fontWeight: 'bold' }} className='secondary-color'>승인 대기중</span>입니다.</p> */}
             <div><span className='primary-color' >가입 신청이 완료 되었습니다.</span></div>
-            <div>관리자 <span style={{ fontWeight: 'bold' }} className='secondary-color'>승인 대기중</span>입니다.</div>
-          </p>
+            <div style={{ marginTop: '-1rem' }}>관리자 <span style={{ fontWeight: 'bold' }} className='secondary-color'>승인 대기중</span>입니다.</div>
+          </div>
           <div className='confirm-desc mb-46'>
             <p>관리자 승인 후 로그인 하시면.</p>
             <p>정상적으로 서비스 이용이 가능합니다.</p>
           </div>
-          <div className='confirm-desc'>
+          <div className='confirm-desc' style={{ marginBottom: '4.0rem' }}>
             <p className='ml-0'>당사 사이트는 깨끗하고 안전한 운영을 자랑합니다.</p>
           </div>
 

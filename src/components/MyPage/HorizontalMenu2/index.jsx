@@ -216,7 +216,8 @@ const HorizontalMenu = ({
 
                     </div>
                     <p
-                        style={{ margin: '0', marginTop: `${imageWidth ? '0.0625rem' : '0.7rem'}`, marginBottom: '1.2rem', letterSpacing: '-0.07rem', fontSize: '2.25rem', color: pathname === item.path || isState === item.id ? '#ffffff' : '#2d2834', marginLeft: '0.4rem' }}
+                        // style={{ margin: '0', marginTop: `${imageWidth ? '0.0625rem' : '0.7rem'}`, marginBottom: '1.2rem', letterSpacing: '-0.07rem', fontSize: '2.25rem', color: pathname === item.path || isState === item.id ? '#ffffff' : '#2d2834', marginLeft: '0.4rem' }}
+                        style={{ margin: '0', marginTop: `${imageWidth ? '0.0625rem' : '0.7rem'}`, marginBottom: '1.2rem', letterSpacing: '-0.1em', fontSize: '2.25rem', color: pathname === item.path || isState === item.id ? '#ffffff' : '#2d2834', marginLeft: '0.4rem' }}
                         className={`${pathname === item.path || isState === item.id
                             ? "text-white"
                             : "text-gray-r616161"

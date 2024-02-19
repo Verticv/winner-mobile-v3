@@ -19,7 +19,7 @@ const inboxArray = [
     type: '일반',
     category: '공지',
     isClicked: true,
-    path: '/mypage/inbox/1',
+    path: '/mypage/inbox/view/1',
     isFirst: true,
   },
   {
@@ -28,7 +28,7 @@ const inboxArray = [
     isRead: true,
     time: '2021.06.28 15:36',
     type: '일반',
-    path: '/mypage/inbox/2',
+    path: '/mypage/inbox/view/2',
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const inboxArray = [
     isRead: true,
     time: '2021.06.28 15:36',
     type: '일반',
-    path: '/mypage/inbox/3',
+    path: '/mypage/inbox/view/3',
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const inboxArray = [
     time: '2021.06.28 15:36',
     type: '일반',
     category: '공지',
-    path: '/mypage/inbox/4',
+    path: '/mypage/inbox/view/4',
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const inboxArray = [
     isRead: true,
     time: '2021.06.28 15:36',
     type: '일반',
-    path: '/mypage/inbox/5',
+    path: '/mypage/inbox/view/5',
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ const inboxArray = [
     isRead: true,
     time: '2021.06.28 15:36',
     type: '일반',
-    path: '/mypage/inbox/6',
+    path: '/mypage/inbox/view/6',
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const inboxArray = [
     time: '2021.06.28 15:36',
     type: '일반',
     category: '공지',
-    path: '/mypage/inbox/7',
+    path: '/mypage/inbox/view/7',
   },
   {
     id: 7,
@@ -79,7 +79,7 @@ const inboxArray = [
     time: '2021.06.28 15:36',
     type: '일반',
     category: '공지',
-    path: '/mypage/inbox/8',
+    path: '/mypage/inbox/view/8',
   },
   {
     id: 8,
@@ -88,7 +88,7 @@ const inboxArray = [
     time: '2021.06.28 15:36',
     type: '일반',
     category: '공지',
-    path: '/mypage/inbox/9',
+    path: '/mypage/inbox/view/9',
   },
   {
     id: 9,
@@ -97,7 +97,7 @@ const inboxArray = [
     time: '2021.06.28 15:36',
     type: '일반',
     category: '공지',
-    path: '/mypage/inbox/10',
+    path: '/mypage/inbox/view/10',
   },
   {
     id: 10,
@@ -106,7 +106,7 @@ const inboxArray = [
     time: '2021.06.28 15:36',
     type: '일반',
     category: '공지',
-    path: '/mypage/inbox/11',
+    path: '/mypage/inbox/view/11',
     isLast: true,
   },
 ];

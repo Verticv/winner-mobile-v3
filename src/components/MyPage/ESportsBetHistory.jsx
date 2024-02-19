@@ -60,7 +60,8 @@ const ESportsBetHistory = ({
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            letterSpacing: '-0.07rem',
+            // letterSpacing: '-0.07rem',
+            letterSpacing : '-.025em',
             borderRadius: '1.125rem',
           }}
         >

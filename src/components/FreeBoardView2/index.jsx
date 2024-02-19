@@ -105,13 +105,14 @@ const FreeBoardView2 = () => {
                                 <img style={{ width: '3.450625rem', height: '4.436875rem', marginRight: '0.8rem', marginLeft: '-0.3rem' }} className='object-contain' src={Rank1} alt="" />
                                 <p style={{
 
-                                    fontSize: '2.624375rem', color: '#929292 ',
+                                    fontSize: '2.624375rem', color: '#444444 ',
                                     maxWidth: '53rem',
                                     margin: '0',
-                                    marginTop: '0.5rem'
+                                    marginTop: '0.5rem',
+                                    letterSpacing: '0'
                                 }} className="tracking-tight text-gray-r585858">하이도1207
-                                    <div style={{ height: '1.75rem', width: '0.1875rem', margin: 'auto 1rem auto 1.16rem', background: '#555555', display: 'inline-block' }} className='bg-gray-c5c5c5'></div>
-                                    <p style={{ fontSize: '2.25rem', color: '#7b7b7b', marginTop: '2.2rem', display: 'inline-block', margin: '0' }} className="text-gray-r7b7b7b tracking-tight">2021.06.28 15:49</p>
+                                    <div style={{ height: '1.75rem', width: '0.1875rem', margin: 'auto 1rem auto 1.16rem', background: '#999999', display: 'inline-block' }} className='bg-gray-c5c5c5'></div>
+                                    <p style={{ fontSize: '2.25rem', color: '#444444', marginTop: '2.2rem', display: 'inline-block', margin: '0', letterSpacing: '0' }} className="text-gray-r7b7b7b tracking-tight">2021.06.28 15:49</p>
                                 </p>
                             </div>
                         </div>
@@ -141,7 +142,8 @@ const FreeBoardView2 = () => {
                         </div>
                     </div>
 
-                    <div style={{ minHeight: "28.1875rem", borderTopWidth: '0.1875rem', padding: '2.2rem 1.85rem', fontSize: '2.811875rem', color: '#666666', background: '#ffffff', marginTop: '5.4rem', borderTop: '0.1875rem solid #dddddd', borderBottomLeftRadius: '1rem', borderBottomRightRadius: '1rem', letterSpacing: '-0.07rem' }} className=" bg-white border-b border-gray-dddddd tracking-tight text-gray-r585858">
+                    {/* <div style={{ minHeight: "28.1875rem", borderTopWidth: '0.1875rem', padding: '2.2rem 1.85rem', fontSize: '2.811875rem', color: '#666666', background: '#ffffff', marginTop: '5.4rem', borderTop: '0.1875rem solid #dddddd', borderBottomLeftRadius: '1rem', borderBottomRightRadius: '1rem', letterSpacing: '-0.07rem' }} className=" bg-white border-b border-gray-dddddd tracking-tight text-gray-r585858"> */}
+                    <div style={{ minHeight: "28.1875rem", borderTopWidth: '0.1875rem', padding: '2.2rem 1.85rem', fontSize: '2.811875rem', color: '#666666', background: '#ffffff', marginTop: '5.4rem', borderTop: '0.1875rem solid #dddddd', borderBottomLeftRadius: '1rem', borderBottomRightRadius: '1rem', letterSpacing: '0' }} className=" bg-white border-b border-gray-dddddd tracking-tight text-gray-r585858">
                         베팅기록 올려봅니다.
                     </div>
                 </div>

@@ -20,7 +20,8 @@ button.collapse {
     color: #a4a1c5;
     font-weight: bold;
     font-size: 3rem;
-    letter-spacing: -0.025em;
+    // letter-spacing: -0.025em;
+    letter-spacing : 0;
     margin: 0;
     margin-left: -0.25rem;
     padding-top: 0.313rem;
@@ -48,6 +49,7 @@ button.collapse {
     div {
       margin-bottom: 1.688rem;
       line-height: 1;
+      letter-spacing : 0;
     }
   }
 

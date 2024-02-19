@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 
 import NoticeBanner from '../components/MainPage/NoticeBanner';
 import Slider from '../components/MainPage/Slider';
@@ -25,12 +26,18 @@ import '../components/MainPage/Style.css';
 
 function MainPage({ setFooterDefaultState }) {
   const [selectedTab, setSelectedTab] = useState(0);
+  const [searchParams] = useSearchParams();
 
   useEffect(() => {
     window.scrollTo(0, 0);
     setFooterDefaultState();
   }, [selectedTab]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  //!-- if there is tab query parameter, it sets selectedTab.
+  useEffect(() => {
+    const selectedTabParam = searchParams.get('tab');
+    if (selectedTabParam) setSelectedTab(+selectedTabParam);
+  },[]); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <>
       <NoticeBanner />

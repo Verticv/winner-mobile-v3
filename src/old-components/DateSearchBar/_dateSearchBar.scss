@@ -13,14 +13,17 @@
         margin-left: 1.875rem;
         margin-top: 0;
         border-radius: 1rem;
-        color: #ccc2b6;
-        letter-spacing: -0.07rem;
+        // color: #ccc2b6;
+        color: #444444;
+        // letter-spacing: -0.07rem;
+        letter-spacing: -0.025rem;
         // padding: 0.35rem 0 0 1.65rem;
         padding: 0.10rem 0 0 1.65rem;
     }
 
     ::placeholder {
-        color: #ccc2b6;
+        // color: #ccc2b6;
+        color: #9da3b0;
     }
 }
 
@@ -48,6 +51,8 @@
 
     .date-picker {
         position: relative;
+        // letter-spacing : -.015em;
+        letter-spacing : -.025em;
 
         img {
             position: absolute;

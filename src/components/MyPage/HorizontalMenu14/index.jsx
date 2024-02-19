@@ -95,6 +95,7 @@ const HorizontalMenu14 = ({
                   ? '#ffffff'
                   : '#2d2834',
               marginLeft: '0.6rem',
+              letterSpacing: '0.1em',
             }}
             className="paragraph"
           >

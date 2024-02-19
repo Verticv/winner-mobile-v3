@@ -17,7 +17,7 @@ const MinigamesMatchResultPanel = ({
                         <div className="w-full rounded-lg" 
                         // style={{boxShadow: '0px 0.188rem 0.563rem 0px rgba(0, 0, 0, 0.5)'}}
                         >
-                            <div style={{ border: '0.45rem solid #6852a7', borderRadius: '0.4rem', marginBottom: '2.3rem' }} className='rounded-lg w-full '>
+                            <div style={{ border: '0.45rem solid #6852a7', borderRadius: '0.4rem', marginBottom: '2.3rem', letterSpacing: '-0.015em' }} className='rounded-lg w-full '>
                                 <CardHeader flag='us' name={type === "powerladder" ? '파워사다리' : type === "speedkino" ? '스피드키노' : '키노사다리'} date='2021-06-29 15:45' isMinigame={true} minigameType={type} />
                                 <CardResults
                                     bet="left"

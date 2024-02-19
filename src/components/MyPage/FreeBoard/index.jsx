@@ -307,7 +307,7 @@ const FreeBoard = ({
                                             background: '#9c3bbb',
                                             maxWidth: '17rem',
                                             overflow: 'hidden',
-                                            lineHeight: '3.3rem'
+                                            lineHeight: '3.3rem',
                                         }}
                                     >
                                         <span>{truncate(item.category, 6, 6)}</span>
@@ -327,7 +327,10 @@ const FreeBoard = ({
                                         : <div></div>
                             }
                             <p
-                                style={{ wordSpacing: (item.text === '다폴더 이벤트 참여' && item.id === 2802) ? '-0.3rem' : '' }}
+                                style={{ 
+                                    wordSpacing: (item.text === '다폴더 이벤트 참여' && item.id === 2802) ? '-0.3rem' : '',
+                                    letterSpacing: '0'
+                                }}
                                 className={`text ${item.type === "공지"
                                     ? "notice-color"
                                     : item.type === "이벤트"
@@ -411,11 +414,14 @@ const FreeBoard = ({
                                             maxWidth: '31.5rem',
                                             overflow: 'hidden',
                                             textOverflow: 'ellipsis',
-                                            color: '#888888',
+                                            // color: '#888888',
+                                            color: '#444444',
                                         }}>{item.author}</p>
-                                        <div style={{ height: '1.75rem', width: '0.1875rem', margin: 'auto 1.1rem', background: '#555555' }} className='bg-gray-c5c5c5'></div>
+                                        {/* <div style={{ height: '1.75rem', width: '0.1875rem', margin: 'auto 1.1rem', background: '#555555' }} className='bg-gray-c5c5c5'></div> */}
+                                        <div style={{ height: '1.75rem', width: '0.1875rem', margin: 'auto 1.1rem', background: '#cccccc' }} className='bg-gray-c5c5c5'></div>
                                         {item.type === "일반" && (
-                                            <div style={{ color: '#888888', fontSize: '2.61875rem', marginLeft: '-0.1rem', letterSpacing: '-0.059rem' }} className="flex items-center">
+                                            // <div style={{ color: '#888888', fontSize: '2.61875rem', marginLeft: '-0.1rem', letterSpacing: '-0.059rem' }} className="flex items-center">
+                                            <div style={{ color: '#444444', fontSize: '2.61875rem', marginLeft: '-0.1rem', letterSpacing: '-0.059rem' }} className="flex items-center">
                                                 {item.time}
                                             </div>
                                         )}

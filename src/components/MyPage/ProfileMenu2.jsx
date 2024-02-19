@@ -1,12 +1,13 @@
 //!-- this component was made because ProfileMenu.jsx has wrong structure.
 //!-- It's popup and show submenu on the other page.
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   setMyPageSelectedMainMenuId,
   setMyPageSelectedSubMenuId,
   // resetMyPageSelectedMainMenuId,
+  resetMyPageSelectedSubMenuId,
 } from '../../counterSlice';
 
 import MenuIcon_0 from '../../assets/images/menu2/menu0.png';
@@ -127,19 +128,11 @@ import MenuOnCsCenterIcon_4 from '../../assets/images/menu2/csCenterIcon_4-activ
 import Logo from '../../assets/images/footer/footer-log.png';
 import ReauthenticatePopup from '../../components/ReauthenticatePopup';
 
+import { Link } from 'react-router-dom';
+
 // const ProfileMenu = ({ isOpen, setOpen }) => {
 const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
   const Items = [
-    {
-      id: 0,
-      icon: MenuIcon_0,
-      icon2: MenuIcon_Light_0,
-      title: '전체보기',
-      hasBadge: false,
-      hasList: false,
-      path: '/mypage/bet-history/all',
-      blank: false,
-    },
     {
       id: 1,
       icon: MenuIcon_1,
@@ -148,8 +141,14 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
       hasList: true,
       hasBadge: false,
       // path: '/mypage/bet-history',
-
       subItems: [
+        {
+          id: 0,
+          icon2: MenuIcon_0,
+          OnIcon: MenuIcon_Light_0,
+          title: '전체보기',
+          path: '/mypage/bet-history/all',
+        },
         {
           id: 1,
           icon2: MenuIcon_1_1,
@@ -476,7 +475,7 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
   const [isPopupOpen, setReauthPopupOpen] = useState(false);
   const [selectedTab, setSelectedTab] = useState(false); //!-- initial value: -1, onClick: item.id => 100ms later: -1
   const [subItems, setSubItems] = useState([]);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   // const [showSubMenu, setShowSubMenu] = useState(false);
   // const [selectedSubTab, setSelectedSubTab] = useState([]);
   // const setActiveTab = ({ index, item }) => {
@@ -491,14 +490,16 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
   );
   const dispatch = useDispatch();
   useEffect(() => {
-    if(selectedMainMenuId !== -1) {
-      const selectedMainMenu =  Items.find((item) => item.id === selectedMainMenuId);
+    if (selectedMainMenuId !== -1) {
+      const selectedMainMenu = Items.find(
+        (item) => item.id === selectedMainMenuId
+      );
       setSubItems(selectedMainMenu.subItems);
-      if(selectedMainMenu.subItems) setShowSubMenu(true);
+      if (selectedMainMenu.subItems) setShowSubMenu(true);
     } else setShowSubMenu(false);
     console.log(selectedTab);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[]);
+  }, []);
   return (
     <>
       <div className="profile-menu menu-list">
@@ -520,29 +521,104 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
                     dispatch(setMyPageSelectedMainMenuId(item.id));
                     // console.log(selectedMainMenuId);
                     // setTimeout(() => {
-                      // setSelectedTab(-1);
-                      if (item.subItems) {
-                        setSubItems(item.subItems);
-                        setShowSubMenu(true);
-                        // navigate(item?.path);
-                      } else {
-                        item.blank
-                          ? window.open(item?.path)
-                          : navigate(item?.path);
-                      }
-                      if (item.title === '회원정보수정') {
-                        setReauthPopupOpen(true);
-                      }
+                    // setSelectedTab(-1);
+                    if (item.subItems) {
+                      dispatch(resetMyPageSelectedSubMenuId()); //!- to prevent already selected submenu
+                      setSubItems(item.subItems);
+                      setShowSubMenu(true);
+                      // navigate(item?.path);
+                    } else {
+                      // item.blank ? window.open(item?.path)
+                      // : navigate(item?.path);
+                      if (item.blank) window.open(item?.path);
+                    }
+                    if (item.title === '회원정보수정') {
+                      setReauthPopupOpen(true);
+                    }
                     // }, 100);
                   }}
                 >
-                  <div className="menu-item1">
-                    {item.hasList && (
-                      <div className="menu-item-arrow">
+                  {!item.subItems && !item.blank ? (
+                    <Link
+                      to={item.path}
+                      style={{ width: '100%', textDecoration: 'none' }}
+                    >
+                      <div className="menu-item1">
+                        {item.hasList && (
+                          <div className="menu-item-arrow">
+                            {/* {selectedTab === item.id && ( */}
+                            {selectedMainMenuId === item.id && (
+                              <img
+                                src={LightArrow}
+                                alt="right"
+                                className="ml-10px object-none"
+                              />
+                            )}
+                            {/* {selectedTab !== item.id && ( */}
+                            {selectedMainMenuId !== item.id && (
+                              <img
+                                src={DarkArrow}
+                                alt="right"
+                                className="ml-10px object-none"
+                              />
+                            )}
+                          </div>
+                        )}
+                        <div className="menu-item-logo">
+                          {/* {selectedTab === item.id && ( */}
+                          {selectedMainMenuId === item.id && (
+                            <img
+                              src={item.icon2}
+                              alt="right"
+                              className="ml-10px object-none"
+                            />
+                          )}
+                          {/* {selectedTab !== item.id && ( */}
+                          {selectedMainMenuId !== item.id && (
+                            <img
+                              src={item.icon}
+                              alt="right"
+                              className="ml-10px object-none"
+                            />
+                          )}
+                        </div>
+                        <div className="menu-item-title">
+                          <p>{item.title}</p>
+                          {item.hasBadge && (
+                            <span className="badge badge--red badge--l">
+                              <span>{item.badge_num}</span>
+                            </span>
+                          )}
+                        </div>
+                      </div>{' '}
+                    </Link>
+                  ) : (
+                    <div className="menu-item1">
+                      {item.hasList && (
+                        <div className="menu-item-arrow">
+                          {/* {selectedTab === item.id && ( */}
+                          {selectedMainMenuId === item.id && (
+                            <img
+                              src={LightArrow}
+                              alt="right"
+                              className="ml-10px object-none"
+                            />
+                          )}
+                          {/* {selectedTab !== item.id && ( */}
+                          {selectedMainMenuId !== item.id && (
+                            <img
+                              src={DarkArrow}
+                              alt="right"
+                              className="ml-10px object-none"
+                            />
+                          )}
+                        </div>
+                      )}
+                      <div className="menu-item-logo">
                         {/* {selectedTab === item.id && ( */}
                         {selectedMainMenuId === item.id && (
                           <img
-                            src={LightArrow}
+                            src={item.icon2}
                             alt="right"
                             className="ml-10px object-none"
                           />
@@ -550,40 +626,22 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
                         {/* {selectedTab !== item.id && ( */}
                         {selectedMainMenuId !== item.id && (
                           <img
-                            src={DarkArrow}
+                            src={item.icon}
                             alt="right"
                             className="ml-10px object-none"
                           />
                         )}
                       </div>
-                    )}
-                    <div className="menu-item-logo">
-                      {/* {selectedTab === item.id && ( */}
-                      {selectedMainMenuId === item.id && (
-                        <img
-                          src={item.icon2}
-                          alt="right"
-                          className="ml-10px object-none"
-                        />
-                      )}
-                      {/* {selectedTab !== item.id && ( */}
-                      {selectedMainMenuId !== item.id && (
-                        <img
-                          src={item.icon}
-                          alt="right"
-                          className="ml-10px object-none"
-                        />
-                      )}
+                      <div className="menu-item-title">
+                        <p>{item.title}</p>
+                        {item.hasBadge && (
+                          <span className="badge badge--red badge--l">
+                            <span>{item.badge_num}</span>
+                          </span>
+                        )}
+                      </div>
                     </div>
-                    <div className="menu-item-title">
-                      <p>{item.title}</p>
-                      {item.hasBadge && (
-                        <span className="badge badge--red badge--l">
-                          <span>{item.badge_num}</span>
-                        </span>
-                      )}
-                    </div>
-                  </div>
+                  )}
                 </button>
               )
             )
@@ -602,35 +660,40 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
                     // setOpen(false)
                     // setSelectedTab({ index: item.id, item: item });
                     dispatch(setMyPageSelectedSubMenuId(item.id));
-                    navigate(item?.path);
+                    // navigate(item?.path);
                   }}
                 >
-                  <div className="menu-item1">
-                    <div className="menu-item-logo">
-                      {/* <img src={item.icon2} alt="right" className="ml-10px object-none" /> */}
-                      {/* {selectedTab !== item.id && ( */}
-                      {selectedSubMenuId !== item.id && (
-                        <img
-                          src={item.icon2}
-                          alt="right"
-                          className="ml-10px object-none"
-                        />
-                      )}
-                      {/* {selectedTab === item.id && ( */}
-                      {selectedSubMenuId === item.id && (
-                        <img
-                          src={item.OnIcon}
-                          alt="right"
-                          className="ml-10px object-none"
-                        />
-                      )}
+                  <Link
+                    to={item?.path}
+                    style={{ width: '100%', textDecoration: 'none' }}
+                  >
+                    <div className="menu-item1">
+                      <div className="menu-item-logo">
+                        {/* <img src={item.icon2} alt="right" className="ml-10px object-none" /> */}
+                        {/* {selectedTab !== item.id && ( */}
+                        {selectedSubMenuId !== item.id && (
+                          <img
+                            src={item.icon2}
+                            alt="right"
+                            className="ml-10px object-none"
+                          />
+                        )}
+                        {/* {selectedTab === item.id && ( */}
+                        {selectedSubMenuId === item.id && (
+                          <img
+                            src={item.OnIcon}
+                            alt="right"
+                            className="ml-10px object-none"
+                          />
+                        )}
+                      </div>
+                      <div className="menu-item-title">{item.title}</div>
                     </div>
-                    <div className="menu-item-title">{item.title}</div>
-                  </div>
+                  </Link>
                 </button>
               )
             )}
-            <div
+        <div
           style={{
             display: 'flex',
             justifyContent: 'center',
@@ -643,14 +706,12 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
             style={{ height: '5rem', filter: 'brightness(40%)' }}
           />
         </div>
-        {
-            isPopupOpen && (
-              <ReauthenticatePopup 
-                setPopupOpen={setReauthPopupOpen}
-                setSelectedTab={setSelectedTab}
-              />
-            )
-          }
+        {isPopupOpen && (
+          <ReauthenticatePopup
+            setPopupOpen={setReauthPopupOpen}
+            setSelectedTab={setSelectedTab}
+          />
+        )}
       </div>
     </>
   );

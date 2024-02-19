@@ -180,7 +180,7 @@ const FixedMenu = ({
                 key={item.id}
                 id={`t-sub${index}`}
                 onPointerUp={() => {
-                  if (isMyPage) navigate("/main"); //!- on myPage, go to /main
+                  if (isMyPage) navigate(`/main?tab=${index}`); //!- on myPage, go to /main with tab index
                   else setActiveTab({index,item})
                 }}>
                 { selectedTab !== item.id && (<img src={item.icon} alt="right" className="ml-10px object-none" />)}

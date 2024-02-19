@@ -67,7 +67,8 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
               fontSize: '2.8125rem',
               color: '#d6f3ff',
               display: 'inline-block',
-              letterSpacing: '-0.07rem',
+              // letterSpacing: '-0.07rem',
+              letterSpacing: '-0.015rem',
               textShadow: '0px 0px 0.938rem rgba(0, 0, 0, 0.5)',
             }}
             className="shadow-to-text"
@@ -98,7 +99,8 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
         style={{
           fontSize: '2.625rem',
           color: '#ffffff',
-          letterSpacing: '-0.25rem',
+          // letterSpacing: '-0.25rem',
+          letterSpacing: '-0.025rem',
           fontWeight: '700',
         }}
         className="text-gray-r454545 "
@@ -146,7 +148,8 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
               padding: '1.4rem 2.0625rem 1.45rem',
               background: 'linear-gradient(to right, #9d3bbb, #5423a0)',
               borderRadius: '0.625rem',
-              letterSpacing: '-0.07rem',
+              // letterSpacing: '-0.07rem',
+              letterSpacing: '-0.025rem',
             }}
             className="w-full rounded-2xl border border-gray-dddddd bg-gray-f9f9f9"
           >
@@ -267,7 +270,8 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                   style={{
                     fontSize: '2.625rem',
                     marginBottom: '0.9375rem',
-                    letterSpacing: '-0.1rem',
+                    // letterSpacing: '-0.1rem',
+                    letterSpacing: '-0.025rem',
                     // padding: '0.4rem 2.2rem 0',
                     display: 'flex',
                     alignItems: 'center',

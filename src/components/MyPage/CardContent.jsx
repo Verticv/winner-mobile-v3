@@ -90,7 +90,7 @@ const CardContent = ({
                   fontSize: '2.625rem',
                   marginBottom: '0.375rem',
                   letterSpacing: '-0.07rem',
-                  color: '#666666',
+                  color: '#444444',
                   display: isSportsAndLiveSports ? 'none' : 'unset',
                 }}
               >
@@ -104,8 +104,8 @@ const CardContent = ({
               style={{
                 fontSize: '2.625rem',
                 marginBottom: '0.25rem',
-                color: '#666666',
-                letterSpacing: '-0.07rem',
+                color: '#444444',
+                letterSpacing: '-0.015em',
               }}
             >
               <span
@@ -125,7 +125,8 @@ const CardContent = ({
                 style={{
                   fontSize: '2.625rem',
                   marginBottom: '0.375rem',
-                  color: '#666666',
+                  color: '#444444',
+                  letterSpacing: '-0.015em',
                 }}
               >
                 <span
@@ -146,7 +147,7 @@ const CardContent = ({
                 marginBottom: '0.36rem',
                 display: 'flex',
                 letterSpacing: '-0.07rem',
-                color: '#666666',
+                color: '#444444',
               }}
               className="flex"
             >
@@ -154,6 +155,7 @@ const CardContent = ({
                 style={{
                   fontSize: '2.625rem',
                   marginRight: '3.8125rem',
+                  letterSpacing: '-0.015em',
                 }}
               >
                 <span style={{ fontSize: '2.625rem', color: '#444444', fontWeight: '700' }}>
@@ -161,7 +163,8 @@ const CardContent = ({
                 </span>{' '}
                 5,000
               </div>
-              <div style={{ fontSize: '2.625rem' }}>
+              <div style={{ fontSize: '2.625rem',
+                letterSpacing: '-0.015em', }}>
                 <span style={{ fontSize: '2.625rem', color: '#444444', fontWeight: '700' }}>
                   배당률 :
                 </span>{' '}
@@ -175,8 +178,8 @@ const CardContent = ({
                     fontSize: '2.625rem',
                     marginRight: '3.8125rem',
                     marginBottom: '0.375rem',
-                    letterSpacing: '-0.07rem',
-                    color: '#666666',
+                    letterSpacing: '-0.015em',
+                    color: '#444444',
                   }}
                 >
                   <span style={{ fontSize: '2.625rem', color: '#444444', fontWeight: '700' }}>
@@ -212,7 +215,8 @@ const CardContent = ({
                   style={{
                     fontSize: '2.625rem',
                     marginRight: '3.8125rem',
-                    color: '#666666',
+                    color: '#444444',
+                    letterSpacing: '-0.015em',
                   }}
                 >
                   <span style={{ fontSize: '2.625rem', color: '#444444', fontWeight: '700' }}>
@@ -223,7 +227,8 @@ const CardContent = ({
                 <div
                   style={{
                     fontSize: '2.625rem',
-                    color: '#666666',
+                    color: '#444444',
+                    letterSpacing: '-0.015em',
                   }}
                 >
                   <span style={{ fontSize: '2.625rem', color: '#444444', fontWeight: '700' }}>
