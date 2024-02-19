@@ -1,7 +1,7 @@
 //!-- this component was made because ProfileMenu.jsx has wrong structure.
 //!-- It's popup and show submenu on the other page.
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   setMyPageSelectedMainMenuId,
@@ -475,7 +475,7 @@ const ProfileMenu2 = ({ showSubMenu, setShowSubMenu }) => {
   const [isPopupOpen, setReauthPopupOpen] = useState(false);
   const [selectedTab, setSelectedTab] = useState(false); //!-- initial value: -1, onClick: item.id => 100ms later: -1
   const [subItems, setSubItems] = useState([]);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   // const [showSubMenu, setShowSubMenu] = useState(false);
   // const [selectedSubTab, setSelectedSubTab] = useState([]);
   // const setActiveTab = ({ index, item }) => {
