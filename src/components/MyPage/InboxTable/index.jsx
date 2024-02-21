@@ -176,8 +176,10 @@ const InboxTable = ({ array, checkedState, setCheckedState }) => {
                       ? '44rem'
                       : '47rem',
                   fontSize: '3rem',
-                  letterSpacing: '-0.07rem',
+                  // letterSpacing: '-0.07rem',
+                  letterSpacing: '0',
                   color: item.isRead !== true ? '#444444' : '#666666',
+                  fontWeight: item.isRead !== true ? 'bold' : 'normal',
                 }}
                 className="group-hover:text-gray-r585858 text-5xl text-ellipsis overflow-hidden whitespace-nowrap"
               >

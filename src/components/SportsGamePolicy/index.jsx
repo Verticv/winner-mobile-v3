@@ -2869,7 +2869,8 @@ const HistoryMenu = ({
               height: '6.375rem',
               fontSize: '2.8125rem',
               marginRight: `${!index ? '1.15rem' : ''}`,
-              letterSpacing: '-0.07rem',
+              // letterSpacing: '-0.07rem',
+              letterSpacing: '-0.1em',
             }}
             key={item.id}
             onPointerDown={() => setHover(item.id)}
@@ -3013,7 +3014,8 @@ const SportsGamePolicy = ({
                     textAlign: 'center',
                     color: '#ffffff',
                     margin: '0',
-                    letterSpacing: '-0.07rem',
+                    // letterSpacing: '-0.07rem',
+                    letterSpacing: '0',
                   }}
                   className="text-gray-r7b7b7b text-center w-full"
                 >
@@ -3025,7 +3027,8 @@ const SportsGamePolicy = ({
                     color: '#ffffff',
                     textAlign: 'center',
                     margin: '0 0 0 0.35rem',
-                    letterSpacing: '-0.07rem',
+                    // letterSpacing: '-0.07rem',
+                    letterSpacing: '0',
                   }}
                   className="text-gray-r7b7b7b text-center w-full"
                 >

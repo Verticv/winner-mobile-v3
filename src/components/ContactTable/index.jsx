@@ -117,7 +117,8 @@ const ContactTable = ({ array, checkedState, setCheckedState }) => {
                   }}
                 >
                   <p
-                    style={{ marginTop: '0.45rem', letterSpacing: '-0.05rem' }}
+                    // style={{ marginTop: '0.45rem', letterSpacing: '-0.05rem' }}
+                    style={{ marginTop: '0.45rem', letterSpacing: '0' }}
                   >
                     {truncate(type, 6, 6)}
                   </p>
@@ -129,9 +130,11 @@ const ContactTable = ({ array, checkedState, setCheckedState }) => {
                     overflow: 'hidden',
                     whiteSpace: 'nowrap',
                     fontSize: '3rem',
-                    letterSpacing: '-0.07rem',
+                    // letterSpacing: '-0.07rem',
+                    letterSpacing: '0',
                     fontWeight: item.isRead === false ? '700' : 'unset',
-                    color: item.isRead === true ? '#666666' : '#444444',
+                    // color: item.isRead === true ? '#666666' : '#444444',
+                    color: '#444444',
                     margin: '0',
                   }}
                 >
@@ -180,8 +183,10 @@ const ContactTable = ({ array, checkedState, setCheckedState }) => {
                     className="text-gray-r7b7b7b"
                     style={{
                       fontSize: '2.625rem',
-                      color: '#666666',
-                      letterSpacing: '-0.07rem',
+                      // color: '#666666',
+                      color: '#444444',
+                      // letterSpacing: '-0.07rem',
+                      letterSpacing: '0',
                       display: 'flex',
                       alignItems: 'center',
                       margin: '0',
@@ -195,7 +200,8 @@ const ContactTable = ({ array, checkedState, setCheckedState }) => {
                       height: '1.75rem',
                       width: '0.1875rem',
                       margin: 'auto 1rem auto 0.9rem',
-                      background: '#555555',
+                      // background: '#555555',
+                      background: '#999999',
                     }}
                     className="bg-gray-c5c5c5"
                   ></div>
@@ -204,8 +210,10 @@ const ContactTable = ({ array, checkedState, setCheckedState }) => {
                       height: '4.45rem',
                       lineHeight: '4.45rem',
                       fontSize: '2.625rem',
-                      color: '#666666',
-                      letterSpacing: '-0.07rem',
+                      // color: '#666666',
+                      color: '#444444',
+                      // letterSpacing: '-0.07rem',
+                      letterSpacing: '0',
                     }}
                     className="flex items-center text-gray-r7b7b7b"
                   >

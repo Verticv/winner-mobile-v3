@@ -32,7 +32,8 @@ const EsportsStructure = () => {
       ></div>
       <span
         style={{
-          letterSpacing: '-0.07rem',
+          // letterSpacing: '-0.07rem',
+          letterSpacing: '-0.025em',
           marginTop: '0.1rem',
           marginRight: '1rem',
           color: '#444444',
@@ -69,7 +70,7 @@ const EsportsStructure = () => {
     isflex,
     withoutP,
   }) => (
-    <div style={{ lineHeight: '1.4', marginTop: marginTop }}>
+    <div style={{ lineHeight: '1.4', marginTop: marginTop, letterSpacing: '-0.025em' }}>
       <div style={{ fontSize: '2.825rem' }}>
         <span
           style={{ color: '#682aa7', marginRight: '0.4rem', fontWeight: '700' }}
@@ -80,7 +81,7 @@ const EsportsStructure = () => {
       </div>
       <p
         style={{
-          color: '#828282',
+          color: '#666666',
           fontSize: '2.625rem',
           marginTop: 0,
           marginBottom: 0,
@@ -89,14 +90,15 @@ const EsportsStructure = () => {
         {text}{' '}
         <span
           style={{
-            color: '#828282',
+            color: '#33a1e9',
             marginLeft: '0.5rem',
             marginRight: '0.2rem',
+            fontWeight: 'bold'
           }}
         >
           {color1}
         </span>
-        <span style={{ color: '#828282', marginRight: '0.5rem' }}>
+        <span style={{ color: '#f04281', marginRight: '0.5rem', fontWeight: 'bold' }}>
           {color2}
         </span>
         <span style={{ margin: isflex || withoutP ? '0' : '' }}>{color3}</span>
@@ -104,7 +106,7 @@ const EsportsStructure = () => {
       {text2 && (
         <p
           style={{
-            color: '#828282',
+            color: '#666666',
             fontSize: '2.625rem',
             marginTop: isflex ? '-0.2rem' : '',
             margin: 0,
@@ -113,7 +115,7 @@ const EsportsStructure = () => {
           {text2}
         </p>
       )}
-      {text3 && <p style={{ color: '#828282', margin: 0 }}>{text3}</p>}
+      {text3 && <p style={{ color: '#666666', margin: 0 }}>{text3}</p>}
     </div>
   );
 
@@ -127,7 +129,7 @@ const EsportsStructure = () => {
     text4 = '베팅규정 : 베팅규정 확인 가능',
   }) => (
     <div
-      style={{ lineHeight: '1.4', marginTop: marginTop, fontSize: '2.625rem' }}
+      style={{ lineHeight: '1.4', marginTop: marginTop, fontSize: '2.625rem', letterSpacing: '-0.025em' }}
     >
       <div style={{ fontSize: '2.825rem' }}>
         <span
@@ -138,22 +140,22 @@ const EsportsStructure = () => {
         <span style={{ color: '#444444', fontWeight: '700' }}>{title}</span>
       </div>
       <div style={{ marginTop: '-0.2rem', fontSize: '2.625rem' }}>
-        <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+        <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
           • {text}
         </p>
       </div>
       <div style={{ marginTop: '-0rem', fontSize: '2.625rem' }}>
-        <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+        <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
           • {text2}
         </p>
       </div>
       <div style={{ marginTop: '-0rem', fontSize: '2.625rem' }}>
-        <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+        <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
           • {text3}
         </p>
       </div>
       <div style={{ marginTop: '-0rem', fontSize: '2.625rem' }}>
-        <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+        <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
           • {text4}
         </p>
       </div>
@@ -173,6 +175,7 @@ const EsportsStructure = () => {
         marginTop: marginTop,
         fontSize: '2.625rem',
         marginBottom: marginBottom,
+        letterSpacing: '-0.025em'
       }}
     >
       <div style={{ fontSize: '2.825rem' }}>
@@ -184,12 +187,12 @@ const EsportsStructure = () => {
         <span style={{ color: '#444444', fontWeight: '700' }}>{title}</span>
       </div>
       <div style={{ marginTop: '-0.2rem', fontSize: '2.625rem' }}>
-        <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+        <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
           • {text}
         </p>
       </div>
       <div style={{ marginTop: '-0rem', fontSize: '2.625rem' }}>
-        <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+        <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
           • {text2}
         </p>
       </div>
@@ -218,7 +221,8 @@ const EsportsStructure = () => {
               margin: 'auto',
             }}
           />
-          <div style={{ padding: '1.8rem', letterSpacing: '-0.06rem' }}>
+          {/* <div style={{ padding: '1.8rem', letterSpacing: '-0.06rem' }}> */}
+          <div style={{ padding: '1.8rem', letterSpacing: '-0.025em' }}>
             <Item />
             <Item
               number="2."
@@ -271,7 +275,8 @@ const EsportsStructure = () => {
             }}
           />
 
-          <div style={{ padding: '1.8rem', letterSpacing: '-0.06rem' }}>
+          {/* <div style={{ padding: '1.8rem', letterSpacing: '-0.06rem' }}> */}
+          <div style={{ padding: '1.8rem', letterSpacing: '-0.025em' }}>
             <Item title="메인(초기)화면" text="메인화면으로 이동됩니다." />
             <Item
               number="2."

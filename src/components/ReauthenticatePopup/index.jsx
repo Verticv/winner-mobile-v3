@@ -82,7 +82,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
             }}
           >
             <label
-              style={{ color: '#ffffff', fontSize: '3.75rem', fontWeight: '700' }}
+              style={{ color: '#ffffff', fontSize: '3.75rem', fontWeight: '700', letterSpacing: '0' }}
             >
               회원정보수정
             </label>
@@ -157,7 +157,8 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                   alignItems: 'center',
                   justifyContent: 'center',
                   color: '#444444',
-                  letterSpacing: '-0.01rem',
+                  // letterSpacing: '-0.01rem',
+                  letterSpacing: '0',
                 }}
                 className="flex text-gray-text flex-col items-center justify-center"
               >
@@ -225,6 +226,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                     fontSize: '3rem',
                     marginLeft: '-10rem',
                     textAlign: 'center',
+                    letterSpacing: '-0.025em'
                   }}
                   className="w-full text-5xl text-center text-gray-text outline-none tracking-tight placeholder-9da3b0 tracking-mimus05"
                   onFocus={(e) => {
@@ -271,7 +273,7 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                   }}
                 />
                 <input
-                  style={{ color: '#444444', fontSize: '3rem', textAlign:'center', marginLeft: '-10rem' }}
+                  style={{ color: '#444444', fontSize: '3rem', textAlign:'center', marginLeft: '-10rem', letterSpacing: '-0.025em' }}
                   className="w-full text-5xl text-center outline-none tracking-tight place-color-grey-2 placeholder-9da3b0 tracking-mimus05"
                   placeholder={'비밀번호'}
                   type="password"

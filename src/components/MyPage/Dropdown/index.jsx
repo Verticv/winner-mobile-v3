@@ -103,7 +103,7 @@ const Dropdown = ({
           <div
             className={`sort-by-p ${labelClasses} ${ddda ? 'ddda' : ''} `}
             // style={{ marginTop: sortValue === '전체회차' && '-0.4rem' }}
-            style={{ marginTop: sortValue === '전체회차' && '-1rem', color: '#444444' }}
+            style={{ marginTop: sortValue === '전체회차' ? '-1rem' : sortValue === '제목' ? '0' : '', color: '#444444' }}
           >
             <p style={{marginLeft: '0.2rem', marginTop: sortValue==='전체회차' ? 'unset' : sortValue==='리그선택' ? '-4.5rem' : '-3rem', letterSpacing: '-0.015em'}}>{sortValue}</p>
           </div>

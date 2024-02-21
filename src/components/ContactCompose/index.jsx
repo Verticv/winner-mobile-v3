@@ -107,6 +107,7 @@ const ContactCompose = () => {
             >
               <input
                 className="bg-white outline-none w-full h-full  tracking-tight place-color-grey-1"
+                id="title"
                 placeholder="제목을 입력하세요."
                 onFocus={() => {
                   //   const menu = document.querySelector('#main-menu');

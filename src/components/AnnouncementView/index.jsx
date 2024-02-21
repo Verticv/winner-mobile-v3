@@ -71,7 +71,8 @@ const AnnouncementView = () => {
                   padding: '0.8rem 1.73rem',
                   height: '4.5rem',
                   marginTop: '0.65rem',
-                  letterSpacing: '-0.07rem',
+                  // letterSpacing: '-0.07rem',
+                  letterSpacing: '0',
                   width: 'fit-content',
                   color: '#ffffff',
                   borderRadius: '3rem',
@@ -87,8 +88,10 @@ const AnnouncementView = () => {
               style={{
                 color: '#444444',
                 fontSize: '3rem',
-                letterSpacing: '-0.07rem',
+                // letterSpacing: '-0.07rem',
+                letterSpacing: '0',
                 marginLeft: '0.2rem',
+                fontWeight: 'bold'
               }}
               className="announcementView5 flex justify-center text-5xl w-full  tracking-tight text-gray-r454545"
             >
@@ -112,11 +115,13 @@ const AnnouncementView = () => {
             <img className="h-12 object-contain" src={WinnerLogo} alt="" />
             <div className="announcementView7 flex mt-5">
               <div
-                style={{ backgroundColor: '#555555' }}
+                // style={{ backgroundColor: '#555555' }}
+                style={{ backgroundColor: '#999999' }}
                 className="announcementView8 bg-gray-dddddd"
               ></div>
               <p
-                style={{ color: '#7b7b7b' }}
+                // style={{ color: '#7b7b7b' }}
+                style={{ color: '#444444', letterSpacing: '0' }}
                 className="text-gray-r7b7b7b tracking-tight"
               >
                 2021.06.28

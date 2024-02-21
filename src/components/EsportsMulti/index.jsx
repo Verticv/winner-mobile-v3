@@ -25,7 +25,8 @@ const EsportsMulti = () => {
     <div
       style={{
         lineHeight: '1.4',
-        letterSpacing: '-0.05rem',
+        // letterSpacing: '-0.05rem',
+        letterSpacing: '-0.025em',
         fontSize: '2.625rem',
       }}
     >
@@ -38,23 +39,23 @@ const EsportsMulti = () => {
         <span style={{ color: '#444444', fontWeight: '700' }}>{title}</span>
       </div>
       {text && (
-        <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+        <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
           {text}{' '}
           <span
             style={{
-              color: '#828282',
+              color: '#33a1e9',
               marginLeft: '0.1rem',
               marginRight: '0.2rem',
-              fontWeight: '600',
+              fontWeight: 'bold',
             }}
           >
             {color1}
           </span>
           <span
             style={{
-              color: '#828282',
+              color: '#f04281',
               marginRight: '0.5rem',
-              fontWeight: '600',
+              fontWeight: 'bold',
             }}
           >
             {color2}
@@ -65,7 +66,7 @@ const EsportsMulti = () => {
       {text1 && (
         <p
           style={{
-            color: '#828282',
+            color: '#666666',
             fontSize: '2.625rem',
             margin: 0,
             marginTop: '-0.3rem',
@@ -77,7 +78,7 @@ const EsportsMulti = () => {
       {text2 && (
         <p
           style={{
-            color: '#828282',
+            color: '#666666',
             fontSize: '2.625rem',
             margin: 0,
             marginTop: '-0.3rem',
@@ -89,7 +90,7 @@ const EsportsMulti = () => {
       {text3 && (
         <p
           style={{
-            color: '#828282',
+            color: '#666666',
             fontSize: '2.625rem',
             margin: 0,
             marginTop: '-0.3rem',
@@ -99,14 +100,14 @@ const EsportsMulti = () => {
         </p>
       )}
       {text4 && (
-        <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+        <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
           {text4}
         </p>
       )}
       {text5 && (
         <p
           style={{
-            color: '#828282',
+            color: '#666666',
             fontSize: '2.625rem',
             margin: '-0.25rem 0 0 0.4rem',
           }}
@@ -117,7 +118,7 @@ const EsportsMulti = () => {
       {text6 && (
         <p
           style={{
-            color: '#828282',
+            color: '#666666',
             fontSize: '2.625rem',
             margin: 0,
             marginTop: '-0.3rem',
@@ -127,7 +128,7 @@ const EsportsMulti = () => {
         </p>
       )}
       {text7 && (
-        <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+        <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
           {text7}
         </p>
       )}
@@ -135,7 +136,7 @@ const EsportsMulti = () => {
   );
 
   return (
-    <div style={{ borderRadius: '1em', marginTop: '-0.3rem' }}>
+    <div style={{ borderRadius: '1em', marginTop: '-0.3rem', letterSpacing: '-0.025em' }}>
       <div>
         <img src={Image8} alt="" style={{ width: '70rem' }} />
         <div
@@ -151,7 +152,8 @@ const EsportsMulti = () => {
           <div
             style={{
               lineHeight: '1.4',
-              letterSpacing: '-0.05rem',
+              // letterSpacing: '-0.05rem',
+              letterSpacing: '-0.025em',
               fontSize: '2.625rem',
             }}
           >
@@ -161,12 +163,12 @@ const EsportsMulti = () => {
               </span>
               <span style={{ color: '#444444', fontWeight: '700', }}>종목 및 경기선택</span>
             </div>
-            <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+            <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
               가. ① 게임종류를 선택합니다.
             </p>
             <span
               style={{
-                color: '#828282',
+                color: '#666666',
                 fontSize: '2.625rem',
                 marginTop: '-0.3rem',
                 margin: 0,
@@ -228,6 +230,7 @@ const EsportsMulti = () => {
               color: '#ffffff',
               marginLeft: '0.1rem',
               letterSpacing: '-0.03rem',
+              fontWeight: 'bold'
             }}
           >
             알아두세요!
@@ -320,22 +323,23 @@ const EsportsMulti = () => {
               color: '#ffffff',
               marginLeft: '0.1rem',
               letterSpacing: '-0.03rem',
+              fontWeight: 'bold'
             }}
           >
             알아두세요!
           </div>
           <div style={{ marginTop: '0.5rem' }}>
-            <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+            <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
               • 1/8 최대 : 최대 한도금액을 8로 나눈 금액 베팅
             </p>
           </div>
           <div style={{ marginTop: '0.1rem' }}>
-            <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+            <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
               • 1/4 최대 : 최대 한도금액을 4로 나눈 금액 베팅
             </p>
           </div>
           <div style={{ marginTop: '0.2rem' }}>
-            <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+            <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
               • 1/2 최대 : 최대 한도금액을 2로 나눈 금액 베팅{' '}
             </p>
           </div>
