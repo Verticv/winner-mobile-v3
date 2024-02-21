@@ -78,7 +78,8 @@ const ContactView = () => {
                   padding: '0.8rem 1.73rem',
                   height: '4.5rem',
                   marginTop: '0.65rem',
-                  letterSpacing: '-0.07rem',
+                  // letterSpacing: '-0.07rem',
+                  letterSpacing: '0',
                   width: 'fit-content',
                   color: '#ffffff',
                   borderRadius: '3rem',
@@ -94,8 +95,10 @@ const ContactView = () => {
               style={{
                 color: '#444444',
                 fontSize: '3rem',
-                letterSpacing: '-0.07rem',
+                // letterSpacing: '-0.07rem',
+                letterSpacing: '0',
                 marginLeft: '0.2rem',
+                fontWeight: 'bold'
               }}
               className="flex justify-center text-5xl w-full  tracking-tight text-gray-r454545"
             >
@@ -131,8 +134,10 @@ const ContactView = () => {
                 margin: '0',
                 fontSize: '2.4375rem',
                 marginLeft: '0.875rem',
-                letterSpacing: '-0.07rem',
-                color: '#666666',
+                // letterSpacing: '-0.07rem',
+                letterSpacing: '0',
+                // color: '#666666',
+                color: '#444444',
                 maxWidth: '52rem',
                 marginTop: '1.1rem',
               }}
@@ -214,7 +219,8 @@ const ContactView = () => {
                 paddingTop: '0.1rem',
                 fontSize: '2.8125rem',
                 color: '#666666',
-                letterSpacing: '-0.07rem',
+                // letterSpacing: '-0.07rem',
+                letterSpacing: '0',
                 margin: '0',
               }}
             >
@@ -234,6 +240,7 @@ const ContactView = () => {
               paddingLeft: '2rem',
               fontSize: '2.8125rem',
               color: '#666666',
+              letterSpacing: '0'
             }}
           >
             <div
@@ -427,6 +434,7 @@ const ContactView = () => {
                   marginLeft: '0.3rem',
                   display: 'flex',
                   marginTop: '0.2rem',
+                  letterSpacing: '-0.025em'
                 }}
               >
                 이전
@@ -475,6 +483,7 @@ const ContactView = () => {
                   marginLeft: '0.3rem',
                   display: 'flex',
                   marginTop: '0.2rem',
+                  letterSpacing: '-0.025em'
                 }}
               >
                 목록보기
@@ -521,6 +530,7 @@ const ContactView = () => {
                   marginLeft: '0.3rem',
                   display: 'flex',
                   marginTop: '0.2rem',
+                  letterSpacing: '-0.025em'
                 }}
               >
                 다음

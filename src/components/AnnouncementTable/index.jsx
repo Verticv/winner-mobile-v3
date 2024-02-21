@@ -68,7 +68,8 @@ const AnnouncementTable = ({ array, checkedState, setCheckedState }) => {
               <div className="announcementTable6">
                 <p
                   className="announcementTable6-p"
-                  style={{ color: '#666666', fontWeight: '500' }}
+                  // style={{ color: '#666666', fontWeight: '500' }}
+                  style={{ color: '#72148f', fontWeight: '500' }}
                 >
                   {item.type}
                 </p>

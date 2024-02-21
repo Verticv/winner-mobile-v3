@@ -234,7 +234,7 @@ const Faq = ({ subActiveButton, setSubActiveButton }) => {
             marginTop: '-6rem',
             marginBottom: '1.875rem',
             borderRadius:'2.8125rem',
-            position: 'relative'
+            position: 'relative',
           }}
         >
           <div className="opened-cell">

@@ -14,6 +14,7 @@ const TvBetStructure = () => {
         fontSize: '3.41188rem',
         paddingTop: '2rem',
         paddingBottom: '1.8rem',
+        letterSpacing: '-0.025em'
       }}
     >
       <img
@@ -36,7 +37,8 @@ const TvBetStructure = () => {
       <span
         className="text-22px tracking-tight text-gray-r585858 ml-3px h-22px flex items-center"
         style={{
-          letterSpacing: '-0.07rem',
+          // letterSpacing: '-0.07rem',
+          letterSpacing: '-0.025em',
           marginTop: '0.1rem',
           marginRight: '1rem',
           color: '#444444',
@@ -77,7 +79,7 @@ const TvBetStructure = () => {
   }) => (
     <div
       className="flex flex-col space-y-4px"
-      style={{ lineHeight: '1.4', marginTop: marginTop }}
+      style={{ lineHeight: '1.4', marginTop: marginTop, letterSpacing: '-0.025em' }}
     >
       <div
         className="flex text-18px tracking-tight space-x-2px flex h-18px items-center"
@@ -97,10 +99,11 @@ const TvBetStructure = () => {
       </div>
       <p
         style={{
-          color: '#828282',
+          color: '#666666',
           fontSize: '2.625rem',
           marginTop: 0,
           marginBottom: 0,
+          letterSpacing: '-0.025em'
         }}        
         className="flex h-16px items-center text-16px tracking-tight "
       >
@@ -108,7 +111,7 @@ const TvBetStructure = () => {
         <span
           className="ml-2px text-blue-r0056a6"
           style={{
-            color: '#828282',
+            color: '#666666',
             marginLeft: '0.5rem',
             marginRight: '0.2rem',
           }}
@@ -116,7 +119,7 @@ const TvBetStructure = () => {
           {color1}
         </span>
         <span
-          style={{ color: '#828282', marginRight: '0.5rem' }}
+          style={{ color: '#666666', marginRight: '0.5rem' }}
           className="mr-2px"
         >
           {color2}
@@ -125,7 +128,7 @@ const TvBetStructure = () => {
       </p>
       {text2 && (
         <p
-          style={{ color: '#828282', margin: 0, fontSize: '2.625rem' }}
+          style={{ color: '#666666', margin: 0, fontSize: '2.625rem' }}
           className="flex h-16px items-center text-16px tracking-tight "
         >
           {text2}
@@ -133,7 +136,7 @@ const TvBetStructure = () => {
       )}
       {text3 && (
         <p
-          style={{ color: '#828282', margin: 0, fontSize: '2.625rem' }}
+          style={{ color: '#666666', margin: 0, fontSize: '2.625rem' }}
           className="flex h-16px items-center text-16px tracking-tight "
         >
           {text3}
@@ -141,7 +144,7 @@ const TvBetStructure = () => {
       )}
       {text4 && (
         <p
-          style={{ color: '#828282', margin: 0, fontSize: '2.625rem' }}
+          style={{ color: '#666666', margin: 0, fontSize: '2.625rem' }}
           className="flex h-16px items-center text-16px tracking-tight "
         >
           {text4}
@@ -162,7 +165,7 @@ const TvBetStructure = () => {
   }) => (
     <div
       className="flex flex-col space-y-4px"
-      style={{ lineHeight: '1.4', marginTop: marginTop, fontSize: '2.625rem' }}
+      style={{ lineHeight: '1.4', marginTop: marginTop, fontSize: '2.625rem', letterSpacing: '-0.025em' }}
     >
       <div
         className="flex text-18px tracking-tight space-x-2px flex h-18px items-center"
@@ -180,7 +183,7 @@ const TvBetStructure = () => {
       </div>
       <div className="flex" style={{ marginTop: '-0.2rem' }}>
         <p
-          style={{ color: '#828282', margin: 0 }}
+          style={{ color: '#666666', margin: 0 }}
           className="flex h-16px items-center text-16px tracking-tight "
         >
           • {text}
@@ -188,7 +191,7 @@ const TvBetStructure = () => {
       </div>
       <div className="flex" style={{ marginTop: '-0rem' }}>
         <p
-          style={{ color: '#828282', margin: 0 }}
+          style={{ color: '#666666', margin: 0 }}
           className="flex h-16px items-center text-16px tracking-tight "
         >
           • {text2}
@@ -196,7 +199,7 @@ const TvBetStructure = () => {
       </div>
       <div className="flex" style={{ marginTop: '-0rem' }}>
         <p
-          style={{ color: '#828282', margin: 0 }}
+          style={{ color: '#666666', margin: 0 }}
           className="flex h-16px items-center text-16px tracking-tight "
         >
           • {text3}
@@ -204,7 +207,7 @@ const TvBetStructure = () => {
       </div>
       <div className="flex" style={{ marginTop: '-0rem' }}>
         <p
-          style={{ color: '#828282', margin: 0 }}
+          style={{ color: '#666666', margin: 0 }}
           className="flex h-16px items-center text-16px tracking-tight "
         >
           • {text4}
@@ -213,7 +216,7 @@ const TvBetStructure = () => {
       {text5 && (
         <div className="flex" style={{ marginTop: '-0rem' }}>
           <p
-            style={{ color: '#828282', margin: 0 }}
+            style={{ color: '#666666', margin: 0 }}
             className="flex h-16px items-center text-16px tracking-tight "
           >
             • {text5}
@@ -239,6 +242,7 @@ const TvBetStructure = () => {
         marginTop: marginTop,
         fontSize: '2.625rem',
         marginBottom: marginBottom,
+        letterSpacing: '-0.025em'
       }}
     >
       <div
@@ -257,7 +261,7 @@ const TvBetStructure = () => {
       </div>
       <div className="flex" style={{ marginTop: '-0.2rem' }}>
         <p
-          style={{ color: '#828282', margin: 0 }}
+          style={{ color: '#666666', margin: 0 }}
           className="flex h-16px items-center text-16px tracking-tight "
         >
           • {text}
@@ -266,7 +270,7 @@ const TvBetStructure = () => {
       {text1_1 && (
         <div className="flex" style={{ marginTop: '-0.2rem' }}>
           <p
-            style={{ color: '#828282', margin: 0 }}
+            style={{ color: '#666666', margin: 0 }}
             className="flex h-16px items-center text-16px tracking-tight "
           >
             • {text1_1}
@@ -275,7 +279,7 @@ const TvBetStructure = () => {
       )}
       <div className="flex" style={{ marginTop: '-0rem' }}>
         <p
-          style={{ color: '#828282', margin: 0 }}
+          style={{ color: '#666666', margin: 0 }}
           className="flex h-16px items-center text-16px tracking-tight "
         >
           • {text2}
@@ -284,7 +288,7 @@ const TvBetStructure = () => {
       {text3 && (
         <div className="flex" style={{ marginTop: '-0rem' }}>
           <p
-            style={{ color: '#828282', margin: 0 }}
+            style={{ color: '#666666', margin: 0 }}
             className="flex h-16px items-center text-16px tracking-tight "
           >
             • {text3}

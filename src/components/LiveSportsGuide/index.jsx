@@ -52,7 +52,8 @@ const LiveSportsGuide = () => {
       <span
         className="text-22px tracking-tight text-gray-r585858 ml-3px h-22px flex items-center"
         style={{
-          letterSpacing: '-0.07rem',
+          // letterSpacing: '-0.07rem',
+          letterSpacing: '-0.025em',
           marginTop: '0.1rem',
           marginRight: '0.5rem',
           color: '#444444',
@@ -105,28 +106,28 @@ const LiveSportsGuide = () => {
         </span>
         <span style={{ color: '#444444', fontWeight: '700' }}>{title}</span>
       </div>
-      <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+      <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
         {text}{' '}
         <span
           style={{
-            color: '#828282',
+            color: '#666666',
             marginLeft: '0.5rem',
             marginRight: '0.2rem',
           }}
         >
           {color1}
         </span>
-        <span style={{ color: '#828282', marginRight: '0.5rem' }}>
+        <span style={{ color: '#666666', marginRight: '0.5rem' }}>
           {color2}
         </span>
         <span style={{ margin: isflex || withoutP ? '0' : '' }}>{color3}</span>
       </p>
       {text2 && (
-        <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+        <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
           {text2}
         </p>
       )}
-      {text3 && <p style={{ color: '#828282', margin: 0 }}>{text3}</p>}
+      {text3 && <p style={{ color: '#666666', margin: 0 }}>{text3}</p>}
     </div>
   );
 
@@ -139,6 +140,7 @@ const LiveSportsGuide = () => {
     text3 = '',
     text4 = '',
     text5,
+    text6,
   }) => (
     <div
       style={{
@@ -156,38 +158,64 @@ const LiveSportsGuide = () => {
         <span style={{ color: '#444444', fontWeight: '700' }}>{title}</span>
       </div>
       <div style={{ marginTop: '-0.2rem', margin: 0, fontSize: '2.625rem' }}>
-        <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+        <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
           • {text}
         </p>
       </div>
       {text2 && (
         <div style={{ marginTop: '-0rem', margin: 0, fontSize: '2.625rem' }}>
-          <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+          <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
             • {text2}
+          </p>
+        </div>
+      )}
+      {text6 && (
+        <div style={{ marginTop: '-0rem', margin: 0, fontSize: '2.625rem' }}>
+          <p style={{ color: '#666666', fontSize: '2.625rem', margin: '0 0 3rem 0.5rem' }}>
+            - {text6}
           </p>
         </div>
       )}
       {text3 && (
         <div style={{ marginTop: '-0rem', margin: 0, fontSize: '2.625rem' }}>
-          <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+          <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
             • {text3}
           </p>
         </div>
       )}
       {text4 && (
         <div style={{ marginTop: '-0rem', margin: 0, fontSize: '2.625rem' }}>
-          <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+          <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
             • {text4}
           </p>
         </div>
       )}
       {text5 && (
         <div style={{ marginTop: '-0rem', margin: 0, fontSize: '2.625rem' }}>
-          <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+          <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
             • {text5}
           </p>
         </div>
       )}
+    </div>
+  );
+
+  const ShortItem = ({
+    marginTop,
+    text = '',
+  }) => (
+    <div
+      style={{
+        lineHeight: '1.4',
+        marginTop: marginTop,
+        fontSize: '2.625rem',
+      }}
+    >
+      <div style={{ marginTop: '-0.2rem', margin: 0, fontSize: '2.625rem' }}>
+        <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
+          {text}
+        </p>
+      </div>
     </div>
   );
 
@@ -243,7 +271,8 @@ const LiveSportsGuide = () => {
               />
               <div
                 className="pt-20px space-y-23px"
-                style={{ padding: '1.8rem', letterSpacing: '-0.06rem' }}
+                // style={{ padding: '1.8rem', letterSpacing: '-0.06rem' }}
+                style={{ padding: '1.8rem', letterSpacing: '-0.025em' }}
               >
                 <Item
                   number="1."
@@ -312,32 +341,40 @@ const LiveSportsGuide = () => {
             />
             <div
               className="pt-20px space-y-23px"
-              style={{ padding: '1.8rem', letterSpacing: '-0.06rem' }}
+              // style={{ padding: '1.8rem', letterSpacing: '-0.06rem' }}
+              style={{ padding: '1.8rem', letterSpacing: '-0.025em' }}
             >
-              <Item
+              <LongItem
                 number="1."
-                title="경기종목"
-                text="즐겨찾기 및 다양한 경기종목 선택 가능"
+                title="버튼"
+                text="리그선택:선택한 리그별 정렬 가능"
+                text2="정렬기능:시간순/리그순 경기 정렬 가능"
+                text3="진행중과 예정경기 정렬 가능"
+                text4="배당률 새로고침 가능"
                 marginTop="1.5rem"
               />
               <LongItem
                 number="2."
-                title="경기리스트"
-                text="다양한 실시간 경기정보 제공"
-                text2="배당, 영상, 통계 등 다양한 정보 제공"
+                title="상태표시"
+                text="실시간 경기영상 제공상태 표시(ON/OFF)"
+                text2="통계 및 경기정보 제공상태 표시(ON/OFF)"
                 marginTop="1.5rem"
               />
-              <LongItem
+              <ShortItem
+                text="※ 각 아이콘을 누르면 ⑤ 화면에서 확인 가능"
+                marginTop="1.5rem"
+              />
+              <Item
                 number="3."
-                title="경기영상 및 통계 제공"
-                text="실시간으로 경기영상 표시"
-                text2="매치, 통계 등 다양한 경기정보 표시"
+                title="상세 배당 개수"
+                text="배당항목 개수가 표시되며 해당 버튼을"
+                text2="누르면 상세 배당 확인 및 선택 가능"
                 marginTop="1.5rem"
               />
               <Item
                 number="4."
-                title="상세배당"
-                text="다양한 상세 배당 제공 및 선택 가능"
+                title="배당률 업데이트"
+                text="배당률 변경(업/다운) 시 화살표 아이콘 표시"
                 marginTop="1.5rem"
               />
             </div>
@@ -382,32 +419,31 @@ const LiveSportsGuide = () => {
             />
             <div
               className="pt-20px space-y-23px"
-              style={{ padding: '1.8rem', letterSpacing: '-0.06rem' }}
+              // style={{ padding: '1.8rem', letterSpacing: '-0.06rem' }}
+              style={{ padding: '1.8rem', letterSpacing: '-0.025em' }}
             >
               <Item
                 number="1."
-                title="경기종목"
+                title="경기 즐겨찾기"
                 text="즐겨찾기 및 다양한 경기종목 선택 가능"
                 marginTop="1.5rem"
               />
-              <LongItem
+              <Item
                 number="2."
-                title="경기리스트"
-                text="다양한 실시간 경기정보 제공"
-                text2="배당, 영상, 통계 등 다양한 정보 제공"
+                title="배당 즐겨찾기"
+                text="클릭 시 해당 배당 즐겨찾기 추가 및 확인 가능"
                 marginTop="1.5rem"
               />
-              <LongItem
+              <Item
                 number="3."
-                title="경기영상 및 통계 제공"
-                text="실시간으로 경기영상 표시"
-                text2="매치, 통계 등 다양한 경기정보 표시"
+                title="배당 숨김 및 보기"
+                text="클릭시 해당 배당항목 숨김 및 보기 가능"
                 marginTop="1.5rem"
               />
               <Item
                 number="4."
-                title="상세배당"
-                text="다양한 상세 배당 제공 및 선택 가능"
+                title="베팅내역 버튼"
+                text="나의 베팅내역 화면 이동 가능"
                 marginTop="1.5rem"
               />
             </div>
@@ -451,32 +487,30 @@ const LiveSportsGuide = () => {
             />
             <div
               className="pt-20px space-y-23px"
-              style={{ padding: '1.8rem', letterSpacing: '-0.06rem' }}
+              // style={{ padding: '1.8rem', letterSpacing: '-0.06rem' }}
+              style={{ padding: '1.8rem', letterSpacing: '-0.025em' }}
             >
-              <Item
+              <LongItem
                 number="1."
-                title="경기종목"
-                text="즐겨찾기 및 다양한 경기종목 선택 가능"
+                title="베팅슬립"
+                text="선택한 베팅정보 확인 및 삭제 가능"
+                text2="싱글과 멀티베팅 선택 가능"
+                text6="선택한 베팅정보 확인 및 삭제 가능"
+                text3="베팅금액 입력 가능"
+                text4="[베팅하기] 버튼을 누르면 베팅완료"
                 marginTop="1.5rem"
               />
               <LongItem
                 number="2."
-                title="경기리스트"
-                text="다양한 실시간 경기정보 제공"
-                text2="배당, 영상, 통계 등 다양한 정보 제공"
-                marginTop="1.5rem"
-              />
-              <LongItem
-                number="3."
-                title="경기영상 및 통계 제공"
-                text="실시간으로 경기영상 표시"
-                text2="매치, 통계 등 다양한 경기정보 표시"
+                title="베팅내역"
+                text="나의 베팅내역 확인 가능"
+                text2="수락 및 대기중 등 베팅상태 확인 가능"
                 marginTop="1.5rem"
               />
               <Item
-                number="4."
-                title="상세배당"
-                text="다양한 상세 배당 제공 및 선택 가능"
+                number="3."
+                title="전체보기"
+                text="베팅내역 및 베팅결과 등 확인 가능"
                 marginTop="1.5rem"
               />
             </div>

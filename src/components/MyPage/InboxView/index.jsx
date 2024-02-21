@@ -107,6 +107,8 @@ const InboxView = () => {
                 width: '100%',
                 fontSize: '2.999375rem',
                 color: '#444444',
+                letterSpacing: '-0.025em',
+                fontWeight: 'bold',
               }}
               className="flex justify-center text-5xl w-full tracking-tight text-gray-r454545"
             >
@@ -157,15 +159,18 @@ const InboxView = () => {
                   height: '1.75rem',
                   width: '0.1875rem',
                   margin: 'auto 1.1875rem',
-                  background: '#555555',
+                  // background: '#555555',
+                  background: '#999999',
                 }}
                 className="bg-gray-dddddd"
               ></div>
               <p
                 style={{
                   fontSize: '2.4375rem',
-                  color: '#7b7b7b',
+                  // color: '#7b7b7b',
+                  color: '#444444',
                   marginBottom: '2.0rem',
+                  letterSpacing: '0',
                 }}
                 className="text-gray-r7b7b7b tracking-tight"
               >
@@ -181,6 +186,7 @@ const InboxView = () => {
               paddingBottom: '4.875rem',
               paddingRight: '2.8125rem',
               paddingLeft: '2.8125rem',
+              letterSpacing: '0',
             }}
             className="w-full bg-white flex flex-col px-8 border-b border-gray-dddddd"
           >
@@ -252,6 +258,7 @@ const InboxView = () => {
                   color: '#ffffff',
                   marginTop: '0.2rem',
                   display: 'flex',
+                  letterSpacing: '-0.025em'
                 }}
               >
                 이전
@@ -299,6 +306,7 @@ const InboxView = () => {
                   color: '#ffffff',
                   marginTop: '0.2rem',
                   display: 'flex',
+                  letterSpacing: '-0.025em'
                 }}
               >
                 목록보기
@@ -343,6 +351,7 @@ const InboxView = () => {
                   color: '#ffffff',
                   marginLeft: '0.2rem',
                   display: 'flex',
+                  letterSpacing: '-0.025em'
                 }}
               >
                 다음

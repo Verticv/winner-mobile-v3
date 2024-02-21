@@ -16,7 +16,7 @@ const SportsGamePolicyTable0 = ({ array }) => {
     isLast
   }) => (
     <tr
-      style={{ color: '#444444', borderBottom: isLast ? 'unset' : '0.1875rem solid #dddddd', textAlign: 'center' }}
+      style={{ color: '#444444', borderBottom: isLast ? 'unset' : '0.1875rem solid #dddddd', textAlign: 'center', letterSpacing: '-0.015em' }}
       className={`bg-gray-fefefe tracking-tight text-gray-r585858  w-full border-b border-gray-dddddd`}
     >
       <td
@@ -140,6 +140,7 @@ const SportsGamePolicyTable0 = ({ array }) => {
               height: '9.1rem',
               background: 'linear-gradient(to right, rgb(157, 59, 187), rgb(84, 35, 160))',
               borderTopLeftRadius: '1.3rem',
+              fontWeight: 'bold'
             }}
           >
             <td

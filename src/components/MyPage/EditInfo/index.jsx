@@ -36,7 +36,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
     const Title = ({ text }) => (
         <div style={{ width: "24rem", marginRight: '2.7rem', background: '#9b6bd4', flexShrink: '0', borderRadius: '0.5rem' }}>
             {/* <div style={{ fontSize: '2.8125rem', color: text === '레벨' ? '#ffffff' : '#ffffff', padding: '1.9rem 0 0 1.25rem', letterSpacing: '-0.07rem' }}>{text}</div> */}
-            <div style={{ fontSize: '2.8125rem', color: text === '레벨' ? '#ffffff' : '#ffffff', padding: '0rem 0 0 1.25rem', letterSpacing: '-0.07rem', height: '7.3rem', lineHeight: '7.3rem' }}>{text}</div>
+            <div style={{ fontSize: '2.8125rem', color: text === '레벨' ? '#ffffff' : '#ffffff', padding: '0rem 0 0 1.25rem', letterSpacing: '-0.025em', height: '7.3rem', lineHeight: '7.3rem' }}>{text}</div>
         </div>
     )
 
@@ -59,7 +59,7 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                         <div className="form-section">
                             <Title text="아이디" />
                             <div className="lable-or-input"
-                                style={{ overflow: 'hidden' }}
+                                style={{ overflow: 'hidden', letterSpacing: '-0.025em' }}
                                 onClick={() => setSelectedInput(0)}
                             >
                                 <label className="text-gray-r585858 " disabled style={{ color: '#444444' }}>louie3</label>
@@ -267,7 +267,8 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                 fontSize: '2.80625rem',
                                 color: '#ffffff',
                                 marginRight: '-0.19rem',
-                                letterSpacing: '-0.06rem',
+                                // letterSpacing: '-0.06rem',
+                                letterSpacing: '-0.025em',
                                 textAlign: 'center',
                                 width: ' 36.4375rem',
                             }} className='shadow-text-myPage'>수정하기</p>

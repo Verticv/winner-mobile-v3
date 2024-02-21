@@ -146,7 +146,8 @@ const Inbox = ({ activeButton, setActiveButton }) => {
     return (
       <div className="flex items-center space-x-20px coupon-title">
         <div
-          style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem' }}
+          // style={{ fontSize: '2.625rem', letterSpacing: '-0.07rem' }}
+          style={{ fontSize: '2.625rem', letterSpacing: '-0.025em' }}
           className=" racking-tight text-gray-r8c8c8c"
         >
           <span style={{ color: '#ffffff' }}>{text} </span>
@@ -253,7 +254,8 @@ const Inbox = ({ activeButton, setActiveButton }) => {
                 style={{
                   fontSize: '2.8125rem',
                   marginTop: '0.2rem',
-                  letterSpacing: '-0.07rem',
+                  // letterSpacing: '-0.07rem',
+                  letterSpacing: '-0.025em',
                   color: '#ffffff',
                 }}
                 className="shadow-text-myPage  tracking-tight text-14px text-white mb-2"
@@ -291,7 +293,8 @@ const Inbox = ({ activeButton, setActiveButton }) => {
                   fontSize: '2.8125rem',
                   color: '#ffffff',
                   marginTop: '0.2rem',
-                  letterSpacing: '-0.07rem',
+                  // letterSpacing: '-0.07rem',
+                  letterSpacing: '-0.025em',
                 }}
                 className="shadow-text-myPage  tracking-tight text-14px text-white pb-2"
               >
@@ -331,7 +334,8 @@ const Inbox = ({ activeButton, setActiveButton }) => {
                   fontSize: '2.8125rem',
                   color: '#ffffff',
                   marginTop: '0.2rem',
-                  letterSpacing: '-0.07rem',
+                  // letterSpacing: '-0.07rem',
+                  letterSpacing: '-0.025em',
                 }}
                 className="shadow-text-myPage  tracking-tight text-14px text-white pb-2"
               >

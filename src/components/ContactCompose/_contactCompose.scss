@@ -37,6 +37,19 @@ input {
     }
 }
 
+#title {
+    letter-spacing: 0;
+    color: #444444;
+}
+
+
+
+#search {
+    &::placeholder {
+        letter-spacing: -0.015em;
+    }
+}
+
 .textarea-container {
     height: 70.25rem;
     // padding-top: 2.35rem;
@@ -58,7 +71,8 @@ input {
         background: bottom;
         border: 0;
         padding: 0;
-        letter-spacing: -0.07rem;
+        // letter-spacing: -0.07rem;
+        letter-spacing: 0;
         color: #444444;
         font-family: "Malgun Gothic";
     }

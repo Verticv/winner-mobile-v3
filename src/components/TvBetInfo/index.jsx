@@ -20,6 +20,7 @@ const TvBetInfo = () => {
         marginTop: marginTop,
         fontSize: '2.625rem',
         marginBottom: marginBottom,
+        letterSpacing: '-0.025em'
       }}
     >
       <div
@@ -128,12 +129,14 @@ const TvBetInfo = () => {
                 fontSize: '2.825rem',
                 color: '#ffffff',
                 marginLeft: '0.1rem',
-                letterSpacing: '-0.03rem',
+                // letterSpacing: '-0.03rem',
+                letterSpacing: '-0.025em',
+                fontWeight: 'bold'
               }}
             >
               알아두세요!
             </div>
-            <div className="flex flex-col" style={{ marginTop: '0.35rem' }}>
+            <div className="flex flex-col" style={{ marginTop: '0.35rem', letterSpacing: '-0.025em' }}>
               <p style={{ color: '#8c8c8c', fontSize: '2.625rem', margin: 0 }}>
                 ※ ④[이벤트정보] 화면에서 현재 ‘라이브’ 중인 게임과
               </p>
@@ -151,7 +154,7 @@ const TvBetInfo = () => {
               </p>
             </div>
 
-            <div className="flex flex-col" style={{ marginTop: '3rem' }}>
+            <div className="flex flex-col" style={{ marginTop: '3rem', letterSpacing: '-0.025em' }}>
               <p style={{ color: '#8c8c8c', fontSize: '2.625rem', margin: 0 }}>
                 ※ ⑤[플레이방법] 메뉴에서 각 게임별 이용방법과
               </p>
@@ -198,7 +201,8 @@ const TvBetInfo = () => {
           <div
             style={{
               padding: '1.8rem',
-              letterSpacing: '-0.06rem',
+              // letterSpacing: '-0.06rem',
+              letterSpacing: '-0.025em',
               paddingTop: '2.8rem',
             }}
           >

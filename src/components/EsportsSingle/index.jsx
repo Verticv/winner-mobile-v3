@@ -17,7 +17,8 @@ const EsportsSingle = () => {
     color3 = null,
     withoutP,
   }) => (
-    <div style={{ lineHeight: '1.4', letterSpacing: '-0.04rem' }}>
+    // <div style={{ lineHeight: '1.4', letterSpacing: '-0.04rem' }}>
+    <div style={{ lineHeight: '1.4', letterSpacing: '-0.025em' }}>
       <div style={{ fontSize: '2.825rem' }}>
         <span
           style={{ color: '#682aa7', marginRight: '0.4rem', fontWeight: '700' }}
@@ -26,18 +27,18 @@ const EsportsSingle = () => {
         </span>
         <span style={{ color: '#444444', fontWeight: '700' }}>{title}</span>
       </div>
-      <span style={{ color: '#828282', fontSize: '2.625rem' }}>
+      <span style={{ color: '#666666', fontSize: '2.625rem' }}>
         {text}{' '}
         <span
           style={{
-            color: '#828282',
+            color: '#666666',
             marginLeft: '0.5rem',
             marginRight: '0.2rem',
           }}
         >
           {color1}
         </span>
-        <span style={{ color: '#828282', marginRight: '0.5rem' }}>
+        <span style={{ color: '#666666', marginRight: '0.5rem' }}>
           {color2}
         </span>
         <p style={{ margin: withoutP ? '0' : '' }}>{color3}</p>
@@ -45,7 +46,7 @@ const EsportsSingle = () => {
       {text2 && (
         <span
           style={{
-            color: '#828282',
+            color: '#666666',
             fontSize: '2.625rem',
             marginTop: '-0.3rem',
           }}
@@ -53,7 +54,7 @@ const EsportsSingle = () => {
           {text2}
         </span>
       )}
-      {text3 && <span style={{ color: '#828282' }}>{text3}</span>}
+      {text3 && <span style={{ color: '#666666' }}>{text3}</span>}
     </div>
   );
 
@@ -71,7 +72,8 @@ const EsportsSingle = () => {
             border: '0.1rem solid #cccccc',
           }}
         >
-          <div style={{ lineHeight: '1.4', letterSpacing: '-0.04rem' }}>
+          {/* <div style={{ lineHeight: '1.4', letterSpacing: '-0.04rem' }}> */}
+          <div style={{ lineHeight: '1.4', letterSpacing: '-0.025em' }}>
             <div style={{ fontSize: '2.825rem' }}>
               <span
                 style={{
@@ -84,12 +86,12 @@ const EsportsSingle = () => {
               </span>
               <span style={{ color: '#444444', fontWeight: '700'}}>종목 및 경기선택</span>
             </div>
-            <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+            <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
               가. ① 게임종류를 선택합니다.
             </p>
             <p
               style={{
-                color: '#828282',
+                color: '#666666',
                 fontSize: '2.625rem',
                 marginTop: '-0.3rem',
                 margin: 0,
@@ -146,7 +148,7 @@ const EsportsSingle = () => {
         }}
       />
 
-      <div style={{}}>
+      <div style={{ letterSpacing: '-0.025em' }}>
         <img src={Image5} alt="" style={{ width: '70rem' }} />
         <div
           style={{
@@ -179,22 +181,23 @@ const EsportsSingle = () => {
               color: '#ffffff',
               marginLeft: '0.1rem',
               letterSpacing: '-0.03rem',
+              fontWeight: 'bold'
             }}
           >
             알아두세요!
           </div>
           <div style={{ marginTop: '0.5rem' }}>
-            <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+            <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
               • 1/8 최대 : 최대 한도금액을 8로 나눈 금액 베팅
             </p>
           </div>
           <div style={{ marginTop: '0.1rem' }}>
-            <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+            <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
               • 1/4 최대 : 최대 한도금액을 4로 나눈 금액 베팅
             </p>
           </div>
           <div style={{ marginTop: '0.2rem' }}>
-            <p style={{ color: '#828282', fontSize: '2.625rem', margin: 0 }}>
+            <p style={{ color: '#666666', fontSize: '2.625rem', margin: 0 }}>
               • 1/2 최대 : 최대 한도금액을 2로 나눈 금액 베팅
             </p>
           </div>
