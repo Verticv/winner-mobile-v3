@@ -27,12 +27,14 @@
         display: flex;
         align-items: center;
         color: #ffffff;
-        letter-spacing: -0.04rem;
+        // letter-spacing: -0.04rem;
+        letter-spacing: 0;
 
 
         .content_3 {
             display: flex;
             align-items: center;
+            font-weight: bold;
         }
 
         .content_4 {
@@ -44,6 +46,7 @@
             display: flex;
             align-items: center;
             margin-left: -0.25rem;
+            font-weight: bold;
         }
 
         .content_6 {
@@ -161,7 +164,7 @@
     }
 
     .Gray_Content {
-        color: #666666;
+        color: #444444;
     }
 
     .Day_Content {
@@ -184,7 +187,8 @@
 }
 
 .calender_content1 {
-    color: #666666;
+    // color: #666666;
+    color: #444444;
     letter-spacing: -0.04rem;
     justify-content: center;
     align-items: center;
@@ -217,7 +221,8 @@
 }
 
 .button-content {
-    border-radius: 0.5rem;
+    // border-radius: 0.5rem;
+    border-radius: 1rem;
     justify-content: center;
     align-items: center;
     cursor: pointer;

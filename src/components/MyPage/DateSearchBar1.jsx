@@ -41,15 +41,18 @@ const DateSearchBar1 = ({
   const YearButton = () => (
     <div
       style={{
-        backgroundColor: '#3b3b3b',
+        // backgroundColor: '#3b3b3b',
+        backgroundColor: '#583ea5',
         borderColor: 'transparent',
         display: 'flex',
         alignItems: 'center',
         borderWidth: '0.4rem',
-        color: '#ccc2b6',
+        // color: '#ccc2b6',
+        color: '#ffffff',
         width: '10rem',
         height: '4rem',
         justifyContent: 'center',
+        fontWeight: 'bold'
       }}
     >
       <p
@@ -67,15 +70,18 @@ const DateSearchBar1 = ({
   const MonthButton = ({ selectedMonth }) => (
     <div
       style={{
-        backgroundColor: '#3b3b3b',
+        // backgroundColor: '#3b3b3b',
+        backgroundColor: '#583ea5',
         borderColor: 'transparent',
         display: 'flex',
         alignItems: 'center',
         borderWidth: '0.4rem',
-        color: '#ccc2b6',
+        // color: '#ccc2b6',
+        color: '#ffffff',
         width: '7rem',
         height: '4rem',
         justifyContent: 'center',
+        fontWeight: 'bold'
       }}
     >
       <p

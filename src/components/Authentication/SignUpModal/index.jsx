@@ -64,30 +64,36 @@ const SignUpModal = ({
   const listOfYears = Array.from({ length: 101 }, (_, i) => getCurrentYear - i);
   const YearButton = () => (
     <div style={{
-      backgroundColor: "#3b3b3b",
+      // backgroundColor: "#3b3b3b",
+      backgroundColor: "#583ea5",
       borderColor: "transparent",
       display: 'flex',
       alignItems: 'center',
       borderWidth: '0.4rem',
-      color: '#ccc2b6',
+      // color: '#ccc2b6',
+      color: '#ffffff',
       width: '10rem',
       height: '4rem',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      fontWeight: 'bold'
     }}>
       <p style={{ textAlign: 'center', fontSize: '2.6rem', paddingTop: '0.2rem' }}>{selectedYear}년</p>
     </div>
   );
   const MonthButton = ({ selectedMonth }) => (
     <div style={{
-      backgroundColor: "#3b3b3b",
+      // backgroundColor: "#3b3b3b",
+      backgroundColor: "#583ea5",
       borderColor: "transparent",
       display: 'flex',
       alignItems: 'center',
       borderWidth: '0.4rem',
-      color: '#ccc2b6',
+      // color: '#ccc2b6',
+      color: '#ffffff',
       width: '7rem',
       height: '4rem',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      fontWeight: 'bold'
     }}>
       <p style={{ textAlign: 'center', fontSize: '2.6rem', paddingTop: '0.2rem' }}>{selectedMonth}월</p>
     </div>
