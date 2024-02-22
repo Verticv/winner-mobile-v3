@@ -561,11 +561,22 @@
   border-radius: 1rem;
   /* filter: brightness(125%); */
 }
+
 .react-datepicker__day--today,
 .react-datepicker__month-text--today,
 .react-datepicker__quarter-text--today,
 .react-datepicker__year-text--today {
   font-weight: bold;
+  /* background-color: #cb78e6; */
+  color: #444444;
+  border-radius: 1rem;
+}
+.react-datepicker__day--today {
+  font-weight: bold;
+  /* background-color: #cb78e6; */
+  color: #444444;
+  border-radius: 1rem;
+
 }
 .react-datepicker__day--highlighted,
 .react-datepicker__month-text--highlighted,
