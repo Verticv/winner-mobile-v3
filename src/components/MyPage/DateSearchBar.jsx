@@ -114,7 +114,8 @@ const DateSearchBar = ({
             : '1.2rem 1.875rem'
           : '0 3.875rem 0 0',
         width: withMargin ? '' : '73.875rem',
-        background: 'linear-gradient(to right,#5e2c89,#42227e)',
+        // background: 'linear-gradient(to right,#5e2c89,#42227e)',
+        background: '#5e2c89',
         borderRadius: '1.1rem',
         paddingTop: isPoints ? '0' : '',
         marginTop:

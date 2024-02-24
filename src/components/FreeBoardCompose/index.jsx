@@ -43,6 +43,7 @@ const FreeBoardCompose = () => {
                         // style={{ height: '9.1875rem', borderBottomWidth: '0.1875rem', paddingLeft: '2.6875rem' }}
                         // className="w-full text-5xl bg-gray-fafafa border-b border-gray-ededed"
                         className='input-div'
+                        style={{ backgroundColor: 'rgb(247, 247, 247)' }}
                     >
                         <input
                             placeholder="제목을 입력하세요."
@@ -70,7 +71,7 @@ const FreeBoardCompose = () => {
 
                     <BoardViewPanel isAttached={true} attachedArray={attachedArray} setAttachedArray={setAttachedArray} isSportsAndLiveSports={true} />
 
-                    <div style={{ height: '0.2rem', marginTop: '4rem', backgroundColor: '#e5e7eb', }}></div>
+                    {attachedArray.length > 0 && (<div style={{ height: '0.2rem', marginTop: '4rem', backgroundColor: '#e5e7eb', }}></div>)}
 
                     <div style={{ height: "70.25rem", paddingTop: '2.4rem', paddingLeft: '2.4875rem', fontSize: '2.8125rem', background: '#ffffff', borderBottomRightRadius: '1.1rem', borderBottomLeftRadius: '1.1rem' }} className="placeholder-white">
                         <textarea
@@ -97,14 +98,14 @@ const FreeBoardCompose = () => {
                 <button style={{ background: 'linear-gradient(to right, rgb(21, 207, 238), rgb(49, 151, 229))', height: '7.3125rem', padding: '', fontSize: '2.8125rem' }} onClick={() => navigate("/mypage/freeboard")} className='shadow-box-myPage hover'>
                     <div style={{ background: 'linear-gradient(to right, rgb(21, 207, 238), rgb(49, 151, 229))', width: '100%', height: '100%', borderRadius: '1rem', padding: '0.1875rem' }}>
                         <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to right, rgb(21, 207, 238), rgb(49, 151, 229))', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <span className="shadow-text-myPage" style={{ color: '#ffffff' }}>작성하기</span>
+                            <span className="shadow-text-myPage" style={{ color: '#ffffff', textShadow: '0 0 0.938rem rgba(0,0,0,0.5)' }}>작성하기</span>
                         </div>
                     </div>
                 </button>
                 <button style={{ background: 'linear-gradient(to right, rgb(255, 119, 96), rgb(241, 74, 83))', height: '7.3125rem', padding: '', fontSize: '2.8125rem' }} onClick={() => navigate("/mypage/freeboard")} className='shadow-box-myPage hover'>
                     <div style={{ background: 'linear-gradient(to right, rgb(255, 119, 96), rgb(241, 74, 83))', width: '100%', height: '100%', borderRadius: '1rem', padding: '0.1875rem' }}>
                         <div style={{ width: '100%', height: '100%', background: 'linear-gradient(to right, rgb(255, 119, 96), rgb(241, 74, 83))', borderRadius: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <span className="shadow-text-myPage" style={{ color: '#ffffff' }}>취소하기</span>
+                            <span className="shadow-text-myPage" style={{ color: '#ffffff', textShadow: '0 0 0.938rem rgba(0,0,0,0.5)' }}>취소하기</span>
                         </div>
                     </div>
                 </button>

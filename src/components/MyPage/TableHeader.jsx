@@ -109,7 +109,7 @@ const TableHeader = ({
             fontWeight: 'bold',
             marginTop: '-0.626rem',
             // marginRight: isSportsResult? '-2rem': '-1.813rem',
-            marginRight: isSportsResult? '-2rem': isCompose ? '1.5rem' : smallCard ? '0.8rem' : isPowerLadder ? '0.3rem' : '0.0rem',
+            marginRight: isSportsResult? '-1.7rem': isCompose ? '1.5rem' : smallCard ? '0.8rem' : isPowerLadder ? '0.3rem' : '0.0rem',
           }}
           className="h-full flex items-center justify-end"
         >
@@ -124,9 +124,10 @@ const TableHeader = ({
               ? '13.7rem'
               : isFreeboard
               // ? '13.5rem'
-              ? '13.0rem'
+              ? '12.0rem'
               : smallCard
-              ? '13.5rem'
+              // ? '13.5rem'
+              ? '11.5rem'
               : middleText === 'VS'
               // ? '13.75rem'
               ? '13.00rem'
@@ -134,7 +135,7 @@ const TableHeader = ({
             fontWeight: 'bold',
             marginTop: '-1.064rem',
             // marginRight: isSportsResult?'-2.25rem':'-1.25rem',
-            marginRight: isSportsResult?'-4.25rem': isCompose ? '1rem' : smallCard ? '0.3rem' : isPowerLadder ? '-0.45rem' : '-1.25rem',
+            marginRight: isSportsResult?'-3.25rem': isCompose ? '1rem' : smallCard ? '0.3rem' : isPowerLadder ? '-0.45rem' : '-1.25rem',
           }}
           className="h-full flex items-center justify-end"
         >
@@ -151,15 +152,16 @@ const TableHeader = ({
               ? '12.5rem'
               : isFreeboard
               // ? '12.2rem'
-              ? '13.5rem'
+              ? '12.0rem'
               : smallCard
-              ? '13.2rem'
+              // ? '13.2rem'
+              ? '12.2rem'
               // : '14.388rem',
               : '13.1rem',
             fontWeight: 'bold',
             marginTop: '-0.626rem',
             // marginRight: '-1.188rem',
-            marginRight: '-0.188rem',
+            marginRight: isFreeboard ? '-0.788rem' : '-1.588rem',
           }}
           className="h-full flex items-center justify-end"
         >

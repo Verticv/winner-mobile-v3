@@ -34,7 +34,7 @@ const Contact = ({ subActiveButton, setSubActiveButton }) => {
       path: '/cscenter/all/contact/all/livesports',
     },
     {
-      text: '슬롯게임',
+      text: '슬롯',
       id: 4,
       width: '11.5625rem',
       path: '/cscenter/all/contact/all/slot',

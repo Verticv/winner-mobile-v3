@@ -15,7 +15,8 @@ const FreeBoardPanel = ({
 
     return (
         <>
-            <div style={{ background: 'linear-gradient(to top,#ecebeb, #dbb0e8 50%, #cb78e6 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.8)', padding: '0.1875rem', borderRadius: '1.875rem'}}>
+            {/* <div style={{ background: 'linear-gradient(to top,#ecebeb, #dbb0e8 50%, #cb78e6 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.8)', padding: '0.1875rem', borderRadius: '1.875rem'}}> */}
+            <div style={{ background: 'linear-gradient(to top,#ecebeb, #dbb0e8 50%, #cb78e6 )', boxShadow: '0 0 0.75rem 0 rgba(0, 0, 0, 0.8)', padding: '0.1875rem', borderRadius: '1.875rem'}}>
                 <div style={{ borderRadius: "1.875rem", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#ffffff' }} className="shadow-subNavbar bg-gray-fafafa">
                     <TableHeader smallCard isFreeboard />
                     <div style={{ padding: '0.9rem' }} className="w-full">
@@ -45,7 +46,8 @@ const FreeBoardPanel = ({
                 </div>
             </div>
 
-            <div style={{ background: 'linear-gradient(to top,#ecebeb, #dbb0e8 50%, #cb78e6 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.8)', padding: '0.1875rem', borderRadius: '1.875rem', marginTop: '1.7rem' }}>
+            {/* <div style={{ background: 'linear-gradient(to top,#ecebeb, #dbb0e8 50%, #cb78e6 )', boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.8)', padding: '0.1875rem', borderRadius: '1.875rem', marginTop: '1.7rem' }}> */}
+            <div style={{ background: 'linear-gradient(to top,#ecebeb, #dbb0e8 50%, #cb78e6 )', boxShadow: '0 0 0.75rem 0 rgba(0, 0, 0, 0.8)', padding: '0.1875rem', borderRadius: '1.875rem', marginTop: '1.7rem' }}>
                 <div style={{ borderRadius: "1.875rem", paddingBottom: '0.5625rem', color: '#ccc2b6', background: '#ffffff' }} className="shadow-subNavbar bg-gray-fafafa">
                     <TableHeader smallCard isFreeboard />
                     <div style={{ padding: '0.9rem' }} className="w-full">

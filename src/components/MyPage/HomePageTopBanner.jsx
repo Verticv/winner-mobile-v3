@@ -58,7 +58,7 @@ const HomePageTopBanner = ({
           // style={{ marginTop: '0.5rem' }}
           style={{ marginTop: '0.7rem' }}
         />
-        <span className="page-title">{pageTitle}</span>
+        <span className="page-title" style={{ marginBottom: '1rem' }}>{pageTitle}</span>
         <img
           onClick={() => {
             dispatch(resetMyPageSelectedMainMenuId());

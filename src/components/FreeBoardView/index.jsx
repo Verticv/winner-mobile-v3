@@ -123,7 +123,8 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
                     <div className="second-card" style={{ width: '100%' }}>
                         <img src={WinnerSmall} alt="" />
                         <div
-                            className='comment-container'>
+                            className='comment-container'
+                            style={{backgroundColor: '#ffffff'}}>
                             <div className="comment">댓글</div>
                             <div className="num-2">2</div>
                         </div>

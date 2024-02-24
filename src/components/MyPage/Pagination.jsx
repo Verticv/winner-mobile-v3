@@ -4,10 +4,10 @@ import LeftIcon from '../../assets/myPage/Pagination-Icon/nav-left-arrow-v3.png'
 import RightIcon from '../../assets/myPage/Pagination-Icon/nav-right-arrow-v3.png';
 import DoubleLeftIcon from '../../assets/myPage/Pagination-Icon/two-left-arrow-v3.png';
 import DoubleRightIcon from '../../assets/myPage/Pagination-Icon/two-right-arrow-v3.png';
-import BetHistoryLeftIcon from '../../assets/myPage/bet-history/left.png';
-import BetHistoryRightIcon from '../../assets/myPage/bet-history/right.png';
-import BetHistoryDoubleLeftIcon from '../../assets/myPage/bet-history/double_left.png';
-import BetHistoryDoubleRightIcon from '../../assets/myPage/bet-history/double_right.png';
+// import BetHistoryLeftIcon from '../../assets/myPage/bet-history/left.png';
+// import BetHistoryRightIcon from '../../assets/myPage/bet-history/right.png';
+// import BetHistoryDoubleLeftIcon from '../../assets/myPage/bet-history/double_left.png';
+// import BetHistoryDoubleRightIcon from '../../assets/myPage/bet-history/double_right.png';
 
 import bg from '../../assets/myPage/Pagination-Icon/background-v3.png';
 
@@ -38,7 +38,8 @@ const Pagination = ({
           marginTop: '-1rem',
         }}
         className="cursor-pointer object-contain max-w-none ddddddddddddd"
-        src={isBetHistoryPopup ? BetHistoryLeftIcon : LeftIcon}
+        // src={isBetHistoryPopup ? BetHistoryLeftIcon : LeftIcon}
+        src={isBetHistoryPopup ? LeftIcon : LeftIcon}
         alt="arrow"
       />
     </button>
@@ -64,7 +65,8 @@ const Pagination = ({
           marginTop: '-1rem',
         }}
         className="cursor-pointer max-w-none object-contain"
-        src={isBetHistoryPopup ? BetHistoryRightIcon : RightIcon}
+        // src={isBetHistoryPopup ? BetHistoryRightIcon : RightIcon}
+        src={isBetHistoryPopup ? RightIcon : RightIcon}
         alt="arrow"
       />
     </button>
@@ -101,7 +103,8 @@ const Pagination = ({
             filter: isBetHistoryPopup ? 'brightness(1) invert(0.7)' : '',
           }}
           className="cursor-pointer object-contain max-w-none"
-          src={isBetHistoryPopup ? BetHistoryDoubleLeftIcon : DoubleLeftIcon}
+          // src={isBetHistoryPopup ? BetHistoryDoubleLeftIcon : DoubleLeftIcon}
+          src={isBetHistoryPopup ? DoubleLeftIcon : DoubleLeftIcon}
           alt=""
         />
       </button>
@@ -278,7 +281,8 @@ const Pagination = ({
             filter: isBetHistoryPopup ? 'brightness(1) invert(0.7)' : '',
           }}
           className=" cursor-pointer object-contain max-w-none"
-          src={isBetHistoryPopup ? BetHistoryDoubleRightIcon : DoubleRightIcon}
+          // src={isBetHistoryPopup ? BetHistoryDoubleRightIcon : DoubleRightIcon}
+          src={isBetHistoryPopup ? DoubleRightIcon : DoubleRightIcon}
           alt=""
         />
       </button>
