@@ -128,7 +128,8 @@ const TableHeader = ({
               : smallCard
               ? '13.5rem'
               : middleText === 'VS'
-              ? '13.75rem'
+              // ? '13.75rem'
+              ? '13.00rem'
               : '15.7rem',
             fontWeight: 'bold',
             marginTop: '-1.064rem',
@@ -153,7 +154,8 @@ const TableHeader = ({
               ? '13.5rem'
               : smallCard
               ? '13.2rem'
-              : '14.388rem',
+              // : '14.388rem',
+              : '13.1rem',
             fontWeight: 'bold',
             marginTop: '-0.626rem',
             // marginRight: '-1.188rem',
@@ -177,7 +179,8 @@ const TableHeader = ({
               : smallCard
               ? '10rem'
               : isPowerLadder 
-              ? '9rem'
+              // ? '9rem'
+              ? '9.5rem'
               : '10rem',
             fontWeight: 'bold',
             marginTop: '-1.001rem',

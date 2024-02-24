@@ -108,6 +108,7 @@ const PointsPage = ({
               alignItems: 'center',
               justifyContent: 'center',
               flexDirection: 'column',
+              paddingTop: '2rem'
             }}
           >
             <div
@@ -153,6 +154,7 @@ const PointsPage = ({
               alignItems: 'center',
               justifyContent: 'center',
               flexDirection: 'column',
+              paddingTop: '2rem'
             }}
           >
             <div
@@ -205,6 +207,7 @@ const PointsPage = ({
               alignItems: 'center',
               justifyContent: 'center',
               flexDirection: 'column',
+              paddingTop: '2rem'
             }}
           >
             <div
@@ -252,6 +255,7 @@ const PointsPage = ({
               justifyContent: 'center',
               flexDirection: 'column',
               paddingRight: '0.26rem',
+              paddingTop: '2rem'
             }}
           >
             <div
@@ -299,6 +303,7 @@ const PointsPage = ({
               alignItems: 'center',
               justifyContent: 'center',
               flexDirection: 'column',
+              paddingTop: '2rem'
             }}
           >
             <div

@@ -176,15 +176,15 @@ const FixedMenu = ({
             Items.map((item, index) => (
               
               <button
-                className={`nav-item1 ${selectedTab === item.id ? 'active' : ''}`}
+                className={`nav-item1 ${!isMyPage && selectedTab === item.id ? 'active' : ''}`}
                 key={item.id}
                 id={`t-sub${index}`}
                 onPointerUp={() => {
                   if (isMyPage) navigate(`/main?tab=${index}`); //!- on myPage, go to /main with tab index
                   else setActiveTab({index,item})
                 }}>
-                { selectedTab !== item.id && (<img src={item.icon} alt="right" className="ml-10px object-none" />)}
-                { selectedTab === item.id && (<img src={item.OnIcon} alt="right" className="ml-10px object-none" />)}
+                { isMyPage ? (<img src={item.icon} alt="right" className="ml-10px object-none" />) : selectedTab !== item.id ? (<img src={item.icon} alt="right" className="ml-10px object-none" />) : (<img src={item.OnIcon} alt="right" className="ml-10px object-none" />)}
+                
                 <p>
                   {item.title}
                 </p>

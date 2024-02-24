@@ -120,7 +120,7 @@ const SportsTableHeader = ({
               ? '13.5rem'
               : middleText === 'VS'
               ? '13.75rem'
-              : '14.5rem',
+              : '14.0rem',
             fontWeight: 'bold',
           }}
           className="h-full flex items-center justify-end"
@@ -137,7 +137,7 @@ const SportsTableHeader = ({
               ? '12.2rem'
               : smallCard
               ? '13.2rem'
-              : '13.5rem',
+              : '13.2rem',
             fontWeight: 'bold',
           }}
           className="h-full flex items-center justify-end"

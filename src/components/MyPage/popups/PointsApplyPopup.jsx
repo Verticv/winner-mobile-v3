@@ -77,19 +77,22 @@ const PointsApplyPopup = ({ setPopupOpen }) => {
                     {/* </div> */}
                     <div style={{ display: 'flex', marginTop: isMobile ? '3rem' : '4rem' }}>
                         <div
-                            style={{ width: "36.4375rem", height: '7.3125rem', marginRight: '1rem', borderRadius: '3.625rem', marginBottom: '', marginTop: '', boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)" }}>
+                            // style={{ width: "36.4375rem", height: '7.3125rem', marginRight: '1rem', borderRadius: '3.625rem', marginBottom: '', marginTop: '', boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)" }}>
+                            style={{ width: "36.4375rem", height: '7.3125rem', marginRight: '1rem', borderRadius: '3.625rem', marginBottom: '', marginTop: '', boxShadow: "0px 0.563rem 0.938rem 0px rgba(0, 0, 0, 0.3)" }}>
                             <button
                                 style={{ width: "100%", height: '100%', marginBottom: '1.5625rem', background: 'linear-gradient(to right, #df52ff, #6b22ff)', borderRadius: '3.625rem' }}
                                 className="hover"
                             >
                                 {/* <div style={{ borderColor: "#ff8f63" }} className="w-full h-full flex items-center justify-center rounded-2xl border border-blue-r3ba3fc bg-gradient-to-b from-orange-ff7a45 via-orange-f56032 to-orange-e9441d cursor-pointer"> */}
                                 <div style={{ borderColor: "#ff8f63", display: 'flex', justifyContent:'center', alignItems: 'center' }}>
-                                    <span style={{ fontSize: '2.8125rem', color: '#ffffff', display: 'inline-block', letterSpacing: '-0.07rem', marginTop: '0.5rem', marginLeft: '0.2rem' }} >포인트전환</span>
+                                    {/* <span style={{ fontSize: '2.8125rem', color: '#ffffff', display: 'inline-block', letterSpacing: '-0.07rem', marginTop: '0.5rem', marginLeft: '0.2rem' }} >포인트전환</span> */}
+                                    <span style={{ fontSize: '2.8125rem', color: '#ffffff', display: 'inline-block', letterSpacing: '-0.07rem' }} >포인트전환</span>
                                 </div>
                             </button>
                         </div>
                         <div
-                            style={{ width: "36.4375rem", height: '7.3125rem', marginLeft: '', borderRadius: '3.625rem', marginBottom: '', marginTop: '', boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)" }}>
+                            // style={{ width: "36.4375rem", height: '7.3125rem', marginLeft: '', borderRadius: '3.625rem', marginBottom: '', marginTop: '', boxShadow: "0px 6px 6px 0px rgba(0, 0, 0, 0.3)" }}>
+                            style={{ width: "36.4375rem", height: '7.3125rem', marginLeft: '', borderRadius: '3.625rem', marginBottom: '', marginTop: '', boxShadow: "0px 0.563rem 0.938rem 0px rgba(0, 0, 0, 0.3)" }}>
                             <button
                                 style={{ width: "100%", height: '100%', marginBottom: '1.5625rem', background: '#9d3bbb', borderRadius: '3.625rem' }}
                                 className="hover"
@@ -97,7 +100,8 @@ const PointsApplyPopup = ({ setPopupOpen }) => {
                             >
                                 {/* <div style={{ borderColor: "#ff8f63" }} className="w-full h-full flex items-center justify-center rounded-2xl border border-blue-r3ba3fc bg-gradient-to-b from-orange-ff7a45 via-orange-f56032 to-orange-e9441d cursor-pointer"> */}
                                 <div style={{ borderColor: "#ff8f63", display: 'flex', justifyContent:'center', alignItems: 'center' }}>
-                                    <span style={{ fontSize: '2.8125rem', color: '#ffffff', display: 'inline-block', letterSpacing: '-0.07rem', marginTop: '0.5rem', marginLeft: '0.2rem' }}>상세내역</span>
+                                    {/* <span style={{ fontSize: '2.8125rem', color: '#ffffff', display: 'inline-block', letterSpacing: '-0.07rem', marginTop: '0.5rem', marginLeft: '0.2rem' }}>상세내역</span> */}
+                                    <span style={{ fontSize: '2.8125rem', color: '#ffffff', display: 'inline-block', letterSpacing: '-0.07rem' }}>상세내역</span>
                                 </div>
                             </button>
                         </div>
