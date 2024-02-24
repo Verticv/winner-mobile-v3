@@ -141,7 +141,8 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
             {/* BREAK */}
             <div
               style={{
-                padding: '1.2rem 0',
+                // padding: '1.2rem 0',
+                padding: '2.1rem 0 1.2rem 0',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
@@ -326,7 +327,8 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                         background:
                           // 'linear-gradient(to right, rgb(223, 82, 255), rgb(111, 42, 253))',
                           'linear-gradient(to right, rgb(223, 82, 255) 0%, rgb(107, 34, 255) 100%)',
-                        boxShadow: '0 0.563rem 0.938rem 0 rgba(0, 0, 0, 0.3)',
+                        // boxShadow: '0 0.563rem 0.938rem 0 rgba(0, 0, 0, 0.3)',
+                        boxShadow: '0 0.375rem 0.375rem 0 rgba(0, 0, 0, 0.3)',
                         borderRadius: '5rem',
                         display: 'flex',
                         justifyContent: 'center',
@@ -334,11 +336,12 @@ const ReauthenticatePopup = ({ setPopupOpen, setSelectedTab }) => {
                       }}
                     >
                       <span
-                        className="shadow-text-myPage"
+                        // className="shadow-text-myPage"
                         style={{
                           color: '#ffffff',
                           marginTop: '',
                           fontWeight: 'bold',
+                          fontSize: '3.188rem',
                         }}
                       >
                         확인

@@ -20,7 +20,7 @@ const CouponGiftPopupTable = () => {
 
     return (
         // <div style={{ borderRadius: "1.2rem", overflowY: 'scroll', background: 'linear-gradient(to right, #9d3bbb, #5423a0)', boxShadow: '0 0 2rem 0 rgba(0, 0, 0, 0.6)', height: 'calc(100vh - 96rem)' }} className="shadow-subNavbar overflow-y-scroll h-full">
-        <div style={{ borderRadius: "1.2rem", overflowY: 'scroll', background: 'linear-gradient(to right, #9d3bbb, #5423a0)', boxShadow: '0 0 2rem 0 rgba(0, 0, 0, 0.6)', height: 'calc(45vh)' }} className="shadow-subNavbar overflow-y-scroll h-full">
+        <div style={{ borderRadius: "1.2rem", overflowY: 'scroll', background: 'linear-gradient(to right, #9d3bbb, #5423a0)', boxShadow: '0 0 2rem 0 rgba(0, 0, 0, 0.6)', height: 'calc(100vh - 78rem)' }} className="shadow-subNavbar overflow-y-scroll h-full">
             <div style={{ height: '7rem', color: '#ffffff', letterSpacing: '-0.07rem', paddingTop: '1.7rem', paddingRight: '' }}>
                 <div style={{ fontSize: '2.625rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingRight: '2.9rem' }}>
                     <td style={{ width: '20.6125rem', textAlign: 'center', display: 'flex', justifyContent: 'center' }}>선택</td>

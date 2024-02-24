@@ -26,7 +26,8 @@ const BoardViewPanel = ({
               margin: '1.5rem',
               background:
                 'linear-gradient(to top,#ecebeb, #dbb0e8 50%, #cb78e6 )',
-              boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)',
+              // boxShadow: '0 0 1rem 0 rgba(0, 0, 0, 0.3)',
+              boxShadow: '0 0 0.75rem 0 rgba(0, 0, 0, 0.8)',
               padding: '0.1875rem',
               borderRadius: '1rem',
             }}

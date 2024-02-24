@@ -207,7 +207,8 @@ const DistributorPage = ({
                 height: '2.34375rem',
                 marginTop: '-0.035rem',
                 marginLeft: '0.1rem',
-                letterSpacing: '-0.07rem',
+                // letterSpacing: '-0.07rem',
+                letterSpacing: '-0.025em',
                 color: '#2d2834',
               }}
               className=" tracking-tight text-gray-r616161"
@@ -221,7 +222,8 @@ const DistributorPage = ({
                 fontSize: '2.25rem',
                 height: '2.34375rem',
                 marginTop: '0.375rem',
-                letterSpacing: '-0.07rem',
+                // letterSpacing: '-0.07rem',
+                letterSpacing: '-0.025em',
                 color: '#2d2834',
               }}
               className=" tracking-tight text-gray-r616161"
@@ -236,7 +238,8 @@ const DistributorPage = ({
             lineHeight: '1.625rem',
             marginBottom: '1.513rem',
             color: '#c03a41',
-            letterSpacing: '-0.07rem',
+            // letterSpacing: '-0.07rem',
+            letterSpacing: '-0.025em',
           }}
           className="font-robotoBold tracking-tight text-blue-r0056a6"
         >
@@ -273,7 +276,8 @@ const DistributorPage = ({
                 borderBottom: '0.1875rem solid #dddddd',
               }}
             >
-              <tr style={{ height: '8.8125rem', letterSpacing: '-0.07rem' }}>
+              {/* <tr style={{ height: '8.8125rem', letterSpacing: '-0.07rem' }}> */}
+              <tr style={{ height: '8.8125rem', letterSpacing: '-0.025em' }}>
                 <td
                   style={{
                     width: '13.8125rem',
@@ -299,6 +303,7 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
                   }}
                 >
@@ -306,13 +311,15 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
-                  <span style={{ letterSpacing: '-0.24rem' }}>프레그메틱</span>
+                  {/* <span style={{ letterSpacing: '-0.24rem' }}> */}
+                  <span style={{ letterSpacing: '-0.25em' }}>프레그메틱</span>
                   <br />
                   <span>플레이</span>
                 </td>
@@ -321,8 +328,8 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
                   에볼루션
@@ -332,32 +339,32 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
                   로얄지
                 </td>
                 <td
                   style={{
-                    width: '16.5rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    paddingTop: '1.2rem',
-                    paddingLeft: '0.7rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>아시아</span>
+                  <br />
                   <span>게이밍</span>
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>드림</span>
@@ -366,10 +373,11 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>섹시</span>
@@ -381,32 +389,32 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
-                    letterSpacing: '-0.24rem',
                   }}
                 >
                   빅게이밍
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>오리엔탈</span>
                   <br />
                   <span>게임</span>
                 </td>
-           
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>마이크로</span>
@@ -415,22 +423,24 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>베가스</span>
                   <br />
-                  <span>게이밍</span>
+                  <span>라운지</span>
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>비터</span>
@@ -439,20 +449,22 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   타이산
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>모티</span>
@@ -461,40 +473,44 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   히든버튼
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   씨큐나인
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   월드매치
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   하바네로
@@ -504,18 +520,43 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
+                  }}
+                >
+                  <span>플레이</span>
+                  <br />
+                  <span>엔고</span>
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
+                  }}
+                >
+                  스페이드
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   분고
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>레드</span>
@@ -527,18 +568,19 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
                   엘리시움
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>빅타임</span>
@@ -547,10 +589,11 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>YL</span>
@@ -562,18 +605,19 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
                   넷엔트
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>드라군</span>
@@ -582,10 +626,11 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>YGG</span>
@@ -597,8 +642,8 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
                   플레이슨
@@ -608,18 +653,19 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
                   플레이텍
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>스카이</span>
@@ -631,18 +677,19 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
                   와즈단
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>PG</span>
@@ -651,10 +698,11 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>로얄슬롯</span>
@@ -663,10 +711,11 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>노리미트</span>
@@ -678,18 +727,19 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
                   CC88
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>패스트</span>
@@ -698,10 +748,11 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>나가</span>
@@ -710,10 +761,11 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>넥스트</span>
@@ -725,18 +777,19 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
                   스피닉스
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>두윈</span>
@@ -745,129 +798,11 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
-                  }}
-                >
-                  <span>보타</span>
-                  <br />
-                  <span>카지노</span>
-                </td>
-                <td
-                  style={{
-                    width: '14.8rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
-                  }}
-                >
-                  <span>레드</span>
-                  <br />
-                  <span>타이거</span>
-                </td>
-                <td
-                  style={{
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
-                  }}
-                >
-                  플레이텍
-                </td>
-                <td
-                  style={{
-                    width: '14.8rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
-                  }}
-                >
-                  <span>스카이</span>
-                  <br />
-                  <span>윈드</span>
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '',
-                    paddingLeft: '1.4rem',
-                  }}
-                >
-                  씨큐나인
-                </td>
-                <td
-                  style={{
-                    width: '14.8rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
-                  }}
-                >
-                  <span>올웨이</span>
-                  <br />
-                  <span>스핀</span>
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '',
-                    paddingLeft: '1.4rem',
-                  }}
-                >
-                  와즈단
-                </td>
-
-                <td
-                  style={{
-                    width: '14.8rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
-                  }}
-                >
-                  <span>PG</span>
-                  <br />
-                  <span>소프트</span>
-                </td>
-                <td
-                  style={{
-                    width: '14.8rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
-                  }}
-                >
-                  <span>로얄슬롯</span>
-                  <br />
-                  <span>게이밍</span>
-                </td>
-
-                <td
-                  style={{
-                    width: '14.8rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
-                  }}
-                >
-                  <span>두윈</span>
-                  <br />
-                  <span>카지노</span>
-                </td>
-                <td
-                  style={{
-                    width: '14.8rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingTop: '0.5rem',
                   }}
                 >
                   <span>보타</span>
@@ -879,29 +814,30 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
-                  홀덤게임
+                  <span>홀덤게임</span>
                 </td>
                 <td
                   style={{
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
-                  e-스포츠
+                  <span>e-스포츠</span>
                 </td>
                 <td
                   style={{
-                    width: '14.8rem',
+                    width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
-                    paddingTop: '0.5rem',
+                    paddingRight: '1rem',
+                    paddingTop: '',
                   }}
                 >
                   <span>키론</span>
@@ -913,23 +849,24 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
-                  피싱게임
+                  <span>피싱게임</span>
                 </td>
                 <td
                   style={{
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingRight: '1rem',
                     paddingTop: '',
-                    paddingLeft: '1.4rem',
                   }}
                 >
-                  티비벳
+                  <span>티비벳</span>
                 </td>
+
                 <td
                   style={{
                     width: '14.5rem',
@@ -948,7 +885,8 @@ const DistributorPage = ({
                 style={{
                   height: '8.8125rem',
                   color: '#444444',
-                  letterSpacing: '-0.07rem',
+                  // letterSpacing: '-0.07rem',
+                  letterSpacing: '-0.025em',
                   borderBottomLeftRadius: '1rem',
                 }}
               >
@@ -1006,207 +944,157 @@ const DistributorPage = ({
                     width: '14.5rem',
                     fontSize: '2.625rem',
                     textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    paddingLeft: '1rem',
+                  }}
+                >
+                  0.00%
+                </td>
+                <td
+                  style={{
+                    width: '14.5rem',
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
                     paddingLeft: '',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
-                  }}
-                >
-                  0.00%
-                </td>
-                <td
-                  style={{
-                    width: '14.5rem',
-                    fontSize: '2.625rem',
-                    textAlign: 'center',
-                    paddingLeft: '1rem',
                   }}
                 >
                   0.00%
@@ -1715,6 +1603,7 @@ const DistributorPage = ({
                 style={{
                   height: '8.925rem',
                   borderBottom: '0.1875rem solid #dddddd',
+                  letterSpacing: '-0.025em',
                 }}
               >
                 <td
@@ -1746,14 +1635,13 @@ const DistributorPage = ({
                 </td>
                 <td
                   style={{
-                    width: '14.8125rem',
+                    width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '0.5rem',
-                    letterSpacing: '-0.1rem',
                   }}
                 >
-                  <span style={{ letterSpacing: '-0.24rem' }}>프레그메틱</span>
+                  {/* <span style={{ letterSpacing: '-0.24rem' }}> */}
+                <span style={{ letterSpacing: '-0.25em' }}>프레그메틱</span>
                   <br />
                   <span>플레이</span>
                 </td>
@@ -1762,7 +1650,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '0.5rem',
                   }}
                 >
                   에볼루션
@@ -1772,7 +1659,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '3rem',
                   }}
                 >
                   로얄지
@@ -1782,7 +1668,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '2rem',
                   }}
                 >
                   <span>아시아</span>
@@ -1794,7 +1679,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '2.5rem',
                   }}
                 >
                   <span>드림</span>
@@ -1806,7 +1690,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '2.5rem',
                   }}
                 >
                   <span>섹시</span>
@@ -1818,8 +1701,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '3rem',
-                    letterSpacing: '-0.24rem',
                   }}
                 >
                   빅게이밍
@@ -1829,7 +1710,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>오리엔탈</span>
@@ -1841,7 +1721,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>마이크로</span>
@@ -1853,7 +1732,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>베가스</span>
@@ -1865,7 +1743,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>비터</span>
@@ -1877,7 +1754,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   타이산
@@ -1887,7 +1763,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>모티</span>
@@ -1899,7 +1774,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   히든버튼
@@ -1909,7 +1783,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   씨큐나인
@@ -1919,7 +1792,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   월드매치
@@ -1929,7 +1801,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   하바네로
@@ -1939,19 +1810,17 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>플레이</span>
                   <br />
-                  <span>앤고</span>
+                  <span>엔고</span>
                 </td>
                 <td
                   style={{
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   스페이드
@@ -1961,7 +1830,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   분고
@@ -1971,7 +1839,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>레드</span>
@@ -1983,7 +1850,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   엘리시움
@@ -1993,7 +1859,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>빅타임</span>
@@ -2005,7 +1870,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>YL</span>
@@ -2026,7 +1890,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>드라군</span>
@@ -2038,7 +1901,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>YGG</span>
@@ -2068,7 +1930,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>스카이</span>
@@ -2089,7 +1950,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>PG</span>
@@ -2101,7 +1961,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>로얄슬롯</span>
@@ -2113,7 +1972,6 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'center',
                     paddingTop: '0.5rem',
-                    paddingRight: '',
                   }}
                 >
                   <span>노리미트</span>
@@ -2200,7 +2058,7 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
-                  홀덤게임
+                  <span>홀덤게임</span>
                 </td>
                 <td
                   style={{
@@ -2209,7 +2067,7 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
-                  e-스포츠
+                  <span>e-스포츠</span>
                 </td>
                 <td
                   style={{
@@ -2229,7 +2087,7 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
-                  피싱게임
+                  <span>피싱게임</span>
                 </td>
                 <td
                   style={{
@@ -2238,7 +2096,7 @@ const DistributorPage = ({
                     paddingTop: '0.5rem',
                   }}
                 >
-                  티비벳
+                  <span>티비벳</span>
                 </td>
                 <td
                   style={{
@@ -2661,139 +2519,161 @@ const DistributorPage = ({
                   }}
                   className="text-right"
                 >
-                  0
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'right',
-                    paddingRight: '1.2rem',
-                    paddingBottom: '0.2rem',
-                  }}
-                  className="text-right"
-                >
-                  0
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'right',
-                    paddingRight: '1.2rem',
-                    paddingBottom: '0.2rem',
-                  }}
-                  className="text-right"
-                >
-                  0
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'right',
-                    paddingRight: '1.2rem',
-                    paddingBottom: '0.2rem',
-                  }}
-                  className="text-right"
-                >
-                  0
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'right',
-                    paddingRight: '1.2rem',
-                    paddingBottom: '0.2rem',
-                  }}
-                  className="text-right"
-                >
-                  0
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'right',
-                    paddingRight: '1.2rem',
-                    paddingBottom: '0.2rem',
-                  }}
-                  className="text-right"
-                >
-                  0
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'right',
-                    paddingRight: '1.2rem',
-                    paddingBottom: '0.2rem',
-                  }}
-                  className="text-right"
-                >
-                  0
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'right',
-                    paddingRight: '1.2rem',
-                    paddingBottom: '0.2rem',
-                  }}
-                  className="text-right"
-                >
-                  0
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'right',
-                    paddingRight: '1.2rem',
-                    paddingBottom: '0.2rem',
-                  }}
-                  className="text-right"
-                >
-                  0
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'right',
-                    paddingRight: '1.2rem',
-                    paddingBottom: '0.2rem',
-                  }}
-                  className="text-right"
-                >
-                  0
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'right',
-                    paddingRight: '1.2rem',
-                    paddingBottom: '0.2rem',
-                  }}
-                  className="text-right"
-                >
-                  0
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'right',
-                    paddingRight: '1.2rem',
-                    paddingBottom: '0.2rem',
-                  }}
-                  className="text-right"
-                >
-                  0
-                </td>
-                <td
-                  style={{
-                    width: '13.8125rem',
-                    textAlign: 'right',
-                    paddingRight: '1.2rem',
-                    paddingBottom: '0.2rem',
-                  }}
-                  className="text-right"
-                >
                   3.06M
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '1.2rem',
+                    paddingBottom: '0.2rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
                 </td>
                 <td
                   style={{
@@ -3233,7 +3113,7 @@ const DistributorPage = ({
                     paddingRight: '0.8rem',
                     paddingBottom: '0.4rem',
                   }}
-                  className="text-right"
+                  className="text-right pr-4"
                 >
                   0
                 </td>
@@ -3244,7 +3124,7 @@ const DistributorPage = ({
                     paddingRight: '0.8rem',
                     paddingBottom: '0.4rem',
                   }}
-                  className="text-right"
+                  className="text-right pr-4"
                 >
                   0
                 </td>
@@ -3255,7 +3135,7 @@ const DistributorPage = ({
                     paddingRight: '0.8rem',
                     paddingBottom: '0.4rem',
                   }}
-                  className="text-right"
+                  className="text-right pr-4"
                 >
                   0
                 </td>
@@ -3266,7 +3146,7 @@ const DistributorPage = ({
                     paddingRight: '0.8rem',
                     paddingBottom: '0.4rem',
                   }}
-                  className="text-right"
+                  className="text-right pr-4"
                 >
                   0
                 </td>
@@ -3277,7 +3157,7 @@ const DistributorPage = ({
                     paddingRight: '0.8rem',
                     paddingBottom: '0.4rem',
                   }}
-                  className="text-right"
+                  className="text-right pr-4"
                 >
                   0
                 </td>
@@ -3288,7 +3168,7 @@ const DistributorPage = ({
                     paddingRight: '0.8rem',
                     paddingBottom: '0.4rem',
                   }}
-                  className="text-right"
+                  className="text-right pr-4"
                 >
                   0
                 </td>
@@ -3299,7 +3179,7 @@ const DistributorPage = ({
                     paddingRight: '0.8rem',
                     paddingBottom: '0.4rem',
                   }}
-                  className="text-right"
+                  className="text-right pr-4"
                 >
                   0
                 </td>
@@ -3310,7 +3190,7 @@ const DistributorPage = ({
                     paddingRight: '0.8rem',
                     paddingBottom: '0.4rem',
                   }}
-                  className="text-right"
+                  className="text-right pr-4"
                 >
                   0
                 </td>
@@ -3321,7 +3201,7 @@ const DistributorPage = ({
                     paddingRight: '0.8rem',
                     paddingBottom: '0.4rem',
                   }}
-                  className="text-right"
+                  className="text-right pr-4"
                 >
                   0
                 </td>
@@ -3332,7 +3212,7 @@ const DistributorPage = ({
                     paddingRight: '0.8rem',
                     paddingBottom: '0.4rem',
                   }}
-                  className="text-right"
+                  className="text-right pr-4"
                 >
                   0
                 </td>
@@ -3343,7 +3223,7 @@ const DistributorPage = ({
                     paddingRight: '0.8rem',
                     paddingBottom: '0.4rem',
                   }}
-                  className="text-right"
+                  className="text-right pr-4"
                 >
                   0
                 </td>
@@ -3354,7 +3234,29 @@ const DistributorPage = ({
                     paddingRight: '0.8rem',
                     paddingBottom: '0.4rem',
                   }}
-                  className="text-right"
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0.4rem',
+                  }}
+                  className="text-right pr-4"
                 >
                   0
                 </td>
@@ -3409,6 +3311,28 @@ const DistributorPage = ({
                     width: '13.8125rem',
                     textAlign: 'right',
                     paddingRight: '0.6rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
+                    paddingBottom: '0rem',
+                  }}
+                  className="text-right"
+                >
+                  0
+                </td>
+                <td
+                  style={{
+                    width: '13.8125rem',
+                    textAlign: 'right',
+                    paddingRight: '0.8rem',
                     paddingBottom: '0rem',
                   }}
                   className="text-right"
@@ -3985,7 +3909,8 @@ const DistributorPage = ({
             justifyContent: 'space-evenly',
             padding: '0.6rem 5.875rem 0px 1.875rem',
             background: item.id % 2 === 1 ? '#f7f7f7' : '#ffffff',
-            letterSpacing: '-0.07rem',
+            // letterSpacing: '-0.07rem',
+            letterSpacing: '-0.025em',
             paddingLeft: withPadding ? '1.875rem' : '0',
             color: '#444444',
           }}
@@ -4105,7 +4030,7 @@ const DistributorPage = ({
                 >
                   <span
                     className=" tracking-tight text-white small-padding"
-                    style={{ color: '#ffffff' }}
+                    style={{ color: '#ffffff', letterSpacing: '-0.025em' }}
                   >
                     {isUserCountOpen[item.id] === true ? '접기' : '보기'}{' '}
                     {item.user_count}
@@ -4215,7 +4140,7 @@ const DistributorPage = ({
               >
                 <span
                   className=" tracking-tight text-white"
-                  style={{ color: '#ffffff' }}
+                  style={{ color: '#ffffff', letterSpacing: '-0.025em' }}
                 >
                   {isUserCountOpen[item.id + 1] === true ? '접기' : '보기'}
                 </span>
@@ -4384,7 +4309,7 @@ const DistributorPage = ({
               >
                 <span
                   className=" tracking-tight text-white"
-                  style={{ color: '#ffffff' }}
+                  style={{ color: '#ffffff', letterSpacing: '-0.025em' }}
                 >
                   {isUserCountOpen[item.id + 2] === true ? '접기' : '보기'}
                 </span>
@@ -4487,7 +4412,7 @@ const DistributorPage = ({
                       display: 'flex',
                       alignItems: 'center',
                       color: '#eeeeee',
-                      letterSpacing: '-0.07rem',
+                      letterSpacing: '-0.025em',
                       justifyContent: 'space-evenly',
                     }}
                     className="test w-full bg-gray-r8e9296 border-b border-r border-l border-gray-dddddd flex items-center justify-evenly  text-white tracking-tight"
@@ -4508,7 +4433,7 @@ const DistributorPage = ({
                         margin: '0',
                         background: 'bottom',
                         width: '21.7rem',
-                        letterSpacing: '-0.07rem',
+                        letterSpacing: '-0.025em',
                         paddingTop: '0.7rem',
                         height: '100%',
                         display: 'flex',
@@ -5013,8 +4938,10 @@ const DistributorPage = ({
           <span
             style={{
               fontSize: '2.8125rem',
-              color: '#666666',
-              letterSpacing: '-0.07rem',
+              // color: '#666666',
+              color: '#444444',
+              // letterSpacing: '-0.025rem',
+              letterSpacing: '0',
             }}
             className="text-gray-r7b7b7b tracking-tight  pt-2"
           >
@@ -5058,7 +4985,8 @@ const DistributorPage = ({
               display: 'flex',
               width: '48.938rem',
               marginTop: '1.476rem',
-              letterSpacing: '-0.07rem',
+              // letterSpacing: '-0.07rem',
+              letterSpacing: '-0.025em',
               height: '5.063rem',
               // paddingTop: '0.7rem',
               borderRadius: '3rem',
@@ -5083,13 +5011,21 @@ const DistributorPage = ({
                 whiteSpace: 'nowrap',
                 maxWidth: '21.4rem',
                 fontWeight: '700',
+                letterSpacing: '-0.025em',
               }}
             >
               {truncate('Louie3', 12, 12)}
             </p>
             <p
-              style={{ height: '5.063rem',
-              lineHeight: '5.063rem', verticalAlign: 'bottom', margin: '0', marginTop: '-0.251rem', color: '#ffffff' }}
+              style={{
+                height: '5.063rem',
+                lineHeight: '5.063rem',
+                verticalAlign: 'bottom',
+                margin: '0',
+                marginTop: '-0.251rem',
+                color: '#ffffff',
+                letterSpacing: '-0.025em',
+              }}
             >
               님의 총판 정보입니다.
             </p>
@@ -5126,7 +5062,8 @@ const DistributorPage = ({
                     fontSize: '3rem',
                     marginTop: '-0.25rem',
                     color: '#eeeeee',
-                    letterSpacing: '-0.07rem',
+                    // letterSpacing: '-0.07rem',
+                    letterSpacing: '-0.025em',
                   }}
                 >
                   총판현황
@@ -5280,7 +5217,8 @@ const DistributorPage = ({
                         <tr
                           style={{
                             height: '8.75rem',
-                            letterSpacing: '-0.07rem',
+                            // letterSpacing: '-0.07rem',
+                            letterSpacing: '-0.025em',
                           }}
                         >
                           <td
@@ -5312,7 +5250,8 @@ const DistributorPage = ({
                               paddingLeft: '1rem',
                             }}
                           >
-                            <span style={{ letterSpacing: '-0.24rem' }}>
+                            {/* <span style={{ letterSpacing: '-0.24rem' }}> */}
+                            <span>
                               프레그메틱
                             </span>
                             <br />
@@ -5348,7 +5287,8 @@ const DistributorPage = ({
                               paddingLeft: '1rem',
                             }}
                           >
-                            <span style={{ letterSpacing: '-0.24rem' }}>
+                            {/* <span style={{ letterSpacing: '-0.24rem' }}> */}
+                            <span>
                               아시아
                             </span>
                             <br />
@@ -5362,7 +5302,8 @@ const DistributorPage = ({
                               paddingLeft: '1rem',
                             }}
                           >
-                            <span style={{ letterSpacing: '-0.24rem' }}>
+                            {/* <span style={{ letterSpacing: '-0.24rem' }}> */}
+                            <span>
                               드림
                             </span>
                             <br />
@@ -5386,7 +5327,8 @@ const DistributorPage = ({
                               width: '14.5rem',
                               fontSize: '2.625rem',
                               textAlign: 'center',
-                              letterSpacing: '-0.24rem',
+                              // letterSpacing: '-0.24rem',
+                              // letterSpacing: '-0.25rem',
                             }}
                           >
                             빅게이밍
@@ -5500,7 +5442,7 @@ const DistributorPage = ({
                           >
                             <span>플레이</span>
                             <br />
-                            <span>앤고</span>
+                            <span>엔고</span>
                           </td>
                           <td
                             style={{
@@ -5558,7 +5500,9 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            YL게이밍
+                            <span>YL</span>
+                            <br />
+                            <span>게이밍</span>
                           </td>
                           <td
                             style={{
@@ -5636,7 +5580,9 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            PG소프트
+                            <span>PG</span>
+                            <br />
+                            <span>소프트</span>
                           </td>
                           <td
                             style={{
@@ -5687,17 +5633,6 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            <span>패스트</span>
-                            <br />
-                            <span>스핀</span>
-                          </td>
-                          <td
-                            style={{
-                              width: '14.5rem',
-                              fontSize: '2.625rem',
-                              textAlign: 'center',
-                            }}
-                          >
                             <span>나가</span>
                             <br />
                             <span>게임즈</span>
@@ -5712,6 +5647,15 @@ const DistributorPage = ({
                             <span>넥스트</span>
                             <br />
                             <span>스핀</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '14.5rem',
+                              fontSize: '2.625rem',
+                              textAlign: 'center',
+                            }}
+                          >
+                            스피닉스
                           </td>
                           <td
                             style={{
@@ -5742,7 +5686,7 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            홀덤게임
+                            <span>홀덤게임</span>
                           </td>
                           <td
                             style={{
@@ -5751,7 +5695,7 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            e-스포츠
+                            <span>e-스포츠</span>
                           </td>
                           <td
                             style={{
@@ -5771,7 +5715,7 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            피싱게임
+                            <span>피싱게임</span>
                           </td>
                           <td
                             style={{
@@ -5780,7 +5724,7 @@ const DistributorPage = ({
                               textAlign: 'center',
                             }}
                           >
-                            티비벳
+                            <span>티비벳</span>
                           </td>
                         </tr>
                       </thead>
@@ -5796,7 +5740,8 @@ const DistributorPage = ({
                           style={{
                             height: '9.063rem',
                             color: '#444444',
-                            letterSpacing: '-0.07rem',
+                            // letterSpacing: '-0.07rem',
+                            letterSpacing: '-0.025em',
                             borderBottomLeftRadius: '1rem',
                           }}
                           className="flex items-center bg-gray-fefefe  text-14px tracking-tight text-gray-r454545 w-full border-b border-gray-dddddd"
@@ -6372,8 +6317,10 @@ const DistributorPage = ({
                     >
                       <img
                         style={{
-                          width: '1.438rem',
-                          height: '1.2rem',
+                          // width: '1.438rem',
+                          // height: '1.2rem',
+                          width: '1.4rem',
+                          height: '1.4rem',
                           marginRight: '1.2rem',
                         }}
                         src={Diamond}
@@ -6392,7 +6339,7 @@ const DistributorPage = ({
                         </span>
                         <span
                           className="text-yellow-ffcc00"
-                          style={{ color: '#ffd200' }}
+                          style={{ color: '#ffd200', letterSpacing : '-.025em' }}
                         >
                           2,520,000
                         </span>
@@ -6430,7 +6377,7 @@ const DistributorPage = ({
                         </span>
                         <span
                           className="text-yellow-ffcc000"
-                          style={{ color: '#ffd200' }}
+                          style={{ color: '#ffd200', letterSpacing : '-.025em' }}
                         >
                           5,800,000
                         </span>
@@ -6460,8 +6407,10 @@ const DistributorPage = ({
                     >
                       <img
                         style={{
-                          width: '1.438rem',
-                          height: '1.2rem',
+                          // width: '1.438rem',
+                          // height: '1.2rem',
+                          width: '1.4rem',
+                          height: '1.4rem',
                           marginRight: '1.3125rem',
                         }}
                         src={Diamond}
@@ -6480,7 +6429,7 @@ const DistributorPage = ({
                         </span>
                         <span
                           className="text-yellow-ffcc00"
-                          style={{ color: '#ffd200' }}
+                          style={{ color: '#ffd200', letterSpacing : '-.025em' }}
                         >
                           500,000
                         </span>
@@ -6498,8 +6447,10 @@ const DistributorPage = ({
                     >
                       <img
                         style={{
-                          width: '1.438rem',
-                          height: '1.3125rem',
+                          // width: '1.438rem',
+                          // height: '1.3125rem',
+                          width: '1.4rem',
+                          height: '1.4rem',
                           marginRight: '1.2rem',
                         }}
                         src={Diamond}
@@ -6518,7 +6469,7 @@ const DistributorPage = ({
                         </span>
                         <span
                           className="text-red-f47d7d"
-                          style={{ color: '#ff7f7f' }}
+                          style={{ color: '#ff7f7f', letterSpacing : '-.025em' }}
                         >
                           -300,200,000
                         </span>
@@ -6559,7 +6510,8 @@ const DistributorPage = ({
                       <thead
                         style={{
                           fontSize: '2.625rem',
-                          letterSpacing: '-0.07rem',
+                          // letterSpacing: '-0.07rem',
+                          letterSpacing: '-0.025em',
                           background: '#472480',
                           color: '#eeeeee',
                         }}
@@ -6568,6 +6520,7 @@ const DistributorPage = ({
                           style={{
                             height: '8.925rem',
                             borderBottom: '0.1875rem solid #dddddd',
+                            letterSpacing: '-0.025em',
                           }}
                         >
                           <td
@@ -6590,7 +6543,7 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
                             }}
@@ -6599,13 +6552,14 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '14.8125rem',
+                              width: '25.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
                               paddingRight: '1rem',
                             }}
                           >
-                            <span style={{ letterSpacing: '-0.24rem' }}>
+                            {/* <span style={{ letterSpacing: '-0.24rem' }}> */}
+                            <span>
                               프레그메틱
                             </span>
                             <br />
@@ -6613,7 +6567,7 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
                               paddingRight: '0.5rem',
@@ -6623,7 +6577,7 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
                               paddingRight: '3rem',
@@ -6633,7 +6587,19 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
+                              textAlign: 'center',
+                              paddingTop: '0.5rem',
+                              paddingRight: '2.5rem',
+                            }}
+                          >
+                            <span>아시아</span>
+                            <br />
+                            <span>게이밍</span>
+                          </td>
+                          <td
+                            style={{
+                              width: '16.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
                               paddingRight: '2.5rem',
@@ -6645,7 +6611,7 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '16.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
                               paddingRight: '2.5rem',
@@ -6657,18 +6623,19 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '16.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
                               paddingRight: '3rem',
-                              letterSpacing: '-0.24rem',
+                              // letterSpacing: '-0.24rem',
+                              letterSpacing: '-0.25rem',
                             }}
                           >
                             빅게이밍
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
                               paddingRight: '',
@@ -6680,7 +6647,7 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
                               paddingRight: '',
@@ -6701,7 +6668,7 @@ const DistributorPage = ({
                             <span>베가스</span>
                             <br />
                             <span>라운지</span>
-                          </td> 
+                          </td>
                           <td
                             style={{
                               width: '13.8125rem',
@@ -6713,19 +6680,22 @@ const DistributorPage = ({
                             <span>비터</span>
                             <br />
                             <span>라이브</span>
-                          </td> 
+                          </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '16.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '3rem',
+                              // letterSpacing: '-0.24rem',
+                              letterSpacing: '-0.25rem',
                             }}
                           >
                             타이산
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '25.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
                               paddingRight: '',
@@ -6737,36 +6707,40 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             히든버튼
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             씨큐나인
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             월드매치
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             하바네로
@@ -6781,13 +6755,14 @@ const DistributorPage = ({
                           >
                             <span>플레이</span>
                             <br />
-                            <span>앤고</span>
+                            <span>엔고</span>
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             스페이드
@@ -6797,6 +6772,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             분고
@@ -6815,9 +6791,10 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             엘리시움
@@ -6827,6 +6804,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>빅타임</span>
@@ -6838,6 +6816,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>YL</span>
@@ -6849,6 +6828,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             넷엔트
@@ -6879,18 +6859,20 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             플레이슨
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             플레이텍
@@ -6900,6 +6882,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>스카이</span>
@@ -6911,6 +6894,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             와즈단
@@ -6920,6 +6904,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>PG</span>
@@ -6928,9 +6913,10 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>로얄슬롯</span>
@@ -6939,9 +6925,10 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>노리미트</span>
@@ -6950,9 +6937,10 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             CC88
@@ -6962,6 +6950,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>패스트</span>
@@ -6973,6 +6962,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>나가</span>
@@ -6984,6 +6974,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>넥스트</span>
@@ -6992,9 +6983,10 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             스피닉스
@@ -7004,6 +6996,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>두윈</span>
@@ -7015,6 +7008,7 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>보타</span>
@@ -7023,29 +7017,30 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
-                            className="text-center h-full flex items-center justify-center"
                           >
-                            홀덤게임
+                            <span>홀덤게임</span>
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '23.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
-                            className="text-center h-full flex items-center justify-center"
                           >
-                            e-스포츠
+                            <span>e-스포츠</span>
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
                           >
                             <span>키론</span>
@@ -7054,23 +7049,23 @@ const DistributorPage = ({
                           </td>
                           <td
                             style={{
-                              width: '13.8125rem',
+                              width: '18.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
-                            className="text-center h-full flex items-center justify-center"
                           >
-                            피싱게임
+                            <span>피싱게임</span>
                           </td>
                           <td
                             style={{
                               width: '13.8125rem',
                               textAlign: 'center',
                               paddingTop: '0.5rem',
+                              paddingRight: '',
                             }}
-                            className="text-center h-full flex items-center justify-center"
                           >
-                            티비벳
+                            <span>티비벳</span>
                           </td>
                           <td
                             style={{
@@ -7093,7 +7088,8 @@ const DistributorPage = ({
                             height: '8.925rem',
                             borderBottomWidth: '0.1875rem',
                             borderBottom: '0.1875rem solid #dddddd',
-                            letterSpacing: '-0.07rem',
+                            // letterSpacing: '-0.07rem',
+                            letterSpacing: '-0.025em',
                             background: '#ffffff',
                             color: '#444444',
                           }}
@@ -7625,6 +7621,17 @@ const DistributorPage = ({
                             }}
                             className="text-right"
                           >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '1.2rem',
+                              paddingBottom: '0.2rem',
+                            }}
+                            className="text-right"
+                          >
                             3.06M
                           </td>
                           {/* <td style={{ width: '13.8125rem', textAlign: 'right', paddingRight: '1.2rem', paddingBottom: '0.2rem' }} className="text-right pr-4">0</td> */}
@@ -7650,6 +7657,7 @@ const DistributorPage = ({
                             borderBottom: '0.1875rem solid #dddddd',
                             background: '#f7f7f7',
                             color: '#444444',
+                            letterSpacing: '-0.025em'
                           }}
                           className="flex items-center bg-gray-fefefe  tracking-tight text-gray-r454545 w-full border-b border-gray-dddddd"
                         >
@@ -7669,6 +7677,17 @@ const DistributorPage = ({
                               width: '13.8125rem',
                               textAlign: 'right',
                               paddingRight: '0.6rem',
+                              paddingBottom: '0.4rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
                               paddingBottom: '0.4rem',
                             }}
                             className="text-right"
@@ -8203,6 +8222,7 @@ const DistributorPage = ({
                             borderBottomWidth: '0.1875rem',
                             background: '#ffffff',
                             color: '#444444',
+                            letterSpacing: '-0.025em'
                           }}
                           className="flex items-center bg-gray-fefefe  tracking-tight text-gray-r454545 w-full border-b border-gray-dddddd"
                         >
@@ -8735,6 +8755,18 @@ const DistributorPage = ({
                           >
                             0
                           </td>
+                          <td
+                            style={{
+                              width: '13.8125rem',
+                              textAlign: 'right',
+                              paddingRight: '0.8rem',
+                              paddingBottom: '0rem',
+                            }}
+                            className="text-right"
+                          >
+                            0
+                          </td>
+                          
                           {/* <td style={{ width: '13.8125rem', textAlign: 'right', paddingRight: '0.8rem', paddingBottom: '0rem' }} className="text-right pr-4">0</td> */}
                           <td
                             style={{
@@ -8825,6 +8857,7 @@ const DistributorPage = ({
                         color: '#ffffff',
                         marginTop: '0.2rem',
                         marginLeft: '-0.1rem',
+                        letterSpacing : '-.025em'
                       }}
                       className="shadow-to-text  tracking-tight text-white pt-px"
                     >
@@ -8933,13 +8966,23 @@ const DistributorPage = ({
                   />
                   {/* <div style={{ marginTop: '1rem' }}> */}
                   <div>
-                    <span style={{ height: '5.3125rem', lineHeight: '5.3125rem', color: '#ffffff' }}>보유금 총합계 :</span>
+                    <span
+                      style={{
+                        height: '5.3125rem',
+                        lineHeight: '5.3125rem',
+                        color: '#ffffff',
+                        letterSpacing : '-.025em'
+                      }}
+                    >
+                      보유금 총합계 :
+                    </span>
                     <span
                       style={{
                         height: '5.3125rem',
                         lineHeight: '5.3125rem',
                         color: '#ffcc00',
-                        letterSpacing: '0',
+                        // letterSpacing: '0',
+                        letterSpacing : '-.025em',
                         marginLeft: '0.625rem',
                       }}
                     >
@@ -8969,7 +9012,7 @@ const DistributorPage = ({
                     padding: '0',
                     width: '114.75rem',
                     background: 'red',
-                    overflow: 'hidden'
+                    overflow: 'hidden',
                   }}
                 >
                   <div
@@ -8989,7 +9032,7 @@ const DistributorPage = ({
                         display: 'flex',
                         flexDirection: 'column',
                         fontSize: '2.625rem',
-                        overflow: 'hidden'
+                        overflow: 'hidden',
                       }}
                     >
                       <div
@@ -9019,7 +9062,8 @@ const DistributorPage = ({
                             margin: '0',
                             background: 'bottom',
                             width: '21.7rem',
-                            letterSpacing: '-0.07rem',
+                            // letterSpacing: '-0.07rem',
+                            letterSpacing: '-0.025em',
                             height: '100%',
                             display: 'flex',
                             alignItems: 'center',
@@ -9053,6 +9097,7 @@ const DistributorPage = ({
                           style={{
                             width: '16.6rem',
                             textAlign: 'center',
+                            letterSpacing: '-0.025em',
                           }}
                         >
                           이름
@@ -9062,6 +9107,7 @@ const DistributorPage = ({
                             width: '18rem',
                             textAlign: 'center',
                             paddingLeft: '3.4rem',
+                            letterSpacing: '-0.025em',
                           }}
                           className="text-center -mt-3.5"
                         >
@@ -9097,6 +9143,7 @@ const DistributorPage = ({
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 color: '#eeeeee',
+                                letterSpacing: '-0.025em',
                               }}
                             >
                               하부
@@ -9107,6 +9154,7 @@ const DistributorPage = ({
                                 display: 'flex',
                                 alignItems: 'center',
                                 color: '#eeeeee',
+                                letterSpacing: '-0.025em',
                               }}
                             >
                               유저수
@@ -9160,6 +9208,7 @@ const DistributorPage = ({
                                 display: 'flex',
                                 alignItems: 'center',
                                 color: '#eeeeee',
+                                letterSpacing: '-0.025em',
                               }}
                             >
                               추천일시
@@ -9171,6 +9220,7 @@ const DistributorPage = ({
                                 alignItems: 'center',
                                 margin: '-0.5rem 0',
                                 color: '#eeeeee',
+                                letterSpacing: '-0.025em',
                               }}
                               className="flex items-center -mt-3.5 "
                             >
@@ -9182,6 +9232,7 @@ const DistributorPage = ({
                                 display: 'flex',
                                 alignItems: 'center',
                                 color: '#eeeeee',
+                                letterSpacing: '-0.025em',
                               }}
                               className="flex items-center -mt-3.5"
                             >
@@ -9206,17 +9257,17 @@ const DistributorPage = ({
                             alt=""
                           />
                         </button>
-                        <div style={{ width: '18rem', textAlign: 'center' }}>
+                        <div style={{ width: '18rem', textAlign: 'center', letterSpacing: '-0.025em' }}>
                           요율보기
                         </div>
                         <div
-                          style={{ width: '18rem', textAlign: 'center' }}
+                          style={{ width: '18rem', textAlign: 'center', letterSpacing: '-0.025em' }}
                           className="text-center -mt-3.5"
                         >
                           입금액
                         </div>
                         <div
-                          style={{ width: '18rem', textAlign: 'center' }}
+                          style={{ width: '18rem', textAlign: 'center', letterSpacing: '-0.025em' }}
                           className="text-center -mt-3.5"
                         >
                           보너스
@@ -9236,7 +9287,7 @@ const DistributorPage = ({
                           className="flex text-center items-center justify-center hover:opacity-75"
                           onClick={() => handleOnChange(3)}
                         >
-                          <p style={{ color: '#eeeeee', fontSize: '2.625rem' }}>
+                          <p style={{ color: '#eeeeee', fontSize: '2.625rem', letterSpacing: '-0.025em' }}>
                             출금액
                           </p>
                           <img
@@ -9262,7 +9313,7 @@ const DistributorPage = ({
                             margin: '0',
                             background: 'bottom',
                             width: '18rem',
-                            textAlign: 'center',
+                            textAlign: 'center', letterSpacing: '-0.025em',
                           }}
                         >
                           입출금액
@@ -9282,7 +9333,7 @@ const DistributorPage = ({
                           className="flex text-center items-center justify-center hover:opacity-75"
                           onClick={() => handleOnChange(4)}
                         >
-                          <p style={{ color: '#eeeeee', fontSize: '2.625rem' }}>
+                          <p style={{ color: '#eeeeee', fontSize: '2.625rem', letterSpacing: '-0.025em' }}>
                             베팅액
                           </p>
                           <img
@@ -9317,7 +9368,7 @@ const DistributorPage = ({
                           className="flex text-center items-center justify-center hover:opacity-75"
                           onClick={() => handleOnChange(5)}
                         >
-                          <p style={{ color: '#eeeeee', fontSize: '2.625rem' }}>
+                          <p style={{ color: '#eeeeee', fontSize: '2.625rem', letterSpacing: '-0.025em' }}>
                             윈루즈
                           </p>
                           <img
@@ -9337,7 +9388,7 @@ const DistributorPage = ({
                             alt=""
                           />
                         </button>
-                        <div style={{ width: '18rem', textAlign: 'center' }}>
+                        <div style={{ width: '18rem', textAlign: 'center', letterSpacing: '-0.025em' }}>
                           상세내역
                         </div>
                         <button
@@ -9355,7 +9406,7 @@ const DistributorPage = ({
                           className="flex text-center items-center justify-center hover:opacity-75"
                           onClick={() => handleOnChange(6)}
                         >
-                          <p style={{ color: '#eeeeee', fontSize: '2.625rem' }}>
+                          <p style={{ color: '#eeeeee', fontSize: '2.625rem', letterSpacing: '-0.025em' }}>
                             포인트
                           </p>
                           <img
@@ -9404,7 +9455,7 @@ const DistributorPage = ({
                                 display: 'flex',
                                 alignItems: 'center',
                                 color: '#eeeeee',
-                                fontSize: '2.625rem',
+                                fontSize: '2.625rem', letterSpacing: '-0.025em',
                               }}
                             >
                               보유
@@ -9415,7 +9466,7 @@ const DistributorPage = ({
                                 display: 'flex',
                                 alignItems: 'center',
                                 color: '#eeeeee',
-                                fontSize: '2.625rem',
+                                fontSize: '2.625rem', letterSpacing: '-0.025em',
                               }}
                             >
                               금액

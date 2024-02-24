@@ -131,7 +131,8 @@ const FreeBoardView2 = () => {
                             background: '#ffffff'
                         }} className='flex justify-center mt-3 align-center rounded-full border-b border-gray-b7b7b7'>
                             <div style={{ marginRight: '0.8rem', marginTop: '0.1rem', color: '#666666', whiteSpace: 'nowrap' }} className="tracking-tight text-gray-r7b7b7b mt-1">댓글</div>
-                            <div style={{ marginTop: '0.1rem', color: '#e65454', marginLeft: '-0.35rem' }}>2</div>
+                            {/* <div style={{ marginTop: '0.1rem', color: '#e65454', marginLeft: '-0.35rem' }}>2</div> */}
+                            <div style={{ marginTop: '0.8rem', color: '#e65454', marginLeft: '-0.35rem' }}>2</div>
                         </div>
 
                     </div>
@@ -158,7 +159,7 @@ const FreeBoardView2 = () => {
                         style={{ background: '' }}
                     >
                         <div className="text">
-                            <span className="tracking-tight text-white">수정하기</span>
+                            <span className="tracking-tight text-white" style={{ textShadow: '0 0 0.938rem rgba(0,0,0,0.5)' }}>수정하기</span>
                         </div>
                     </div>
                 </button>
@@ -167,7 +168,7 @@ const FreeBoardView2 = () => {
                     style={{ background: ' v', boxShadow: '0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.3)' }}>
                     <div className='div-border' style={{ background: 'linear-gradient(to right, rgb(255, 119, 96), rgb(241, 74, 83))', color: '#ffffff' }}>
                         <div className="text">
-                            <span className="tracking-tight text-white">삭제하기</span>
+                            <span className="tracking-tight text-white" style={{ textShadow: '0 0 0.938rem rgba(0,0,0,0.5)' }}>삭제하기</span>
                         </div>
                     </div>
                 </button>

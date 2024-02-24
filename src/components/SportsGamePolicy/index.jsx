@@ -2848,7 +2848,7 @@ const HistoryMenu = ({
             borderRadius: '3.2rem',
             padding: '1px',
             marginRight: isLast ? '0' : '1.125rem',
-            boxShadow: '0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.7)',
+            // boxShadow: '0px 0.375rem 0.375rem 0px rgba(0, 0, 0, 0.7)',
           }}
         >
           <button
@@ -2866,11 +2866,13 @@ const HistoryMenu = ({
               color:  pathname.includes(item.path) ? '#ffffff' : '#2d2834',
               width: '100%',
               borderRadius: '4rem',
-              height: '6.375rem',
+              // height: '6.375rem',
+              height: '100%',
               fontSize: '2.8125rem',
               marginRight: `${!index ? '1.15rem' : ''}`,
               // letterSpacing: '-0.07rem',
               letterSpacing: '-0.1em',
+              padding: '0.1875rem',
             }}
             key={item.id}
             onPointerDown={() => setHover(item.id)}
@@ -3004,6 +3006,39 @@ const SportsGamePolicy = ({
         className="flex flex-wrap items-center justify-center tracking-tight text-gray-r454545"
       >
         <Routes>
+          <Route
+            path="/livesports"
+            element={
+              <>
+                <p
+                  style={{
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    color: '#ffffff',
+                    margin: '0',
+                    // letterSpacing: '-0.07rem',
+                    letterSpacing: '0',
+                  }}
+                  className="text-gray-r7b7b7b text-center w-full"
+                >
+                  라이브스포츠 베팅규정
+                </p>
+                <p
+                  style={{
+                    fontSize: '2.625rem',
+                    textAlign: 'center',
+                    color: '#ffffff',
+                    margin: '0',
+                    // letterSpacing: '-0.07rem',
+                    letterSpacing: '0',
+                  }}
+                  className="text-gray-r7b7b7b text-center w-full"
+                >
+                  (모든 종목의 기본규정과 다를 시 별도 표기하고 있습니다.)
+                </p>
+              </>
+            }
+          ></Route>
           <Route
             path="/soccer"
             element={
