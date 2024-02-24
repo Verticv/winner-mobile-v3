@@ -4,10 +4,10 @@ import LeftIcon from '../../assets/myPage/Pagination-Icon/nav-left-arrow-v3.png'
 import RightIcon from '../../assets/myPage/Pagination-Icon/nav-right-arrow-v3.png';
 import DoubleLeftIcon from '../../assets/myPage/Pagination-Icon/two-left-arrow-v3.png';
 import DoubleRightIcon from '../../assets/myPage/Pagination-Icon/two-right-arrow-v3.png';
-import BetHistoryLeftIcon from '../../assets/myPage/bet-history/left.png';
-import BetHistoryRightIcon from '../../assets/myPage/bet-history/right.png';
-import BetHistoryDoubleLeftIcon from '../../assets/myPage/bet-history/double_left.png';
-import BetHistoryDoubleRightIcon from '../../assets/myPage/bet-history/double_right.png';
+// import BetHistoryLeftIcon from '../../assets/myPage/bet-history/left.png';
+// import BetHistoryRightIcon from '../../assets/myPage/bet-history/right.png';
+// import BetHistoryDoubleLeftIcon from '../../assets/myPage/bet-history/double_left.png';
+// import BetHistoryDoubleRightIcon from '../../assets/myPage/bet-history/double_right.png';
 
 import bg from '../../assets/myPage/Pagination-Icon/background-v3.png';
 
