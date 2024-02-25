@@ -29,7 +29,7 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
 
                 <textarea
                     // style={{ border: '1px solid #8d8d8d', width: "60.9375rem", padding: '3.3rem 4rem 3.5625rem 3.89rem', resize: "none", lineHeight: '1.32', borderRadius: '0.7rem', background: '#ffffff', fontSize: '2.5rem', color: '#aaaaaa'}}
-                    style={{ border: '1px solid #8d8d8d', width: "60.9375rem", padding: '3.3rem 4rem 3.5625rem 3.89rem', resize: "none", lineHeight: '1.32', borderRadius: '0.7rem', background: '#ffffff', fontSize: '2.5rem', color: '#444444'}}
+                    style={{ border: '1px solid #8d8d8d', width: "60.9375rem", padding: '3.3rem 4rem 3.5625rem 3.89rem', resize: "none", lineHeight: '1.32', borderRadius: '0.7rem', background: '#ffffff', fontSize: '2.5rem', color: '#444444', letterSpacing: '0'}}
                     className="place-color-grey overflow-hidden outline-none w-full tracking-tight placeholder-gray-r8f8f8f"
                     placeholder={placeholder}
                     onFocus={() => {
@@ -65,20 +65,21 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
             <div style={{ minHeight: '5.8rem', display: 'flex', alignItems: 'flex-start',letterSpacing: '-0.07rem' }}>
                 <img style={{ width: '2.25625rem', height: '2.25625rem', marginRight: '1.65rem', marginLeft: '-0.2rem', marginTop: '3.1rem' }} src={ReplyArrow} alt="" />
                 <img style={{ width: '3.825rem', height: '4.6375rem', marginRight: '0.6125rem', marginTop: '2rem' }} src={rank === 1 ? Rank1 : rank === 2 ? Rank2 : rank === 3 ? Rank3 : rank === 4 ? Rank4 : Rank5} alt="" />
-                <p style={{ fontSize: '2.624375rem', color: '#666666' }}>{username}</p>
+                <p style={{ fontSize: '2.624375rem', color: '#666666', fontWeight: '600' }}>{username}</p>
                 <div style={{ height: '1.75rem', width: '0.1875rem', marginLeft: '1.1rem', marginRight: '1.1rem', marginTop: '3.3rem', background: '#999999' }}></div>
                 <p style={{ fontSize: '2.25rem', color: '#929292', marginTop: '2.7rem', flexShrink: 0 }}>2021.06.28 15:36</p>
             </div>
             <div style={{ marginLeft: '3.8rem', minHeight: '8.625rem', borderRadius: '0.8rem', width: '66.15rem', background: '#ffffff', border: '1px solid #bbbbbb' }} className="">
                 <div style={{ borderRadius: "1.625rem", fontSize: '2.8125rem', paddingLeft: '3.6625rem', paddingRight: '3.6625rem', borderWidth: '0.1875rem', display: 'flex', paddingBottom: '2rem', }} className="h-full w-full bg-white border border-gray-dddddd flex items-center justify-between">
                     <div className="flex" style={{ display: '', marginTop: '2.2rem', color: '#989898' }}>
-                        {tag && (<span style={{ fontSize: '2.8125rem', color: '#4c98ff', marginRight: '0.8rem', flexShrink: '0', fontWeight: 'bold' }} className="text-blue-r0056a6 mr-4">@{truncate(tag, 6, 6)}</span>)}
+                        {tag && (<span style={{ fontSize: '2.8125rem', color: '#4c98ff', marginRight: '0.8rem', flexShrink: '0', fontWeight: '600' }} className="text-blue-r0056a6 mr-4">@{truncate(tag, 6, 6)}</span>)}
                         {text}
                     </div>
                 </div>
             </div>
             <div style={{ marginTop: '1.1rem', marginLeft: '3.8rem', display: 'flex', marginBottom: '-0.2rem' }} className='flex'>
-                <button style={{ borderRadius: "0.8rem", width: '9.2rem', height: '4.4375rem', borderWidth: '0.1875rem', fontSize: '2.25rem', marginRight: '0.55rem', color: '#ffffff', paddingTop: '0.2rem', letterSpacing: '-0.07rem', border: 'none', boxShadow:'0 2px 3px rgba(0, 0, 0, 0.3)' }} className={`${isOneButton ? 'reply-color hover flex justify-center align-center rounded-lg' : 'edit-color hover flex justify-center align-center rounded-lg' }`}>
+                {/* <button style={{ borderRadius: "0.8rem", width: '9.2rem', height: '4.4375rem', borderWidth: '0.1875rem', fontSize: '2.25rem', marginRight: '0.55rem', color: '#ffffff', paddingTop: '0.2rem', letterSpacing: '-0.07rem', border: 'none', boxShadow:'0 2px 3px rgba(0, 0, 0, 0.3)' }} className={`${isOneButton ? 'reply-color hover flex justify-center align-center rounded-lg' : 'edit-color hover flex justify-center align-center rounded-lg' }`}> */}
+                <button style={{ borderRadius: "0.8rem", width: '9.2rem', height: '4.4375rem', borderWidth: '0.1875rem', fontSize: '2.25rem', marginRight: '0.55rem', color: '#ffffff', paddingTop: '0.2rem', letterSpacing: '-0.025em', border: 'none', boxShadow:'0 2px 3px rgba(0, 0, 0, 0.3)' }} className={`${isOneButton ? 'reply-color hover flex justify-center align-center rounded-lg' : 'edit-color hover flex justify-center align-center rounded-lg' }`}>
                     <div className={`${isOneButton ? "text-gray-r7b7b7b" : "text-red-d52e2e"} flex items-center justify-center mt-2`}>{isOneButton ? "답글" : "수정"}</div>
                 </button>
                 {!isOneButton && (
@@ -169,7 +170,8 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
                                 * 2021년 5월 31일 ~ 6월 6일 (일요일)까지 배팅 내역은화요일 낙첨금액 5% 쿠폰 발행되며,
                             </div>
                             <div style={{ marginBottom: '1.7rem' }}>
-                                <span style={{ color: "#2980b9", letterSpacing: '0', lineHeight: '1.8' }}>* 2021년 6월 7일 (월) 이후 베팅에 대한 낙첨쿠폰은 위 기준에 따라 제공<span style={{ letterSpacing: '-0.07rem', color: '#666666' }}>되오니 참고 부탁 드립니다.</span></span>
+                                {/* <span style={{ color: "#2980b9", letterSpacing: '0', lineHeight: '1.8' }}>* 2021년 6월 7일 (월) 이후 베팅에 대한 낙첨쿠폰은 위 기준에 따라 제공<span style={{ letterSpacing: '-0.07rem', color: '#666666' }}>되오니 참고 부탁 드립니다.</span></span> */}
+                                <span style={{ color: "#2980b9", letterSpacing: '0', lineHeight: '1.8' }}>* 2021년 6월 7일 (월) 이후 베팅에 대한 낙첨쿠폰은 위 기준에 따라 제공<span style={{ letterSpacing: '0', color: '#666666' }}>되오니 참고 부탁 드립니다.</span></span>
                             </div>
                         </div>
 
@@ -240,8 +242,8 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
                         <div style={{ display: 'flex', alignItems: 'flex-start', marginLeft: '0.3rem', minHeight: '9rem', letterSpacing: '-0.07rem' }}>
                             <img style={{ width: '3.450625rem', height: '4.436875rem', marginRight: '0.5625rem', marginLeft: '-0.3rem', marginTop: '2.6rem' }} src={Rank2} alt="" />
                             {/* <p style={{ fontSize: '2.624375rem', color: '#666666', paddingTop: '0.4rem' }}>신풍사우나</p> */}
-                            <p style={{ fontSize: '2.624375rem', color: '#444444', paddingTop: '0.4rem', fontWeight: 'bold' }}>신풍사우나</p>
-                            <div style={{ height: '1.75rem', width: '0.1875rem', marginLeft: '1.1rem', marginRight: '1.1rem', marginTop: '3.7rem', background: '#555555' }}></div>
+                            <p style={{ fontSize: '2.624375rem', color: '#444444', paddingTop: '0.4rem', fontWeight: '600' }}>신풍사우나</p>
+                            <div style={{ height: '1.75rem', width: '0.1875rem', marginLeft: '1.1rem', marginRight: '1.1rem', marginTop: '3.7rem', background: '#999999' }}></div>
                             {/* <p style={{ fontSize: '2.25rem', color: '#929292', marginTop: '3.2rem', flexShrink: 0 }}>2021.06.28 15:36</p> */}
                             <p style={{ fontSize: '2.25rem', color: '#444444', marginTop: '3.2rem', flexShrink: 0 }}>2021.06.28 15:36</p>
                         </div>
@@ -272,8 +274,8 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
 
                         <div style={{ display: 'flex', alignItems: 'flex-start', marginLeft: '0.3rem', minHeight: '4.8rem', letterSpacing: '-0.07rem' }}>
                             <img style={{ width: '3.450625rem', marginRight: '0.5625rem', marginLeft: '-0.3rem', marginTop: '0.2rem' }} src={Rank2} alt="" />
-                            <span style={{ fontSize: '2.624375rem', color: '#666666', marginTop: '0.8rem' }}>신풍사우나</span>
-                            <div style={{ height: '1.75rem', width: '0.1875rem', marginLeft: '1.1rem', marginRight: '1.1rem', background: '#555', marginTop: '1.4rem' }}></div>
+                            <span style={{ fontSize: '2.624375rem', color: '#666666', marginTop: '0.8rem', fontWeight: '600' }}>신풍사우나</span>
+                            <div style={{ height: '1.75rem', width: '0.1875rem', marginLeft: '1.1rem', marginRight: '1.1rem', background: '#999999', marginTop: '1.4rem' }}></div>
                             {/* <span style={{ fontSize: '2.25rem', color: '#929292', marginTop: '1rem', flexShrink: 0 }}>2021.06.28 15:36</span> */}
                             <span style={{ fontSize: '2.25rem', color: '#444444', marginTop: '1rem', flexShrink: 0 }}>2021.06.28 15:36</span>
                         </div>
@@ -303,8 +305,8 @@ const FreeBoardView = ({activeButton, setActiveButton}) => {
                         <div style={{ display: 'flex', alignItems: 'flex-start', marginLeft: '0.3rem', minHeight: '4.8rem', letterSpacing: '-0.07rem' }}>
                             <img style={{ width: '3.450625rem', marginRight: '0.5625rem', marginLeft: '-0.3rem', marginTop: '0.2rem' }} src={Rank2} alt="" />
                             {/* <span style={{ fontSize: '2.624375rem', color: '#666666', marginTop: '0.8rem' }}>신풍사우나</span> */}
-                            <span style={{ fontSize: '2.624375rem', color: '#444444', marginTop: '0.8rem' }}>신풍사우나</span>
-                            <div style={{ height: '1.75rem', width: '0.1875rem', marginLeft: '1.1rem', marginRight: '1.1rem', background: '#555', marginTop: '1.4rem' }}></div>
+                            <span style={{ fontSize: '2.624375rem', color: '#444444', marginTop: '0.8rem', fontWeight: '600' }}>신풍사우나</span>
+                            <div style={{ height: '1.75rem', width: '0.1875rem', marginLeft: '1.1rem', marginRight: '1.1rem', background: '#999999', marginTop: '1.4rem' }}></div>
                             {/* <span style={{ fontSize: '2.25rem', color: '#929292', marginTop: '1rem', flexShrink: 0 }}>2021.06.28 15:36</span> */}
                             <span style={{ fontSize: '2.25rem', color: '#444444', marginTop: '1rem', flexShrink: 0 }}>2021.06.28 15:36</span>
                         </div>

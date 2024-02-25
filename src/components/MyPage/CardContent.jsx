@@ -111,7 +111,8 @@ const CardContent = ({
               <span
                 style={{
                   fontSize: '2.625rem',
-                  letterSpacing: '-0.07rem',
+                  // letterSpacing: '-0.07rem',
+                  letterSpacing: '-0.015em',
                   color: '#444444',
                   fontWeight: '700'
                 }}
@@ -132,7 +133,8 @@ const CardContent = ({
                 <span
                   style={{
                     fontSize: '2.625rem',
-                    letterSpacing: '-0.07rem',
+                    // letterSpacing: '-0.07rem',
+                    letterSpacing: '-0.015em',
                     color: '#444444',
                     fontWeight: '700'
                   }}
@@ -146,7 +148,8 @@ const CardContent = ({
               style={{
                 marginBottom: '0.36rem',
                 display: 'flex',
-                letterSpacing: '-0.07rem',
+                // letterSpacing: '-0.07rem',
+                letterSpacing: '-0.015em',
                 color: '#444444',
               }}
               className="flex"
@@ -190,7 +193,8 @@ const CardContent = ({
                 <div
                   style={{
                     fontSize: '2.625rem',
-                    letterSpacing: '-0.07rem',
+                    // letterSpacing: '-0.07rem',
+                    letterSpacing: '-0.015em',
                     marginBottom: '0.89rem',
                   }}
                 >

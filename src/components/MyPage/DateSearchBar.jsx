@@ -430,32 +430,32 @@ const DateSearchBar = ({
         <div className="buttons-container2">
           <div className="common-button12">
             <div className="text-con">
-              <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.025em' }}>오늘</span>
+              <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.015em' }}>오늘</span>
             </div>
           </div>
 
           <div className="common-button12">
             <div className="text-con">
-              <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.025em' }}>1주일</span>
+              <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.015em' }}>1주일</span>
             </div>
           </div>
 
           <div className="common-button12">
             <div className="text-con">
-              <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.025em' }}>15일</span>
+              <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.015em' }}>15일</span>
             </div>
           </div>
 
           <div className="common-button12">
             <div className="text-con">
-              <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.025em' }}>1개월</span>
+              <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.015em' }}>1개월</span>
             </div>
           </div>
 
           {has3MonthSearch && (
             <div className="common-button12">
               <div className="text-con">
-                <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.025em' }}>3개월</span>
+                <span className="tracking-tight text-white pt-px" style={{ letterSpacing: '-0.015em' }}>3개월</span>
               </div>
             </div>
           )}
@@ -517,7 +517,7 @@ const DateSearchBar = ({
         {withBlackButton && !withMargin && (
           <div className="first-row">
             <input
-              style={{ marginLeft: '2rem' }}
+              style={{ marginLeft: '2rem', letterSpacing: '-0.15em' }}
               placeholder="아이디 입력"
               className="place-color-grey placeholder:text-gray-r7b7b7b flex-shrink-0 outline-none rounded-2xl border border-gray-dddddd text-15px tracking-tight text-gray-r8c8c8c"
               onFocus={() => {
@@ -561,7 +561,7 @@ const DateSearchBar = ({
                   fontSize: '2.625rem',
                   color: '#ffffff',
                   marginTop: '0.2rem',
-                  letterSpacing: '-0.025em',
+                  letterSpacing: '-0.015em',
                 }}
                 className="shadow-to-text"
               >

@@ -2,15 +2,6 @@
     .date12 {
         padding-top: 0rem !important;
 
-        .first-row input {
-            margin-top: -5rem;
-            margin-left: 0.1rem !important;
-            width: 41.66rem !important;
-            height: 6.9rem !important;
-            padding-left: 1.9rem !important;
-
-
-        }
 
         .first-row {
             ::placeholder{
@@ -19,6 +10,19 @@
             .common-button {
                 margin-bottom: 1.3rem !important;
             }
+        }
+
+        .first-row input {
+            margin-top: -5rem;
+            margin-left: 0.1rem !important;
+            width: 41.66rem !important;
+            height: 6.9rem !important;
+            padding-left: 1.9rem !important;
+
+            &::placeholder {
+                color: #9da3b0;
+            }
+
         }
 
         .withBlackButton {

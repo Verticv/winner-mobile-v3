@@ -68,7 +68,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
               color: '#d6f3ff',
               display: 'inline-block',
               // letterSpacing: '-0.07rem',
-              letterSpacing: '-0.015rem',
+              letterSpacing: '-0.025rem',
               textShadow: '0px 0px 0.938rem rgba(0, 0, 0, 0.5)',
             }}
             className="shadow-to-text"
@@ -100,7 +100,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
           fontSize: '2.625rem',
           color: '#ffffff',
           // letterSpacing: '-0.25rem',
-          letterSpacing: '-0.025rem',
+          letterSpacing: '-0.025em',
           fontWeight: '700',
         }}
         className="text-gray-r454545 "
@@ -149,7 +149,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
               background: 'linear-gradient(to right, #9d3bbb, #5423a0)',
               borderRadius: '0.625rem',
               // letterSpacing: '-0.07rem',
-              letterSpacing: '-0.025rem',
+              letterSpacing: '-0.025em',
             }}
             className="w-full rounded-2xl border border-gray-dddddd bg-gray-f9f9f9"
           >
@@ -206,7 +206,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                   style={{ fontSize: '2.625rem', color: '#444444' }}
                   className="text-gray-r393e41  text-gray-r585858"
                 >
-                  <span style={{ color: '#f04281', fontSize: '2.624375rem' }}>
+                  <span style={{ color: '#f04281', fontSize: '2.624375rem', fontWeight: 'bold' }}>
                     278
                   </span>
                   P
@@ -228,7 +228,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                   style={{ fontSize: '2.625rem', color: '#444444' }}
                   className="text-gray-r393e41  text-gray-r585858"
                 >
-                  <span style={{ fontSize: '2.624375rem' }}>0</span>P
+                  <span style={{ fontSize: '2.624375rem', fontWeight: 'bold' }}>0</span>P
                 </div>
                 <div
                   style={{
@@ -247,7 +247,7 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                   style={{ fontSize: '2.625rem', color: '#444444' }}
                   className="text-gray-r393e41  text-gray-r585858"
                 >
-                  <span style={{ fontSize: '2.624375rem' }}>0</span>P
+                  <span style={{ fontSize: '2.624375rem', fontWeight: 'bold' }}>0</span>P
                 </div>
                 <div
                   style={{
@@ -271,13 +271,14 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
                     fontSize: '2.625rem',
                     marginBottom: '0.9375rem',
                     // letterSpacing: '-0.1rem',
-                    letterSpacing: '-0.025rem',
+                    letterSpacing: '-0.025em',
                     // padding: '0.4rem 2.2rem 0',
                     display: 'flex',
                     alignItems: 'center',
                     border: '0px solid',
                     outline: 'none',
                     width: '100%',
+                    fontWeight: 'bold'
                   }}
                   placeholder="직접 입력시 숫자만 입력해 주세요."
                   value={inputValue !== null ? nf.format(inputValue) : ''}

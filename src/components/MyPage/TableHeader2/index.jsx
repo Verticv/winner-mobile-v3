@@ -8,10 +8,10 @@ const TableHeader2 = ({ smallCard = false, isMinigame = false, middleText = "무
             <div style={{ fontSize: '2.625rem', marginLeft: '9.4rem' }} className="h-full flex items-center justify-end">회차</div>
             <div style={{ fontSize: '2.625rem', marginLeft: '14.1rem' }} className="h-full flex items-center justify-end">결과</div>
             <div style={{ fontSize: '2.625rem', marginLeft: '12.8rem' }} className="h-full flex items-center justify-end">배당률</div> */}
-            <div style={{ fontSize: '2.625rem', marginLeft: '4.5rem', letterSpacing: '-0.015em' }} className="h-full flex items-center justify-end">경기일시</div>
-            <div style={{ fontSize: '2.625rem', marginLeft: '9.8rem', letterSpacing: '-0.015em' }} className="h-full flex items-center justify-end">회차</div>
-            <div style={{ fontSize: '2.625rem', marginLeft: '14.0rem', letterSpacing: '-0.015em' }} className="h-full flex items-center justify-end">결과</div>
-            <div style={{ fontSize: '2.625rem', marginLeft: '13.2rem', letterSpacing: '-0.015em' }} className="h-full flex items-center justify-end">배당률</div>
+            <div style={{ fontSize: '2.625rem', marginLeft: '4.5rem', letterSpacing: '-0.015em', fontWeight: 'bold' }} className="h-full flex items-center justify-end">경기일시</div>
+            <div style={{ fontSize: '2.625rem', marginLeft: '9.8rem', letterSpacing: '-0.015em', fontWeight: 'bold' }} className="h-full flex items-center justify-end">회차</div>
+            <div style={{ fontSize: '2.625rem', marginLeft: '14.0rem', letterSpacing: '-0.015em', fontWeight: 'bold' }} className="h-full flex items-center justify-end">결과</div>
+            <div style={{ fontSize: '2.625rem', marginLeft: '13.2rem', letterSpacing: '-0.015em', fontWeight: 'bold' }} className="h-full flex items-center justify-end">배당률</div>
         </div>
     )
 }

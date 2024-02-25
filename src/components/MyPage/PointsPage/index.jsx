@@ -116,7 +116,7 @@ const PointsPage = ({
                 marginBottom: '1rem',
                 fontSize: '2.25rem',
                 // letterSpacing: '-0.07rem',
-                letterSpacing: '-0.025rem',
+                letterSpacing: '-0.1em',
               }}
             >
               잔여 포인트
@@ -128,7 +128,7 @@ const PointsPage = ({
                 fontWeight: '700'
               }}
             >
-              <span style={{ color: '#f04281'}}>278</span>
+              <span style={{ color: '#f04281', letterSpacing: '0' }}>278</span>
               <span style={{ color: '#5E399A', letterSpacing: '0' }}>P</span>
             </div>
           </div>
@@ -162,7 +162,7 @@ const PointsPage = ({
                 marginBottom: '1rem',
                 fontSize: '2.25rem',
                 // letterSpacing: '-0.07rem',
-                letterSpacing: '-0.025rem',
+                letterSpacing: '-0.1em',
               }}
             >
               당월 적립포인트
@@ -175,7 +175,7 @@ const PointsPage = ({
                 fontWeight: '700'
               }}
             >
-              <span>50</span>
+              <span style={{ letterSpacing: '0' }}>50</span>
               <span style={{ letterSpacing: '0' }}>P</span>
             </div>
           </div>
@@ -215,7 +215,7 @@ const PointsPage = ({
                 marginBottom: '1rem',
                 fontSize: '2.25rem',
                 // letterSpacing: '-0.07rem',
-                letterSpacing: '-0.025rem',
+                letterSpacing: '-0.1em',
               }}
             >
               전월 적립포인트
@@ -228,7 +228,7 @@ const PointsPage = ({
                 fontWeight: '700'
               }}
             >
-              <span style={{}}>228</span>
+              <span style={{ letterSpacing: '0' }}>228</span>
               <span style={{ letterSpacing: '0' }}>P</span>
             </div>
           </div>
@@ -264,7 +264,7 @@ const PointsPage = ({
                 marginBottom: '1rem',
                 fontSize: '2.25rem',
                 // letterSpacing: '-0.07rem',
-                letterSpacing: '-0.025rem',
+                letterSpacing: '-0.1em',
               }}
             >
               총 누적포인트
@@ -277,7 +277,7 @@ const PointsPage = ({
                 fontWeight: '700'
               }}
             >
-              <span style={{}}>278</span>
+              <span style={{ letterSpacing: '0' }}>278</span>
               <span style={{ letterSpacing: '0' }}>P</span>
             </div>
           </div>
@@ -312,7 +312,7 @@ const PointsPage = ({
                 marginBottom: '1rem',
                 fontSize: '2.25rem',
                 // letterSpacing: '-0.07rem',
-                letterSpacing: '-0.025rem',
+                letterSpacing: '-0.1em',
               }}
             >
               총 사용포인트
@@ -325,7 +325,7 @@ const PointsPage = ({
                 fontWeight: '700'
               }}
             >
-              <span style={{}}>228</span>
+              <span style={{ letterSpacing: '0' }}>228</span>
               <span style={{ letterSpacing: '0' }}>P</span>
             </div>
           </div>

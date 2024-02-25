@@ -392,7 +392,7 @@
           color: #eeeeee;
           margin-left: 1.875rem;
           // letter-spacing: 0.05rem;
-          letter-spacing : -.1em;
+          letter-spacing : 0;
           font-weight: bold;
         }
       }
@@ -632,7 +632,8 @@
       font-size: 2.5rem;
       color: #2d2834;
       font-weight: bold;
-      letter-spacing : 0;
+      // letter-spacing : 0;
+      letter-spacing : -0.1em;
     }
   }
 }
@@ -1697,6 +1698,7 @@ input[type='radio'].radio-input:checked::before {
         // margin-right: 0.1rem;
         text-shadow: 0px 0px 0.938rem rgba(0, 0, 0, 0.5);
         font-size: 2.625rem;
+        margin: 0;
       }
     }
   }
@@ -1843,7 +1845,7 @@ input[type='radio'].radio-input:checked::before {
     width: 46.9rem;
     padding: 1.7rem 1.1rem;
     // letter-spacing: -0.07rem;
-    letter-spacing: -0.025rem;
+    letter-spacing: -0.025em;
     border-radius: 0.5rem;
 
     label {
@@ -1906,8 +1908,10 @@ input[type='radio'].radio-input:checked::before {
         font-size: 2.625rem;
         color: #666666;
         // padding: 2rem 0.2rem 0 0;
-        letter-spacing: -0.07rem;
+        // letter-spacing: -0.07rem;
+        letter-spacing: -0.015em;
         // text-shadow: #00000080 0.3125rem 0.125rem 0.4375rem;
+        font-weight: bold;
       }
     }
   }
@@ -1920,7 +1924,7 @@ input[type='radio'].radio-input:checked::before {
   background: #f7f7f7;
   padding: 1.7rem 3rem 1.513rem;
   // letter-spacing: -0.07rem;
-  letter-spacing: -0.025rem;
+  letter-spacing: -0.025em;
   word-break: keep-all;
   font-weight: 700;
 }
@@ -2188,9 +2192,10 @@ input[type='radio'].radio-input:checked::before {
         font-size: 2.811875rem;
 
         .text {
-          margin-right: -0.8rem;
-          margin-top: 0.1rem;
-          letter-spacing: -0.07rem;
+          // margin-right: -0.8rem;
+          // margin-top: 0.1rem;
+          // letter-spacing: -0.07rem;
+          letter-spacing: -0.025em;
           text-shadow: 0px 0px 0.938rem rgba(0, 0, 0, 0.5);
         }
       }
