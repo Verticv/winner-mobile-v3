@@ -47,7 +47,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
           fontSize: '2.625rem',
           color: '#ffffff',
           // letterSpacing: '-0.25rem',
-          letterSpacing: '-0.025rem',
+          letterSpacing: '-0.025em',
           fontWeight: '700'
         }}
         className="text-gray-r454545 "
@@ -177,7 +177,7 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                     fontSize: '2.625rem',
                     marginBottom: '0.9375rem',
                     // letterSpacing: '-0.1rem',
-                    letterSpacing: '-0.025rem',
+                    letterSpacing: '-0.025em',
                     border: '0px solid',
                     outline: 'none',
                     fontWeight: 'bold',
@@ -563,7 +563,8 @@ const MoneyExchange = ({ subActiveButton, setSubActiveButton }) => {
                 fontSize: '2.8125rem',
                 color: '#ffffff',
                 display: 'inline-block',
-                letterSpacing: '-0.07rem',
+                // letterSpacing: '-0.07rem',
+                letterSpacing: '-0.025em',
                 textShadow: 'rgba(0, 0, 0, 0.5) 0px 0px 0.938rem',
                 marginTop: '0.188rem',
               }}

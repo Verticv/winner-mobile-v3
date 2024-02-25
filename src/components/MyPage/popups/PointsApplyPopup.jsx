@@ -58,6 +58,7 @@ const PointsApplyPopup = ({ setPopupOpen }) => {
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '2.2rem', color: '#c8c8c8' }}>
                             <input
+                                id="pointApplyInput"
                                 placeholder="0"
                                 style={{ height: '6.625rem', width: '36.437rem', fontSize: '2.8125rem', padding: '0 1.7rem', background: '#ffffff', outline: 'none', borderRadius: '0.625rem', border: '0.1875rem solid #ffffff', color: '#444444' }}
                                 className="flex-shrink-0 outline-none rounded-2xl border border-gray-dddddd  tracking-tight text-gray-r8c8c8c"

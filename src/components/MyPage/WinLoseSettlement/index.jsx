@@ -261,7 +261,8 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
             style={{
               marginRight: '0.625rem',
               color: '#ffffff',
-              letterSpacing: '-0.12rem',
+              // letterSpacing: '-0.12rem',
+              letterSpacing: '-0.025em',
               verticalAlign: 'bottom',
               height: '6.7rem',
               lineHeight: '6.7rem',
@@ -273,7 +274,8 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
             style={{
               marginRight: '0.625rem',
               color: '#ffcc00',
-              letterSpacing: '-0.12rem',
+              // letterSpacing: '-0.12rem',
+              letterSpacing: '-0.025em',
               verticalAlign: 'bottom',
               height: '6.7rem',
               lineHeight: '6.7rem',
@@ -331,7 +333,8 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
             style={{
               marginRight: '0.625rem',
               color: '#ffffff',
-              letterSpacing: '-0.12rem',
+              // letterSpacing: '-0.12rem',
+              letterSpacing: '-0.025em',
               verticalAlign: 'bottom',
               height: '6.7rem',
               lineHeight: '6.7rem',
@@ -343,7 +346,8 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
             style={{
               marginRight: '0.625rem',
               color: '#ffcc00',
-              letterSpacing: '-0.12rem',
+              // letterSpacing: '-0.12rem',
+              letterSpacing: '-0.025em',
               verticalAlign: 'bottom',
               height: '6.7rem',
               lineHeight: '6.7rem',
@@ -397,6 +401,7 @@ const WinLoseSettlementContent = ({ activeButton, setActiveButton }) => {
             borderTopLeftRadius: '0.5rem',
             borderBottomLeftRadius: '0.5rem',
             color: 'rgb(68, 68, 68)',
+            letterSpacing: '-0.015em',
           }}
           className="flex items-center justify-center h-full w-1/2 text-white bg-gray-a3b2c2 border-r border-gray-ececec rounded-l-2xl"
         >

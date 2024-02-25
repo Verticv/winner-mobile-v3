@@ -33,6 +33,7 @@ const TableHeader = ({
             // marginLeft: smallCard ? '11rem' : '2rem',
             marginLeft: smallCard ? '11rem' : '2rem',
             flexShrink: 0,
+            fontWeight: 'bold'
           }}
         >
           회차
@@ -42,6 +43,7 @@ const TableHeader = ({
             fontSize: '2.625rem',
             marginLeft: smallCard ? '13.5rem' : '11.5rem',
             flexShrink: 0,
+            fontWeight: 'bold'
           }}
         >
           승(홈)
@@ -51,6 +53,7 @@ const TableHeader = ({
             fontSize: '2.625rem',
             marginLeft: smallCard ? '12.25rem' : '14rem',
             flexShrink: 0,
+            fontWeight: 'bold'
           }}
         >
           VS
@@ -60,6 +63,7 @@ const TableHeader = ({
             fontSize: '2.625rem',
             marginLeft: smallCard ? '9rem' : '13rem',
             flexShrink: 0,
+            fontWeight: 'bold'
           }}
         >
           패(원정)

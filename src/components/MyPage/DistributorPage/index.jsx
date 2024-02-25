@@ -207,7 +207,7 @@ const DistributorPage = ({
                 height: '2.34375rem',
                 marginTop: '-0.035rem',
                 marginLeft: '0.1rem',
-                letterSpacing: '-0.07rem',
+                letterSpacing: '-0.025em',
                 color: '#2d2834',
               }}
               className=" tracking-tight text-gray-r616161"
@@ -221,7 +221,7 @@ const DistributorPage = ({
                 fontSize: '2.25rem',
                 height: '2.34375rem',
                 marginTop: '0.375rem',
-                letterSpacing: '-0.07rem',
+                letterSpacing: '-0.025em',
                 color: '#2d2834',
               }}
               className=" tracking-tight text-gray-r616161"
@@ -236,7 +236,7 @@ const DistributorPage = ({
             lineHeight: '1.625rem',
             marginBottom: '1.513rem',
             color: '#c03a41',
-            letterSpacing: '-0.07rem',
+            letterSpacing: '-0.025em',
           }}
           className="font-robotoBold tracking-tight text-blue-r0056a6"
         >
@@ -6372,8 +6372,8 @@ const DistributorPage = ({
                     >
                       <img
                         style={{
-                          width: '1.438rem',
-                          height: '1.2rem',
+                          width: '1.4rem',
+                          height: '1.4rem',
                           marginRight: '1.2rem',
                         }}
                         src={Diamond}
@@ -6410,8 +6410,8 @@ const DistributorPage = ({
                     >
                       <img
                         style={{
-                          width: '1.438rem',
-                          height: '1.3125rem',
+                          width: '1.4rem',
+                          height: '1.4rem',
                           marginRight: '1.2rem',
                         }}
                         src={Diamond}
@@ -6460,9 +6460,9 @@ const DistributorPage = ({
                     >
                       <img
                         style={{
-                          width: '1.438rem',
-                          height: '1.2rem',
-                          marginRight: '1.3125rem',
+                          width: '1.4rem',
+                          height: '1.4rem',
+                          marginRight: '1.2rem',
                         }}
                         src={Diamond}
                         alt=""
@@ -6498,8 +6498,8 @@ const DistributorPage = ({
                     >
                       <img
                         style={{
-                          width: '1.438rem',
-                          height: '1.3125rem',
+                          width: '1.4rem',
+                          height: '1.4rem',
                           marginRight: '1.2rem',
                         }}
                         src={Diamond}

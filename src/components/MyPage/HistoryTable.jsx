@@ -279,7 +279,7 @@ const HistoryTable = ({
                       marginBottom: '0.75rem',
                       color: firstColumnColor,
                       // letterSpacing: '-0.07rem',
-                      letterSpacing: '-0.015rem',
+                      letterSpacing: '-0.015em',
                       marginLeft: '0.14rem',
                       display: 'flex',
                       width: '100%',

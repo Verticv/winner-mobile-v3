@@ -590,6 +590,7 @@ const DateSearchBar1 = ({
                     fontSize: '2.625rem',
                     color: '#ffffff',
                     marginTop: '0.2rem',
+                    letterSpacing: '-0.15em'
                   }}
                   className="shadow-to-text"
                 >
@@ -628,6 +629,7 @@ const DateSearchBar1 = ({
                     fontSize: '2.625rem',
                     color: '#ffffff',
                     marginTop: '0.2rem',
+                    letterSpacing: '-0.15em'
                   }}
                   className="shadow-to-text"
                 >

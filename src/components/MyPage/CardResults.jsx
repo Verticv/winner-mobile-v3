@@ -560,7 +560,8 @@ const CardResults = ({
               style={{
                 color: result === 'cancel' ? '#4c98ff' : '',
                 marginLeft: '0.45rem',
-                letterSpacing: '-0.06rem',
+                // letterSpacing: '-0.06rem',
+                letterSpacing: '-0.015em',
                 fontWeight: 'bold',
               }}
             >
@@ -581,6 +582,7 @@ const CardResults = ({
                       : result === 'equality'
                       ? '#00A651'
                       : '',
+                  letterSpacing : '-.015em',
                 }}
               >
                 {result === 'win'
@@ -655,7 +657,8 @@ const CardResults = ({
               style={{
                 color: result === 'cancel' ? '#33a1e9' : '',
                 // marginLeft: '0.45rem',
-                letterSpacing: '-0.06rem',
+                // letterSpacing: '-0.06rem',
+                letterSpacing: '-0.015em',
                 fontWeight: 'bold',
               }}
             >
@@ -674,6 +677,7 @@ const CardResults = ({
                     : result === 'equality'
                     ? '#00A651'
                     : '',
+                letterSpacing : '-.015em',
               }}
             >
               {result === 'win'

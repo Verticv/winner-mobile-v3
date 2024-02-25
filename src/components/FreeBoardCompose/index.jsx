@@ -48,7 +48,7 @@ const FreeBoardCompose = () => {
                         <input
                             placeholder="제목을 입력하세요."
                             // style={{color:'#666666'}}
-                            style={{color:'rgb(247, 247, 247)'}}
+                            // style={{color:'rgb(247, 247, 247)'}}
                             onFocus={() => {
                                 // const menu = document.querySelector('#main-menu');
                                 // menu.style.marginBottom = '-14.075rem'

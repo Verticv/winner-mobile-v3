@@ -409,7 +409,8 @@ const FreeBoard = ({
                                                             : <img style={{ width: "3.8125rem", height: 'auto', marginTop: '0rem', marginLeft: '-0.2rem', marginRight: '-0.2rem' }} src={Rank5} alt="" />
                                         }
                                         <p className='flex items-center' style={{
-                                            margin: 0, fontSize: '2.61875rem', marginLeft: '0.89rem', letterSpacing: '-0.06rem', marginTop: '0.3rem',
+                                            // margin: 0, fontSize: '2.61875rem', marginLeft: '0.89rem', letterSpacing: '-0.06rem', marginTop: '0.3rem',
+                                            margin: 0, fontSize: '2.61875rem', marginLeft: '0.89rem', letterSpacing: '0', marginTop: '0.3rem',
                                             whiteSpace: 'nowrap',
                                             maxWidth: '31.5rem',
                                             overflow: 'hidden',
@@ -421,7 +422,7 @@ const FreeBoard = ({
                                         <div style={{ height: '1.75rem', width: '0.1875rem', margin: 'auto 1.1rem', background: '#cccccc' }} className='bg-gray-c5c5c5'></div>
                                         {item.type === "일반" && (
                                             // <div style={{ color: '#888888', fontSize: '2.61875rem', marginLeft: '-0.1rem', letterSpacing: '-0.059rem' }} className="flex items-center">
-                                            <div style={{ color: '#444444', fontSize: '2.61875rem', marginLeft: '-0.1rem', letterSpacing: '-0.059rem' }} className="flex items-center">
+                                            <div style={{ color: '#444444', fontSize: '2.61875rem', marginLeft: '-0.1rem', letterSpacing: '0' }} className="flex items-center">
                                                 {item.time}
                                             </div>
                                         )}

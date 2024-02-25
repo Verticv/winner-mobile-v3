@@ -20,10 +20,10 @@ input {
     background: bottom;
     font-size: 2.625rem;
     // color: #666666;
-    color: #9da3b0;
+    color: #444444;
     margin-top: 0.07rem;
     // letter-spacing: -0.07rem;
-    letter-spacing: -0.025rem;
+    letter-spacing: -0.025em;
     
     &::placeholder{
         color: #666666;
@@ -36,6 +36,14 @@ input {
         } 
     }
 }
+
+#pointApplyInput {
+    &::placeholder{
+        color: #9da3b0;
+    }
+}
+
+
 
 #title {
     letter-spacing: 0;
@@ -132,7 +140,7 @@ input {
         font-size: 2.811875rem;
 
         span {
-            margin-top: 0.2rem;
+            // margin-top: 0.2rem;
             letter-spacing: -0.07rem;
             margin-right: -0.1rem;
             text-shadow: rgb(0 0 0) 0rem 0rem 1rem;
