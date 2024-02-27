@@ -39,7 +39,8 @@ const AnnouncementTable = ({ array, checkedState, setCheckedState }) => {
                   overflow: 'hidden',
                   whiteSpace: 'nowrap',
                   fontWeight: item.isNew === true ? '700' : 'unset',
-                  color: item.isNew === true ? '#444444' : '#666666',
+                  // color: item.isNew === true ? '#444444' : '#666666',
+                  color: item.isNew === true ? '#444444' : '#444444',
                 }}
               >
                 {item.title}
@@ -74,7 +75,8 @@ const AnnouncementTable = ({ array, checkedState, setCheckedState }) => {
                   {item.type}
                 </p>
                 <div className="sep-cont" />
-                <div className="time" style={{ color: '#666666' }}>
+                {/* <div className="time" style={{ color: '#666666' }}> */}
+                <div className="time" style={{ color: '#444444' }}>
                   {item.time}
                 </div>
               </div>

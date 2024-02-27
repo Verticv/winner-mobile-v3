@@ -241,17 +241,21 @@ const EsportsMulti = () => {
               <span
                 style={{
                   margin: '0 0.5rem 0 0',
-                  color: '#4c98ff',
-                  fontWeight: '600',
+                  // color: '#4c98ff',
+                  color: '#33a1e9',
+                  // fontWeight: '600',
+                  fontWeight: 'bold',
                 }}
               >
                 [+]
               </span>
               <span
                 style={{
-                  color: '#e65454',
+                  // color: '#e65454',
+                  color: '#f04281',
                   margin: '0 0.5rem 0 0',
-                  fontWeight: '600',
+                  // fontWeight: '600',
+                  fontWeight: 'bold',
                 }}
               >
                 [-]

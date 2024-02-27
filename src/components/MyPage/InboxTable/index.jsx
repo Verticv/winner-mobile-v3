@@ -244,8 +244,10 @@ const InboxTable = ({ array, checkedState, setCheckedState }) => {
                 <div
                   style={{
                     fontSize: '2.625rem',
-                    color: item.isRead ? '#888888' : '#666666',
-                    letterSpacing: '-0.07rem',
+                    // color: item.isRead ? '#888888' : '#666666',
+                    color: item.isRead ? '#444444' : '#444444',
+                    // letterSpacing: '-0.07rem',
+                    letterSpacing: '0',
                   }}
                   className="flex items-center text-gray-r7b7b7b"
                 >

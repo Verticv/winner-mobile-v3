@@ -121,6 +121,7 @@ class Calendar extends React.Component {
                   letterSpacing: '-0.07rem',
                   width: '3.3rem',
                   textAlign: 'center',
+                  fontWeight: 'bold'
                 }}
               >
                 {isSameMonth(day, monthStart) && formattedDate}

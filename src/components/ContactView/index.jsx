@@ -157,7 +157,8 @@ const ContactView = () => {
                 <p
                   style={{
                     fontSize: '2.4375rem',
-                    color: '#666666',
+                    // color: '#666666',
+                    color: '#444444',
                     marginTop: '2.8rem',
                     letterSpacing: '-0.05rem',
                     margin: '0',
@@ -183,7 +184,8 @@ const ContactView = () => {
                 padding: '0.6rem 1.9rem',
                 height: '4.125rem',
                 marginTop: '0.35rem',
-                letterSpacing: '-0.07rem',
+                // letterSpacing: '-0.07rem',
+                letterSpacing: '0',
                 color: '#ffffff',
                 borderRadius: '2rem',
                 maxWidth: '17rem',

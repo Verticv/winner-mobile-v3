@@ -790,7 +790,7 @@ const HistoryMenu = ({
                         : "bg-white border border-gray-b7b7b7"
                         } w-1/2 rounded-full`}
                     // style={{ background: isActive ? 'linear-gradient(to top,#491f9c,#9e3cbc)' : 'linear-gradient(to top,#ccc4ff,#ffd9f5)', color: isActive ? '#ffffff' : '#2d2834', width: '100%', borderRadius: '4rem', height: '100%', fontSize: '2.8125rem', marginRight: `${!index ? '1.15rem' : ''}`, letterSpacing: '-0.07rem' }}
-                    style={{ background: isActive ? 'linear-gradient(to top,#491f9c,#9e3cbc)' : 'linear-gradient(to top,#ccc4ff,#ffd9f5)', color: isActive ? '#ffffff' : '#2d2834', width: '100%', borderRadius: '4rem', height: '100%', fontSize: '2.8125rem', marginRight: `${!index ? '1.15rem' : ''}`, letterSpacing: '0' }}
+                    style={{ background: isActive ? 'linear-gradient(to top,#491f9c,#9e3cbc)' : 'linear-gradient(to top,#ccc4ff,#ffd9f5)', color: isActive ? '#ffffff' : '#2d2834', width: '100%', borderRadius: '4rem', height: '100%', fontSize: '2.8125rem', marginRight: `${!index ? '1.15rem' : ''}`, letterSpacing: '-0.1em', fontWeight: 'bold' }}
                     key={item.id}
 
                     onPointerDown={() => setHover(item.id)}
@@ -1017,7 +1017,7 @@ const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
                     isGift
                 />
                 <div style={{ marginBottom: '2.9375rem', textAlign: 'center', letterSpacing: '-0.07rem', color: '#ffffff', marginTop: '3.7rem' }} className='mt-4'>
-                    <p className='text-gray-r7c7c7c text-center' style={{ fontSize: '2.625rem' }}>
+                    <p className='text-gray-r7c7c7c text-center' style={{ fontSize: '2.625rem', letterSpacing: '-0.025em' }}>
                         {/* <span className='text-blue-r0056a6' style={{ color: '#ffd98b' }}>쿠폰선물하기</span> 버튼을 클릭하여 쿠폰받을 회원을 선택하세요. */}
                         <span className='text-blue-r0056a6' style={{ color: '#ffd98b', letterSpacing: '-0.025em', fontWeight: 'bold' }}>쿠폰선물하기</span> 버튼을 클릭하여 쿠폰받을 회원을 선택하세요.
                     </p>
