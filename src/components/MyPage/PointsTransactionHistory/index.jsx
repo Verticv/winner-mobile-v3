@@ -2,7 +2,7 @@ import Pagination from '../Pagination';
 import React, { useState, useEffect } from 'react';
 import DateSearchBar1 from '../DateSearchBar1';
 import HistoryTable from '../HistoryTable';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const tableData = [
   [
@@ -160,23 +160,24 @@ const PointsTransactionHistory = ({
   const [page, setPage] = useState(0);
   const [isPopupOpen, setPopupOpen] = useState(true);
   const [checkedState, setCheckedState] = useState(new Array(3).fill(false));
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
-    window.onpopstate = (e) => {
-      setTimeout(() => {
-        navigate('/mypage/points');
-        setSubActiveButton('/mypage/points/all/points-transaction-history');
-      }, 0);
-    };
-    return () => {
-      setSubActiveButton('/mypage/points/all/points-transaction-history');
-    };
-  }, [setSubActiveButton, subActiveButton, navigate]);
+  //!- this occurs error (empty page)
+  // useEffect(() => {
+  //   window.onpopstate = (e) => {
+  //     setTimeout(() => {
+  //       navigate('/mypage/points');
+  //       setSubActiveButton('/mypage/points/all/points-transaction-history');
+  //     }, 0);
+  //   };
+  //   return () => {
+  //     setSubActiveButton('/mypage/points/all/points-transaction-history');
+  //   };
+  // }, [setSubActiveButton, subActiveButton, navigate]);
 
   const truncate = (str, max, len) => {
     return str.length > max ? str.substring(0, len) + '...' : str;

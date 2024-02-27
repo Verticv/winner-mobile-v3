@@ -1,6 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-// import { createBrowserHistory } from 'history';
+// import { useNavigate } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 
 import HomeIcon from '../../assets/myPage/home-white.png';
 import LeftArrowIcon from '../../assets/myPage/LeftArrow-white.png';
@@ -13,6 +13,8 @@ import {
   resetMyPageSelectedSubMenuId,
 } from '../../counterSlice';
 
+import { Link } from 'react-router-dom';
+
 const HomePageTopBanner = ({
   pageTitle,
   toPath = '/mypage',
@@ -20,8 +22,8 @@ const HomePageTopBanner = ({
   setOpen,
   isOpen,
 }) => {
-  const navigate = useNavigate();
-  // const history = createBrowserHistory();
+  // const navigate = useNavigate();
+  const history = createBrowserHistory();
 
   // useEffect(() => {
   //   console.log('isOpen2', isOpen);
@@ -40,17 +42,18 @@ const HomePageTopBanner = ({
             // window.location.pathname.includes('/mypage/coupon/all') ? navigate('mypage/coupon') : navigate(-1);
             // history.back();
             // navigate('/mypage');
-            if(window.location.pathname.includes('/mypage/bet-history')) navigate('/mypage');
-            else if(window.location.pathname.includes('/mypage/coupon/all')) navigate('/mypage');
-            else if(window.location.pathname.includes('/mypage/money')) navigate('/mypage');
-            else if(window.location.pathname.includes('/mypage/points')) navigate('/mypage');
-            else if(window.location.pathname.includes('/mypage/win-lose-settlement')) navigate('/mypage');
-            else if(window.location.pathname.includes('/mypage/gameresults')) navigate('/mypage');
-            else if(window.location.pathname.includes('/mypage/freeboard')) navigate('/mypage');
-            else if(window.location.pathname.includes('/freeboard')) navigate('/mypage/freeboard');
-            else if(window.location.pathname.includes('/mypage/inbox/view')) navigate('/mypage/inbox');
-            else if(window.location.pathname.includes('/mypage/inbox')) navigate('/mypage');
-            else navigate(-1);
+            // if(window.location.pathname.includes('/mypage/bet-history')) navigate('/mypage');
+            // else if(window.location.pathname.includes('/mypage/coupon/all')) navigate('/mypage');
+            // else if(window.location.pathname.includes('/mypage/money')) navigate('/mypage');
+            // else if(window.location.pathname.includes('/mypage/points')) navigate('/mypage');
+            // else if(window.location.pathname.includes('/mypage/win-lose-settlement')) navigate('/mypage');
+            // else if(window.location.pathname.includes('/mypage/gameresults')) navigate('/mypage');
+            // else if(window.location.pathname.includes('/mypage/freeboard')) navigate('/mypage');
+            // else if(window.location.pathname.includes('/freeboard')) navigate('/mypage/freeboard');
+            // else if(window.location.pathname.includes('/mypage/inbox/view')) navigate('/mypage/inbox');
+            // else if(window.location.pathname.includes('/mypage/inbox')) navigate('/mypage');
+            // else navigate(-1);
+            history.back();
           }}
           className="left-arrow"
           src={LeftArrowIcon}
@@ -58,17 +61,24 @@ const HomePageTopBanner = ({
           // style={{ marginTop: '0.5rem' }}
           style={{ marginTop: '0.7rem' }}
         />
-        <span className="page-title" style={{ marginBottom: '1rem' }}>{pageTitle}</span>
-        <img
-          onClick={() => {
-            dispatch(resetMyPageSelectedMainMenuId());
-            dispatch(resetMyPageSelectedSubMenuId());
-            navigate('/main');
-          }}
-          className="home-icon"
-          src={HomeIcon}
-          alt="home_icon"
-        />
+        <span className="page-title" style={{ marginBottom: '1rem' }}>
+          {pageTitle}
+        </span>
+
+        <Link
+          to="/main"
+        >
+          <img
+            onClick={() => {
+              dispatch(resetMyPageSelectedMainMenuId());
+              dispatch(resetMyPageSelectedSubMenuId());
+              // navigate('/main');
+            }}
+            className="home-icon"
+            src={HomeIcon}
+            alt="home_icon"
+          />
+        </Link>
       </div>
       {/* {isOpen === true && (
                 <MenuList
