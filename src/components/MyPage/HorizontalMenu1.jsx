@@ -6,6 +6,7 @@ import inactive from '../../assets/inactive-bg1-v3.png';
 import activeBG from '../../assets/cscenter/leftMenu/active-btn_v3.png'
 import moneyActive from '../../assets/mainPage/icons/active-bg-v3.png';
 import moneyInactive from '../../assets/mainPage/icons/inactive-bg-v3.png';
+import { Link } from 'react-router-dom';
 
 const HorizontalMenu1 = ({
     itemsArray,
@@ -51,36 +52,36 @@ const HorizontalMenu1 = ({
             }
 
             return (
-                <button
-                    id={`t${index}`}
-                    key={item.id}
-                    style={{
-                        background: !isMoneyPage ? `url(${isSameLink ? (item.activeBG ? item.activeBG : activeBG) : (item.inActiveBG ? item.inActiveBG : inactive)}) round` : `url(${isSameLink ? moneyActive : moneyInactive}) round`,
-                        backgroundSize: 'cover',
-                        // marginRight: index === 0 || index === 1 ? '-0.688rem' : ''
-                    }}
-                    onPointerDown={() => setHover(item.id)}
-                    onPointerUp={() => {
-                        setHover(null)
-                        horizontalsScroll(itemsArray, 't', 'scroll-wrapper', index)
-                        navigate(item.path)
-                        setSelectedTab(item.id)
-                        if (setSelectedSubTab !== null) {
-                            setSelectedSubTab(0)
-                        }
-                    }}
-                    onPointerOut={() => setHover(null)}
-                    onPointerCancel={() => setHover(null)}
-                >
-                    <div className='btn-content' >
-                        <div className='img'>
-                            <Image icon={item.icon} activeIcon={item.activeIcon} width={item.width} marginLeft={item.marginLeft} isSameLink={isSameLink} />
+                    <button
+                        id={`t${index}`}
+                        key={item.id}
+                        style={{
+                            background: !isMoneyPage ? `url(${isSameLink ? (item.activeBG ? item.activeBG : activeBG) : (item.inActiveBG ? item.inActiveBG : inactive)}) round` : `url(${isSameLink ? moneyActive : moneyInactive}) round`,
+                            backgroundSize: 'cover',
+                            // marginRight: index === 0 || index === 1 ? '-0.688rem' : ''
+                        }}
+                        onPointerDown={() => setHover(item.id)}
+                        onPointerUp={() => {
+                            setHover(null)
+                            horizontalsScroll(itemsArray, 't', 'scroll-wrapper', index)
+                            navigate(item.path)
+                            setSelectedTab(item.id)
+                            if (setSelectedSubTab !== null) {
+                                setSelectedSubTab(0)
+                            }
+                        }}
+                        onPointerOut={() => setHover(null)}
+                        onPointerCancel={() => setHover(null)}
+                    >
+                        <div className='btn-content' >
+                            <div className='img'>
+                                <Image icon={item.icon} activeIcon={item.activeIcon} width={item.width} marginLeft={item.marginLeft} isSameLink={isSameLink} />
+                            </div>
+                            <div className='text'>
+                                <span style={{ color: isSameLink ? '#ffffff' : '#2d2834', fontWeight: '700'}}>{item.text}</span>
+                            </div>
                         </div>
-                        <div className='text'>
-                            <span style={{ color: isSameLink ? '#ffffff' : '#2d2834', fontWeight: '700'}}>{item.text}</span>
-                        </div>
-                    </div>
-                </button>
+                    </button>
             )
         });
     }

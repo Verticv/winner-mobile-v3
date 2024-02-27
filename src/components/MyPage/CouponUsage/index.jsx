@@ -841,7 +841,7 @@ const GiftButton = (
 
 
 const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSubActiveButton }) => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -931,19 +931,20 @@ const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
 
 
     const Usage = () => {
-        useEffect(() => {
-            window.onpopstate = e => {
+        //!- this occurs error (empty page)
+        // useEffect(() => {
+        //     window.onpopstate = e => {
 
-                setTimeout(() => {
-                    navigate('/mypage/coupon')
-                    setSubActiveButton('/mypage/coupon/all')
-                }, 0)
-            }
+        //         setTimeout(() => {
+        //             navigate('/mypage/coupon/all')
+        //             setSubActiveButton('/mypage/coupon/all')
+        //         }, 0)
+        //     }
 
-            return (() => {
-                setSubActiveButton('/mypage/coupon/all')
-            })
-        }, [])
+        //     return (() => {
+        //         setSubActiveButton('/mypage/coupon/all')
+        //     })
+        // }, [])
         return (
             <>
                 <div style={{ marginBottom: '-0.8125rem' }}>
@@ -980,17 +981,17 @@ const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
     }
 
     const Gift = () => {
-        useEffect(() => {
-            window.onpopstate = e => {
-                setTimeout(() => {
-                    navigate('/mypage/coupon')
-                    setSubActiveButton('/mypage/coupon/all/coupon-gift')
-                }, 0)
-            }
-            return (() => {
-                setSubActiveButton('/mypage/coupon/all/coupon-gift')
-            })
-        }, [])
+        // useEffect(() => {
+        //     window.onpopstate = e => {
+        //         setTimeout(() => {
+        //             navigate('/mypage/coupon')
+        //             setSubActiveButton('/mypage/coupon/all/coupon-gift')
+        //         }, 0)
+        //     }
+        //     return (() => {
+        //         setSubActiveButton('/mypage/coupon/all/coupon-gift')
+        //     })
+        // }, [])
 
         return (
             <div className='coupon-all'>
@@ -1039,17 +1040,17 @@ const CouponUsage = ({ isAuthenticated, setAuthenticated, subActiveButton, setSu
     }
     const History = () => {
 
-        useEffect(() => {
-            window.onpopstate = e => {
-                setTimeout(() => {
-                    navigate('/mypage/coupon')
-                    setSubActiveButton('/mypage/coupon/all/coupon-history')
-                }, 0)
-            }
-            return (() => {
-                setSubActiveButton('/mypage/coupon/all/coupon-history')
-            })
-        }, [])
+        // useEffect(() => {
+        //     window.onpopstate = e => {
+        //         setTimeout(() => {
+        //             navigate('/mypage/coupon/all')
+        //             setSubActiveButton('/mypage/coupon/all/coupon-history')
+        //         }, 0)
+        //     }
+        //     return (() => {
+        //         setSubActiveButton('/mypage/coupon/all/coupon-history')
+        //     })
+        // }, [])
 
         return (
             <>

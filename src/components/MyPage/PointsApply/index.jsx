@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PopupControls from '../popups/PopupControls';
 import PointsApplyPopup from '../popups/PointsApplyPopup';
 import WarningMessage from '../WarningMessage';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 // import img18 from '../../img16.png'
 
 const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
@@ -13,23 +13,24 @@ const PointsApply = ({ subActiveButton, setSubActiveButton }) => {
 
   console.log(setInputClicked);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
-    window.onpopstate = (e) => {
-      setTimeout(() => {
-        navigate('/mypage/points');
-        setSubActiveButton('/mypage/points/all');
-      }, 0);
-    };
-    return () => {
-      setSubActiveButton('/mypage/points/all');
-    };
-  }, [setSubActiveButton, subActiveButton, navigate]);
+  //!- this occurs error (empty page)
+  // useEffect(() => {
+  //   window.onpopstate = (e) => {
+  //     setTimeout(() => {
+  //       navigate('/mypage/points');
+  //       setSubActiveButton('/mypage/points/all');
+  //     }, 0);
+  //   };
+  //   return () => {
+  //     setSubActiveButton('/mypage/points/all');
+  //   };
+  // }, [setSubActiveButton, subActiveButton, navigate]);
 
   const detailButton = (
     <div
