@@ -117,7 +117,7 @@ const SportsGamePolicyTable1 = ({ array }) => {
           fontSize: '2.8125rem',
           background: '#ffffff',
           // letterSpacing: '-0.07rem',
-          letterSpacing: '-0.025em',
+          letterSpacing: '-0.015em',
           borderCollapse: 'collapse',
           width: '100%',
         }}

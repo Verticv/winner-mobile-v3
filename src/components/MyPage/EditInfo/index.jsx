@@ -197,7 +197,8 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
 
                             <div className="form-section">
                                 <div style={{ width: "24rem", marginRight: '2.7rem', background: '#9b6bd4', flexShrink: '0', borderRadius: '0.5rem', height: '10rem', display: 'flex', alignItems: 'center' }}>
-                                    <div style={{ fontSize: '2.8125rem', color: '#ffffff', padding: '0 0 0 1.25rem', letterSpacing: '-0.07rem' }}>레벨</div>
+                                    {/* <div style={{ fontSize: '2.8125rem', color: '#ffffff', padding: '0 0 0 1.25rem', letterSpacing: '-0.07rem' }}>레벨</div> */}
+                                    <div style={{ fontSize: '2.8125rem', color: '#ffffff', padding: '0 0 0 1.25rem', letterSpacing: '-0.025em' }}>레벨</div>
                                 </div>
                                 {/* <div className="lable-or-input" style={{ height: '10rem', padding: '1.5rem 1.4rem' }}> */}
                                 <div className="lable-or-input" style={{ height: '10rem', padding: '1.5rem 1.4rem', display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
@@ -205,10 +206,12 @@ const EditInfo = ({ activeButton, setActiveButton }) => {
                                         레벨 LV.1 (점수: 0) /
                                         <br />
                                         다음레벨 LV.2 (점수: 20)</label> */}
-                                    <label style={{ letterSpacing: '-0.02rem', color: '#444444', lineHeight: '3.5rem'}}>
+                                    {/* <label style={{ letterSpacing: '-0.02rem', color: '#444444', lineHeight: '3.5rem'}}> */}
+                                    <label style={{ letterSpacing: '-0.025em', color: '#444444', lineHeight: '3.5rem'}}>
                                         레벨 LV.1 (점수: 0) /
                                     </label>
-                                    <label style={{ letterSpacing: '-0.02rem', color: '#444444', lineHeight: '3.5rem' }}>
+                                    {/* <label style={{ letterSpacing: '-0.02rem', color: '#444444', lineHeight: '3.5rem' }}> */}
+                                    <label style={{ letterSpacing: '-0.025em', color: '#444444', lineHeight: '3.5rem' }}>
                                         다음레벨 LV.2 (점수: 20)
                                     </label>
                                     <div style={{ height: '0.1875rem' }}></div>

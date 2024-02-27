@@ -107,7 +107,8 @@ const InboxView = () => {
                 width: '100%',
                 fontSize: '2.999375rem',
                 color: '#444444',
-                letterSpacing: '-0.025em',
+                // letterSpacing: '-0.025em',
+                letterSpacing: '0',
                 fontWeight: 'bold',
               }}
               className="flex justify-center text-5xl w-full tracking-tight text-gray-r454545"

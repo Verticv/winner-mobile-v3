@@ -3050,7 +3050,7 @@ const SportsGamePolicy = ({
                     color: '#ffffff',
                     margin: '0',
                     // letterSpacing: '-0.07rem',
-                    letterSpacing: '0',
+                    letterSpacing: '-0.025em',
                   }}
                   className="text-gray-r7b7b7b text-center w-full"
                 >
