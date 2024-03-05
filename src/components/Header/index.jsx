@@ -12,7 +12,7 @@ function Header() {
   // console.log('isOpen',isOpen)
   return (
     <>
-    <div className="header">
+    <div className="header test">
       <div className="header__image">
         <img
           className="logo"
